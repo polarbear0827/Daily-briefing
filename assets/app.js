@@ -1,0 +1,320 @@
+// =============================================================================
+// Daily Briefing — Client-side renderer
+// Loads data/latest.json (or data/issues/YYYY-MM-DD.json) and renders UI.
+// =============================================================================
+
+(function () {
+  'use strict';
+
+  const qs = (sel, root = document) => root.querySelector(sel);
+  const qsa = (sel, root = document) => Array.from(root.querySelectorAll(sel));
+
+  // ---------------------------------------------------------------------------
+  // Data loading
+  // ---------------------------------------------------------------------------
+
+  async function loadIssue() {
+    // URL param ?date=YYYY-MM-DD overrides latest
+    const params = new URLSearchParams(window.location.search);
+    const date = params.get('date');
+    const path = date ? `data/issues/${date}.json` : 'data/latest.json';
+
+    try {
+      const res = await fetch(path);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      return await res.json();
+    } catch (err) {
+      console.error('Failed to load issue:', err);
+      renderError(err);
+      return null;
+    }
+  }
+
+  function renderError(err) {
+    const main = qs('#app');
+    if (!main) return;
+    main.innerHTML = `
+      <div style="max-width:600px;margin:120px auto;padding:40px;text-align:center;">
+        <h1 style="font-family:var(--font-display-zh);font-size:32px;margin-bottom:16px;">
+          載入失敗 · Load Failed
+        </h1>
+        <p style="color:var(--ink-muted);">${err.message}</p>
+      </div>
+    `;
+  }
+
+  // ---------------------------------------------------------------------------
+  // Renderers
+  // ---------------------------------------------------------------------------
+
+  function renderMasthead(issue) {
+    return `
+      <header class="masthead">
+        <div class="masthead-meta">
+          <div class="issue-number">第 ${issue.issue_number} 期 · No. ${issue.issue_number}</div>
+          <div class="weather">
+            ${issue.weather.location_zh} ${issue.weather.temp_c}°C · ${issue.weather.condition_zh}
+          </div>
+          <div class="date">${issue.date_display_zh}</div>
+        </div>
+        <h1 class="masthead-title">Daily Briefing</h1>
+        <p class="masthead-tagline">
+          ${escapeHtml(issue.tagline_zh)}
+          <span class="en">${escapeHtml(issue.tagline_en)}</span>
+        </p>
+      </header>
+    `;
+  }
+
+  function renderTabs(issue) {
+    const counts = {};
+    issue.articles.forEach(a => { counts[a.category] = (counts[a.category] || 0) + 1; });
+    const total = issue.articles.length;
+
+    const items = [
+      `<button class="tab active" data-cat="all">全部<span class="count">${total}</span></button>`
+    ];
+    issue.categories.forEach(cat => {
+      const c = counts[cat.id] || 0;
+      if (c === 0) return;
+      items.push(
+        `<button class="tab" data-cat="${cat.id}">${escapeHtml(cat.name_zh)}<span class="count">${c}</span></button>`
+      );
+    });
+
+    return `<div class="tabs-wrap"><div class="tabs">${items.join('')}</div></div>`;
+  }
+
+  function renderCategorySection(cat, articles) {
+    if (articles.length === 0) return '';
+    const articleHtml = articles.map(a => renderArticle(a, cat)).join('');
+    return `
+      <section class="category-section" data-cat="${cat.id}">
+        <div class="category-title">
+          <h2>${escapeHtml(cat.name_zh)}</h2>
+          <span class="count-label">${articles.length} 則 · ${escapeHtml(cat.name_en)}</span>
+        </div>
+        <div class="articles">${articleHtml}</div>
+      </section>
+    `;
+  }
+
+  function renderArticle(article, cat) {
+    const headlineClass = article.is_headline ? ' is-headline' : '';
+    const kickerLabel = article.is_headline ? '頭條 · Headline' : escapeHtml(cat.name_zh);
+    const bullets = (article.bullets_zh || []).map(b => `<li>${escapeHtml(b)}</li>`).join('');
+    const readingTime = article.source.reading_time_min || 3;
+    const publishedAgo = relativeTime(article.source.published_at);
+
+    return `
+      <article class="article${headlineClass}" data-id="${article.id}">
+        <div class="article-kicker">
+          <span class="kicker-badge">${kickerLabel}</span>
+        </div>
+        <h3 class="article-title">${escapeHtml(article.title_zh)}</h3>
+        <p class="article-title-en">${escapeHtml(article.title_en)}</p>
+        <p class="article-lede">${escapeHtml(article.lede_zh)}</p>
+        <ul class="article-bullets">${bullets}</ul>
+        <div class="article-footer">
+          <span class="article-source">${escapeHtml(article.source.name)}</span>
+          <span class="dot">·</span>
+          <span>${publishedAgo}</span>
+          <span class="dot">·</span>
+          <span>${readingTime} 分鐘</span>
+          <div class="article-actions">
+            <a href="${escapeAttr(article.source.url)}" target="_blank" rel="noopener"
+               onclick="event.stopPropagation()">原文 EN</a>
+          </div>
+        </div>
+      </article>
+    `;
+  }
+
+  function renderFooter(issue) {
+    return `
+      <footer class="site-footer">
+        <div>第 ${issue.issue_number} 期 · 共 ${issue.meta.total_articles} 則 · 生成時間 ${formatTime(issue.meta.generated_at)}</div>
+        <div style="margin-top:12px;">
+          <a href="index.html">最新一期</a>
+          <a href="archive.html">歷史期數</a>
+        </div>
+      </footer>
+    `;
+  }
+
+  // ---------------------------------------------------------------------------
+  // Reader overlay
+  // ---------------------------------------------------------------------------
+
+  function openReader(article, cat) {
+    const overlay = qs('#reader-overlay');
+    const bulletsZh = (article.bullets_zh || []).map(b => `<li>${escapeHtml(b)}</li>`).join('');
+    const bulletsEn = (article.bullets_en || []).map(b => `<li>${escapeHtml(b)}</li>`).join('');
+
+    overlay.innerHTML = `
+      <div class="reader-paper" data-lang="both">
+        <button class="reader-close" aria-label="Close">×</button>
+        <div class="reader-lang-toggle">
+          <button data-lang="zh">中文</button>
+          <button data-lang="both" class="active">中英對照</button>
+          <button data-lang="en">EN</button>
+        </div>
+
+        <div class="reader-kicker">${escapeHtml(cat.name_zh)} · ${escapeHtml(cat.name_en)}</div>
+
+        <h1 class="reader-title zh-only">${escapeHtml(article.title_zh)}</h1>
+        <h1 class="reader-title en-only" style="font-family:var(--font-display-en);font-style:italic;">${escapeHtml(article.title_en)}</h1>
+        <p class="reader-title-en en-only" style="display:none;"></p>
+        <p class="reader-title-en zh-only" style="display:none;"></p>
+
+        <p class="reader-lede zh-only">${escapeHtml(article.lede_zh)}</p>
+        <p class="reader-lede en-only" style="font-family:var(--font-body-en);">${escapeHtml(article.lede_en)}</p>
+
+        <ul class="reader-bullets zh-only">${bulletsZh}</ul>
+        <ul class="reader-bullets en-only">${bulletsEn}</ul>
+
+        <div class="reader-source-block">
+          <div class="label">原文來源 · Source</div>
+          <a href="${escapeAttr(article.source.url)}" target="_blank" rel="noopener">
+            ${escapeHtml(article.source.name)} · ${escapeHtml(new URL(article.source.url).hostname)}
+          </a>
+        </div>
+      </div>
+    `;
+
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+
+    // Close handlers
+    qs('.reader-close', overlay).addEventListener('click', closeReader);
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) closeReader();
+    });
+
+    // Language toggle
+    qsa('.reader-lang-toggle button', overlay).forEach(btn => {
+      btn.addEventListener('click', () => {
+        const lang = btn.dataset.lang;
+        qs('.reader-paper', overlay).dataset.lang = lang;
+        qsa('.reader-lang-toggle button', overlay).forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+  }
+
+  function closeReader() {
+    const overlay = qs('#reader-overlay');
+    overlay.classList.remove('open');
+    overlay.innerHTML = '';
+    document.body.style.overflow = '';
+  }
+
+  // ---------------------------------------------------------------------------
+  // Tab filtering
+  // ---------------------------------------------------------------------------
+
+  function bindTabs() {
+    qsa('.tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        const cat = tab.dataset.cat;
+        qsa('.tab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+
+        qsa('.category-section').forEach(section => {
+          if (cat === 'all' || section.dataset.cat === cat) {
+            section.style.display = '';
+          } else {
+            section.style.display = 'none';
+          }
+        });
+      });
+    });
+  }
+
+  // ---------------------------------------------------------------------------
+  // Utilities
+  // ---------------------------------------------------------------------------
+
+  function escapeHtml(str) {
+    if (str == null) return '';
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#039;');
+  }
+
+  function escapeAttr(str) {
+    return escapeHtml(str);
+  }
+
+  function relativeTime(iso) {
+    if (!iso) return '';
+    const then = new Date(iso);
+    const now = new Date();
+    const diffMin = Math.round((now - then) / 60000);
+    if (diffMin < 60) return `${diffMin} 分鐘前`;
+    const diffHr = Math.round(diffMin / 60);
+    if (diffHr < 24) return `${diffHr} 小時前`;
+    const diffDay = Math.round(diffHr / 24);
+    return `${diffDay} 天前`;
+  }
+
+  function formatTime(iso) {
+    if (!iso) return '';
+    const d = new Date(iso);
+    return d.toLocaleString('zh-TW', { hour: '2-digit', minute: '2-digit' });
+  }
+
+  // ---------------------------------------------------------------------------
+  // Main
+  // ---------------------------------------------------------------------------
+
+  async function main() {
+    const issue = await loadIssue();
+    if (!issue) return;
+
+    const catMap = Object.fromEntries(issue.categories.map(c => [c.id, c]));
+    const articlesByCategory = {};
+    issue.categories.forEach(c => { articlesByCategory[c.id] = []; });
+    issue.articles.forEach(a => {
+      if (articlesByCategory[a.category]) {
+        articlesByCategory[a.category].push(a);
+      }
+    });
+
+    const sections = issue.categories
+      .map(cat => renderCategorySection(cat, articlesByCategory[cat.id] || []))
+      .join('');
+
+    qs('#app').innerHTML = `
+      ${renderMasthead(issue)}
+      ${renderTabs(issue)}
+      <main>${sections}</main>
+      ${renderFooter(issue)}
+    `;
+
+    // Wire up article clicks
+    qsa('.article').forEach(el => {
+      el.addEventListener('click', () => {
+        const id = el.dataset.id;
+        const article = issue.articles.find(a => a.id === id);
+        const cat = catMap[article.category];
+        openReader(article, cat);
+      });
+    });
+
+    bindTabs();
+
+    // ESC to close reader
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeReader();
+    });
+
+    // Update page title
+    document.title = `第 ${issue.issue_number} 期 · Daily Briefing`;
+  }
+
+  document.addEventListener('DOMContentLoaded', main);
+})();
