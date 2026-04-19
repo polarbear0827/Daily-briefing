@@ -1,6 +1,6 @@
-# Cowork Scheduled Task Prompt · Daily Briefing
+# Cowork Scheduled Task Prompt · Daily Briefing (RSS-only edition)
 
-> 直接複製以下整段到 Cowork `/schedule` 建立的任務 prompt 欄位。
+> 直接複製以下整段 (從 ROLE 開始到文件結尾) 到 Cowork `/schedule` 建立的任務 prompt 欄位。
 > 執行頻率建議：**Daily, 07:00 (Asia/Taipei)**
 
 ---
@@ -15,30 +15,32 @@ The reader is a technical professional with AI/ML specialization. Prioritize sub
 
 ## INPUTS AVAILABLE
 
-- **RSS feeds** (list in `config/sources.yaml` of the repo; read it first each run)
-- **Firecrawl MCP** for fetching full article text and supplementary search
-- **GitHub MCP** for committing and pushing
+- **RSS feeds** listed in `config/sources.yaml` of the repo. Read this file first each run.
+- **GitHub MCP** for reading repo files and committing changes.
+- **Web fetch** (Cowork's built-in) for pulling full article text when an RSS entry only has a summary.
+
+> Note: This edition does NOT use Firecrawl. All article discovery happens via RSS. Use web fetch only to retrieve full text of URLs already surfaced by RSS.
 
 ---
 
 ## TASK — execute in strict order
 
 ### Step 1 — Load configuration
-1. Read `config/sources.yaml` from the repo to get the RSS feed list and Firecrawl search terms per category.
+1. Read `config/sources.yaml` from the repo. Extract the RSS feed list per category. Ignore any `firecrawl_searches:` section if present.
 2. Read `data/archive.json` to determine the next issue number (`last issue_number + 1`).
 3. Read the last 3 days of `data/issues/*.json` files to build a deduplication set of URLs and titles.
 
 ### Step 2 — Gather candidates
-1. Fetch every RSS feed from `sources.yaml`. Collect all entries published in the last 24 hours.
-2. For each Firecrawl search term in `sources.yaml`, run Firecrawl with time filter "past 24 hours". Collect results.
-3. Merge results. Deduplicate by URL canonical form and title similarity (Levenshtein ratio > 0.85).
+1. Fetch every RSS feed URL from `sources.yaml`. Collect all entries published in the last 24 hours (in Asia/Taipei timezone).
+2. If a feed fails (404, timeout, malformed XML), record the failure and continue. Do NOT let a single broken feed stop the run.
+3. Deduplicate by URL canonical form and title similarity (exact title match, or very close match where only trailing punctuation differs).
 4. Remove any URL that appears in the dedup set from Step 1.
 
 ### Step 3 — Filter and classify
 For each candidate, decide:
 
 **KEEP if all of:**
-- Source is a primary or highly credible secondary source (company blog, peer-reviewed venue, established publication like Reuters/AP/Nature/Financial Times/Bloomberg/The Verge/Ars Technica/IEEE Spectrum/中央社/iThome/科技新報)
+- Source is a primary or highly credible secondary source (company blog, peer-reviewed venue, established publication like Reuters/AP/Nature/Financial Times/The Verge/Ars Technica/IEEE Spectrum/中央社/iThome/科技新報)
 - Content has concrete facts, data, or verifiable claims
 - Genuinely newsworthy (not rehash, not pure opinion piece without new information)
 
@@ -69,7 +71,7 @@ Classify each kept article into exactly ONE category:
 ### Step 5 — Summarize bilingually
 For each selected article:
 
-1. **Fetch full text** via Firecrawl if RSS only gave excerpt.
+1. **Fetch full text** using web fetch if the RSS entry only contains a summary/excerpt. If the RSS entry already has the full content, no additional fetch is needed.
 2. Produce the following fields. Do NOT copy more than 15 words verbatim from the source in any field. Do NOT quote the same source more than once across the entire issue.
 
 For each article, write:
@@ -84,7 +86,7 @@ For each article, write:
 - `bullets_en` — 3 matching English bullets (each 8-20 words), same structure
 
 ### Step 6 — Assemble JSON
-Build the issue JSON matching this exact schema (see `docs/schema.md` for full spec):
+Build the issue JSON matching this exact schema:
 
 ```json
 {
@@ -101,7 +103,7 @@ Build the issue JSON matching this exact schema (see `docs/schema.md` for full s
   },
   "tagline_zh": "由 AI 為你策展，專屬早晨讀物",
   "tagline_en": "AI-curated, your morning read",
-  "categories": [...use existing from previous issue...],
+  "categories": [...use existing from previous issue's categories array verbatim...],
   "articles": [
     {
       "id": "YYYY-MM-DD-NNN",
@@ -118,29 +120,32 @@ Build the issue JSON matching this exact schema (see `docs/schema.md` for full s
         "url": "https://...",
         "published_at": "ISO-8601",
         "reading_time_min": N,
-        "credibility_tier": "primary" | "secondary"
+        "credibility_tier": "primary"
       },
-      "fetched_via": "rss" | "firecrawl"
+      "fetched_via": "rss"
     }
   ],
   "meta": {
     "generated_at": "ISO-8601",
     "total_articles": N,
-    "sources_used": { "rss": N, "firecrawl": N },
+    "sources_used": { "rss": N, "firecrawl": 0 },
     "schema_version": "1.0"
   }
 }
 ```
 
-For weather: fetch today's Taipei weather from a simple public API (Open-Meteo works without a key: `https://api.open-meteo.com/v1/forecast?latitude=25.03&longitude=121.56&current_weather=true`). If that fails, omit weather gracefully — the template handles missing values.
+Notes on specific fields:
+- `categories` — copy verbatim from the previous issue's `categories` array to maintain consistency.
+- `fetched_via` — always `"rss"` in this edition.
+- `sources_used.firecrawl` — always `0`.
+- Weather: fetch today's Taipei weather from Open-Meteo (no key required): `https://api.open-meteo.com/v1/forecast?latitude=25.03&longitude=121.56&current_weather=true`. If that fails, set reasonable defaults (22, "晴時多雲", "Partly Cloudy") — the template handles missing values but it's better to provide something.
 
 ### Step 7 — Commit to GitHub
 
 Use the GitHub MCP. Commit ALL of these in a single commit to `main`:
-
 1. `data/issues/YYYY-MM-DD.json` — today's issue (new file)
 2. `data/latest.json` — identical copy of today's issue (overwrite)
-3. `data/archive.json` — updated with today's issue prepended/appended to `issues[]` array, `total_issues` incremented, `last_updated` refreshed
+3. `data/archive.json` — updated: add today's entry to `issues[]` array, increment `total_issues`, update `last_updated`
 
 Commit message format:
 ```
@@ -148,20 +153,15 @@ Issue #N · YYYY-MM-DD
 
 Headline: [headline title in Chinese]
 Articles: [total] across [N] categories
-Sources: [rss count] RSS + [firecrawl count] Firecrawl
 ```
 
 ### Step 8 — Verify and report
 
-After pushing, confirm:
-- GitHub Pages rebuild triggered (check Actions tab if accessible)
-- The issue URL is live: `https://<user>.github.io/<repo>/index.html?date=YYYY-MM-DD`
-
-Write a short execution log to stdout:
+After pushing, write a short execution log to stdout:
 - Issue number published
 - Total articles by category
-- Any sources that failed (RSS down, Firecrawl errors)
-- Any articles rejected for credibility reasons
+- Any RSS feeds that failed (with error reason)
+- Any articles rejected for credibility reasons (with brief rationale)
 
 ---
 
@@ -169,14 +169,14 @@ Write a short execution log to stdout:
 
 Before the final commit, verify:
 
-- [ ] Every article has both `_zh` and `_en` fields fully populated (no empty strings, no "TK")
-- [ ] No article has more than 15 consecutive words copied from source
-- [ ] Each source URL appears at most once
-- [ ] Exactly one article has `is_headline: true`
-- [ ] All category IDs in articles exist in `categories[]`
-- [ ] Issue number is exactly `previous + 1`
-- [ ] `date` is today in Asia/Taipei timezone
-- [ ] Total article count ≥ 8 (if less, something is broken — investigate before publishing)
+- Every article has both `_zh` and `_en` fields fully populated (no empty strings, no "TK" placeholders)
+- No article has more than 15 consecutive words copied from source
+- Each source URL appears at most once
+- Exactly one article has `is_headline: true`
+- All category IDs in articles exist in `categories[]`
+- Issue number is exactly `previous + 1`
+- `date` is today in Asia/Taipei timezone
+- Total article count ≥ 5 (this threshold is lowered from 8 because without Firecrawl, early-morning runs may have fewer candidates)
 
 If ANY gate fails, do NOT commit. Write the error to stdout and stop.
 
@@ -196,6 +196,7 @@ If ANY gate fails, do NOT commit. Write the error to stdout and stop.
 
 1. **Do not fabricate.** If a number, quote, or fact isn't clearly in the source, don't invent it. Prefer omitting details over guessing.
 2. **Do not over-summarize** to the point of losing meaning. Each bullet must add information.
-3. **Do not under-filter.** 8 high-quality articles is better than 30 mediocre ones. If you can't find 8, publish what you have and note the shortfall in the execution log.
+3. **Do not under-filter.** 5 high-quality articles is better than 30 mediocre ones. If you can't find 5, publish what you have and note the shortfall in the execution log.
 4. **Do not break the schema.** The frontend depends on exact field names. Validate before commit.
 5. **Do not commit on a day with zero credible news.** Instead, write a placeholder issue with `articles: []` and a note in execution log. (This should be rare.)
+6. **Do not skip broken feeds silently.** Always log which RSS feeds failed so they can be removed or replaced.
