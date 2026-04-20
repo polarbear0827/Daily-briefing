@@ -49,12 +49,338 @@
       "name_en": "Taiwan"
     }
   ],
-  "articles": [],
+  "articles": [
+    {
+      "category": "ai-ml",
+      "is_headline": true,
+      "title_zh": "OpenAI 推出生命科學模型 GPT‑Rosalind，加速藥物研發與實驗設計",
+      "title_en": "OpenAI launches GPT‑Rosalind for life sciences to accelerate drug discovery",
+      "lede_zh": "OpenAI 發表專為生命科學與藥物研發打造的 GPT‑Rosalind，聲稱在多項生物、化學與設計類基準上超越既有大模型，並已提供給藥廠與研究機構進行研究預覽。公司強調模型可支援文獻整理、實驗設計與序列預測，旨在縮短發現初期時間並提高推理精確度。",
+      "lede_en": "OpenAI unveiled GPT‑Rosalind, a life‑science tuned model intended to speed drug discovery and translational research. The model reportedly outperforms prior GPT variants and rival systems on bio/chem benchmarks and is being offered to pharma and research partners as a research preview.",
+      "bullets_zh": [
+        "針對化學、蛋白質工程與基因任務調校，對多項生物資訊基準表現優於 GPT‑5 系列。",
+        "已與 Amgen、Moderna、Thermo Fisher 等機構進行合作與內部評估，提供研究預覽與工具整合。",
+        "OpenAI 提供 Codex 外掛與 API 存取，強調與實驗資料庫與科學工具互通以支援多步驟研究流程。"
+      ],
+      "bullets_en": [
+        "Tuned for chemistry, protein engineering and genomic tasks; reportedly beats GPT‑5 family on several bioinformatics benchmarks.",
+        "Offered as a research preview to pharma and research partners including Amgen and Moderna, with tool integrations.",
+        "Includes Codex plugins and API access to connect models to scientific tools and databases for multi‑step research workflows."
+      ],
+      "source": {
+        "name": "iThome",
+        "url": "https://www.ithome.com.tw/news/175158",
+        "published_at": "2026-04-20T04:24:09.006Z",
+        "reading_time_min": 3
+      },
+      "id": "2026-04-20-001"
+    },
+    {
+      "category": "ai-ml",
+      "is_headline": false,
+      "title_zh": "Anthropic 推出 Claude Design，讓 AI 幫你做簡報、網站與原型設計",
+      "title_en": "Anthropic unveils Claude Design for slide, web and marketing design",
+      "lede_zh": "Anthropic 發表 Claude Design，以 Claude Opus 4.7 為引擎，目標是幫助無設計背景的用戶快速生成產品原型、簡報與視覺稿，並能讀取公司 codebase 與設計檔自動套用設計系統。",
+      "lede_en": "Anthropic introduced Claude Design, powered by Claude Opus 4.7, to generate slides, web prototypes and marketing designs for non‑designers, with the ability to ingest a company's codebase and design assets to maintain brand consistency.",
+      "bullets_zh": [
+        "可生成互動原型、簡報與一頁式行銷頁，並支援匯出 PDF、PPT、HTML 或匯入 Canva。",
+        "會讀取用戶 codebase 與設計檔以建立公司專屬設計系統並在專案間一致套用。",
+        "目前以研究預覽形式向付費與企業客戶逐步開放，並計畫整合更多第三方工具。"
+      ],
+      "bullets_en": [
+        "Generates interactive prototypes, pitch decks and one‑pagers; supports export to PDF/PPT/HTML and import to Canva.",
+        "Ingests codebases and design files to auto‑build and apply a company‑specific design system across projects.",
+        "Rolling out as a research preview to paid and enterprise customers, with planned third‑party integrations."
+      ],
+      "source": {
+        "name": "iThome",
+        "url": "https://www.ithome.com.tw/news/175160",
+        "published_at": "2026-04-20T04:24:09.006Z",
+        "reading_time_min": 3
+      },
+      "id": "2026-04-20-002"
+    },
+    {
+      "category": "dev",
+      "is_headline": false,
+      "title_zh": "報告：Claude Desktop 會為 Chrome 等安裝未記錄的瀏覽器外掛",
+      "title_en": "Report: Claude Desktop installs undocumented browser extensions for Chrome and others",
+      "lede_zh": "資安研究者與隱私博主指出，Anthropic 的 Claude Desktop 會在 Chrome 等瀏覽器上安裝未記錄的擴充外掛，可能帶來資料外洩或隱私風險。現有討論聚焦於用戶同意、外掛行為可見性與企業治理。",
+      "lede_en": "Security researchers and privacy commentators reported that Anthropic's Claude Desktop appears to install undocumented browser extensions on Chrome and other browsers, raising concerns about potential data exposure and user consent.",
+      "bullets_zh": [
+        "擴充可能在安裝或首次執行時加入，原始文件未充分說明用途與資料存取範圍。",
+        "隱私社群已示警，企業客戶應評估內部政策與端點管理對策。",
+        "Anthropic 與用戶端軟體供應方的透明度與更新機制成為爭論核心。"
+      ],
+      "bullets_en": [
+        "Extensions appear to be added at install/first run with limited public documentation about purpose or data access.",
+        "Privacy community has flagged the risk; enterprise customers should review internal policies and endpoint controls.",
+        "Transparency around Anthropic's client software and update mechanisms is now under scrutiny."
+      ],
+      "source": {
+        "name": "ThatPrivacyGuy",
+        "url": "https://www.thatprivacyguy.com/blog/anthropic-spyware/",
+        "published_at": "2026-04-20T04:24:09.006Z",
+        "reading_time_min": 3
+      },
+      "id": "2026-04-20-003"
+    },
+    {
+      "category": "dev",
+      "is_headline": false,
+      "title_zh": "Vercel 確認安全事件，駭客宣稱出售被盜資料",
+      "title_en": "Vercel confirms breach as hackers claim to be selling stolen data",
+      "lede_zh": "雲端前端部署平台 Vercel 發布安全事件公告並確認遭到入侵，威脅者聲稱將出清竊得的資料。受影響範圍與細節仍在調查中，開發者需檢查部署憑證與第三方整合。",
+      "lede_en": "Vercel confirmed a security incident after attackers claimed to be selling stolen data. The scope and details remain under investigation; developers should audit deployment credentials and third‑party integrations.",
+      "bullets_zh": [
+        "官方已發布事件公告並提供受影響指引，使用者需重置憑證並檢查部署日誌。",
+        "攻擊可能影響使用 Vercel 作為 CI/CD 與托管的平台用戶與第三方密鑰。",
+        "建議團隊啟動風險隔離、憑證輪替與全面資安檢查。"
+      ],
+      "bullets_en": [
+        "Vercel published an incident bulletin with mitigation guidance; users should rotate credentials and review deployment logs.",
+        "The breach may affect customers using Vercel for CI/CD, hosting and third‑party secrets.",
+        "Teams are advised to isolate risk, rotate keys, and perform comprehensive security audits."
+      ],
+      "source": {
+        "name": "BleepingComputer / Vercel KB",
+        "url": "https://www.bleepingcomputer.com/news/security/vercel-confirms-breach-as-hackers-claim-to-be-selling-stolen-data/",
+        "published_at": "2026-04-20T04:24:09.006Z",
+        "reading_time_min": 3
+      },
+      "id": "2026-04-20-004"
+    },
+    {
+      "category": "world",
+      "is_headline": false,
+      "title_zh": "Blue Origin 首次重複使用 New Glenn 助推器，但上級段失效導致衛星入錯軌道",
+      "title_en": "Blue Origin reuses New Glenn booster successfully but mission marred by upper‑stage failure and wrong orbit",
+      "lede_zh": "Blue Origin 第三次發射 New Glenn，實現首度重複使用的軌道級助推器，但任務後段出現問題，上級段失效並令其中一客戶衛星進入錯誤軌道，給公司的可靠性紀錄帶來壓力。",
+      "lede_en": "On its third launch, Blue Origin achieved the first reuse of the New Glenn orbital‑class booster, but an upper‑stage anomaly resulted in a customer satellite being placed into the wrong orbit, raising concerns about vehicle reliability.",
+      "bullets_zh": [
+        "助推器成功回收與重飛，顯示可回收技術在大型運載器上進展。",
+        "上級段出現異常，部分有效載荷未達預期軌道，客戶與合作方正評估影響。",
+        "事件可能影響 Blue Origin 在商業發射與 NASA Artemis 計畫中的信譽。"
+      ],
+      "bullets_en": [
+        "Booster reuse was successful, demonstrating progress in reusability for large launchers.",
+        "Upper‑stage anomaly left a customer payload in the wrong orbit; customers are assessing impacts.",
+        "The incident could affect Blue Origin’s commercial prospects and role in NASA Artemis programs."
+      ],
+      "source": {
+        "name": "Ars Technica",
+        "url": "https://arstechnica.com/space/2026/04/errant-upper-stage-spoils-blue-origins-success-in-reusing-new-glenn-booster/",
+        "published_at": "2026-04-20T04:24:09.006Z",
+        "reading_time_min": 3
+      },
+      "id": "2026-04-20-005"
+    },
+    {
+      "category": "tech-product",
+      "is_headline": false,
+      "title_zh": "全球記憶體短缺恐延續至 2027 年，HBM 產能轉向擠壓通用 DRAM 供應",
+      "title_en": "Global RAM shortage could last until 2027 as HBM production shifts squeeze commodity DRAM supply",
+      "lede_zh": "分析指出，在大型 AI 與高頻寬記憶體（HBM）需求擴張下，三大記憶體廠商優先轉產 HBM，導致 PC 與手機用通用 DRAM 供給緊縮與價格飆升，市場供需缺口可能持續到 2027 年左右。",
+      "lede_en": "Analysts warn that high demand for HBM driven by AI workloads has pushed leading memory makers to reallocate capacity, causing commodity DRAM shortages for PCs and phones and keeping prices elevated possibly through 2027.",
+      "bullets_zh": [
+        "三星、SK hynix、Micron 將大幅投資 HBM，短期內壓縮通用 DRAM 產能。",
+        "價格在 2026 年第 1 季大幅上漲，市場供應預估長期僅達需求的六成左右。",
+        "新廠量產時程分散，供給回補要等到 2027 年後才逐步顯現。"
+      ],
+      "bullets_en": [
+        "Samsung, SK hynix and Micron are prioritizing HBM capacity, squeezing commodity DRAM supply in the near term.",
+        "Prices surged in Q1 2026; supply may only meet ~60% of demand until new fabs come online.",
+        "Fresh capacity from new fabs will phase in through 2027–2028, delaying full relief."
+      ],
+      "source": {
+        "name": "iThome (citing Nikkei / Counterpoint)",
+        "url": "https://www.ithome.com.tw/news/175166",
+        "published_at": "2026-04-20T04:24:09.006Z",
+        "reading_time_min": 3
+      },
+      "id": "2026-04-20-006"
+    },
+    {
+      "category": "vc-business",
+      "is_headline": false,
+      "title_zh": "微軟收購財務 AI 新創 Fintool，整合進 Microsoft 365 強化財務代理功能",
+      "title_en": "Microsoft acquires finance AI startup Fintool to beef up Microsoft 365 agents",
+      "lede_zh": "微軟收購小型財務 AI 公司 Fintool，計畫把其自動化財務研究與報告能力整合到 Microsoft 365，強化 Excel、Word 與 PowerPoint 上的財務代理與自動化分析功能，收購細節未公開金額。",
+      "lede_en": "Microsoft bought finance AI startup Fintool to integrate its automated financial research and reporting capabilities into Microsoft 365, enhancing Excel, Word and PowerPoint with finance‑focused agent functionality; terms were not disclosed.",
+      "bullets_zh": [
+        "Fintool 擅長讀取財報與申報文件並自動生成研究報告，已有多家機構用戶。",
+        "將協助 Microsoft 365 在財務領域提供專業化 AI 助手，減少生成式 AI 幻覺風險。",
+        "此為大型科技公司透過併購補齊領域專長的最新例子。"
+      ],
+      "bullets_en": [
+        "Fintool automates financial document ingestion and research report generation and has institutional users.",
+        "Integration aims to provide specialized finance agents within Microsoft 365 to reduce hallucination risks.",
+        "Represents a broader trend of major tech firms acquiring niche AI startups to build vertical capabilities."
+      ],
+      "source": {
+        "name": "iThome",
+        "url": "https://www.ithome.com.tw/news/175164",
+        "published_at": "2026-04-20T04:24:09.006Z",
+        "reading_time_min": 3
+      },
+      "id": "2026-04-20-007"
+    },
+    {
+      "category": "world",
+      "is_headline": false,
+      "title_zh": "惡意軟體 ZionSiphon 鎖定以色列水處理與海水淡化系統",
+      "title_en": "ZionSiphon malware targets Israeli water treatment and desalination systems",
+      "lede_zh": "資安公司發現名為 ZionSiphon 的惡意軟體，專門針對以色列的水利與海水淡化基礎設施，包含掃描 ICS 裝置、利用 USB 傳播與嘗試操控 Modbus 等工業通訊協定，目標明確且可能干擾氯氣與壓力控制。",
+      "lede_en": "Security firm Darktrace disclosed ZionSiphon malware aimed at Israeli water and desalination infrastructure. It scans ICS devices, spreads via USB, and attempts to manipulate industrial protocols like Modbus to disrupt chlorine and pressure controls.",
+      "bullets_zh": [
+        "攻擊程式包含權限提升、USB 傳播與針對 ICS 通訊協定的操控模組。",
+        "攻擊者顯示出明確的地理與目標聚焦，並在惡意程式中嵌入意識形態訊息。",
+        "雖然樣本仍有缺陷，但整體架構顯示攻擊者在打造能長期滲透 OT 網路的工具。"
+      ],
+      "bullets_en": [
+        "Malware includes privilege escalation, USB propagation and modules targeting ICS communication protocols.",
+        "Indicators point to a geographically and operationally focused campaign with ideological markers in code.",
+        "Samples show flaws but the architecture suggests intent to persist in OT networks and manipulate process controls."
+      ],
+      "source": {
+        "name": "iThome / Darktrace disclosure",
+        "url": "https://www.ithome.com.tw/news/175161",
+        "published_at": "2026-04-20T04:24:09.006Z",
+        "reading_time_min": 3
+      },
+      "id": "2026-04-20-008"
+    },
+    {
+      "category": "dev",
+      "is_headline": false,
+      "title_zh": "連續三個 Microsoft Defender 零時差漏洞被公開且已有利用跡象",
+      "title_en": "Three Microsoft Defender zero‑day vulnerabilities disclosed sequentially and exploitation observed",
+      "lede_zh": "安全研究員先後揭露名為 BlueHammer、RedSun 與 UnDefend 的三個 Microsoft Defender 零時差漏洞，威脅情報顯示部分漏洞已被攻擊者利用，組織應立即檢查檢測紀錄並採取隔離與緩解措施。",
+      "lede_en": "A security researcher disclosed three Microsoft Defender zero‑day flaws—BlueHammer, RedSun and UnDefend—and threat intelligence shows some are already exploited. Organizations should audit detections and apply containment and mitigation.",
+      "bullets_zh": [
+        "部分漏洞為 DoS 類型，但若組合使用可升級為能繞過 Defender 並執行任意程式。",
+        "Huntress 與其他廠商已觀測到真實世界利用與後續偵察活動。",
+        "建議立即更新、啟用補救指引並監控異常命令與憑證活動。"
+      ],
+      "bullets_en": [
+        "Some flaws are DoS‑oriented, but chained they can allow bypassing Defender to run arbitrary code.",
+        "Huntress and others have observed real‑world exploitation followed by reconnaissance activity.",
+        "Recommended actions: apply mitigations, monitor for anomalous commands and rotate credentials."
+      ],
+      "source": {
+        "name": "iThome / Huntress reporting",
+        "url": "https://www.ithome.com.tw/news/175159",
+        "published_at": "2026-04-20T04:24:09.006Z",
+        "reading_time_min": 3
+      },
+      "id": "2026-04-20-009"
+    },
+    {
+      "category": "ai-ml",
+      "is_headline": false,
+      "title_zh": "OpenAI 的存在性挑戰：內部治理、文化與未來策略成焦點",
+      "title_en": "OpenAI’s existential questions: culture, governance and its future path",
+      "lede_zh": "TechCrunch 評析 OpenAI 正面臨多重「存在性」問題，涵蓋公司治理、產品方向、商業化壓力與道德責任，觀察者關注其如何在快速商業化與長遠安全研究間取得平衡。",
+      "lede_en": "TechCrunch examines OpenAI’s existential challenges around governance, culture, commercialization pressures and ethical responsibilities, questioning how it will balance rapid productization with long‑term safety research.",
+      "bullets_zh": [
+        "商業化壓力與研究公開之間的張力可能影響技術路線與公開透明度。",
+        "領導與文化議題被視為影響決策與外界信任的重要變數。",
+        "未來策略將牽動整個 AI 生態的監管、競爭與合作格局。"
+      ],
+      "bullets_en": [
+        "Tension between commercialization and open safety research may shape technical and disclosure choices.",
+        "Leadership and culture issues are highlighted as key factors affecting trust and decision‑making.",
+        "OpenAI’s path forward will influence regulation, competition and cooperation across the AI ecosystem."
+      ],
+      "source": {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/04/19/openais-existential-questions/",
+        "published_at": "2026-04-20T04:24:09.006Z",
+        "reading_time_min": 3
+      },
+      "id": "2026-04-20-010"
+    },
+    {
+      "category": "science",
+      "is_headline": false,
+      "title_zh": "融合能投資熱潮出現裂痕：技術風險與資金循環受檢驗",
+      "title_en": "Cracks are forming in the fusion‑funding boom as technical and financial realities collide",
+      "lede_zh": "TechCrunch 報導指出，隨著融合（fusion）初創公司從風險資本募資走向示範運轉，部分技術障礙、里程碑延遲與資金效率問題開始浮現，投資者與創業團隊面臨更嚴格的驗證壓力。",
+      "lede_en": "TechCrunch reports that as fusion startups move from fundraising to demonstration, technical hurdles, milestone delays and capital efficiency issues are surfacing, putting investor scrutiny and operational pressure on companies in the space.",
+      "bullets_zh": [
+        "早期資本已驅動快速擴張，但關鍵技術驗證仍需更長時間與更高成本。",
+        "投資者開始要求更明確的技術里程碑與資本使用透明度。",
+        "可能出現整合潮或更務實的研發時程調整。"
+      ],
+      "bullets_en": [
+        "Early capital spurred rapid expansion, but critical tech validation will take more time and money than anticipated.",
+        "Investors are demanding clearer technical milestones and capital‑use transparency.",
+        "Likely outcomes include consolidation or recalibrated, more pragmatic R&D timelines."
+      ],
+      "source": {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/04/19/cracks-are-starting-to-form-on-fusion-energys-funding-boom/",
+        "published_at": "2026-04-20T04:24:09.006Z",
+        "reading_time_min": 3
+      },
+      "id": "2026-04-20-011"
+    },
+    {
+      "category": "vc-business",
+      "is_headline": false,
+      "title_zh": "AI 成長可能具大幅去通膨效應，北方信託預期衝擊深遠",
+      "title_en": "AI boom poised to be ‘massively disinflationary’, Northern Trust says",
+      "lede_zh": "金融評論指出 AI 大規模應用可能帶來勞動生產力飛升與成本下降，長期對通膨構成下行壓力；但短期轉型成本、資本支出與地緣政治風險仍會令影響路徑複雜化。",
+      "lede_en": "Financial commentary suggests widespread AI adoption could be 'massively disinflationary' by boosting productivity and lowering costs, though short‑term transition costs, capex and geopolitical risks will complicate the path.",
+      "bullets_zh": [
+        "AI 可透過自動化與效率提升壓低多項生產與服務成本。",
+        "短期看來資本支出與技能再培訓成本可能抵銷部分利好。",
+        "政策與監管反應將決定實際分配效果與社會經濟影響。"
+      ],
+      "bullets_en": [
+        "AI-driven automation and efficiency gains could reduce production and service costs.",
+        "Short‑term capex and retraining costs may offset some benefits.",
+        "Policy and regulatory responses will shape distributional and macroeconomic outcomes."
+      ],
+      "source": {
+        "name": "Financial Times",
+        "url": "https://www.ft.com/content/7ec229f4-200e-4f34-ba6d-0642397d03e3",
+        "published_at": "2026-04-20T04:24:09.006Z",
+        "reading_time_min": 3
+      },
+      "id": "2026-04-20-012"
+    },
+    {
+      "category": "dev",
+      "is_headline": false,
+      "title_zh": "Notion 洩露公開頁面編輯者電子郵件的弱點被指出",
+      "title_en": "Notion leak exposes email addresses of all editors of any public page",
+      "lede_zh": "研究與安全社群發現 Notion 的某些公開頁面設置會洩露所有編輯者的電子郵件地址，該問題在隱私與企業資料治理上引發關切，建議使用者檢查公開頁面權限與編輯者列單。",
+      "lede_en": "Researchers reported that certain Notion public page settings can expose email addresses of all page editors, raising privacy and corporate governance concerns; users are advised to review public page permissions and editor lists.",
+      "bullets_zh": [
+        "公開頁面若未謹慎設定，可能無意間暴露編輯者聯絡資訊。",
+        "受影響的場景包括公司文件、公開協作專案與外部分享頁面。",
+        "短期對策：檢查頁面分享設定並盡量以角色或別名代替私人郵件。"
+      ],
+      "bullets_en": [
+        "Public pages, if misconfigured, can unintentionally reveal editors' contact emails.",
+        "Impacted scenarios include corporate docs, public collaboration projects and external shares.",
+        "Mitigations: audit share settings and prefer role aliases over personal emails where possible."
+      ],
+      "source": {
+        "name": "Twitter / OSINT report",
+        "url": "https://twitter.com/weezerOSINT/status/2045849358462222720",
+        "published_at": "2026-04-20T04:24:09.006Z",
+        "reading_time_min": 3
+      },
+      "id": "2026-04-20-013"
+    }
+  ],
   "meta": {
-    "generated_at": "2026-04-20T04:10:28.673Z",
-    "total_articles": 0,
+    "generated_at": "2026-04-20T04:24:09.006Z",
+    "total_articles": 13,
     "sources_used": {
-      "rss": 0,
+      "rss": 13,
       "firecrawl": 0
     },
     "schema_version": "1.0"
