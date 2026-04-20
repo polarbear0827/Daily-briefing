@@ -53,24 +53,24 @@
     {
       "category": "ai-ml",
       "is_headline": true,
-      "title_zh": "OpenAI 推出生命科學模型 GPT‑Rosalind，加速藥物研發與實驗設計",
-      "title_en": "OpenAI launches GPT‑Rosalind for life sciences to accelerate drug discovery",
-      "lede_zh": "OpenAI 發表專為生命科學與藥物研發打造的 GPT‑Rosalind，聲稱在多項生物、化學與設計類基準上超越既有大模型，並已提供給藥廠與研究機構進行研究預覽。公司強調模型可支援文獻整理、實驗設計與序列預測，旨在縮短發現初期時間並提高推理精確度。",
-      "lede_en": "OpenAI unveiled GPT‑Rosalind, a life‑science tuned model intended to speed drug discovery and translational research. The model reportedly outperforms prior GPT variants and rival systems on bio/chem benchmarks and is being offered to pharma and research partners as a research preview.",
+      "title_zh": "OpenAI發表生命科學模型 GPT-Rosalind，瞄準藥物研發與實驗推理",
+      "title_en": "OpenAI Unveils GPT-Rosalind for Drug Discovery and Life Sciences Research",
+      "lede_zh": "OpenAI推出面向生命科學的專用語言模型 GPT-Rosalind，主打化學、生物學、蛋白質工程與實驗設計等高門檻研究任務。若其在實際研發流程中維持評測優勢，將有望把生成式 AI 從通用助理推進到產業專用研究平台。",
+      "lede_en": "OpenAI has introduced GPT-Rosalind, a domain-specific language model tailored for chemistry, biology, protein engineering, and experimental design. If its benchmark gains translate into production workflows, the release could move generative AI beyond general assistants and into specialized R&D platforms.",
       "bullets_zh": [
-        "針對化學、蛋白質工程與基因任務調校，對多項生物資訊基準表現優於 GPT‑5 系列。",
-        "已與 Amgen、Moderna、Thermo Fisher 等機構進行合作與內部評估，提供研究預覽與工具整合。",
-        "OpenAI 提供 Codex 外掛與 API 存取，強調與實驗資料庫與科學工具互通以支援多步驟研究流程。"
+        "模型鎖定藥物發現、轉譯醫學與生命科學研究流程",
+        "OpenAI稱其在多項科學推理與實驗設計評測中優於GPT-5系列與部分競品",
+        "已透過ChatGPT、Codex與API提供研究預覽，並附生命科學工具外掛"
       ],
       "bullets_en": [
-        "Tuned for chemistry, protein engineering and genomic tasks; reportedly beats GPT‑5 family on several bioinformatics benchmarks.",
-        "Offered as a research preview to pharma and research partners including Amgen and Moderna, with tool integrations.",
-        "Includes Codex plugins and API access to connect models to scientific tools and databases for multi‑step research workflows."
+        "The model targets drug discovery, translational medicine, and broader life sciences workflows",
+        "OpenAI says it outperforms GPT-5 variants and some rivals on scientific reasoning and experiment-design benchmarks",
+        "It is available in research preview via ChatGPT, Codex, and the API, with add-ons for scientific tools"
       ],
       "source": {
         "name": "iThome",
         "url": "https://www.ithome.com.tw/news/175158",
-        "published_at": "2026-04-20T04:24:09.006Z",
+        "published_at": "2026-04-20T04:35:20.784Z",
         "reading_time_min": 3
       },
       "id": "2026-04-20-001"
@@ -78,309 +78,484 @@
     {
       "category": "ai-ml",
       "is_headline": false,
-      "title_zh": "Anthropic 推出 Claude Design，讓 AI 幫你做簡報、網站與原型設計",
-      "title_en": "Anthropic unveils Claude Design for slide, web and marketing design",
-      "lede_zh": "Anthropic 發表 Claude Design，以 Claude Opus 4.7 為引擎，目標是幫助無設計背景的用戶快速生成產品原型、簡報與視覺稿，並能讀取公司 codebase 與設計檔自動套用設計系統。",
-      "lede_en": "Anthropic introduced Claude Design, powered by Claude Opus 4.7, to generate slides, web prototypes and marketing designs for non‑designers, with the ability to ingest a company's codebase and design assets to maintain brand consistency.",
+      "title_zh": "Anthropic推出 Claude Design，將生成式 AI 延伸至簡報、網頁與原型設計",
+      "title_en": "Anthropic Launches Claude Design for Slides, Web Pages, and Prototyping",
+      "lede_zh": "Anthropic公布研究預覽版 Claude Design，試圖把 Claude 從文字與程式生成，進一步延伸到視覺設計與產品原型工作流。這項產品若能順利串接企業設計系統與既有工具，將有機會成為知識工作者與產品團隊的新型 AI 入口。",
+      "lede_en": "Anthropic has announced Claude Design in research preview, extending Claude from text and code generation into visual design and product prototyping workflows. If it integrates smoothly with enterprise design systems and third-party tools, it could become a new AI entry point for product and knowledge teams.",
       "bullets_zh": [
-        "可生成互動原型、簡報與一頁式行銷頁，並支援匯出 PDF、PPT、HTML 或匯入 Canva。",
-        "會讀取用戶 codebase 與設計檔以建立公司專屬設計系統並在專案間一致套用。",
-        "目前以研究預覽形式向付費與企業客戶逐步開放，並計畫整合更多第三方工具。"
+        "可生成簡報、一頁式文件、登入頁、社群素材與互動式原型",
+        "支援讀取企業 codebase、設計檔與品牌元素，建立一致的設計系統",
+        "鎖定Claude Pro、Max、Team與Enterprise訂閱用戶逐步開放"
       ],
       "bullets_en": [
-        "Generates interactive prototypes, pitch decks and one‑pagers; supports export to PDF/PPT/HTML and import to Canva.",
-        "Ingests codebases and design files to auto‑build and apply a company‑specific design system across projects.",
-        "Rolling out as a research preview to paid and enterprise customers, with planned third‑party integrations."
+        "It can generate slides, one-pagers, landing pages, social assets, and interactive prototypes",
+        "The system can read codebases, design files, and brand elements to build a consistent design system",
+        "Anthropic is rolling it out to Claude Pro, Max, Team, and Enterprise subscribers"
       ],
       "source": {
         "name": "iThome",
         "url": "https://www.ithome.com.tw/news/175160",
-        "published_at": "2026-04-20T04:24:09.006Z",
+        "published_at": "2026-04-20T04:35:20.784Z",
         "reading_time_min": 3
       },
       "id": "2026-04-20-002"
     },
     {
-      "category": "dev",
+      "category": "tech-product",
       "is_headline": false,
-      "title_zh": "報告：Claude Desktop 會為 Chrome 等安裝未記錄的瀏覽器外掛",
-      "title_en": "Report: Claude Desktop installs undocumented browser extensions for Chrome and others",
-      "lede_zh": "資安研究者與隱私博主指出，Anthropic 的 Claude Desktop 會在 Chrome 等瀏覽器上安裝未記錄的擴充外掛，可能帶來資料外洩或隱私風險。現有討論聚焦於用戶同意、外掛行為可見性與企業治理。",
-      "lede_en": "Security researchers and privacy commentators reported that Anthropic's Claude Desktop appears to install undocumented browser extensions on Chrome and other browsers, raising concerns about potential data exposure and user consent.",
+      "title_zh": "微軟收購財務 AI 新創 Fintool，強化 Microsoft 365 代理人布局",
+      "title_en": "Microsoft Acquires Finance AI Startup Fintool to Bolster Microsoft 365 Agents",
+      "lede_zh": "微軟收購專攻財報分析與研究報告生成的 Fintool，進一步強化 Microsoft 365 在垂直領域 AI 代理人的落地能力。這筆交易顯示大型平台正加速吸納小型專業模型團隊，以補足通用模型在準確性與工作流深度上的缺口。",
+      "lede_en": "Microsoft has acquired Fintool, a startup focused on financial statement analysis and research generation, to strengthen vertical AI agent capabilities in Microsoft 365. The deal highlights how major platforms are buying specialized teams to close accuracy and workflow gaps left by general-purpose models.",
       "bullets_zh": [
-        "擴充可能在安裝或首次執行時加入，原始文件未充分說明用途與資料存取範圍。",
-        "隱私社群已示警，企業客戶應評估內部政策與端點管理對策。",
-        "Anthropic 與用戶端軟體供應方的透明度與更新機制成為爭論核心。"
+        "Fintool主打投資研究、財報分析與Office工作流整合",
+        "產品已可在背景執行模型建構、簡報製作與報告撰寫",
+        "反映企業AI競爭正從聊天介面轉向專業代理人"
       ],
       "bullets_en": [
-        "Extensions appear to be added at install/first run with limited public documentation about purpose or data access.",
-        "Privacy community has flagged the risk; enterprise customers should review internal policies and endpoint controls.",
-        "Transparency around Anthropic's client software and update mechanisms is now under scrutiny."
+        "Fintool focuses on investment research, financial analysis, and Office workflow integration",
+        "Its product can already run models, build slides, and draft reports in the background",
+        "The move shows enterprise AI competition shifting from chat interfaces to specialized agents"
       ],
       "source": {
-        "name": "ThatPrivacyGuy",
-        "url": "https://www.thatprivacyguy.com/blog/anthropic-spyware/",
-        "published_at": "2026-04-20T04:24:09.006Z",
+        "name": "iThome",
+        "url": "https://www.ithome.com.tw/news/175164",
+        "published_at": "2026-04-20T04:35:20.784Z",
         "reading_time_min": 3
       },
       "id": "2026-04-20-003"
     },
     {
-      "category": "dev",
+      "category": "vc-business",
       "is_headline": false,
-      "title_zh": "Vercel 確認安全事件，駭客宣稱出售被盜資料",
-      "title_en": "Vercel confirms breach as hackers claim to be selling stolen data",
-      "lede_zh": "雲端前端部署平台 Vercel 發布安全事件公告並確認遭到入侵，威脅者聲稱將出清竊得的資料。受影響範圍與細節仍在調查中，開發者需檢查部署憑證與第三方整合。",
-      "lede_en": "Vercel confirmed a security incident after attackers claimed to be selling stolen data. The scope and details remain under investigation; developers should audit deployment credentials and third‑party integrations.",
+      "title_zh": "世界模型熱度升高，楊立昆與李飛飛陣營募資總額逼近10億美元",
+      "title_en": "World Model Startups Backed by Yann LeCun and Fei-Fei Li Approach $1 Billion in Funding",
+      "lede_zh": "世界模型再度成為 AI 投資焦點，兩大學術與產業陣營相繼吸引大額資金。對工程團隊而言，這不僅是資本市場訊號，也意味著多模態環境理解、模擬與代理決策能力可能進入新一輪產品化周期。",
+      "lede_en": "World models are again becoming a major AI investment theme, with ventures tied to Yann LeCun and Fei-Fei Li drawing substantial funding. For engineering teams, the capital surge signals that multimodal environment understanding, simulation, and agent decision-making may be entering a new product cycle.",
       "bullets_zh": [
-        "官方已發布事件公告並提供受影響指引，使用者需重置憑證並檢查部署日誌。",
-        "攻擊可能影響使用 Vercel 作為 CI/CD 與托管的平台用戶與第三方密鑰。",
-        "建議團隊啟動風險隔離、憑證輪替與全面資安檢查。"
+        "世界模型被視為通往具環境理解能力AI的重要路線",
+        "資金流向顯示市場看好模擬、機器人與代理系統的中長期應用",
+        "後續關鍵將是從研究敘事走向可驗證商業成果"
       ],
       "bullets_en": [
-        "Vercel published an incident bulletin with mitigation guidance; users should rotate credentials and review deployment logs.",
-        "The breach may affect customers using Vercel for CI/CD, hosting and third‑party secrets.",
-        "Teams are advised to isolate risk, rotate keys, and perform comprehensive security audits."
+        "World models are seen as a key path toward AI systems with stronger environmental understanding",
+        "Funding momentum suggests investor confidence in simulation, robotics, and agentic systems",
+        "The next test will be whether the research vision can turn into measurable business outcomes"
       ],
       "source": {
-        "name": "BleepingComputer / Vercel KB",
-        "url": "https://www.bleepingcomputer.com/news/security/vercel-confirms-breach-as-hackers-claim-to-be-selling-stolen-data/",
-        "published_at": "2026-04-20T04:24:09.006Z",
+        "name": "TechNews",
+        "url": "https://technews.tw/2026/04/20/world-labs-ami-labs-world-models/",
+        "published_at": "2026-04-20T04:35:20.784Z",
         "reading_time_min": 3
       },
       "id": "2026-04-20-004"
     },
     {
-      "category": "world",
+      "category": "dev",
       "is_headline": false,
-      "title_zh": "Blue Origin 首次重複使用 New Glenn 助推器，但上級段失效導致衛星入錯軌道",
-      "title_en": "Blue Origin reuses New Glenn booster successfully but mission marred by upper‑stage failure and wrong orbit",
-      "lede_zh": "Blue Origin 第三次發射 New Glenn，實現首度重複使用的軌道級助推器，但任務後段出現問題，上級段失效並令其中一客戶衛星進入錯誤軌道，給公司的可靠性紀錄帶來壓力。",
-      "lede_en": "On its third launch, Blue Origin achieved the first reuse of the New Glenn orbital‑class booster, but an upper‑stage anomaly resulted in a customer satellite being placed into the wrong orbit, raising concerns about vehicle reliability.",
+      "title_zh": "Claude Token Counter新增模型比較，提供開發者更細緻的成本估算",
+      "title_en": "Claude Token Counter Adds Model Comparisons for Finer-Grained Cost Planning",
+      "lede_zh": "Simon Willison介紹 Claude Token Counter 新增模型比較功能，讓開發者可更直接評估不同 Claude 模型的 token 消耗差異。在代理式工作流與長上下文應用快速成長之際，成本觀測工具正成為模型選型的必要配備。",
+      "lede_en": "Simon Willison highlighted a new model comparison feature in Claude Token Counter, giving developers a more direct way to estimate token usage across Claude models. As agentic workflows and long-context applications expand, cost observability is becoming essential for model selection.",
       "bullets_zh": [
-        "助推器成功回收與重飛，顯示可回收技術在大型運載器上進展。",
-        "上級段出現異常，部分有效載荷未達預期軌道，客戶與合作方正評估影響。",
-        "事件可能影響 Blue Origin 在商業發射與 NASA Artemis 計畫中的信譽。"
+        "可比較不同Claude模型對同一輸入內容的token計算結果",
+        "有助於預估推論成本、上下文壓力與應用架構設計",
+        "適合建置多模型路由與企業級預算控管"
       ],
       "bullets_en": [
-        "Booster reuse was successful, demonstrating progress in reusability for large launchers.",
-        "Upper‑stage anomaly left a customer payload in the wrong orbit; customers are assessing impacts.",
-        "The incident could affect Blue Origin’s commercial prospects and role in NASA Artemis programs."
+        "The tool compares how different Claude models count tokens for the same input",
+        "It helps estimate inference costs, context pressure, and application design trade-offs",
+        "The feature is useful for multi-model routing and enterprise budget controls"
       ],
       "source": {
-        "name": "Ars Technica",
-        "url": "https://arstechnica.com/space/2026/04/errant-upper-stage-spoils-blue-origins-success-in-reusing-new-glenn-booster/",
-        "published_at": "2026-04-20T04:24:09.006Z",
+        "name": "Simon Willison's Weblog",
+        "url": "https://simonwillison.net/2026/Apr/20/claude-token-counts/#atom-everything",
+        "published_at": "2026-04-20T04:35:20.784Z",
         "reading_time_min": 3
       },
       "id": "2026-04-20-005"
     },
     {
-      "category": "tech-product",
+      "category": "dev",
       "is_headline": false,
-      "title_zh": "全球記憶體短缺恐延續至 2027 年，HBM 產能轉向擠壓通用 DRAM 供應",
-      "title_en": "Global RAM shortage could last until 2027 as HBM production shifts squeeze commodity DRAM supply",
-      "lede_zh": "分析指出，在大型 AI 與高頻寬記憶體（HBM）需求擴張下，三大記憶體廠商優先轉產 HBM，導致 PC 與手機用通用 DRAM 供給緊縮與價格飆升，市場供需缺口可能持續到 2027 年左右。",
-      "lede_en": "Analysts warn that high demand for HBM driven by AI workloads has pushed leading memory makers to reallocate capacity, causing commodity DRAM shortages for PCs and phones and keeping prices elevated possibly through 2027.",
+      "title_zh": "Claude Opus 4.6與4.7系統提示詞差異曝光，凸顯模型行為治理的重要性",
+      "title_en": "Changes Between Claude Opus 4.6 and 4.7 System Prompts Highlight Model Governance",
+      "lede_zh": "系統提示詞往往是大型模型行為邊界的隱形控制層。Simon Willison整理 Claude Opus 4.6 與 4.7 的系統提示變動，對企業導入者而言，這類差異有助理解模型升級後的風險、能力與輸出風格變化。",
+      "lede_en": "System prompts often serve as the hidden control layer for large model behavior. Simon Willison's review of changes between Claude Opus 4.6 and 4.7 offers enterprise users a clearer view of how upgrades can alter risk posture, capabilities, and output style.",
       "bullets_zh": [
-        "三星、SK hynix、Micron 將大幅投資 HBM，短期內壓縮通用 DRAM 產能。",
-        "價格在 2026 年第 1 季大幅上漲，市場供應預估長期僅達需求的六成左右。",
-        "新廠量產時程分散，供給回補要等到 2027 年後才逐步顯現。"
+        "系統提示詞變更可能直接影響模型回應策略與安全邊界",
+        "企業在升級模型版本時需納入行為回歸測試",
+        "也反映封閉模型產品在透明度上的持續爭議"
       ],
       "bullets_en": [
-        "Samsung, SK hynix and Micron are prioritizing HBM capacity, squeezing commodity DRAM supply in the near term.",
-        "Prices surged in Q1 2026; supply may only meet ~60% of demand until new fabs come online.",
-        "Fresh capacity from new fabs will phase in through 2027–2028, delaying full relief."
+        "System prompt changes can directly affect response strategy and safety boundaries",
+        "Enterprises need behavioral regression testing when upgrading model versions",
+        "The analysis also underscores ongoing transparency concerns around closed models"
       ],
       "source": {
-        "name": "iThome (citing Nikkei / Counterpoint)",
-        "url": "https://www.ithome.com.tw/news/175166",
-        "published_at": "2026-04-20T04:24:09.006Z",
+        "name": "Simon Willison's Weblog",
+        "url": "https://simonwillison.net/2026/Apr/18/opus-system-prompt/",
+        "published_at": "2026-04-20T04:35:20.784Z",
         "reading_time_min": 3
       },
       "id": "2026-04-20-006"
     },
     {
-      "category": "vc-business",
+      "category": "tech-product",
       "is_headline": false,
-      "title_zh": "微軟收購財務 AI 新創 Fintool，整合進 Microsoft 365 強化財務代理功能",
-      "title_en": "Microsoft acquires finance AI startup Fintool to beef up Microsoft 365 agents",
-      "lede_zh": "微軟收購小型財務 AI 公司 Fintool，計畫把其自動化財務研究與報告能力整合到 Microsoft 365，強化 Excel、Word 與 PowerPoint 上的財務代理與自動化分析功能，收購細節未公開金額。",
-      "lede_en": "Microsoft bought finance AI startup Fintool to integrate its automated financial research and reporting capabilities into Microsoft 365, enhancing Excel, Word and PowerPoint with finance‑focused agent functionality; terms were not disclosed.",
+      "title_zh": "個人 AI 走向無頭化架構，工具鏈與介面正加速解耦",
+      "title_en": "Personal AI Is Moving Toward Headless Architectures as Tools and Interfaces Decouple",
+      "lede_zh": "Simon Willison提出「Headless everything for personal AI」觀察，指出個人 AI 工具正從單一聊天介面轉向可被多端調用的後端能力。對開發者與產品團隊而言，這意味未來競爭重點可能不再只是模型本身，而是可組裝、可重用、可被代理調度的服務層。",
+      "lede_en": "Simon Willison argues that personal AI tools are shifting from single chat interfaces toward reusable backend capabilities that can be invoked across surfaces. For developers and product teams, that suggests the next competitive layer may be service composition and agent orchestration rather than the model alone.",
       "bullets_zh": [
-        "Fintool 擅長讀取財報與申報文件並自動生成研究報告，已有多家機構用戶。",
-        "將協助 Microsoft 365 在財務領域提供專業化 AI 助手，減少生成式 AI 幻覺風險。",
-        "此為大型科技公司透過併購補齊領域專長的最新例子。"
+        "AI能力與前端介面分離，有利多端整合與自動化調度",
+        "更貼近Agent化應用、CLI工具與工作流自動化需求",
+        "也可能改變個人知識管理與本地部署產品設計"
       ],
       "bullets_en": [
-        "Fintool automates financial document ingestion and research report generation and has institutional users.",
-        "Integration aims to provide specialized finance agents within Microsoft 365 to reduce hallucination risks.",
-        "Represents a broader trend of major tech firms acquiring niche AI startups to build vertical capabilities."
+        "Separating AI capabilities from front-end interfaces enables cross-surface integration and automation",
+        "The pattern aligns with agentic applications, CLI tools, and workflow orchestration",
+        "It may also reshape personal knowledge tools and local deployment products"
       ],
       "source": {
-        "name": "iThome",
-        "url": "https://www.ithome.com.tw/news/175164",
-        "published_at": "2026-04-20T04:24:09.006Z",
+        "name": "Simon Willison's Weblog",
+        "url": "https://simonwillison.net/2026/Apr/19/headless-everything/#atom-everything",
+        "published_at": "2026-04-20T04:35:20.784Z",
         "reading_time_min": 3
       },
       "id": "2026-04-20-007"
     },
     {
-      "category": "world",
+      "category": "vc-business",
       "is_headline": false,
-      "title_zh": "惡意軟體 ZionSiphon 鎖定以色列水處理與海水淡化系統",
-      "title_en": "ZionSiphon malware targets Israeli water treatment and desalination systems",
-      "lede_zh": "資安公司發現名為 ZionSiphon 的惡意軟體，專門針對以色列的水利與海水淡化基礎設施，包含掃描 ICS 裝置、利用 USB 傳播與嘗試操控 Modbus 等工業通訊協定，目標明確且可能干擾氯氣與壓力控制。",
-      "lede_en": "Security firm Darktrace disclosed ZionSiphon malware aimed at Israeli water and desalination infrastructure. It scans ICS devices, spreads via USB, and attempts to manipulate industrial protocols like Modbus to disrupt chlorine and pressure controls.",
+      "title_zh": "主動式代理 AI 成本壓力浮現，Token 消耗可達傳統互動數十倍",
+      "title_en": "Agentic AI Faces a Cost Reckoning as Token Use Soars Far Beyond Traditional Chats",
+      "lede_zh": "隨著主動式代理 AI 興起，業者正面臨一個更務實的問題：模型越自主，推論成本也往往越高。報導指出，代理式工作流的 token 消耗可能是傳統問答介面的數十倍，將直接影響 SaaS 定價、單位經濟與部署策略。",
+      "lede_en": "As agentic AI gains momentum, companies are confronting a more practical issue: greater autonomy often comes with much higher inference costs. Reports suggest token usage in agentic workflows can run dozens of times above traditional chat interactions, with direct consequences for SaaS pricing and unit economics.",
       "bullets_zh": [
-        "攻擊程式包含權限提升、USB 傳播與針對 ICS 通訊協定的操控模組。",
-        "攻擊者顯示出明確的地理與目標聚焦，並在惡意程式中嵌入意識形態訊息。",
-        "雖然樣本仍有缺陷，但整體架構顯示攻擊者在打造能長期滲透 OT 網路的工具。"
+        "Agent執行規劃、工具呼叫與反覆推理會顯著放大token成本",
+        "成本結構將影響新創公司的毛利與商業模式可行性",
+        "企業導入需更重視模型路由、快取與任務分級"
       ],
       "bullets_en": [
-        "Malware includes privilege escalation, USB propagation and modules targeting ICS communication protocols.",
-        "Indicators point to a geographically and operationally focused campaign with ideological markers in code.",
-        "Samples show flaws but the architecture suggests intent to persist in OT networks and manipulate process controls."
+        "Planning, tool use, and iterative reasoning can sharply increase token consumption in agents",
+        "The cost profile could pressure startup margins and business model viability",
+        "Enterprises will need stronger model routing, caching, and task-tiering strategies"
       ],
       "source": {
-        "name": "iThome / Darktrace disclosure",
-        "url": "https://www.ithome.com.tw/news/175161",
-        "published_at": "2026-04-20T04:24:09.006Z",
+        "name": "TechNews",
+        "url": "https://finance.technews.tw/2026/04/20/cost-challenges-weigh-on-ai-startups/",
+        "published_at": "2026-04-20T04:35:20.784Z",
         "reading_time_min": 3
       },
       "id": "2026-04-20-008"
     },
     {
-      "category": "dev",
+      "category": "tech-product",
       "is_headline": false,
-      "title_zh": "連續三個 Microsoft Defender 零時差漏洞被公開且已有利用跡象",
-      "title_en": "Three Microsoft Defender zero‑day vulnerabilities disclosed sequentially and exploitation observed",
-      "lede_zh": "安全研究員先後揭露名為 BlueHammer、RedSun 與 UnDefend 的三個 Microsoft Defender 零時差漏洞，威脅情報顯示部分漏洞已被攻擊者利用，組織應立即檢查檢測紀錄並採取隔離與緩解措施。",
-      "lede_en": "A security researcher disclosed three Microsoft Defender zero‑day flaws—BlueHammer, RedSun and UnDefend—and threat intelligence shows some are already exploited. Organizations should audit detections and apply containment and mitigation.",
+      "title_zh": "軟銀獨賣 Natural AI Phone，手機入口開始押注全能代理人",
+      "title_en": "SoftBank Bets on Full-Stack Agents With Exclusive Natural AI Phone Launch",
+      "lede_zh": "Natural AI Phone以「一鍵啟動全能 AI 代理」為賣點，反映智慧型手機產業正重新定義下一代使用者介面。若代理式操作能穿透 App 邊界，將對行動平台、生態治理與開發者分潤帶來深遠影響。",
+      "lede_en": "Natural AI Phone is being marketed around one-tap access to a general-purpose AI agent, reflecting a broader effort to redefine the smartphone interface. If agent-driven actions can break through app silos, the shift could have major implications for mobile platforms, ecosystem control, and developer economics.",
       "bullets_zh": [
-        "部分漏洞為 DoS 類型，但若組合使用可升級為能繞過 Defender 並執行任意程式。",
-        "Huntress 與其他廠商已觀測到真實世界利用與後續偵察活動。",
-        "建議立即更新、啟用補救指引並監控異常命令與憑證活動。"
+        "核心訴求是以AI代理取代傳統App導向操作流程",
+        "代表終端裝置廠商開始把Agent當成作業系統層級能力",
+        "後續關鍵在權限治理、跨App執行與隱私保護"
       ],
       "bullets_en": [
-        "Some flaws are DoS‑oriented, but chained they can allow bypassing Defender to run arbitrary code.",
-        "Huntress and others have observed real‑world exploitation followed by reconnaissance activity.",
-        "Recommended actions: apply mitigations, monitor for anomalous commands and rotate credentials."
+        "The product aims to replace app-centric interactions with agent-driven workflows",
+        "It signals that device vendors are treating agents as an operating system-level capability",
+        "The next challenges will center on permissions, cross-app execution, and privacy"
       ],
       "source": {
-        "name": "iThome / Huntress reporting",
-        "url": "https://www.ithome.com.tw/news/175159",
-        "published_at": "2026-04-20T04:24:09.006Z",
+        "name": "TechNews",
+        "url": "https://technews.tw/2026/04/20/softbank-brain-technologies-natural-ai-phone/",
+        "published_at": "2026-04-20T04:35:20.784Z",
         "reading_time_min": 3
       },
       "id": "2026-04-20-009"
     },
     {
-      "category": "ai-ml",
+      "category": "dev",
       "is_headline": false,
-      "title_zh": "OpenAI 的存在性挑戰：內部治理、文化與未來策略成焦點",
-      "title_en": "OpenAI’s existential questions: culture, governance and its future path",
-      "lede_zh": "TechCrunch 評析 OpenAI 正面臨多重「存在性」問題，涵蓋公司治理、產品方向、商業化壓力與道德責任，觀察者關注其如何在快速商業化與長遠安全研究間取得平衡。",
-      "lede_en": "TechCrunch examines OpenAI’s existential challenges around governance, culture, commercialization pressures and ethical responsibilities, questioning how it will balance rapid productization with long‑term safety research.",
+      "title_zh": "Google Sheets 可直接以 SQL 連接 Datasette，資料查詢工作流更貼近分析現場",
+      "title_en": "Google Sheets Can Now Query Datasette With SQL Functions",
+      "lede_zh": "Simon Willison展示將 Datasette 與 Google Sheets 以 SQL 函數串接的方法，讓試算表可直接成為資料查詢與分享介面。這類輕量整合對資料工程與內部工具團隊特別有吸引力，因為它能在不增加複雜 BI 系統的情況下擴大資料可用性。",
+      "lede_en": "Simon Willison demonstrated a way to connect Datasette with Google Sheets using SQL functions, turning spreadsheets into a direct query and sharing surface. The lightweight integration is especially compelling for data and internal tools teams that want broader access without deploying a full BI stack.",
       "bullets_zh": [
-        "商業化壓力與研究公開之間的張力可能影響技術路線與公開透明度。",
-        "領導與文化議題被視為影響決策與外界信任的重要變數。",
-        "未來策略將牽動整個 AI 生態的監管、競爭與合作格局。"
+        "把試算表變成可直接查詢資料集的前端介面",
+        "降低非工程人員取用結構化資料的門檻",
+        "適合內部報表、自助分析與輕量資料產品場景"
       ],
       "bullets_en": [
-        "Tension between commercialization and open safety research may shape technical and disclosure choices.",
-        "Leadership and culture issues are highlighted as key factors affecting trust and decision‑making.",
-        "OpenAI’s path forward will influence regulation, competition and cooperation across the AI ecosystem."
+        "The approach turns spreadsheets into a front end for querying datasets",
+        "It lowers the barrier for non-engineers to access structured data",
+        "The workflow suits internal reporting, self-service analytics, and lightweight data products"
       ],
       "source": {
-        "name": "TechCrunch",
-        "url": "https://techcrunch.com/2026/04/19/openais-existential-questions/",
-        "published_at": "2026-04-20T04:24:09.006Z",
+        "name": "Simon Willison's Weblog",
+        "url": "https://simonwillison.net/2026/Apr/20/datasette-sql/#atom-everything",
+        "published_at": "2026-04-20T04:35:20.784Z",
         "reading_time_min": 3
       },
       "id": "2026-04-20-010"
     },
     {
-      "category": "science",
+      "category": "tech-product",
       "is_headline": false,
-      "title_zh": "融合能投資熱潮出現裂痕：技術風險與資金循環受檢驗",
-      "title_en": "Cracks are forming in the fusion‑funding boom as technical and financial realities collide",
-      "lede_zh": "TechCrunch 報導指出，隨著融合（fusion）初創公司從風險資本募資走向示範運轉，部分技術障礙、里程碑延遲與資金效率問題開始浮現，投資者與創業團隊面臨更嚴格的驗證壓力。",
-      "lede_en": "TechCrunch reports that as fusion startups move from fundraising to demonstration, technical hurdles, milestone delays and capital efficiency issues are surfacing, putting investor scrutiny and operational pressure on companies in the space.",
+      "title_zh": "Vercel證實四月資安事件，雲端開發平台供應鏈風險再受檢視",
+      "title_en": "Vercel Confirms April Security Incident, Renewing Scrutiny of Cloud Dev Platform Risk",
+      "lede_zh": "Vercel證實發生四月資安事件，外部報導則指出攻擊者聲稱取得並販售資料。對依賴託管平台與 CI/CD 服務的開發團隊來說，這起事件再次提醒，雲端開發平台已成為高價值供應鏈攻擊目標。",
+      "lede_en": "Vercel has confirmed an April security incident, while outside reporting says attackers are claiming to sell stolen data. For teams relying on hosted platforms and CI/CD services, the case is another reminder that cloud development vendors have become high-value supply chain targets.",
       "bullets_zh": [
-        "早期資本已驅動快速擴張，但關鍵技術驗證仍需更長時間與更高成本。",
-        "投資者開始要求更明確的技術里程碑與資本使用透明度。",
-        "可能出現整合潮或更務實的研發時程調整。"
+        "事件牽動託管、部署與開發者帳號等敏感資產風險",
+        "受影響企業需重新盤點第三方平台權限與金鑰管理",
+        "也凸顯SaaS平台事件揭露與客戶通知流程的重要性"
       ],
       "bullets_en": [
-        "Early capital spurred rapid expansion, but critical tech validation will take more time and money than anticipated.",
-        "Investors are demanding clearer technical milestones and capital‑use transparency.",
-        "Likely outcomes include consolidation or recalibrated, more pragmatic R&D timelines."
+        "The incident raises concerns around hosting, deployment pipelines, and developer account exposure",
+        "Affected organizations may need to revisit third-party permissions and secret management",
+        "The case also highlights the importance of disclosure and customer notification practices"
       ],
       "source": {
-        "name": "TechCrunch",
-        "url": "https://techcrunch.com/2026/04/19/cracks-are-starting-to-form-on-fusion-energys-funding-boom/",
-        "published_at": "2026-04-20T04:24:09.006Z",
+        "name": "Vercel",
+        "url": "https://vercel.com/kb/bulletin/vercel-april-2026-security-incident",
+        "published_at": "2026-04-20T04:35:20.784Z",
         "reading_time_min": 3
       },
       "id": "2026-04-20-011"
     },
     {
-      "category": "vc-business",
+      "category": "tech-product",
       "is_headline": false,
-      "title_zh": "AI 成長可能具大幅去通膨效應，北方信託預期衝擊深遠",
-      "title_en": "AI boom poised to be ‘massively disinflationary’, Northern Trust says",
-      "lede_zh": "金融評論指出 AI 大規模應用可能帶來勞動生產力飛升與成本下降，長期對通膨構成下行壓力；但短期轉型成本、資本支出與地緣政治風險仍會令影響路徑複雜化。",
-      "lede_en": "Financial commentary suggests widespread AI adoption could be 'massively disinflationary' by boosting productivity and lowering costs, though short‑term transition costs, capex and geopolitical risks will complicate the path.",
+      "title_zh": "Notion公共頁面疑洩編輯者信箱，協作型 SaaS 的隱私邊界再受質疑",
+      "title_en": "Notion Public Pages Reportedly Exposed Editors’ Email Addresses",
+      "lede_zh": "社群通報指出，Notion公共頁面可能外洩所有編輯者電子郵件地址，突顯協作型 SaaS 在分享機制上的隱私風險。對企業而言，這類設計瑕疵不僅涉及個資保護，也可能擴大社交工程攻擊面。",
+      "lede_en": "Community reports suggest that Notion public pages exposed the email addresses of all editors, underscoring privacy risks in collaborative SaaS sharing models. For enterprises, such design flaws can affect both personal data protection and social engineering exposure.",
       "bullets_zh": [
-        "AI 可透過自動化與效率提升壓低多項生產與服務成本。",
-        "短期看來資本支出與技能再培訓成本可能抵銷部分利好。",
-        "政策與監管反應將決定實際分配效果與社會經濟影響。"
+        "問題核心在公開分享機制與權限設計細節",
+        "外洩聯絡資訊可能提高釣魚與定向攻擊風險",
+        "企業需重新評估知識庫與外部分享頁面的資料最小化原則"
       ],
       "bullets_en": [
-        "AI-driven automation and efficiency gains could reduce production and service costs.",
-        "Short‑term capex and retraining costs may offset some benefits.",
-        "Policy and regulatory responses will shape distributional and macroeconomic outcomes."
+        "The issue centers on public sharing behavior and permission design",
+        "Exposed contact details can increase phishing and targeted attack risk",
+        "Organizations should review data minimization practices for public knowledge pages"
       ],
       "source": {
-        "name": "Financial Times",
-        "url": "https://www.ft.com/content/7ec229f4-200e-4f34-ba6d-0642397d03e3",
-        "published_at": "2026-04-20T04:24:09.006Z",
+        "name": "X",
+        "url": "https://twitter.com/weezerOSINT/status/2045849358462222720",
+        "published_at": "2026-04-20T04:35:20.784Z",
         "reading_time_min": 3
       },
       "id": "2026-04-20-012"
     },
     {
-      "category": "dev",
+      "category": "tech-product",
       "is_headline": false,
-      "title_zh": "Notion 洩露公開頁面編輯者電子郵件的弱點被指出",
-      "title_en": "Notion leak exposes email addresses of all editors of any public page",
-      "lede_zh": "研究與安全社群發現 Notion 的某些公開頁面設置會洩露所有編輯者的電子郵件地址，該問題在隱私與企業資料治理上引發關切，建議使用者檢查公開頁面權限與編輯者列單。",
-      "lede_en": "Researchers reported that certain Notion public page settings can expose email addresses of all page editors, raising privacy and corporate governance concerns; users are advised to review public page permissions and editor lists.",
+      "title_zh": "Claude Desktop遭指安裝未文件化瀏覽器擴充元件，AI桌面工具透明度受關注",
+      "title_en": "Claude Desktop Accused of Installing Undocumented Browser Extensions",
+      "lede_zh": "有研究者指出，Claude Desktop會為Chrome等瀏覽器安裝未文件化擴充元件，引發使用者對權限、透明度與預設行為的疑慮。對快速擴張中的 AI 客戶端市場而言，產品便利性與可審計性之間的平衡正變得更重要。",
+      "lede_en": "A researcher claims Claude Desktop installs undocumented browser extensions for Chrome and other browsers, raising questions about permissions, transparency, and default behavior. For the fast-growing AI client market, the balance between convenience and auditability is becoming more critical.",
       "bullets_zh": [
-        "公開頁面若未謹慎設定，可能無意間暴露編輯者聯絡資訊。",
-        "受影響的場景包括公司文件、公開協作專案與外部分享頁面。",
-        "短期對策：檢查頁面分享設定並盡量以角色或別名代替私人郵件。"
+        "爭議聚焦在安裝流程是否充分告知與取得明確同意",
+        "瀏覽器層權限涉及資料擷取、帳號安全與企業控管政策",
+        "AI桌面應用可能面臨更高的合規與資安審查"
       ],
       "bullets_en": [
-        "Public pages, if misconfigured, can unintentionally reveal editors' contact emails.",
-        "Impacted scenarios include corporate docs, public collaboration projects and external shares.",
-        "Mitigations: audit share settings and prefer role aliases over personal emails where possible."
+        "The controversy focuses on whether installation behavior was clearly disclosed and consented to",
+        "Browser-level permissions touch on data access, account safety, and enterprise policy control",
+        "AI desktop apps may face tighter compliance and security scrutiny"
       ],
       "source": {
-        "name": "Twitter / OSINT report",
-        "url": "https://twitter.com/weezerOSINT/status/2045849358462222720",
-        "published_at": "2026-04-20T04:24:09.006Z",
+        "name": "That Privacy Guy",
+        "url": "https://www.thatprivacyguy.com/blog/anthropic-spyware/",
+        "published_at": "2026-04-20T04:35:20.784Z",
         "reading_time_min": 3
       },
       "id": "2026-04-20-013"
+    },
+    {
+      "category": "tech-product",
+      "is_headline": false,
+      "title_zh": "記憶體短缺恐延續至2027年，AI帶動HBM排擠效應持續擴大",
+      "title_en": "Global Memory Shortage May Last Until 2027 as AI Demand Crowds Out Supply",
+      "lede_zh": "在 AI 伺服器對 HBM 需求急升下，通用型 DRAM 供給正遭排擠，市場預估記憶體短缺可能延續到 2027 年。這不僅影響資料中心擴建，也將波及邊緣裝置、本地 AI 與整體硬體成本結構。",
+      "lede_en": "With AI servers driving surging demand for HBM, supply for commodity DRAM is being squeezed, and shortages may persist into 2027. The impact extends beyond data center expansion to edge devices, local AI deployment, and broader hardware cost structures.",
+      "bullets_zh": [
+        "三星、SK海力士與美光將產能優先轉向HBM",
+        "PC與手機用記憶體供給受壓，價格持續攀升",
+        "對AI伺服器、終端裝置與企業採購形成連鎖效應"
+      ],
+      "bullets_en": [
+        "Samsung, SK hynix, and Micron are prioritizing HBM capacity",
+        "Supply for PC and smartphone memory is under pressure, pushing prices higher",
+        "The shortage creates knock-on effects for AI servers, end devices, and enterprise procurement"
+      ],
+      "source": {
+        "name": "iThome",
+        "url": "https://www.ithome.com.tw/news/175166",
+        "published_at": "2026-04-20T04:35:20.784Z",
+        "reading_time_min": 3
+      },
+      "id": "2026-04-20-014"
+    },
+    {
+      "category": "tech-product",
+      "is_headline": false,
+      "title_zh": "三星停止LPDDR4系列接單，記憶體世代切換加速",
+      "title_en": "Samsung Stops Taking Orders for LPDDR4 as Memory Transition Accelerates",
+      "lede_zh": "三星停止接受 LPDDR4 與 LPDDR4X 新訂單，並規劃於 2027 年正式停產，顯示記憶體產業正加快資源轉向新世代產品。對裝置製造商與嵌入式系統開發者來說，這將帶來 BOM 成本、供貨週期與相容性調整壓力。",
+      "lede_en": "Samsung has stopped taking new orders for LPDDR4 and LPDDR4X and plans to phase them out by 2027, signaling a faster industry shift toward newer memory generations. For device makers and embedded system developers, the move raises pressure around BOM costs, supply timelines, and compatibility planning.",
+      "bullets_zh": [
+        "舊世代記憶體產品逐步退場，供應策略明顯轉向",
+        "可能加速終端裝置平台升級與庫存重整",
+        "與AI需求帶動的整體記憶體緊張局勢相互疊加"
+      ],
+      "bullets_en": [
+        "Older memory generations are being phased out as suppliers redirect strategy",
+        "The change may accelerate device platform upgrades and inventory adjustments",
+        "It compounds broader market tightness already driven by AI demand"
+      ],
+      "source": {
+        "name": "TechNews",
+        "url": "https://technews.tw/2026/04/20/samsung-has-stopped-accepting-orders-for-lpddr4-and-lpddr4x/",
+        "published_at": "2026-04-20T04:35:20.784Z",
+        "reading_time_min": 3
+      },
+      "id": "2026-04-20-015"
+    },
+    {
+      "category": "tech-product",
+      "is_headline": false,
+      "title_zh": "黃仁勳示警華為晶片若先承載DeepSeek，美國AI競爭恐受壓",
+      "title_en": "Jensen Huang Warns Huawei-Backed DeepSeek Deployment Would Hurt U.S. AI Position",
+      "lede_zh": "輝達執行長黃仁勳警告，若 DeepSeek 等高影響力模型優先在華為晶片上擴張，可能削弱美國在 AI 基礎設施與生態競爭中的優勢。此番言論凸顯模型、晶片與地緣政治之間已形成更緊密的戰略連動。",
+      "lede_en": "Nvidia CEO Jensen Huang has warned that if influential models such as DeepSeek scale first on Huawei chips, the U.S. could lose ground in AI infrastructure and ecosystem competition. The comments underscore how models, chips, and geopolitics are now tightly intertwined.",
+      "bullets_zh": [
+        "AI競爭已從模型能力延伸到晶片平台與供應鏈主導權",
+        "DeepSeek成為觀察中國AI軟硬整合能力的重要指標",
+        "台灣半導體與伺服器供應鏈將持續受此格局牽動"
+      ],
+      "bullets_en": [
+        "AI competition now extends beyond models to chip platforms and supply chain control",
+        "DeepSeek has become a key indicator of China's software-hardware integration capacity",
+        "Taiwan's semiconductor and server supply chains remain closely exposed to this rivalry"
+      ],
+      "source": {
+        "name": "TechNews",
+        "url": "https://technews.tw/2026/04/20/nvidias-jensen-huang-warns-huawei-chips-for-deepseek-ai-models-would-be-horrible-for-us/",
+        "published_at": "2026-04-20T04:35:20.784Z",
+        "reading_time_min": 3
+      },
+      "id": "2026-04-20-016"
+    },
+    {
+      "category": "taiwan",
+      "is_headline": false,
+      "title_zh": "IMF估五年後台灣人均GDP可望領先南韓，半導體整合力成關鍵支撐",
+      "title_en": "IMF Sees Taiwan’s GDP Per Capita Overtaking South Korea, Backed by Semiconductor Strength",
+      "lede_zh": "IMF預估，未來五年台灣人均 GDP 可望進一步拉開與南韓差距，反映半導體產業與相關供應鏈的高附加價值效應持續發酵。對本地科技主管而言，這不只是宏觀數字，更代表台灣在全球 AI 基礎設施版圖中的戰略位置正持續上升。",
+      "lede_en": "The IMF expects Taiwan's GDP per capita to widen its lead over South Korea over the next five years, reflecting the continuing high-value impact of the semiconductor sector and its supply chain. For local tech leaders, the forecast points to Taiwan's rising strategic role in the global AI infrastructure map.",
+      "bullets_zh": [
+        "半導體與AI供應鏈持續推升台灣整體經濟表現",
+        "高階製造與系統整合能力成為主要競爭優勢",
+        "有助強化台灣在全球科技投資與人才市場的吸引力"
+      ],
+      "bullets_en": [
+        "Semiconductors and AI-related supply chains continue to lift Taiwan's economic performance",
+        "Advanced manufacturing and system integration remain core competitive strengths",
+        "The outlook could strengthen Taiwan's appeal in global tech investment and talent markets"
+      ],
+      "source": {
+        "name": "TechNews",
+        "url": "https://finance.technews.tw/2026/04/20/koreas-gdp-per-capita-to-trail-taiwan-by-over-10000-within-5-years-imf/",
+        "published_at": "2026-04-20T04:35:20.784Z",
+        "reading_time_min": 3
+      },
+      "id": "2026-04-20-017"
+    },
+    {
+      "category": "tech-product",
+      "is_headline": false,
+      "title_zh": "Cadence與NVIDIA擴大合作，代理AI與數位孿生加速半導體與AI工廠設計",
+      "title_en": "Cadence and Nvidia Expand Partnership Around Agentic AI and Digital Twins",
+      "lede_zh": "Cadence與NVIDIA擴大策略合作，將代理 AI 與數位孿生導入半導體設計與 AI 工廠流程，顯示 EDA 與製造模擬正進入更高自動化階段。對晶片與資料中心產業而言，這類整合有望縮短設計迭代時間，並改善複雜系統的建置效率。",
+      "lede_en": "Cadence and Nvidia are expanding their strategic partnership to bring agentic AI and digital twins into semiconductor design and AI factory workflows, signaling a new level of automation in EDA and manufacturing simulation. For chip and data center industries, the integration could shorten design cycles and improve deployment efficiency in complex systems.",
+      "bullets_zh": [
+        "合作焦點涵蓋EDA、數位孿生與AI工廠設計流程",
+        "代理AI可望協助複雜系統規劃、模擬與最佳化",
+        "反映AI基礎設施競爭正往設計工具鏈上游延伸"
+      ],
+      "bullets_en": [
+        "The partnership spans EDA, digital twins, and AI factory design workflows",
+        "Agentic AI could help with planning, simulation, and optimization of complex systems",
+        "The move shows AI infrastructure competition extending upstream into design toolchains"
+      ],
+      "source": {
+        "name": "TechNews",
+        "url": "https://technews.tw/2026/04/20/cadence-and-nvidia-expand-strategic-partnership/",
+        "published_at": "2026-04-20T04:35:20.784Z",
+        "reading_time_min": 3
+      },
+      "id": "2026-04-20-018"
+    },
+    {
+      "category": "tech-product",
+      "is_headline": false,
+      "title_zh": "SK海力士量產192GB SOCAMM2，為NVIDIA Vera Rubin平台備戰",
+      "title_en": "SK hynix Starts Mass Production of 192GB SOCAMM2 for Nvidia’s Vera Rubin Platform",
+      "lede_zh": "SK海力士啟動 192GB SOCAMM2 量產，對應 NVIDIA 下一代 Vera Rubin 平台需求，顯示 AI 記憶體封裝與模組化路線持續升級。這項進展將直接影響高密度伺服器設計、系統功耗與整機供應鏈節奏。",
+      "lede_en": "SK hynix has begun mass production of 192GB SOCAMM2 memory for Nvidia's upcoming Vera Rubin platform, underscoring continued advances in AI memory packaging and modular design. The development has direct implications for dense server architecture, power efficiency, and system-level supply chains.",
+      "bullets_zh": [
+        "新模組瞄準下一代AI伺服器平台的高密度需求",
+        "記憶體設計成為AI系統性能與能耗關鍵變數",
+        "台灣伺服器與零組件供應鏈可望受惠"
+      ],
+      "bullets_en": [
+        "The module targets high-density requirements in next-generation AI server platforms",
+        "Memory architecture is becoming a critical variable in AI performance and power use",
+        "Taiwan's server and component supply chains could benefit from the ramp"
+      ],
+      "source": {
+        "name": "TechNews",
+        "url": "https://technews.tw/2026/04/20/sk-hynix-begins-mass-production-of-192gb-socamm2/",
+        "published_at": "2026-04-20T04:35:20.784Z",
+        "reading_time_min": 3
+      },
+      "id": "2026-04-20-019"
+    },
+    {
+      "category": "tech-product",
+      "is_headline": false,
+      "title_zh": "本地端AI需求升溫，蘋果硬體與服務商業模式可能同步調整",
+      "title_en": "Rising Local AI Demand Could Reshape Apple’s Hardware and Services Model",
+      "lede_zh": "隨著本地端 AI 推論需求升高，市場開始關注蘋果是否將重新調整裝置規格、晶片配置與服務策略。若 AI 體驗逐步轉向端側執行，終端硬體能力將再次成為平台競爭核心。",
+      "lede_en": "As demand for on-device AI inference grows, attention is turning to whether Apple will rethink device specs, chip allocation, and service strategy. If AI experiences shift increasingly to the edge, endpoint hardware capability could once again become the center of platform competition.",
+      "bullets_zh": [
+        "本地推論有助隱私保護、延遲控制與離線可用性",
+        "將帶動記憶體、NPU與終端算力規格升級",
+        "也可能改變AI服務的收費與分發模式"
+      ],
+      "bullets_en": [
+        "On-device inference can improve privacy, latency, and offline availability",
+        "The shift would drive upgrades in memory, NPUs, and endpoint compute capacity",
+        "It may also change how AI services are priced and distributed"
+      ],
+      "source": {
+        "name": "TechNews",
+        "url": "https://technews.tw/2026/04/20/local-ai-could-apple/",
+        "published_at": "2026-04-20T04:35:20.784Z",
+        "reading_time_min": 3
+      },
+      "id": "2026-04-20-020"
     }
   ],
   "meta": {
-    "generated_at": "2026-04-20T04:24:09.006Z",
-    "total_articles": 13,
+    "generated_at": "2026-04-20T04:35:20.784Z",
+    "total_articles": 20,
     "sources_used": {
-      "rss": 13,
+      "rss": 20,
       "firecrawl": 0
     },
     "schema_version": "1.0"
