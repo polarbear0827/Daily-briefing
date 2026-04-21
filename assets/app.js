@@ -220,12 +220,25 @@
         qsa('.tab').forEach(t => t.classList.remove('active'));
         tab.classList.add('active');
 
+        // Find headline's actual category (for tab filtering)
+        const headlineEl = qs('.headline-section .article.is-headline');
+        const headlineCat = headlineEl ? headlineEl.dataset.ownerCat : null;
+
         qsa('.category-section').forEach(section => {
-          if (cat === 'all' || section.dataset.cat === cat) {
-            section.style.display = '';
+          const sectionCat = section.dataset.cat;
+          const isHeadlineSection = section.classList.contains('headline-section');
+
+          let show;
+          if (cat === 'all') {
+            show = true;
+          } else if (isHeadlineSection) {
+            // Show headline if the active tab matches its owner category
+            show = (headlineCat === cat);
           } else {
-            section.style.display = 'none';
+            show = (sectionCat === cat);
           }
+
+          section.style.display = show ? '' : 'none';
         });
       });
     });
@@ -276,13 +289,39 @@
     if (!issue) return;
 
     const catMap = Object.fromEntries(issue.categories.map(c => [c.id, c]));
+
+    // Separate the headline from the category flow.
+    // Headline article is rendered in its own top-level section,
+    // and is NOT duplicated inside its category section below.
+    const headlineArticle = issue.articles.find(a => a.is_headline);
+    const headlineId = headlineArticle ? headlineArticle.id : null;
+
     const articlesByCategory = {};
     issue.categories.forEach(c => { articlesByCategory[c.id] = []; });
     issue.articles.forEach(a => {
+      if (a.id === headlineId) return;  // skip headline in category flow
       if (articlesByCategory[a.category]) {
         articlesByCategory[a.category].push(a);
       }
     });
+
+    // Headline section — single-article section at the top
+    let headlineSection = '';
+    if (headlineArticle) {
+      const headlineCat = catMap[headlineArticle.category] || { name_zh: '頭條', name_en: 'Headline' };
+      // Render article, then inject data-owner-cat for tab-filter logic
+      const articleHtml = renderArticle(headlineArticle, headlineCat)
+        .replace('class="article', `data-owner-cat="${headlineArticle.category}" class="article`);
+      headlineSection = `
+        <section class="category-section headline-section" data-cat="all">
+          <div class="category-title">
+            <h2>頭條</h2>
+            <span class="count-label">Headline · ${escapeHtml(headlineCat.name_zh)}</span>
+          </div>
+          <div class="articles">${articleHtml}</div>
+        </section>
+      `;
+    }
 
     const sections = issue.categories
       .map(cat => renderCategorySection(cat, articlesByCategory[cat.id] || []))
@@ -291,7 +330,7 @@
     qs('#app').innerHTML = `
       ${renderMasthead(issue)}
       ${renderTabs(issue)}
-      <main>${sections}</main>
+      <main>${headlineSection}${sections}</main>
       ${renderFooter(issue)}
     `;
 
