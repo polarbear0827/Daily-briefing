@@ -334,20 +334,40 @@ def cap_per_category(
 def apply_global_cap(
     candidates_by_category: dict[str, list[Candidate]],
     total_cap: int = MAX_TOTAL_CANDIDATES,
+    min_per_category: int = 3,
 ) -> dict[str, list[Candidate]]:
-    """If total exceeds cap, trim lowest-score items across categories."""
-    all_items = [
-        (cat, c) for cat, cands in candidates_by_category.items() for c in cands
-    ]
-    if len(all_items) <= total_cap:
+    """
+    Trim candidates to fit total_cap, but guarantee each non-empty category
+    keeps at least min_per_category items (if available).
+
+    This prevents low-tier categories (e.g. Taiwan-local secondary sources)
+    from being completely squeezed out by high-tier categories
+    (e.g. international primary sources like Nature, Reuters).
+    """
+    total = sum(len(v) for v in candidates_by_category.values())
+    if total <= total_cap:
         return candidates_by_category
 
-    all_items.sort(key=lambda x: x[1].rank_score, reverse=True)
-    kept = all_items[:total_cap]
-
     result: dict[str, list[Candidate]] = {cat: [] for cat in candidates_by_category}
-    for cat, c in kept:
-        result[cat].append(c)
+
+    # Phase 1: Give each category its minimum quota (sorted by rank_score within cat)
+    quota_used = 0
+    remaining_pool: list[tuple[str, Candidate]] = []
+    for cat, cands in candidates_by_category.items():
+        sorted_cands = sorted(cands, key=lambda c: c.rank_score, reverse=True)
+        quota = min(min_per_category, len(sorted_cands))
+        result[cat] = sorted_cands[:quota]
+        quota_used += quota
+        # Remaining candidates compete for leftover slots
+        remaining_pool.extend((cat, c) for c in sorted_cands[quota:])
+
+    # Phase 2: Distribute remaining slots by global rank_score
+    leftover_slots = total_cap - quota_used
+    if leftover_slots > 0 and remaining_pool:
+        remaining_pool.sort(key=lambda x: x[1].rank_score, reverse=True)
+        for cat, c in remaining_pool[:leftover_slots]:
+            result[cat].append(c)
+
     return result
 
 
