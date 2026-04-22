@@ -1,0 +1,252 @@
+{
+  "issue_number": 2,
+  "date": "2026-04-22",
+  "generated_at": "2026-04-22T09:38:41+08:00",
+  "categories": ["ai-ml", "tech-product", "dev", "vc-business", "science", "world", "taiwan"],
+  "articles": [
+    {
+      "id": "vcb-001",
+      "is_headline": true,
+      "category": "vc-business",
+      "title_zh": "SpaceX 以 600 億美元收購 AI 程式開發平台 Cursor",
+      "title_en": "SpaceX strikes $60 billion deal to acquire AI coding platform Cursor",
+      "lede_zh": "SpaceX 宣布以 600 億美元收購 AI 程式碼編輯器 Cursor，若交易失敗將支付 100 億美元費用。此舉旨在強化旗下 xAI 在 AI 輔助開發領域的競爭力，追趕 OpenAI 與 Anthropic。",
+      "lede_en": "SpaceX announced a $60 billion agreement to acquire Cursor, the AI-assisted coding platform. If the deal falls through, SpaceX will pay a $10 billion fee. The move aims to boost xAI's competitiveness against OpenAI and Anthropic ahead of a planned IPO.",
+      "bullets_zh": [
+        "收購總價 600 億美元，失敗需付 100 億",
+        "SpaceX/xAI/X 三家公司籌備合併上市",
+        "xAI 加速追趕 OpenAI 與 Anthropic"
+      ],
+      "bullets_en": [
+        "Deal valued at $60B with $10B breakup fee",
+        "SpaceX/xAI/X combo preparing joint IPO filing",
+        "xAI races to catch OpenAI and Anthropic rivals"
+      ],
+      "url": "https://www.ft.com/content/d23bd03a-92ac-4e81-8460-3b867a833860",
+      "source": "Financial Times Technology"
+    },
+    {
+      "id": "vcb-002",
+      "category": "vc-business",
+      "title_zh": "Anthropic 調查旗艦模型 Mythos 遭未授權存取",
+      "title_en": "Anthropic probes unauthorized access to powerful Mythos AI model",
+      "lede_zh": "Anthropic 正在調查其最新 AI 模型 Mythos 遭遇未授權存取事件。由於擔憂該模型具備駭客攻擊能力，公司已限制模型發布範圍。",
+      "lede_en": "Anthropic is investigating unauthorized access to its cutting-edge Mythos model. The company has restricted the tool's release due to concerns about its potential hacking capabilities.",
+      "bullets_zh": [
+        "Mythos 模型遭未知管道未授權存取",
+        "擔憂模型能力遭用於駭客攻擊",
+        "AI 安全治理成產業關鍵議題"
+      ],
+      "bullets_en": [
+        "Mythos model compromised through unknown channels",
+        "Fears tool capabilities could enable hacking attacks",
+        "AI safety governance becomes critical industry issue"
+      ],
+      "url": "https://www.ft.com/content/56d65763-69fe-4756-baf4-c8192b7aadaf",
+      "source": "Financial Times Technology"
+    },
+    {
+      "id": "vcb-003",
+      "category": "vc-business",
+      "title_zh": "中國 AI 全球擴張遭遇阻力，巴西數據中心引發環境爭議",
+      "title_en": "China's global AI push meets resistance as Brazil data center faces environmental concerns",
+      "lede_zh": "TikTok 計畫在巴西海岸投資 95 億美元興建數據中心，反映中國國家級 AI 基礎設施拓展野心，卻引發當地環保疑慮。",
+      "lede_en": "TikTok plans to build a $9.5 billion data center on Brazil's coast, reflecting China's national AI infrastructure ambitions. However, the project faces opposition over environmental concerns.",
+      "bullets_zh": [
+        "TikTok 巴西建廠投資達 95 億美元",
+        "反映中國國家級 AI 擴張戰略",
+        "當地環保團體質疑能源使用效益"
+      ],
+      "bullets_en": [
+        "TikTok invests $9.5B in Brazilian coastal facility",
+        "Project reflects China's national AI expansion strategy",
+        "Local groups question the project energy allocation"
+      ],
+      "url": "https://www.ft.com/content/001dec5b-9e13-4a23-9dc5-dda537a47ae3",
+      "source": "Financial Times Technology"
+    },
+    {
+      "id": "aiml-001",
+      "category": "ai-ml",
+      "title_zh": "Google 提出 ReasoningBank 框架，讓 AI 從經驗中學習推理",
+      "title_en": "Google Research introduces ReasoningBank to help agents learn from experience",
+      "lede_zh": "Google Research 發表 ReasoningBank，一項讓 AI 代理從過往推理經驗中學習的框架，有助於提升代理重複任務的推理品質。",
+      "lede_en": "Google Research unveiled ReasoningBank, a framework enabling AI agents to learn reasoning patterns from past experiences. The approach promises to improve agent performance on recurring tasks.",
+      "bullets_zh": [
+        "建立可重複使用的推理模式資料庫",
+        "AI 不再每次從頭推理相同問題",
+        "代理系統學習能力邁向新階段"
+      ],
+      "bullets_en": [
+        "Creates a reusable library of reasoning patterns",
+        "Agents no longer reason from scratch each time",
+        "Agent learning capability enters a new phase"
+      ],
+      "url": "https://research.google/blog/reasoningbank-enabling-agents-to-learn-from-experience/",
+      "source": "Google Research Blog"
+    },
+    {
+      "id": "aiml-002",
+      "category": "ai-ml",
+      "title_zh": "QIMMA 阿拉伯語大語言模型排行榜上線",
+      "title_en": "QIMMA launches quality-first Arabic LLM benchmark leaderboard",
+      "lede_zh": "Hugging Face 上線 QIMMA 阿拉伯語大語言模型排行榜，專注於以質量為首要標準評估阿拉伯語模型表現。",
+      "lede_en": "The QIMMA leaderboard launched on Hugging Face, providing a quality-first evaluation benchmark for Arabic language large language models.",
+      "bullets_zh": [
+        "首個阿拉伯語 LLM 專項排行榜",
+        "以品質優先取代流量排序機制",
+        "推動少數語言 AI 評估標準發展"
+      ],
+      "bullets_en": [
+        "First dedicated Arabic LLM ranking platform",
+        "Quality-first approach replaces traffic scoring",
+        "Advancing evaluation standards for minority languages"
+      ],
+      "url": "https://huggingface.co/blog/tiiuae/qimma-arabic-leaderboard",
+      "source": "Hugging Face Blog"
+    },
+    {
+      "id": "tp-001",
+      "category": "tech-product",
+      "title_zh": "工程師轉管理不是升遷，而是職業轉換",
+      "title_en": "What engineers should consider before accepting a management role",
+      "lede_zh": "IEEE Spectrum 刊文探討工程師轉任管理職的挑戰，指出這並非升遷而是完全不同的職業，影響力的衡量方式從個人產出轉為透過團隊間接發揮。",
+      "lede_en": "IEEE Spectrum explores the challenges engineers face when transitioning to management, arguing it is a career switch rather than a promotion. Impact shifts from direct output to indirect influence through the team.",
+      "bullets_zh": [
+        "管理職非升遷而是全新職業軌跡",
+        "新經理人普遍缺乏系統性培訓",
+        "績效指標從個人產出轉向團隊影響"
+      ],
+      "bullets_en": [
+        "Management is a career change not a promotion",
+        "New managers typically lack formal training",
+        "Metrics shift from output to team impact"
+      ],
+      "url": "https://spectrum.ieee.org/ic-or-manager",
+      "source": "IEEE Spectrum"
+    },
+    {
+      "id": "dev-001",
+      "category": "dev",
+      "title_zh": "ThoughtWorks 技術雷達發布，AI 時代重探軟體工程基礎",
+      "title_en": "ThoughtWorks Tech Radar revisits software engineering foundations in the AI era",
+      "lede_zh": "ThoughtWorks 第 34 期技術雷達發布，118 項技術主題中 AI 占主導地位，同時強調配對程式設計、零信任架構、突變測試等基礎工藝的復甦。",
+      "lede_en": "ThoughtWorks released its 34th Technology Radar with 118 items. While AI dominates the landscape, the report highlights a resurgence of foundational practices like pair programming, zero trust architecture, and mutation testing.",
+      "bullets_zh": [
+        "第 34 期收錄 118 項技術主題",
+        "AI 工具生成複雜度促使重探基礎工藝",
+        "終端機重新成為開發者主要介面"
+      ],
+      "bullets_en": [
+        "Thirty-fourth edition covers 118 technology topics",
+        "AI complexity drives return to craft fundamentals",
+        "Terminal returns as primary developer interface"
+      ],
+      "url": "https://martinfowler.com/fragments/2026-04-21.html",
+      "source": "Martin Fowler"
+    },
+    {
+      "id": "sci-001",
+      "category": "science",
+      "title_zh": "吹哨者指控芬蘭新創固態電池技術名不副實",
+      "title_en": "Whistleblower alleges Finnish startup solid-state battery claims are false",
+      "lede_zh": "芬蘭新創 Donut Lab 宣稱的固態電池快充與高儲能技術遭吹哨者質疑不實，事件已引發刑事訴訟。",
+      "lede_en": "A whistleblower has challenged Donut Lab's solid-state battery claims of fast charging and high energy storage. The allegations have escalated into a criminal complaint.",
+      "bullets_zh": [
+        "Donut Lab 快充技術遭質疑造假",
+        "案件已升級為刑事投訴",
+        "固態電池產業面臨誠信考驗"
+      ],
+      "bullets_en": [
+        "Donut Lab fast charging claims challenged as false",
+        "Case has escalated into a criminal complaint",
+        "Solid-state battery sector faces integrity test"
+      ],
+      "url": "https://www.science.org/content/article/whistleblower-alleges-finnish-startup-s-vaunted-solid-state-battery-isn-t-what-it",
+      "source": "Science Magazine News"
+    },
+    {
+      "id": "sci-002",
+      "category": "science",
+      "title_zh": "創新住宅設計可降低非洲兒童多種致命疾病風險",
+      "title_en": "Simple house design helps prevent fatal diseases in African children",
+      "lede_zh": "隨機對照試驗顯示，造價 8800 美元的改良住宅設計可減少非洲兒童瘧疾、腹瀉和呼吸道感染等致命疾病的發病率。",
+      "lede_en": "A randomized controlled trial shows an $8,800 improved house design can reduce malaria, diarrhea, and respiratory infections among African children.",
+      "bullets_zh": [
+        "改良住宅造價 8800 美元效益顯著",
+        "同時降低三種致命疾病發病風險",
+        "公共衛生基礎設施投資具成本效益"
+      ],
+      "bullets_en": [
+        "Eight thousand dollar design delivers proven health benefits",
+        "Reduces three fatal disease risks simultaneously",
+        "Public health infrastructure investment proves cost effective"
+      ],
+      "url": "https://www.science.org/content/article/simple-house-may-help-prevent-multiple-fatal-diseases-african-children",
+      "source": "Science Magazine News"
+    },
+    {
+      "id": "wld-001",
+      "category": "world",
+      "title_zh": "川普暫緩對伊朗軍事行動，外交斡旋爭取更多時間",
+      "title_en": "Trump backs off Iran escalation after frantic day of diplomacy",
+      "lede_zh": "美國總統川普決定再次暫緩對伊朗升級軍事威脅，這是數週內第二次退讓，為外交談判爭取更多時間。",
+      "lede_en": "President Trump decided to back off escalating military threats against Iran, marking the second time in weeks he has stepped back, buying more time for diplomatic negotiations.",
+      "bullets_zh": [
+        "川普兩週內第二次暫緩軍事威脅",
+        "緊張局勢持續但外交管道運作中",
+        "中東局勢走向仍待觀察"
+      ],
+      "bullets_en": [
+        "Trump steps back from threats second time in weeks",
+        "Tensions persist but diplomatic channels remain active",
+        "Middle East trajectory still uncertain"
+      ],
+      "url": "https://www.bbc.com/news/articles/cvg4yr90jr2o",
+      "source": "BBC World"
+    },
+    {
+      "id": "tw-001",
+      "category": "taiwan",
+      "title_zh": "AI 推論框架 SGLang 曝 RCE 漏洞，惡意模型可執行任意程式碼",
+      "title_en": "AI inference framework SGLang exposes RCE vulnerability through malicious models",
+      "lede_zh": "AI 推論框架 SGLang 被揭露存在遠端程式碼執行漏洞，攻擊者可在 GGUF 模型檔植入惡意酬載，透過 /v1/rerank 端點觸發任意程式碼，截至公告日仍無官方修補程式。",
+      "lede_en": "The SGLang AI inference framework has a remote code execution vulnerability. Attackers can embed malicious payloads in GGUF model files, triggering arbitrary code through the /v1/rerank endpoint. No official patch exists.",
+      "bullets_zh": [
+        "GGUF 模型植入 Jinja2 惡意酬載可觸發攻擊",
+        "截至 4 月 20 日官方尚未發布修補程式",
+        "使用 SGLang 的服務應提高警戒"
+      ],
+      "bullets_en": [
+        "Jinja2 payloads in GGUF models trigger the attack",
+        "No official patch available as of April twentieth",
+        "Services running SGLang should increase vigilance"
+      ],
+      "url": "https://www.ithome.com.tw/news/175219",
+      "source": "iThome"
+    }
+  ],
+  "meta": {
+    "total_candidates": 21,
+    "articles_selected": 11,
+    "category_distribution": {
+      "ai-ml": 2,
+      "tech-product": 1,
+      "dev": 1,
+      "vc-business": 3,
+      "science": 2,
+      "world": 1,
+      "taiwan": 1
+    },
+    "sources_used": [
+      "Financial Times Technology",
+      "Google Research Blog",
+      "Hugging Face Blog",
+      "IEEE Spectrum",
+      "Martin Fowler",
+      "Science Magazine News",
+      "BBC World",
+      "iThome"
+    ]
+  }
+}
