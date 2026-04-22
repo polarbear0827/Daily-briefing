@@ -1,13 +1,59 @@
 {
   "issue_number": 2,
   "date": "2026-04-22",
-  "generated_at": "2026-04-22T09:38:41+08:00",
-  "categories": ["ai-ml", "tech-product", "dev", "vc-business", "science", "world", "taiwan"],
+  "date_display_zh": "2026 年 4 月 22 日·星期三",
+  "date_display_en": "Wednesday, April 22, 2026",
+  "weather": {
+    "location_zh": "台北",
+    "location_en": "Taipei",
+    "temp_c": null,
+    "condition_zh": "",
+    "condition_en": ""
+  },
+  "tagline_zh": "由 AI 為你策展，專屬早晨讀物",
+  "tagline_en": "AI-curated, your morning read",
+  "categories": [
+    {
+      "id": "ai-ml",
+      "name_zh": "AI／機器學習",
+      "name_en": "AI / Machine Learning"
+    },
+    {
+      "id": "tech-product",
+      "name_zh": "科技／產品",
+      "name_en": "Tech / Product"
+    },
+    {
+      "id": "dev",
+      "name_zh": "程式開發",
+      "name_en": "Development"
+    },
+    {
+      "id": "vc-business",
+      "name_zh": "創投／商業",
+      "name_en": "VC / Business"
+    },
+    {
+      "id": "science",
+      "name_zh": "科學研究",
+      "name_en": "Science"
+    },
+    {
+      "id": "world",
+      "name_zh": "國際時事",
+      "name_en": "World"
+    },
+    {
+      "id": "taiwan",
+      "name_zh": "臺灣本地",
+      "name_en": "Taiwan"
+    }
+  ],
   "articles": [
     {
       "id": "vcb-001",
-      "is_headline": true,
       "category": "vc-business",
+      "is_headline": true,
       "title_zh": "SpaceX 以 600 億美元收購 AI 程式開發平台 Cursor",
       "title_en": "SpaceX strikes $60 billion deal to acquire AI coding platform Cursor",
       "lede_zh": "SpaceX 宣布以 600 億美元收購 AI 程式碼編輯器 Cursor，若交易失敗將支付 100 億美元費用。此舉旨在強化旗下 xAI 在 AI 輔助開發領域的競爭力，追趕 OpenAI 與 Anthropic。",
@@ -22,12 +68,19 @@
         "SpaceX/xAI/X combo preparing joint IPO filing",
         "xAI races to catch OpenAI and Anthropic rivals"
       ],
-      "url": "https://www.ft.com/content/d23bd03a-92ac-4e81-8460-3b867a833860",
-      "source": "Financial Times Technology"
+      "source": {
+        "name": "Financial Times Technology",
+        "url": "https://www.ft.com/content/d23bd03a-92ac-4e81-8460-3b867a833860",
+        "published_at": "2026-04-22",
+        "reading_time_min": 3,
+        "credibility_tier": "primary"
+      },
+      "fetched_via": "rss"
     },
     {
       "id": "vcb-002",
       "category": "vc-business",
+      "is_headline": false,
       "title_zh": "Anthropic 調查旗艦模型 Mythos 遭未授權存取",
       "title_en": "Anthropic probes unauthorized access to powerful Mythos AI model",
       "lede_zh": "Anthropic 正在調查其最新 AI 模型 Mythos 遭遇未授權存取事件。由於擔憂該模型具備駭客攻擊能力，公司已限制模型發布範圍。",
@@ -42,12 +95,19 @@
         "Fears tool capabilities could enable hacking attacks",
         "AI safety governance becomes critical industry issue"
       ],
-      "url": "https://www.ft.com/content/56d65763-69fe-4756-baf4-c8192b7aadaf",
-      "source": "Financial Times Technology"
+      "source": {
+        "name": "Financial Times Technology",
+        "url": "https://www.ft.com/content/56d65763-69fe-4756-baf4-c8192b7aadaf",
+        "published_at": "2026-04-22",
+        "reading_time_min": 3,
+        "credibility_tier": "primary"
+      },
+      "fetched_via": "rss"
     },
     {
       "id": "vcb-003",
       "category": "vc-business",
+      "is_headline": false,
       "title_zh": "中國 AI 全球擴張遭遇阻力，巴西數據中心引發環境爭議",
       "title_en": "China's global AI push meets resistance as Brazil data center faces environmental concerns",
       "lede_zh": "TikTok 計畫在巴西海岸投資 95 億美元興建數據中心，反映中國國家級 AI 基礎設施拓展野心，卻引發當地環保疑慮。",
@@ -62,12 +122,19 @@
         "Project reflects China's national AI expansion strategy",
         "Local groups question the project energy allocation"
       ],
-      "url": "https://www.ft.com/content/001dec5b-9e13-4a23-9dc5-dda537a47ae3",
-      "source": "Financial Times Technology"
+      "source": {
+        "name": "Financial Times Technology",
+        "url": "https://www.ft.com/content/001dec5b-9e13-4a23-9dc5-dda537a47ae3",
+        "published_at": "2026-04-22",
+        "reading_time_min": 3,
+        "credibility_tier": "primary"
+      },
+      "fetched_via": "rss"
     },
     {
       "id": "aiml-001",
       "category": "ai-ml",
+      "is_headline": false,
       "title_zh": "Google 提出 ReasoningBank 框架，讓 AI 從經驗中學習推理",
       "title_en": "Google Research introduces ReasoningBank to help agents learn from experience",
       "lede_zh": "Google Research 發表 ReasoningBank，一項讓 AI 代理從過往推理經驗中學習的框架，有助於提升代理重複任務的推理品質。",
@@ -82,12 +149,19 @@
         "Agents no longer reason from scratch each time",
         "Agent learning capability enters a new phase"
       ],
-      "url": "https://research.google/blog/reasoningbank-enabling-agents-to-learn-from-experience/",
-      "source": "Google Research Blog"
+      "source": {
+        "name": "Google Research Blog",
+        "url": "https://research.google/blog/reasoningbank-enabling-agents-to-learn-from-experience/",
+        "published_at": "2026-04-22",
+        "reading_time_min": 3,
+        "credibility_tier": "primary"
+      },
+      "fetched_via": "rss"
     },
     {
       "id": "aiml-002",
       "category": "ai-ml",
+      "is_headline": false,
       "title_zh": "QIMMA 阿拉伯語大語言模型排行榜上線",
       "title_en": "QIMMA launches quality-first Arabic LLM benchmark leaderboard",
       "lede_zh": "Hugging Face 上線 QIMMA 阿拉伯語大語言模型排行榜，專注於以質量為首要標準評估阿拉伯語模型表現。",
@@ -102,12 +176,19 @@
         "Quality-first approach replaces traffic scoring",
         "Advancing evaluation standards for minority languages"
       ],
-      "url": "https://huggingface.co/blog/tiiuae/qimma-arabic-leaderboard",
-      "source": "Hugging Face Blog"
+      "source": {
+        "name": "Hugging Face Blog",
+        "url": "https://huggingface.co/blog/tiiuae/qimma-arabic-leaderboard",
+        "published_at": "2026-04-22",
+        "reading_time_min": 3,
+        "credibility_tier": "primary"
+      },
+      "fetched_via": "rss"
     },
     {
       "id": "tp-001",
       "category": "tech-product",
+      "is_headline": false,
       "title_zh": "工程師轉管理不是升遷，而是職業轉換",
       "title_en": "What engineers should consider before accepting a management role",
       "lede_zh": "IEEE Spectrum 刊文探討工程師轉任管理職的挑戰，指出這並非升遷而是完全不同的職業，影響力的衡量方式從個人產出轉為透過團隊間接發揮。",
@@ -122,12 +203,19 @@
         "New managers typically lack formal training",
         "Metrics shift from output to team impact"
       ],
-      "url": "https://spectrum.ieee.org/ic-or-manager",
-      "source": "IEEE Spectrum"
+      "source": {
+        "name": "IEEE Spectrum",
+        "url": "https://spectrum.ieee.org/ic-or-manager",
+        "published_at": "2026-04-22",
+        "reading_time_min": 3,
+        "credibility_tier": "primary"
+      },
+      "fetched_via": "rss"
     },
     {
       "id": "dev-001",
       "category": "dev",
+      "is_headline": false,
       "title_zh": "ThoughtWorks 技術雷達發布，AI 時代重探軟體工程基礎",
       "title_en": "ThoughtWorks Tech Radar revisits software engineering foundations in the AI era",
       "lede_zh": "ThoughtWorks 第 34 期技術雷達發布，118 項技術主題中 AI 占主導地位，同時強調配對程式設計、零信任架構、突變測試等基礎工藝的復甦。",
@@ -142,12 +230,19 @@
         "AI complexity drives return to craft fundamentals",
         "Terminal returns as primary developer interface"
       ],
-      "url": "https://martinfowler.com/fragments/2026-04-21.html",
-      "source": "Martin Fowler"
+      "source": {
+        "name": "Martin Fowler",
+        "url": "https://martinfowler.com/fragments/2026-04-21.html",
+        "published_at": "2026-04-22",
+        "reading_time_min": 3,
+        "credibility_tier": "primary"
+      },
+      "fetched_via": "rss"
     },
     {
       "id": "sci-001",
       "category": "science",
+      "is_headline": false,
       "title_zh": "吹哨者指控芬蘭新創固態電池技術名不副實",
       "title_en": "Whistleblower alleges Finnish startup solid-state battery claims are false",
       "lede_zh": "芬蘭新創 Donut Lab 宣稱的固態電池快充與高儲能技術遭吹哨者質疑不實，事件已引發刑事訴訟。",
@@ -162,12 +257,19 @@
         "Case has escalated into a criminal complaint",
         "Solid-state battery sector faces integrity test"
       ],
-      "url": "https://www.science.org/content/article/whistleblower-alleges-finnish-startup-s-vaunted-solid-state-battery-isn-t-what-it",
-      "source": "Science Magazine News"
+      "source": {
+        "name": "Science Magazine News",
+        "url": "https://www.science.org/content/article/whistleblower-alleges-finnish-startup-s-vaunted-solid-state-battery-isn-t-what-it",
+        "published_at": "2026-04-22",
+        "reading_time_min": 3,
+        "credibility_tier": "primary"
+      },
+      "fetched_via": "rss"
     },
     {
       "id": "sci-002",
       "category": "science",
+      "is_headline": false,
       "title_zh": "創新住宅設計可降低非洲兒童多種致命疾病風險",
       "title_en": "Simple house design helps prevent fatal diseases in African children",
       "lede_zh": "隨機對照試驗顯示，造價 8800 美元的改良住宅設計可減少非洲兒童瘧疾、腹瀉和呼吸道感染等致命疾病的發病率。",
@@ -182,12 +284,19 @@
         "Reduces three fatal disease risks simultaneously",
         "Public health infrastructure investment proves cost effective"
       ],
-      "url": "https://www.science.org/content/article/simple-house-may-help-prevent-multiple-fatal-diseases-african-children",
-      "source": "Science Magazine News"
+      "source": {
+        "name": "Science Magazine News",
+        "url": "https://www.science.org/content/article/simple-house-may-help-prevent-multiple-fatal-diseases-african-children",
+        "published_at": "2026-04-22",
+        "reading_time_min": 3,
+        "credibility_tier": "primary"
+      },
+      "fetched_via": "rss"
     },
     {
       "id": "wld-001",
       "category": "world",
+      "is_headline": false,
       "title_zh": "川普暫緩對伊朗軍事行動，外交斡旋爭取更多時間",
       "title_en": "Trump backs off Iran escalation after frantic day of diplomacy",
       "lede_zh": "美國總統川普決定再次暫緩對伊朗升級軍事威脅，這是數週內第二次退讓，為外交談判爭取更多時間。",
@@ -202,12 +311,19 @@
         "Tensions persist but diplomatic channels remain active",
         "Middle East trajectory still uncertain"
       ],
-      "url": "https://www.bbc.com/news/articles/cvg4yr90jr2o",
-      "source": "BBC World"
+      "source": {
+        "name": "BBC World",
+        "url": "https://www.bbc.com/news/articles/cvg4yr90jr2o",
+        "published_at": "2026-04-22",
+        "reading_time_min": 3,
+        "credibility_tier": "primary"
+      },
+      "fetched_via": "rss"
     },
     {
       "id": "tw-001",
       "category": "taiwan",
+      "is_headline": false,
       "title_zh": "AI 推論框架 SGLang 曝 RCE 漏洞，惡意模型可執行任意程式碼",
       "title_en": "AI inference framework SGLang exposes RCE vulnerability through malicious models",
       "lede_zh": "AI 推論框架 SGLang 被揭露存在遠端程式碼執行漏洞，攻擊者可在 GGUF 模型檔植入惡意酬載，透過 /v1/rerank 端點觸發任意程式碼，截至公告日仍無官方修補程式。",
@@ -222,31 +338,23 @@
         "No official patch available as of April twentieth",
         "Services running SGLang should increase vigilance"
       ],
-      "url": "https://www.ithome.com.tw/news/175219",
-      "source": "iThome"
+      "source": {
+        "name": "iThome",
+        "url": "https://www.ithome.com.tw/news/175219",
+        "published_at": "2026-04-22",
+        "reading_time_min": 3,
+        "credibility_tier": "primary"
+      },
+      "fetched_via": "rss"
     }
   ],
   "meta": {
-    "total_candidates": 21,
-    "articles_selected": 11,
-    "category_distribution": {
-      "ai-ml": 2,
-      "tech-product": 1,
-      "dev": 1,
-      "vc-business": 3,
-      "science": 2,
-      "world": 1,
-      "taiwan": 1
+    "generated_at": "2026-04-22T09:38:41+08:00",
+    "total_articles": 11,
+    "sources_used": {
+      "rss": 8,
+      "firecrawl": 0
     },
-    "sources_used": [
-      "Financial Times Technology",
-      "Google Research Blog",
-      "Hugging Face Blog",
-      "IEEE Spectrum",
-      "Martin Fowler",
-      "Science Magazine News",
-      "BBC World",
-      "iThome"
-    ]
+    "schema_version": "1.0"
   }
 }
