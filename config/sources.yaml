@@ -1,33 +1,34 @@
-# Daily Briefing · News sources configuration (AI Engineer deep edition)
+# Daily Briefing · News sources configuration (MVP — verified feeds only)
 #
-# Total: ~45 RSS feeds + Firecrawl queries
+# This file contains ~40 RSS feeds, all verified to successfully return entries
+# in recent test runs. Feeds that had XML parse errors, 404s, or other
+# persistent failures have been removed.
+#
+# Maintenance notes:
+#   * Notable omissions (all lacked working RSS at last check):
+#     - Anthropic News/Research — company has no official RSS
+#     - Meta AI Blog — malformed feed
+#     - The Batch (DeepLearning.AI) — malformed feed
+#     - Reuters Business/World — feed format errors
+#     - AP Top News, Bloomberg — feed format errors
+#     - 中央社, INSIDE, 數位時代, 關鍵評論網 — malformed or blocked
+#   * If you want to re-add these later, consider:
+#     - Third-party aggregators (Olshansk/rss-feeds on GitHub) for Anthropic
+#     - Using web search / Firecrawl as a fallback discovery mechanism
 #
 # Tier convention:
-#   primary   = official/original source, no intermediary
+#   primary   = official/original source
 #   secondary = established publication with editorial process
-#   tertiary  = aggregator / community curation (use sparingly)
-#
-# Validation notes:
-#   * All URLs follow the standard RSS conventions for each platform
-#     (Substack: /feed, WordPress: /feed, Medium: /feed, GitHub orgs: various)
-#   * If any feed 404s on first run, delete that entry and move on
-#   * Substack/Medium feeds are very stable; blog feeds depend on author
-#     maintaining the site
+#   tertiary  = aggregator / community curation
 
 rss_feeds:
 
   # ===========================================================================
   # AI / MACHINE LEARNING
-  # Focus: frontier labs, research blogs, AI-engineering newsletters
+  # 10 feeds (was 17 — removed Anthropic×2, Meta, The Batch)
   # ===========================================================================
   ai-ml:
-    # --- Frontier lab blogs (primary sources) ---
-    - name: Anthropic News
-      url: https://www.anthropic.com/news/rss.xml
-      tier: primary
-    - name: Anthropic Research
-      url: https://www.anthropic.com/research/rss.xml
-      tier: primary
+    # --- Frontier lab blogs ---
     - name: OpenAI Blog
       url: https://openai.com/blog/rss.xml
       tier: primary
@@ -36,9 +37,6 @@ rss_feeds:
       tier: primary
     - name: Google Research Blog
       url: https://research.google/blog/rss/
-      tier: primary
-    - name: Meta AI Blog
-      url: https://ai.meta.com/blog/rss/
       tier: primary
     - name: Microsoft Research Blog
       url: https://www.microsoft.com/en-us/research/feed/
@@ -55,9 +53,6 @@ rss_feeds:
       url: https://jack-clark.net/feed/
       tier: secondary
       note: Weekly, research-heavy, by Anthropic co-founder
-    - name: The Batch (Andrew Ng / DeepLearning.AI)
-      url: https://www.deeplearning.ai/the-batch/feed/
-      tier: secondary
     - name: Latent Space (swyx & Alessio)
       url: https://www.latent.space/feed
       tier: secondary
@@ -91,6 +86,7 @@ rss_feeds:
 
   # ===========================================================================
   # TECH / PRODUCT
+  # 6 feeds (was 7 — removed Hacker News hnrss.org)
   # ===========================================================================
   tech-product:
     - name: The Verge
@@ -102,9 +98,6 @@ rss_feeds:
     - name: TechCrunch
       url: https://techcrunch.com/feed/
       tier: secondary
-    - name: Hacker News Top (200+ points)
-      url: https://hnrss.org/frontpage?points=200
-      tier: tertiary
     - name: MIT Technology Review
       url: https://www.technologyreview.com/feed/
       tier: secondary
@@ -118,6 +111,7 @@ rss_feeds:
 
   # ===========================================================================
   # PROGRAM DEVELOPMENT
+  # 7 feeds (unchanged)
   # ===========================================================================
   dev:
     - name: GitHub Blog
@@ -147,22 +141,16 @@ rss_feeds:
 
   # ===========================================================================
   # VC / BUSINESS
+  # 3 feeds (was 5 — removed Reuters Business, Bloomberg)
   # ===========================================================================
   vc-business:
     - name: Crunchbase News
       url: https://news.crunchbase.com/feed/
       tier: secondary
-    - name: Reuters Business
-      url: https://www.reutersagency.com/feed/?best-sectors=business-finance
-      tier: primary
     - name: Financial Times Technology
       url: https://www.ft.com/technology?format=rss
       tier: primary
       note: Paywall, but RSS gives headlines and teasers
-    - name: Bloomberg Technology
-      url: https://www.bloomberg.com/feeds/podcasts/etf-report.xml
-      tier: primary
-      note: May require verification; Bloomberg RSS is often region-gated
     - name: SemiAnalysis
       url: https://www.semianalysis.com/feed
       tier: secondary
@@ -170,6 +158,7 @@ rss_feeds:
 
   # ===========================================================================
   # SCIENCE RESEARCH
+  # 5 feeds (unchanged)
   # ===========================================================================
   science:
     - name: Nature News
@@ -191,14 +180,9 @@ rss_feeds:
 
   # ===========================================================================
   # WORLD NEWS
+  # 3 feeds (was 5 — removed Reuters World, AP Top News)
   # ===========================================================================
   world:
-    - name: Reuters World
-      url: https://www.reutersagency.com/feed/?best-regions=world
-      tier: primary
-    - name: AP Top News
-      url: https://apnews.com/index.rss
-      tier: primary
     - name: BBC World
       url: http://feeds.bbci.co.uk/news/world/rss.xml
       tier: primary
@@ -212,65 +196,17 @@ rss_feeds:
 
   # ===========================================================================
   # TAIWAN LOCAL
+  # 2 feeds (was 6 — removed 中央社, INSIDE, 數位時代, 關鍵評論網)
+  # WARNING: This category is now heavily under-sourced. Consider adding
+  # alternative Taiwan sources as you find working ones.
   # ===========================================================================
   taiwan:
-    - name: 中央社即時新聞
-      url: https://www.cna.com.tw/list/aall.aspx?rss=1
-      tier: primary
     - name: iThome
       url: https://www.ithome.com.tw/rss/news
       tier: secondary
     - name: 科技新報 TechNews
       url: https://technews.tw/feed/
       tier: secondary
-    - name: INSIDE 硬塞的網路趨勢觀察
-      url: https://www.inside.com.tw/feed
-      tier: secondary
-    - name: 數位時代
-      url: https://www.bnext.com.tw/rss
-      tier: secondary
-    - name: 關鍵評論網 科技
-      url: https://www.thenewslens.com/rss/category/tech
-      tier: tertiary
-
-
-# =============================================================================
-# FIRECRAWL SUPPLEMENTARY SEARCHES
-# Used to discover stories from paywall sites or niches without good RSS
-# =============================================================================
-firecrawl_searches:
-
-  ai-ml:
-    - query: "arXiv cs.LG trending this week"
-      time_filter: 24h
-    - query: "LLM benchmark new release"
-      time_filter: 24h
-    - query: "AI safety alignment research paper"
-      time_filter: 7d
-      note: Use 7d because alignment work is slower-moving
-
-  dev:
-    - query: "open source developer tool release"
-      time_filter: 24h
-    - query: "programming language version release"
-      time_filter: 24h
-
-  vc-business:
-    - query: "AI startup funding round Series"
-      time_filter: 24h
-    - query: "semiconductor industry earnings"
-      time_filter: 24h
-
-  taiwan:
-    - query: "台灣 AI 產業 新聞"
-      time_filter: 24h
-      location: tw
-    - query: "台積電 TSMC 最新"
-      time_filter: 24h
-      location: tw
-    - query: "台灣 新創 募資"
-      time_filter: 24h
-      location: tw
 
 
 # =============================================================================
@@ -280,14 +216,13 @@ firecrawl_searches:
 # How many days back to check for duplicate URLs
 dedup_window_days: 3
 
-# Credibility scoring weights (applied during Step 4 ranking in task prompt)
+# Credibility scoring weights (applied during ranking in task prompt)
 credibility_weights:
   primary: 1.5
   secondary: 1.0
   tertiary: 0.5
 
-# Per-category soft caps to prevent any single category from dominating
-# (the task prompt can override these based on the day's news density)
+# Per-category soft caps
 soft_caps:
   ai-ml: 8
   tech-product: 5

@@ -6,9 +6,9 @@
   "weather": {
     "location_zh": "台北",
     "location_en": "Taipei",
-    "temp_c": null,
-    "condition_zh": "",
-    "condition_en": ""
+    "temp_c": 24,
+    "condition_zh": "陣雨",
+    "condition_en": "Showers"
   },
   "tagline_zh": "由 AI 為你策展，專屬早晨讀物",
   "tagline_en": "AI-curated, your morning read",
@@ -329,5 +329,37 @@
       "firecrawl": 0
     },
     "schema_version": "1.0"
-  }
+  },
+  "weather_locations": [
+    {
+      "location_id": "taipei",
+      "location_zh": "台北",
+      "location_en": "Taipei",
+      "temp_c": 24,
+      "condition_zh": "陣雨",
+      "condition_en": "Showers",
+      "weather_code": 80,
+      "updated_at": "2026-04-23T17:15"
+    },
+    {
+      "location_id": "banqiao",
+      "location_zh": "板橋",
+      "location_en": "Banqiao",
+      "temp_c": 24,
+      "condition_zh": "陣雨",
+      "condition_en": "Showers",
+      "weather_code": 80,
+      "updated_at": "2026-04-23T17:15"
+    },
+    {
+      "location_id": "zhubei",
+      "location_zh": "竹北",
+      "location_en": "Zhubei",
+      "temp_c": 26,
+      "condition_zh": "陣雨",
+      "condition_en": "Showers",
+      "weather_code": 80,
+      "updated_at": "2026-04-23T17:15"
+    }
+  ]
 }

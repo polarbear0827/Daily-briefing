@@ -38,6 +38,12 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
+SCRIPT_DIR = Path(__file__).resolve().parent
+if str(SCRIPT_DIR) not in sys.path:
+    sys.path.insert(0, str(SCRIPT_DIR))
+
+from weather_utils import fetch_issue_weather
+
 # Third-party: feedparser, PyYAML, python-dateutil
 try:
     import feedparser
@@ -60,7 +66,7 @@ LOOKBACK_HOURS = 24
 DEDUP_DAYS = 3
 MAX_ENTRIES_PER_FEED = 20
 MAX_CANDIDATES_PER_CATEGORY = 8
-MAX_TOTAL_CANDIDATES = 40  # cap total to keep agent prompt size reasonable
+MAX_TOTAL_CANDIDATES = 20  # cap total to keep agent prompt size reasonable
 TIER_WEIGHTS = {"primary": 1.5, "secondary": 1.0, "tertiary": 0.5}
 
 # Logging goes to stderr so it doesn't contaminate stdout JSON
@@ -381,8 +387,8 @@ def main() -> int:
     parser.add_argument(
         "--repo-dir",
         type=Path,
-        default=Path.cwd(),
-        help="Path to Daily-briefing repo (default: current directory)",
+        default=Path(os.environ.get("HOME", "/root")) / "Daily-briefing",
+        help="Path to Daily-briefing repo (default: ~/Daily-briefing)",
     )
     parser.add_argument(
         "--dry-run",
@@ -453,6 +459,12 @@ def main() -> int:
             for cat, cands in candidates_by_category.items()
         },
     }
+
+    try:
+        output["weather_report"] = fetch_issue_weather(output["date_taipei"])
+    except Exception as e:
+        log.error("Weather fetch failed: %s", e)
+        return 1
 
     # Use ensure_ascii=False so the agent sees real Chinese chars in titles
     print(json.dumps(output, ensure_ascii=False, indent=2))

@@ -101,6 +101,32 @@ Build the issue JSON matching this exact schema:
     "condition_zh": "...",
     "condition_en": "..."
   },
+  "weather_locations": [
+    {
+      "location_id": "taipei",
+      "location_zh": "台北",
+      "location_en": "Taipei",
+      "temp_c": N,
+      "condition_zh": "...",
+      "condition_en": "..."
+    },
+    {
+      "location_id": "banqiao",
+      "location_zh": "板橋",
+      "location_en": "Banqiao",
+      "temp_c": N,
+      "condition_zh": "...",
+      "condition_en": "..."
+    },
+    {
+      "location_id": "zhubei",
+      "location_zh": "竹北",
+      "location_en": "Zhubei",
+      "temp_c": N,
+      "condition_zh": "...",
+      "condition_en": "..."
+    }
+  ],
   "tagline_zh": "由 AI 為你策展，專屬早晨讀物",
   "tagline_en": "AI-curated, your morning read",
   "categories": [...use existing from previous issue's categories array verbatim...],
@@ -138,7 +164,9 @@ Notes on specific fields:
 - `categories` — copy verbatim from the previous issue's `categories` array to maintain consistency.
 - `fetched_via` — always `"rss"` in this edition.
 - `sources_used.firecrawl` — always `0`.
-- Weather: fetch today's Taipei weather from Open-Meteo (no key required): `https://api.open-meteo.com/v1/forecast?latitude=25.03&longitude=121.56&current_weather=true`. If that fails, set reasonable defaults (22, "晴時多雲", "Partly Cloudy") — the template handles missing values but it's better to provide something.
+- Weather: use the pre-fetch script's `weather_report.weather` and `weather_report.weather_locations` directly. Do NOT re-fetch weather inside the generation step.
+- `weather_locations` MUST include exactly these location IDs: `taipei`, `banqiao`, `zhubei`.
+- `weather` MUST match the Taipei entry from `weather_locations`.
 
 ### Step 7 — Commit to GitHub
 
@@ -157,6 +185,14 @@ Articles: [total] across [N] categories
 
 ### Step 8 — Verify and report
 
+Before commit, run:
+
+```bash
+python3 scripts/validate_issue.py data/latest.json data/issues/YYYY-MM-DD.json
+```
+
+If validation fails, do NOT commit.
+
 After pushing, write a short execution log to stdout:
 - Issue number published
 - Total articles by category
@@ -174,6 +210,10 @@ Before the final commit, verify:
 - Each source URL appears at most once
 - Exactly one article has `is_headline: true`
 - All category IDs in articles exist in `categories[]`
+- `weather.temp_c` is never null and all weather strings are non-empty
+- `weather_locations[]` includes `taipei`, `banqiao`, and `zhubei`
+- `weather` exactly matches the Taipei entry in `weather_locations[]`
+- `python3 scripts/validate_issue.py data/latest.json data/issues/YYYY-MM-DD.json` exits successfully
 - Issue number is exactly `previous + 1`
 - `date` is today in Asia/Taipei timezone
 - Total article count ≥ 5 (this threshold is lowered from 8 because without Firecrawl, early-morning runs may have fewer candidates)

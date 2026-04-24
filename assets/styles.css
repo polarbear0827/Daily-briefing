@@ -77,8 +77,39 @@ body {
 }
 
 .masthead-meta .issue-number { text-align: left; }
-.masthead-meta .weather { text-align: center; }
+.masthead-meta .weather {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
 .masthead-meta .date { text-align: right; }
+
+.weather-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.weather-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 10px;
+  border: 1px solid var(--rule-soft);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.28);
+}
+
+.weather-city {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.weather-reading,
+.weather-empty {
+  color: var(--ink-soft);
+}
 
 .masthead-title {
   text-align: center;

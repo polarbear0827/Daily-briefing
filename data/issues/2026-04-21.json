@@ -6,20 +6,48 @@
   "weather": {
     "location_zh": "台北",
     "location_en": "Taipei",
-    "temp_c": null,
-    "condition_zh": "",
-    "condition_en": ""
+    "temp_c": 26,
+    "condition_zh": "多雲",
+    "condition_en": "Cloudy"
   },
   "tagline_zh": "由 AI 為你策展，專屬早晨讀物",
   "tagline_en": "AI-curated, your morning read",
   "categories": [
-    {"id": "ai-ml", "name_zh": "AI／機器學習", "name_en": "AI / Machine Learning"},
-    {"id": "tech-product", "name_zh": "科技／產品", "name_en": "Tech / Product"},
-    {"id": "dev", "name_zh": "程式開發", "name_en": "Development"},
-    {"id": "vc-business", "name_zh": "創投／商業", "name_en": "VC / Business"},
-    {"id": "science", "name_zh": "科學研究", "name_en": "Science"},
-    {"id": "world", "name_zh": "國際時事", "name_en": "World"},
-    {"id": "taiwan", "name_zh": "臺灣本地", "name_en": "Taiwan"}
+    {
+      "id": "ai-ml",
+      "name_zh": "AI／機器學習",
+      "name_en": "AI / Machine Learning"
+    },
+    {
+      "id": "tech-product",
+      "name_zh": "科技／產品",
+      "name_en": "Tech / Product"
+    },
+    {
+      "id": "dev",
+      "name_zh": "程式開發",
+      "name_en": "Development"
+    },
+    {
+      "id": "vc-business",
+      "name_zh": "創投／商業",
+      "name_en": "VC / Business"
+    },
+    {
+      "id": "science",
+      "name_zh": "科學研究",
+      "name_en": "Science"
+    },
+    {
+      "id": "world",
+      "name_zh": "國際時事",
+      "name_en": "World"
+    },
+    {
+      "id": "taiwan",
+      "name_zh": "臺灣本地",
+      "name_en": "Taiwan"
+    }
   ],
   "articles": [
     {
@@ -296,8 +324,43 @@
   "meta": {
     "generated_at": "2026-04-21T17:50:00+08:00",
     "total_articles": 10,
-    "sources_used": {"rss": 10, "firecrawl": 0},
+    "sources_used": {
+      "rss": 10,
+      "firecrawl": 0
+    },
     "failed_feeds": [],
     "schema_version": "1.0"
-  }
+  },
+  "weather_locations": [
+    {
+      "location_id": "taipei",
+      "location_zh": "台北",
+      "location_en": "Taipei",
+      "temp_c": 26,
+      "condition_zh": "多雲",
+      "condition_en": "Cloudy",
+      "weather_code": 3,
+      "updated_at": "2026-04-21T08:00"
+    },
+    {
+      "location_id": "banqiao",
+      "location_zh": "板橋",
+      "location_en": "Banqiao",
+      "temp_c": 26,
+      "condition_zh": "多雲",
+      "condition_en": "Cloudy",
+      "weather_code": 3,
+      "updated_at": "2026-04-21T08:00"
+    },
+    {
+      "location_id": "zhubei",
+      "location_zh": "竹北",
+      "location_en": "Zhubei",
+      "temp_c": 24,
+      "condition_zh": "多雲",
+      "condition_en": "Cloudy",
+      "weather_code": 3,
+      "updated_at": "2026-04-21T08:00"
+    }
+  ]
 }

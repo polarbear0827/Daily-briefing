@@ -47,13 +47,61 @@
   // Renderers
   // ---------------------------------------------------------------------------
 
+  function getWeatherLocations(issue) {
+    if (Array.isArray(issue.weather_locations) && issue.weather_locations.length > 0) {
+      return issue.weather_locations.filter(location => location && typeof location === 'object');
+    }
+
+    if (issue.weather && typeof issue.weather === 'object') {
+      return [{
+        location_id: 'primary',
+        location_zh: issue.weather.location_zh,
+        location_en: issue.weather.location_en,
+        temp_c: issue.weather.temp_c,
+        condition_zh: issue.weather.condition_zh,
+        condition_en: issue.weather.condition_en,
+      }];
+    }
+
+    return [];
+  }
+
+  function renderWeather(issue) {
+    const locations = getWeatherLocations(issue).filter(location => {
+      const hasName = Boolean(location.location_zh || location.location_en);
+      const hasTemp = Number.isFinite(Number(location.temp_c));
+      const hasCondition = Boolean(location.condition_zh || location.condition_en);
+      return hasName && hasTemp && hasCondition;
+    });
+
+    if (locations.length === 0) {
+      return '<div class="weather-empty">天氣資料暫缺</div>';
+    }
+
+    return `
+      <div class="weather-list">
+        ${locations.map(location => {
+          const name = location.location_zh || location.location_en || '天氣';
+          const temp = `${Math.round(Number(location.temp_c))}°C`;
+          const condition = location.condition_zh || location.condition_en || '資料暫缺';
+          return `
+            <span class="weather-chip">
+              <span class="weather-city">${escapeHtml(name)}</span>
+              <span class="weather-reading">${escapeHtml(temp)} · ${escapeHtml(condition)}</span>
+            </span>
+          `;
+        }).join('')}
+      </div>
+    `;
+  }
+
   function renderMasthead(issue) {
     return `
       <header class="masthead">
         <div class="masthead-meta">
           <div class="issue-number">第 ${issue.issue_number} 期 · No. ${issue.issue_number}</div>
           <div class="weather">
-            ${issue.weather.location_zh} ${issue.weather.temp_c}°C · ${issue.weather.condition_zh}
+            ${renderWeather(issue)}
           </div>
           <div class="date">${issue.date_display_zh}</div>
         </div>
