@@ -65,8 +65,8 @@ TAIPEI_TZ = timezone(timedelta(hours=8))
 LOOKBACK_HOURS = 24
 DEDUP_DAYS = 3
 MAX_ENTRIES_PER_FEED = 20
-MAX_CANDIDATES_PER_CATEGORY = 8
-MAX_TOTAL_CANDIDATES = 20  # cap total to keep agent prompt size reasonable
+MAX_CANDIDATES_PER_CATEGORY = 15
+MAX_TOTAL_CANDIDATES = 100  # cap total to keep agent prompt size reasonable
 TIER_WEIGHTS = {"primary": 1.5, "secondary": 1.0, "tertiary": 0.5}
 
 # Logging goes to stderr so it doesn't contaminate stdout JSON

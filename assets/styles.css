@@ -608,3 +608,56 @@ body {
 }
 
 .site-footer a:hover { border-bottom-color: var(--accent); }
+
+
+/* ---------------------------------------------------------------------------
+   Article reactions (Phase 1: localStorage)
+--------------------------------------------------------------------------- */
+.article-reactions {
+  display: flex;
+  gap: 6px;
+  margin-left: 8px;
+  position: relative;
+}
+
+.reaction-btn {
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  filter: grayscale(0.85) opacity(0.55);
+  transition: filter 0.15s ease, background 0.15s ease, transform 0.1s ease, border-color 0.15s ease;
+}
+
+.reaction-btn:hover {
+  filter: grayscale(0) opacity(1);
+  background: rgba(0, 0, 0, 0.05);
+  transform: scale(1.12);
+}
+
+.reaction-btn.is-active {
+  filter: grayscale(0) opacity(1);
+  background: var(--accent-soft, rgba(220, 38, 38, 0.12));
+  border-color: var(--accent, #dc2626);
+}
+
+.reaction-btn[data-reaction="interested"].is-active {
+  background: rgba(244, 63, 94, 0.15);
+  border-color: rgba(244, 63, 94, 0.6);
+}
+.reaction-btn[data-reaction="to-implement"].is-active {
+  background: rgba(59, 130, 246, 0.15);
+  border-color: rgba(59, 130, 246, 0.6);
+}
+.reaction-btn[data-reaction="fun"].is-active {
+  background: rgba(234, 179, 8, 0.15);
+  border-color: rgba(234, 179, 8, 0.6);
+}

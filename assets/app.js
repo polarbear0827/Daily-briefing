@@ -173,9 +173,58 @@
             <a href="${escapeAttr(article.source.url)}" target="_blank" rel="noopener"
                onclick="event.stopPropagation()">原文 EN</a>
           </div>
+          <div class="article-reactions" data-article-id="${escapeAttr(article.id)}">
+            <button class="reaction-btn" data-reaction="interested"
+                    title="有興趣 — 想之後深入了解"
+                    onclick="event.stopPropagation(); window.toggleReaction(this)">❤️</button>
+            <button class="reaction-btn" data-reaction="to-implement"
+                    title="想實作 — 看起來能用在工作或專案上"
+                    onclick="event.stopPropagation(); window.toggleReaction(this)">🔧</button>
+            <button class="reaction-btn" data-reaction="fun"
+                    title="有趣 — 純粹覺得好玩"
+                    onclick="event.stopPropagation(); window.toggleReaction(this)">😄</button>
+          </div>
         </div>
       </article>
     `;
+  }
+
+  // ---------------------------------------------------------------------------
+  // Reactions (Phase 1: localStorage; Phase 2: GitHub Issues sync)
+  // ---------------------------------------------------------------------------
+  const REACTION_KEY = 'dailyBriefing.reactions.v1';
+
+  function loadReactions() {
+    try { return JSON.parse(localStorage.getItem(REACTION_KEY) || '{}'); }
+    catch { return {}; }
+  }
+  function saveReactions(map) {
+    localStorage.setItem(REACTION_KEY, JSON.stringify(map));
+  }
+
+  window.toggleReaction = function (btn) {
+    const wrap = btn.closest('.article-reactions');
+    if (!wrap) return;
+    const articleId = wrap.dataset.articleId;
+    const reaction = btn.dataset.reaction;
+    const map = loadReactions();
+    map[articleId] = map[articleId] || {};
+    map[articleId][reaction] = !map[articleId][reaction];
+    if (!map[articleId][reaction]) delete map[articleId][reaction];
+    if (Object.keys(map[articleId]).length === 0) delete map[articleId];
+    saveReactions(map);
+    btn.classList.toggle('is-active', !!(map[articleId] && map[articleId][reaction]));
+  };
+
+  function applyReactionStateAll() {
+    const map = loadReactions();
+    qsa('.article-reactions').forEach(wrap => {
+      const id = wrap.dataset.articleId;
+      const state = map[id] || {};
+      qsa('.reaction-btn', wrap).forEach(b => {
+        b.classList.toggle('is-active', !!state[b.dataset.reaction]);
+      });
+    });
   }
 
   function renderFooter(issue) {
@@ -393,6 +442,9 @@
     });
 
     bindTabs();
+
+    // Restore reaction state from localStorage
+    applyReactionStateAll();
 
     // ESC to close reader
     document.addEventListener('keydown', (e) => {
