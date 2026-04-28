@@ -62,7 +62,7 @@ except ImportError as e:
 # ---------------------------------------------------------------------------
 
 TAIPEI_TZ = timezone(timedelta(hours=8))
-LOOKBACK_HOURS = 24
+LOOKBACK_HOURS = 48
 DEDUP_DAYS = 3
 MAX_ENTRIES_PER_FEED = 20
 MAX_CANDIDATES_PER_CATEGORY = 15
