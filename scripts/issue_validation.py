@@ -141,8 +141,6 @@ def validate_articles(articles: Any, category_ids: set[str]) -> list[str]:
                 "title_en",
                 "lede_zh",
                 "lede_en",
-                "bullets_zh",
-                "bullets_en",
                 "source",
                 "fetched_via",
             ),
@@ -163,12 +161,15 @@ def validate_articles(articles: Any, category_ids: set[str]) -> list[str]:
         _require_non_empty_string(errors, f"{item_path}.lede_en", article.get("lede_en"))
 
         for bullets_key in ("bullets_zh", "bullets_en"):
+            if bullets_key not in article:
+                continue
             bullets = article.get(bullets_key)
-            if not isinstance(bullets, list) or len(bullets) != 3:
-                _add_error(errors, f"{item_path}.{bullets_key}", "must be an array of exactly 3 items")
+            if not isinstance(bullets, list):
+                _add_error(errors, f"{item_path}.{bullets_key}", "must be an array if present")
             else:
                 for bullet_index, bullet in enumerate(bullets):
-                    _require_non_empty_string(errors, f"{item_path}.{bullets_key}[{bullet_index}]", bullet)
+                    if not isinstance(bullet, str):
+                        _add_error(errors, f"{item_path}.{bullets_key}[{bullet_index}]", "must be a string")
 
         source = article.get("source")
         source_path = f"{item_path}.source"
@@ -247,6 +248,21 @@ def validate_issue_data(issue: Any) -> list[str]:
     errors.extend(validate_articles(issue.get("articles"), category_ids))
     article_count = len(issue.get("articles")) if isinstance(issue.get("articles"), list) else 0
     errors.extend(validate_meta(issue.get("meta"), article_count))
+
+    # Optional: breaking_news must be a list of strings referencing existing article ids.
+    if "breaking_news" in issue:
+        bn = issue.get("breaking_news")
+        if not isinstance(bn, list):
+            _add_error(errors, "breaking_news", "must be an array if present")
+        else:
+            article_ids = set()
+            if isinstance(issue.get("articles"), list):
+                article_ids = {a.get("id") for a in issue["articles"] if isinstance(a, dict)}
+            for i, v in enumerate(bn):
+                if not isinstance(v, str) or not v.strip():
+                    _add_error(errors, f"breaking_news[{i}]", "must be a non-empty string")
+                elif article_ids and v not in article_ids:
+                    _add_error(errors, f"breaking_news[{i}]", "must reference an existing article id")
 
     weather = issue.get("weather")
     weather_locations = issue.get("weather_locations")

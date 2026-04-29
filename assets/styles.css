@@ -661,3 +661,85 @@ body {
   background: rgba(234, 179, 8, 0.15);
   border-color: rgba(234, 179, 8, 0.6);
 }
+
+/* === Dual-edition switcher (added 2026-04-29) ============================= */
+.edition-switcher-wrap {
+  display: flex;
+  justify-content: center;
+  padding: 18px 16px 4px;
+}
+.edition-switcher {
+  display: inline-flex;
+  gap: 4px;
+  padding: 4px;
+  background: rgba(196, 69, 60, 0.06);
+  border: 1px solid rgba(196, 69, 60, 0.18);
+  border-radius: 999px;
+}
+.edition-tab {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--ink-soft);
+  font-family: var(--font-display-zh, 'Noto Serif TC', serif);
+  font-size: 15px;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background .15s ease, color .15s ease;
+  letter-spacing: 0.05em;
+}
+.edition-tab:hover:not(.disabled) { color: var(--ink); }
+.edition-tab.active {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 1px 4px rgba(196, 69, 60, 0.3);
+}
+.edition-tab.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* === Prose-style lede ===================================================== */
+.article-lede.article-lede--prose {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--ink-soft);
+  margin-top: 8px;
+  margin-bottom: 14px;
+}
+.article.is-headline .article-lede.article-lede--prose {
+  font-size: 18px;
+  line-height: 1.85;
+}
+
+/* === Breaking News section =============================================== */
+.breaking-section {
+  border-left: 4px solid var(--accent);
+  background: linear-gradient(180deg, rgba(196, 69, 60, 0.05), rgba(196, 69, 60, 0));
+  padding: 14px 18px 8px;
+  margin-bottom: 28px;
+  border-radius: 4px;
+}
+.breaking-section .breaking-title h2 {
+  color: var(--accent);
+  letter-spacing: 0.05em;
+}
+.breaking-section .breaking-title .count-label {
+  color: var(--accent-soft, var(--accent));
+}
+.article.is-breaking {
+  border: 1px solid rgba(196, 69, 60, 0.35);
+  background: #fffaf9;
+  border-radius: 6px;
+  padding: 16px;
+}
+.article.is-breaking .article-kicker .kicker-badge {
+  color: #fff;
+  background: var(--accent);
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}

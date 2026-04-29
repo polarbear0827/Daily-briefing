@@ -13,21 +13,36 @@
   // Data loading
   // ---------------------------------------------------------------------------
 
-  async function loadIssue() {
-    // URL param ?date=YYYY-MM-DD overrides latest
-    const params = new URLSearchParams(window.location.search);
-    const date = params.get('date');
-    const path = date ? `data/issues/${date}.json` : 'data/latest.json';
-
+  async function fetchJson(path) {
     try {
-      const res = await fetch(path);
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const res = await fetch(path, { cache: 'no-store' });
+      if (!res.ok) return null;
       return await res.json();
     } catch (err) {
-      console.error('Failed to load issue:', err);
-      renderError(err);
       return null;
     }
+  }
+
+  async function loadAllEditions() {
+    // URL param ?date=YYYY-MM-DD&edition=morning|evening overrides
+    const params = new URLSearchParams(window.location.search);
+    const date = params.get('date');
+    const editionParam = params.get('edition');
+
+    if (date) {
+      const morning = await fetchJson(`data/issues/${date}-morning.json`);
+      const evening = await fetchJson(`data/issues/${date}-evening.json`);
+      // Fallback to legacy single-file format if neither edition file exists.
+      const legacy = (!morning && !evening) ? await fetchJson(`data/issues/${date}.json`) : null;
+      return { morning, evening, legacy, requestedEdition: editionParam };
+    }
+
+    const [morning, evening, latest] = await Promise.all([
+      fetchJson('data/morning.json'),
+      fetchJson('data/evening.json'),
+      fetchJson('data/latest.json'),
+    ]);
+    return { morning, evening, legacy: (!morning && !evening) ? latest : null, requestedEdition: editionParam };
   }
 
   function renderError(err) {
@@ -147,22 +162,29 @@
     `;
   }
 
-  function renderArticle(article, cat) {
+  function renderArticle(article, cat, opts) {
+    opts = opts || {};
     const headlineClass = article.is_headline ? ' is-headline' : '';
-    const kickerLabel = article.is_headline ? '頭條 · Headline' : escapeHtml(cat.name_zh);
-    const bullets = (article.bullets_zh || []).map(b => `<li>${escapeHtml(b)}</li>`).join('');
+    const breakingClass = opts.breaking ? ' is-breaking' : '';
+    const kickerLabel = opts.breaking
+      ? '🚨 重大快訊 · Breaking'
+      : (article.is_headline ? '頭條 · Headline' : escapeHtml(cat.name_zh));
+    const bulletsArr = Array.isArray(article.bullets_zh) ? article.bullets_zh.filter(b => b && String(b).trim()) : [];
+    const bulletsHtml = bulletsArr.length
+      ? `<ul class="article-bullets">${bulletsArr.map(b => `<li>${escapeHtml(b)}</li>`).join('')}</ul>`
+      : '';
     const readingTime = article.source.reading_time_min || 3;
     const publishedAgo = relativeTime(article.source.published_at);
 
     return `
-      <article class="article${headlineClass}" data-id="${article.id}">
+      <article class="article${headlineClass}${breakingClass}" data-id="${article.id}">
         <div class="article-kicker">
           <span class="kicker-badge">${kickerLabel}</span>
         </div>
         <h3 class="article-title">${escapeHtml(article.title_zh)}</h3>
         ${article.title_en && article.title_en !== article.title_zh ? `<p class="article-title-en">${escapeHtml(article.title_en)}</p>` : ''}
-        <p class="article-lede">${escapeHtml(article.lede_zh)}</p>
-        <ul class="article-bullets">${bullets}</ul>
+        <p class="article-lede article-lede--prose">${escapeHtml(article.lede_zh)}</p>
+        ${bulletsHtml}
         <div class="article-footer">
           <span class="article-source">${escapeHtml(article.source.name)}</span>
           <span class="dot">·</span>
@@ -245,8 +267,10 @@
 
   function openReader(article, cat) {
     const overlay = qs('#reader-overlay');
-    const bulletsZh = (article.bullets_zh || []).map(b => `<li>${escapeHtml(b)}</li>`).join('');
-    const bulletsEn = (article.bullets_en || []).map(b => `<li>${escapeHtml(b)}</li>`).join('');
+    const bzArr = Array.isArray(article.bullets_zh) ? article.bullets_zh.filter(b => b && String(b).trim()) : [];
+    const beArr = Array.isArray(article.bullets_en) ? article.bullets_en.filter(b => b && String(b).trim()) : [];
+    const bulletsZh = bzArr.map(b => `<li>${escapeHtml(b)}</li>`).join('');
+    const bulletsEn = beArr.map(b => `<li>${escapeHtml(b)}</li>`).join('');
     const hasDistinctEn = article.title_en && article.title_en !== article.title_zh;
 
     overlay.innerHTML = `
@@ -268,8 +292,8 @@
         <p class="reader-lede zh-only">${escapeHtml(article.lede_zh)}</p>
         <p class="reader-lede en-only" style="font-family:var(--font-body-en);">${escapeHtml(article.lede_en)}</p>
 
-        <ul class="reader-bullets zh-only">${bulletsZh}</ul>
-        <ul class="reader-bullets en-only">${bulletsEn}</ul>
+        <ul class="reader-bullets zh-only"${bulletsZh ? '' : ' style="display:none;"'}>${bulletsZh}</ul>
+        <ul class="reader-bullets en-only"${bulletsEn ? '' : ' style="display:none;"'}>${bulletsEn}</ul>
 
         <div class="reader-source-block">
           <div class="label">原文來源 · Source</div>
@@ -382,32 +406,65 @@
   // Main
   // ---------------------------------------------------------------------------
 
-  async function main() {
-    const issue = await loadIssue();
-    if (!issue) return;
+  // ---------------------------------------------------------------------------
+  // Edition switcher + Breaking News
+  // ---------------------------------------------------------------------------
 
+  function renderEditionSwitcher(editions, activeEdition) {
+    const has = (k) => Boolean(editions[k]);
+    const btn = (k, label) => {
+      const disabled = !has(k);
+      const active = (k === activeEdition);
+      return `<button class="edition-tab${active ? ' active' : ''}${disabled ? ' disabled' : ''}"
+              data-edition="${k}" ${disabled ? 'disabled' : ''}>${label}</button>`;
+    };
+    return `
+      <div class="edition-switcher-wrap">
+        <div class="edition-switcher">
+          ${btn('morning', '☀️ 早報')}
+          ${btn('evening', '🌙 晚報')}
+        </div>
+      </div>
+    `;
+  }
+
+  function renderBreakingSection(issue, catMap) {
+    const ids = Array.isArray(issue.breaking_news) ? issue.breaking_news : [];
+    if (ids.length === 0) return '';
+    const articles = ids
+      .map(id => issue.articles.find(a => a.id === id))
+      .filter(Boolean);
+    if (articles.length === 0) return '';
+    const articleHtml = articles.map(a => {
+      const cat = catMap[a.category] || { name_zh: '', name_en: '' };
+      return renderArticle(a, cat, { breaking: true });
+    }).join('');
+    return `
+      <section class="category-section breaking-section" data-cat="all">
+        <div class="category-title breaking-title">
+          <h2>🚨 重大快訊</h2>
+          <span class="count-label">Breaking News · ${articles.length} 則</span>
+        </div>
+        <div class="articles">${articleHtml}</div>
+      </section>
+    `;
+  }
+
+  function renderIssueInto(rootEl, issue) {
     const catMap = Object.fromEntries(issue.categories.map(c => [c.id, c]));
-
-    // Separate the headline from the category flow.
-    // Headline article is rendered in its own top-level section,
-    // and is NOT duplicated inside its category section below.
     const headlineArticle = issue.articles.find(a => a.is_headline);
     const headlineId = headlineArticle ? headlineArticle.id : null;
 
     const articlesByCategory = {};
     issue.categories.forEach(c => { articlesByCategory[c.id] = []; });
     issue.articles.forEach(a => {
-      if (a.id === headlineId) return;  // skip headline in category flow
-      if (articlesByCategory[a.category]) {
-        articlesByCategory[a.category].push(a);
-      }
+      if (a.id === headlineId) return;
+      if (articlesByCategory[a.category]) articlesByCategory[a.category].push(a);
     });
 
-    // Headline section — single-article section at the top
     let headlineSection = '';
     if (headlineArticle) {
       const headlineCat = catMap[headlineArticle.category] || { name_zh: '頭條', name_en: 'Headline' };
-      // Render article, then inject data-owner-cat for tab-filter logic
       const articleHtml = renderArticle(headlineArticle, headlineCat)
         .replace('class="article', `data-owner-cat="${headlineArticle.category}" class="article`);
       headlineSection = `
@@ -421,19 +478,19 @@
       `;
     }
 
+    const breakingSection = renderBreakingSection(issue, catMap);
     const sections = issue.categories
       .map(cat => renderCategorySection(cat, articlesByCategory[cat.id] || []))
       .join('');
 
-    qs('#app').innerHTML = `
+    rootEl.innerHTML = `
       ${renderMasthead(issue)}
       ${renderTabs(issue)}
-      <main>${headlineSection}${sections}</main>
+      <main>${breakingSection}${headlineSection}${sections}</main>
       ${renderFooter(issue)}
     `;
 
-    // Wire up article clicks
-    qsa('.article').forEach(el => {
+    qsa('.article', rootEl).forEach(el => {
       el.addEventListener('click', () => {
         const id = el.dataset.id;
         const article = issue.articles.find(a => a.id === id);
@@ -441,19 +498,66 @@
         openReader(article, cat);
       });
     });
-
     bindTabs();
-
-    // Restore reaction state from localStorage
     applyReactionStateAll();
+    document.title = `第 ${issue.issue_number} 期 · ${issue.edition_label_zh || ''} · Daily Briefing`;
+  }
 
-    // ESC to close reader
+  // ---------------------------------------------------------------------------
+  // Main
+  // ---------------------------------------------------------------------------
+
+  async function main() {
+    const { morning, evening, legacy, requestedEdition } = await loadAllEditions();
+
+    if (!morning && !evening && !legacy) {
+      renderError(new Error('No issue data available'));
+      return;
+    }
+
+    // Legacy single-file: render as-is, no switcher.
+    if (legacy && !morning && !evening) {
+      renderIssueInto(qs('#app'), legacy);
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeReader();
+      });
+      return;
+    }
+
+    const editions = { morning, evening };
+
+    // Pick default edition.
+    let active;
+    if (requestedEdition && editions[requestedEdition]) {
+      active = requestedEdition;
+    } else if (morning && evening) {
+      const mt = new Date(morning.meta.generated_at).getTime();
+      const et = new Date(evening.meta.generated_at).getTime();
+      active = (et >= mt) ? 'evening' : 'morning';
+    } else {
+      active = morning ? 'morning' : 'evening';
+    }
+
+    const app = qs('#app');
+    function show(editionKey) {
+      const issue = editions[editionKey];
+      if (!issue) return;
+      app.innerHTML = renderEditionSwitcher(editions, editionKey)
+        + '<div id="issue-root"></div>';
+      renderIssueInto(qs('#issue-root'), issue);
+      qsa('.edition-tab', app).forEach(btn => {
+        btn.addEventListener('click', () => {
+          const k = btn.dataset.edition;
+          if (k === editionKey || !editions[k]) return;
+          show(k);
+        });
+      });
+    }
+    show(active);
+
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') closeReader();
     });
-
-    // Update page title
-    document.title = `第 ${issue.issue_number} 期 · Daily Briefing`;
   }
 
   document.addEventListener('DOMContentLoaded', main);
