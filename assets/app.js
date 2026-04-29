@@ -160,7 +160,7 @@
           <span class="kicker-badge">${kickerLabel}</span>
         </div>
         <h3 class="article-title">${escapeHtml(article.title_zh)}</h3>
-        <p class="article-title-en">${escapeHtml(article.title_en)}</p>
+        ${article.title_en && article.title_en !== article.title_zh ? `<p class="article-title-en">${escapeHtml(article.title_en)}</p>` : ''}
         <p class="article-lede">${escapeHtml(article.lede_zh)}</p>
         <ul class="article-bullets">${bullets}</ul>
         <div class="article-footer">
@@ -247,17 +247,18 @@
     const overlay = qs('#reader-overlay');
     const bulletsZh = (article.bullets_zh || []).map(b => `<li>${escapeHtml(b)}</li>`).join('');
     const bulletsEn = (article.bullets_en || []).map(b => `<li>${escapeHtml(b)}</li>`).join('');
+    const hasDistinctEn = article.title_en && article.title_en !== article.title_zh;
 
     overlay.innerHTML = `
-      <div class="reader-paper" data-lang="both">
+      <div class="reader-paper" data-lang="${hasDistinctEn ? 'both' : 'zh'}">
         <button class="reader-close" aria-label="Close">×</button>
-        <div class="reader-lang-toggle">
+        ${hasDistinctEn ? `<div class="reader-lang-toggle">
           <button data-lang="zh">中文</button>
           <button data-lang="both" class="active">中英對照</button>
           <button data-lang="en">EN</button>
-        </div>
+        </div>` : ''}
 
-        <div class="reader-kicker">${escapeHtml(cat.name_zh)} · ${escapeHtml(cat.name_en)}</div>
+        <div class="reader-kicker">${escapeHtml(cat.name_zh)}${hasDistinctEn ? ' · ' + escapeHtml(cat.name_en) : ''}</div>
 
         <h1 class="reader-title zh-only">${escapeHtml(article.title_zh)}</h1>
         <h1 class="reader-title en-only" style="font-family:var(--font-display-en);font-style:italic;">${escapeHtml(article.title_en)}</h1>
