@@ -898,3 +898,45 @@ body {
   .reader-paper { padding: 28px 16px; }
   .reader-title { font-size: 23px; }
 }
+
+
+/* === Teaching material badge & reader takeaway === */
+.teaching-badge {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 9px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  color: #78350f;
+  border: 1px solid #fbbf24;
+  border-radius: 10px;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.reader-takeaway {
+  margin: 22px 0 18px;
+  padding: 16px 18px;
+  background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+  border-left: 4px solid #f59e0b;
+  border-radius: 6px;
+}
+.reader-takeaway-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #92400e;
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+}
+.reader-takeaway-text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #1f2937;
+  margin: 0;
+}
+@media (max-width: 420px) {
+  .teaching-badge { font-size: 10px; padding: 2px 7px; margin-left: 6px; }
+  .reader-takeaway { padding: 13px 14px; }
+  .reader-takeaway-text { font-size: 14px; }
+}

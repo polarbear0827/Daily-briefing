@@ -1,351 +1,195 @@
-# Daily Briefing · News sources configuration
-#
-# Verified RSS feeds (all return entries successfully as of 2026-04-28).
-# Excludes media from China / Russia / North Korea per user preference.
-#
-# Tier convention:
-#   primary   = official source / authoritative publication
-#   secondary = established media with editorial process
-#   tertiary  = aggregator / community curation / individual blog
-
 rss_feeds:
-
-  # ===========================================================================
-  # AI / MACHINE LEARNING — frontier labs, vendor blogs, practitioners
-  # ===========================================================================
   ai-ml:
-    # --- Frontier lab official blogs (primary) ---
-    - name: OpenAI Blog
-      url: https://openai.com/blog/rss.xml
-      tier: primary
-    - name: Google AI Blog
-      url: https://blog.google/technology/ai/rss/
-      tier: primary
-    - name: Google DeepMind Blog
-      url: https://deepmind.google/blog/rss.xml
-      tier: primary
-    - name: Google Research Blog
-      url: https://research.google/blog/rss/
-      tier: primary
-    - name: Apple Machine Learning Research
-      url: https://machinelearning.apple.com/rss.xml
-      tier: primary
-    - name: Microsoft Research Blog
-      url: https://www.microsoft.com/en-us/research/feed/
-      tier: primary
-    - name: AWS Machine Learning Blog
-      url: https://aws.amazon.com/blogs/machine-learning/feed/
-      tier: primary
-    - name: NVIDIA Blog
-      url: https://blogs.nvidia.com/feed/
-      tier: primary
-    - name: NVIDIA Developer Blog
-      url: https://developer.nvidia.com/blog/feed/
-      tier: primary
-    - name: Hugging Face Blog
-      url: https://huggingface.co/blog/feed.xml
-      tier: primary
-
-    # --- AI Engineer / practitioner newsletters (secondary) ---
-    - name: Import AI (Jack Clark)
-      url: https://jack-clark.net/feed/
-      tier: secondary
-      note: Weekly, research-heavy, by Anthropic co-founder
-    - name: Latent Space (swyx & Alessio)
-      url: https://www.latent.space/feed
-      tier: secondary
-    - name: Simon Willison's Weblog
-      url: https://simonwillison.net/atom/everything/
-      tier: secondary
-    - name: Interconnects (Nathan Lambert)
-      url: https://www.interconnects.ai/feed
-      tier: secondary
-    - name: Lilian Weng's Lil'Log
-      url: https://lilianweng.github.io/index.xml
-      tier: secondary
-    - name: Chip Huyen Blog
-      url: https://huyenchip.com/feed.xml
-      tier: secondary
-    - name: Sebastian Raschka (Ahead of AI)
-      url: https://magazine.sebastianraschka.com/feed
-      tier: secondary
-    - name: The Algorithmic Bridge
-      url: https://www.thealgorithmicbridge.com/feed
-      tier: secondary
-    - name: Last Week in AI
-      url: https://lastweekin.ai/feed
-      tier: secondary
-    - name: AI Tidbits
-      url: https://aitidbits.ai/feed
-      tier: tertiary
-
-    # --- AI policy / analysis ---
-    - name: AI Snake Oil (Arvind Narayanan)
-      url: https://www.aisnakeoil.com/feed
-      tier: secondary
-    - name: Marginal Revolution
-      url: https://marginalrevolution.com/feed
-      tier: tertiary
-
-    # --- AI-focused news sections ---
-    - name: Wired AI
-      url: https://www.wired.com/feed/tag/ai/latest/rss
-      tier: secondary
-    - name: The Verge AI
-      url: https://www.theverge.com/rss/ai-artificial-intelligence/index.xml
-      tier: secondary
-    - name: TechCrunch AI
-      url: https://techcrunch.com/category/artificial-intelligence/feed/
-      tier: secondary
-    - name: The Guardian AI
-      url: https://www.theguardian.com/technology/artificialintelligenceai/rss
-      tier: secondary
-    - name: VentureBeat AI
-      url: https://venturebeat.com/category/ai/feed/
-      tier: secondary
-    - name: MarkTechPost
-      url: https://www.marktechpost.com/feed/
-      tier: tertiary
-    - name: AI News (artificialintelligence-news)
-      url: https://www.artificialintelligence-news.com/feed/
-      tier: tertiary
-    - name: Synced Review
-      url: https://syncedreview.com/feed/
-      tier: secondary
-    - name: BAIR (Berkeley AI Research)
-      url: https://bair.berkeley.edu/blog/feed.xml
-      tier: primary
-
-  # ===========================================================================
-  # AI TOOLS / DEVELOPER PLATFORMS
-  # ===========================================================================
+  - name: OpenAI Blog
+    url: https://openai.com/blog/rss.xml
+    tier: primary
+  - name: Google AI Blog
+    url: https://blog.google/technology/ai/rss/
+    tier: primary
+  - name: Google DeepMind Blog
+    url: https://deepmind.google/blog/rss.xml
+    tier: primary
+  - name: Google Research Blog
+    url: https://research.google/blog/rss/
+    tier: primary
+  - name: Apple Machine Learning Research
+    url: https://machinelearning.apple.com/rss.xml
+    tier: primary
+  - name: Microsoft Research Blog
+    url: https://www.microsoft.com/en-us/research/feed/
+    tier: primary
+  - name: AWS Machine Learning Blog
+    url: https://aws.amazon.com/blogs/machine-learning/feed/
+    tier: primary
+  - name: NVIDIA Blog
+    url: https://blogs.nvidia.com/feed/
+    tier: primary
+  - name: Hugging Face Blog
+    url: https://huggingface.co/blog/feed.xml
+    tier: primary
+  - name: Latent Space (swyx & Alessio)
+    url: https://www.latent.space/feed
+    tier: secondary
+  - name: Simon Willison's Weblog
+    url: https://simonwillison.net/atom/everything/
+    tier: secondary
+  - name: Interconnects (Nathan Lambert)
+    url: https://www.interconnects.ai/feed
+    tier: secondary
+  - name: Sebastian Raschka (Ahead of AI)
+    url: https://magazine.sebastianraschka.com/feed
+    tier: secondary
+  - name: Wired AI
+    url: https://www.wired.com/feed/tag/ai/latest/rss
+    tier: secondary
+  - name: The Verge AI
+    url: https://www.theverge.com/rss/ai-artificial-intelligence/index.xml
+    tier: secondary
+  - name: TechCrunch AI
+    url: https://techcrunch.com/category/artificial-intelligence/feed/
+    tier: secondary
   ai-tools:
-    - name: Vercel Blog
-      url: https://vercel.com/atom
-      tier: secondary
-      note: v0, AI SDK, frontend AI tools
-    - name: Replicate Blog
-      url: https://replicate.com/blog/rss
-      tier: secondary
-      note: Model hosting / open source models
-
-  # ===========================================================================
-  # RESEARCH PAPERS — arXiv & curated digests
-  # ===========================================================================
+  - name: Vercel Blog
+    url: https://vercel.com/atom
+    tier: secondary
+    note: v0, AI SDK, frontend AI tools
+  - name: Replicate Blog
+    url: https://replicate.com/blog/rss
+    tier: secondary
+    note: Model hosting / open source models
+  - name: Google Workspace Updates
+    url: https://feeds.feedburner.com/GoogleAppsUpdates
+    tier: primary
+    note: Gemini in Vids/Forms/Slides/Docs/NotebookLM 教學素材主力
   research-papers:
-    - name: arXiv cs.AI
-      url: http://export.arxiv.org/rss/cs.AI
-      tier: primary
-    - name: arXiv cs.LG (Machine Learning)
-      url: http://export.arxiv.org/rss/cs.LG
-      tier: primary
-    - name: arXiv cs.CL (NLP)
-      url: http://export.arxiv.org/rss/cs.CL
-      tier: primary
-    - name: HuggingFace Daily Papers (Takara TLDR)
-      url: https://papers.takara.ai/api/feed
-      tier: secondary
-
-  # ===========================================================================
-  # TECH / PRODUCT — international tech media
-  # ===========================================================================
+  - name: arXiv cs.AI
+    url: http://export.arxiv.org/rss/cs.AI
+    tier: primary
+  - name: arXiv cs.LG (Machine Learning)
+    url: http://export.arxiv.org/rss/cs.LG
+    tier: primary
+  - name: arXiv cs.CL (NLP)
+    url: http://export.arxiv.org/rss/cs.CL
+    tier: primary
+  - name: HuggingFace Daily Papers (Takara TLDR)
+    url: https://papers.takara.ai/api/feed
+    tier: secondary
   tech-product:
-    - name: The Verge
-      url: https://www.theverge.com/rss/index.xml
-      tier: secondary
-    - name: Ars Technica
-      url: https://feeds.arstechnica.com/arstechnica/index
-      tier: secondary
-    - name: TechCrunch
-      url: https://techcrunch.com/feed/
-      tier: secondary
-    - name: MIT Technology Review
-      url: https://www.technologyreview.com/feed/
-      tier: secondary
-    - name: Wired
-      url: https://www.wired.com/feed/rss
-      tier: secondary
-    - name: IEEE Spectrum
-      url: https://spectrum.ieee.org/feeds/feed.rss
-      tier: primary
-    - name: IEEE Spectrum AI
-      url: https://spectrum.ieee.org/feeds/topic/artificial-intelligence.rss
-      tier: primary
-    - name: BBC Technology
-      url: https://feeds.bbci.co.uk/news/technology/rss.xml
-      tier: primary
-    - name: NYT Technology
-      url: https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml
-      tier: primary
-    - name: WSJ Tech
-      url: https://feeds.a.dj.com/rss/RSSWSJD.xml
-      tier: primary
-    - name: Washington Post Tech
-      url: https://feeds.washingtonpost.com/rss/business/technology
-      tier: primary
-    - name: NPR Technology
-      url: https://feeds.npr.org/1019/rss.xml
-      tier: primary
-    - name: Economist Science & Technology
-      url: https://www.economist.com/science-and-technology/rss.xml
-      tier: primary
-    - name: The Information
-      url: https://www.theinformation.com/feed
-      tier: primary
-    - name: Semafor Tech
-      url: https://www.semafor.com/rss.xml
-      tier: secondary
-    - name: Engadget
-      url: https://www.engadget.com/rss.xml
-      tier: secondary
-
-  # ===========================================================================
-  # PROGRAM DEVELOPMENT
-  # ===========================================================================
+  - name: The Verge
+    url: https://www.theverge.com/rss/index.xml
+    tier: secondary
+  - name: Ars Technica
+    url: https://feeds.arstechnica.com/arstechnica/index
+    tier: secondary
+  - name: TechCrunch
+    url: https://techcrunch.com/feed/
+    tier: secondary
+  - name: MIT Technology Review
+    url: https://www.technologyreview.com/feed/
+    tier: secondary
+  - name: IEEE Spectrum AI
+    url: https://spectrum.ieee.org/feeds/topic/artificial-intelligence.rss
+    tier: primary
+  - name: The Information
+    url: https://www.theinformation.com/feed
+    tier: primary
   dev:
-    - name: GitHub Blog
-      url: https://github.blog/feed/
-      tier: primary
-    - name: Stack Overflow Blog
-      url: https://stackoverflow.blog/feed/
-      tier: secondary
-    - name: Lobsters
-      url: https://lobste.rs/rss
-      tier: tertiary
-    - name: Hacker News Front Page
-      url: https://hnrss.org/frontpage
-      tier: tertiary
-      note: Engineer community curated
-    - name: Hacker News (official backup)
-      url: https://news.ycombinator.com/rss
-      tier: tertiary
-    - name: Martin Fowler
-      url: https://martinfowler.com/feed.atom
-      tier: primary
-    - name: Julia Evans
-      url: https://jvns.ca/atom.xml
-      tier: secondary
-    - name: Dan Luu
-      url: https://danluu.com/atom.xml
-      tier: secondary
-    - name: Increment (Stripe)
-      url: https://increment.com/feed.xml
-      tier: secondary
-
-  # ===========================================================================
-  # SECURITY — cybersecurity & infosec
-  # ===========================================================================
+  - name: GitHub Blog
+    url: https://github.blog/feed/
+    tier: primary
+  - name: Stack Overflow Blog
+    url: https://stackoverflow.blog/feed/
+    tier: secondary
+  - name: Hacker News Front Page
+    url: https://hnrss.org/frontpage
+    tier: tertiary
+    note: Engineer community curated
   security:
-    - name: Krebs on Security
-      url: https://krebsonsecurity.com/feed/
-      tier: primary
-    - name: The Hacker News
-      url: https://feeds.feedburner.com/TheHackersNews
-      tier: secondary
-    - name: Schneier on Security
-      url: https://www.schneier.com/feed/atom/
-      tier: primary
-    - name: DarkReading
-      url: https://www.darkreading.com/rss.xml
-      tier: secondary
-
-  # ===========================================================================
-  # VC / BUSINESS
-  # ===========================================================================
+  - name: Krebs on Security
+    url: https://krebsonsecurity.com/feed/
+    tier: primary
+  - name: The Hacker News
+    url: https://feeds.feedburner.com/TheHackersNews
+    tier: secondary
+  - name: Schneier on Security
+    url: https://www.schneier.com/feed/atom/
+    tier: primary
+  - name: DarkReading
+    url: https://www.darkreading.com/rss.xml
+    tier: secondary
   vc-business:
-    - name: Crunchbase News
-      url: https://news.crunchbase.com/feed/
-      tier: secondary
-    - name: Financial Times Technology
-      url: https://www.ft.com/technology?format=rss
-      tier: primary
-    - name: Bloomberg Technology
-      url: https://feeds.bloomberg.com/technology/news.rss
-      tier: primary
-    - name: SemiAnalysis
-      url: https://www.semianalysis.com/feed
-      tier: secondary
-    - name: Stratechery (Ben Thompson)
-      url: https://stratechery.com/feed/
-      tier: secondary
-    - name: Ben Evans
-      url: https://www.ben-evans.com/benedictevans?format=rss
-      tier: secondary
-    - name: Sequoia Capital
-      url: https://www.sequoiacap.com/feed/
-      tier: primary
-
-  # ===========================================================================
-  # SCIENCE RESEARCH
-  # ===========================================================================
+  - name: Crunchbase News
+    url: https://news.crunchbase.com/feed/
+    tier: secondary
+  - name: Financial Times Technology
+    url: https://www.ft.com/technology?format=rss
+    tier: primary
+  - name: Bloomberg Technology
+    url: https://feeds.bloomberg.com/technology/news.rss
+    tier: primary
+  - name: SemiAnalysis
+    url: https://www.semianalysis.com/feed
+    tier: secondary
+  - name: Stratechery (Ben Thompson)
+    url: https://stratechery.com/feed/
+    tier: secondary
+  - name: Ben Evans
+    url: https://www.ben-evans.com/benedictevans?format=rss
+    tier: secondary
+  - name: Sequoia Capital
+    url: https://www.sequoiacap.com/feed/
+    tier: primary
   science:
-    - name: Nature News
-      url: https://www.nature.com/nature.rss
-      tier: primary
-    - name: Science Magazine News
-      url: https://www.science.org/rss/news_current.xml
-      tier: primary
-    - name: Quanta Magazine
-      url: https://www.quantamagazine.org/feed/
-      tier: primary
-    - name: Ars Technica Science
-      url: https://feeds.arstechnica.com/arstechnica/science
-      tier: secondary
-    - name: New Scientist
-      url: https://www.newscientist.com/feed/home/
-      tier: secondary
-    - name: DW Science
-      url: https://rss.dw.com/rdf/rss-en-science
-      tier: primary
-
-  # ===========================================================================
-  # WORLD NEWS
-  # ===========================================================================
+  - name: Nature News
+    url: https://www.nature.com/nature.rss
+    tier: primary
+  - name: Science Magazine News
+    url: https://www.science.org/rss/news_current.xml
+    tier: primary
+  - name: Quanta Magazine
+    url: https://www.quantamagazine.org/feed/
+    tier: primary
+  - name: Ars Technica Science
+    url: https://feeds.arstechnica.com/arstechnica/science
+    tier: secondary
+  - name: New Scientist
+    url: https://www.newscientist.com/feed/home/
+    tier: secondary
+  - name: DW Science
+    url: https://rss.dw.com/rdf/rss-en-science
+    tier: primary
   world:
-    - name: BBC World
-      url: http://feeds.bbci.co.uk/news/world/rss.xml
-      tier: primary
-    - name: The Guardian World
-      url: https://www.theguardian.com/world/rss
-      tier: secondary
-    - name: Nikkei Asia
-      url: https://asia.nikkei.com/rss/feed/nar
-      tier: primary
-    - name: Le Monde (English)
-      url: https://www.lemonde.fr/en/rss/une.xml
-      tier: primary
-
-  # ===========================================================================
-  # TAIWAN LOCAL
-  # ===========================================================================
+  - name: BBC World
+    url: http://feeds.bbci.co.uk/news/world/rss.xml
+    tier: primary
+  - name: The Guardian World
+    url: https://www.theguardian.com/world/rss
+    tier: secondary
+  - name: Nikkei Asia
+    url: https://asia.nikkei.com/rss/feed/nar
+    tier: primary
+  - name: Le Monde (English)
+    url: https://www.lemonde.fr/en/rss/une.xml
+    tier: primary
   taiwan:
-    - name: iThome
-      url: https://www.ithome.com.tw/rss/news
-      tier: secondary
-    - name: 科技新報 TechNews
-      url: https://technews.tw/feed/
-      tier: secondary
-    - name: 公視新聞
-      url: https://news.pts.org.tw/xml/newsfeed.xml
-      tier: primary
-      note: 公共媒體中立
-    - name: 聯合新聞網科技
-      url: https://udn.com/rssfeed/news/2/7242?ch=news
-      tier: secondary
-
-
-# =============================================================================
-# DEDUPLICATION & RANKING
-# =============================================================================
-
+  - name: iThome
+    url: https://www.ithome.com.tw/rss/news
+    tier: secondary
+  - name: 科技新報 TechNews
+    url: https://technews.tw/feed/
+    tier: secondary
+  - name: 公視新聞
+    url: https://news.pts.org.tw/xml/newsfeed.xml
+    tier: primary
+    note: 公共媒體中立
+  - name: 聯合新聞網科技
+    url: https://udn.com/rssfeed/news/2/7242?ch=news
+    tier: secondary
 dedup_window_days: 3
-
 credibility_weights:
   primary: 1.5
   secondary: 1.0
   tertiary: 0.5
-
-# Per-category soft caps (raised to support 30+ article output)
 soft_caps:
   ai-ml: 12
   ai-tools: 3

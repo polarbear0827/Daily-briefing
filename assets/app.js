@@ -180,6 +180,7 @@
       <article class="article${headlineClass}${breakingClass}" data-id="${article.id}">
         <div class="article-kicker">
           <span class="kicker-badge">${kickerLabel}</span>
+          ${article.is_teaching_material ? '<span class="teaching-badge" title="教學素材：適合企業學員上手的 AI 工具或概念">🎓 教學素材</span>' : ''}
         </div>
         <h3 class="article-title">${escapeHtml(article.title_zh)}</h3>
         ${article.title_en && article.title_en !== article.title_zh ? `<p class="article-title-en">${escapeHtml(article.title_en)}</p>` : ''}
@@ -291,6 +292,12 @@
 
         <p class="reader-lede zh-only">${escapeHtml(article.lede_zh)}</p>
         <p class="reader-lede en-only" style="font-family:var(--font-body-en);">${escapeHtml(article.lede_en)}</p>
+
+        ${article.is_teaching_material && article.teaching_takeaway ? `
+        <div class="reader-takeaway">
+          <div class="reader-takeaway-label">🎓 教學素材 · 知識點</div>
+          <p class="reader-takeaway-text">${escapeHtml(article.teaching_takeaway)}</p>
+        </div>` : ''}
 
         <ul class="reader-bullets zh-only"${bulletsZh ? '' : ' style="display:none;"'}>${bulletsZh}</ul>
         <ul class="reader-bullets en-only"${bulletsEn ? '' : ' style="display:none;"'}>${bulletsEn}</ul>

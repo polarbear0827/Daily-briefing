@@ -50,26 +50,18 @@ if existing:
 else:
     issue_number = max((i["issue_number"] for i in archive["issues"]), default=0) + 1
 
-# --- Balanced selection — target 15 articles ---------------------------------
+# --- Balanced selection — target ~18 articles (flexible: under/over OK) -----
 TARGET = {
-    "ai-ml": 3, "ai-tools": 1, "research-papers": 2, "security": 1,
+    "ai-ml": 4, "ai-tools": 2, "research-papers": 2, "security": 1,
     "tech-product": 2, "dev": 1, "vc-business": 2, "science": 1,
-    "world": 1, "taiwan": 1,
+    "world": 2, "taiwan": 2,
 }
 selected = {}
-overflow = 0
 for cat, n in TARGET.items():
     avail = cbc.get(cat, [])
     selected[cat] = avail[:min(n, len(avail))]
-    overflow += (n - len(selected[cat]))
-if overflow > 0:
-    pools = [(c, [a for a in cbc.get(c, []) if a not in selected[c]]) for c in TARGET]
-    pools.sort(key=lambda x: -len(x[1]))
-    for c, extras in pools:
-        if overflow <= 0: break
-        take = min(overflow, len(extras))
-        selected[c].extend(extras[:take])
-        overflow -= take
+# No forced overflow fill — if a category runs dry, the issue just runs short.
+# User explicitly preferred quality over hitting an exact count.
 
 articles_input = []
 idx = 1
@@ -95,20 +87,37 @@ prompt = f"""You are the editor of a bilingual Daily Briefing ({edition_zh} / {e
 Audience reads it quickly. Focus on WHAT the new technology is, WHY it matters, and HOW it can be applied.
 Be concise, information-dense, and avoid pain-point framing.
 
+EDITORIAL WEIGHTING (use these 7 criteria to judge story value — favor articles that score well across them):
+  1. AI 屬性強（與 AI / ML / LLM / Agent / 模型 / AI 工具直接相關）
+  2. 新手可上手（概念清楚、不過度艱深）
+  3. 有趣（讓人想點開、有故事性或新意）
+  4. 企業實用（在職上班族 / 主管能在工作中真的用上）
+  5. 安全可信（無資安疑慮、來源可信）
+  6. 免費或便宜（有免費版 / 免費試用 / 低門檻）
+  7. 新技術（前沿、最近發表、不是舊聞回鍋）
+
 For each of the {len(articles_input)} articles below, generate (CHINESE ONLY — do NOT write English prose):
 - title_zh: punchy Traditional Chinese title (Taiwan terminology, e.g. 元件 not 組件; NEVER simplified Chinese)
 - lede_zh: a flowing Traditional Chinese **prose summary** of 150-300 characters, written as 2-3 connected sentences
   (NOT bullet points). Cover what happened, why it matters, and the practical takeaway.
 - reading_time_min: integer 2-6
 - is_headline: true for exactly ONE article (most impactful AI/frontier news)
+- is_teaching_material: true ONLY if the article meets MOST of the 7 criteria above AND introduces a tool /
+  concept that a Taiwan office worker or manager could realistically learn and apply (e.g. Gemini in Google
+  Vids/Forms/Slides/Docs, NotebookLM, Gemini Gem, ChatGPT new feature, Make / Zapier free tier, Claude Skills).
+  Be selective — not every AI article qualifies. Aim for 0-5 per issue.
+- teaching_takeaway: ONLY when is_teaching_material=true. About 50 Traditional Chinese characters that name the
+  ONE key 知識點 the reader should grasp (e.g. 「NotebookLM 背後是 RAG（檢索增強生成）：把私有文件變成模型可查的知識庫」).
+  Omit this field entirely when is_teaching_material=false.
 
-Proper nouns (GPT-5, LangChain, Anthropic, etc.) stay as-is in the Chinese text — do NOT translate them.
+Proper nouns (GPT-5, Anthropic, etc.) stay as-is in the Chinese text — do NOT translate them.
 Skip English rewrites entirely; the script will copy `_zh` values into `_en` fields automatically.
 Do NOT include a `bullets_zh` field.
 
 Respond ONLY with a JSON object:
 {{"articles": [{{"id": "...", "title_zh": "...", "lede_zh": "...",
-                 "reading_time_min": 3, "is_headline": false}}, ...]}}
+                 "reading_time_min": 3, "is_headline": false,
+                 "is_teaching_material": false}}, ...]}}
 
 Keep id values exactly as provided.
 
@@ -144,11 +153,15 @@ for ga in generated["articles"]:
         is_h = False
     title_en = ga.get("title_en") or ga["title_zh"]
     lede_en  = ga.get("lede_en")  or ga["lede_zh"]
+    is_teaching = bool(ga.get("is_teaching_material", False))
+    teaching_takeaway = (ga.get("teaching_takeaway") or "").strip() if is_teaching else ""
     final_articles.append({
         "id": ga["id"], "category": meta["category"], "is_headline": is_h,
         "title_zh": ga["title_zh"], "title_en": title_en,
         "lede_zh": ga["lede_zh"], "lede_en": lede_en,
         "bullets_zh": [], "bullets_en": [],
+        "is_teaching_material": is_teaching,
+        "teaching_takeaway": teaching_takeaway,
         "source": {"name": meta["source_name"], "url": meta["url"],
                    "published_at": meta["published_at"],
                    "reading_time_min": int(ga.get("reading_time_min", 3)),
