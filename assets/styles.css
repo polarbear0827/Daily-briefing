@@ -114,7 +114,7 @@ body {
 .masthead-title {
   text-align: center;
   font-family: var(--font-display-zh);
-  font-size: clamp(80px, 13vw, 180px);
+  font-size: clamp(48px, 13vw, 180px);
   font-weight: 900;
   letter-spacing: 0.08em;
   line-height: 1;
@@ -742,4 +742,159 @@ body {
   border-radius: 999px;
   font-weight: 700;
   letter-spacing: 0.05em;
+}
+
+/* === Responsive: tablet (≤768px) ========================================= */
+@media (max-width: 768px) {
+  :root {
+    --gutter: 18px;
+  }
+
+  body { font-size: 16px; }
+
+  /* Masthead — collapse 3-column meta into stacked single column */
+  .masthead {
+    padding: 28px var(--gutter) 20px;
+  }
+  .masthead-meta {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding-bottom: 16px;
+    font-size: 12px;
+    text-align: center;
+  }
+  .masthead-meta .issue-number,
+  .masthead-meta .date {
+    text-align: center;
+  }
+  .weather-list {
+    gap: 6px;
+  }
+  .weather-chip {
+    padding: 3px 8px;
+    font-size: 12px;
+  }
+  .masthead-title {
+    margin: 14px 0 8px;
+    letter-spacing: 0.04em;
+  }
+  .masthead-tagline {
+    font-size: 13px;
+    letter-spacing: 0.08em;
+  }
+  .masthead-tagline .en {
+    font-size: 12px;
+  }
+
+  /* Edition switcher */
+  .edition-switcher-wrap { padding: 12px 12px 4px; }
+  .edition-tab {
+    font-size: 13px;
+    padding: 6px 14px;
+  }
+
+  /* Tabs — keep horizontal scroll, tighter spacing */
+  .tabs {
+    gap: 22px;
+    padding: 14px 0;
+  }
+  .tab { font-size: 15px; }
+  .tab.active::after { bottom: -15px; }
+
+  /* Category sections */
+  .category-section {
+    padding: 32px var(--gutter) 16px;
+  }
+  .category-title {
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 22px;
+    padding-bottom: 12px;
+  }
+  .category-title h2 { font-size: 22px; }
+
+  /* Articles — single column, smaller gap */
+  .articles { gap: 32px; }
+
+  .article-title { font-size: 20px; }
+  .article.is-headline .article-title {
+    font-size: clamp(24px, 6vw, 32px);
+  }
+  .article-title-en { font-size: 14px; }
+  .article.is-headline .article-title-en { font-size: 16px; }
+
+  .article-lede { font-size: 15px; line-height: 1.7; }
+  .article-lede.article-lede--prose { font-size: 15px; line-height: 1.75; }
+  .article.is-headline .article-lede.article-lede--prose { font-size: 16px; }
+
+  .article-bullets li { font-size: 14px; }
+
+  /* Article footer — wrap, allow source/meta to flow naturally */
+  .article-footer {
+    flex-wrap: wrap;
+    gap: 6px 10px;
+    font-size: 11px;
+    padding-top: 10px;
+  }
+  .article-actions {
+    margin-left: 0;
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 6px;
+  }
+  .article-actions a,
+  .article-actions button {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+  .article-reactions {
+    margin-left: auto;
+    gap: 4px;
+  }
+  .reaction-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }
+
+  /* Breaking news padding */
+  .breaking-section { padding: 12px 14px 6px; }
+  .article.is-breaking { padding: 14px; }
+
+  /* Reader overlay — full bleed on mobile */
+  .reader-overlay { padding: 16px 8px; }
+  .reader-paper { padding: 32px 20px; }
+  .reader-title { font-size: 26px; }
+  .reader-title-en { font-size: 17px; }
+  .reader-lede { font-size: 16px; }
+  .reader-bullets li { font-size: 15px; }
+
+  /* Archive */
+  .archive-item {
+    grid-template-columns: 1fr;
+    gap: 4px;
+    padding: 18px 0;
+  }
+  .archive-headline { font-size: 16px; }
+}
+
+/* === Responsive: small phones (≤420px) =================================== */
+@media (max-width: 420px) {
+  :root { --gutter: 14px; }
+
+  .masthead { padding: 22px var(--gutter) 16px; }
+  .masthead-title { letter-spacing: 0.02em; }
+
+  .tabs { gap: 18px; }
+  .tab { font-size: 14px; }
+
+  .category-title h2 { font-size: 20px; }
+  .article-title { font-size: 19px; }
+  .article-lede,
+  .article-lede.article-lede--prose { font-size: 14.5px; }
+
+  .reader-paper { padding: 28px 16px; }
+  .reader-title { font-size: 23px; }
 }
