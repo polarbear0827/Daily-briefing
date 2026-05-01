@@ -178,10 +178,14 @@ rss_feeds:
   - name: 科技新報 TechNews
     url: https://technews.tw/feed/
     tier: secondary
-  - name: 公視新聞
-    url: https://news.pts.org.tw/xml/newsfeed.xml
+  - name: 中央社國內政治
+    url: https://feeds.feedburner.com/rsscna/politics
     tier: primary
-    note: 公共媒體中立
+    note: 國內政治專屬 feed
+  - name: 中央社地方新聞
+    url: https://feeds.feedburner.com/rsscna/local
+    tier: primary
+    note: 台灣地方新聞專屬 feed
   - name: 聯合新聞網科技
     url: https://udn.com/rssfeed/news/2/7242?ch=news
     tier: secondary

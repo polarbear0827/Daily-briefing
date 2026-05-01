@@ -131,6 +131,46 @@ def strip_html_tags(text: str) -> str:
     return text
 
 
+# Taiwan-local detection: positive markers (must contain ≥1) and negative
+# markers (if any present and no positive marker, reject). Keeps the taiwan
+# category honestly local even when the source feed mixes in world news.
+_TAIWAN_POSITIVE = (
+    "台灣", "臺灣", "本土", "國內", "我國", "全台", "全臺",
+    "台北", "臺北", "新北", "桃園", "新竹", "苗栗", "台中", "臺中",
+    "彰化", "南投", "雲林", "嘉義", "台南", "臺南", "高雄", "屏東",
+    "宜蘭", "花蓮", "台東", "臺東", "澎湖", "金門", "馬祖", "基隆",
+    "賴清德", "卓榮泰", "立法院", "立院", "行政院", "總統府", "民進黨",
+    "國民黨", "民眾黨", "經濟部", "交通部", "勞動部", "教育部", "衛福部",
+    "央行", "金管會", "中研院", "工研院", "台積電", "鴻海", "聯發科",
+    "中華電信", "台電", "中油", "台鐵", "高鐵", "捷運",
+)
+_TAIWAN_NEGATIVE_STRONG = (
+    "美國", "中國", "日本", "南韓", "北韓", "俄羅斯", "烏克蘭", "以色列",
+    "伊朗", "伊拉克", "敘利亞", "巴勒斯坦", "加薩", "印度", "巴基斯坦",
+    "英國", "法國", "德國", "義大利", "西班牙", "葡萄牙", "荷蘭", "比利時",
+    "瑞士", "瑞典", "挪威", "丹麥", "芬蘭", "加拿大", "澳洲", "紐西蘭",
+    "巴西", "阿根廷", "墨西哥", "緬甸", "泰國", "越南", "菲律賓", "印尼",
+    "馬來西亞", "新加坡", "土耳其", "埃及", "南非", "白宮", "克里姆林",
+    "聯合國", "歐盟", "北約",
+)
+
+
+def _is_taiwan_local(text: str) -> bool:
+    """Return True if text looks like Taiwan-local news.
+
+    Rule: must contain at least one positive Taiwan marker AND must not be
+    dominated by foreign markers (i.e. positive count >= negative count).
+    Empty / very short text → reject (be conservative).
+    """
+    if not text or len(text) < 4:
+        return False
+    pos = sum(1 for kw in _TAIWAN_POSITIVE if kw in text)
+    if pos == 0:
+        return False
+    neg = sum(1 for kw in _TAIWAN_NEGATIVE_STRONG if kw in text)
+    return pos >= neg
+
+
 def normalize_url(url: str) -> str:
     """Normalize URL for dedup matching."""
     if not url:
@@ -268,6 +308,15 @@ def fetch_one_feed(
             or ""
         )
         summary = strip_html_tags(summary_raw)[:1500]  # cap length
+
+        # Taiwan-local content filter: even Taiwan-tier feeds (e.g. CNA, PTS)
+        # publish a lot of international news. Require a Taiwan-local marker
+        # in title or summary to keep this category truly local.
+        if category == "taiwan":
+            blob = f"{title} {summary}"
+            if not _is_taiwan_local(blob):
+                continue
+
 
         candidates.append(Candidate(
             title=title,
