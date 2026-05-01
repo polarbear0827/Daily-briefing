@@ -467,7 +467,19 @@ def main() -> int:
         return 1
 
     # Use ensure_ascii=False so the agent sees real Chinese chars in titles
-    print(json.dumps(output, ensure_ascii=False, indent=2))
+    serialized = json.dumps(output, ensure_ascii=False, indent=2)
+    print(serialized)
+
+    # Also persist to /tmp/candidates.json so gen_briefing_v2.py reads
+    # TODAY's data, not whatever stale file was left from a previous run.
+    # Without this, an agent that skips the manual fetch step in the cron
+    # prompt will silently regenerate yesterday's briefing.
+    try:
+        with open("/tmp/candidates.json", "w", encoding="utf-8") as f:
+            f.write(serialized)
+    except OSError as e:
+        log.error("Failed to write /tmp/candidates.json: %s", e)
+        return 1
     return 0
 
 
