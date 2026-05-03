@@ -23,3 +23,6 @@ logs/
 
 # Local drafts (not for public repo)
 data/drafts/
+
+# Dedup state (large local-only file)
+data/embeddings_history.json

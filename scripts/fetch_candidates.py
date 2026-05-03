@@ -529,6 +529,32 @@ def main() -> int:
     except OSError as e:
         log.error("Failed to write /tmp/candidates.json: %s", e)
         return 1
+
+    # --- Run semantic dedup (within-batch + cross-history 7d rolling) -----
+    # Failures here are non-fatal: if dedup crashes we still ship the raw
+    # candidates rather than break the briefing pipeline.
+    try:
+        import subprocess
+        dedup_script = SCRIPT_DIR / "dedup_candidates.py"
+        # Prefer the project venv (has sentence-transformers); fall back to
+        # the current interpreter if the venv is missing.
+        venv_py = SCRIPT_DIR.parent / ".venv/bin/python"
+        py_exec = str(venv_py) if venv_py.exists() else sys.executable
+        if dedup_script.exists():
+            log.info("Running semantic dedup with %s ...", py_exec)
+            result = subprocess.run(
+                [py_exec, str(dedup_script)],
+                capture_output=True, text=True, timeout=180,
+            )
+            if result.returncode != 0:
+                log.error("dedup failed (rc=%d): %s", result.returncode, result.stderr[-500:])
+            else:
+                tail = result.stderr.strip().split("\n")[-1] if result.stderr else "done"
+                log.info("dedup ok: %s", tail)
+        else:
+            log.warning("dedup_candidates.py not found, skipping dedup")
+    except Exception as e:
+        log.error("dedup invocation error: %s", e)
     return 0
 
 
