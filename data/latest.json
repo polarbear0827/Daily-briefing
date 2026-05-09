@@ -1,15 +1,15 @@
 {
-  "issue_number": 19,
-  "date": "2026-05-08",
+  "issue_number": 20,
+  "date": "2026-05-09",
   "edition": "evening",
   "edition_label_zh": "晚報",
   "edition_label_en": "Evening Edition",
-  "date_display_zh": "2026年5月8日·星期五·晚報",
-  "date_display_en": "Friday, May 8, 2026 · Evening Edition",
+  "date_display_zh": "2026年5月9日·星期六·晚報",
+  "date_display_en": "Saturday, May 9, 2026 · Evening Edition",
   "weather": {
     "location_zh": "台北",
     "location_en": "Taipei",
-    "temp_c": 21,
+    "temp_c": 22,
     "condition_zh": "多雲",
     "condition_en": "Cloudy"
   },
@@ -18,31 +18,31 @@
       "location_id": "taipei",
       "location_zh": "台北",
       "location_en": "Taipei",
-      "temp_c": 21,
+      "temp_c": 22,
       "condition_zh": "多雲",
       "condition_en": "Cloudy",
       "weather_code": 3,
-      "updated_at": "2026-05-08T22:45"
+      "updated_at": "2026-05-09T09:30"
     },
     {
       "location_id": "banqiao",
       "location_zh": "板橋",
       "location_en": "Banqiao",
-      "temp_c": 21,
+      "temp_c": 22,
       "condition_zh": "多雲",
       "condition_en": "Cloudy",
       "weather_code": 3,
-      "updated_at": "2026-05-08T22:45"
+      "updated_at": "2026-05-09T09:30"
     },
     {
       "location_id": "zhubei",
       "location_zh": "竹北",
       "location_en": "Zhubei",
-      "temp_c": 21,
-      "condition_zh": "晴時多雲",
-      "condition_en": "Partly cloudy",
-      "weather_code": 2,
-      "updated_at": "2026-05-08T22:45"
+      "temp_c": 22,
+      "condition_zh": "多雲",
+      "condition_en": "Cloudy",
+      "weather_code": 3,
+      "updated_at": "2026-05-09T09:30"
     }
   ],
   "tagline_zh": "由 AI 為你策展，傍晚收束今日",
@@ -101,64 +101,64 @@
   ],
   "articles": [
     {
-      "id": "2026-05-08-e001",
-      "category": "tech-product",
+      "id": "2026-05-09-e001",
+      "category": "world",
+      "is_headline": false,
+      "title_zh": "特內里費島憂爆漢他病毒，檢疫船隻引發當地居民不安",
+      "title_en": "特內里費島憂爆漢他病毒，檢疫船隻引發當地居民不安",
+      "lede_zh": "西班牙特內里費島居民因載有漢他病毒疑慮的霍迪厄斯號船隻即將抵達，引發當地人深感擔憂與不滿。此事件突顯了在疫情時代下，國際航運活動所帶來的潛在公共衛生挑戰，同時也考驗著地方政府的緊急應變能力與有效的溝通協調機制。",
+      "lede_en": "西班牙特內里費島居民因載有漢他病毒疑慮的霍迪厄斯號船隻即將抵達，引發當地人深感擔憂與不滿。此事件突顯了在疫情時代下，國際航運活動所帶來的潛在公共衛生挑戰，同時也考驗著地方政府的緊急應變能力與有效的溝通協調機制。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "BBC World",
+        "url": "https://www.bbc.com/news/articles/c5y0gkg038yo?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-05-09T00:15:58+00:00",
+        "reading_time_min": 3,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-05-09-e002",
+      "category": "world",
+      "is_headline": false,
+      "title_zh": "匈牙利政權變革！新總理將就職，結束奧班長達16年統治",
+      "title_en": "匈牙利政權變革！新總理將就職，結束奧班長達16年統治",
+      "lede_zh": "匈牙利政治版圖劇變，Péter Magyar領導的蒂薩黨在選舉中大勝，終結了奧班Viktor Orbán長達16年的執政。新總理的就職儀式被視為「政權變革」的象徵，預示著該國政治未來將迎來全新篇章與潛在政策轉向。",
+      "lede_en": "匈牙利政治版圖劇變，Péter Magyar領導的蒂薩黨在選舉中大勝，終結了奧班Viktor Orbán長達16年的執政。新總理的就職儀式被視為「政權變革」的象徵，預示著該國政治未來將迎來全新篇章與潛在政策轉向。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "BBC World",
+        "url": "https://www.bbc.com/news/articles/ce3pqvvzgnko?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-05-09T00:46:16+00:00",
+        "reading_time_min": 3,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-05-09-e003",
+      "category": "taiwan",
       "is_headline": true,
-      "title_zh": "Govee太陽能燈串優惠上市：戶外氛圍輕鬆打造",
-      "title_en": "Govee太陽能燈串優惠上市：戶外氛圍輕鬆打造",
-      "lede_zh": "戶外照明品牌Govee近日推出全新的太陽能燈串，擁有34英尺長度，專為美化戶外空間而設計，並且已享有八折優惠。這款燈串運用太陽能供電，無須外接電源，安裝便利，特別適合應用於庭院佈置、露營活動或陽台裝飾，能輕鬆營造出溫馨而獨特的氛圍。",
-      "lede_en": "戶外照明品牌Govee近日推出全新的太陽能燈串，擁有34英尺長度，專為美化戶外空間而設計，並且已享有八折優惠。這款燈串運用太陽能供電，無須外接電源，安裝便利，特別適合應用於庭院佈置、露營活動或陽台裝飾，能輕鬆營造出溫馨而獨特的氛圍。",
-      "bullets_zh": [],
-      "bullets_en": [],
-      "is_teaching_material": false,
-      "teaching_takeaway": "",
-      "source": {
-        "name": "The Verge",
-        "url": "https://www.theverge.com/gadgets/926434/govee-outdoor-solar-string-lights-star-fox-switch-2-deal-sale",
-        "published_at": "2026-05-08T14:43:29+00:00",
-        "reading_time_min": 2,
-        "credibility_tier": "secondary"
-      },
-      "fetched_via": "rss"
-    },
-    {
-      "id": "2026-05-08-e002",
-      "category": "taiwan",
-      "is_headline": false,
-      "title_zh": "府籲立院補足國防戰力：關鍵軍購案獲推進",
-      "title_en": "府籲立院補足國防戰力：關鍵軍購案獲推進",
-      "lede_zh": "總統府發言人郭雅慧指出，國防特別條例中的多項軍購案，包含關鍵的海馬士多管火箭系統等，在歷經近六個月的協商溝通後已順利推進。府方期待立法院朝野黨團能在此基礎上持續合作，加速補足國家全方位防衛系統的完整性，確保任何關鍵戰力不被遺漏，以維護國家安全。",
-      "lede_en": "總統府發言人郭雅慧指出，國防特別條例中的多項軍購案，包含關鍵的海馬士多管火箭系統等，在歷經近六個月的協商溝通後已順利推進。府方期待立法院朝野黨團能在此基礎上持續合作，加速補足國家全方位防衛系統的完整性，確保任何關鍵戰力不被遺漏，以維護國家安全。",
+      "title_zh": "立院通過千億軍購條例 美國示警延遲撥款恐「對中讓步」",
+      "title_en": "立院通過千億軍購條例 美國示警延遲撥款恐「對中讓步」",
+      "lede_zh": "立法院通過新台幣7800億元的軍購條例，美國國務院對此表達支持台灣強化自我防衛能力的立場。然而，美方同時強調，若進一步延遲已規劃的防禦經費撥付，形同「對中國共產黨的讓步」，敦促台灣政府持續投入國防預算以應對區域挑戰。",
+      "lede_en": "立法院通過新台幣7800億元的軍購條例，美國國務院對此表達支持台灣強化自我防衛能力的立場。然而，美方同時強調，若進一步延遲已規劃的防禦經費撥付，形同「對中國共產黨的讓步」，敦促台灣政府持續投入國防預算以應對區域挑戰。",
       "bullets_zh": [],
       "bullets_en": [],
       "is_teaching_material": false,
       "teaching_takeaway": "",
       "source": {
         "name": "中央社國內政治",
-        "url": "https://www.cna.com.tw/news/aipl/202605080394.aspx",
-        "published_at": "2026-05-08T14:11:38+00:00",
-        "reading_time_min": 3,
-        "credibility_tier": "secondary"
-      },
-      "fetched_via": "rss"
-    },
-    {
-      "id": "2026-05-08-e003",
-      "category": "taiwan",
-      "is_headline": false,
-      "title_zh": "潘孟安訪史瓦帝尼：感謝堅定支持台灣",
-      "title_en": "潘孟安訪史瓦帝尼：感謝堅定支持台灣",
-      "lede_zh": "總統府秘書長潘孟安近日陪同總統出訪友邦史瓦帝尼，他形容此行雖然路途遙遠且過程不易，卻是一趟充滿深厚情誼的遠航。潘孟安特別強調，他衷心感謝史瓦帝尼王國長期以來對台灣堅定不移的支持，彰顯兩國之間深厚的邦誼，並期待未來雙邊關係能持續深化。",
-      "lede_en": "總統府秘書長潘孟安近日陪同總統出訪友邦史瓦帝尼，他形容此行雖然路途遙遠且過程不易，卻是一趟充滿深厚情誼的遠航。潘孟安特別強調，他衷心感謝史瓦帝尼王國長期以來對台灣堅定不移的支持，彰顯兩國之間深厚的邦誼，並期待未來雙邊關係能持續深化。",
-      "bullets_zh": [],
-      "bullets_en": [],
-      "is_teaching_material": false,
-      "teaching_takeaway": "",
-      "source": {
-        "name": "中央社國內政治",
-        "url": "https://www.cna.com.tw/news/aipl/202605080383.aspx",
-        "published_at": "2026-05-08T13:59:15+00:00",
-        "reading_time_min": 3,
+        "url": "https://www.cna.com.tw/news/aipl/202605090019.aspx",
+        "published_at": "2026-05-09T00:27:01+00:00",
+        "reading_time_min": 4,
         "credibility_tier": "secondary"
       },
       "fetched_via": "rss"
@@ -166,7 +166,7 @@
   ],
   "breaking_news": [],
   "meta": {
-    "generated_at": "2026-05-08T22:59:20.607800+08:00",
+    "generated_at": "2026-05-09T09:39:25.856101+08:00",
     "total_articles": 3,
     "sources_used": {
       "rss": 3,
