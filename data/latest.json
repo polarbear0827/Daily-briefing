@@ -1,48 +1,48 @@
 {
-  "issue_number": 27,
-  "date": "2026-05-12",
+  "issue_number": 28,
+  "date": "2026-05-13",
   "edition": "evening",
   "edition_label_zh": "晚報",
   "edition_label_en": "Evening Edition",
-  "date_display_zh": "2026年5月12日·星期二·晚報",
-  "date_display_en": "Tuesday, May 12, 2026 · Evening Edition",
+  "date_display_zh": "2026年5月13日·星期三·晚報",
+  "date_display_en": "Wednesday, May 13, 2026 · Evening Edition",
   "weather": {
     "location_zh": "台北",
     "location_en": "Taipei",
-    "temp_c": 24,
-    "condition_zh": "多雲",
-    "condition_en": "Cloudy"
+    "temp_c": 22,
+    "condition_zh": "毛毛雨",
+    "condition_en": "Dense drizzle"
   },
   "weather_locations": [
     {
       "location_id": "taipei",
       "location_zh": "台北",
       "location_en": "Taipei",
-      "temp_c": 24,
-      "condition_zh": "多雲",
-      "condition_en": "Cloudy",
-      "weather_code": 3,
-      "updated_at": "2026-05-12T20:00"
+      "temp_c": 22,
+      "condition_zh": "毛毛雨",
+      "condition_en": "Dense drizzle",
+      "weather_code": 55,
+      "updated_at": "2026-05-13T20:00"
     },
     {
       "location_id": "banqiao",
       "location_zh": "板橋",
       "location_en": "Banqiao",
-      "temp_c": 25,
-      "condition_zh": "多雲",
-      "condition_en": "Cloudy",
-      "weather_code": 3,
-      "updated_at": "2026-05-12T20:00"
+      "temp_c": 23,
+      "condition_zh": "毛毛雨",
+      "condition_en": "Light drizzle",
+      "weather_code": 51,
+      "updated_at": "2026-05-13T20:00"
     },
     {
       "location_id": "zhubei",
       "location_zh": "竹北",
       "location_en": "Zhubei",
-      "temp_c": 23,
-      "condition_zh": "多雲",
-      "condition_en": "Cloudy",
-      "weather_code": 3,
-      "updated_at": "2026-05-12T20:00"
+      "temp_c": 22,
+      "condition_zh": "毛毛雨",
+      "condition_en": "Moderate drizzle",
+      "weather_code": 53,
+      "updated_at": "2026-05-13T20:00"
     }
   ],
   "tagline_zh": "由 AI 為你策展，傍晚收束今日",
@@ -101,63 +101,357 @@
   ],
   "articles": [
     {
-      "id": "2026-05-12-e001",
-      "category": "tech-product",
-      "is_headline": false,
-      "title_zh": "快手旗下 AI 影像部門 Kling 尋求外部注資",
-      "title_en": "快手旗下 AI 影像部門 Kling 尋求外部注資",
-      "lede_zh": "中國社群媒體巨頭快手科技證實，正評估旗下 Kling AI 影像業務的重組計畫，並可能引入外部資金。此舉顯示 AI 內容創作市場的投資熱度與競爭持續升高，特別是影音生成領域。AI 工程師可藉此觀察市場趨勢，評估 AI 影像模型發展與其商業潛力，探索如何將先進的生成式 AI 技術應用於企業的內容策略。",
-      "lede_en": "中國社群媒體巨頭快手科技證實，正評估旗下 Kling AI 影像業務的重組計畫，並可能引入外部資金。此舉顯示 AI 內容創作市場的投資熱度與競爭持續升高，特別是影音生成領域。AI 工程師可藉此觀察市場趨勢，評估 AI 影像模型發展與其商業潛力，探索如何將先進的生成式 AI 技術應用於企業的內容策略。",
-      "bullets_zh": [],
-      "bullets_en": [],
-      "is_teaching_material": false,
-      "teaching_takeaway": "",
-      "source": {
-        "name": "The Information",
-        "url": "https://www.theinformation.com/briefings/kuaishou-confirms-seeking-external-funding-kling-ai-video-unit",
-        "published_at": "2026-05-12T09:50:53+00:00",
-        "reading_time_min": 2,
-        "credibility_tier": "secondary"
-      },
-      "fetched_via": "rss"
-    },
-    {
-      "id": "2026-05-12-e002",
-      "category": "tech-product",
+      "id": "2026-05-13-e001",
+      "category": "ai-ml",
       "is_headline": true,
-      "title_zh": "OpenAI 與微軟達成新協議：2030 年前省下 970 億美元",
-      "title_en": "OpenAI 與微軟達成新協議：2030 年前省下 970 億美元",
-      "lede_zh": "OpenAI 與微軟達成新的合作協議，大幅降低了原先高達 1350 億美元的營收分成義務，預計至 2030 年將為 OpenAI 節省驚人的 970 億美元。這項新的財務框架賦予 OpenAI 更穩健的財務基礎與獨立性，將使其能更專注於尖端 AI 模型研發，進一步鞏固其在生成式 AI 領域的領導地位，對整個 AI 產業生態系的未來發展具有重大戰略影響。",
-      "lede_en": "OpenAI 與微軟達成新的合作協議，大幅降低了原先高達 1350 億美元的營收分成義務，預計至 2030 年將為 OpenAI 節省驚人的 970 億美元。這項新的財務框架賦予 OpenAI 更穩健的財務基礎與獨立性，將使其能更專注於尖端 AI 模型研發，進一步鞏固其在生成式 AI 領域的領導地位，對整個 AI 產業生態系的未來發展具有重大戰略影響。",
+      "title_zh": "財務團隊用 Codex 自動化報表與模型檢查",
+      "title_en": "財務團隊用 Codex 自動化報表與模型檢查",
+      "lede_zh": "OpenAI 分享財務團隊如何透過 Codex 自動生成月度業務評論、報表、差異分析橋接表與規劃情景。這套工作流將原本耗時的手動建表工作轉變為程式碼驅動的自動化流程，讓財務分析師專注在策略判斷而非資料整理。",
+      "lede_en": "OpenAI 分享財務團隊如何透過 Codex 自動生成月度業務評論、報表、差異分析橋接表與規劃情景。這套工作流將原本耗時的手動建表工作轉變為程式碼驅動的自動化流程，讓財務分析師專注在策略判斷而非資料整理。",
       "bullets_zh": [],
       "bullets_en": [],
       "is_teaching_material": false,
       "teaching_takeaway": "",
       "source": {
-        "name": "The Information",
-        "url": "https://www.theinformation.com/articles/openai-save-97-billion-2030-latest-microsoft-deal",
-        "published_at": "2026-05-12T01:09:46+00:00",
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/academy/how-finance-teams-use-codex",
+        "published_at": "2026-05-12T15:00:00+00:00",
         "reading_time_min": 3,
         "credibility_tier": "secondary"
       },
       "fetched_via": "rss"
     },
     {
-      "id": "2026-05-12-e003",
+      "id": "2026-05-13-e002",
+      "category": "ai-ml",
+      "is_headline": false,
+      "title_zh": "NVIDIA 工程師用 GPT-5.5 與 Codex 快速迭代研究",
+      "title_en": "NVIDIA 工程師用 GPT-5.5 與 Codex 快速迭代研究",
+      "lede_zh": "NVIDIA 團隊結合 Codex 與 GPT-5.5 加速從研究想法到可執行實驗的轉換，並用於生產系統開發。這種 AI 輔助的工程流程讓晶片設計與演算法研究的週期顯著縮短，是大型科技公司提升研發效率的新典範。",
+      "lede_en": "NVIDIA 團隊結合 Codex 與 GPT-5.5 加速從研究想法到可執行實驗的轉換，並用於生產系統開發。這種 AI 輔助的工程流程讓晶片設計與演算法研究的週期顯著縮短，是大型科技公司提升研發效率的新典範。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/index/nvidia",
+        "published_at": "2026-05-12T00:00:00+00:00",
+        "reading_time_min": 3,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-05-13-e003",
+      "category": "ai-ml",
+      "is_headline": false,
+      "title_zh": "Parameter Golf 競賽：1000+ 參賽者揭露 AI 研究新洞察",
+      "title_en": "Parameter Golf 競賽：1000+ 參賽者揭露 AI 研究新洞察",
+      "lede_zh": "OpenAI 舉辦的 Parameter Golf 競賽吸引超過 1000 名參與者與 2000 份作品，主題涵蓋極限條件下的量化、模型設計與編碼代理研究。這場社群驅動的實驗揭露在資源受限下 AI 輔助機器學習研究的可能性，為模型效率優化提供實戰資料。",
+      "lede_en": "OpenAI 舉辦的 Parameter Golf 競賽吸引超過 1000 名參與者與 2000 份作品，主題涵蓋極限條件下的量化、模型設計與編碼代理研究。這場社群驅動的實驗揭露在資源受限下 AI 輔助機器學習研究的可能性，為模型效率優化提供實戰資料。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/index/what-parameter-golf-taught-us",
+        "published_at": "2026-05-12T00:00:00+00:00",
+        "reading_time_min": 4,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-05-13-e004",
+      "category": "ai-ml",
+      "is_headline": false,
+      "title_zh": "AutoScout24 用 AI 工作流擴展工程團隊效能",
+      "title_en": "AutoScout24 用 AI 工作流擴展工程團隊效能",
+      "lede_zh": "歐洲最大二手車交易平台 AutoScout24 整合 Codex 與 ChatGPT 加速開發週期、提升程式碼品質，並擴大 AI 在公司內部採用。這個案例展示中型科技企業如何透過 AI 驅動工作流實現規模化成長。",
+      "lede_en": "歐洲最大二手車交易平台 AutoScout24 整合 Codex 與 ChatGPT 加速開發週期、提升程式碼品質，並擴大 AI 在公司內部採用。這個案例展示中型科技企業如何透過 AI 驅動工作流實現規模化成長。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/index/autoscout24",
+        "published_at": "2026-05-12T00:00:00+00:00",
+        "reading_time_min": 3,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-05-13-e005",
+      "category": "ai-tools",
+      "is_headline": false,
+      "title_zh": "NotebookLM 整合進 Google Workspace Studio 自動化",
+      "title_en": "NotebookLM 整合進 Google Workspace Studio 自動化",
+      "lede_zh": "Google 將 NotebookLM 納入 Workspace Studio，讓用戶在自動化流程中直接引用既有筆記本作為知識來源。新增的「Ask NotebookLM」步驟能基於筆記內容生成接地氣的回應，使文件驅動的自動化不再需要手動轉錄資料。",
+      "lede_en": "Google 將 NotebookLM 納入 Workspace Studio，讓用戶在自動化流程中直接引用既有筆記本作為知識來源。新增的「Ask NotebookLM」步驟能基於筆記內容生成接地氣的回應，使文件驅動的自動化不再需要手動轉錄資料。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": true,
+      "teaching_takeaway": "NotebookLM 背後是 RAG（檢索增強生成）：把私有文件變成自動化工作流可查的知識庫，減少資料複製成本。",
+      "source": {
+        "name": "Google Workspace Updates",
+        "url": "http://workspaceupdates.googleblog.com/2026/05/notebooklm-in-workspace-studio.html",
+        "published_at": "2026-05-12T20:21:56+00:00",
+        "reading_time_min": 2,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-05-13-e006",
+      "category": "ai-tools",
+      "is_headline": false,
+      "title_zh": "Google Assignments 與 Gemini LTI 擴展支援 Moodle",
+      "title_en": "Google Assignments 與 Gemini LTI 擴展支援 Moodle",
+      "lede_zh": "Google Workspace 的指派作業 LTI 與 Gemini LTI 現已支援 Moodle 學習管理系統，與既有 Canvas 與 Schoology 整合並行。教師可在課程管理平台內直接使用 Gemini 與 NotebookLM 進行教學評估與學生輔導，同時透過原創性報告檢查作業真實性。",
+      "lede_en": "Google Workspace 的指派作業 LTI 與 Gemini LTI 現已支援 Moodle 學習管理系統，與既有 Canvas 與 Schoology 整合並行。教師可在課程管理平台內直接使用 Gemini 與 NotebookLM 進行教學評估與學生輔導，同時透過原創性報告檢查作業真實性。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "Google Workspace Updates",
+        "url": "http://workspaceupdates.googleblog.com/2026/05/workspace-assignments-lti-and-gemini-lti-for-moodle.html",
+        "published_at": "2026-05-12T16:09:32+00:00",
+        "reading_time_min": 2,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-05-13-e007",
+      "category": "security",
+      "is_headline": false,
+      "title_zh": "五月補丁日：AI 成為發現程式碼漏洞的新利器",
+      "title_en": "五月補丁日：AI 成為發現程式碼漏洞的新利器",
+      "lede_zh": "本月安全補丁數量創新高，Apple、Google、Microsoft、Mozilla 與 Oracle 等大廠加快修補速度。報告指出 AI 平台雖易受社交工程攻擊，但在自動掃描人類撰寫的程式碼漏洞上表現驚人，已成為資安團隊的重要工具。",
+      "lede_en": "本月安全補丁數量創新高，Apple、Google、Microsoft、Mozilla 與 Oracle 等大廠加快修補速度。報告指出 AI 平台雖易受社交工程攻擊，但在自動掃描人類撰寫的程式碼漏洞上表現驚人，已成為資安團隊的重要工具。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "Krebs on Security",
+        "url": "https://krebsonsecurity.com/2026/05/patch-tuesday-may-2026-edition/",
+        "published_at": "2026-05-12T21:46:45+00:00",
+        "reading_time_min": 3,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-05-13-e008",
+      "category": "tech-product",
+      "is_headline": false,
+      "title_zh": "檔案工作者用 LLM 大規模解讀手寫文獻",
+      "title_en": "檔案工作者用 LLM 大規模解讀手寫文獻",
+      "lede_zh": "研究人員在檔案館整理珍貴手稿時發現，用 ChatGPT 等 LLM 可快速轉錄密集潦草的手寫文字，比人工閱讀快數倍。這種應用正改變數位人文研究的工作流，使大量歷史文獻得以被電子化與可搜尋。",
+      "lede_en": "研究人員在檔案館整理珍貴手稿時發現，用 ChatGPT 等 LLM 可快速轉錄密集潦草的手寫文字，比人工閱讀快數倍。這種應用正改變數位人文研究的工作流，使大量歷史文獻得以被電子化與可搜尋。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "IEEE Spectrum AI",
+        "url": "https://spectrum.ieee.org/ai-handwriting-transcription-transkribus-lecun",
+        "published_at": "2026-05-13T12:00:01+00:00",
+        "reading_time_min": 3,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-05-13-e009",
+      "category": "tech-product",
+      "is_headline": false,
+      "title_zh": "超大規模 AI 訓練的電力悖論：資料中心遇上新瓶頸",
+      "title_en": "超大規模 AI 訓練的電力悖論：資料中心遇上新瓶頸",
+      "lede_zh": "隨著 GPU 叢集密度超越 100 kW，資料中心面臨全新挑戰：高頻尖峰功率波動而非冷卻能力成為主要限制。大規模 AI 訓練負載的同步性脈衝會放大供電鏈的動態應力，打破傳統功率預測模型。",
+      "lede_en": "隨著 GPU 叢集密度超越 100 kW，資料中心面臨全新挑戰：高頻尖峰功率波動而非冷卻能力成為主要限制。大規模 AI 訓練負載的同步性脈衝會放大供電鏈的動態應力，打破傳統功率預測模型。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "IEEE Spectrum AI",
+        "url": "https://spectrum.ieee.org/gigascale-ai-datacenter-power",
+        "published_at": "2026-05-12T17:15:15+00:00",
+        "reading_time_min": 4,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-05-13-e010",
+      "category": "dev",
+      "is_headline": false,
+      "title_zh": "GitHub Copilot 推出彈性配額與新 Max 方案",
+      "title_en": "GitHub Copilot 推出彈性配額與新 Max 方案",
+      "lede_zh": "GitHub Copilot 個人計畫自 6 月 1 日起調整，Pro 與 Pro+ 方案新增彈性配額選項，並推出頂級的 Max 方案。新定價模式回應用戶的使用反饋，為不同工程師的編碼需求提供更靈活的選擇。",
+      "lede_en": "GitHub Copilot 個人計畫自 6 月 1 日起調整，Pro 與 Pro+ 方案新增彈性配額選項，並推出頂級的 Max 方案。新定價模式回應用戶的使用反饋，為不同工程師的編碼需求提供更靈活的選擇。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "GitHub Blog",
+        "url": "https://github.blog/news-insights/company-news/github-copilot-individual-plans-introducing-flex-allotments-in-pro-and-pro-and-a-new-max-plan/",
+        "published_at": "2026-05-12T17:35:41+00:00",
+        "reading_time_min": 2,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-05-13-e011",
+      "category": "vc-business",
+      "is_headline": false,
+      "title_zh": "OpenAI 非營利夢碎：Musk 與 Altman 法律戰幕後",
+      "title_en": "OpenAI 非營利夢碎：Musk 與 Altman 法律戰幕後",
+      "lede_zh": "《金融時報》深入調查 OpenAI 從非營利組織轉向營利模式的轉折點，揭露 Elon Musk 與 Sam Altman 之間的訴訟根源與商業分歧。這場爭議涉及治理權力、資金使用與技術話語權的重新分配。",
+      "lede_en": "《金融時報》深入調查 OpenAI 從非營利組織轉向營利模式的轉折點，揭露 Elon Musk 與 Sam Altman 之間的訴訟根源與商業分歧。這場爭議涉及治理權力、資金使用與技術話語權的重新分配。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "Financial Times Technology",
+        "url": "https://www.ft.com/content/26fbe8ab-4a21-44d4-be60-11f416d104a2",
+        "published_at": "2026-05-13T11:00:05+00:00",
+        "reading_time_min": 5,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-05-13-e012",
+      "category": "vc-business",
+      "is_headline": false,
+      "title_zh": "GameStop 賭注：公司治理能否不重要？",
+      "title_en": "GameStop 賭注：公司治理能否不重要？",
+      "lede_zh": "Ryan Cohen 收購 GameStop 後提議併購 eBay 遭拒，現面臨關鍵決策。這樁交易反映新創業主對傳統企業治理與股東權益的挑戰。",
+      "lede_en": "Ryan Cohen 收購 GameStop 後提議併購 eBay 遭拒，現面臨關鍵決策。這樁交易反映新創業主對傳統企業治理與股東權益的挑戰。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "Financial Times Technology",
+        "url": "https://www.ft.com/content/374419d6-78a2-4f0e-b030-484a87c02bea",
+        "published_at": "2026-05-13T09:23:22+00:00",
+        "reading_time_min": 3,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-05-13-e013",
+      "category": "science",
+      "is_headline": false,
+      "title_zh": "AI 工具能自動判分程式碼作業嗎？《自然》實驗揭真相",
+      "title_en": "AI 工具能自動判分程式碼作業嗎？《自然》實驗揭真相",
+      "lede_zh": "研究者 Yulu Hou 與夥伴實驗用 ChatGPT 自動批改大學程式碼作業，發現 AI 判分的優勢與侷限。這項研究為高等教育如何安全採用 AI 評估工具提供實證基礎，對教學品質與學術誠信都有啟示。",
+      "lede_en": "研究者 Yulu Hou 與夥伴實驗用 ChatGPT 自動批改大學程式碼作業，發現 AI 判分的優勢與侷限。這項研究為高等教育如何安全採用 AI 評估工具提供實證基礎，對教學品質與學術誠信都有啟示。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "Nature News",
+        "url": "https://www.nature.com/articles/d41586-026-01139-x",
+        "published_at": "2026-05-13T00:00:00+00:00",
+        "reading_time_min": 4,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-05-13-e014",
       "category": "world",
       "is_headline": false,
-      "title_zh": "美國正與格陵蘭秘密洽談開設新軍事基地",
-      "title_en": "美國正與格陵蘭秘密洽談開設新軍事基地",
-      "lede_zh": "據多位熟悉情況的官員透露，美國與格陵蘭近期進行了密切的秘密談判，旨在當地開設新的軍事基地，白宮對此抱持樂觀態度，期望能達成協議。此為地緣政治類別新聞，與 AI 技術發展本身無直接關聯，但或許可作為 AI 工程師在關注全球科技趨勢之餘，對國際情勢的額外參考資訊。",
-      "lede_en": "據多位熟悉情況的官員透露，美國與格陵蘭近期進行了密切的秘密談判，旨在當地開設新的軍事基地，白宮對此抱持樂觀態度，期望能達成協議。此為地緣政治類別新聞，與 AI 技術發展本身無直接關聯，但或許可作為 AI 工程師在關注全球科技趨勢之餘，對國際情勢的額外參考資訊。",
+      "title_zh": "郵輪爆發腸胃炎疫情 乘客滯留法國港口",
+      "title_en": "郵輪爆發腸胃炎疫情 乘客滯留法國港口",
+      "lede_zh": "從貝爾法斯特出航的郵輪因腸胃炎爆發停靠波爾多港口。乘客已被隔離在船上進行健康監測。",
+      "lede_en": "從貝爾法斯特出航的郵輪因腸胃炎爆發停靠波爾多港口。乘客已被隔離在船上進行健康監測。",
       "bullets_zh": [],
       "bullets_en": [],
       "is_teaching_material": false,
       "teaching_takeaway": "",
       "source": {
         "name": "BBC World",
-        "url": "https://www.bbc.com/news/articles/cx21669452lo?at_medium=RSS&at_campaign=rss",
-        "published_at": "2026-05-12T11:44:16+00:00",
+        "url": "https://www.bbc.com/news/articles/cn5pe4yel1ko?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-05-13T11:55:50+00:00",
+        "reading_time_min": 2,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-05-13-e015",
+      "category": "world",
+      "is_headline": false,
+      "title_zh": "登山者清除聖母峰冰塊障礙 近千人將攻頂",
+      "title_en": "登山者清除聖母峰冰塊障礙 近千人將攻頂",
+      "lede_zh": "登山隊清理聖母峰路線上巨大冰塊，預計近千名登山者在未來數週內嘗試登頂，安全疑慮隨之升高。",
+      "lede_en": "登山隊清理聖母峰路線上巨大冰塊，預計近千名登山者在未來數週內嘗試登頂，安全疑慮隨之升高。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "BBC World",
+        "url": "https://www.bbc.com/news/articles/c3w2np14g92o?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-05-13T11:57:37+00:00",
+        "reading_time_min": 2,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-05-13-e016",
+      "category": "taiwan",
+      "is_headline": false,
+      "title_zh": "外交部要求中國善盡 APEC 主辦責任 確保台灣平等參與",
+      "title_en": "外交部要求中國善盡 APEC 主辦責任 確保台灣平等參與",
+      "lede_zh": "中國為 2026 年 APEC 會議主辦方，國台辦重申「一中」原則，外交部強烈駁斥並要求中國遵守 APEC 所有會員平等參與的核心原則。",
+      "lede_en": "中國為 2026 年 APEC 會議主辦方，國台辦重申「一中」原則，外交部強烈駁斥並要求中國遵守 APEC 所有會員平等參與的核心原則。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "中央社國內政治",
+        "url": "https://www.cna.com.tw/news/aipl/202605130268.aspx",
+        "published_at": "2026-05-13T09:39:53+00:00",
+        "reading_time_min": 2,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-05-13-e017",
+      "category": "taiwan",
+      "is_headline": false,
+      "title_zh": "中科院參展美國無人機展 聚焦國際供應鏈短缺項目",
+      "title_en": "中科院參展美國無人機展 聚焦國際供應鏈短缺項目",
+      "lede_zh": "中科院院長李世強率隊參加底特律 XPONENTIAL 2026 無人機展，展出勁蜂 2 型、勁蜂 3 型攻擊無人機與銳鳶 2 型海用無人機，鎖定全球國防供應鏈缺口市場。",
+      "lede_en": "中科院院長李世強率隊參加底特律 XPONENTIAL 2026 無人機展，展出勁蜂 2 型、勁蜂 3 型攻擊無人機與銳鳶 2 型海用無人機，鎖定全球國防供應鏈缺口市場。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "中央社國內政治",
+        "url": "https://www.cna.com.tw/news/aipl/202605130262.aspx",
+        "published_at": "2026-05-13T09:28:39+00:00",
         "reading_time_min": 2,
         "credibility_tier": "secondary"
       },
@@ -166,14 +460,14 @@
   ],
   "breaking_news": [],
   "meta": {
-    "generated_at": "2026-05-12T20:06:10.453547+08:00",
-    "total_articles": 3,
+    "generated_at": "2026-05-13T20:08:44.527529+08:00",
+    "total_articles": 17,
     "sources_used": {
-      "rss": 3,
+      "rss": 17,
       "firecrawl": 0
     },
     "schema_version": "2.0",
     "edition": "evening",
-    "model": "gemini-2.5-flash"
+    "model": "anthropic/claude-haiku-4.5"
   }
 }
