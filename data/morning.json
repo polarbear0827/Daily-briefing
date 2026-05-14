@@ -1,48 +1,48 @@
 {
-  "issue_number": 26,
-  "date": "2026-05-12",
+  "issue_number": 29,
+  "date": "2026-05-14",
   "edition": "morning",
   "edition_label_zh": "早報",
   "edition_label_en": "Morning Edition",
-  "date_display_zh": "2026年5月12日·星期二·早報",
-  "date_display_en": "Tuesday, May 12, 2026 · Morning Edition",
+  "date_display_zh": "2026年5月14日·星期四·早報",
+  "date_display_en": "Thursday, May 14, 2026 · Morning Edition",
   "weather": {
     "location_zh": "台北",
     "location_en": "Taipei",
-    "temp_c": 25,
-    "condition_zh": "多雲",
-    "condition_en": "Cloudy"
+    "temp_c": 22,
+    "condition_zh": "下雨",
+    "condition_en": "Rain"
   },
   "weather_locations": [
     {
       "location_id": "taipei",
       "location_zh": "台北",
       "location_en": "Taipei",
-      "temp_c": 25,
-      "condition_zh": "多雲",
-      "condition_en": "Cloudy",
-      "weather_code": 3,
-      "updated_at": "2026-05-12T08:00"
+      "temp_c": 22,
+      "condition_zh": "下雨",
+      "condition_en": "Rain",
+      "weather_code": 63,
+      "updated_at": "2026-05-14T08:00"
     },
     {
       "location_id": "banqiao",
       "location_zh": "板橋",
       "location_en": "Banqiao",
-      "temp_c": 25,
-      "condition_zh": "多雲",
-      "condition_en": "Cloudy",
-      "weather_code": 3,
-      "updated_at": "2026-05-12T08:00"
+      "temp_c": 22,
+      "condition_zh": "下雨",
+      "condition_en": "Rain",
+      "weather_code": 63,
+      "updated_at": "2026-05-14T08:00"
     },
     {
       "location_id": "zhubei",
       "location_zh": "竹北",
       "location_en": "Zhubei",
-      "temp_c": 25,
-      "condition_zh": "多雲",
-      "condition_en": "Cloudy",
-      "weather_code": 3,
-      "updated_at": "2026-05-12T08:00"
+      "temp_c": 22,
+      "condition_zh": "下雨",
+      "condition_en": "Rain",
+      "weather_code": 63,
+      "updated_at": "2026-05-14T08:00"
     }
   ],
   "tagline_zh": "由 AI 為你策展，專屬早晨讀物",
@@ -101,142 +101,312 @@
   ],
   "articles": [
     {
-      "id": "2026-05-12-m001",
+      "id": "2026-05-14-m001",
       "category": "ai-ml",
       "is_headline": false,
-      "title_zh": "ChatGPT普及化：用戶跨齡、性別平衡趨勢",
-      "title_en": "ChatGPT普及化：用戶跨齡、性別平衡趨勢",
-      "lede_zh": "OpenAI報告指出，2026年第一季ChatGPT使用率顯著成長，尤其35歲以上用戶增幅最快，性別分布也趨於平衡。這顯示AI工具正加速融入主流社會，企業應關注不同族群的使用模式，並思考如何將AI應用於更廣泛的業務場景，以把握市場先機。",
-      "lede_en": "OpenAI報告指出，2026年第一季ChatGPT使用率顯著成長，尤其35歲以上用戶增幅最快，性別分布也趨於平衡。這顯示AI工具正加速融入主流社會，企業應關注不同族群的使用模式，並思考如何將AI應用於更廣泛的業務場景，以把握市場先機。",
+      "title_zh": "OpenAI 為 Codex 打造 Windows 安全沙箱，解鎖程式碼代理新可能",
+      "title_en": "OpenAI 為 Codex 打造 Windows 安全沙箱，解鎖程式碼代理新可能",
+      "lede_zh": "OpenAI 發布了專為 Windows 設計的 Codex 安全沙箱架構，透過受控的檔案存取和網路限制，讓 AI 程式碼代理能安全高效地執行。這套隔離機制對企業開發工具和自動化工作流程意義重大，使 AI 編程助手可在受信環境中放心運作，同時防止未授權的系統操作。",
+      "lede_en": "OpenAI 發布了專為 Windows 設計的 Codex 安全沙箱架構，透過受控的檔案存取和網路限制，讓 AI 程式碼代理能安全高效地執行。這套隔離機制對企業開發工具和自動化工作流程意義重大，使 AI 編程助手可在受信環境中放心運作，同時防止未授權的系統操作。",
       "bullets_zh": [],
       "bullets_en": [],
       "is_teaching_material": false,
       "teaching_takeaway": "",
       "source": {
         "name": "OpenAI Blog",
-        "url": "https://openai.com/signals/research/2026q1-update",
-        "published_at": "2026-05-11T15:00:00+00:00",
-        "reading_time_min": 2,
-        "credibility_tier": "secondary"
-      },
-      "fetched_via": "rss"
-    },
-    {
-      "id": "2026-05-12-m002",
-      "category": "ai-ml",
-      "is_headline": false,
-      "title_zh": "OpenAI新設DeployCo：助企業落實尖端AI應用",
-      "title_en": "OpenAI新設DeployCo：助企業落實尖端AI應用",
-      "lede_zh": "OpenAI宣佈成立新公司DeployCo，旨在協助企業將前瞻性AI技術導入實際生產環境，並轉化為可衡量的商業價值。此舉顯示OpenAI正加強對企業級市場的服務，對有意深化AI應用的大型組織而言，DeployCo將提供專業部署與整合支援，加速AI方案的落地與效益實現。",
-      "lede_en": "OpenAI宣佈成立新公司DeployCo，旨在協助企業將前瞻性AI技術導入實際生產環境，並轉化為可衡量的商業價值。此舉顯示OpenAI正加強對企業級市場的服務，對有意深化AI應用的大型組織而言，DeployCo將提供專業部署與整合支援，加速AI方案的落地與效益實現。",
-      "bullets_zh": [],
-      "bullets_en": [],
-      "is_teaching_material": false,
-      "teaching_takeaway": "",
-      "source": {
-        "name": "OpenAI Blog",
-        "url": "https://openai.com/index/openai-launches-the-deployment-company",
-        "published_at": "2026-05-11T06:00:00+00:00",
+        "url": "https://openai.com/index/building-codex-windows-sandbox",
+        "published_at": "2026-05-13T11:00:00+00:00",
         "reading_time_min": 3,
         "credibility_tier": "secondary"
       },
       "fetched_via": "rss"
     },
     {
-      "id": "2026-05-12-m003",
+      "id": "2026-05-14-m002",
       "category": "ai-ml",
       "is_headline": false,
-      "title_zh": "Apple提出BalCapRL：強化多模態模型影像描述",
-      "title_en": "Apple提出BalCapRL：強化多模態模型影像描述",
-      "lede_zh": "Apple研究團隊發表BalCapRL框架，旨在優化多模態大型語言模型（MLLM）的影像描述能力，特別是解決現有基於強化學習（RL）方法在描述品質上過於狹隘的問題。此技術有助於生成更詳細且準確的圖像文字，對於開發更精準的視覺AI應用及內容理解工具具重要潛力。",
-      "lede_en": "Apple研究團隊發表BalCapRL框架，旨在優化多模態大型語言模型（MLLM）的影像描述能力，特別是解決現有基於強化學習（RL）方法在描述品質上過於狹隘的問題。此技術有助於生成更詳細且準確的圖像文字，對於開發更精準的視覺AI應用及內容理解工具具重要潛力。",
-      "bullets_zh": [],
-      "bullets_en": [],
-      "is_teaching_material": false,
-      "teaching_takeaway": "",
-      "source": {
-        "name": "Apple Machine Learning Research",
-        "url": "https://machinelearning.apple.com/research/balcaprl-mllm-image-captioning",
-        "published_at": "2026-05-11T00:00:00+00:00",
-        "reading_time_min": 3,
-        "credibility_tier": "secondary"
-      },
-      "fetched_via": "rss"
-    },
-    {
-      "id": "2026-05-12-m004",
-      "category": "ai-ml",
-      "is_headline": false,
-      "title_zh": "微軟研究：AI代理人難以持續優化用戶利益",
-      "title_en": "微軟研究：AI代理人難以持續優化用戶利益",
-      "lede_zh": "微軟研究發表SocialReasoning-Bench，發現AI代理人在執行任務時表現良好，但即使有明確指令，仍難以持續為用戶爭取最佳利益。這項研究凸顯AI代理人在「用戶利益優化」方面仍面臨挑戰，促使開發者需更深入思考如何設計AI，確保其決策真正符合人類福祉，而非僅是完成指令。",
-      "lede_en": "微軟研究發表SocialReasoning-Bench，發現AI代理人在執行任務時表現良好，但即使有明確指令，仍難以持續為用戶爭取最佳利益。這項研究凸顯AI代理人在「用戶利益優化」方面仍面臨挑戰，促使開發者需更深入思考如何設計AI，確保其決策真正符合人類福祉，而非僅是完成指令。",
+      "title_zh": "微軟開源記憶體分配器 mimalloc：現代系統的效能新標竿",
+      "title_en": "微軟開源記憶體分配器 mimalloc：現代系統的效能新標竿",
+      "lede_zh": "微軟研究院推出 mimalloc，一款開源、高效能且可擴展的記憶體分配器，可直接替換傳統的 malloc 和 free。它程式碼精簡（約 1.2 萬行）、內部結構清晰，提供界限最壞情況分配時間和最小競爭，對高效能 AI 模型推理和大規模系統開發極具參考價值。",
+      "lede_en": "微軟研究院推出 mimalloc，一款開源、高效能且可擴展的記憶體分配器，可直接替換傳統的 malloc 和 free。它程式碼精簡（約 1.2 萬行）、內部結構清晰，提供界限最壞情況分配時間和最小競爭，對高效能 AI 模型推理和大規模系統開發極具參考價值。",
       "bullets_zh": [],
       "bullets_en": [],
       "is_teaching_material": false,
       "teaching_takeaway": "",
       "source": {
         "name": "Microsoft Research Blog",
-        "url": "https://www.microsoft.com/en-us/research/blog/socialreasoning-bench-measuring-whether-ai-agents-act-in-users-best-interests/",
-        "published_at": "2026-05-11T17:19:28+00:00",
+        "url": "https://www.microsoft.com/en-us/research/blog/mimalloc-a-high-performance-scalable-memory-allocator-for-the-modern-era/",
+        "published_at": "2026-05-13T17:19:59+00:00",
         "reading_time_min": 3,
         "credibility_tier": "secondary"
       },
       "fetched_via": "rss"
     },
     {
-      "id": "2026-05-12-m005",
-      "category": "ai-tools",
-      "is_headline": true,
-      "title_zh": "Google Vids新增AI虛擬人，簡報一鍵生成互動影片",
-      "title_en": "Google Vids新增AI虛擬人，簡報一鍵生成互動影片",
-      "lede_zh": "Google Vids推出新功能，現在能將Google Slides簡報內容轉換成影片時，自動加入AI虛擬人物作為發言人。這項功能結合Gemini生成腳本、配音與背景音樂，讓簡報影片更具互動性與吸引力，協助企業用戶輕鬆製作專業級的教學、行銷或內部溝通影片，大幅提升內容製作效率。",
-      "lede_en": "Google Vids推出新功能，現在能將Google Slides簡報內容轉換成影片時，自動加入AI虛擬人物作為發言人。這項功能結合Gemini生成腳本、配音與背景音樂，讓簡報影片更具互動性與吸引力，協助企業用戶輕鬆製作專業級的教學、行銷或內部溝通影片，大幅提升內容製作效率。",
-      "bullets_zh": [],
-      "bullets_en": [],
-      "is_teaching_material": true,
-      "teaching_takeaway": "學習Google Vids如何利用AI虛擬人將靜態簡報轉化為具備互動性的專業影片內容。",
-      "source": {
-        "name": "Google Workspace Updates",
-        "url": "http://workspaceupdates.googleblog.com/2026/05/add-avatars-when-you-convert-presentations-to-Vids.html",
-        "published_at": "2026-05-11T21:01:00+00:00",
-        "reading_time_min": 3,
-        "credibility_tier": "secondary"
-      },
-      "fetched_via": "rss"
-    },
-    {
-      "id": "2026-05-12-m008",
-      "category": "tech-product",
+      "id": "2026-05-14-m003",
+      "category": "ai-ml",
       "is_headline": false,
-      "title_zh": "OpenAI推出Daybreak計畫，以AI強化資安防禦",
-      "title_en": "OpenAI推出Daybreak計畫，以AI強化資安防禦",
-      "lede_zh": "OpenAI啟動名為Daybreak的AI資安計畫，旨在運用AI代理人Codex Security主動偵測並修補軟體漏洞，搶在駭客發現前強化防禦。此計畫能根據企業程式碼建立威脅模型，自動識別潛在攻擊路徑與弱點，對於提升企業資安韌性、降低風險具備重要戰略意義，開創AI驅動資安的新篇章。",
-      "lede_en": "OpenAI啟動名為Daybreak的AI資安計畫，旨在運用AI代理人Codex Security主動偵測並修補軟體漏洞，搶在駭客發現前強化防禦。此計畫能根據企業程式碼建立威脅模型，自動識別潛在攻擊路徑與弱點，對於提升企業資安韌性、降低風險具備重要戰略意義，開創AI驅動資安的新篇章。",
+      "title_zh": "微軟 GridSFM：輕量級基礎模型讓電網調度快上千倍",
+      "title_en": "微軟 GridSFM：輕量級基礎模型讓電網調度快上千倍",
+      "lede_zh": "微軟推出 GridSFM 基礎模型，能在毫秒級預測交流最優潮流，為電網營運商帶來即時的擁塞、穩定性和系統健康度可視化。這項應用展示小型基礎模型在關鍵基礎設施領域的潛力，能顯著提升電網效率和營運成本，也啟示 AI 在能源轉型中的實戰角色。",
+      "lede_en": "微軟推出 GridSFM 基礎模型，能在毫秒級預測交流最優潮流，為電網營運商帶來即時的擁塞、穩定性和系統健康度可視化。這項應用展示小型基礎模型在關鍵基礎設施領域的潛力，能顯著提升電網效率和營運成本，也啟示 AI 在能源轉型中的實戰角色。",
       "bullets_zh": [],
       "bullets_en": [],
       "is_teaching_material": false,
       "teaching_takeaway": "",
       "source": {
-        "name": "The Verge",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/928342/openai-daybreak-security-ai",
-        "published_at": "2026-05-11T23:05:01+00:00",
+        "name": "Microsoft Research Blog",
+        "url": "https://www.microsoft.com/en-us/research/blog/gridsfm-a-new-small-foundation-model-for-the-electric-grid/",
+        "published_at": "2026-05-13T16:00:20+00:00",
         "reading_time_min": 3,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-05-14-m004",
+      "category": "ai-ml",
+      "is_headline": false,
+      "title_zh": "AWS + Pulse AI：用生成式 AI 快速處理複雜財務文件",
+      "title_en": "AWS + Pulse AI：用生成式 AI 快速處理複雜財務文件",
+      "lede_zh": "AWS 示範如何結合 Pulse AI 的進階文件理解能力與 Amazon Bedrock 的生成式 AI 服務，建立端到端的財務文件萃取和模型微調流程。對金融機構和企業而言，此方案能大幅提升複雜報表、合約、財報的自動化處理精度，降低人工審核成本，加快決策速度。",
+      "lede_en": "AWS 示範如何結合 Pulse AI 的進階文件理解能力與 Amazon Bedrock 的生成式 AI 服務，建立端到端的財務文件萃取和模型微調流程。對金融機構和企業而言，此方案能大幅提升複雜報表、合約、財報的自動化處理精度，降低人工審核成本，加快決策速度。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": true,
+      "teaching_takeaway": "生成式 AI + 專用文件模型 = 企業級文件自動化：Pulse AI 專注文件理解，Bedrock 負責提示工程和微調，兩者結合實現高準度的財務資料萃取和分類。",
+      "source": {
+        "name": "AWS Machine Learning Blog",
+        "url": "https://aws.amazon.com/blogs/machine-learning/build-financial-document-processing-with-pulse-ai-and-amazon-bedrock/",
+        "published_at": "2026-05-13T18:00:06+00:00",
+        "reading_time_min": 3,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-05-14-m005",
+      "category": "ai-tools",
+      "is_headline": false,
+      "title_zh": "Google Workspace 新功能：一鍵從 Microsoft 遷移使用者帳號",
+      "title_en": "Google Workspace 新功能：一鍵從 Microsoft 遷移使用者帳號",
+      "lede_zh": "Google Workspace 推出測試版遷移功能，小企業和教育機構現可在初始設置時自動從 Microsoft 帳號匯入使用者，無需手動逐筆新增。這項質量化工具大幅簡化企業從微軟生態轉換到 Google 的流程，特別適合中小公司和學校快速完成系統切換。",
+      "lede_en": "Google Workspace 推出測試版遷移功能，小企業和教育機構現可在初始設置時自動從 Microsoft 帳號匯入使用者，無需手動逐筆新增。這項質量化工具大幅簡化企業從微軟生態轉換到 Google 的流程，特別適合中小公司和學校快速完成系統切換。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "Google Workspace Updates",
+        "url": "http://workspaceupdates.googleblog.com/2026/05/small-businesses-can-now-seamlessly-import-users-from-Microsoft-to-Google-Workspace.html",
+        "published_at": "2026-05-13T16:52:52+00:00",
+        "reading_time_min": 2,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-05-14-m006",
+      "category": "tech-product",
+      "is_headline": true,
+      "title_zh": "大型語言模型能像醫生一樣推理？OpenAI LLM 超越醫師表現",
+      "title_en": "大型語言模型能像醫生一樣推理？OpenAI LLM 超越醫師表現",
+      "lede_zh": "OpenAI 最新 LLM 在多項臨床推理任務上表現超越醫師，引發醫療 AI 應用新思考。從症狀判斷、診斷決策到治療方案規劃，AI 展現出不亞於人類醫學專家的邏輯推導能力，為臨床決策支援系統從規則引擎邁向學習模型時代帶來里程碑。",
+      "lede_en": "OpenAI 最新 LLM 在多項臨床推理任務上表現超越醫師，引發醫療 AI 應用新思考。從症狀判斷、診斷決策到治療方案規劃，AI 展現出不亞於人類醫學專家的邏輯推導能力，為臨床決策支援系統從規則引擎邁向學習模型時代帶來里程碑。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "IEEE Spectrum AI",
+        "url": "https://spectrum.ieee.org/ai-clinical-decision-support",
+        "published_at": "2026-05-13T14:00:02+00:00",
+        "reading_time_min": 4,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-05-14-m007",
+      "category": "dev",
+      "is_headline": false,
+      "title_zh": "Roguelike 遊戲永不死亡：開源社群如何讓古典遊戲持續進化",
+      "title_en": "Roguelike 遊戲永不死亡：開源社群如何讓古典遊戲持續進化",
+      "lede_zh": "GitHub 記錄了 10 款經典 Roguelike 遊戲如何通過開源社群的持續貢獻而常存於世，它們經歷分支、重寫、爭議、棄置與復興的循環。這些案例反映開源協作文化的韌性，以及社群驅動的軟體演化如何超越商業週期的侷限。",
+      "lede_en": "GitHub 記錄了 10 款經典 Roguelike 遊戲如何通過開源社群的持續貢獻而常存於世，它們經歷分支、重寫、爭議、棄置與復興的循環。這些案例反映開源協作文化的韌性，以及社群驅動的軟體演化如何超越商業週期的侷限。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "GitHub Blog",
+        "url": "https://github.blog/open-source/gaming/dungeons-desktops-10-roguelikes-that-never-die-because-their-communities-wont-let-them/",
+        "published_at": "2026-05-13T16:00:00+00:00",
+        "reading_time_min": 4,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-05-14-m008",
+      "category": "vc-business",
+      "is_headline": false,
+      "title_zh": "川普之子赴中國簽約：美國政商圈貿易談判暗流涌動",
+      "title_en": "川普之子赴中國簽約：美國政商圈貿易談判暗流涌動",
+      "lede_zh": "金融時報報導美國總統之子所屬公司與中國晶片製造商簽署備忘錄，該晶片商曾被美國國會點名與中共黨政機構關聯。此舉凸顯中美貿易談判中的政治與商業利益交織，以及各界對美國對華政策一致性的關注。",
+      "lede_en": "金融時報報導美國總統之子所屬公司與中國晶片製造商簽署備忘錄，該晶片商曾被美國國會點名與中共黨政機構關聯。此舉凸顯中美貿易談判中的政治與商業利益交織，以及各界對美國對華政策一致性的關注。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "Financial Times Technology",
+        "url": "https://www.ft.com/content/8fc422d3-a943-48c5-9119-d823e62f115a",
+        "published_at": "2026-05-13T16:43:55+00:00",
+        "reading_time_min": 3,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-05-14-m009",
+      "category": "vc-business",
+      "is_headline": false,
+      "title_zh": "白領族群現身「AI 疲勞症」：新技術帶來的認知超載危機",
+      "title_en": "白領族群現身「AI 疲勞症」：新技術帶來的認知超載危機",
+      "lede_zh": "金融時報調查發現辦公室工作者因 AI 工具激增而感到疲憊不堪，新技術帶來的學習曲線、流程重組和決策複雜性造成心理負擔。企業在導入 AI 時需同步關注員工適應與身心健康，才能真正發揮科技生產力效益。",
+      "lede_en": "金融時報調查發現辦公室工作者因 AI 工具激增而感到疲憊不堪，新技術帶來的學習曲線、流程重組和決策複雜性造成心理負擔。企業在導入 AI 時需同步關注員工適應與身心健康，才能真正發揮科技生產力效益。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "Financial Times Technology",
+        "url": "https://www.ft.com/content/0ba3bd4f-cc3a-4cad-8a8e-76925da2a711",
+        "published_at": "2026-05-13T16:15:10+00:00",
+        "reading_time_min": 3,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-05-14-m010",
+      "category": "science",
+      "is_headline": false,
+      "title_zh": "鈣鈦礦太陽能電池新突破：立體電子配體設計提升效能",
+      "title_en": "鈣鈦礦太陽能電池新突破：立體電子配體設計提升效能",
+      "lede_zh": "Nature 發表最新鈣鈦礦太陽能電池研究，透過立體電子配體精準操控，大幅提升光電轉換效率與穩定性。此成果為下一代綠能元件開闢新方向，有望加速潔淨能源技術商用化。",
+      "lede_en": "Nature 發表最新鈣鈦礦太陽能電池研究，透過立體電子配體精準操控，大幅提升光電轉換效率與穩定性。此成果為下一代綠能元件開闢新方向，有望加速潔淨能源技術商用化。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "Nature News",
+        "url": "https://www.nature.com/articles/s41586-026-10626-0",
+        "published_at": "2026-05-13T00:00:00+00:00",
+        "reading_time_min": 3,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-05-14-m011",
+      "category": "world",
+      "is_headline": false,
+      "title_zh": "川習峰會在即：貿易、伊朗與台灣成談判焦點",
+      "title_en": "川習峰會在即：貿易、伊朗與台灣成談判焦點",
+      "lede_zh": "美國總統抵達北京與習近平展開高層會談，預計聚焦貿易開放、伊朗問題與台灣地位。外界高度關注川普對台灣政策的立場，與會議對美中戰略競爭格局的影響。",
+      "lede_en": "美國總統抵達北京與習近平展開高層會談，預計聚焦貿易開放、伊朗問題與台灣地位。外界高度關注川普對台灣政策的立場，與會議對美中戰略競爭格局的影響。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "BBC World",
+        "url": "https://www.bbc.com/news/articles/c1w28qw1e0xo?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-05-13T17:00:12+00:00",
+        "reading_time_min": 3,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-05-14-m012",
+      "category": "world",
+      "is_headline": false,
+      "title_zh": "美國名律師謀殺案翻盤：法院推翻定罪令重審",
+      "title_en": "美國名律師謀殺案翻盤：法院推翻定罪令重審",
+      "lede_zh": "美國南卡州法院推翻知名律師艾力克斯‧莫多夫在 2021 年妻兒遇害案中的謀殺罪名，並宣布重新審理。此案引發美國司法程序與證據效力的廣泛討論。",
+      "lede_en": "美國南卡州法院推翻知名律師艾力克斯‧莫多夫在 2021 年妻兒遇害案中的謀殺罪名，並宣布重新審理。此案引發美國司法程序與證據效力的廣泛討論。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "BBC World",
+        "url": "https://www.bbc.com/news/articles/cedpvnq7wn1o?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-05-13T15:36:38+00:00",
+        "reading_time_min": 2,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-05-14-m013",
+      "category": "taiwan",
+      "is_headline": false,
+      "title_zh": "川習會登場前夕 台灣成焦點：美前外交官籲堅守對台政策",
+      "title_en": "川習會登場前夕 台灣成焦點：美前外交官籲堅守對台政策",
+      "lede_zh": "北京峰會前夕，台灣議題備受關注。美國前駐中大使伯恩斯強調川普政府應堅守長期對台政策、持續軍售，專家並警示若美國犧牲盟邦利益，將動搖整個印太盟友網絡的信心。",
+      "lede_en": "北京峰會前夕，台灣議題備受關注。美國前駐中大使伯恩斯強調川普政府應堅守長期對台政策、持續軍售，專家並警示若美國犧牲盟邦利益，將動搖整個印太盟友網絡的信心。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "中央社國內政治",
+        "url": "https://www.cna.com.tw/news/aipl/202605140013.aspx",
+        "published_at": "2026-05-13T22:04:49+00:00",
+        "reading_time_min": 3,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-05-14-m014",
+      "category": "taiwan",
+      "is_headline": false,
+      "title_zh": "副總統出席《傳奇女伶高菊花》首映：以行動支持本土紀錄片",
+      "title_en": "副總統出席《傳奇女伶高菊花》首映：以行動支持本土紀錄片",
+      "lede_zh": "副總統蕭美琴出席《傳奇女伶高菊花》紀錄片首映，肯定紀錄片團隊透過影像傳遞台灣故事與歷史，並強調自由民主需要全民共同守護。此舉展示政府對本土文化與紀錄片產業的支持。",
+      "lede_en": "副總統蕭美琴出席《傳奇女伶高菊花》紀錄片首映，肯定紀錄片團隊透過影像傳遞台灣故事與歷史，並強調自由民主需要全民共同守護。此舉展示政府對本土文化與紀錄片產業的支持。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "中央社國內政治",
+        "url": "https://www.cna.com.tw/news/aipl/202605130386.aspx",
+        "published_at": "2026-05-13T15:34:12+00:00",
+        "reading_time_min": 2,
         "credibility_tier": "secondary"
       },
       "fetched_via": "rss"
     }
   ],
-  "breaking_news": [],
+  "breaking_news": [
+    "2026-05-14-m006"
+  ],
   "meta": {
-    "generated_at": "2026-05-12T08:03:08.289833+08:00",
-    "total_articles": 6,
+    "generated_at": "2026-05-14T08:06:16.165729+08:00",
+    "total_articles": 14,
     "sources_used": {
-      "rss": 6,
+      "rss": 14,
       "firecrawl": 0
     },
     "schema_version": "2.0",
     "edition": "morning",
-    "model": "gemini-2.5-flash"
+    "model": "anthropic/claude-haiku-4.5"
   }
 }
