@@ -1,6 +1,17 @@
 {
   "issues": [
     {
+      "issue_number": 33,
+      "date": "2026-05-16",
+      "edition": "morning",
+      "key": "2026-05-16-morning",
+      "headline_zh": "GraphBit：用有向無環圖取代提示詞編排，讓 Agent 流程可重現且可審計",
+      "headline_en": "GraphBit：用有向無環圖取代提示詞編排，讓 Agent 流程可重現且可審計",
+      "article_count": 19,
+      "breaking_news_count": 0,
+      "file": "data/issues/2026-05-16-morning.json"
+    },
+    {
       "issue_number": 31,
       "date": "2026-05-15",
       "edition": "morning",
@@ -345,6 +356,6 @@
       "last_updated": "2026-04-25T07:55:39.282219+08:00"
     }
   ],
-  "last_updated": "2026-05-15T20:06:09.408757+08:00",
-  "total_issues": 32
+  "last_updated": "2026-05-16T08:09:05.866164+08:00",
+  "total_issues": 33
 }
