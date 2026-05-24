@@ -39,9 +39,9 @@
       "location_zh": "竹北",
       "location_en": "Zhubei",
       "temp_c": 27,
-      "condition_zh": "多雲",
-      "condition_en": "Cloudy",
-      "weather_code": 3,
+      "condition_zh": "晴時多雲",
+      "condition_en": "Partly cloudy",
+      "weather_code": 2,
       "updated_at": "2026-05-24T20:00"
     }
   ],
@@ -102,20 +102,20 @@
   "articles": [
     {
       "id": "2026-05-24-e001",
-      "category": "tech-product",
+      "category": "ai-ml",
       "is_headline": true,
-      "title_zh": "美國情報機構聯手 Anthropic，Claude 將進入國安級機密工作",
-      "title_en": "美國情報機構聯手 Anthropic，Claude 將進入國安級機密工作",
-      "lede_zh": "白宮與 Anthropic 接近達成協議，允許美國國家安全局等情報機構使用 Claude 模型處理機密工作。這筆交易展現 AI 模型已成為政府情報分析的關鍵工具，同時也凸顯 Anthropic 在企業級與政府應用中的競爭力提升，未來可能帶動更多安全性強化的 AI 應用標準。",
-      "lede_en": "白宮與 Anthropic 接近達成協議，允許美國國家安全局等情報機構使用 Claude 模型處理機密工作。這筆交易展現 AI 模型已成為政府情報分析的關鍵工具，同時也凸顯 Anthropic 在企業級與政府應用中的競爭力提升，未來可能帶動更多安全性強化的 AI 應用標準。",
+      "title_zh": "NVIDIA Nemotron 擴散模型：文字生成速度逼近光速",
+      "title_en": "NVIDIA Nemotron 擴散模型：文字生成速度逼近光速",
+      "lede_zh": "NVIDIA 推出基於擴散模型的 Nemotron-Labs 語言模型，透過全新架構大幅加速文字生成速度。這項技術突破傳統自迴歸模型的瓶頸，讓長文本生成、實時互動應用的效能有質的飛躍，對需要低延遲回應的企業應用（如客服、即時翻譯）特別有價值。",
+      "lede_en": "NVIDIA 推出基於擴散模型的 Nemotron-Labs 語言模型，透過全新架構大幅加速文字生成速度。這項技術突破傳統自迴歸模型的瓶頸，讓長文本生成、實時互動應用的效能有質的飛躍，對需要低延遲回應的企業應用（如客服、即時翻譯）特別有價值。",
       "bullets_zh": [],
       "bullets_en": [],
       "is_teaching_material": false,
       "teaching_takeaway": "",
       "source": {
-        "name": "The Information",
-        "url": "https://www.theinformation.com/briefings/white-house-anthropic-near-deal-spy-agencies-use-ai",
-        "published_at": "2026-05-23T15:36:35+00:00",
+        "name": "Hugging Face Blog",
+        "url": "https://huggingface.co/blog/nvidia/nemotron-labs-diffusion",
+        "published_at": "2026-05-23T00:02:03+00:00",
         "reading_time_min": 3,
         "credibility_tier": "secondary"
       },
@@ -123,34 +123,137 @@
     },
     {
       "id": "2026-05-24-e002",
-      "category": "tech-product",
+      "category": "ai-ml",
       "is_headline": false,
-      "title_zh": "史丹佛前校長轉戰生技圈，神經科學家的第二春",
-      "title_en": "史丹佛前校長轉戰生技圈，神經科學家的第二春",
-      "lede_zh": "Marc Tessier-Lavigne 卸下史丹佛大學校長職務後，開始在生技與科學界頻繁露面，結合神經科學與基因科技背景重啟職涯。這則故事反映科技與生命科學領袖如何跨域轉型，惟與 AI 工程師的日常工作關聯度較低。",
-      "lede_en": "Marc Tessier-Lavigne 卸下史丹佛大學校長職務後，開始在生技與科學界頻繁露面，結合神經科學與基因科技背景重啟職涯。這則故事反映科技與生命科學領袖如何跨域轉型，惟與 AI 工程師的日常工作關聯度較低。",
+      "title_zh": "專業勝於規模：AI 採購決策的被忽視關鍵變數",
+      "title_en": "專業勝於規模：AI 採購決策的被忽視關鍵變數",
+      "lede_zh": "Dharma AI 發表研究指出，在 AI 模型採購時，企業往往迷信「更大更新」，其實選擇專為特定任務微調的小型模型，往往成本更低、效果更好。這項洞察提醒主管和採購決策者，評估 AI 工具時應優先考量實際使用場景的貼切度，而非盲目追求規模。",
+      "lede_en": "Dharma AI 發表研究指出，在 AI 模型採購時，企業往往迷信「更大更新」，其實選擇專為特定任務微調的小型模型，往往成本更低、效果更好。這項洞察提醒主管和採購決策者，評估 AI 工具時應優先考量實際使用場景的貼切度，而非盲目追求規模。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": true,
+      "teaching_takeaway": "「專業小模型」在成本與效能上往往勝過「通用大模型」，選型時應以任務適配度為首要指標，而非單看參數量。",
+      "source": {
+        "name": "Hugging Face Blog",
+        "url": "https://huggingface.co/blog/Dharma-AI/specialization-beats-scale",
+        "published_at": "2026-05-22T15:25:59+00:00",
+        "reading_time_min": 3,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-05-24-e003",
+      "category": "ai-ml",
+      "is_headline": false,
+      "title_zh": "所有模型實驗室轉身成代理人實驗室",
+      "title_en": "所有模型實驗室轉身成代理人實驗室",
+      "lede_zh": "Latent Space 觀察到一股靜悄悄的轉向：各大 AI 實驗室不再只關注模型本身，而是將焦點移至「代理人」（Agent）——能自主規劃、執行多步驟任務的 AI 系統。這反映出業界認知的根本改變：單純的聊天機器人時代已終，具備自主決策能力的 AI 才是未來競爭點。",
+      "lede_en": "Latent Space 觀察到一股靜悄悄的轉向：各大 AI 實驗室不再只關注模型本身，而是將焦點移至「代理人」（Agent）——能自主規劃、執行多步驟任務的 AI 系統。這反映出業界認知的根本改變：單純的聊天機器人時代已終，具備自主決策能力的 AI 才是未來競爭點。",
       "bullets_zh": [],
       "bullets_en": [],
       "is_teaching_material": false,
       "teaching_takeaway": "",
       "source": {
-        "name": "The Information",
-        "url": "https://www.theinformation.com/articles/complicated-comeback-stanfords-ex-president",
-        "published_at": "2026-05-23T15:01:23+00:00",
-        "reading_time_min": 4,
+        "name": "Latent Space (swyx & Alessio)",
+        "url": "https://www.latent.space/p/ainews-all-model-labs-are-now-agent",
+        "published_at": "2026-05-23T04:21:17+00:00",
+        "reading_time_min": 2,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-05-24-e005",
+      "category": "security",
+      "is_headline": false,
+      "title_zh": "npm 強化供應鏈安全：2FA 把關發版、分段發布上線",
+      "title_en": "npm 強化供應鏈安全：2FA 把關發版、分段發布上線",
+      "lede_zh": "GitHub 為 npm 推出「分段發布」機制，規定套件維護者必須通過雙因素認證才能正式發布版本。這項措施直接對抗開源套件被惡意篡改的風險，是對開發者生態安全的重要升級。任何依賴開源套件的企業和開發團隊都應檢視此功能，並為關鍵專案啟用。",
+      "lede_en": "GitHub 為 npm 推出「分段發布」機制，規定套件維護者必須通過雙因素認證才能正式發布版本。這項措施直接對抗開源套件被惡意篡改的風險，是對開發者生態安全的重要升級。任何依賴開源套件的企業和開發團隊都應檢視此功能，並為關鍵專案啟用。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": true,
+      "teaching_takeaway": "npm 分段發布功能透過 2FA 人工核准機制，大幅降低供應鏈攻擊風險；企業應為高風險依賴套件啟用此保護。",
+      "source": {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/05/npm-adds-2fa-gated-publishing-and.html",
+        "published_at": "2026-05-23T16:35:10+00:00",
+        "reading_time_min": 2,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-05-24-e006",
+      "category": "tech-product",
+      "is_headline": false,
+      "title_zh": "毫米波雷達分辨昆蟲物種：監測傳粉者的新方法",
+      "title_en": "毫米波雷達分辨昆蟲物種：監測傳粉者的新方法",
+      "lede_zh": "研究人員開發出使用機器學習的毫米波雷達系統，能無損、非接觸地識別不同昆蟲物種。相比傳統視覺系統受光線限制、傳統採集法需殺死標本，雷達方案成本低、效率高，對農業監測、生態保護領域帶來突破。",
+      "lede_en": "研究人員開發出使用機器學習的毫米波雷達系統，能無損、非接觸地識別不同昆蟲物種。相比傳統視覺系統受光線限制、傳統採集法需殺死標本，雷達方案成本低、效率高，對農業監測、生態保護領域帶來突破。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "IEEE Spectrum AI",
+        "url": "https://spectrum.ieee.org/mmwave-radar-insects-pollinators",
+        "published_at": "2026-05-23T13:00:01+00:00",
+        "reading_time_min": 2,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-05-24-e007",
+      "category": "tech-product",
+      "is_headline": false,
+      "title_zh": "Nuro 機器人計程車：後發優勢能超越 Waymo 嗎？",
+      "title_en": "Nuro 機器人計程車：後發優勢能超越 Waymo 嗎？",
+      "lede_zh": "Nuro 執行長提出「第二名策略」，認為後進者能從 Waymo 的市場試錯中學習、迴避陷阱。雖然 Waymo 領先優勢明顯，但 Nuro 押注於更靈活的技術路線和成本控制，試圖在自駕計程車大戰中尋得立足點。",
+      "lede_en": "Nuro 執行長提出「第二名策略」，認為後進者能從 Waymo 的市場試錯中學習、迴避陷阱。雖然 Waymo 領先優勢明顯，但 Nuro 押注於更靈活的技術路線和成本控制，試圖在自駕計程車大戰中尋得立足點。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "The Verge",
+        "url": "https://www.theverge.com/transportation/936126/nuro-robotaxi-dave-ferguson-interview-uber-lucid-waymo",
+        "published_at": "2026-05-24T11:00:00+00:00",
+        "reading_time_min": 2,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-05-24-e009",
+      "category": "vc-business",
+      "is_headline": false,
+      "title_zh": "AI 迫使麥肯錫等顧問公司重新定價商業模式",
+      "title_en": "AI 迫使麥肯錫等顧問公司重新定價商業模式",
+      "lede_zh": "金融時報報導指出，隨著企業逐漸熟悉 AI 工具，對傳統顧問費用的質疑聲浪上升，麥肯錫等企管顧問巨擘被迫從固定時薪制轉向「成果導向定價」。這一變化反映了 AI 對知識工作的衝擊——通用分析能力貶值，企業只願為實際成果買單。",
+      "lede_en": "金融時報報導指出，隨著企業逐漸熟悉 AI 工具，對傳統顧問費用的質疑聲浪上升，麥肯錫等企管顧問巨擘被迫從固定時薪制轉向「成果導向定價」。這一變化反映了 AI 對知識工作的衝擊——通用分析能力貶值，企業只願為實際成果買單。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "Financial Times Technology",
+        "url": "https://www.ft.com/content/8318a754-7b63-4f1f-8978-7691e7ed3511",
+        "published_at": "2026-05-24T04:00:16+00:00",
+        "reading_time_min": 2,
         "credibility_tier": "secondary"
       },
       "fetched_via": "rss"
     }
   ],
-  "breaking_news": [
-    "2026-05-24-e001"
-  ],
+  "breaking_news": [],
   "meta": {
-    "generated_at": "2026-05-24T20:05:03.860107+08:00",
-    "total_articles": 2,
+    "generated_at": "2026-05-24T20:07:28.052875+08:00",
+    "total_articles": 7,
     "sources_used": {
-      "rss": 2,
+      "rss": 7,
       "firecrawl": 0
     },
     "schema_version": "2.0",
