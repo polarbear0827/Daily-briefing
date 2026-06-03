@@ -24,6 +24,9 @@ rss_feeds:
   - name: NVIDIA Blog
     url: https://blogs.nvidia.com/feed/
     tier: primary
+  - name: NVIDIA Newsroom
+    url: https://nvidianews.nvidia.com/rss.xml
+    tier: primary
   - name: Hugging Face Blog
     url: https://huggingface.co/blog/feed.xml
     tier: primary
