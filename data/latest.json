@@ -1,15 +1,15 @@
 {
-  "issue_number": 64,
+  "issue_number": 65,
   "date": "2026-06-04",
-  "edition": "morning",
-  "edition_label_zh": "早報",
-  "edition_label_en": "Morning Edition",
-  "date_display_zh": "2026年6月4日·星期四·早報",
-  "date_display_en": "Thursday, June 4, 2026 · Morning Edition",
+  "edition": "evening",
+  "edition_label_zh": "晚報",
+  "edition_label_en": "Evening Edition",
+  "date_display_zh": "2026年6月4日·星期四·晚報",
+  "date_display_en": "Thursday, June 4, 2026 · Evening Edition",
   "weather": {
     "location_zh": "台北",
     "location_en": "Taipei",
-    "temp_c": 31,
+    "temp_c": 30,
     "condition_zh": "多雲",
     "condition_en": "Cloudy"
   },
@@ -18,35 +18,35 @@
       "location_id": "taipei",
       "location_zh": "台北",
       "location_en": "Taipei",
-      "temp_c": 31,
+      "temp_c": 30,
       "condition_zh": "多雲",
       "condition_en": "Cloudy",
       "weather_code": 3,
-      "updated_at": "2026-06-04T09:30"
+      "updated_at": "2026-06-04T08:00"
     },
     {
       "location_id": "banqiao",
       "location_zh": "板橋",
       "location_en": "Banqiao",
-      "temp_c": 31,
+      "temp_c": 29,
       "condition_zh": "多雲",
       "condition_en": "Cloudy",
       "weather_code": 3,
-      "updated_at": "2026-06-04T09:30"
+      "updated_at": "2026-06-04T08:00"
     },
     {
       "location_id": "zhubei",
       "location_zh": "竹北",
       "location_en": "Zhubei",
-      "temp_c": 31,
+      "temp_c": 30,
       "condition_zh": "多雲",
       "condition_en": "Cloudy",
       "weather_code": 3,
-      "updated_at": "2026-06-04T09:30"
+      "updated_at": "2026-06-04T08:00"
     }
   ],
-  "tagline_zh": "由 AI 為你策展，專屬早晨讀物",
-  "tagline_en": "AI-curated, your morning read",
+  "tagline_zh": "由 AI 為你策展，傍晚收束今日",
+  "tagline_en": "AI-curated, your evening wrap",
   "categories": [
     {
       "id": "ai-ml",
@@ -101,265 +101,223 @@
   ],
   "articles": [
     {
-      "id": "2026-06-04-m001",
+      "id": "2026-06-04-e001",
       "category": "ai-ml",
       "is_headline": true,
-      "title_zh": "Introducing new capabilities to GPT-Rosalind",
-      "title_en": "Introducing new capabilities to GPT-Rosalind",
-      "lede_zh": "這則來自OpenAI Blog的報導聚焦「Introducing new capabilities to GPT-Rosalind」。GPT-Rosalind advances life sciences research with enhanced biological reasoning, medicinal chemistry expertise, genomics analysis, and experimental workflow capabilities 值得留意的是，這顯示模型能力正快速朝產業專用與可執行工作流程延伸。",
-      "lede_en": "這則來自OpenAI Blog的報導聚焦「Introducing new capabilities to GPT-Rosalind」。GPT-Rosalind advances life sciences research with enhanced biological reasoning, medicinal chemistry expertise, genomics analysis, and experimental workflow capabilities 值得留意的是，這顯示模型能力正快速朝產業專用與可執行工作流程延伸。",
+      "title_zh": "Endava 以 AI Agent 重塑企業軟體交付流程",
+      "title_en": "Endava 以 AI Agent 重塑企業軟體交付流程",
+      "lede_zh": "Endava 公開分享如何把 ChatGPT Enterprise、Codex 與 AI agents 放進軟體交付流程，讓需求拆解、程式產出、測試與內部自動化更快串起來。對企業 AI 工程團隊來說，重點不只是導入工具，而是同步建立 AI 原生的工作文化、治理節奏與可重複的交付模式。",
+      "lede_en": "Endava 公開分享如何把 ChatGPT Enterprise、Codex 與 AI agents 放進軟體交付流程，讓需求拆解、程式產出、測試與內部自動化更快串起來。對企業 AI 工程團隊來說，重點不只是導入工具，而是同步建立 AI 原生的工作文化、治理節奏與可重複的交付模式。",
       "bullets_zh": [],
       "bullets_en": [],
       "is_teaching_material": true,
-      "teaching_takeaway": "可作為課堂案例，討論模型能力、工作流程或產品落地。",
+      "teaching_takeaway": "AI Agent 導入要同時設計流程、權責與驗證機制，不能只靠單一工具加速。",
       "source": {
         "name": "OpenAI Blog",
-        "url": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind",
-        "published_at": "2026-06-03T13:15:00+00:00",
-        "reading_time_min": 4,
-        "credibility_tier": "primary"
-      },
-      "fetched_via": "rss"
-    },
-    {
-      "id": "2026-06-04-m002",
-      "category": "ai-ml",
-      "is_headline": false,
-      "title_zh": "How Wasmer used Codex to build a Node.js runtime for the edge",
-      "title_en": "How Wasmer used Codex to build a Node.js runtime for the edge",
-      "lede_zh": "這則來自OpenAI Blog的報導聚焦「How Wasmer used Codex to build a Node.js runtime for the edge」。See how Wasmer used Codex with GPT-5.5 to build a Node.js runtime for the edge, accelerating development 10x to 20x and shipping in weeks instead of months 值得留意的是，這顯示模型能力正快速朝產業專用與可執行工作流程延伸。",
-      "lede_en": "這則來自OpenAI Blog的報導聚焦「How Wasmer used Codex to build a Node.js runtime for the edge」。See how Wasmer used Codex with GPT-5.5 to build a Node.js runtime for the edge, accelerating development 10x to 20x and shipping in weeks instead of months 值得留意的是，這顯示模型能力正快速朝產業專用與可執行工作流程延伸。",
-      "bullets_zh": [],
-      "bullets_en": [],
-      "is_teaching_material": true,
-      "teaching_takeaway": "可作為課堂案例，討論模型能力、工作流程或產品落地。",
-      "source": {
-        "name": "OpenAI Blog",
-        "url": "https://openai.com/index/wasmer",
-        "published_at": "2026-06-03T12:00:00+00:00",
-        "reading_time_min": 4,
-        "credibility_tier": "primary"
-      },
-      "fetched_via": "rss"
-    },
-    {
-      "id": "2026-06-04-m003",
-      "category": "ai-ml",
-      "is_headline": false,
-      "title_zh": "OpenAI public policy agenda",
-      "title_en": "OpenAI public policy agenda",
-      "lede_zh": "這則來自OpenAI Blog的報導聚焦「OpenAI public policy agenda」。OpenAI outlines its public policy agenda for AI, including safety, youth protection, workforce transition, and global standards to ensure AI benefits society 值得留意的是，這顯示模型能力正快速朝產業專用與可執行工作流程延伸。",
-      "lede_en": "這則來自OpenAI Blog的報導聚焦「OpenAI public policy agenda」。OpenAI outlines its public policy agenda for AI, including safety, youth protection, workforce transition, and global standards to ensure AI benefits society 值得留意的是，這顯示模型能力正快速朝產業專用與可執行工作流程延伸。",
-      "bullets_zh": [],
-      "bullets_en": [],
-      "is_teaching_material": true,
-      "teaching_takeaway": "可作為課堂案例，討論模型能力、工作流程或產品落地。",
-      "source": {
-        "name": "OpenAI Blog",
-        "url": "https://openai.com/index/public-policy-agenda",
-        "published_at": "2026-06-03T10:00:00+00:00",
-        "reading_time_min": 4,
-        "credibility_tier": "primary"
-      },
-      "fetched_via": "rss"
-    },
-    {
-      "id": "2026-06-04-m004",
-      "category": "ai-ml",
-      "is_headline": false,
-      "title_zh": "A blueprint for democratic governance of frontier AI",
-      "title_en": "A blueprint for democratic governance of frontier AI",
-      "lede_zh": "這則來自OpenAI Blog的報導聚焦「A blueprint for democratic governance of frontier AI」。OpenAI outlines a blueprint for U.S. governance of frontier AI, proposing a federal framework for safety, resilience, and national security 值得留意的是，這顯示模型能力正快速朝產業專用與可執行工作流程延伸。",
-      "lede_en": "這則來自OpenAI Blog的報導聚焦「A blueprint for democratic governance of frontier AI」。OpenAI outlines a blueprint for U.S. governance of frontier AI, proposing a federal framework for safety, resilience, and national security 值得留意的是，這顯示模型能力正快速朝產業專用與可執行工作流程延伸。",
-      "bullets_zh": [],
-      "bullets_en": [],
-      "is_teaching_material": true,
-      "teaching_takeaway": "可作為課堂案例，討論模型能力、工作流程或產品落地。",
-      "source": {
-        "name": "OpenAI Blog",
-        "url": "https://openai.com/index/frontier-safety-blueprint",
-        "published_at": "2026-06-03T10:00:00+00:00",
-        "reading_time_min": 4,
-        "credibility_tier": "primary"
-      },
-      "fetched_via": "rss"
-    },
-    {
-      "id": "2026-06-04-m005",
-      "category": "ai-tools",
-      "is_headline": false,
-      "title_zh": "Gmail as a source in Ask Gemini in Drive now generally available",
-      "title_en": "Gmail as a source in Ask Gemini in Drive now generally available",
-      "lede_zh": "這則來自Google Workspace Updates的報導聚焦「Gmail as a source in Ask Gemini in Drive now generally available」。Gmail sources in Ask Gemini in Drive is now generally available and has started rolling out to eligible Google Workspace and Google AI plans . Ask Gemini in Drive offers a dedic。 對日常知識工作者而言，這代表 AI 已更深嵌入辦公、文件與協作流程。",
-      "lede_en": "這則來自Google Workspace Updates的報導聚焦「Gmail as a source in Ask Gemini in Drive now generally available」。Gmail sources in Ask Gemini in Drive is now generally available and has started rolling out to eligible Google Workspace and Google AI plans . Ask Gemini in Drive offers a dedic。 對日常知識工作者而言，這代表 AI 已更深嵌入辦公、文件與協作流程。",
-      "bullets_zh": [],
-      "bullets_en": [],
-      "is_teaching_material": true,
-      "teaching_takeaway": "可作為課堂案例，討論模型能力、工作流程或產品落地。",
-      "source": {
-        "name": "Google Workspace Updates",
-        "url": "http://workspaceupdates.googleblog.com/2026/06/gmail-as-source-in-ask-gemini-in-drive-now-generally-available.html",
-        "published_at": "2026-06-03T22:36:55+00:00",
-        "reading_time_min": 4,
-        "credibility_tier": "primary"
-      },
-      "fetched_via": "rss"
-    },
-    {
-      "id": "2026-06-04-m006",
-      "category": "ai-tools",
-      "is_headline": false,
-      "title_zh": "Data loss prevention policies for Google Calendar now available in GA",
-      "title_en": "Data loss prevention policies for Google Calendar now available in GA",
-      "lede_zh": "這則來自Google Workspace Updates的報導聚焦「Data loss prevention policies for Google Calendar now available in GA」。Data loss prevention (DLP) for Google Calendar is now generally available to protect sensitive information shared within event details. Previously available in beta , this featu。 對日常知識工作者而言，這代表 AI 已更深嵌入辦公、文件與協作流程。",
-      "lede_en": "這則來自Google Workspace Updates的報導聚焦「Data loss prevention policies for Google Calendar now available in GA」。Data loss prevention (DLP) for Google Calendar is now generally available to protect sensitive information shared within event details. Previously available in beta , this featu。 對日常知識工作者而言，這代表 AI 已更深嵌入辦公、文件與協作流程。",
-      "bullets_zh": [],
-      "bullets_en": [],
-      "is_teaching_material": true,
-      "teaching_takeaway": "可作為課堂案例，討論模型能力、工作流程或產品落地。",
-      "source": {
-        "name": "Google Workspace Updates",
-        "url": "http://workspaceupdates.googleblog.com/2026/05/data-loss-prevention-policies-for-Google-Calendar-now-available-in-GA.html",
-        "published_at": "2026-06-03T19:32:27+00:00",
-        "reading_time_min": 4,
-        "credibility_tier": "primary"
-      },
-      "fetched_via": "rss"
-    },
-    {
-      "id": "2026-06-04-m007",
-      "category": "tech-product",
-      "is_headline": false,
-      "title_zh": "7 Ways New Engineers Can Flourish in the Age of AI",
-      "title_en": "7 Ways New Engineers Can Flourish in the Age of AI",
-      "lede_zh": "這則來自IEEE Spectrum AI的報導聚焦「7 Ways New Engineers Can Flourish in the Age of AI」。New graduates’ careers are unfolding in an era when AI is not optional. The most successful engineers treat artificial intelligence as leverage, not competition. Here are seven。 從產品面看，這反映硬體規範、平台政策與使用者體驗正在同步變動。",
-      "lede_en": "這則來自IEEE Spectrum AI的報導聚焦「7 Ways New Engineers Can Flourish in the Age of AI」。New graduates’ careers are unfolding in an era when AI is not optional. The most successful engineers treat artificial intelligence as leverage, not competition. Here are seven。 從產品面看，這反映硬體規範、平台政策與使用者體驗正在同步變動。",
-      "bullets_zh": [],
-      "bullets_en": [],
-      "is_teaching_material": false,
-      "teaching_takeaway": "",
-      "source": {
-        "name": "IEEE Spectrum AI",
-        "url": "https://spectrum.ieee.org/7-ways-engineers-flourish-ai",
-        "published_at": "2026-06-03T18:00:02+00:00",
-        "reading_time_min": 4,
-        "credibility_tier": "primary"
-      },
-      "fetched_via": "rss"
-    },
-    {
-      "id": "2026-06-04-m008",
-      "category": "tech-product",
-      "is_headline": false,
-      "title_zh": "Nintendo confirms it will sell a new Switch 2 with replaceable battery in the EU",
-      "title_en": "Nintendo confirms it will sell a new Switch 2 with replaceable battery in the EU",
-      "lede_zh": "這則來自The Verge的報導聚焦「Nintendo confirms it will sell a new Switch 2 with replaceable battery in the EU」。Nintendo is planning to launch versions of Switch 2 hardware in the EU that will let users easily replace the battery. To meet its obligations from a new EU regulation that's se。 從產品面看，這反映硬體規範、平台政策與使用者體驗正在同步變動。",
-      "lede_en": "這則來自The Verge的報導聚焦「Nintendo confirms it will sell a new Switch 2 with replaceable battery in the EU」。Nintendo is planning to launch versions of Switch 2 hardware in the EU that will let users easily replace the battery. To meet its obligations from a new EU regulation that's se。 從產品面看，這反映硬體規範、平台政策與使用者體驗正在同步變動。",
-      "bullets_zh": [],
-      "bullets_en": [],
-      "is_teaching_material": false,
-      "teaching_takeaway": "",
-      "source": {
-        "name": "The Verge",
-        "url": "https://www.theverge.com/games/942808/nintendo-switch-2-replaceable-battery-eu",
-        "published_at": "2026-06-04T00:04:04+00:00",
+        "url": "https://openai.com/index/endava-frontiers",
+        "published_at": "2026-06-04T12:00:00+00:00",
         "reading_time_min": 4,
         "credibility_tier": "secondary"
       },
       "fetched_via": "rss"
     },
     {
-      "id": "2026-06-04-m009",
-      "category": "dev",
+      "id": "2026-06-04-e002",
+      "category": "ai-ml",
       "is_headline": false,
-      "title_zh": "I built a vulnerable app and spent $1,500 seeing if LLMs could hack it",
-      "title_en": "I built a vulnerable app and spent $1,500 seeing if LLMs could hack it",
-      "lede_zh": "這則來自Hacker News Front Page的報導聚焦「I built a vulnerable app and spent $1,500 seeing if LLMs could hack it」。Hacker News Front Page 提到一項新的發展，但原始摘要資訊有限。 對開發者而言，這類更新通常會直接改變工具鏈、協作方式與自動化工作流。",
-      "lede_en": "這則來自Hacker News Front Page的報導聚焦「I built a vulnerable app and spent $1,500 seeing if LLMs could hack it」。Hacker News Front Page 提到一項新的發展，但原始摘要資訊有限。 對開發者而言，這類更新通常會直接改變工具鏈、協作方式與自動化工作流。",
+      "title_zh": "NVIDIA 研究推進機器人抓取、自駕推理與 Agent 訓練",
+      "title_en": "NVIDIA 研究推進機器人抓取、自駕推理與 Agent 訓練",
+      "lede_zh": "NVIDIA Research 在 CVPR 相關研究中展示更泛化的機器人抓取、自駕系統情境推理，以及大規模 Agent 訓練方法。這些成果把 AI 從單次任務表現推向可遷移、可擴充的實體世界能力，對機器人、自動駕駛與模擬訓練平台都有參考價值。",
+      "lede_en": "NVIDIA Research 在 CVPR 相關研究中展示更泛化的機器人抓取、自駕系統情境推理，以及大規模 Agent 訓練方法。這些成果把 AI 從單次任務表現推向可遷移、可擴充的實體世界能力，對機器人、自動駕駛與模擬訓練平台都有參考價值。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "NVIDIA Blog",
+        "url": "https://blogs.nvidia.com/blog/cvpr-research-grasping-driving-agent-training/",
+        "published_at": "2026-06-03T15:00:57+00:00",
+        "reading_time_min": 4,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-06-04-e003",
+      "category": "research-papers",
+      "is_headline": false,
+      "title_zh": "企業 AI Agent 上線前驗證走向本體模擬與信任認證",
+      "title_en": "企業 AI Agent 上線前驗證走向本體模擬與信任認證",
+      "lede_zh": "這篇論文指出，企業 AI Agent 不能只靠上線後監控、人工覆核與提示詞護欄來保證安全。研究提出結合 Agent 操作邊界、本體驅動模擬與信任認證的框架，讓團隊在部署前先測試 Agent 在流程、資料與權限限制下是否會偏離預期。",
+      "lede_en": "這篇論文指出，企業 AI Agent 不能只靠上線後監控、人工覆核與提示詞護欄來保證安全。研究提出結合 Agent 操作邊界、本體驅動模擬與信任認證的框架，讓團隊在部署前先測試 Agent 在流程、資料與權限限制下是否會偏離預期。",
       "bullets_zh": [],
       "bullets_en": [],
       "is_teaching_material": true,
-      "teaching_takeaway": "可作為課堂案例，討論模型能力、工作流程或產品落地。",
+      "teaching_takeaway": "Agent 上線前應先定義操作邊界，再用模擬案例驗證是否安全可靠。",
+      "source": {
+        "name": "arXiv cs.AI",
+        "url": "https://arxiv.org/abs/2606.04037",
+        "published_at": "2026-06-04T04:00:00+00:00",
+        "reading_time_min": 5,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-06-04-e004",
+      "category": "research-papers",
+      "is_headline": false,
+      "title_zh": "例行 AI 互動可能悄悄改變人類情感依賴模式",
+      "title_en": "例行 AI 互動可能悄悄改變人類情感依賴模式",
+      "lede_zh": "論文挑戰「使用者刻意尋求 AI 情感支持」的常見假設，指出情感依賴也可能從日常工作型互動中自然浮現。當聊天機器人在任務協助中持續提供理解、陪伴與回應，使用者未必一開始把它視為伴侶工具，卻可能逐步改變與人連結的習慣。",
+      "lede_en": "論文挑戰「使用者刻意尋求 AI 情感支持」的常見假設，指出情感依賴也可能從日常工作型互動中自然浮現。當聊天機器人在任務協助中持續提供理解、陪伴與回應，使用者未必一開始把它視為伴侶工具，卻可能逐步改變與人連結的習慣。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "arXiv cs.AI",
+        "url": "https://arxiv.org/abs/2606.04150",
+        "published_at": "2026-06-04T04:00:00+00:00",
+        "reading_time_min": 4,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-06-04-e005",
+      "category": "security",
+      "is_headline": false,
+      "title_zh": "Meta AI 客服聊天機器人遭利用，帳號接管風險升高",
+      "title_en": "Meta AI 客服聊天機器人遭利用，帳號接管風險升高",
+      "lede_zh": "Schneier on Security 轉述攻擊者如何誘導 Meta AI Support Assistant 協助變更目標帳號資訊，進而可能接管 Instagram 帳號。事件凸顯 AI 客服若能觸發敏感帳務流程，就必須有強身分驗證、風險偵測與人工升級機制，否則自然語言介面會成為新的社交工程入口。",
+      "lede_en": "Schneier on Security 轉述攻擊者如何誘導 Meta AI Support Assistant 協助變更目標帳號資訊，進而可能接管 Instagram 帳號。事件凸顯 AI 客服若能觸發敏感帳務流程，就必須有強身分驗證、風險偵測與人工升級機制，否則自然語言介面會成為新的社交工程入口。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": true,
+      "teaching_takeaway": "AI 客服只要能改帳務資料，就必須納入資安威脅模型與權限控管。",
+      "source": {
+        "name": "Schneier on Security",
+        "url": "https://www.schneier.com/blog/archives/2026/06/hacking-metas-ai-chatbot.html",
+        "published_at": "2026-06-04T11:04:09+00:00",
+        "reading_time_min": 4,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-06-04-e006",
+      "category": "tech-product",
+      "is_headline": false,
+      "title_zh": "Oura Ring 5 明顯縮小，穿戴式硬體續拚日常舒適度",
+      "title_en": "Oura Ring 5 明顯縮小，穿戴式硬體續拚日常舒適度",
+      "lede_zh": "The Verge 初步試戴指出 Oura Ring 5 的體積比前代更小，正式評測仍需等待耐用度、電池與新版軟體長測。這類更新提醒產品團隊，健康穿戴裝置的競爭不只在感測器，也在是否能讓使用者長時間無感配戴並持續留下資料。",
+      "lede_en": "The Verge 初步試戴指出 Oura Ring 5 的體積比前代更小，正式評測仍需等待耐用度、電池與新版軟體長測。這類更新提醒產品團隊，健康穿戴裝置的競爭不只在感測器，也在是否能讓使用者長時間無感配戴並持續留下資料。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "The Verge",
+        "url": "https://www.theverge.com/gadgets/942616/oura-ring-5-size-comparison-first-impressions",
+        "published_at": "2026-06-04T12:00:00+00:00",
+        "reading_time_min": 3,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-06-04-e007",
+      "category": "dev",
+      "is_headline": false,
+      "title_zh": "Unix su 與 login 的歷史脈絡，提醒開發者理解權限邊界",
+      "title_en": "Unix su 與 login 的歷史脈絡，提醒開發者理解權限邊界",
+      "lede_zh": "這篇 Unix 歷史文章回顧 su 如何取代 login 成為切換身分的常見方式，對現代開發者仍有啟發。權限切換、身分驗證與工作階段管理看似是老議題，但在容器、遠端維運與自動化腳本中，理解這些基礎能降低誤用權限的風險。",
+      "lede_en": "這篇 Unix 歷史文章回顧 su 如何取代 login 成為切換身分的常見方式，對現代開發者仍有啟發。權限切換、身分驗證與工作階段管理看似是老議題，但在容器、遠端維運與自動化腳本中，理解這些基礎能降低誤用權限的風險。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
       "source": {
         "name": "Hacker News Front Page",
-        "url": "https://kasra.blog/blog/i-spent-1500-seeing-if-llms-could-hack-my-app/",
-        "published_at": "2026-06-04T00:56:32+00:00",
+        "url": "https://utcc.utoronto.ca/~cks/space/blog/unix/SuAsLoginReplacement",
+        "published_at": "2026-06-04T11:36:00+00:00",
         "reading_time_min": 3,
-        "credibility_tier": "tertiary"
+        "credibility_tier": "secondary"
       },
       "fetched_via": "rss"
     },
     {
-      "id": "2026-06-04-m010",
+      "id": "2026-06-04-e008",
       "category": "vc-business",
       "is_headline": false,
-      "title_zh": "Broadcom loses more than $300bn in market value as revenue forecast disappoints",
-      "title_en": "Broadcom loses more than $300bn in market value as revenue forecast disappoints",
-      "lede_zh": "這則來自Financial Times Technology的報導聚焦「Broadcom loses more than $300bn in market value as revenue forecast disappoints」。Shares in chip company fall as much as 15% in after-hours trading 從商業面來看，這透露大型平台與資本市場對 AI 投資仍處於高張力狀態。",
-      "lede_en": "這則來自Financial Times Technology的報導聚焦「Broadcom loses more than $300bn in market value as revenue forecast disappoints」。Shares in chip company fall as much as 15% in after-hours trading 從商業面來看，這透露大型平台與資本市場對 AI 投資仍處於高張力狀態。",
+      "title_zh": "英國首相批評馬斯克介入政治，科技巨頭影響力再受檢視",
+      "title_en": "英國首相批評馬斯克介入政治，科技巨頭影響力再受檢視",
+      "lede_zh": "Financial Times 報導，英國首相 Keir Starmer 批評 Elon Musk 近期大量發文與轉貼英國政治議題，形容這是對英國政治的干預。事件反映大型科技平台與科技富豪在公共輿論中的影響力持續擴大，也讓政府、媒體與平台治理的邊界更受關注。",
+      "lede_en": "Financial Times 報導，英國首相 Keir Starmer 批評 Elon Musk 近期大量發文與轉貼英國政治議題，形容這是對英國政治的干預。事件反映大型科技平台與科技富豪在公共輿論中的影響力持續擴大，也讓政府、媒體與平台治理的邊界更受關注。",
       "bullets_zh": [],
       "bullets_en": [],
       "is_teaching_material": false,
       "teaching_takeaway": "",
       "source": {
         "name": "Financial Times Technology",
-        "url": "https://www.ft.com/content/c8d506d3-7e81-49be-bb72-24ae289b9240",
-        "published_at": "2026-06-04T00:13:58+00:00",
+        "url": "https://www.ft.com/content/368d0d8d-8d6b-4060-bd7b-17c0034cf174",
+        "published_at": "2026-06-04T11:57:27+00:00",
         "reading_time_min": 3,
-        "credibility_tier": "primary"
+        "credibility_tier": "secondary"
       },
       "fetched_via": "rss"
     },
     {
-      "id": "2026-06-04-m011",
+      "id": "2026-06-04-e009",
       "category": "vc-business",
       "is_headline": false,
-      "title_zh": "SpaceX pitches investors $1.8tn valuation in historic IPO",
-      "title_en": "SpaceX pitches investors $1.8tn valuation in historic IPO",
-      "lede_zh": "這則來自Financial Times Technology的報導聚焦「SpaceX pitches investors $1.8tn valuation in historic IPO」。Rocket and AI group is seeking to raise up to $86bn in biggest Wall Street debut of all time 從商業面來看，這透露大型平台與資本市場對 AI 投資仍處於高張力狀態。",
-      "lede_en": "這則來自Financial Times Technology的報導聚焦「SpaceX pitches investors $1.8tn valuation in historic IPO」。Rocket and AI group is seeking to raise up to $86bn in biggest Wall Street debut of all time 從商業面來看，這透露大型平台與資本市場對 AI 投資仍處於高張力狀態。",
+      "title_zh": "AI 讓翻譯工作去技能化，知識工作拆解成碎片流程",
+      "title_en": "AI 讓翻譯工作去技能化，知識工作拆解成碎片流程",
+      "lede_zh": "Financial Times 分析 AI 如何改變專業翻譯，把原本需要整體語感、領域知識與品質判斷的工作，拆成更碎片化、更例行的校對與後製流程。這不只是翻譯產業問題，也預告其他知識工作在 AI 導入後，專業價值可能從產出本身移向審稿、風格控管與責任承擔。",
+      "lede_en": "Financial Times 分析 AI 如何改變專業翻譯，把原本需要整體語感、領域知識與品質判斷的工作，拆成更碎片化、更例行的校對與後製流程。這不只是翻譯產業問題，也預告其他知識工作在 AI 導入後，專業價值可能從產出本身移向審稿、風格控管與責任承擔。",
       "bullets_zh": [],
       "bullets_en": [],
-      "is_teaching_material": false,
-      "teaching_takeaway": "",
+      "is_teaching_material": true,
+      "teaching_takeaway": "AI 會重組知識工作的價值鏈，專業者需轉向品質控管與領域判斷。",
       "source": {
         "name": "Financial Times Technology",
-        "url": "https://www.ft.com/content/95286aa1-ee55-4a45-86b8-951cc0fb23a8",
-        "published_at": "2026-06-03T22:54:21+00:00",
-        "reading_time_min": 3,
-        "credibility_tier": "primary"
+        "url": "https://www.ft.com/content/75bc43ed-6a57-4f77-929c-83238f5cfe60",
+        "published_at": "2026-06-04T11:35:07+00:00",
+        "reading_time_min": 4,
+        "credibility_tier": "secondary"
       },
       "fetched_via": "rss"
     },
     {
-      "id": "2026-06-04-m012",
+      "id": "2026-06-04-e010",
       "category": "science",
       "is_headline": false,
-      "title_zh": "Editorial Expression of Concern: Functional proteomic identification of DNA replication proteins by induced proteolysis in vivo",
-      "title_en": "Editorial Expression of Concern: Functional proteomic identification of DNA replication proteins by induced proteolysis in vivo",
-      "lede_zh": "這則來自Nature News的報導聚焦「Editorial Expression of Concern: Functional proteomic identification of DNA replication proteins by induced proteolysis in vivo」。Nature, Published online: 03 June 2026; doi:10.1038/s41586-026-10727-w Editorial Expression of Concern: Functional proteomic identification of DNA replication proteins by induce。 若後續驗證順利，這項成果可能延伸到更廣泛的研究、醫療或工程應用。",
-      "lede_en": "這則來自Nature News的報導聚焦「Editorial Expression of Concern: Functional proteomic identification of DNA replication proteins by induced proteolysis in vivo」。Nature, Published online: 03 June 2026; doi:10.1038/s41586-026-10727-w Editorial Expression of Concern: Functional proteomic identification of DNA replication proteins by induce。 若後續驗證順利，這項成果可能延伸到更廣泛的研究、醫療或工程應用。",
+      "title_zh": "新偵測裝置可用反微中子監控核融合反應器風險",
+      "title_en": "新偵測裝置可用反微中子監控核融合反應器風險",
+      "lede_zh": "Nature 報導，一種可偵測反微中子的裝置，有機會辨識核融合反應器是否祕密產出武器級鈽材料。研究顯示既有技術可能用於核不擴散監測，讓未來新型能源設施在安全治理與國際查核上有更多可驗證工具。",
+      "lede_en": "Nature 報導，一種可偵測反微中子的裝置，有機會辨識核融合反應器是否祕密產出武器級鈽材料。研究顯示既有技術可能用於核不擴散監測，讓未來新型能源設施在安全治理與國際查核上有更多可驗證工具。",
       "bullets_zh": [],
       "bullets_en": [],
       "is_teaching_material": false,
       "teaching_takeaway": "",
       "source": {
         "name": "Nature News",
-        "url": "https://www.nature.com/articles/s41586-026-10727-w",
-        "published_at": "2026-06-03T00:00:00+00:00",
+        "url": "https://www.nature.com/articles/d41586-026-01764-6",
+        "published_at": "2026-06-04T00:00:00+00:00",
         "reading_time_min": 4,
-        "credibility_tier": "primary"
+        "credibility_tier": "secondary"
       },
       "fetched_via": "rss"
     },
     {
-      "id": "2026-06-04-m013",
+      "id": "2026-06-04-e011",
       "category": "world",
       "is_headline": false,
-      "title_zh": "US House votes to halt Iran war, in rebuke to Trump",
-      "title_en": "US House votes to halt Iran war, in rebuke to Trump",
-      "lede_zh": "這則來自BBC World的報導聚焦「US House votes to halt Iran war, in rebuke to Trump」。In the 215-208 vote, four Republicans joined Democrats to pass the measure, which had failed in three previous attempts 這則進展的重要性在於，它可能進一步牽動地緣政治、政策與供應鏈判斷。",
-      "lede_en": "這則來自BBC World的報導聚焦「US House votes to halt Iran war, in rebuke to Trump」。In the 215-208 vote, four Republicans joined Democrats to pass the measure, which had failed in three previous attempts 這則進展的重要性在於，它可能進一步牽動地緣政治、政策與供應鏈判斷。",
+      "title_zh": "美國眾議院通過象徵性表決，要求停止伊朗戰爭行動",
+      "title_en": "美國眾議院通過象徵性表決，要求停止伊朗戰爭行動",
+      "lede_zh": "BBC 報導，美國眾議院以 215 比 208 通過一項要求停止伊朗戰爭行動的表決，其中四名共和黨議員加入民主黨陣營。雖然此舉多半具有象徵意義，但仍反映國會對行政部門軍事行動的制衡壓力，以及中東局勢對美國內政的牽動。",
+      "lede_en": "BBC 報導，美國眾議院以 215 比 208 通過一項要求停止伊朗戰爭行動的表決，其中四名共和黨議員加入民主黨陣營。雖然此舉多半具有象徵意義，但仍反映國會對行政部門軍事行動的制衡壓力，以及中東局勢對美國內政的牽動。",
       "bullets_zh": [],
       "bullets_en": [],
       "is_teaching_material": false,
@@ -367,88 +325,88 @@
       "source": {
         "name": "BBC World",
         "url": "https://www.bbc.com/news/articles/cj6pldg39deo?at_medium=RSS&at_campaign=rss",
-        "published_at": "2026-06-04T00:22:35+00:00",
+        "published_at": "2026-06-04T07:23:41+00:00",
         "reading_time_min": 3,
-        "credibility_tier": "primary"
+        "credibility_tier": "secondary"
       },
       "fetched_via": "rss"
     },
     {
-      "id": "2026-06-04-m014",
+      "id": "2026-06-04-e012",
       "category": "world",
       "is_headline": false,
-      "title_zh": "'Crazy' phone call between Trump and Netanyahu complicates Iran talks",
-      "title_en": "'Crazy' phone call between Trump and Netanyahu complicates Iran talks",
-      "lede_zh": "這則來自BBC World的報導聚焦「'Crazy' phone call between Trump and Netanyahu complicates Iran talks」。Israel's PM laughed off reports of friction, but he has tested the patience of other US presidents 這則進展的重要性在於，它可能進一步牽動地緣政治、政策與供應鏈判斷。",
-      "lede_en": "這則來自BBC World的報導聚焦「'Crazy' phone call between Trump and Netanyahu complicates Iran talks」。Israel's PM laughed off reports of friction, but he has tested the patience of other US presidents 這則進展的重要性在於，它可能進一步牽動地緣政治、政策與供應鏈判斷。",
+      "title_zh": "失蹤雪巴嚮導在聖母峰自救獲救，極端環境風險再受關注",
+      "title_en": "失蹤雪巴嚮導在聖母峰自救獲救，極端環境風險再受關注",
+      "lede_zh": "BBC 報導，失蹤六天的 Dawa Sherpa 在聖母峰高海拔區域自行爬回基地營附近，被清潔人員發現。事件被形容為奇蹟式自救，也提醒登山活動背後的嚮導風險、救援限制與高海拔工作者安全保障仍需要更完整制度。",
+      "lede_en": "BBC 報導，失蹤六天的 Dawa Sherpa 在聖母峰高海拔區域自行爬回基地營附近，被清潔人員發現。事件被形容為奇蹟式自救，也提醒登山活動背後的嚮導風險、救援限制與高海拔工作者安全保障仍需要更完整制度。",
       "bullets_zh": [],
       "bullets_en": [],
       "is_teaching_material": false,
       "teaching_takeaway": "",
       "source": {
         "name": "BBC World",
-        "url": "https://www.bbc.com/news/articles/cvgz21pq3g6o?at_medium=RSS&at_campaign=rss",
-        "published_at": "2026-06-03T20:28:01+00:00",
+        "url": "https://www.bbc.com/news/articles/cvgz2yjl4y3o?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-06-04T10:18:49+00:00",
         "reading_time_min": 3,
-        "credibility_tier": "primary"
+        "credibility_tier": "secondary"
       },
       "fetched_via": "rss"
     },
     {
-      "id": "2026-06-04-m015",
+      "id": "2026-06-04-e013",
       "category": "taiwan",
       "is_headline": false,
-      "title_zh": "卓榮泰：系統性防範毒駕 研擬涉案車輛沒收機制",
-      "title_en": "卓榮泰：系統性防範毒駕 研擬涉案車輛沒收機制",
-      "lede_zh": "這則來自中央社國內政治的報導聚焦「卓榮泰：系統性防範毒駕 研擬涉案車輛沒收機制」。（中央社記者賴于榛台北3日電）毒駕頻傳釀禍，行政院長卓榮泰今天說，政府將系統性防範毒駕，除儘速啟動修法程序，全面提高毒駕刑責與行政罰鍰，也會針對涉案車輛研擬沒收機制、強化行為人駕照管理措施，同時加強執法、源頭掃毒，以及要求強制戒癮治療。 對台灣讀者來說，這是今天最直接影響本地政策、社會或安全感受的進展之一。",
-      "lede_en": "這則來自中央社國內政治的報導聚焦「卓榮泰：系統性防範毒駕 研擬涉案車輛沒收機制」。（中央社記者賴于榛台北3日電）毒駕頻傳釀禍，行政院長卓榮泰今天說，政府將系統性防範毒駕，除儘速啟動修法程序，全面提高毒駕刑責與行政罰鍰，也會針對涉案車輛研擬沒收機制、強化行為人駕照管理措施，同時加強執法、源頭掃毒，以及要求強制戒癮治療。 對台灣讀者來說，這是今天最直接影響本地政策、社會或安全感受的進展之一。",
+      "title_zh": "115 年高考一二級十月舉行，英檢成績採認放寬至五年",
+      "title_en": "115 年高考一二級十月舉行，英檢成績採認放寬至五年",
+      "lede_zh": "考試院通過 115 年公務人員高考一、二級考試規劃，第一試筆試預計 10 月 3 日至 4 日在台北與高雄舉行，暫定需用名額 79 名。為擴大取才，英檢測驗成績採認年限放寬為五年，並新增採認培力英檢測驗。",
+      "lede_en": "考試院通過 115 年公務人員高考一、二級考試規劃，第一試筆試預計 10 月 3 日至 4 日在台北與高雄舉行，暫定需用名額 79 名。為擴大取才，英檢測驗成績採認年限放寬為五年，並新增採認培力英檢測驗。",
       "bullets_zh": [],
       "bullets_en": [],
       "is_teaching_material": false,
       "teaching_takeaway": "",
       "source": {
         "name": "中央社國內政治",
-        "url": "https://www.cna.com.tw/news/aipl/202606030363.aspx",
-        "published_at": "2026-06-03T13:50:06+00:00",
-        "reading_time_min": 3,
-        "credibility_tier": "primary"
+        "url": "https://www.cna.com.tw/news/aipl/202606040316.aspx",
+        "published_at": "2026-06-04T10:40:19+00:00",
+        "reading_time_min": 2,
+        "credibility_tier": "secondary"
       },
       "fetched_via": "rss"
     },
     {
-      "id": "2026-06-04-m016",
+      "id": "2026-06-04-e014",
       "category": "taiwan",
       "is_headline": false,
-      "title_zh": "Altius-600M無人機首度海上目標射擊 命中率100%",
-      "title_en": "Altius-600M無人機首度海上目標射擊 命中率100%",
-      "lede_zh": "這則來自中央社國內政治的報導聚焦「Altius-600M無人機首度海上目標射擊 命中率100%」。（中央社記者游凱翔台北3日電）軍聞社今天報導，負責北台灣防務的第三作戰區今天在宜蘭，首度實施Altius-600M無人機對海上目標射擊，21砲指部無人機大隊官兵依程序完成空中盤旋、搜索及辨識等程序，於接獲射擊命令後成功命中目標，命中率達100%。 對台灣讀者來說，這是今天最直接影響本地政策、社會或安全感受的進展之一。",
-      "lede_en": "這則來自中央社國內政治的報導聚焦「Altius-600M無人機首度海上目標射擊 命中率100%」。（中央社記者游凱翔台北3日電）軍聞社今天報導，負責北台灣防務的第三作戰區今天在宜蘭，首度實施Altius-600M無人機對海上目標射擊，21砲指部無人機大隊官兵依程序完成空中盤旋、搜索及辨識等程序，於接獲射擊命令後成功命中目標，命中率達100%。 對台灣讀者來說，這是今天最直接影響本地政策、社會或安全感受的進展之一。",
+      "title_zh": "行政院視察台北港土方收容，要求提升去化管理效能",
+      "title_en": "行政院視察台北港土方收容，要求提升去化管理效能",
+      "lede_zh": "行政院長卓榮泰視察台北港營建剩餘土石方去化推動情形，要求北中南港區強化進場秩序、運轉效率、環境安全與處理量能。這項政策聚焦公共工程與都市開發背後的基礎管理，關係到施工效率、環境風險與地方承載能力。",
+      "lede_en": "行政院長卓榮泰視察台北港營建剩餘土石方去化推動情形，要求北中南港區強化進場秩序、運轉效率、環境安全與處理量能。這項政策聚焦公共工程與都市開發背後的基礎管理，關係到施工效率、環境風險與地方承載能力。",
       "bullets_zh": [],
       "bullets_en": [],
       "is_teaching_material": false,
       "teaching_takeaway": "",
       "source": {
         "name": "中央社國內政治",
-        "url": "https://www.cna.com.tw/news/aipl/202606030356.aspx",
-        "published_at": "2026-06-03T13:05:46+00:00",
-        "reading_time_min": 4,
-        "credibility_tier": "primary"
+        "url": "https://www.cna.com.tw/news/aipl/202606040315.aspx",
+        "published_at": "2026-06-04T10:32:17+00:00",
+        "reading_time_min": 2,
+        "credibility_tier": "secondary"
       },
       "fetched_via": "rss"
     }
   ],
   "breaking_news": [
-    "2026-06-04-m010"
+    "2026-06-04-e005"
   ],
   "meta": {
-    "generated_at": "2026-06-04T09:43:21.375185+08:00",
-    "total_articles": 16,
+    "generated_at": "2026-06-04T20:11:19.531631+08:00",
+    "total_articles": 14,
     "sources_used": {
-      "rss": 16,
+      "rss": 14,
       "firecrawl": 0
     },
     "schema_version": "2.0",
-    "edition": "morning",
-    "model": "manual-fallback-template"
+    "edition": "evening",
+    "model": "manual-fallback-gpt-5.5-after-openrouter-403"
   }
 }
