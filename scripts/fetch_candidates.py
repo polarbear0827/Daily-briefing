@@ -121,11 +121,20 @@ class FetchReport:
 
 
 def strip_html_tags(text: str) -> str:
-    """Cheap HTML tag stripper — we don't need bs4 for our purposes."""
+    """Cheap HTML tag stripper — we don't need bs4 for our purposes.
+
+    Some feeds include invisible zero-width/BOM watermark characters in title or
+    summary text (for example U+FEFF plus U+200B/U+200C/U+200D). Hermes' cron
+    prompt-injection scanner blocks assembled prompts containing U+FEFF, so RSS
+    text must be normalized before it is written to /tmp/candidates.json or
+    injected into the cron prompt.
+    """
     if not text:
         return ""
     # Remove tags
     text = re.sub(r"<[^>]+>", " ", text)
+    # Strip invisible prompt-scanner hazards / watermark characters.
+    text = re.sub(r"[\ufeff\u200b\u200c\u200d\u2060]+", "", text)
     # Collapse whitespace
     text = re.sub(r"\s+", " ", text).strip()
     return text
