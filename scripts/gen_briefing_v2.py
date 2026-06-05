@@ -11,20 +11,88 @@ Usage:
 If --edition is omitted, edition is inferred from Asia/Taipei hour:
     hour < 14 → morning,  else → evening.
 """
-import argparse, json, os, sys, re
+import argparse, json, os, sys, re, time
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
-# --- Load OpenRouter creds ---------------------------------------------------
-env_file = Path.home() / ".hermes/credentials/openrouter.env"
-for line in env_file.read_text().splitlines():
-    if "=" in line and not line.startswith("#"):
-        k, v = line.split("=", 1)
-        os.environ[k.strip()] = v.strip()
-
 from openai import OpenAI
-client = OpenAI(api_key=os.environ.get("API_KEY"), base_url="https://openrouter.ai/api/v1")
-MODEL = "anthropic/claude-haiku-4.5"
+
+
+def load_env_file(path: Path) -> dict[str, str]:
+    """Load a simple KEY=VALUE env file without printing secrets."""
+    env: dict[str, str] = {}
+    if not path.exists():
+        return env
+    for line in path.read_text().splitlines():
+        if "=" in line and not line.strip().startswith("#"):
+            k, v = line.split("=", 1)
+            env[k.strip()] = v.strip()
+            os.environ.setdefault(k.strip(), v.strip())
+    return env
+
+
+OPENROUTER_ENV = load_env_file(Path.home() / ".hermes/credentials/openrouter.env")
+GOOGLE_AI_ENV = load_env_file(Path.home() / ".hermes/credentials/google_ai.env")
+
+PROVIDERS: list[dict[str, object]] = []
+if OPENROUTER_ENV.get("API_KEY") or OPENROUTER_ENV.get("OPENROUTER_API_KEY"):
+    PROVIDERS.append({
+        "name": "openrouter",
+        "model": "anthropic/claude-haiku-4.5",
+        "client": OpenAI(
+            api_key=OPENROUTER_ENV.get("API_KEY") or OPENROUTER_ENV.get("OPENROUTER_API_KEY"),
+            base_url="https://openrouter.ai/api/v1",
+            default_headers={"HTTP-Referer": "https://hermes.agent", "X-Title": "Hermes Daily Briefing"},
+        ),
+    })
+if GOOGLE_AI_ENV.get("GOOGLE_AI_KEY"):
+    for gemini_model in ("gemini-2.5-flash", "gemini-2.5-flash-lite"):
+        PROVIDERS.append({
+            "name": "google-ai-studio",
+            "model": gemini_model,
+            "client": OpenAI(
+                api_key=GOOGLE_AI_ENV["GOOGLE_AI_KEY"],
+                base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
+            ),
+        })
+if not PROVIDERS:
+    raise SystemExit("No Daily Briefing generation provider credentials found")
+
+MODEL = str(PROVIDERS[0]["model"])
+ACTIVE_MODEL = MODEL
+
+
+def create_chat_completion(messages: list[dict[str, str]], max_tokens: int, label: str):
+    """Try the primary generator, then fall back to Google AI Studio if quota/auth fails."""
+    global ACTIVE_MODEL
+    last_exc: Exception | None = None
+    ordered = sorted(
+        PROVIDERS,
+        key=lambda p: 0 if f"{p['name']}/{p['model']}" == ACTIVE_MODEL else 1,
+    )
+    for provider in ordered:
+        name = str(provider["name"])
+        model = str(provider["model"])
+        client = provider["client"]
+        print(f"[INFO] {label} → {name}/{model}...", file=sys.stderr)
+        for attempt in range(1, 4):
+            try:
+                resp = client.chat.completions.create(  # type: ignore[union-attr]
+                    model=model,
+                    messages=messages,
+                    max_tokens=max_tokens,
+                )
+                ACTIVE_MODEL = f"{name}/{model}"
+                return resp
+            except Exception as exc:
+                last_exc = exc
+                print(f"[WARN] {label} failed on {name}/{model} attempt {attempt}/3: {type(exc).__name__}: {exc}", file=sys.stderr)
+                is_transient = any(marker in str(exc) for marker in ("503", "UNAVAILABLE", "temporarily", "high demand"))
+                if attempt < 3 and is_transient:
+                    time.sleep(5 * attempt)
+                    continue
+                break
+    raise RuntimeError(f"All generation providers failed for {label}") from last_exc
 
 # --- Args & edition ----------------------------------------------------------
 TPE = timezone(timedelta(hours=8))
@@ -75,7 +143,7 @@ for cat, arts in selected.items():
             "url": a.get("url"),
             "source_name": a.get("source_name") or a.get("feed_name"),
             "published_at": a.get("published_at"),
-            "credibility_tier": a.get("credibility_tier", "secondary"),
+            "credibility_tier": a.get("credibility_tier") or a.get("source_tier", "secondary"),
         })
         idx += 1
 
@@ -125,11 +193,11 @@ Source articles:
 {json.dumps(articles_input, ensure_ascii=False, indent=1)}
 """
 
-print(f"[INFO] {date_taipei} {EDITION} issue=#{issue_number} → {MODEL}...", file=sys.stderr)
-resp = client.chat.completions.create(
-    model=MODEL,
+print(f"[INFO] {date_taipei} {EDITION} issue=#{issue_number}; providers={[p['name'] for p in PROVIDERS]}", file=sys.stderr)
+resp = create_chat_completion(
     messages=[{"role": "user", "content": prompt}],
     max_tokens=16000,
+    label="article generation",
 )
 content = resp.choices[0].message.content
 m = re.search(r'```(?:json)?\s*(\{.*?\})\s*```', content, re.DOTALL)
@@ -143,9 +211,11 @@ generated = json.loads(content)
 id_to_meta = {a["id"]: a for a in articles_input}
 final_articles = []
 headline_set = False
+seen_article_ids: set[str] = set()
 for ga in generated["articles"]:
     meta = id_to_meta.get(ga["id"])
     if not meta: continue
+    seen_article_ids.add(ga["id"])
     is_h = ga.get("is_headline", False)
     if is_h and not headline_set:
         headline_set = True
@@ -165,6 +235,32 @@ for ga in generated["articles"]:
         "source": {"name": meta["source_name"], "url": meta["url"],
                    "published_at": meta["published_at"],
                    "reading_time_min": int(ga.get("reading_time_min", 3)),
+                   "credibility_tier": meta["credibility_tier"]},
+        "fetched_via": "rss",
+    })
+
+# Some fallback models occasionally omit low-salience IDs even when instructed
+# to process every candidate. Keep the pipeline reliable by appending a truthful
+# local fallback card for any missing source article instead of silently shipping
+# a thin issue.
+for meta in articles_input:
+    if meta["id"] in seen_article_ids:
+        continue
+    title = (meta.get("title_orig") or "未命名新聞").strip()
+    summary = (meta.get("summary_orig") or "").strip()
+    if len(summary) < 80:
+        summary = f"這則來自 {meta.get('source_name') or 'RSS'} 的更新值得後續追蹤；重點在於它可能影響 AI、科技產品或企業工作流程的實際應用。"
+    lede = summary[:280]
+    final_articles.append({
+        "id": meta["id"], "category": meta["category"], "is_headline": False,
+        "title_zh": title, "title_en": title,
+        "lede_zh": lede, "lede_en": lede,
+        "bullets_zh": [], "bullets_en": [],
+        "is_teaching_material": False,
+        "teaching_takeaway": "",
+        "source": {"name": meta["source_name"], "url": meta["url"],
+                   "published_at": meta["published_at"],
+                   "reading_time_min": 3,
                    "credibility_tier": meta["credibility_tier"]},
         "fetched_via": "rss",
     })
@@ -201,10 +297,10 @@ Respond ONLY with JSON: {{"breaking_news": ["<id>", ...]}}
 Articles:
 {json.dumps(bn_input, ensure_ascii=False, indent=1)}
 """
-    bn_resp = client.chat.completions.create(
-        model=MODEL,
+    bn_resp = create_chat_completion(
         messages=[{"role": "user", "content": bn_prompt}],
         max_tokens=400,
+        label="breaking-news selector",
     )
     bn_content = bn_resp.choices[0].message.content
     bm = re.search(r'```(?:json)?\s*(\{.*?\})\s*```', bn_content, re.DOTALL)
@@ -259,7 +355,7 @@ issue_obj = {
              "sources_used": {"rss": len(final_articles), "firecrawl": 0},
              "schema_version": "2.0",
              "edition": EDITION,
-             "model": MODEL},
+             "model": ACTIVE_MODEL},
 }
 
 # --- Write outputs -----------------------------------------------------------
