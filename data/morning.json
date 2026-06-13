@@ -1,15 +1,15 @@
 {
-  "issue_number": 78,
-  "date": "2026-06-12",
+  "issue_number": 80,
+  "date": "2026-06-13",
   "edition": "morning",
   "edition_label_zh": "早報",
   "edition_label_en": "Morning Edition",
-  "date_display_zh": "2026年6月12日·星期五·早報",
-  "date_display_en": "Friday, June 12, 2026 · Morning Edition",
+  "date_display_zh": "2026年6月13日·星期六·早報",
+  "date_display_en": "Saturday, June 13, 2026 · Morning Edition",
   "weather": {
     "location_zh": "台北",
     "location_en": "Taipei",
-    "temp_c": 27,
+    "temp_c": 25,
     "condition_zh": "毛毛雨",
     "condition_en": "Light drizzle"
   },
@@ -18,31 +18,31 @@
       "location_id": "taipei",
       "location_zh": "台北",
       "location_en": "Taipei",
-      "temp_c": 27,
+      "temp_c": 25,
       "condition_zh": "毛毛雨",
       "condition_en": "Light drizzle",
       "weather_code": 51,
-      "updated_at": "2026-06-12T09:15"
+      "updated_at": "2026-06-13T08:00"
     },
     {
       "location_id": "banqiao",
       "location_zh": "板橋",
       "location_en": "Banqiao",
-      "temp_c": 27,
+      "temp_c": 25,
       "condition_zh": "多雲",
       "condition_en": "Cloudy",
       "weather_code": 3,
-      "updated_at": "2026-06-12T09:15"
+      "updated_at": "2026-06-13T08:00"
     },
     {
       "location_id": "zhubei",
       "location_zh": "竹北",
       "location_en": "Zhubei",
-      "temp_c": 26,
+      "temp_c": 25,
       "condition_zh": "多雲",
       "condition_en": "Cloudy",
       "weather_code": 3,
-      "updated_at": "2026-06-12T09:15"
+      "updated_at": "2026-06-13T08:00"
     }
   ],
   "tagline_zh": "由 AI 為你策展，專屬早晨讀物",
@@ -50,8 +50,33 @@
   "categories": [
     {
       "id": "ai-ml",
-      "name_zh": "AI／機器學習",
-      "name_en": "AI / Machine Learning"
+      "name_zh": "一手模型消息",
+      "name_en": "Model Labs"
+    },
+    {
+      "id": "research-papers",
+      "name_zh": "論文／Benchmark",
+      "name_en": "Papers / Benchmarks"
+    },
+    {
+      "id": "tech-product",
+      "name_zh": "產品發布／平台戰爭",
+      "name_en": "Products / Platform Wars"
+    },
+    {
+      "id": "vc-business",
+      "name_zh": "產業深度／商業應用",
+      "name_en": "Industry / Business"
+    },
+    {
+      "id": "security",
+      "name_zh": "技術風險",
+      "name_en": "Technical Risk"
+    },
+    {
+      "id": "dev",
+      "name_zh": "社群熱度／開發者",
+      "name_en": "Community / Developers"
     },
     {
       "id": "ai-tools",
@@ -59,442 +84,475 @@
       "name_en": "AI Tools"
     },
     {
-      "id": "research-papers",
-      "name_zh": "研究論文",
-      "name_en": "Research Papers"
-    },
-    {
-      "id": "security",
-      "name_zh": "資訊安全",
-      "name_en": "Security"
-    },
-    {
-      "id": "tech-product",
-      "name_zh": "科技／產品",
-      "name_en": "Tech / Product"
-    },
-    {
-      "id": "dev",
-      "name_zh": "程式開發",
-      "name_en": "Development"
-    },
-    {
-      "id": "vc-business",
-      "name_zh": "創投／商業",
-      "name_en": "VC / Business"
+      "id": "taiwan",
+      "name_zh": "中文科技",
+      "name_en": "Chinese Tech"
     },
     {
       "id": "science",
-      "name_zh": "科學研究",
-      "name_en": "Science"
-    },
-    {
-      "id": "world",
-      "name_zh": "國際時事",
-      "name_en": "World"
-    },
-    {
-      "id": "taiwan",
-      "name_zh": "臺灣本地",
-      "name_en": "Taiwan"
+      "name_zh": "AI 研究趨勢",
+      "name_en": "AI Research Trends"
     }
   ],
   "articles": [
     {
-      "id": "2026-06-12-m001",
+      "id": "2026-06-13-m001",
       "category": "ai-ml",
+      "is_headline": false,
+      "title_zh": "OpenAI：親中影響行動正在攻擊美國 AI 論戰",
+      "title_en": "OpenAI：親中影響行動正在攻擊美國 AI 論戰",
+      "lede_zh": "OpenAI 發布新報告，指出與中國相關的影響行動正利用 AI 內容介入美國科技辯論，題材涵蓋資料中心、關稅、半導體供應鏈與對 ChatGPT 的不實敘事。對 AI 產品團隊而言，這提醒模型不只會被拿來產文，也會被系統性用於操弄公共技術議題，信任、安全與來源標示會更重要。",
+      "lede_en": "OpenAI 發布新報告，指出與中國相關的影響行動正利用 AI 內容介入美國科技辯論，題材涵蓋資料中心、關稅、半導體供應鏈與對 ChatGPT 的不實敘事。對 AI 產品團隊而言，這提醒模型不只會被拿來產文，也會被系統性用於操弄公共技術議題，信任、安全與來源標示會更重要。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/index/prc-linked-influence-operations-ai-debates",
+        "published_at": "2026-06-10T12:00:00+00:00",
+        "reading_time_min": 3,
+        "credibility_tier": "primary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-06-13-m002",
+      "category": "ai-ml",
+      "is_headline": false,
+      "title_zh": "AllenAI 推 olmo-eval：把模型評測拉進開發迴圈",
+      "title_en": "AllenAI 推 olmo-eval：把模型評測拉進開發迴圈",
+      "lede_zh": "AllenAI 在 Hugging Face 發表 olmo-eval，定位為模型開發迴圈中的評測工作臺，協助研究者在訓練、微調與版本比較時更系統化追蹤表現。這類工具的重點不是再多一個榜單，而是讓團隊能把 benchmark、錯誤分析與迭代決策串起來，降低模型開發靠直覺調參的風險。",
+      "lede_en": "AllenAI 在 Hugging Face 發表 olmo-eval，定位為模型開發迴圈中的評測工作臺，協助研究者在訓練、微調與版本比較時更系統化追蹤表現。這類工具的重點不是再多一個榜單，而是讓團隊能把 benchmark、錯誤分析與迭代決策串起來，降低模型開發靠直覺調參的風險。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "Hugging Face Blog",
+        "url": "https://huggingface.co/blog/allenai/olmo-eval",
+        "published_at": "2026-06-12T15:56:10+00:00",
+        "reading_time_min": 3,
+        "credibility_tier": "primary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-06-13-m003",
+      "category": "ai-ml",
+      "is_headline": false,
+      "title_zh": "Mistral Medium 3.5 登場：中型模型戰線再升級",
+      "title_en": "Mistral Medium 3.5 登場：中型模型戰線再升級",
+      "lede_zh": "Mistral 發布 Mistral Medium 3.5，延續其在開放與商用模型市場中主打高性價比、可部署性的路線，並把焦點放在代理、遠端工作與開發情境。對產品團隊來說，這代表 GPT、Claude 之外的企業模型選項持續增加，採購時可更重視延遲、成本、資料區域與工具整合，而不只看單一總分。",
+      "lede_en": "Mistral 發布 Mistral Medium 3.5，延續其在開放與商用模型市場中主打高性價比、可部署性的路線，並把焦點放在代理、遠端工作與開發情境。對產品團隊來說，這代表 GPT、Claude 之外的企業模型選項持續增加，採購時可更重視延遲、成本、資料區域與工具整合，而不只看單一總分。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "Mistral News",
+        "url": "https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5/",
+        "published_at": "2026-06-13T00:10:27.962973+00:00",
+        "reading_time_min": 3,
+        "credibility_tier": "primary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-06-13-m004",
+      "category": "ai-ml",
+      "is_headline": false,
+      "title_zh": "Meta 發表 SAM 3.1：即時影片偵測與追蹤更快",
+      "title_en": "Meta 發表 SAM 3.1：即時影片偵測與追蹤更快",
+      "lede_zh": "Meta AI 發表 SAM 3.1，主打更快、更容易取得的即時影片物件偵測與追蹤，並加入 multiplexing 與全域推理能力，讓模型能在複雜畫面中維持較穩定的目標理解。這對零售監控、製造檢測、運動分析與機器人視覺都有實用意義，電腦視覺產品可重新評估是否把 SAM 系列納入基礎元件。",
+      "lede_en": "Meta AI 發表 SAM 3.1，主打更快、更容易取得的即時影片物件偵測與追蹤，並加入 multiplexing 與全域推理能力，讓模型能在複雜畫面中維持較穩定的目標理解。這對零售監控、製造檢測、運動分析與機器人視覺都有實用意義，電腦視覺產品可重新評估是否把 SAM 系列納入基礎元件。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "Meta AI Blog",
+        "url": "https://ai.meta.com/blog/segment-anything-model-3/",
+        "published_at": "2026-06-13T00:10:29.796243+00:00",
+        "reading_time_min": 3,
+        "credibility_tier": "primary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-06-13-m005",
+      "category": "ai-ml",
+      "is_headline": false,
+      "title_zh": "Anthropic 公布首份 Public Record：模型治理走向可追溯",
+      "title_en": "Anthropic 公布首份 Public Record：模型治理走向可追溯",
+      "lede_zh": "Anthropic 公布第一輪 Public Record 結果，試圖把外界對模型行為、社會影響與治理選擇的回饋整理成可查詢的公開紀錄。這不是單純產品功能更新，而是模型公司在安全、透明度與問責壓力下的新嘗試；企業導入 Claude 或其他 LLM 時，也應開始要求供應商提供更清楚的政策、評測與事故回應紀錄。",
+      "lede_en": "Anthropic 公布第一輪 Public Record 結果，試圖把外界對模型行為、社會影響與治理選擇的回饋整理成可查詢的公開紀錄。這不是單純產品功能更新，而是模型公司在安全、透明度與問責壓力下的新嘗試；企業導入 Claude 或其他 LLM 時，也應開始要求供應商提供更清楚的政策、評測與事故回應紀錄。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "Anthropic News",
+        "url": "https://www.anthropic.com/news/anthropic-public-record",
+        "published_at": "2026-06-12T00:00:00+00:00",
+        "reading_time_min": 3,
+        "credibility_tier": "primary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-06-13-m006",
+      "category": "research-papers",
+      "is_headline": false,
+      "title_zh": "半導體生成式 AI 不能只「像」：物理限制要內建",
+      "title_en": "半導體生成式 AI 不能只「像」：物理限制要內建",
+      "lede_zh": "這篇 arXiv 論文主張，半導體製造中的生成式 AI 必須把微影、傳輸、反應與元件物理等硬限制直接寫進模型結構，而不能只靠生成結果看起來合理。對晶圓廠與 EDA 團隊而言，無效光罩、版圖、缺陷資料或製程參數不是品質差，而是根本不能用；下一波工業 AI 競爭會更重視物理可行性與工程約束。",
+      "lede_en": "這篇 arXiv 論文主張，半導體製造中的生成式 AI 必須把微影、傳輸、反應與元件物理等硬限制直接寫進模型結構，而不能只靠生成結果看起來合理。對晶圓廠與 EDA 團隊而言，無效光罩、版圖、缺陷資料或製程參數不是品質差，而是根本不能用；下一波工業 AI 競爭會更重視物理可行性與工程約束。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "arXiv cs.LG (Machine Learning)",
+        "url": "https://arxiv.org/abs/2606.11247",
+        "published_at": "2026-06-12T04:00:00+00:00",
+        "reading_time_min": 4,
+        "credibility_tier": "primary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-06-13-m007",
+      "category": "research-papers",
+      "is_headline": false,
+      "title_zh": "代理框架安全缺口：LangChain、AutoGPT、OpenAI Agents SDK 遭審視",
+      "title_en": "代理框架安全缺口：LangChain、AutoGPT、OpenAI Agents SDK 遭審視",
+      "lede_zh": "新論文檢視 LangChain、AutoGPT 與 OpenAI Agents SDK，評估這些代理框架是否具備足夠的架構級隔離、權限控制與失控防護。研究指出，公開服務場景中的代理系統已能呼叫工具、保留記憶並執行多步驟計畫，但許多安全保證仍不足；企業做客服、金融或醫療代理前，應先定義可執行、可回滾、可稽核的邊界。",
+      "lede_en": "新論文檢視 LangChain、AutoGPT 與 OpenAI Agents SDK，評估這些代理框架是否具備足夠的架構級隔離、權限控制與失控防護。研究指出，公開服務場景中的代理系統已能呼叫工具、保留記憶並執行多步驟計畫，但許多安全保證仍不足；企業做客服、金融或醫療代理前，應先定義可執行、可回滾、可稽核的邊界。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": true,
+      "teaching_takeaway": "代理系統要先做 containment：限制工具、記憶、權限與可執行範圍",
+      "source": {
+        "name": "arXiv cs.AI",
+        "url": "https://arxiv.org/abs/2606.12797",
+        "published_at": "2026-06-12T04:00:00+00:00",
+        "reading_time_min": 4,
+        "credibility_tier": "primary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-06-13-m008",
+      "category": "research-papers",
+      "is_headline": false,
+      "title_zh": "只看預測結果，也能抓出模型資料外洩？",
+      "title_en": "只看預測結果，也能抓出模型資料外洩？",
+      "lede_zh": "這篇研究聚焦機器學習科學中常見的資料外洩問題，提出在沒有訓練程式碼、外部資料或領域專家的情況下，僅憑模型預測與真實結果來偵測異常洩漏訊號。若方法成熟，將有助於第三方稽核黑箱模型與醫療、金融等高風險 AI 研究，實務重點是把「模型分數太好」視為需要驗證的風險，而非直接當成成果。",
+      "lede_en": "這篇研究聚焦機器學習科學中常見的資料外洩問題，提出在沒有訓練程式碼、外部資料或領域專家的情況下，僅憑模型預測與真實結果來偵測異常洩漏訊號。若方法成熟，將有助於第三方稽核黑箱模型與醫療、金融等高風險 AI 研究，實務重點是把「模型分數太好」視為需要驗證的風險，而非直接當成成果。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "arXiv cs.LG (Machine Learning)",
+        "url": "https://arxiv.org/abs/2606.11267",
+        "published_at": "2026-06-12T04:00:00+00:00",
+        "reading_time_min": 4,
+        "credibility_tier": "primary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-06-13-m009",
+      "category": "tech-product",
       "is_headline": true,
-      "title_zh": "OpenAI 併購 Ona，強化企業級 AI 代理能力",
-      "title_en": "OpenAI 併購 Ona，強化企業級 AI 代理能力",
-      "lede_zh": "OpenAI 宣布收購 Ona，旨在將其 Codex 技術整合到安全的雲端環境中，以支援企業級的長時運作 AI 代理。此舉將大幅提升 AI 代理在企業工作流程中的穩定性與應用範圍，協助企業更有效率地自動化複雜任務。",
-      "lede_en": "OpenAI 宣布收購 Ona，旨在將其 Codex 技術整合到安全的雲端環境中，以支援企業級的長時運作 AI 代理。此舉將大幅提升 AI 代理在企業工作流程中的穩定性與應用範圍，協助企業更有效率地自動化複雜任務。",
+      "title_zh": "NVIDIA Blackwell 稱霸首個代理 AI 基礎設施 benchmark",
+      "title_en": "NVIDIA Blackwell 稱霸首個代理 AI 基礎設施 benchmark",
+      "lede_zh": "Artificial Analysis 發布首個代理 AI 基礎設施 benchmark AgentPerf，NVIDIA Blackwell Ultra NVL72 在首輪結果中領先，NVIDIA 強調其可在代理工作負載下提供更高吞吐與能源效率。這是平台戰的重要訊號：企業未來買 GPU 不只看訓練 FLOPS，也會看同時跑多少代理、每瓦能服務多少任務，以及整套機櫃級系統的調度能力。",
+      "lede_en": "Artificial Analysis 發布首個代理 AI 基礎設施 benchmark AgentPerf，NVIDIA Blackwell Ultra NVL72 在首輪結果中領先，NVIDIA 強調其可在代理工作負載下提供更高吞吐與能源效率。這是平台戰的重要訊號：企業未來買 GPU 不只看訓練 FLOPS，也會看同時跑多少代理、每瓦能服務多少任務，以及整套機櫃級系統的調度能力。",
       "bullets_zh": [],
       "bullets_en": [],
       "is_teaching_material": false,
       "teaching_takeaway": "",
       "source": {
-        "name": "OpenAI Blog",
-        "url": "https://openai.com/index/openai-to-acquire-ona",
-        "published_at": "2026-06-11T00:00:00+00:00",
-        "reading_time_min": 3,
-        "credibility_tier": "primary"
-      },
-      "fetched_via": "rss"
-    },
-    {
-      "id": "2026-06-12-m002",
-      "category": "ai-ml",
-      "is_headline": false,
-      "title_zh": "OpenAI 承諾支援歐盟 AI 透明度規範",
-      "title_en": "OpenAI 承諾支援歐盟 AI 透明度規範",
-      "lede_zh": "OpenAI 表達支持歐盟 AI 內容透明度行為準則，致力於提升 AI 生成內容的出處標準與辨識工具。這有助於使用者明確分辨 AI 生成資訊，對於建立值得信賴的 AI 生態系及確保資訊透明度至關重要，為產業發展奠定良好基礎。",
-      "lede_en": "OpenAI 表達支持歐盟 AI 內容透明度行為準則，致力於提升 AI 生成內容的出處標準與辨識工具。這有助於使用者明確分辨 AI 生成資訊，對於建立值得信賴的 AI 生態系及確保資訊透明度至關重要，為產業發展奠定良好基礎。",
-      "bullets_zh": [],
-      "bullets_en": [],
-      "is_teaching_material": false,
-      "teaching_takeaway": "",
-      "source": {
-        "name": "OpenAI Blog",
-        "url": "https://openai.com/index/supporting-eu-trustworthy-ai-ecosystem",
-        "published_at": "2026-06-11T00:00:00+00:00",
-        "reading_time_min": 2,
-        "credibility_tier": "primary"
-      },
-      "fetched_via": "rss"
-    },
-    {
-      "id": "2026-06-12-m003",
-      "category": "ai-ml",
-      "is_headline": false,
-      "title_zh": "物理學家如何用 Codex 模擬黑洞",
-      "title_en": "物理學家如何用 Codex 模擬黑洞",
-      "lede_zh": "天體物理學家 Chi-kwan Chan 運用 OpenAI 的 Codex 工具，成功建立黑洞模擬模型，協助科學家深入研究極端物理現象。這展示了 AI 在複雜科學計算與模擬領域的強大潛力，可加速推進基礎科學探索，並驗證愛因斯坦廣義相對論。",
-      "lede_en": "天體物理學家 Chi-kwan Chan 運用 OpenAI 的 Codex 工具，成功建立黑洞模擬模型，協助科學家深入研究極端物理現象。這展示了 AI 在複雜科學計算與模擬領域的強大潛力，可加速推進基礎科學探索，並驗證愛因斯坦廣義相對論。",
-      "bullets_zh": [],
-      "bullets_en": [],
-      "is_teaching_material": false,
-      "teaching_takeaway": "",
-      "source": {
-        "name": "OpenAI Blog",
-        "url": "https://openai.com/index/using-codex-to-simulate-black-holes",
-        "published_at": "2026-06-11T00:00:00+00:00",
-        "reading_time_min": 3,
-        "credibility_tier": "primary"
-      },
-      "fetched_via": "rss"
-    },
-    {
-      "id": "2026-06-12-m004",
-      "category": "ai-ml",
-      "is_headline": false,
-      "title_zh": "BBVA 銀行導入 ChatGPT Enterprise，推進 AI 轉型",
-      "title_en": "BBVA 銀行導入 ChatGPT Enterprise，推進 AI 轉型",
-      "lede_zh": "BBVA 銀行在全球範圍內將 ChatGPT Enterprise 推廣至十萬名員工，並與 OpenAI 合作加速 AI 驅動的銀行業轉型。此案例證明大型企業可藉由部署企業級 AI 工具，提升營運效率與創新能力，為各產業導入 AI 應用提供寶貴借鏡。",
-      "lede_en": "BBVA 銀行在全球範圍內將 ChatGPT Enterprise 推廣至十萬名員工，並與 OpenAI 合作加速 AI 驅動的銀行業轉型。此案例證明大型企業可藉由部署企業級 AI 工具，提升營運效率與創新能力，為各產業導入 AI 應用提供寶貴借鏡。",
-      "bullets_zh": [],
-      "bullets_en": [],
-      "is_teaching_material": true,
-      "teaching_takeaway": "大型企業如何透過規模化部署 ChatGPT Enterprise，實現內外部業務流程的 AI 轉型。",
-      "source": {
-        "name": "OpenAI Blog",
-        "url": "https://openai.com/index/bbva",
-        "published_at": "2026-06-11T00:00:00+00:00",
-        "reading_time_min": 3,
-        "credibility_tier": "primary"
-      },
-      "fetched_via": "rss"
-    },
-    {
-      "id": "2026-06-12-m005",
-      "category": "ai-tools",
-      "is_headline": false,
-      "title_zh": "Google Vault 新增 Gemini App 資料留存與訴訟保留功能",
-      "title_en": "Google Vault 新增 Gemini App 資料留存與訴訟保留功能",
-      "lede_zh": "Google Vault 現已支援為 Gemini 網頁版與行動應用程式設定資料留存規則和訴訟保留功能。此更新讓企業管理者能更完善地管理 Gemini 對話資料的生命週期，確保數據合規性與安全性，對於需要處理敏感資訊的企業尤其重要。",
-      "lede_en": "Google Vault 現已支援為 Gemini 網頁版與行動應用程式設定資料留存規則和訴訟保留功能。此更新讓企業管理者能更完善地管理 Gemini 對話資料的生命週期，確保數據合規性與安全性，對於需要處理敏感資訊的企業尤其重要。",
-      "bullets_zh": [],
-      "bullets_en": [],
-      "is_teaching_material": true,
-      "teaching_takeaway": "企業導入 Gemini 時，IT 管理員可透過 Google Vault 確保 AI 互動資料的合規性與安全性。",
-      "source": {
-        "name": "Google Workspace Updates",
-        "url": "http://workspaceupdates.googleblog.com/2026/06/google-vault-now-supports-retention-rules-and-litigation-holds-for-Gemini-app.html",
-        "published_at": "2026-06-11T18:10:23+00:00",
-        "reading_time_min": 3,
-        "credibility_tier": "primary"
-      },
-      "fetched_via": "rss"
-    },
-    {
-      "id": "2026-06-12-m006",
-      "category": "ai-tools",
-      "is_headline": false,
-      "title_zh": "Google Meet ChromeOS 會議裝置支援 1080p 高畫質視訊傳輸",
-      "title_en": "Google Meet ChromeOS 會議裝置支援 1080p 高畫質視訊傳輸",
-      "lede_zh": "Google Meet 擴展了對 ChromeOS 會議室硬體發送 1080p 全高清視訊的支援。這項功能在大型螢幕顯示或視訊被釘選時特別有用，能確保參與者獲得更清晰、高品質的視訊體驗，提升遠端會議的溝通效能。",
-      "lede_en": "Google Meet 擴展了對 ChromeOS 會議室硬體發送 1080p 全高清視訊的支援。這項功能在大型螢幕顯示或視訊被釘選時特別有用，能確保參與者獲得更清晰、高品質的視訊體驗，提升遠端會議的溝通效能。",
-      "bullets_zh": [],
-      "bullets_en": [],
-      "is_teaching_material": false,
-      "teaching_takeaway": "",
-      "source": {
-        "name": "Google Workspace Updates",
-        "url": "http://workspaceupdates.googleblog.com/2026/06/google-meet-now-supports-sending-1080p-HD-video-from-ChromeOS-meeting-room-hardware.html",
-        "published_at": "2026-06-10T18:34:44+00:00",
-        "reading_time_min": 2,
-        "credibility_tier": "primary"
-      },
-      "fetched_via": "rss"
-    },
-    {
-      "id": "2026-06-12-m007",
-      "category": "research-papers",
-      "is_headline": false,
-      "title_zh": "SemantiClean：可審計的電商行為推斷框架",
-      "title_en": "SemantiClean：可審計的電商行為推斷框架",
-      "lede_zh": "最新研究提出 SemantiClean 模組化框架，能從電商會話資料中提取結構化語義訊號，並驅動如購買意圖、客戶分群等推斷目標。此框架強調可審計性與可重現性，平衡了預測準確度與決策透明度，有助於企業做出更負責且可追溯的商業決策。",
-      "lede_en": "最新研究提出 SemantiClean 模組化框架，能從電商會話資料中提取結構化語義訊號，並驅動如購買意圖、客戶分群等推斷目標。此框架強調可審計性與可重現性，平衡了預測準確度與決策透明度，有助於企業做出更負責且可追溯的商業決策。",
-      "bullets_zh": [],
-      "bullets_en": [],
-      "is_teaching_material": false,
-      "teaching_takeaway": "",
-      "source": {
-        "name": "arXiv cs.AI",
-        "url": "https://arxiv.org/abs/2606.11207",
-        "published_at": "2026-06-11T04:00:00+00:00",
+        "name": "NVIDIA Newsroom",
+        "url": "https://blogs.nvidia.com/blog/nvidia-blackwell-agentperf-artificial-analysis/",
+        "published_at": "2026-06-12T21:00:08+00:00",
         "reading_time_min": 4,
         "credibility_tier": "primary"
       },
       "fetched_via": "rss"
     },
     {
-      "id": "2026-06-12-m008",
-      "category": "research-papers",
-      "is_headline": false,
-      "title_zh": "研究主張海馬迴顯性記憶為 AGI 實現關鍵",
-      "title_en": "研究主張海馬迴顯性記憶為 AGI 實現關鍵",
-      "lede_zh": "一份新研究論文指出，雖然大型語言模型（LLMs）展現了驚人能力，但要達到通用人工智慧（AGI），整合顯性記憶是關鍵基石。論文認為 LLMs 的學習機制類似人類隱性記憶，但高階認知功能如長期策略規劃，則高度依賴海馬迴的顯性記憶，對 AGI 的發展方向提出新觀點。",
-      "lede_en": "一份新研究論文指出，雖然大型語言模型（LLMs）展現了驚人能力，但要達到通用人工智慧（AGI），整合顯性記憶是關鍵基石。論文認為 LLMs 的學習機制類似人類隱性記憶，但高階認知功能如長期策略規劃，則高度依賴海馬迴的顯性記憶，對 AGI 的發展方向提出新觀點。",
-      "bullets_zh": [],
-      "bullets_en": [],
-      "is_teaching_material": false,
-      "teaching_takeaway": "",
-      "source": {
-        "name": "arXiv cs.AI",
-        "url": "https://arxiv.org/abs/2606.11245",
-        "published_at": "2026-06-11T04:00:00+00:00",
-        "reading_time_min": 4,
-        "credibility_tier": "primary"
-      },
-      "fetched_via": "rss"
-    },
-    {
-      "id": "2026-06-12-m009",
-      "category": "security",
-      "is_headline": false,
-      "title_zh": "調查揭露勒索軟體集團「The Gentlemen」幕後身份",
-      "title_en": "調查揭露勒索軟體集團「The Gentlemen」幕後身份",
-      "lede_zh": "網路安全專家追蹤揭露，勒索軟體集團「The Gentlemen」已成為活躍度第二高的犯罪組織，其透過高額分潤策略快速招募駭客。此調查深入探討該集團管理者的真實身份線索，提醒企業需警惕日益複雜的網路攻擊威脅，加強資安防護。",
-      "lede_en": "網路安全專家追蹤揭露，勒索軟體集團「The Gentlemen」已成為活躍度第二高的犯罪組織，其透過高額分潤策略快速招募駭客。此調查深入探討該集團管理者的真實身份線索，提醒企業需警惕日益複雜的網路攻擊威脅，加強資安防護。",
-      "bullets_zh": [],
-      "bullets_en": [],
-      "is_teaching_material": false,
-      "teaching_takeaway": "",
-      "source": {
-        "name": "Krebs on Security",
-        "url": "https://krebsonsecurity.com/2026/06/who-runs-the-ransomware-group-the-gentlemen/",
-        "published_at": "2026-06-10T14:03:44+00:00",
-        "reading_time_min": 3,
-        "credibility_tier": "primary"
-      },
-      "fetched_via": "rss"
-    },
-    {
-      "id": "2026-06-12-m010",
+      "id": "2026-06-13-m010",
       "category": "tech-product",
       "is_headline": false,
-      "title_zh": "Google DeepMind 分拆公司 Isomorphic Labs 運用 AI 探索藥物靶點",
-      "title_en": "Google DeepMind 分拆公司 Isomorphic Labs 運用 AI 探索藥物靶點",
-      "lede_zh": "Google DeepMind 的分拆公司 Isomorphic Labs，正利用 AI 技術加速藥物發現過程，該公司以 DeepMind 在蛋白質結構預測上的成就為基礎，尋找隱藏的藥物靶點。此舉有望克服傳統藥物開發耗時且成本高昂的挑戰，為醫療產業帶來革命性進展。",
-      "lede_en": "Google DeepMind 的分拆公司 Isomorphic Labs，正利用 AI 技術加速藥物發現過程，該公司以 DeepMind 在蛋白質結構預測上的成就為基礎，尋找隱藏的藥物靶點。此舉有望克服傳統藥物開發耗時且成本高昂的挑戰，為醫療產業帶來革命性進展。",
+      "title_zh": "DiffusionGemma 上 RTX：文字生成改走平行擴散路線",
+      "title_en": "DiffusionGemma 上 RTX：文字生成改走平行擴散路線",
+      "lede_zh": "Google DeepMind 發表實驗性開放模型 DiffusionGemma，NVIDIA 隨即宣布針對 GeForce RTX、RTX PRO 與 DGX Spark 最佳化，主打本機與雲端的低延遲文字生成。不同於逐字輸出的自回歸模型，DiffusionGemma 以平行方式生成多個詞與文字區塊，若穩定度足夠，可能改變單人助理、即時補全與本機 AI 應用的延遲設計。",
+      "lede_en": "Google DeepMind 發表實驗性開放模型 DiffusionGemma，NVIDIA 隨即宣布針對 GeForce RTX、RTX PRO 與 DGX Spark 最佳化，主打本機與雲端的低延遲文字生成。不同於逐字輸出的自回歸模型，DiffusionGemma 以平行方式生成多個詞與文字區塊，若穩定度足夠，可能改變單人助理、即時補全與本機 AI 應用的延遲設計。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "NVIDIA Newsroom",
+        "url": "https://blogs.nvidia.com/blog/rtx-ai-garage-local-gemma-diffusion/",
+        "published_at": "2026-06-10T16:15:20+00:00",
+        "reading_time_min": 3,
+        "credibility_tier": "primary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-06-13-m011",
+      "category": "tech-product",
+      "is_headline": false,
+      "title_zh": "GPU 時脈微調可讓 LLM 訓練省電最多 14%",
+      "title_en": "GPU 時脈微調可讓 LLM 訓練省電最多 14%",
+      "lede_zh": "University of Twente 研究團隊指出，透過在 LLM 訓練過程中聰明調整 GPU 時脈，可在不犧牲速度的情況下降低最多 14% 能耗。這對大型模型訓練與企業私有模型微調都很實際，因為電力成本與資料中心容量正成為 AI 擴張瓶頸；未來 MLOps 不只要管模型品質，也要把能源設定納入訓練策略。",
+      "lede_en": "University of Twente 研究團隊指出，透過在 LLM 訓練過程中聰明調整 GPU 時脈，可在不犧牲速度的情況下降低最多 14% 能耗。這對大型模型訓練與企業私有模型微調都很實際，因為電力成本與資料中心容量正成為 AI 擴張瓶頸；未來 MLOps 不只要管模型品質，也要把能源設定納入訓練策略。",
       "bullets_zh": [],
       "bullets_en": [],
       "is_teaching_material": false,
       "teaching_takeaway": "",
       "source": {
         "name": "IEEE Spectrum AI",
-        "url": "https://spectrum.ieee.org/isomorphic-labs-ai-drug-discovery",
-        "published_at": "2026-06-11T12:00:01+00:00",
+        "url": "https://spectrum.ieee.org/llm-training-energy-saving-trick",
+        "published_at": "2026-06-10T11:00:01+00:00",
         "reading_time_min": 3,
         "credibility_tier": "primary"
       },
       "fetched_via": "rss"
     },
     {
-      "id": "2026-06-12-m011",
-      "category": "tech-product",
+      "id": "2026-06-13-m012",
+      "category": "vc-business",
       "is_headline": false,
-      "title_zh": "關於微軟遊戲部門的營運挑戰與市場觀察",
-      "title_en": "關於微軟遊戲部門的營運挑戰與市場觀察",
-      "lede_zh": "一份市場觀察報告探討了微軟遊戲部門近期面臨的營運挑戰。雖然文章未直接提及 AI 相關議題，但對於關注科技巨頭發展動態的讀者而言，了解不同業務板塊的表現有助於全面評估其未來策略與潛力。",
-      "lede_en": "一份市場觀察報告探討了微軟遊戲部門近期面臨的營運挑戰。雖然文章未直接提及 AI 相關議題，但對於關注科技巨頭發展動態的讀者而言，了解不同業務板塊的表現有助於全面評估其未來策略與潛力。",
+      "title_zh": "SpaceX 傳把 Colossus 1 算力租給 Anthropic：AI 資料中心不是有 GPU 就能跑",
+      "title_en": "SpaceX 傳把 Colossus 1 算力租給 Anthropic：AI 資料中心不是有 GPU 就能跑",
+      "lede_zh": "Bloomberg 報導，SpaceX 在自家團隊使用 Memphis 的 Colossus 1 資料中心開發與運行 Grok 模型遇到技術挑戰後，將該設施完整容量出租給 Anthropic。這凸顯 AI 算力競賽的難點不只在買到 GPU，還包括網路、儲存、叢集穩定性、排程與模型團隊工程能力；企業自建算力前，應把營運成熟度納入總成本評估。",
+      "lede_en": "Bloomberg 報導，SpaceX 在自家團隊使用 Memphis 的 Colossus 1 資料中心開發與運行 Grok 模型遇到技術挑戰後，將該設施完整容量出租給 Anthropic。這凸顯 AI 算力競賽的難點不只在買到 GPU，還包括網路、儲存、叢集穩定性、排程與模型團隊工程能力；企業自建算力前，應把營運成熟度納入總成本評估。",
       "bullets_zh": [],
       "bullets_en": [],
       "is_teaching_material": false,
       "teaching_takeaway": "",
       "source": {
-        "name": "The Information",
-        "url": "https://www.theinformation.com/articles/microsofts-gaming-glitch",
-        "published_at": "2026-06-12T00:00:56+00:00",
+        "name": "Bloomberg Technology",
+        "url": "https://www.bloomberg.com/news/articles/2026-06-12/spacex-rented-out-computing-after-own-teams-had-trouble-using-it",
+        "published_at": "2026-06-12T18:30:50+00:00",
+        "reading_time_min": 3,
+        "credibility_tier": "primary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-06-13-m013",
+      "category": "vc-business",
+      "is_headline": false,
+      "title_zh": "SpaceX 超大型 IPO 登場，AI 算力資本市場同步升溫",
+      "title_en": "SpaceX 超大型 IPO 登場，AI 算力資本市場同步升溫",
+      "lede_zh": "Bloomberg Tech 節目聚焦 SpaceX 在 Nasdaq 掛牌交易，並討論這起大型 IPO 對太空經濟、投資人與 AI IPO 管線的影響。雖然主題不是純 AI 技術新聞，但 SpaceX、xAI 與資料中心算力的交疊，反映資本市場正在把基礎設施、衛星網路與 AI 平台視為同一場長期競賽。",
+      "lede_en": "Bloomberg Tech 節目聚焦 SpaceX 在 Nasdaq 掛牌交易，並討論這起大型 IPO 對太空經濟、投資人與 AI IPO 管線的影響。雖然主題不是純 AI 技術新聞，但 SpaceX、xAI 與資料中心算力的交疊，反映資本市場正在把基礎設施、衛星網路與 AI 平台視為同一場長期競賽。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "Bloomberg Technology",
+        "url": "https://www.bloomberg.com/news/videos/2026-06-12/bloomberg-tech-6-12-2026-video",
+        "published_at": "2026-06-12T17:50:33+00:00",
         "reading_time_min": 2,
         "credibility_tier": "primary"
       },
       "fetched_via": "rss"
     },
     {
-      "id": "2026-06-12-m012",
+      "id": "2026-06-13-m014",
+      "category": "security",
+      "is_headline": false,
+      "title_zh": "LangGraph 漏洞鏈可導致遠端程式碼執行，自架代理快更新",
+      "title_en": "LangGraph 漏洞鏈可導致遠端程式碼執行，自架代理快更新",
+      "lede_zh": "資安研究人員揭露 LangGraph 三個已修補漏洞，其中一條漏洞鏈可能讓攻擊者對自架 AI 代理系統執行遠端程式碼。LangGraph 常用於建立有狀態、多代理與工具呼叫流程，一旦暴露在內網或公網服務中，風險會高於一般聊天機器人；工程團隊應立即檢查版本、限制輸入面、隔離執行環境並補齊日誌稽核。",
+      "lede_en": "資安研究人員揭露 LangGraph 三個已修補漏洞，其中一條漏洞鏈可能讓攻擊者對自架 AI 代理系統執行遠端程式碼。LangGraph 常用於建立有狀態、多代理與工具呼叫流程，一旦暴露在內網或公網服務中，風險會高於一般聊天機器人；工程團隊應立即檢查版本、限制輸入面、隔離執行環境並補齊日誌稽核。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/06/langgraph-flaw-chain-exposes-self.html",
+        "published_at": "2026-06-12T09:50:36+00:00",
+        "reading_time_min": 3,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-06-13-m015",
+      "category": "security",
+      "is_headline": false,
+      "title_zh": "AI 代理也會被釣魚：憑證外洩與攻擊工具商品化升溫",
+      "title_en": "AI 代理也會被釣魚：憑證外洩與攻擊工具商品化升溫",
+      "lede_zh": "The Hacker News 本週威脅彙整提到多個值得 AI 團隊注意的訊號，包括公開 repo 出現供應鏈攻擊工具、月費制 RAT 能複製瀏覽器環境，以及研究顯示 AI 代理可能被誘導洩漏真實憑證。重點不在單一事件，而是攻擊流程越來越 SaaS 化；企業導入代理時，必須把憑證最小權限、密鑰輪替與人機確認視為預設設計。",
+      "lede_en": "The Hacker News 本週威脅彙整提到多個值得 AI 團隊注意的訊號，包括公開 repo 出現供應鏈攻擊工具、月費制 RAT 能複製瀏覽器環境，以及研究顯示 AI 代理可能被誘導洩漏真實憑證。重點不在單一事件，而是攻擊流程越來越 SaaS 化；企業導入代理時，必須把憑證最小權限、密鑰輪替與人機確認視為預設設計。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/06/threatsday-bulletin-worm-code-leaked-ai.html",
+        "published_at": "2026-06-11T13:20:41+00:00",
+        "reading_time_min": 3,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-06-13-m016",
       "category": "dev",
       "is_headline": false,
-      "title_zh": "GitHub 發布 2026 年五月服務可用性報告",
-      "title_en": "GitHub 發布 2026 年五月服務可用性報告",
-      "lede_zh": "GitHub 公布了 2026 年五月的服務可用性報告，指出該月共發生九起導致服務效能下降的事件。這類報告對於依賴 GitHub 進行開發的團隊至關重要，能幫助工程師了解平台穩定性，並評估對自身工作流程的潛在影響。",
-      "lede_en": "GitHub 公布了 2026 年五月的服務可用性報告，指出該月共發生九起導致服務效能下降的事件。這類報告對於依賴 GitHub 進行開發的團隊至關重要，能幫助工程師了解平台穩定性，並評估對自身工作流程的潛在影響。",
+      "title_zh": "GitHub 用 LLM 降低密鑰掃描誤報，讓警示更可信",
+      "title_en": "GitHub 用 LLM 降低密鑰掃描誤報，讓警示更可信",
+      "lede_zh": "GitHub 說明如何在 secret scanning 的驗證步驟中加入具情境理解能力的 LLM 推理，以降低大規模密鑰偵測的誤報，讓安全警示更可採取行動。這個方向值得企業資安與 DevSecOps 參考：LLM 不一定要取代規則引擎，但可作為第二層判讀器，結合程式碼脈絡、檔案位置與使用型態來提升告警品質。",
+      "lede_en": "GitHub 說明如何在 secret scanning 的驗證步驟中加入具情境理解能力的 LLM 推理，以降低大規模密鑰偵測的誤報，讓安全警示更可採取行動。這個方向值得企業資安與 DevSecOps 參考：LLM 不一定要取代規則引擎，但可作為第二層判讀器，結合程式碼脈絡、檔案位置與使用型態來提升告警品質。",
       "bullets_zh": [],
       "bullets_en": [],
-      "is_teaching_material": false,
-      "teaching_takeaway": "",
+      "is_teaching_material": true,
+      "teaching_takeaway": "LLM 可當告警二次判讀器：用上下文降低資安誤報與疲勞",
       "source": {
         "name": "GitHub Blog",
-        "url": "https://github.blog/news-insights/company-news/github-availability-report-may-2026/",
-        "published_at": "2026-06-11T21:30:15+00:00",
+        "url": "https://github.blog/security/making-secret-scanning-more-trustworthy-reducing-false-positives-at-scale/",
+        "published_at": "2026-06-11T16:00:00+00:00",
+        "reading_time_min": 3,
+        "credibility_tier": "primary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-06-13-m017",
+      "category": "dev",
+      "is_headline": false,
+      "title_zh": "Simon Willison 實測 DiffusionGemma：開放權重文字擴散模型飆速",
+      "title_en": "Simon Willison 實測 DiffusionGemma：開放權重文字擴散模型飆速",
+      "lede_zh": "Simon Willison 實測 Google 的 DiffusionGemma，指出這個 Apache 2 授權的開放權重 Gemma 模型可透過 NVIDIA NIM 雲端 API 免費試用，生成速度達每秒數百 token 等級。文章價值在於把研究概念落到可跑的範例：文字擴散模型若能在品質上追上主流 LLM，可能成為低延遲應用、本機助理與互動式編輯的新選項。",
+      "lede_en": "Simon Willison 實測 Google 的 DiffusionGemma，指出這個 Apache 2 授權的開放權重 Gemma 模型可透過 NVIDIA NIM 雲端 API 免費試用，生成速度達每秒數百 token 等級。文章價值在於把研究概念落到可跑的範例：文字擴散模型若能在品質上追上主流 LLM，可能成為低延遲應用、本機助理與互動式編輯的新選項。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": true,
+      "teaching_takeaway": "文字擴散模型不是逐字生成，而是平行修正文段以降低延遲",
+      "source": {
+        "name": "Simon Willison's Weblog",
+        "url": "https://simonwillison.net/2026/Jun/10/diffusiongemma/#atom-everything",
+        "published_at": "2026-06-10T20:00:54+00:00",
+        "reading_time_min": 3,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-06-13-m018",
+      "category": "ai-tools",
+      "is_headline": false,
+      "title_zh": "Google Workspace 更新：Gemini 幫 Classroom 從檔案產生評分規準",
+      "title_en": "Google Workspace 更新：Gemini 幫 Classroom 從檔案產生評分規準",
+      "lede_zh": "Google Workspace 本週更新包括 Drive 輕量文件核准流程，以及在 Google Classroom 中用 Gemini 將評分規準檔案與圖片轉成 rubrics。對學校與企業內訓團隊來說，這代表 Gemini 正逐步進入文件審核、教學設計與行政流程；實務上可先從重複性表單、評分表與審批紀錄開始試用，而不是一開始就要求 AI 全自動決策。",
+      "lede_en": "Google Workspace 本週更新包括 Drive 輕量文件核准流程，以及在 Google Classroom 中用 Gemini 將評分規準檔案與圖片轉成 rubrics。對學校與企業內訓團隊來說，這代表 Gemini 正逐步進入文件審核、教學設計與行政流程；實務上可先從重複性表單、評分表與審批紀錄開始試用，而不是一開始就要求 AI 全自動決策。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": true,
+      "teaching_takeaway": "Gemini 可把既有文件轉成可操作流程，例如評分規準與審批紀錄",
+      "source": {
+        "name": "Google Workspace Updates",
+        "url": "http://workspaceupdates.googleblog.com/2026/06/weekly-recap-06-12-2026.html",
+        "published_at": "2026-06-12T19:30:58+00:00",
         "reading_time_min": 2,
         "credibility_tier": "primary"
       },
       "fetched_via": "rss"
     },
     {
-      "id": "2026-06-12-m013",
-      "category": "vc-business",
+      "id": "2026-06-13-m019",
+      "category": "ai-tools",
       "is_headline": false,
-      "title_zh": "馬斯克的 SpaceX IPO 募資 750 億美元，創全球最大規模",
-      "title_en": "馬斯克的 SpaceX IPO 募資 750 億美元，創全球最大規模",
-      "lede_zh": "伊隆·馬斯克旗下的太空探索公司 SpaceX 以每股 135 美元的價格進行 IPO，成功募資 750 億美元，成為全球最大規模的首次公開募股。儘管 SpaceX 在 AI 領域亦有涉獵，此消息主要聚焦於其市場價值與資本動態，展現了科技產業對資本市場的巨大吸引力。",
-      "lede_en": "伊隆·馬斯克旗下的太空探索公司 SpaceX 以每股 135 美元的價格進行 IPO，成功募資 750 億美元，成為全球最大規模的首次公開募股。儘管 SpaceX 在 AI 領域亦有涉獵，此消息主要聚焦於其市場價值與資本動態，展現了科技產業對資本市場的巨大吸引力。",
+      "title_zh": "Kimi K2.7 Code 進 Vercel AI Gateway，長程寫程式模型多一個選項",
+      "title_en": "Kimi K2.7 Code 進 Vercel AI Gateway，長程寫程式模型多一個選項",
+      "lede_zh": "Vercel 宣布 Moonshot AI 的 Kimi K2.7 Code 已可透過 AI Gateway 使用，模型主打長程式設計任務，涵蓋前端、DevOps、效能最佳化，並支援文字與影像輸入。對使用 Vercel AI SDK 的團隊來說，重點是可用統一 API 管理模型呼叫、成本追蹤與重試設定；多模型路由會成為 AI coding 產品的基本架構能力。",
+      "lede_en": "Vercel 宣布 Moonshot AI 的 Kimi K2.7 Code 已可透過 AI Gateway 使用，模型主打長程式設計任務，涵蓋前端、DevOps、效能最佳化，並支援文字與影像輸入。對使用 Vercel AI SDK 的團隊來說，重點是可用統一 API 管理模型呼叫、成本追蹤與重試設定；多模型路由會成為 AI coding 產品的基本架構能力。",
       "bullets_zh": [],
       "bullets_en": [],
       "is_teaching_material": false,
       "teaching_takeaway": "",
       "source": {
-        "name": "Financial Times Technology",
-        "url": "https://www.ft.com/content/1890e552-aa7e-4d7f-98f1-db4f165e8827",
-        "published_at": "2026-06-11T22:39:39+00:00",
-        "reading_time_min": 2,
-        "credibility_tier": "primary"
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/kimi-k2-7-code-now-available-on-ai-gateway",
+        "published_at": "2026-06-12T00:00:00+00:00",
+        "reading_time_min": 3,
+        "credibility_tier": "secondary"
       },
       "fetched_via": "rss"
     },
     {
-      "id": "2026-06-12-m014",
-      "category": "vc-business",
+      "id": "2026-06-13-m020",
+      "category": "taiwan",
       "is_headline": false,
-      "title_zh": "企業氣候計畫規範引爭議，新「淨零」準則受挑戰",
-      "title_en": "企業氣候計畫規範引爭議，新「淨零」準則受挑戰",
-      "lede_zh": "負責制定企業氣候計畫標準的機構，因其新的「淨零」規則手冊備受批評，允許企業即使未能完全達成目標，仍可聲稱已「盡最大努力」。這項爭議凸顯了全球在推動企業永續發展與氣候目標上所面臨的挑戰，值得企業主與政策制定者深思。",
-      "lede_en": "負責制定企業氣候計畫標準的機構，因其新的「淨零」規則手冊備受批評，允許企業即使未能完全達成目標，仍可聲稱已「盡最大努力」。這項爭議凸顯了全球在推動企業永續發展與氣候目標上所面臨的挑戰，值得企業主與政策制定者深思。",
+      "title_zh": "台積電捲美國專利戰，AI 晶片供應鏈再添法務變數",
+      "title_en": "台積電捲美國專利戰，AI 晶片供應鏈再添法務變數",
+      "lede_zh": "TechOrange 科技早餐整理台積電在美國 ITC 面臨專利申訴、SK 海力士擴產與 OpenAI 價格戰等消息，其中最關鍵的是 AI 晶片供應鏈正同時承受產能、法規與專利壓力。對台灣企業而言，台積電先進製程已是全球 AI 平台核心，任何美國執法與進口限制討論，都可能影響客戶交期、成本與供應鏈風險控管。",
+      "lede_en": "TechOrange 科技早餐整理台積電在美國 ITC 面臨專利申訴、SK 海力士擴產與 OpenAI 價格戰等消息，其中最關鍵的是 AI 晶片供應鏈正同時承受產能、法規與專利壓力。對台灣企業而言，台積電先進製程已是全球 AI 平台核心，任何美國執法與進口限制討論，都可能影響客戶交期、成本與供應鏈風險控管。",
       "bullets_zh": [],
       "bullets_en": [],
       "is_teaching_material": false,
       "teaching_takeaway": "",
       "source": {
-        "name": "Financial Times Technology",
-        "url": "https://www.ft.com/content/d98a876a-1ea0-40ae-bf3e-b9acf1aca27f",
-        "published_at": "2026-06-11T18:34:36+00:00",
-        "reading_time_min": 2,
+        "name": "TechOrange",
+        "url": "https://techorange.com/2026/06/12/tsmc-us-patent-battle/?utm_source=rss&utm_medium=feed&utm_campaign=techorange_rss",
+        "published_at": "2026-06-11T21:30:00+00:00",
+        "reading_time_min": 3,
+        "credibility_tier": "tertiary"
+      },
+      "fetched_via": "rss"
+    },
+    {
+      "id": "2026-06-13-m021",
+      "category": "taiwan",
+      "is_headline": false,
+      "title_zh": "台灣企業要 AI 即戰力，新鮮人卻多停在「改履歷」",
+      "title_en": "台灣企業要 AI 即戰力，新鮮人卻多停在「改履歷」",
+      "lede_zh": "1111 人力銀行與資策會教研所發布 2026 職場 AI 力調查，指出 AI 職缺與求職人數同步成長，但企業仍難找到真正能把 AI 用在工作流程的人才。訊號很清楚：會下 prompt 不等於具備 AI 即戰力，企業更需要能拆解流程、評估資料、串接工具、衡量成效的人；求職者應用作品集證明產出，而不是只列會用哪些工具。",
+      "lede_en": "1111 人力銀行與資策會教研所發布 2026 職場 AI 力調查，指出 AI 職缺與求職人數同步成長，但企業仍難找到真正能把 AI 用在工作流程的人才。訊號很清楚：會下 prompt 不等於具備 AI 即戰力，企業更需要能拆解流程、評估資料、串接工具、衡量成效的人；求職者應用作品集證明產出，而不是只列會用哪些工具。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "iThome",
+        "url": "https://www.ithome.com.tw/news/176579",
+        "published_at": "2026-06-12T17:21:00+00:00",
+        "reading_time_min": 3,
         "credibility_tier": "primary"
       },
       "fetched_via": "rss"
     },
     {
-      "id": "2026-06-12-m015",
+      "id": "2026-06-13-m022",
       "category": "science",
       "is_headline": false,
-      "title_zh": "《自然》期刊發布關於人體海馬迴可塑性與語言研究的作者更正",
-      "title_en": "《自然》期刊發布關於人體海馬迴可塑性與語言研究的作者更正",
-      "lede_zh": "《自然》期刊發布了一篇作者更正，涉及清醒人類海馬迴的可塑性與語言能力研究。此類更正確保了科學文獻的嚴謹性與準確性，雖然內容專精於腦科學領域，對於 AI 領域的工程師而言，可作為了解基礎神經科學研究流程的參考。",
-      "lede_en": "《自然》期刊發布了一篇作者更正，涉及清醒人類海馬迴的可塑性與語言能力研究。此類更正確保了科學文獻的嚴謹性與準確性，雖然內容專精於腦科學領域，對於 AI 領域的工程師而言，可作為了解基礎神經科學研究流程的參考。",
+      "title_zh": "Nature：嚴格未見數學題上，人類頂尖專家仍勝 AI",
+      "title_en": "Nature：嚴格未見數學題上，人類頂尖專家仍勝 AI",
+      "lede_zh": "Nature 報導一項新的數學 benchmark，使用先前未曝光的高嚴謹度題目測試 AI 系統，結果顯示現有模型仍落後頂尖人類專家。這提醒開發者不要只看公開榜單或已被模型訓練資料污染的測驗；在需要真正推理、證明與可靠解題的場景，仍應設計未見題、人工審查與錯誤回溯機制。",
+      "lede_en": "Nature 報導一項新的數學 benchmark，使用先前未曝光的高嚴謹度題目測試 AI 系統，結果顯示現有模型仍落後頂尖人類專家。這提醒開發者不要只看公開榜單或已被模型訓練資料污染的測驗；在需要真正推理、證明與可靠解題的場景，仍應設計未見題、人工審查與錯誤回溯機制。",
       "bullets_zh": [],
       "bullets_en": [],
       "is_teaching_material": false,
       "teaching_takeaway": "",
       "source": {
         "name": "Nature News",
-        "url": "https://www.nature.com/articles/s41586-026-10784-1",
-        "published_at": "2026-06-11T00:00:00+00:00",
-        "reading_time_min": 2,
-        "credibility_tier": "primary"
-      },
-      "fetched_via": "rss"
-    },
-    {
-      "id": "2026-06-12-m016",
-      "category": "world",
-      "is_headline": false,
-      "title_zh": "科學家警示聖嬰現象已啟動，恐致極端天氣",
-      "title_en": "科學家警示聖嬰現象已啟動，恐致極端天氣",
-      "lede_zh": "美國科學家證實聖嬰現象（El Niño）已正式展開，預計將帶來全球性的極端天氣與更高的氣溫。這對全球氣候模式、農業生產及經濟活動將產生深遠影響，企業與個人應及早規劃應對，以減輕潛在的衝擊。",
-      "lede_en": "美國科學家證實聖嬰現象（El Niño）已正式展開，預計將帶來全球性的極端天氣與更高的氣溫。這對全球氣候模式、農業生產及經濟活動將產生深遠影響，企業與個人應及早規劃應對，以減輕潛在的衝擊。",
-      "bullets_zh": [],
-      "bullets_en": [],
-      "is_teaching_material": false,
-      "teaching_takeaway": "",
-      "source": {
-        "name": "BBC World",
-        "url": "https://www.bbc.com/news/articles/c75ylx7g00xo?at_medium=RSS&at_campaign=rss",
-        "published_at": "2026-06-11T13:26:24+00:00",
-        "reading_time_min": 2,
-        "credibility_tier": "primary"
-      },
-      "fetched_via": "rss"
-    },
-    {
-      "id": "2026-06-12-m017",
-      "category": "world",
-      "is_headline": false,
-      "title_zh": "蘇丹無人機空襲葬禮隊伍，多名平民罹難",
-      "title_en": "蘇丹無人機空襲葬禮隊伍，多名平民罹難",
-      "lede_zh": "蘇丹內戰前線城市歐貝德發生致命無人機襲擊事件，一個葬禮隊伍成為攻擊目標，人權組織指責快速支援部隊（RSF）殺害平民。這起事件凸顯了當地人道危機的嚴重性，以及武裝衝突對無辜民眾造成的深重影響，令人悲痛。",
-      "lede_en": "蘇丹內戰前線城市歐貝德發生致命無人機襲擊事件，一個葬禮隊伍成為攻擊目標，人權組織指責快速支援部隊（RSF）殺害平民。這起事件凸顯了當地人道危機的嚴重性，以及武裝衝突對無辜民眾造成的深重影響，令人悲痛。",
-      "bullets_zh": [],
-      "bullets_en": [],
-      "is_teaching_material": false,
-      "teaching_takeaway": "",
-      "source": {
-        "name": "BBC World",
-        "url": "https://www.bbc.com/news/articles/c70yeee2jvqo?at_medium=RSS&at_campaign=rss",
-        "published_at": "2026-06-11T15:57:04+00:00",
-        "reading_time_min": 2,
-        "credibility_tier": "primary"
-      },
-      "fetched_via": "rss"
-    },
-    {
-      "id": "2026-06-12-m018",
-      "category": "taiwan",
-      "is_headline": false,
-      "title_zh": "美參院軍委會國防授權法案納入台灣戰備庫存計畫",
-      "title_en": "美參院軍委會國防授權法案納入台灣戰備庫存計畫",
-      "lede_zh": "美國聯邦參議院軍委會通過 2027 財政年度國防授權法案，其中包含授權戰爭部為台灣建立戰爭儲備存量計畫，並要求審查對日、台等第一島鏈國家軍售延宕的影響。此法案展現美國對區域安全的承諾，對台灣安全防衛具有重要戰略意義。",
-      "lede_en": "美國聯邦參議院軍委會通過 2027 財政年度國防授權法案，其中包含授權戰爭部為台灣建立戰爭儲備存量計畫，並要求審查對日、台等第一島鏈國家軍售延宕的影響。此法案展現美國對區域安全的承諾，對台灣安全防衛具有重要戰略意義。",
-      "bullets_zh": [],
-      "bullets_en": [],
-      "is_teaching_material": false,
-      "teaching_takeaway": "",
-      "source": {
-        "name": "中央社國內政治",
-        "url": "https://www.cna.com.tw/news/aipl/202606120019.aspx",
-        "published_at": "2026-06-11T23:19:14+00:00",
-        "reading_time_min": 2,
-        "credibility_tier": "primary"
-      },
-      "fetched_via": "rss"
-    },
-    {
-      "id": "2026-06-12-m019",
-      "category": "taiwan",
-      "is_headline": false,
-      "title_zh": "盧秀燕市長訪捷克國會與布拉格市府，交流城市治理經驗",
-      "title_en": "盧秀燕市長訪捷克國會與布拉格市府，交流城市治理經驗",
-      "lede_zh": "台中市長盧秀燕率團訪問捷克，拜會捷克參議院議長及布拉格市長，就民主發展、國際局勢與城市治理等議題進行交流。此次國際交流有助於提升台灣的國際能見度，並學習借鑒其他城市的治理經驗，促進雙邊合作。",
-      "lede_en": "台中市長盧秀燕率團訪問捷克，拜會捷克參議院議長及布拉格市長，就民主發展、國際局勢與城市治理等議題進行交流。此次國際交流有助於提升台灣的國際能見度，並學習借鑒其他城市的治理經驗，促進雙邊合作。",
-      "bullets_zh": [],
-      "bullets_en": [],
-      "is_teaching_material": false,
-      "teaching_takeaway": "",
-      "source": {
-        "name": "中央社國內政治",
-        "url": "https://www.cna.com.tw/news/aipl/202606110383.aspx",
-        "published_at": "2026-06-11T14:47:06+00:00",
-        "reading_time_min": 2,
+        "url": "https://www.nature.com/articles/d41586-026-01888-9",
+        "published_at": "2026-06-12T00:00:00+00:00",
+        "reading_time_min": 3,
         "credibility_tier": "primary"
       },
       "fetched_via": "rss"
@@ -502,14 +560,14 @@
   ],
   "breaking_news": [],
   "meta": {
-    "generated_at": "2026-06-12T09:31:22.759059+08:00",
-    "total_articles": 19,
+    "generated_at": "2026-06-13T08:12:53.987853+08:00",
+    "total_articles": 22,
     "sources_used": {
-      "rss": 19,
+      "rss": 22,
       "firecrawl": 0
     },
     "schema_version": "2.0",
     "edition": "morning",
-    "model": "google-ai-studio/gemini-2.5-flash"
+    "model": "openai/gpt-5.5"
   }
 }
