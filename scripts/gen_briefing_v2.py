@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate Daily Briefing issue (v2: dual edition + Haiku 4.5 + prose summary + breaking news).
+"""Generate Daily Briefing issue (v2: dual edition + GPT-5.5 + prose summary + breaking news).
 
 Reads /tmp/candidates.json (produced by fetch_candidates.py).
 Writes data/<edition>.json, data/latest.json, data/issues/<date>-<edition>.json,
@@ -11,11 +11,48 @@ Usage:
 If --edition is omitted, edition is inferred from Asia/Taipei hour:
     hour < 14 → morning,  else → evening.
 """
-import argparse, json, os, sys, re, time
+import argparse, json, os, sys, re, time, shutil, subprocess
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
+from types import SimpleNamespace
 
 from openai import OpenAI
+
+
+# --- Codex OAuth provider via hermes CLI -------------------------------------
+# The ChatGPT Codex backend (chatgpt.com/backend-api/codex) needs special
+# Cloudflare headers (originator=codex_cli_rs, ChatGPT-Account-ID) plus OAuth
+# token refresh — all handled by the `hermes` CLI. Rather than reimplement that
+# (and break in ~8 days when the access token expires), we shell out to
+# `hermes chat --provider openai-codex`, which reuses hermes's auth/refresh.
+HERMES_BIN = shutil.which("hermes") or "/home/hermes/.local/bin/hermes"
+
+
+class HermesCodexClient:
+    """Minimal OpenAI-SDK-shaped shim that routes chat completions through the
+    `hermes chat --provider openai-codex` subprocess so the Daily Briefing can
+    use the live Codex OAuth credential instead of a standalone API key."""
+
+    def __init__(self, model: str, timeout: int = 300):
+        self._timeout = timeout
+        self.chat = SimpleNamespace(completions=SimpleNamespace(create=self._create))
+
+    def _create(self, *, model: str, messages: list[dict], **_kwargs):
+        prompt = "\n\n".join(str(m.get("content", "")) for m in messages).strip()
+        cmd = [HERMES_BIN, "chat", "--provider", "openai-codex",
+               "--model", model, "--toolsets", "safe", "-Q", "-q", prompt]
+        result = subprocess.run(cmd, text=True, capture_output=True,
+                                timeout=self._timeout + 30)
+        if result.returncode != 0:
+            detail = (result.stderr or result.stdout or "").strip()[-800:]
+            raise RuntimeError(f"hermes codex subprocess failed ({result.returncode}): {detail}")
+        lines = [ln for ln in result.stdout.splitlines() if not ln.startswith("session_id:")]
+        content = "\n".join(lines).strip()
+        if not content:
+            raise RuntimeError("hermes codex subprocess returned empty content")
+        return SimpleNamespace(
+            choices=[SimpleNamespace(message=SimpleNamespace(content=content))]
+        )
 
 
 def load_env_file(path: Path) -> dict[str, str]:
@@ -31,39 +68,46 @@ def load_env_file(path: Path) -> dict[str, str]:
     return env
 
 
-OPENROUTER_ENV = load_env_file(Path.home() / ".hermes/credentials/openrouter.env")
-GOOGLE_AI_ENV = load_env_file(Path.home() / ".hermes/credentials/google_ai.env")
+OPENAI_ENV = load_env_file(Path("/home/hermes/.hermes/credentials/openai.env"))
 
 PROVIDERS: list[dict[str, object]] = []
-if OPENROUTER_ENV.get("API_KEY") or OPENROUTER_ENV.get("OPENROUTER_API_KEY"):
+
+# Primary: ChatGPT Codex OAuth via hermes (gpt-5.5). Use unless explicitly
+# disabled. This is the live credential as of 2026-06-24 after the standalone
+# OpenAI API key was revoked server-side (401 invalid_api_key).
+if os.environ.get("BRIEFING_DISABLE_CODEX", "").strip().lower() not in {"1", "true", "yes"}:
     PROVIDERS.append({
-        "name": "openrouter",
-        "model": "anthropic/claude-haiku-4.5",
+        "name": "codex",
+        "model": "gpt-5.5",
+        "client": HermesCodexClient("gpt-5.5"),
+    })
+
+# Fallback: standalone OpenAI API key. Auto-resumes as a provider if a valid
+# key is restored in openai.env; kept after codex so codex stays primary.
+OPENAI_KEY = (
+    os.environ.get("OPENAI_API_KEY")
+    or os.environ.get("API_KEY")
+    or OPENAI_ENV.get("OPENAI_API_KEY")
+    or OPENAI_ENV.get("API_KEY")
+)
+if OPENAI_KEY:
+    PROVIDERS.append({
+        "name": "openai",
+        "model": "gpt-5.5",
         "client": OpenAI(
-            api_key=OPENROUTER_ENV.get("API_KEY") or OPENROUTER_ENV.get("OPENROUTER_API_KEY"),
-            base_url="https://openrouter.ai/api/v1",
-            default_headers={"HTTP-Referer": "https://hermes.agent", "X-Title": "Hermes Daily Briefing"},
+            api_key=OPENAI_KEY,
+            base_url="https://api.openai.com/v1",
         ),
     })
-if GOOGLE_AI_ENV.get("GOOGLE_AI_KEY"):
-    for gemini_model in ("gemini-2.5-flash", "gemini-2.5-flash-lite"):
-        PROVIDERS.append({
-            "name": "google-ai-studio",
-            "model": gemini_model,
-            "client": OpenAI(
-                api_key=GOOGLE_AI_ENV["GOOGLE_AI_KEY"],
-                base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
-            ),
-        })
 if not PROVIDERS:
-    raise SystemExit("No Daily Briefing generation provider credentials found")
+    raise SystemExit("No generation providers available for Daily Briefing")
 
 MODEL = str(PROVIDERS[0]["model"])
 ACTIVE_MODEL = MODEL
 
 
 def create_chat_completion(messages: list[dict[str, str]], max_tokens: int, label: str):
-    """Try the primary generator, then fall back to Google AI Studio if quota/auth fails."""
+    """Call the configured OpenAI generator with bounded retries."""
     global ACTIVE_MODEL
     last_exc: Exception | None = None
     ordered = sorted(
@@ -77,10 +121,11 @@ def create_chat_completion(messages: list[dict[str, str]], max_tokens: int, labe
         print(f"[INFO] {label} → {name}/{model}...", file=sys.stderr)
         for attempt in range(1, 4):
             try:
+                tokens_key = "max_completion_tokens" if model.startswith("gpt-5") else "max_tokens"
                 resp = client.chat.completions.create(  # type: ignore[union-attr]
                     model=model,
                     messages=messages,
-                    max_tokens=max_tokens,
+                    **{tokens_key: max_tokens},
                 )
                 ACTIVE_MODEL = f"{name}/{model}"
                 return resp
@@ -94,6 +139,65 @@ def create_chat_completion(messages: list[dict[str, str]], max_tokens: int, labe
                 break
     raise RuntimeError(f"All generation providers failed for {label}") from last_exc
 
+
+def extract_json_text(content: str) -> str:
+    """Extract the outer JSON object from an LLM response."""
+    m = re.search(r'```(?:json)?\s*(\{.*?\})\s*```', content, re.DOTALL)
+    if m:
+        return m.group(1)
+    s, e = content.find('{'), content.rfind('}')
+    if s >= 0 and e > s:
+        return content[s:e + 1]
+    return content
+
+
+def parse_llm_json(content: str, *, label: str, schema_hint: str) -> dict:
+    """Parse LLM JSON, saving bad output and asking the model to repair malformed JSON once.
+
+    GPT occasionally returns a nearly-valid object with a missing comma or quote. A single
+    JSONDecodeError should not fail the whole briefing; the repair call is constrained to
+    syntax repair only and the normal downstream validator still checks the final issue.
+    """
+    raw = extract_json_text(content)
+    try:
+        return json.loads(raw)
+    except json.JSONDecodeError as first_exc:
+        bad_path = Path(f"/tmp/daily_briefing_bad_{label}.json")
+        bad_path.write_text(raw, encoding="utf-8")
+        print(
+            f"[WARN] {label} JSON parse failed at line {first_exc.lineno} col {first_exc.colno}: "
+            f"{first_exc.msg}; saved raw output to {bad_path}; requesting syntax repair",
+            file=sys.stderr,
+        )
+        repair_prompt = f"""Repair the following malformed JSON into one valid JSON object.
+Rules:
+- Preserve all keys, values, strings, URLs, IDs, and Traditional Chinese text exactly where possible.
+- Only fix JSON syntax errors such as missing commas, extra trailing commas, unescaped quotes, or code fences.
+- Do NOT summarize, omit, add commentary, or change the schema.
+- Respond ONLY with the repaired JSON object.
+
+Expected shape: {schema_hint}
+
+Malformed JSON:
+{raw}
+"""
+        repair_resp = create_chat_completion(
+            messages=[{"role": "user", "content": repair_prompt}],
+            max_tokens=16000,
+            label=f"{label} JSON repair",
+        )
+        repaired = extract_json_text(repair_resp.choices[0].message.content)
+        try:
+            return json.loads(repaired)
+        except json.JSONDecodeError as second_exc:
+            repaired_path = Path(f"/tmp/daily_briefing_repaired_{label}.json")
+            repaired_path.write_text(repaired, encoding="utf-8")
+            raise RuntimeError(
+                f"{label} JSON remained invalid after repair: "
+                f"{second_exc.msg} at line {second_exc.lineno} col {second_exc.colno}; "
+                f"raw={bad_path} repaired={repaired_path}"
+            ) from second_exc
+
 # --- Args & edition ----------------------------------------------------------
 TPE = timezone(timedelta(hours=8))
 def infer_edition() -> str:
@@ -105,7 +209,22 @@ args = ap.parse_args()
 EDITION = args.edition or infer_edition()
 
 REPO = Path("/home/hermes/Daily-briefing")
-data = json.load(open("/tmp/candidates.json"))
+candidate_paths = [
+    Path(os.environ.get(
+        "DAILY_BRIEFING_CANDIDATES",
+        "/home/hermes/.hermes/cache/daily_briefing/candidates.json",
+    )),
+    Path("/tmp/candidates.json"),
+]
+for candidate_path in candidate_paths:
+    if candidate_path.exists():
+        data = json.loads(candidate_path.read_text(encoding="utf-8"))
+        break
+else:
+    raise SystemExit(
+        "No Daily Briefing candidates found. Expected "
+        + " or ".join(str(p) for p in candidate_paths)
+    )
 date_taipei = data["date_taipei"]
 weather_report = data["weather_report"]
 cbc = data["candidates_by_category"]
@@ -118,18 +237,152 @@ if existing:
 else:
     issue_number = max((i["issue_number"] for i in archive["issues"]), default=0) + 1
 
-# --- Balanced selection — target ~18 articles (flexible: under/over OK) -----
+# --- Balanced selection with high-impact override ----------------------------
 TARGET = {
-    "ai-ml": 4, "ai-tools": 2, "research-papers": 2, "security": 1,
-    "tech-product": 2, "dev": 1, "vc-business": 2, "science": 1,
-    "world": 2, "taiwan": 2,
+    "ai-ml": 5, "research-papers": 3, "tech-product": 3, "vc-business": 2,
+    "security": 2, "dev": 2, "ai-tools": 2, "taiwan": 2, "science": 1,
 }
-selected = {}
+
+MIN_SCORE = {
+    "ai-ml": 1.6, "ai-tools": 1.4, "research-papers": 1.2, "security": 1.2,
+    "tech-product": 1.45, "dev": 1.1, "vc-business": 1.35, "science": 1.0,
+    "world": 1.45, "taiwan": 1.35,
+}
+HIGH_IMPACT_SIGNALS = {
+    "new_release", "conference_signal", "ai_hardware_signal",
+    "semiconductor_platform", "security_critical", "business_impact",
+    "benchmark_sota", "official_page", "official_model_source",
+    "official_model_release",
+}
+
+
+def _score(article: dict) -> float:
+    return float(article.get("rank_score") or 0)
+
+
+def _signals(article: dict) -> set[str]:
+    return set(article.get("quality_signals") or [])
+
+
+def _article_key(article: dict) -> str:
+    return (article.get("url") or article.get("title") or "").strip().lower()
+
+
+def _sorted_candidates(category: str) -> list[dict]:
+    cands = cbc.get(category, [])
+    cands = [a for a in cands if _score(a) >= MIN_SCORE.get(category, 1.0)]
+    return sorted(cands, key=lambda a: (_score(a), a.get("published_at") or ""), reverse=True)
+
+
+def _is_platform_event(article: dict) -> bool:
+    sig = _signals(article)
+    title = (article.get("title") or "").lower()
+    body = f"{article.get('title') or ''} {article.get('summary') or ''}".lower()
+    if re.search(r"\b(deal|saving|discount|coupon|best .* under|review)\b", title):
+        return bool(sig & {"conference_signal", "new_release"})
+    return bool(sig & {"conference_signal", "ai_hardware_signal"}) or bool(
+        "semiconductor_platform" in sig and re.search(r"\b(computex|gtc|rtx|dgx|blackwell|rubin|cuda|gpu platform|ai pc)\b", body)
+    )
+
+
+selected = {cat: [] for cat in TARGET}
+used: set[str] = set()
+
+# First pass: protect platform-level / high-impact stories even if a category
+# quota would otherwise bury them.
+global_pool: list[tuple[str, dict]] = []
+for cat in TARGET:
+    for article in _sorted_candidates(cat):
+        global_pool.append((cat, article))
+global_pool.sort(key=lambda item: (_score(item[1]), len(_signals(item[1]) & HIGH_IMPACT_SIGNALS)), reverse=True)
+
+for cat, article in global_pool:
+    if len(selected[cat]) >= TARGET[cat] + 1:
+        continue
+    if _score(article) < 2.8 and not (_signals(article) & HIGH_IMPACT_SIGNALS):
+        continue
+    key = _article_key(article)
+    if not key or key in used:
+        continue
+    selected[cat].append(article)
+    used.add(key)
+    if sum(len(v) for v in selected.values()) >= 6:
+        break
+
+# Second pass: fill category targets by precomputed editorial rank_score.
 for cat, n in TARGET.items():
-    avail = cbc.get(cat, [])
-    selected[cat] = avail[:min(n, len(avail))]
-# No forced overflow fill — if a category runs dry, the issue just runs short.
-# User explicitly preferred quality over hitting an exact count.
+    for article in _sorted_candidates(cat):
+        if len(selected[cat]) >= n:
+            break
+        key = _article_key(article)
+        if not key or key in used:
+            continue
+        selected[cat].append(article)
+        used.add(key)
+
+# Hardware/platform-event safety valve. This catches NVIDIA/AMD/Intel/TSMC
+# platform launches that might otherwise lose to generic AI/business stories.
+selected_flat = [a for articles in selected.values() for a in articles]
+if not any(_is_platform_event(a) for a in selected_flat):
+    for cat, article in global_pool:
+        if cat not in {"ai-ml", "tech-product", "vc-business"}:
+            continue
+        if not _is_platform_event(article):
+            continue
+        key = _article_key(article)
+        if not key or key in used:
+            continue
+        if len(selected[cat]) < TARGET[cat] + 1:
+            selected[cat].append(article)
+            used.add(key)
+        else:
+            replace_at = min(range(len(selected[cat])), key=lambda i: _score(selected[cat][i]))
+            old_key = _article_key(selected[cat][replace_at])
+            selected[cat][replace_at] = article
+            used.discard(old_key)
+            used.add(key)
+        break
+
+# Official model-lab safety valve. If official OpenAI/Anthropic/DeepMind/Mistral/
+# Meta/xAI/Hugging Face news is available, keep at least one such item.
+official_sources = {
+    "OpenAI Blog", "Anthropic News", "Google DeepMind Blog", "Mistral News",
+    "Meta AI Blog", "xAI News", "Hugging Face Blog",
+}
+selected_flat = [a for articles in selected.values() for a in articles]
+if not any((a.get("source_name") in official_sources) for a in selected_flat):
+    for cat, article in global_pool:
+        if cat != "ai-ml" or article.get("source_name") not in official_sources:
+            continue
+        key = _article_key(article)
+        if not key or key in used:
+            continue
+        if len(selected[cat]) < TARGET[cat] + 1:
+            selected[cat].append(article)
+            used.add(key)
+        else:
+            replace_at = min(range(len(selected[cat])), key=lambda i: _score(selected[cat][i]))
+            old_key = _article_key(selected[cat][replace_at])
+            selected[cat][replace_at] = article
+            used.discard(old_key)
+            used.add(key)
+        break
+
+# Third pass: if strict categories run short, backfill with best remaining
+# high-signal stories rather than shipping a thin issue.
+MIN_ARTICLES = 16
+MAX_ARTICLES = 22
+if sum(len(v) for v in selected.values()) < MIN_ARTICLES:
+    for cat, article in global_pool:
+        if sum(len(v) for v in selected.values()) >= MAX_ARTICLES:
+            break
+        if _score(article) < 1.8:
+            continue
+        key = _article_key(article)
+        if not key or key in used:
+            continue
+        selected[cat].append(article)
+        used.add(key)
 
 articles_input = []
 idx = 1
@@ -144,6 +397,8 @@ for cat, arts in selected.items():
             "source_name": a.get("source_name") or a.get("feed_name"),
             "published_at": a.get("published_at"),
             "credibility_tier": a.get("credibility_tier") or a.get("source_tier", "secondary"),
+            "rank_score": a.get("rank_score"),
+            "quality_signals": a.get("quality_signals", []),
         })
         idx += 1
 
@@ -151,9 +406,21 @@ edition_zh = "早報" if EDITION == "morning" else "晚報"
 edition_en = "Morning Edition" if EDITION == "morning" else "Evening Edition"
 
 # --- Stage 1: write the issue prose ------------------------------------------
-prompt = f"""You are the editor of a bilingual Daily Briefing ({edition_zh} / {edition_en}) for an AI Engineer at Taiwan AI Academy.
-Audience reads it quickly. Focus on WHAT the new technology is, WHY it matters, and HOW it can be applied.
-Be concise, information-dense, and avoid pain-point framing.
+prompt = f"""You are the editor of an AI Intelligence Briefing ({edition_zh} / {edition_en}) for an AI Engineer / AI product builder in Taiwan.
+Audience reads it quickly. This is NOT a generic world-news briefing. Focus on AI model labs, papers, benchmarks,
+SOTA models, AI products, platform wars, community heat, Chinese-language tech, technical risk, industry depth,
+and practical AI business applications.
+
+Editorial mission:
+  - 最新論文、benchmark、SOTA 模型
+  - 社群討論熱度高的 AI 技術與產品
+  - 中文科技與台灣 AI / 半導體 / 企業 IT
+  - 每日 AI 快訊與一手模型消息
+  - 產品發布與平台戰爭
+  - AI 研究趨勢與技術風險
+  - 產業深度與 AI 商業應用
+
+Be concise, information-dense, and practical. Avoid generic politics, celebrity/news filler, and vague thought leadership.
 
 EDITORIAL WEIGHTING (use these 7 criteria to judge story value — favor articles that score well across them):
   1. AI 屬性強（與 AI / ML / LLM / Agent / 模型 / AI 工具直接相關）
@@ -163,6 +430,24 @@ EDITORIAL WEIGHTING (use these 7 criteria to judge story value — favor article
   5. 安全可信（無資安疑慮、來源可信）
   6. 免費或便宜（有免費版 / 免費試用 / 低門檻）
   7. 新技術（前沿、最近發表、不是舊聞回鍋）
+
+The upstream fetcher already assigns each article:
+- rank_score: editorial score; higher means more likely to matter today.
+- quality_signals: examples include new_release, conference_signal, ai_hardware_signal,
+  semiconductor_platform, security_critical, business_impact, developer_relevance.
+
+Respect these signals. Prefer platform-level launches, major model/product releases,
+AI hardware / semiconductor news (NVIDIA, AMD, Intel, RTX, DGX, Blackwell, Rubin,
+Computex, GTC), critical security incidents, and large business/regulatory moves.
+Do NOT make generic opinion posts, generic local politics, sales/deals, webinars,
+roundups, or minor feature tweaks the headline unless no stronger story exists.
+
+When choosing the headline, prefer in this order:
+  1. Official model-lab or platform release (OpenAI / Anthropic / DeepMind / Mistral / Meta AI / xAI / Hugging Face / NVIDIA)
+  2. Benchmark/SOTA/research result that changes the frontier
+  3. Major AI hardware / compute / platform-war event
+  4. Critical AI-related security or policy risk
+  5. Major AI business application or enterprise adoption story
 
 For each of the {len(articles_input)} articles below, generate (CHINESE ONLY — do NOT write English prose):
 - title_zh: punchy Traditional Chinese title (Taiwan terminology, e.g. 元件 not 組件; NEVER simplified Chinese)
@@ -200,14 +485,11 @@ resp = create_chat_completion(
     label="article generation",
 )
 content = resp.choices[0].message.content
-m = re.search(r'```(?:json)?\s*(\{.*?\})\s*```', content, re.DOTALL)
-if m:
-    content = m.group(1)
-else:
-    s, e = content.find('{'), content.rfind('}')
-    if s >= 0 and e > s: content = content[s:e+1]
-
-generated = json.loads(content)
+generated = parse_llm_json(
+    content,
+    label="article_generation",
+    schema_hint='{"articles":[{"id":"...","title_zh":"...","lede_zh":"...","reading_time_min":3,"is_headline":false,"is_teaching_material":false}]}',
+)
 id_to_meta = {a["id"]: a for a in articles_input}
 final_articles = []
 headline_set = False
@@ -282,6 +564,9 @@ identify 0-3 that qualify as TRUE BREAKING NEWS — "anyone alive in tech should
 
 Qualifies (high bar):
 - Major foundation model GA release (GPT-x, Claude x, Gemini x, Llama x major version)
+- Official model-lab release or capability jump from OpenAI, Anthropic, Google DeepMind, Mistral, Meta AI, xAI, Hugging Face, NVIDIA
+- Benchmark/SOTA result that clearly changes the AI frontier or developer practice
+- Major AI hardware / semiconductor platform launch (NVIDIA/AMD/Intel/TSMC, RTX/DGX/CUDA/Blackwell/Rubin, Computex/GTC keynote)
 - Major security incident (widespread exploit, large breach, critical CVE in widely-used software)
 - Major government / policy move directly affecting AI, tech, or geopolitics (e.g. export controls, antitrust ruling)
 - M&A or funding round greater than ~$1B
@@ -303,13 +588,11 @@ Articles:
         label="breaking-news selector",
     )
     bn_content = bn_resp.choices[0].message.content
-    bm = re.search(r'```(?:json)?\s*(\{.*?\})\s*```', bn_content, re.DOTALL)
-    if bm:
-        bn_content = bm.group(1)
-    else:
-        s, e = bn_content.find('{'), bn_content.rfind('}')
-        if s >= 0 and e > s: bn_content = bn_content[s:e+1]
-    bn_obj = json.loads(bn_content)
+    bn_obj = parse_llm_json(
+        bn_content,
+        label="breaking_news",
+        schema_hint='{"breaking_news":["<id>"]}',
+    )
     valid_ids = {a["id"] for a in final_articles}
     breaking_ids = [i for i in (bn_obj.get("breaking_news") or []) if i in valid_ids][:3]
 except Exception as exc:
@@ -337,16 +620,15 @@ issue_obj = {
     "tagline_zh": tagline_zh,
     "tagline_en": tagline_en,
     "categories": [
-        {"id":"ai-ml","name_zh":"AI／機器學習","name_en":"AI / Machine Learning"},
+        {"id":"ai-ml","name_zh":"一手模型消息","name_en":"Model Labs"},
+        {"id":"research-papers","name_zh":"論文／Benchmark","name_en":"Papers / Benchmarks"},
+        {"id":"tech-product","name_zh":"產品發布／平台戰爭","name_en":"Products / Platform Wars"},
+        {"id":"vc-business","name_zh":"產業深度／商業應用","name_en":"Industry / Business"},
+        {"id":"security","name_zh":"技術風險","name_en":"Technical Risk"},
+        {"id":"dev","name_zh":"社群熱度／開發者","name_en":"Community / Developers"},
         {"id":"ai-tools","name_zh":"AI 工具","name_en":"AI Tools"},
-        {"id":"research-papers","name_zh":"研究論文","name_en":"Research Papers"},
-        {"id":"security","name_zh":"資訊安全","name_en":"Security"},
-        {"id":"tech-product","name_zh":"科技／產品","name_en":"Tech / Product"},
-        {"id":"dev","name_zh":"程式開發","name_en":"Development"},
-        {"id":"vc-business","name_zh":"創投／商業","name_en":"VC / Business"},
-        {"id":"science","name_zh":"科學研究","name_en":"Science"},
-        {"id":"world","name_zh":"國際時事","name_en":"World"},
-        {"id":"taiwan","name_zh":"臺灣本地","name_en":"Taiwan"},
+        {"id":"taiwan","name_zh":"中文科技","name_en":"Chinese Tech"},
+        {"id":"science","name_zh":"AI 研究趨勢","name_en":"AI Research Trends"},
     ],
     "articles": final_articles,
     "breaking_news": breaking_ids,
