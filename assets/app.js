@@ -125,6 +125,11 @@
           ${escapeHtml(issue.tagline_zh)}
           <span class="en">${escapeHtml(issue.tagline_en)}</span>
         </p>
+        <p class="masthead-cross">
+          <a href="https://polarbear0827.github.io/columns/" style="color:inherit;text-decoration:none;border:1px solid currentColor;border-radius:999px;padding:.3rem 1rem;font-size:.85rem;opacity:.85;">
+            穗稻忠武的專欄 · AI Radar · Podcast →
+          </a>
+        </p>
       </header>
     `;
   }
