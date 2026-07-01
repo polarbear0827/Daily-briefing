@@ -721,6 +721,31 @@ issue_obj = {
              "model": ACTIVE_MODEL},
 }
 
+# --- Enrich with hero images (og:image) so every issue is 圖文並茂 ------------
+# Real per-article news images beat generic stock: free, no API key, relevant.
+# Best-effort — a fetch/parse miss just leaves the article imageless (the
+# renderer falls back to a category gradient), never blocking publication.
+try:
+    from enrich_images import extract_og_image
+    from concurrent.futures import ThreadPoolExecutor
+
+    def _attach_image(a: dict) -> None:
+        if a.get("image_url"):
+            return
+        src_url = (a.get("source") or {}).get("url")
+        if not src_url:
+            return
+        img = extract_og_image(src_url)
+        if img:
+            a["image_url"] = img
+
+    with ThreadPoolExecutor(max_workers=12) as _img_pool:
+        list(_img_pool.map(_attach_image, issue_obj.get("articles", [])))
+    _img_n = sum(1 for a in issue_obj.get("articles", []) if a.get("image_url"))
+    print(f"[INFO] image enrichment: {_img_n}/{len(issue_obj.get('articles', []))} articles", file=sys.stderr)
+except Exception as _img_exc:  # noqa: BLE001 — never block publish on images
+    print(f"[WARN] image enrichment skipped: {type(_img_exc).__name__}: {_img_exc}", file=sys.stderr)
+
 # --- Write outputs -----------------------------------------------------------
 (REPO / "data/issues").mkdir(parents=True, exist_ok=True)
 issue_path = REPO / f"data/issues/{date_taipei}-{EDITION}.json"

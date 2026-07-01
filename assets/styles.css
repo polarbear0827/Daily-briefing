@@ -253,6 +253,31 @@ body {
 
 .article:hover { opacity: 0.75; }
 
+.article-media {
+  margin-bottom: 16px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--rule, #e8e4dc);
+}
+
+.article-media img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.article:hover .article-media img { transform: scale(1.03); }
+
+.article.is-headline .article-media img {
+  aspect-ratio: 2 / 1;
+}
+
+@media (min-width: 900px) {
+  .article.is-headline .article-media img { aspect-ratio: 21 / 9; }
+}
+
 .article-kicker {
   display: flex;
   gap: 8px;

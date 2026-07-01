@@ -180,9 +180,13 @@
       : '';
     const readingTime = article.source.reading_time_min || 3;
     const publishedAgo = relativeTime(article.source.published_at);
+    const imageHtml = article.image_url
+      ? `<div class="article-media"><img src="${escapeAttr(article.image_url)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.article-media').remove()"></div>`
+      : '';
 
     return `
       <article class="article${headlineClass}${breakingClass}" data-id="${article.id}">
+        ${imageHtml}
         <div class="article-kicker">
           <span class="kicker-badge">${kickerLabel}</span>
           ${article.is_teaching_material ? '<span class="teaching-badge" title="教學素材：適合企業學員上手的 AI 工具或概念">🎓 教學素材</span>' : ''}
