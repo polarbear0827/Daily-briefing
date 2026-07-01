@@ -73,16 +73,17 @@ OPENAI_ENV = load_env_file(Path("/home/hermes/.hermes/credentials/openai.env"))
 
 PROVIDERS: list[dict[str, object]] = []
 
-# Optional writer: Grok (xai-oauth) via hermes — punchier, more community-aware
-# voice. OPT-IN only (BRIEFING_ENABLE_GROK=1): grok-4.3 via the hermes-chat
-# subprocess times out on the full ~27-article single-shot prompt (>840s), so it
-# is NOT the default. Revisit once article generation is batched into smaller
-# grok calls. When enabled, Codex/gpt-5.5 below stays as the fast fallback.
-if os.environ.get("BRIEFING_ENABLE_GROK", "").strip().lower() in {"1", "true", "yes"}:
+# Primary writer: Grok (xai-oauth) via hermes. Article generation is BATCHED
+# (see BRIEFING_CHUNK_SIZE below) into small per-call chunks so grok-4.3 never
+# hits the single-shot timeout it used to on the full ~27-article prompt.
+# Grok is the default so the briefing does not burn Codex/gpt-5.5 quota; Codex
+# stays only as an emergency fallback if a grok chunk fails. Disable grok with
+# BRIEFING_DISABLE_GROK=1.
+if os.environ.get("BRIEFING_DISABLE_GROK", "").strip().lower() not in {"1", "true", "yes"}:
     PROVIDERS.append({
         "name": "grok",
         "model": "grok-4.3",
-        "client": HermesCodexClient("grok-4.3", provider="xai-oauth", timeout=840),
+        "client": HermesCodexClient("grok-4.3", provider="xai-oauth", timeout=300),
     })
 
 # Fallback: ChatGPT Codex OAuth via hermes (gpt-5.5). Use unless explicitly
@@ -522,7 +523,7 @@ When choosing the headline, prefer in this order:
   4. Critical AI-related security or policy risk
   5. Major AI business application or enterprise adoption story
 
-For each of the {len(articles_input)} articles below, generate (CHINESE ONLY — do NOT write English prose):
+For each of the articles below, generate (CHINESE ONLY — do NOT write English prose):
 - title_zh: punchy Traditional Chinese title (Taiwan terminology, e.g. 元件 not 組件; NEVER simplified Chinese)
 - lede_zh: 用繁體中文寫一段**完整、有觀點的原創報導**（不是一句話概述、不是條列），350-500 字，4-6 句連貫成文。
   必須涵蓋：① 發生了什麼事（具體） ② 為何重要 ③ 對台灣 AI 工程師 / 產品開發者 / 企業的實際影響或可上手之處
@@ -550,23 +551,34 @@ Respond ONLY with a JSON object:
                  "is_teaching_material": false}}, ...]}}
 
 Keep id values exactly as provided.
-
-Source articles:
-{json.dumps(articles_input, ensure_ascii=False, indent=1)}
 """
 
-print(f"[INFO] {date_taipei} {EDITION} issue=#{issue_number}; providers={[p['name'] for p in PROVIDERS]}", file=sys.stderr)
-resp = create_chat_completion(
-    messages=[{"role": "user", "content": prompt}],
-    max_tokens=24000,
-    label="article generation",
-)
-content = resp.choices[0].message.content
-generated = parse_llm_json(
-    content,
-    label="article_generation",
-    schema_hint='{"articles":[{"id":"...","title_zh":"...","lede_zh":"...","reading_time_min":3,"is_headline":false,"is_teaching_material":false}]}',
-)
+# Batched generation: grok-4.3 times out on a single ~27-article prompt, so we
+# split into small chunks and call the writer once per chunk. Keeps grok as the
+# primary writer (no Codex/gpt-5.5 quota burn) while staying within its latency.
+CHUNK_SIZE = max(1, int(os.environ.get("BRIEFING_CHUNK_SIZE", "5")))
+_chunks = [articles_input[i:i + CHUNK_SIZE] for i in range(0, len(articles_input), CHUNK_SIZE)]
+print(f"[INFO] {date_taipei} {EDITION} issue=#{issue_number}; providers={[p['name'] for p in PROVIDERS]}; "
+      f"{len(articles_input)} articles in {len(_chunks)} chunk(s) of {CHUNK_SIZE}", file=sys.stderr)
+generated = {"articles": []}
+for _ci, _chunk in enumerate(_chunks, 1):
+    _chunk_prompt = f"{prompt}\n\nSource articles:\n{json.dumps(_chunk, ensure_ascii=False, indent=1)}"
+    _resp = create_chat_completion(
+        messages=[{"role": "user", "content": _chunk_prompt}],
+        max_tokens=8000,
+        label=f"article generation (chunk {_ci}/{len(_chunks)})",
+    )
+    _part = parse_llm_json(
+        _resp.choices[0].message.content,
+        label=f"article_generation_chunk_{_ci}",
+        schema_hint='{"articles":[{"id":"...","title_zh":"...","lede_zh":"...","reading_time_min":3,"is_headline":false,"is_teaching_material":false}]}',
+    )
+    generated["articles"].extend(_part.get("articles", []))
+
+# The real headline is enforced downstream (first_party_headline_id); clear any
+# per-chunk is_headline so batching never yields multiple headlines.
+for _ga in generated["articles"]:
+    _ga["is_headline"] = False
 id_to_meta = {a["id"]: a for a in articles_input}
 final_articles = []
 headline_set = False
