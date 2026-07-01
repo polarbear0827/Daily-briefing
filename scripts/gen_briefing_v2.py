@@ -33,13 +33,14 @@ class HermesCodexClient:
     `hermes chat --provider openai-codex` subprocess so the Daily Briefing can
     use the live Codex OAuth credential instead of a standalone API key."""
 
-    def __init__(self, model: str, timeout: int = 300):
+    def __init__(self, model: str, timeout: int = 300, provider: str = "openai-codex"):
         self._timeout = timeout
+        self._provider = provider
         self.chat = SimpleNamespace(completions=SimpleNamespace(create=self._create))
 
     def _create(self, *, model: str, messages: list[dict], **_kwargs):
         prompt = "\n\n".join(str(m.get("content", "")) for m in messages).strip()
-        cmd = [HERMES_BIN, "chat", "--provider", "openai-codex",
+        cmd = [HERMES_BIN, "chat", "--provider", self._provider,
                "--model", model, "--toolsets", "safe", "-Q", "-q", prompt]
         result = subprocess.run(cmd, text=True, capture_output=True,
                                 timeout=self._timeout + 30)
@@ -72,7 +73,19 @@ OPENAI_ENV = load_env_file(Path("/home/hermes/.hermes/credentials/openai.env"))
 
 PROVIDERS: list[dict[str, object]] = []
 
-# Primary: ChatGPT Codex OAuth via hermes (gpt-5.5). Use unless explicitly
+# Optional writer: Grok (xai-oauth) via hermes — punchier, more community-aware
+# voice. OPT-IN only (BRIEFING_ENABLE_GROK=1): grok-4.3 via the hermes-chat
+# subprocess times out on the full ~27-article single-shot prompt (>840s), so it
+# is NOT the default. Revisit once article generation is batched into smaller
+# grok calls. When enabled, Codex/gpt-5.5 below stays as the fast fallback.
+if os.environ.get("BRIEFING_ENABLE_GROK", "").strip().lower() in {"1", "true", "yes"}:
+    PROVIDERS.append({
+        "name": "grok",
+        "model": "grok-4.3",
+        "client": HermesCodexClient("grok-4.3", provider="xai-oauth", timeout=840),
+    })
+
+# Fallback: ChatGPT Codex OAuth via hermes (gpt-5.5). Use unless explicitly
 # disabled. This is the live credential as of 2026-06-24 after the standalone
 # OpenAI API key was revoked server-side (401 invalid_api_key).
 if os.environ.get("BRIEFING_DISABLE_CODEX", "").strip().lower() not in {"1", "true", "yes"}:
@@ -240,13 +253,15 @@ else:
 # --- Balanced selection with high-impact override ----------------------------
 TARGET = {
     "ai-ml": 5, "research-papers": 3, "tech-product": 3, "vc-business": 2,
-    "security": 2, "dev": 2, "ai-tools": 2, "taiwan": 2, "science": 1,
+    "security": 2, "dev": 2, "ai-tools": 2, "taiwan": 4,
+    "enterprise-cases": 2, "science": 1,
 }
+MIN_FLOORS = {"taiwan": 4, "enterprise-cases": 2}
 
 MIN_SCORE = {
     "ai-ml": 1.6, "ai-tools": 1.4, "research-papers": 1.2, "security": 1.2,
     "tech-product": 1.45, "dev": 1.1, "vc-business": 1.35, "science": 1.0,
-    "world": 1.45, "taiwan": 1.35,
+    "world": 1.45, "taiwan": 1.35, "enterprise-cases": 1.55,
 }
 HIGH_IMPACT_SIGNALS = {
     "new_release", "conference_signal", "ai_hardware_signal",
@@ -285,6 +300,30 @@ def _is_platform_event(article: dict) -> bool:
     )
 
 
+official_sources = {
+    "OpenAI Blog", "Anthropic News", "Google DeepMind Blog", "Google AI Blog",
+    "Mistral News", "Meta AI Blog", "xAI News", "Hugging Face Blog",
+}
+MODEL_RELEASE_TITLE_RE = re.compile(
+    r"\b(gpt|claude|gemini|gemma|mistral|llama|grok|opus|sonnet|haiku|"
+    r"codestral|devstral|magistral|voxtral|sam|model)\b.*\b(\d|preview|ga|api|"
+    r"release|launch|introduc|announc|open weights?)\b|"
+    r"\b(launch|introduc|announc|release)\b.*\b(gpt|claude|gemini|llama|grok|mistral|model)\b",
+    re.I,
+)
+
+
+def _is_first_party_model_release(article: dict) -> bool:
+    if article.get("source_name") not in official_sources:
+        return False
+    text = f"{article.get('title') or ''} {article.get('summary') or ''}"
+    sig = _signals(article)
+    return "official_model_release" in sig or (
+        bool(sig & {"new_release", "official_model_source", "official_page"})
+        and bool(MODEL_RELEASE_TITLE_RE.search(text))
+    )
+
+
 selected = {cat: [] for cat in TARGET}
 used: set[str] = set()
 
@@ -320,6 +359,18 @@ for cat, n in TARGET.items():
         selected[cat].append(article)
         used.add(key)
 
+# Minimum floors for local/enterprise categories: these are lower-bound quotas,
+# not just soft caps, so they must be filled before generic backfill competes.
+for cat, floor in MIN_FLOORS.items():
+    for article in _sorted_candidates(cat):
+        if len(selected[cat]) >= floor:
+            break
+        key = _article_key(article)
+        if not key or key in used:
+            continue
+        selected[cat].append(article)
+        used.add(key)
+
 # Hardware/platform-event safety valve. This catches NVIDIA/AMD/Intel/TSMC
 # platform launches that might otherwise lose to generic AI/business stories.
 selected_flat = [a for articles in selected.values() for a in articles]
@@ -343,14 +394,28 @@ if not any(_is_platform_event(a) for a in selected_flat):
             used.add(key)
         break
 
-# Official model-lab safety valve. If official OpenAI/Anthropic/DeepMind/Mistral/
-# Meta/xAI/Hugging Face news is available, keep at least one such item.
-official_sources = {
-    "OpenAI Blog", "Anthropic News", "Google DeepMind Blog", "Mistral News",
-    "Meta AI Blog", "xAI News", "Hugging Face Blog",
-}
+# Official model-lab safety valve. If a first-party model release is available,
+# keep the strongest one and later force it to headline.
 selected_flat = [a for articles in selected.values() for a in articles]
-if not any((a.get("source_name") in official_sources) for a in selected_flat):
+first_party_release_candidates = [
+    article for cat, article in global_pool
+    if cat == "ai-ml" and _is_first_party_model_release(article)
+]
+if first_party_release_candidates and not any(_is_first_party_model_release(a) for a in selected_flat):
+    article = first_party_release_candidates[0]
+    cat = "ai-ml"
+    key = _article_key(article)
+    if key and key not in used:
+        if len(selected[cat]) < TARGET[cat] + 1:
+            selected[cat].append(article)
+            used.add(key)
+        else:
+            replace_at = min(range(len(selected[cat])), key=lambda i: _score(selected[cat][i]))
+            old_key = _article_key(selected[cat][replace_at])
+            selected[cat][replace_at] = article
+            used.discard(old_key)
+            used.add(key)
+elif not any((a.get("source_name") in official_sources) for a in selected_flat):
     for cat, article in global_pool:
         if cat != "ai-ml" or article.get("source_name") not in official_sources:
             continue
@@ -401,6 +466,14 @@ for cat, arts in selected.items():
             "quality_signals": a.get("quality_signals", []),
         })
         idx += 1
+first_party_headline_id = next(
+    (a["id"] for a in articles_input if a["source_name"] in official_sources
+     and (
+         "official_model_release" in set(a.get("quality_signals") or [])
+         or MODEL_RELEASE_TITLE_RE.search(f"{a.get('title_orig') or ''} {a.get('summary_orig') or ''}")
+     )),
+    None,
+)
 
 edition_zh = "早報" if EDITION == "morning" else "晚報"
 edition_en = "Morning Edition" if EDITION == "morning" else "Evening Edition"
@@ -451,8 +524,12 @@ When choosing the headline, prefer in this order:
 
 For each of the {len(articles_input)} articles below, generate (CHINESE ONLY — do NOT write English prose):
 - title_zh: punchy Traditional Chinese title (Taiwan terminology, e.g. 元件 not 組件; NEVER simplified Chinese)
-- lede_zh: a flowing Traditional Chinese **prose summary** of 150-300 characters, written as 2-3 connected sentences
-  (NOT bullet points). Cover what happened, why it matters, and the practical takeaway.
+- lede_zh: 用繁體中文寫一段**完整、有觀點的原創報導**（不是一句話概述、不是條列），350-500 字，4-6 句連貫成文。
+  必須涵蓋：① 發生了什麼事（具體） ② 為何重要 ③ 對台灣 AI 工程師 / 產品開發者 / 企業的實際影響或可上手之處
+  ④ 若你掌握相關資訊，補一句開發者 / 技術社群對它的討論角度或反應（例如爭議點、期待、比較對象）。
+  用生動、有記者敘事感的筆調，帶讀者理解來龍去脈，不要八股、不要空泛的「值得關注」。
+  ⚠️ 嚴禁捏造：不可虛構具體數字、引言、跑分或某人說過的話；不確定的社群反應請用「開發者社群普遍關注…」「技術圈對此看法分歧…」這類概括表述，不要編造具體來源。
+  頭條那則請寫得最完整（可到 500 字）。
 - reading_time_min: integer 2-6
 - is_headline: true for exactly ONE article (most impactful AI/frontier news)
 - is_teaching_material: true ONLY if the article meets MOST of the 7 criteria above AND introduces a tool /
@@ -481,7 +558,7 @@ Source articles:
 print(f"[INFO] {date_taipei} {EDITION} issue=#{issue_number}; providers={[p['name'] for p in PROVIDERS]}", file=sys.stderr)
 resp = create_chat_completion(
     messages=[{"role": "user", "content": prompt}],
-    max_tokens=16000,
+    max_tokens=24000,
     label="article generation",
 )
 content = resp.choices[0].message.content
@@ -546,7 +623,10 @@ for meta in articles_input:
                    "credibility_tier": meta["credibility_tier"]},
         "fetched_via": "rss",
     })
-if not headline_set and final_articles:
+if first_party_headline_id and any(a["id"] == first_party_headline_id for a in final_articles):
+    for article in final_articles:
+        article["is_headline"] = article["id"] == first_party_headline_id
+elif not headline_set and final_articles:
     final_articles[0]["is_headline"] = True
 
 # --- Stage 2: Breaking News selector -----------------------------------------
@@ -628,6 +708,7 @@ issue_obj = {
         {"id":"dev","name_zh":"社群熱度／開發者","name_en":"Community / Developers"},
         {"id":"ai-tools","name_zh":"AI 工具","name_en":"AI Tools"},
         {"id":"taiwan","name_zh":"中文科技","name_en":"Chinese Tech"},
+        {"id":"enterprise-cases","name_zh":"企業 AI 案例","name_en":"Enterprise AI Cases"},
         {"id":"science","name_zh":"AI 研究趨勢","name_en":"AI Research Trends"},
     ],
     "articles": final_articles,

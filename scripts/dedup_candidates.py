@@ -18,14 +18,17 @@ Side effects:
 
 Defaults (per user 2026-05-03 decision):
     Model: paraphrase-multilingual-MiniLM-L12-v2 (384 dim, ~120MB, multilingual)
-    Threshold: 0.85 (drop if cosine >= 0.85)
-    Threshold (within-batch fallback): 0.75 if final count < MIN_KEEP
-    History window: 7 days
+Threshold: 0.78 (drop if cosine >= 0.78)
+Cross-history semantic dedup is enabled by default and compares candidates
+against actually published issue articles from the last 7 days. It deliberately
+does not append prefetch candidates to history, so retries cannot poison the
+next morning/evening run.
 """
 from __future__ import annotations
 
 import json
 import logging
+import os
 import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -41,10 +44,11 @@ CANDIDATES_FILE = Path("/tmp/candidates.json")
 LOG_FILE = Path("/tmp/dedup_log.json")
 
 MODEL_NAME = "paraphrase-multilingual-MiniLM-L12-v2"
-THRESHOLD = 0.85          # drop if similarity >= this
+THRESHOLD = 0.78          # drop if similarity >= this
 FALLBACK_THRESHOLD = 0.75 # if too few survive, relax to this for batch dedup only
 MIN_KEEP_PER_CAT = 2      # if a category has >=2 originally, try to keep >=2
 HISTORY_DAYS = 7
+CROSS_HISTORY_ENABLED = os.environ.get("DAILY_BRIEFING_CROSS_HISTORY_DEDUP", "1").lower() not in {"0", "false", "no"}
 
 TIER_RANK = {"primary": 3, "secondary": 2, "tertiary": 1}
 
@@ -62,9 +66,15 @@ def article_text(a: dict) -> str:
 def article_priority(a: dict) -> tuple:
     """Higher = better. Used to pick cluster representative."""
     tier = TIER_RANK.get(a.get("source_tier", "secondary"), 1)
+    rank_score = float(a.get("rank_score") or 0)
+    signals = set(a.get("quality_signals") or [])
+    protected = int(bool(signals & {
+        "new_release", "conference_signal", "ai_hardware_signal",
+        "semiconductor_platform", "security_critical", "business_impact",
+    }))
     # Earlier published_at = better (more original / scoop)
     pub = a.get("published_at") or "9999"
-    return (tier, -ord(pub[0]) if pub else 0, pub)
+    return (protected, rank_score, tier, pub)
 
 
 def load_history() -> list[dict]:
@@ -82,6 +92,69 @@ def load_history() -> list[dict]:
 def save_history(entries: list[dict]) -> None:
     HISTORY_FILE.parent.mkdir(parents=True, exist_ok=True)
     HISTORY_FILE.write_text(json.dumps(entries, ensure_ascii=False))
+
+
+def _issue_date_from_stem(stem: str) -> str | None:
+    """Supports both legacy YYYY-MM-DD and dual-edition YYYY-MM-DD-morning files."""
+    date_part = stem[:10]
+    try:
+        datetime.strptime(date_part, "%Y-%m-%d")
+        return date_part
+    except ValueError:
+        return None
+
+
+def load_history_from_issues(history_days: int = HISTORY_DAYS) -> list[dict]:
+    """Build semantic history from published issues, not prefetch attempts."""
+    issues_dir = REPO / "data" / "issues"
+    if not issues_dir.exists():
+        return []
+    cutoff = (datetime.now(timezone.utc) - timedelta(days=history_days)).date()
+    rows: list[dict[str, Any]] = []
+    seen_urls: set[str] = set()
+    for issue_file in sorted(issues_dir.glob("*.json"), reverse=True):
+        date_part = _issue_date_from_stem(issue_file.stem)
+        if not date_part:
+            continue
+        file_date = datetime.strptime(date_part, "%Y-%m-%d").date()
+        if file_date < cutoff:
+            break
+        try:
+            issue = json.loads(issue_file.read_text(encoding="utf-8"))
+        except Exception as exc:
+            log.warning(f"could not read issue history {issue_file.name}: {exc}")
+            continue
+        for article in issue.get("articles", []):
+            source = article.get("source") or {}
+            url = str(source.get("url") or "").strip()
+            if url and url in seen_urls:
+                continue
+            title = str(article.get("title_zh") or article.get("title_en") or "").strip()
+            lede = str(article.get("lede_zh") or article.get("lede_en") or "").strip()
+            if not title and not lede:
+                continue
+            rows.append({
+                "title": title,
+                "url": url,
+                "recorded_at": f"{date_part}T00:00:00+00:00",
+                "text": f"{title}\n\n{lede}".strip(),
+            })
+            if url:
+                seen_urls.add(url)
+    if not rows:
+        return []
+    model = SentenceTransformer(MODEL_NAME)
+    embs = model.encode(
+        [r["text"] for r in rows],
+        batch_size=32,
+        normalize_embeddings=True,
+        show_progress_bar=False,
+        convert_to_numpy=True,
+    ).astype(np.float32)
+    for row, emb in zip(rows, embs):
+        row["embedding"] = emb.tolist()
+        row.pop("text", None)
+    return rows
 
 
 def cosine_matrix(a: np.ndarray, b: np.ndarray) -> np.ndarray:
@@ -191,17 +264,24 @@ def main() -> int:
     kept_idx, batch_drops = within_batch_dedup(flat, embs, THRESHOLD)
     log.info(f"within-batch: {len(flat)} → {len(kept_idx)} (dropped {len(batch_drops)})")
 
-    # Stage 2: cross-history filter
-    history = load_history()
-    log.info(f"history entries (last {HISTORY_DAYS}d): {len(history)}")
-    kept_after_hist_local, hist_drops = cross_history_filter(
-        [flat[i] for i in kept_idx],
-        embs[kept_idx],
-        history,
-        THRESHOLD,
-    )
-    final_idx = [kept_idx[j] for j in kept_after_hist_local]
-    log.info(f"cross-history: {len(kept_idx)} → {len(final_idx)} (dropped {len(hist_drops)})")
+    # Stage 2: cross-history semantic filter against actually published issues.
+    # Do not use candidate-prefetch history here: retries can run fetch multiple
+    # times before anything publishes and would otherwise poison the next edition.
+    history = load_history_from_issues() if CROSS_HISTORY_ENABLED else []
+    if CROSS_HISTORY_ENABLED:
+        log.info(f"published issue history entries (last {HISTORY_DAYS}d): {len(history)}")
+        kept_after_hist_local, hist_drops = cross_history_filter(
+            [flat[i] for i in kept_idx],
+            embs[kept_idx],
+            history,
+            THRESHOLD,
+        )
+        final_idx = [kept_idx[j] for j in kept_after_hist_local]
+        log.info(f"cross-history: {len(kept_idx)} → {len(final_idx)} (dropped {len(hist_drops)})")
+    else:
+        hist_drops = []
+        final_idx = kept_idx
+        log.info("cross-history: disabled by DAILY_BRIEFING_CROSS_HISTORY_DEDUP=0")
 
     # Rebuild candidates_by_category
     new_cbc: dict[str, list[dict]] = {cat: [] for cat in cbc.keys()}
@@ -225,19 +305,7 @@ def main() -> int:
     CANDIDATES_FILE.write_text(json.dumps(data, ensure_ascii=False))
     log.info(f"wrote {CANDIDATES_FILE}: {len(final_idx)} survivors")
 
-    # Append surviving articles to history
     now_iso = datetime.now(timezone.utc).isoformat()
-    new_history_entries = [
-        {
-            "title": flat[j].get("title", ""),
-            "url": flat[j].get("url", ""),
-            "recorded_at": now_iso,
-            "embedding": embs[j].tolist(),
-        }
-        for j in final_idx
-    ]
-    save_history(history + new_history_entries)
-    log.info(f"history updated: {len(history)} + {len(new_history_entries)} = {len(history) + len(new_history_entries)}")
 
     # Log drops for tuning
     LOG_FILE.write_text(json.dumps({
