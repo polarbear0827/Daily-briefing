@@ -278,6 +278,33 @@ body {
   .article.is-headline .article-media img { aspect-ratio: 21 / 9; }
 }
 
+.article-pulse {
+  margin: 14px 0 4px;
+  padding: 12px 16px;
+  border-left: 3px solid var(--accent);
+  background: rgba(0, 0, 0, 0.03);
+  border-radius: 0 8px 8px 0;
+}
+
+.article-pulse .pulse-label {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.article-pulse p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--ink);
+  opacity: 0.85;
+}
+
 .article-kicker {
   display: flex;
   gap: 8px;

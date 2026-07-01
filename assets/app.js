@@ -183,6 +183,9 @@
     const imageHtml = article.image_url
       ? `<div class="article-media"><img src="${escapeAttr(article.image_url)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.article-media').remove()"></div>`
       : '';
+    const pulseHtml = article.community_pulse
+      ? `<div class="article-pulse"><span class="pulse-label">💬 社群怎麼看 · On X（Grok）</span><p>${escapeHtml(article.community_pulse)}</p></div>`
+      : '';
 
     return `
       <article class="article${headlineClass}${breakingClass}" data-id="${article.id}">
@@ -195,6 +198,7 @@
         ${article.title_en && article.title_en !== article.title_zh ? `<p class="article-title-en">${escapeHtml(article.title_en)}</p>` : ''}
         <p class="article-lede article-lede--prose">${escapeHtml(article.lede_zh)}</p>
         ${bulletsHtml}
+        ${pulseHtml}
         <div class="article-footer">
           <span class="article-source">${escapeHtml(article.source.name)}</span>
           <span class="dot">·</span>

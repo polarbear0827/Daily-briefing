@@ -758,6 +758,25 @@ try:
 except Exception as _img_exc:  # noqa: BLE001 — never block publish on images
     print(f"[WARN] image enrichment skipped: {type(_img_exc).__name__}: {_img_exc}", file=sys.stderr)
 
+# --- Community Pulse: Grok + x_search live X/community sentiment --------------
+# Grok's real edge: it searches X live. We spend it where it matters — a short
+# 「社群怎麼看」on the top ~5 stories. Sequential (concurrent grok calls contend
+# on the xAI OAuth). Best-effort; never blocks publish. Skip with
+# BRIEFING_SKIP_PULSE=1.
+if os.environ.get("BRIEFING_SKIP_PULSE", "").strip().lower() not in {"1", "true", "yes"}:
+    try:
+        from community_pulse import _pick_stories, _query_grok
+        _stories = _pick_stories(issue_obj.get("articles", []))
+        for _pa in _stories:
+            _pulse = _query_grok(_pa.get("title_zh", ""), (_pa.get("source") or {}).get("name", ""))
+            if _pulse:
+                _pa["community_pulse"] = _pulse
+                _pa["community_pulse_source"] = "Grok · x_search"
+        _pn = sum(1 for _a in issue_obj.get("articles", []) if _a.get("community_pulse"))
+        print(f"[INFO] community pulse: {_pn}/{len(_stories)} top stories", file=sys.stderr)
+    except Exception as _pexc:  # noqa: BLE001 — never block publish on pulse
+        print(f"[WARN] community pulse skipped: {type(_pexc).__name__}: {_pexc}", file=sys.stderr)
+
 # --- Write outputs -----------------------------------------------------------
 (REPO / "data/issues").mkdir(parents=True, exist_ok=True)
 issue_path = REPO / f"data/issues/{date_taipei}-{EDITION}.json"
