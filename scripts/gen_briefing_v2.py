@@ -738,23 +738,33 @@ issue_obj = {
 # Best-effort — a fetch/parse miss just leaves the article imageless (the
 # renderer falls back to a category gradient), never blocking publication.
 try:
-    from enrich_images import extract_og_image
+    from enrich_images import extract_og_image, _unsplash_key, _query_from_article, unsplash_image
     from concurrent.futures import ThreadPoolExecutor
+    _ukey = _unsplash_key()
 
     def _attach_image(a: dict) -> None:
         if a.get("image_url"):
             return
         src_url = (a.get("source") or {}).get("url")
-        if not src_url:
-            return
-        img = extract_og_image(src_url)
+        img = extract_og_image(src_url) if src_url else None
         if img:
             a["image_url"] = img
+            return
+        # 來源沒有 og:image → Unsplash 後援(主題相關圖,key 只在此伺服器端用)
+        if _ukey:
+            u, credit = unsplash_image(_query_from_article(a), _ukey)
+            if u:
+                a["image_url"] = u
+                a["image_source"] = "unsplash"
+                if credit:
+                    a["image_credit"] = credit
 
     with ThreadPoolExecutor(max_workers=12) as _img_pool:
         list(_img_pool.map(_attach_image, issue_obj.get("articles", [])))
     _img_n = sum(1 for a in issue_obj.get("articles", []) if a.get("image_url"))
-    print(f"[INFO] image enrichment: {_img_n}/{len(issue_obj.get('articles', []))} articles", file=sys.stderr)
+    _img_us = sum(1 for a in issue_obj.get("articles", []) if a.get("image_source") == "unsplash")
+    print(f"[INFO] image enrichment: {_img_n}/{len(issue_obj.get('articles', []))} articles"
+          f" ({_img_us} via Unsplash)", file=sys.stderr)
 except Exception as _img_exc:  # noqa: BLE001 — never block publish on images
     print(f"[WARN] image enrichment skipped: {type(_img_exc).__name__}: {_img_exc}", file=sys.stderr)
 
@@ -765,15 +775,19 @@ except Exception as _img_exc:  # noqa: BLE001 — never block publish on images
 # BRIEFING_SKIP_PULSE=1.
 if os.environ.get("BRIEFING_SKIP_PULSE", "").strip().lower() not in {"1", "true", "yes"}:
     try:
-        from community_pulse import _pick_stories, _query_grok
-        _stories = _pick_stories(issue_obj.get("articles", []))
+        from community_pulse import _query_grok
+        # Every story gets a live x_search attempt (user wants full coverage).
+        # Empty-chatter stories (e.g. arxiv papers) simply get nothing — never
+        # fabricated. Sequential, so this adds real time; the pipeline timeout is
+        # sized for it.
+        _stories = list(issue_obj.get("articles", []))
         for _pa in _stories:
             _pulse = _query_grok(_pa.get("title_zh", ""), (_pa.get("source") or {}).get("name", ""))
             if _pulse:
                 _pa["community_pulse"] = _pulse
                 _pa["community_pulse_source"] = "Grok · x_search"
         _pn = sum(1 for _a in issue_obj.get("articles", []) if _a.get("community_pulse"))
-        print(f"[INFO] community pulse: {_pn}/{len(_stories)} top stories", file=sys.stderr)
+        print(f"[INFO] community pulse: {_pn}/{len(_stories)} stories", file=sys.stderr)
     except Exception as _pexc:  # noqa: BLE001 — never block publish on pulse
         print(f"[WARN] community pulse skipped: {type(_pexc).__name__}: {_pexc}", file=sys.stderr)
 
