@@ -16,5 +16,18 @@
   <div id="app"></div>
   <div id="reader-overlay" class="reader-overlay"></div>
   <script src="assets/app.js"></script>
+
+  <!-- ▼ Analytics：GoatCounter（免費、隱私友善、無 cookie）
+       啟用（30 秒）：
+       1. 到 https://www.goatcounter.com 註冊，取一個 code（例如 daily-briefing）
+       2. 把下面兩處 YOURCODE 換成你的 code
+       3. commit push 即生效；後台 https://<code>.goatcounter.com 看流量
+       文章點開會另送事件（path = article/<id>）→ 看得到「哪幾則被讀最多」。
+       尚未填 code 前，count.js 會靜默失敗、不影響網站。 -->
+  <script>
+    window.__GC_ENDPOINT = 'https://YOURCODE.goatcounter.com/count';
+  </script>
+  <script data-goatcounter="https://YOURCODE.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

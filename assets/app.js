@@ -327,6 +327,12 @@
   function openReader(article, cat) {
     const overlay = qs('#reader-overlay');
     markRead(article.id);
+    // Analytics(GoatCounter):記一次文章開啟事件 → 看哪幾則被讀最多
+    try {
+      if (window.goatcounter && typeof window.goatcounter.count === 'function') {
+        window.goatcounter.count({ path: 'article/' + article.id, title: article.title_zh, event: true });
+      }
+    } catch (e) { /* analytics 不可阻斷閱讀 */ }
     const navList = window.__navList || [];
     const _idx = navList.findIndex(a => a.id === article.id);
     const bzArr = Array.isArray(article.bullets_zh) ? article.bullets_zh.filter(b => b && String(b).trim()) : [];
