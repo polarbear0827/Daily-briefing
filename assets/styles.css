@@ -114,11 +114,11 @@ body {
 .masthead-title {
   text-align: center;
   font-family: var(--font-display-zh);
-  font-size: clamp(48px, 13vw, 180px);
+  font-size: clamp(40px, 8vw, 92px);
   font-weight: 900;
   letter-spacing: 0.08em;
   line-height: 1;
-  margin: 24px 0;
+  margin: 12px 0 6px;
   color: var(--ink);
 }
 
@@ -242,7 +242,11 @@ body {
 }
 
 @media (min-width: 900px) {
-  .articles { grid-template-columns: 1fr 1fr; gap: 56px 64px; }
+  .articles { grid-template-columns: 1fr 1fr; gap: 36px 44px; }
+  .article.is-headline { grid-column: 1 / -1; }
+}
+@media (min-width: 1200px) {
+  .articles { grid-template-columns: 1fr 1fr 1fr; gap: 36px 40px; }
   .article.is-headline { grid-column: 1 / -1; }
 }
 
@@ -356,6 +360,54 @@ body {
   color: var(--ink-soft);
   margin-bottom: 16px;
   font-style: italic;
+}
+
+/* 卡面摘要:只顯示兩行,全文在點進去的 reader 裡 */
+.article-summary {
+  font-family: var(--font-body-zh);
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  margin-bottom: 8px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.article.is-headline .article-summary { -webkit-line-clamp: 3; line-clamp: 3; font-size: 16px; }
+.article-more {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  opacity: 0.85;
+  margin-bottom: 14px;
+}
+.article:hover .article-more { opacity: 1; }
+
+/* reader 裡的社群觀點 */
+.reader-pulse {
+  margin: 24px 0 8px;
+  padding: 18px 20px;
+  border-left: 3px solid var(--accent);
+  background: rgba(0, 0, 0, 0.03);
+  border-radius: 0 8px 8px 0;
+}
+.reader-pulse-label {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+.reader-pulse p {
+  font-family: var(--font-body-zh);
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--ink-soft);
+  margin: 0;
 }
 
 .article-bullets {

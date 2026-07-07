@@ -196,9 +196,8 @@
         </div>
         <h3 class="article-title">${escapeHtml(article.title_zh)}</h3>
         ${article.title_en && article.title_en !== article.title_zh ? `<p class="article-title-en">${escapeHtml(article.title_en)}</p>` : ''}
-        <p class="article-lede article-lede--prose">${escapeHtml(article.lede_zh)}</p>
-        ${bulletsHtml}
-        ${pulseHtml}
+        <p class="article-summary">${escapeHtml(article.lede_zh)}</p>
+        <span class="article-more">閱讀全文 →</span>
         <div class="article-footer">
           <span class="article-source">${escapeHtml(article.source.name)}</span>
           <span class="dot">·</span>
@@ -314,6 +313,11 @@
 
         <ul class="reader-bullets zh-only"${bulletsZh ? '' : ' style="display:none;"'}>${bulletsZh}</ul>
         <ul class="reader-bullets en-only"${bulletsEn ? '' : ' style="display:none;"'}>${bulletsEn}</ul>
+
+        ${article.community_pulse ? `<div class="reader-pulse">
+          <div class="reader-pulse-label">💬 社群怎麼看 · On X（Grok）</div>
+          <p>${escapeHtml(article.community_pulse)}</p>
+        </div>` : ''}
 
         <div class="reader-source-block">
           <div class="label">原文來源 · Source</div>
