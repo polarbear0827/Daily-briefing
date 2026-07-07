@@ -387,6 +387,25 @@ body {
 }
 .article:hover .article-more { opacity: 1; }
 
+/* 產業標籤 chip(機器人/金融/製造/零售)*/
+.article-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+.itag {
+  font-family: var(--font-ui);
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  color: var(--ink-soft);
+  background: rgba(0, 0, 0, 0.045);
+  border: 1px solid var(--rule-soft, rgba(0, 0, 0, 0.1));
+  border-radius: 999px;
+  padding: 2px 10px;
+  white-space: nowrap;
+}
+
 /* reader 裡的社群觀點 */
 .reader-pulse {
   margin: 24px 0 8px;

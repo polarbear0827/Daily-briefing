@@ -186,6 +186,14 @@
     const pulseHtml = article.community_pulse
       ? `<div class="article-pulse"><span class="pulse-label">💬 社群怎麼看 · On X（Grok）</span><p>${escapeHtml(article.community_pulse)}</p></div>`
       : '';
+    // 產業標籤 chip(垂直導覽);不重複顯示等於本身分類的標籤(robotics 分類就不再掛「機器人」)
+    const TAG_EMOJI = { '機器人': '🤖', '金融': '💰', '製造': '🏭', '零售': '🛒' };
+    const CAT_OWN_TAG = { robotics: '機器人' };
+    const tagsArr = (Array.isArray(article.industry_tags) ? article.industry_tags : [])
+      .filter(t => CAT_OWN_TAG[article.category] !== t);
+    const tagsHtml = tagsArr.length
+      ? `<div class="article-tags">${tagsArr.map(t => `<span class="itag">${TAG_EMOJI[t] || ''} ${escapeHtml(t)}</span>`).join('')}</div>`
+      : '';
 
     return `
       <article class="article${headlineClass}${breakingClass}" data-id="${article.id}">
@@ -197,6 +205,7 @@
         <h3 class="article-title">${escapeHtml(article.title_zh)}</h3>
         ${article.title_en && article.title_en !== article.title_zh ? `<p class="article-title-en">${escapeHtml(article.title_en)}</p>` : ''}
         <p class="article-summary">${escapeHtml(article.lede_zh)}</p>
+        ${tagsHtml}
         <span class="article-more">閱讀全文 →</span>
         <div class="article-footer">
           <span class="article-source">${escapeHtml(article.source.name)}</span>

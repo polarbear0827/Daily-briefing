@@ -641,6 +641,24 @@ if first_party_headline_id and any(a["id"] == first_party_headline_id for a in f
 elif not headline_set and final_articles:
     final_articles[0]["is_headline"] = True
 
+# --- Industry tags + 機器人 soft category(內容關鍵字後處理)---------------------
+# 跨分類的產業標籤(chip 顯示在卡片上,做垂直導覽);標題有強機器人訊號 → 升格 robotics 軟分類。
+# 純內容判斷,不動來源驅動的原分類機制;robotics 無配額/保底,有內容才出現、空著就不顯示。
+_TAG_RULES = [
+    ("機器人", re.compile(r"機器人|機械臂|人形|具身|embodied|humanoid|robot|LeRobot|manipulat", re.I)),
+    ("金融",   re.compile(r"金融|銀行|金控|券商|保險|支付|理財|信用卡|fintech|banking|payment", re.I)),
+    ("製造",   re.compile(r"智慧製造|工廠|產線|工業\s*4|Industry\s*4|manufactur|factory", re.I)),
+    ("零售",   re.compile(r"零售|新零售|電商|超商|購物|消費者購|retail|e-?commerce|POS", re.I)),
+]
+_ROBOT_STRONG = re.compile(r"機器人|人形機器|具身智慧|embodied|humanoid|LeRobot|機械臂", re.I)
+for _a in final_articles:
+    _text = f"{_a.get('title_zh', '')} {_a.get('lede_zh', '')}"
+    _tags = [name for name, rx in _TAG_RULES if rx.search(_text)]
+    if _tags:
+        _a["industry_tags"] = _tags
+    if not _a.get("is_headline") and _ROBOT_STRONG.search(_a.get("title_zh", "")):
+        _a["category"] = "robotics"
+
 # --- Stage 2: Breaking News selector -----------------------------------------
 breaking_ids: list[str] = []
 try:
@@ -713,6 +731,7 @@ issue_obj = {
     "tagline_en": tagline_en,
     "categories": [
         {"id":"ai-ml","name_zh":"一手模型消息","name_en":"Model Labs"},
+        {"id":"robotics","name_zh":"機器人／具身智慧","name_en":"Robotics / Embodied AI"},
         {"id":"research-papers","name_zh":"論文／Benchmark","name_en":"Papers / Benchmarks"},
         {"id":"tech-product","name_zh":"產品發布／平台戰爭","name_en":"Products / Platform Wars"},
         {"id":"vc-business","name_zh":"產業深度／商業應用","name_en":"Industry / Business"},
