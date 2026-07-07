@@ -10,6 +10,40 @@
   const qsa = (sel, root = document) => Array.from(root.querySelectorAll(sel));
 
   // ---------------------------------------------------------------------------
+  // Reader state — read markers / category affinity / theme (localStorage)
+  // ---------------------------------------------------------------------------
+  const READ_KEY = 'dailyBriefing.read.v1';
+  const AFFINITY_KEY = 'dailyBriefing.affinity.v1';
+  const THEME_KEY = 'dailyBriefing.theme.v1';
+  function _loadJSON(k, dflt) { try { const v = JSON.parse(localStorage.getItem(k)); return v == null ? dflt : v; } catch { return dflt; } }
+  const readSet = new Set(_loadJSON(READ_KEY, []));
+  function markRead(id) {
+    if (!id || readSet.has(id)) return;
+    readSet.add(id);
+    localStorage.setItem(READ_KEY, JSON.stringify([...readSet]));
+    const card = qs(`.article[data-id="${CSS.escape(id)}"]`);
+    if (card) card.classList.add('is-read');
+    updateOverviewRead();
+  }
+  function loadAffinity() { return _loadJSON(AFFINITY_KEY, {}); }
+  function bumpAffinity(cat, delta) {
+    if (!cat) return;
+    const a = loadAffinity();
+    a[cat] = Math.max(0, (a[cat] || 0) + delta);
+    localStorage.setItem(AFFINITY_KEY, JSON.stringify(a));
+  }
+  // Dark mode — apply saved theme immediately (before render) to avoid flash.
+  if (localStorage.getItem(THEME_KEY) === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+  function isDark() { return document.documentElement.getAttribute('data-theme') === 'dark'; }
+  window.__toggleTheme = function () {
+    const next = isDark() ? 'light' : 'dark';
+    if (next === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+    else document.documentElement.removeAttribute('data-theme');
+    localStorage.setItem(THEME_KEY, next);
+    const b = qs('#theme-toggle'); if (b) b.textContent = next === 'dark' ? '☀️' : '🌙';
+  };
+
+  // ---------------------------------------------------------------------------
   // Data loading
   // ---------------------------------------------------------------------------
 
@@ -196,7 +230,7 @@
       : '';
 
     return `
-      <article class="article${headlineClass}${breakingClass}" data-id="${article.id}">
+      <article class="article${headlineClass}${breakingClass}${readSet.has(article.id) ? ' is-read' : ''}" data-id="${article.id}">
         ${imageHtml}
         <div class="article-kicker">
           <span class="kicker-badge">${kickerLabel}</span>
@@ -257,6 +291,9 @@
     if (!map[articleId][reaction]) delete map[articleId][reaction];
     if (Object.keys(map[articleId]).length === 0) delete map[articleId];
     saveReactions(map);
+    // 把互動回饋累積成分類 affinity → 下次載入依此把喜歡的分類往上排
+    const _art = ((window.__currentIssue && window.__currentIssue.articles) || []).find(a => a.id === articleId);
+    if (_art) bumpAffinity(_art.category, (map[articleId] && map[articleId][reaction]) ? 1 : -1);
     btn.classList.toggle('is-active', !!(map[articleId] && map[articleId][reaction]));
   };
 
@@ -289,6 +326,9 @@
 
   function openReader(article, cat) {
     const overlay = qs('#reader-overlay');
+    markRead(article.id);
+    const navList = window.__navList || [];
+    const _idx = navList.findIndex(a => a.id === article.id);
     const bzArr = Array.isArray(article.bullets_zh) ? article.bullets_zh.filter(b => b && String(b).trim()) : [];
     const beArr = Array.isArray(article.bullets_en) ? article.bullets_en.filter(b => b && String(b).trim()) : [];
     const bulletsZh = bzArr.map(b => `<li>${escapeHtml(b)}</li>`).join('');
@@ -334,6 +374,12 @@
             ${escapeHtml(article.source.name)} · ${escapeHtml(new URL(article.source.url).hostname)}
           </a>
         </div>
+
+        <div class="reader-nav">
+          <button class="reader-prev" ${_idx <= 0 ? 'disabled' : ''}>‹ 上一則</button>
+          <span class="reader-navpos">${_idx >= 0 ? (_idx + 1) + ' / ' + navList.length : ''}</span>
+          <button class="reader-next" ${_idx < 0 || _idx >= navList.length - 1 ? 'disabled' : ''}>下一則 ›</button>
+        </div>
       </div>
     `;
 
@@ -345,6 +391,16 @@
     overlay.addEventListener('click', (e) => {
       if (e.target === overlay) closeReader();
     });
+
+    // Prev / next navigation (keeps reading flow without closing)
+    const gotoReader = (j) => {
+      const a = navList[j];
+      if (a) openReader(a, (window.__catMap || {})[a.category] || { name_zh: '', name_en: '' });
+    };
+    const _pv = qs('.reader-prev', overlay);
+    if (_pv) _pv.addEventListener('click', (e) => { e.stopPropagation(); gotoReader(_idx - 1); });
+    const _nx = qs('.reader-next', overlay);
+    if (_nx) _nx.addEventListener('click', (e) => { e.stopPropagation(); gotoReader(_idx + 1); });
 
     // Language toggle
     qsa('.reader-lang-toggle button', overlay).forEach(btn => {
@@ -483,8 +539,32 @@
     `;
   }
 
+  function renderOverview(issue) {
+    const arts = issue.articles || [];
+    const total = arts.length;
+    const mins = arts.reduce((s, a) => s + ((a.source && a.source.reading_time_min) || 3), 0);
+    const breaking = (issue.breaking_news || []).length;
+    const read = arts.filter(a => readSet.has(a.id)).length;
+    const personalized = Object.keys(loadAffinity()).length > 0;
+    return `<div class="overview-bar" id="overview">
+      <span class="ov-item"><b>${total}</b> 則</span><span class="ov-sep">·</span>
+      <span class="ov-item">約 <b>${mins}</b> 分鐘讀完</span>
+      ${breaking ? `<span class="ov-sep">·</span><span class="ov-item ov-breaking">🚨 ${breaking} 則重大快訊</span>` : ''}
+      <span class="ov-sep">·</span>
+      <span class="ov-item ov-read">已讀 <b id="ov-read-n">${read}</b>/${total}</span>
+      ${personalized ? '<span class="ov-sep">·</span><span class="ov-item ov-personalized" title="已依你按過的興趣把分類往上排">🎯 為你排序</span>' : ''}
+      <button id="theme-toggle" class="theme-toggle" title="深色 / 淺色" onclick="window.__toggleTheme()">${isDark() ? '☀️' : '🌙'}</button>
+    </div>`;
+  }
+  function updateOverviewRead() {
+    const el = qs('#ov-read-n'); const issue = window.__currentIssue;
+    if (el && issue) el.textContent = (issue.articles || []).filter(a => readSet.has(a.id)).length;
+  }
+
   function renderIssueInto(rootEl, issue) {
     const catMap = Object.fromEntries(issue.categories.map(c => [c.id, c]));
+    window.__currentIssue = issue;
+    window.__catMap = catMap;
     const headlineArticle = issue.articles.find(a => a.is_headline);
     const headlineId = headlineArticle ? headlineArticle.id : null;
 
@@ -512,13 +592,22 @@
     }
 
     const breakingSection = renderBreakingSection(issue, catMap);
-    const sections = issue.categories
+    // reactions 推薦:依 affinity 把你常按興趣的分類往上排(頭條/快訊不動)
+    const aff = loadAffinity();
+    const orderedCats = [...issue.categories].sort((a, b) => (aff[b.id] || 0) - (aff[a.id] || 0));
+    const sections = orderedCats
       .map(cat => renderCategorySection(cat, articlesByCategory[cat.id] || []))
       .join('');
+    // reader 上一則/下一則的閱讀順序(頭條 → 各分類)
+    const navList = [];
+    if (headlineArticle) navList.push(headlineArticle);
+    orderedCats.forEach(c => (articlesByCategory[c.id] || []).forEach(a => navList.push(a)));
+    window.__navList = navList;
 
     rootEl.innerHTML = `
       ${renderMasthead(issue)}
       ${renderTabs(issue)}
+      ${renderOverview(issue)}
       <main>${breakingSection}${headlineSection}${sections}</main>
       ${renderFooter(issue)}
     `;
@@ -526,9 +615,9 @@
     qsa('.article', rootEl).forEach(el => {
       el.addEventListener('click', () => {
         const id = el.dataset.id;
+        markRead(id);
         const article = issue.articles.find(a => a.id === id);
-        const cat = catMap[article.category];
-        openReader(article, cat);
+        openReader(article, catMap[article.category] || { name_zh: '', name_en: '' });
       });
     });
     bindTabs();

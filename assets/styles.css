@@ -1063,3 +1063,80 @@ body {
   .reader-takeaway { padding: 13px 14px; }
   .reader-takeaway-text { font-size: 14px; }
 }
+
+/* ==========================================================================
+   READER UX — dark mode / read markers / overview bar / reader nav
+   ========================================================================== */
+
+/* 深色模式:翻轉色票變數,其餘全站自動跟著變 */
+:root[data-theme="dark"] {
+  --paper: #14120e;
+  --paper-deep: #1d1a15;
+  --ink: #ece4d2;
+  --ink-soft: #b9b0a0;
+  --ink-muted: #8a8172;
+  --accent: #e0736a;
+  --accent-soft: #c85a51;
+  --rule: #ece4d2;
+  --rule-soft: rgba(236, 228, 210, 0.16);
+}
+:root[data-theme="dark"] body {
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(255,255,255,0.02) 0%, transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(255,255,255,0.02) 0%, transparent 40%);
+}
+/* 深色下,寫死的淺色底面補回可見度 */
+:root[data-theme="dark"] .itag { background: rgba(255,255,255,0.07); }
+:root[data-theme="dark"] .reader-pulse { background: rgba(255,255,255,0.045); }
+:root[data-theme="dark"] .weather-chip { background: rgba(255,255,255,0.05); }
+:root[data-theme="dark"] .article.is-read::after { color: #14120e; }
+
+/* ① 已讀標記:淡化 + 右上角 ✓ */
+.article { position: relative; }
+.article.is-read { opacity: 0.5; }
+.article.is-read:hover { opacity: 0.85; }
+.article.is-read::after {
+  content: '✓';
+  position: absolute; top: 6px; right: 6px; z-index: 2;
+  width: 22px; height: 22px; border-radius: 50%;
+  background: var(--accent); color: #fff;
+  font-family: var(--font-ui); font-size: 12px; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+}
+
+/* ② 今日總覽列 */
+.overview-bar {
+  max-width: var(--column-max);
+  margin: 0 auto;
+  padding: 11px var(--gutter);
+  display: flex; align-items: center; flex-wrap: wrap; gap: 9px;
+  font-family: var(--font-ui); font-size: 13px; color: var(--ink-soft);
+  border-bottom: 1px solid var(--rule-soft);
+}
+.overview-bar b { color: var(--ink); font-weight: 700; }
+.ov-sep { opacity: 0.35; }
+.ov-breaking { color: var(--accent); font-weight: 600; }
+.ov-personalized { color: var(--accent); }
+.theme-toggle {
+  margin-left: auto;
+  background: transparent; border: 1px solid var(--rule-soft);
+  border-radius: 999px; padding: 4px 12px; cursor: pointer;
+  font-size: 15px; line-height: 1; transition: border-color 0.2s;
+}
+.theme-toggle:hover { border-color: var(--ink-muted); }
+
+/* ⑥ reader 上一則 / 下一則 */
+.reader-nav {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 16px; margin-top: 30px; padding-top: 20px;
+  border-top: 1px solid var(--rule-soft);
+}
+.reader-nav button {
+  background: transparent; border: 1px solid var(--rule-soft);
+  border-radius: 999px; padding: 8px 20px; cursor: pointer;
+  font-family: var(--font-ui); font-size: 14px; color: var(--ink);
+  transition: border-color 0.2s, background 0.2s;
+}
+.reader-nav button:hover:not(:disabled) { border-color: var(--ink-muted); background: var(--paper-deep); }
+.reader-nav button:disabled { opacity: 0.28; cursor: default; }
+.reader-navpos { font-family: var(--font-ui); font-size: 12px; color: var(--ink-muted); }
