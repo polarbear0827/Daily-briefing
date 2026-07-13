@@ -74,26 +74,26 @@ OPENAI_ENV = load_env_file(Path("/home/hermes/.hermes/credentials/openai.env"))
 PROVIDERS: list[dict[str, object]] = []
 
 # Primary writer: Grok (xai-oauth) via hermes. Article generation is BATCHED
-# (see BRIEFING_CHUNK_SIZE below) into small per-call chunks so grok-4.3 never
+# (see BRIEFING_CHUNK_SIZE below) into small per-call chunks so grok never
 # hits the single-shot timeout it used to on the full ~27-article prompt.
-# Grok is the default so the briefing does not burn Codex/gpt-5.5 quota; Codex
+# Grok is the default so the briefing does not burn Codex quota; Codex
 # stays only as an emergency fallback if a grok chunk fails. Disable grok with
 # BRIEFING_DISABLE_GROK=1.
 if os.environ.get("BRIEFING_DISABLE_GROK", "").strip().lower() not in {"1", "true", "yes"}:
     PROVIDERS.append({
         "name": "grok",
-        "model": "grok-4.3",
-        "client": HermesCodexClient("grok-4.3", provider="xai-oauth", timeout=300),
+        "model": "grok-4.5",
+        "client": HermesCodexClient("grok-4.5", provider="xai-oauth", timeout=300),
     })
 
-# Fallback: ChatGPT Codex OAuth via hermes (gpt-5.5). Use unless explicitly
+# Fallback: ChatGPT Codex OAuth via hermes (gpt-5.6-terra). Use unless explicitly
 # disabled. This is the live credential as of 2026-06-24 after the standalone
 # OpenAI API key was revoked server-side (401 invalid_api_key).
 if os.environ.get("BRIEFING_DISABLE_CODEX", "").strip().lower() not in {"1", "true", "yes"}:
     PROVIDERS.append({
         "name": "codex",
-        "model": "gpt-5.5",
-        "client": HermesCodexClient("gpt-5.5"),
+        "model": "gpt-5.6-terra",
+        "client": HermesCodexClient("gpt-5.6-terra"),
     })
 
 # Fallback: standalone OpenAI API key. Auto-resumes as a provider if a valid
@@ -107,7 +107,7 @@ OPENAI_KEY = (
 if OPENAI_KEY:
     PROVIDERS.append({
         "name": "openai",
-        "model": "gpt-5.5",
+        "model": "gpt-5.6-terra",
         "client": OpenAI(
             api_key=OPENAI_KEY,
             base_url="https://api.openai.com/v1",

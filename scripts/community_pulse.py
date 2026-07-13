@@ -25,7 +25,7 @@ import sys
 from concurrent.futures import ThreadPoolExecutor
 
 HERMES_BIN = "/home/hermes/.local/bin/hermes"
-MODEL = "grok-4.3"
+MODEL = "grok-4.5"
 PROVIDER = "xai-oauth"
 TIMEOUT = 240
 MAX_STORIES = 5
@@ -91,11 +91,13 @@ def _query_grok(title: str, source_name: str) -> str | None:
     return None
 
 
-def enrich_file(path: str, max_stories: int = MAX_STORIES) -> tuple[int, int]:
+def enrich_file(path: str, max_stories: int = MAX_STORIES, all_articles: bool = False) -> tuple[int, int]:
     with open(path, encoding="utf-8") as f:
         data = json.load(f)
     articles = data.get("articles", [])
-    stories = _pick_stories(articles)[:max_stories]
+    # all_articles=True → try x_search on every story (slow but exhaustive);
+    # otherwise just the top picks. Empty-chatter stories simply get nothing.
+    stories = list(articles) if all_articles else _pick_stories(articles)[:max_stories]
 
     def work(a: dict) -> None:
         pulse = _query_grok(a.get("title_zh", ""), (a.get("source") or {}).get("name", ""))
@@ -114,18 +116,19 @@ def enrich_file(path: str, max_stories: int = MAX_STORIES) -> tuple[int, int]:
 
 def main(argv: list[str]) -> int:
     max_stories = MAX_STORIES
+    all_articles = "--all" in argv
     if "--max" in argv:
         i = argv.index("--max")
         max_stories = int(argv[i + 1])
         argv = argv[:i] + argv[i + 2:]
     files = [a for a in argv if not a.startswith("--")]
     if not files:
-        print("usage: community_pulse.py <issue.json> [...] [--max N]", file=sys.stderr)
+        print("usage: community_pulse.py <issue.json> [...] [--max N | --all]", file=sys.stderr)
         return 2
     for path in files:
         try:
-            got, n = enrich_file(path, max_stories)
-            print(f"[community_pulse] {path}: {got}/{n} top stories got a pulse", file=sys.stderr)
+            got, n = enrich_file(path, max_stories, all_articles=all_articles)
+            print(f"[community_pulse] {path}: {got}/{n} stories got a pulse", file=sys.stderr)
         except FileNotFoundError:
             print(f"[community_pulse] skip (not found): {path}", file=sys.stderr)
     return 0
