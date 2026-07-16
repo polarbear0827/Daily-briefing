@@ -41,6 +41,12 @@ from typing import Any
 from urllib.parse import urljoin, urlparse
 from urllib.request import Request, urlopen
 
+# feedparser.parse(url) 自帶的網路抓取沒有 timeout——任何一個來源 tarpit 就會讓整支
+# 腳本永久卡死（2026-07-16 早報事故根因）。全域 socket timeout 讓慢來源 25 秒放棄，
+# 走各 feed 既有的 error 路徑優雅跳過，不影響其他來源。
+import socket
+socket.setdefaulttimeout(25)
+
 SCRIPT_DIR = Path(__file__).resolve().parent
 if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
@@ -766,13 +772,27 @@ def fetch_one_feed(
     if not url:
         return [], "Missing URL in feed spec"
 
+    # feedparser 對病態 HTML 的 sanitizer 可能 CPU 死循環（2026-07-16 事故：
+    # socket timeout 救不了解析卡死）。SIGALRM 硬時限 45 秒，超時放棄該來源。
+    import signal
+
+    def _parse_alarm(signum, frame):
+        raise TimeoutError("feedparser parse timeout")
+
+    old_handler = signal.signal(signal.SIGALRM, _parse_alarm)
+    signal.alarm(45)
     try:
         parsed = feedparser.parse(
             url,
             request_headers={"User-Agent": "DailyBriefingBot/1.0 (Hermes cron)"},
         )
+    except TimeoutError:
+        return [], "parse timeout >45s (pathological feed content)"
     except Exception as e:
         return [], f"{type(e).__name__}: {e}"
+    finally:
+        signal.alarm(0)
+        signal.signal(signal.SIGALRM, old_handler)
 
     # feedparser sets bozo=1 for various reasons (soft errors). We accept
     # partial data if there are entries.
