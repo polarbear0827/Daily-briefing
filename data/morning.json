@@ -1,38 +1,38 @@
 {
-  "issue_number": 279,
-  "date": "2026-10-01",
+  "issue_number": 281,
+  "date": "2026-10-02",
   "edition": "morning",
   "edition_label_zh": "早報",
   "edition_label_en": "Morning Edition",
-  "date_display_zh": "2026年10月1日·星期四·早報",
-  "date_display_en": "Thursday, October 1, 2026 · Morning Edition",
+  "date_display_zh": "2026年10月2日·星期五·早報",
+  "date_display_en": "Friday, October 2, 2026 · Morning Edition",
   "weather": {
     "location_zh": "台北",
     "location_en": "Taipei",
-    "temp_c": 29,
-    "condition_zh": "大致晴朗",
-    "condition_en": "Mainly clear"
+    "temp_c": 28,
+    "condition_zh": "晴時多雲",
+    "condition_en": "Partly cloudy"
   },
   "weather_locations": [
     {
       "location_id": "taipei",
       "location_zh": "台北",
       "location_en": "Taipei",
-      "temp_c": 29,
-      "condition_zh": "大致晴朗",
-      "condition_en": "Mainly clear",
-      "weather_code": 1,
-      "updated_at": "2026-10-01T08:00"
+      "temp_c": 28,
+      "condition_zh": "晴時多雲",
+      "condition_en": "Partly cloudy",
+      "weather_code": 2,
+      "updated_at": "2026-10-02T08:00"
     },
     {
       "location_id": "banqiao",
       "location_zh": "板橋",
       "location_en": "Banqiao",
-      "temp_c": 29,
-      "condition_zh": "晴朗",
-      "condition_en": "Clear sky",
-      "weather_code": 0,
-      "updated_at": "2026-10-01T08:00"
+      "temp_c": 28,
+      "condition_zh": "大致晴朗",
+      "condition_en": "Mainly clear",
+      "weather_code": 1,
+      "updated_at": "2026-10-02T08:00"
     },
     {
       "location_id": "zhubei",
@@ -42,7 +42,7 @@
       "condition_zh": "晴朗",
       "condition_en": "Clear sky",
       "weather_code": 0,
-      "updated_at": "2026-10-01T08:00"
+      "updated_at": "2026-10-02T08:00"
     }
   ],
   "tagline_zh": "由 AI 為你策展，專屬早晨讀物",
@@ -106,109 +106,47 @@
   ],
   "articles": [
     {
-      "id": "2026-10-01-m001",
+      "id": "2026-10-02-m001",
       "category": "ai-ml",
       "is_headline": true,
-      "title_zh": "Gemini 4 Argon登場：Google重返前沿模型戰，但先鎖定資安防線",
-      "title_en": "Gemini 4 Argon登場：Google重返前沿模型戰，但先鎖定資安防線",
-      "lede_zh": "Google DeepMind 發表 Gemini 4 Argon，定位為處理長時程、複雜工作流的前沿模型，主攻軟體工程、企業知識工作與資安防禦，並宣稱在多項相關評測具領先表現。值得注意的是，它沒有立刻全面開放，而是先透過 Fairwind Program 交給受信任的資安防禦團隊實測，再逐步擴及付費 API、企業與一般使用者；這反映模型能力競爭已從「能不能回答」轉向「能否安全執行高風險、多步驟任務」。對台灣工程團隊而言，短期最實際的意義不是立即換模型，而是重新檢視自家 Agent 的長任務設計：上下文管理、工具權限、執行中斷與稽核紀錄，將決定模型升級後能否真正落地。Google 強調其超長輸出與程式遷移能力，可能直接衝擊大型程式庫現代化、內部知識自動化與資安營運，但目前公開成績仍主要來自供應商評測，採購與技術選型應等待可重現的實測。開發者社群一面期待 Google 終於推出旗艦級模型，另一面也聚焦在有限開放與分級存取：前沿能力若只先流向少數使用者，平台戰的勝負也將取決於誰能最快讓能力變成可用產品。",
-      "lede_en": "Google DeepMind 發表 Gemini 4 Argon，定位為處理長時程、複雜工作流的前沿模型，主攻軟體工程、企業知識工作與資安防禦，並宣稱在多項相關評測具領先表現。值得注意的是，它沒有立刻全面開放，而是先透過 Fairwind Program 交給受信任的資安防禦團隊實測，再逐步擴及付費 API、企業與一般使用者；這反映模型能力競爭已從「能不能回答」轉向「能否安全執行高風險、多步驟任務」。對台灣工程團隊而言，短期最實際的意義不是立即換模型，而是重新檢視自家 Agent 的長任務設計：上下文管理、工具權限、執行中斷與稽核紀錄，將決定模型升級後能否真正落地。Google 強調其超長輸出與程式遷移能力，可能直接衝擊大型程式庫現代化、內部知識自動化與資安營運，但目前公開成績仍主要來自供應商評測，採購與技術選型應等待可重現的實測。開發者社群一面期待 Google 終於推出旗艦級模型，另一面也聚焦在有限開放與分級存取：前沿能力若只先流向少數使用者，平台戰的勝負也將取決於誰能最快讓能力變成可用產品。",
-      "bullets_zh": [],
-      "bullets_en": [],
-      "is_teaching_material": false,
-      "teaching_takeaway": "",
-      "source": {
-        "name": "Google DeepMind Blog",
-        "url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
-        "published_at": "2026-09-30T20:01:45+00:00",
-        "reading_time_min": 6,
-        "credibility_tier": "primary"
-      },
-      "fetched_via": "rss",
-      "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/g4_30-09-26_key-art_blog.width-1300.png"
-    },
-    {
-      "id": "2026-10-01-m002",
-      "category": "ai-ml",
-      "is_headline": false,
-      "title_zh": "OpenAI攔截推理萃取行動：模型護城河開始防「偷學思考過程」",
-      "title_en": "OpenAI攔截推理萃取行動：模型護城河開始防「偷學思考過程」",
-      "lede_zh": "OpenAI 表示已瓦解一項協同式模型蒸餾行動：攻擊者並非入侵資料庫或竊取對話，而是透過大量、精心設計的互動，試圖把模型原本不對使用者展示的受保護推理內容轉成可見輸出。OpenAI 指出，這類對抗式蒸餾的風險在於，外部模型可能取得能力形成過程的關鍵線索，卻不會一併繼承原模型的安全控制，從而用較低成本複製或提升前沿能力。該公司已採取帳號處置、強化註冊與基礎設施控管、監測關聯網路，以及修補可重播加密推理內容的路徑，並與業界夥伴分享情資。對台灣的 AI 產品與企業資安團隊，這是一個很具體的提醒：不要把隱藏推理、工具回傳、除錯紀錄或跨工作階段記憶視為天然安全的內部資料；任何可攜、可重播或可由另一輪對話解碼的內容，都應納入威脅模型。技術圈關注的核心也不只是歸屬爭議，而是推理型模型進入商用後，防護邊界已從提示注入延伸到輸出結構、代理工具鏈與多帳號協同行為。",
-      "lede_en": "OpenAI 表示已瓦解一項協同式模型蒸餾行動：攻擊者並非入侵資料庫或竊取對話，而是透過大量、精心設計的互動，試圖把模型原本不對使用者展示的受保護推理內容轉成可見輸出。OpenAI 指出，這類對抗式蒸餾的風險在於，外部模型可能取得能力形成過程的關鍵線索，卻不會一併繼承原模型的安全控制，從而用較低成本複製或提升前沿能力。該公司已採取帳號處置、強化註冊與基礎設施控管、監測關聯網路，以及修補可重播加密推理內容的路徑，並與業界夥伴分享情資。對台灣的 AI 產品與企業資安團隊，這是一個很具體的提醒：不要把隱藏推理、工具回傳、除錯紀錄或跨工作階段記憶視為天然安全的內部資料；任何可攜、可重播或可由另一輪對話解碼的內容，都應納入威脅模型。技術圈關注的核心也不只是歸屬爭議，而是推理型模型進入商用後，防護邊界已從提示注入延伸到輸出結構、代理工具鏈與多帳號協同行為。",
+      "title_zh": "Albertsons 把 ChatGPT Enterprise 帶進超市營運核心",
+      "title_en": "Albertsons 把 ChatGPT Enterprise 帶進超市營運核心",
+      "lede_zh": "美國連鎖超市 Albertsons Companies 公開說明，正透過 ChatGPT Enterprise 與 OpenAI API，協助內部團隊加速工作流程，並嘗試改善數百萬消費者的採購體驗。這不是單點聊天機器人試驗，而是把生成式 AI 放進零售企業的日常決策、內容處理與服務設計：真正的難題不在模型會不會回答，而在於資料、部門流程與顧客接觸點能否連成可衡量的系統。對台灣零售、電商與連鎖服務業而言，這提供了一個務實範本：先盤點高頻、規則明確、人工耗時的作業，再以企業版模型與 API 嵌入既有系統，而非另建一個無人使用的 AI 專案。工程團隊也應特別處理商品目錄、價格、庫存與個資的權限邊界，避免模型回答看似流暢卻引用過期營運資訊。開發者社群普遍關注的焦點，會是這類案例能否從內部效率工具進一步證明對營收、缺貨率或客服品質的實際改善。",
+      "lede_en": "美國連鎖超市 Albertsons Companies 公開說明，正透過 ChatGPT Enterprise 與 OpenAI API，協助內部團隊加速工作流程，並嘗試改善數百萬消費者的採購體驗。這不是單點聊天機器人試驗，而是把生成式 AI 放進零售企業的日常決策、內容處理與服務設計：真正的難題不在模型會不會回答，而在於資料、部門流程與顧客接觸點能否連成可衡量的系統。對台灣零售、電商與連鎖服務業而言，這提供了一個務實範本：先盤點高頻、規則明確、人工耗時的作業，再以企業版模型與 API 嵌入既有系統，而非另建一個無人使用的 AI 專案。工程團隊也應特別處理商品目錄、價格、庫存與個資的權限邊界，避免模型回答看似流暢卻引用過期營運資訊。開發者社群普遍關注的焦點，會是這類案例能否從內部效率工具進一步證明對營收、缺貨率或客服品質的實際改善。",
       "bullets_zh": [],
       "bullets_en": [],
       "is_teaching_material": false,
       "teaching_takeaway": "",
       "source": {
         "name": "OpenAI Blog",
-        "url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
-        "published_at": "2026-09-30T10:30:00+00:00",
-        "reading_time_min": 5,
+        "url": "https://openai.com/index/albertsons-reimagining-retail",
+        "published_at": "2026-10-01T16:00:00+00:00",
+        "reading_time_min": 4,
         "credibility_tier": "primary"
       },
       "fetched_via": "rss",
-      "image_url": "https://images.ctfassets.net/kftzwdyauwt9/7MP5Bq8wKRpAAnnhqfdA8o/3ca1f00ae7ec16c5a569eb6195e24c90/disrupting-a-coordinated-model-distillation-campaign-seo.png?w=1600&amp;h=900&amp;fit=fill"
+      "industry_tags": [
+        "機器人",
+        "零售"
+      ],
+      "image_url": "https://images.ctfassets.net/kftzwdyauwt9/6sZopZBu8aHeeYeb8H6IS1/945a5ed2fcd3a837554c8ac49a38cdf6/how-albertsons-companies-is-reimagining-retail-from-the-inside-out-seo.png?w=1600&amp;h=900&amp;fit=fill"
     },
     {
-      "id": "2026-10-01-m003",
+      "id": "2026-10-02-m002",
       "category": "ai-ml",
       "is_headline": false,
-      "title_zh": "DeepSeek攜手華為推TileLang：中國AI晶片戰轉攻軟體堆疊",
-      "title_en": "DeepSeek攜手華為推TileLang：中國AI晶片戰轉攻軟體堆疊",
-      "lede_zh": "DeepSeek 與華為合作推出面向 Ascend AI 晶片的開源程式工具，核心是 TileLang；這套語言與周邊函式庫試圖以比 CUDA 更容易使用的程式模型，協助開發者撰寫計算與跨晶片資料搬移邏輯，並針對 Ascend 950 的大型叢集進行最佳化。這件事的重要性不在於又多一個程式語言，而在於 AI 加速器真正難跨越的門檻常是軟體：硬體規格再強，若缺少編譯器、核心函式庫、除錯工具與成熟開發者生態，訓練和推論成本就難以逼近 CUDA 平台。對台灣的晶片、伺服器與企業 AI 團隊而言，這是供應鏈與平台策略的觀察重點，未來部署選項可能不再只是 NVIDIA 對 AMD，也須評估區域性算力平台能否提供足夠的框架相容性、效能可攜性與維運人才。實務上，團隊可先將模型核心、通訊層與自訂核心程式碼拆開評估，避免基礎架構過度綁死單一平台。技術社群的討論焦點在於 TileLang 是否能把「較好寫」轉化為真實的多晶片效能與工具鏈完整度，因為 CUDA 的護城河從來不只是語法，而是長年累積的開發與部署經驗。",
-      "lede_en": "DeepSeek 與華為合作推出面向 Ascend AI 晶片的開源程式工具，核心是 TileLang；這套語言與周邊函式庫試圖以比 CUDA 更容易使用的程式模型，協助開發者撰寫計算與跨晶片資料搬移邏輯，並針對 Ascend 950 的大型叢集進行最佳化。這件事的重要性不在於又多一個程式語言，而在於 AI 加速器真正難跨越的門檻常是軟體：硬體規格再強，若缺少編譯器、核心函式庫、除錯工具與成熟開發者生態，訓練和推論成本就難以逼近 CUDA 平台。對台灣的晶片、伺服器與企業 AI 團隊而言，這是供應鏈與平台策略的觀察重點，未來部署選項可能不再只是 NVIDIA 對 AMD，也須評估區域性算力平台能否提供足夠的框架相容性、效能可攜性與維運人才。實務上，團隊可先將模型核心、通訊層與自訂核心程式碼拆開評估，避免基礎架構過度綁死單一平台。技術社群的討論焦點在於 TileLang 是否能把「較好寫」轉化為真實的多晶片效能與工具鏈完整度，因為 CUDA 的護城河從來不只是語法，而是長年累積的開發與部署經驗。",
-      "bullets_zh": [],
-      "bullets_en": [],
-      "is_teaching_material": false,
-      "teaching_takeaway": "",
-      "source": {
-        "name": "The Decoder",
-        "url": "https://the-decoder.com/chinas-ai-industry-closes-ranks-as-deepseek-ships-open-source-software-for-huaweis-ascend-chips/",
-        "published_at": "2026-09-30T14:37:24+00:00",
-        "reading_time_min": 5,
-        "credibility_tier": "secondary"
-      },
-      "fetched_via": "rss",
-      "image_url": "https://the-decoder.com/wp-content/uploads/2026/08/deepseek_deepseek_logo.png"
-    },
-    {
-      "id": "2026-10-01-m004",
-      "category": "ai-ml",
-      "is_headline": false,
-      "title_zh": "Meta把AI資料中心列為實驗：算力軍備競賽的稅務帳開始浮上檯面",
-      "title_en": "Meta把AI資料中心列為實驗：算力軍備競賽的稅務帳開始浮上檯面",
-      "lede_zh": "Meta 被報導透過美國研發稅額抵減，將大規模 AI 資料中心視為「試驗模型」、將 NVIDIA 晶片視為實驗材料，以大幅降低稅負；報導指出，這項作法與 Meta 對外描述這些設施將支撐核心產品及超級智慧策略之間存在明顯張力。表面上這是稅務新聞，實際上卻揭露前沿 AI 競爭的另一層成本結構：模型實驗、量產基礎設施與商業產品之間的界線，正在成為企業財務與監管攻防的空間。對台灣的雲端服務商、資料中心營運者、半導體供應鏈與企業資訊主管來說，這提醒大家評估 AI 投資時不能只看 GPU 採購價格，也要把折舊、電力、研發認列、法規風險與供應合約放進總持有成本。若各國開始更嚴格檢視大型 AI 資本支出的稅務定位，可能改變雲端業者擴建節奏，也會間接影響伺服器、網通、散熱與晶片需求的預測。產業討論的爭議點在於，鼓勵研發的制度是否正被用來補貼已具規模化商業用途的 AI 基礎設施，而這條界線未來很可能需要監管機構重新定義。",
-      "lede_en": "Meta 被報導透過美國研發稅額抵減，將大規模 AI 資料中心視為「試驗模型」、將 NVIDIA 晶片視為實驗材料，以大幅降低稅負；報導指出，這項作法與 Meta 對外描述這些設施將支撐核心產品及超級智慧策略之間存在明顯張力。表面上這是稅務新聞，實際上卻揭露前沿 AI 競爭的另一層成本結構：模型實驗、量產基礎設施與商業產品之間的界線，正在成為企業財務與監管攻防的空間。對台灣的雲端服務商、資料中心營運者、半導體供應鏈與企業資訊主管來說，這提醒大家評估 AI 投資時不能只看 GPU 採購價格，也要把折舊、電力、研發認列、法規風險與供應合約放進總持有成本。若各國開始更嚴格檢視大型 AI 資本支出的稅務定位，可能改變雲端業者擴建節奏，也會間接影響伺服器、網通、散熱與晶片需求的預測。產業討論的爭議點在於，鼓勵研發的制度是否正被用來補貼已具規模化商業用途的 AI 基礎設施，而這條界線未來很可能需要監管機構重新定義。",
-      "bullets_zh": [],
-      "bullets_en": [],
-      "is_teaching_material": false,
-      "teaching_takeaway": "",
-      "source": {
-        "name": "The Decoder",
-        "url": "https://the-decoder.com/meta-dodges-billions-in-us-taxes-by-calling-its-ai-data-centers-experiments/",
-        "published_at": "2026-09-30T17:22:34+00:00",
-        "reading_time_min": 4,
-        "credibility_tier": "secondary"
-      },
-      "fetched_via": "rss",
-      "image_url": "https://the-decoder.com/wp-content/uploads/2026/03/meta_logo_bright_glitch.png"
-    },
-    {
-      "id": "2026-10-01-m005",
-      "category": "ai-ml",
-      "is_headline": false,
-      "title_zh": "Apple推SCLATE：長壽命Agent的瓶頸，可能不是模型而是記憶與排程",
-      "title_en": "Apple推SCLATE：長壽命Agent的瓶頸，可能不是模型而是記憶與排程",
-      "lede_zh": "Apple Machine Learning Research 提出 SCLATE，鎖定會跨多次工作階段、具備記憶、排程與背景任務的持續學習 Agent；它以共用事件排程器把評測任務、Agent 的啟停、定時工作與記憶整理放進同一條時間軸，並用混合式模擬時鐘把原本可能長達一個月的情境壓縮到數小時執行。研究團隊將七個評測移植到這個底座，比較十種未修改的 Agent 框架與記憶配置，結果顯示外掛記憶系統不一定勝過框架原生記憶，同一套框架與記憶在不同模型上也會產生明顯差異。這對正在做客服、自動化營運、程式維護或研究助理 Agent 的台灣團隊很關鍵：別只比較模型排行榜，還應量測任務中斷後能否續做、記憶是否過期、定時任務是否誤觸發，以及長期成本是否隨上下文膨脹。SCLATE 也能記錄模型呼叫的權杖與機率資訊，使訓練與評估不再只看最終答對與否，而能追查 Agent 在何處讀了太多檔案、何時寫入無效記憶。技術社群持續爭論「加記憶」是否等於更聰明，這份研究把問題拉回工程現實：持久型 Agent 的可靠度，取決於模型、框架、記憶與時間治理能否一起被系統化測試。",
-      "lede_en": "Apple Machine Learning Research 提出 SCLATE，鎖定會跨多次工作階段、具備記憶、排程與背景任務的持續學習 Agent；它以共用事件排程器把評測任務、Agent 的啟停、定時工作與記憶整理放進同一條時間軸，並用混合式模擬時鐘把原本可能長達一個月的情境壓縮到數小時執行。研究團隊將七個評測移植到這個底座，比較十種未修改的 Agent 框架與記憶配置，結果顯示外掛記憶系統不一定勝過框架原生記憶，同一套框架與記憶在不同模型上也會產生明顯差異。這對正在做客服、自動化營運、程式維護或研究助理 Agent 的台灣團隊很關鍵：別只比較模型排行榜，還應量測任務中斷後能否續做、記憶是否過期、定時任務是否誤觸發，以及長期成本是否隨上下文膨脹。SCLATE 也能記錄模型呼叫的權杖與機率資訊，使訓練與評估不再只看最終答對與否，而能追查 Agent 在何處讀了太多檔案、何時寫入無效記憶。技術社群持續爭論「加記憶」是否等於更聰明，這份研究把問題拉回工程現實：持久型 Agent 的可靠度，取決於模型、框架、記憶與時間治理能否一起被系統化測試。",
+      "title_zh": "Apple 提出 RLTL;DR：讓模型把失敗濃縮成下一次嘗試的線索",
+      "title_en": "Apple 提出 RLTL;DR：讓模型把失敗濃縮成下一次嘗試的線索",
+      "lede_zh": "Apple Machine Learning Research 發表 RLTL;DR，瞄準強化學習中最棘手的自我改進問題：當任務難到代理幾乎無法一次成功，又沒有教師模型或標準答案可模仿時，傳統依賴成功樣本的 RLVR 容易失去推進力。方法的核心是讓模型在每次失敗後讀取驗證器回饋，自己寫下一句精簡的 TL;DR 洞見，並把這段洞見帶入下一輪嘗試，而不是直接丟棄失敗軌跡。這項研究的重要性在於，它嘗試把「失敗經驗」變成可累積的訓練訊號，對程式代理、形式驗證、數學推理等有明確驗證器但成功率偏低的任務尤其相關。台灣做 Agent、測試自動化或內部工作流的工程師可借鏡其產品思路：除了記錄成功提示，也應把失敗原因壓縮為下一步可執行的規則，建立可審核的反思迴圈。技術圈預期會檢驗這種自產回饋是否真能避免錯誤自我強化，以及它相較多次取樣、搜尋與外部教師蒸餾的成本效益。",
+      "lede_en": "Apple Machine Learning Research 發表 RLTL;DR，瞄準強化學習中最棘手的自我改進問題：當任務難到代理幾乎無法一次成功，又沒有教師模型或標準答案可模仿時，傳統依賴成功樣本的 RLVR 容易失去推進力。方法的核心是讓模型在每次失敗後讀取驗證器回饋，自己寫下一句精簡的 TL;DR 洞見，並把這段洞見帶入下一輪嘗試，而不是直接丟棄失敗軌跡。這項研究的重要性在於，它嘗試把「失敗經驗」變成可累積的訓練訊號，對程式代理、形式驗證、數學推理等有明確驗證器但成功率偏低的任務尤其相關。台灣做 Agent、測試自動化或內部工作流的工程師可借鏡其產品思路：除了記錄成功提示，也應把失敗原因壓縮為下一步可執行的規則，建立可審核的反思迴圈。技術圈預期會檢驗這種自產回饋是否真能避免錯誤自我強化，以及它相較多次取樣、搜尋與外部教師蒸餾的成本效益。",
       "bullets_zh": [],
       "bullets_en": [],
       "is_teaching_material": false,
       "teaching_takeaway": "",
       "source": {
         "name": "Apple Machine Learning Research",
-        "url": "https://machinelearning.apple.com/research/sclate-agent-training-evaluation",
-        "published_at": "2026-09-30T00:00:00+00:00",
+        "url": "https://machinelearning.apple.com/research/rltl-dr-self-improvement",
+        "published_at": "2026-10-01T00:00:00+00:00",
         "reading_time_min": 5,
         "credibility_tier": "primary"
       },
@@ -216,431 +154,65 @@
       "image_url": "https://mlr.cdn-apple.com/media/Home_1200x630_48225d82e9.png"
     },
     {
-      "id": "2026-10-01-m006",
-      "category": "research-papers",
+      "id": "2026-10-02-m003",
+      "category": "ai-ml",
       "is_headline": false,
-      "title_zh": "小模型不必硬算：把確定題交給符號引擎，邊緣推論更快也更準",
-      "title_en": "小模型不必硬算：把確定題交給符號引擎，邊緣推論更快也更準",
-      "lede_zh": "一篇新 arXiv 論文提出神經符號路由器，主張部署在邊緣裝置的小型語言模型不該包辦所有推理：算術、代數與形式邏輯等結構明確的題目，應先辨識後交給確定性的符號求解器，模型則保留給開放式文字問題。研究以學得的有限狀態自動機處理路由，在 Raspberry Pi 4B 的測試中，針對 DeepMind Mathematics、GSM8K 與 RuleTaker 的未見提示詞，呈現比純 Agent 工具呼叫更高的整體正確率、更低延遲與能耗。這對台灣做地端客服、工廠設備助理、教育題庫或醫療行政流程的團隊很實際：與其急著換更大模型，不如先把可形式化的任務拆出來，以規則、程式或資料庫查詢保證答案。技術圈會關注的重點不只是漂亮成績，而是路由器遇到模糊輸入、混合任務與惡意提示時會不會錯分；若能把錯分風險控住，這條路比單純堆 GPU 更適合成本敏感的邊緣 AI。",
-      "lede_en": "一篇新 arXiv 論文提出神經符號路由器，主張部署在邊緣裝置的小型語言模型不該包辦所有推理：算術、代數與形式邏輯等結構明確的題目，應先辨識後交給確定性的符號求解器，模型則保留給開放式文字問題。研究以學得的有限狀態自動機處理路由，在 Raspberry Pi 4B 的測試中，針對 DeepMind Mathematics、GSM8K 與 RuleTaker 的未見提示詞，呈現比純 Agent 工具呼叫更高的整體正確率、更低延遲與能耗。這對台灣做地端客服、工廠設備助理、教育題庫或醫療行政流程的團隊很實際：與其急著換更大模型，不如先把可形式化的任務拆出來，以規則、程式或資料庫查詢保證答案。技術圈會關注的重點不只是漂亮成績，而是路由器遇到模糊輸入、混合任務與惡意提示時會不會錯分；若能把錯分風險控住，這條路比單純堆 GPU 更適合成本敏感的邊緣 AI。",
+      "title_zh": "Meta 以 Segment Anything、DINO 支援 Genesis Mission 首波科研計畫",
+      "title_en": "Meta 以 Segment Anything、DINO 支援 Genesis Mission 首波科研計畫",
+      "lede_zh": "Meta 說明其 AI 模型正支援 Genesis Mission 首波專案，並點名 Lawrence Berkeley National Laboratory 與 Segment Anything、DINO 等視覺模型的應用。訊息的重點不只是 Meta 再展示模型能力，而是基礎視覺模型正從影像分割與辨識的研究工具，走向科學資料處理與國家級研究任務的基礎設施；當實驗影像、材料觀測或大型資料集規模持續膨脹，研究人員需要先用模型縮小人工檢視範圍。對台灣而言，這與半導體製程影像、工業檢測、醫學影像及科研儀器資料的需求高度相連，團隊可評估以通用視覺表徵模型做資料標註、候選區域篩選與人機複核，而非從零訓練完整模型。真正的導入門檻仍是領域資料品質、標註標準與驗證流程，尤其科學情境不能把視覺模型輸出直接視為結論。技術社群會持續比較這類開放模型在專業影像上的遷移能力，以及是否能在可追溯性與準確率要求更高的環境中穩定落地。",
+      "lede_en": "Meta 說明其 AI 模型正支援 Genesis Mission 首波專案，並點名 Lawrence Berkeley National Laboratory 與 Segment Anything、DINO 等視覺模型的應用。訊息的重點不只是 Meta 再展示模型能力，而是基礎視覺模型正從影像分割與辨識的研究工具，走向科學資料處理與國家級研究任務的基礎設施；當實驗影像、材料觀測或大型資料集規模持續膨脹，研究人員需要先用模型縮小人工檢視範圍。對台灣而言，這與半導體製程影像、工業檢測、醫學影像及科研儀器資料的需求高度相連，團隊可評估以通用視覺表徵模型做資料標註、候選區域篩選與人機複核，而非從零訓練完整模型。真正的導入門檻仍是領域資料品質、標註標準與驗證流程，尤其科學情境不能把視覺模型輸出直接視為結論。技術社群會持續比較這類開放模型在專業影像上的遷移能力，以及是否能在可追溯性與準確率要求更高的環境中穩定落地。",
       "bullets_zh": [],
       "bullets_en": [],
       "is_teaching_material": false,
       "teaching_takeaway": "",
       "source": {
-        "name": "arXiv cs.AI",
-        "url": "https://arxiv.org/abs/2609.35833",
-        "published_at": "2026-09-30T04:00:00+00:00",
+        "name": "Meta AI Blog",
+        "url": "https://ai.meta.com/blog/genesis-mission-lawrence-berkeley-national-laboratory-segment-anything-dino/",
+        "published_at": "2026-10-02T00:02:37.239457+00:00",
         "reading_time_min": 4,
         "credibility_tier": "primary"
       },
       "fetched_via": "rss",
-      "industry_tags": [
-        "製造"
-      ],
-      "image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png"
+      "image_url": "https://scontent.ftpe8-2.fna.fbcdn.net/v/t39.2365-6/752631850_918439901272497_2117962010845605116_n.png?_nc_cat=103&amp;ccb=1-7&amp;_nc_sid=e280be&amp;_nc_ohc=V3mz7whg_dQQ7kNvwGcoLVg&amp;_nc_oc=AdqkxYNiSnZzEzCj7lTleXqlm06ZvTnpmGsWQdQuaEH9QxtKmLNQID3Ous_9eW1cy80&amp;_nc_zt=14&amp;_nc_ht=scontent.ftpe8-2.fna&amp;_nc_gid=O88lLMmDdxJ-1lUXxsov7w&amp;_nc_ss=7b20f&amp;oh=00_AQNaq_5odWmgU2mKWRhdOmUIxW2-1q_ld_eKiavgXTr70w&amp;oe=6AD94CBE"
     },
     {
-      "id": "2026-10-01-m007",
-      "category": "research-papers",
+      "id": "2026-10-02-m004",
+      "category": "ai-ml",
       "is_headline": false,
-      "title_zh": "Agent 不只要會找工具，還得先算延遲與成功率",
-      "title_en": "Agent 不只要會找工具，還得先算延遲與成功率",
-      "lede_zh": "Lookahead-R 把 LLM Agent 在大量 API 中挑工具的問題，改寫成有時間與成本上限的連續決策：它不只依文字語意搜尋，而是用輕量代理世界模型預測工具是否可能成功、執行要花多久，以及是否符合任務意圖，再以搜尋規劃決定下一步。論文在 ToolBench 的高難度 I3 切分上，以 NDCG@5 91.40% 超越 ToolGen 的 90.16%，作者特別指出，明確建模延遲是資源受限時挑出好工具的關鍵訊號。對台灣開發者而言，這提醒了企業 Agent 常見的盲點：把幾百個內部 API、SaaS 與 MCP 工具全塞進提示詞，不會自然得到可靠流程，工具選擇本身必須有預算、快取、失敗回退與可觀測性。社群對此類方法的興趣正在從單純提高工具召回率，轉向能否在真實權限、變動文件與不穩定 API 下仍維持低成本；產品團隊可以先在自己的工具目錄記錄成功率、P95 延遲與錯誤類型，建立可供路由器學習的資料基礎。",
-      "lede_en": "Lookahead-R 把 LLM Agent 在大量 API 中挑工具的問題，改寫成有時間與成本上限的連續決策：它不只依文字語意搜尋，而是用輕量代理世界模型預測工具是否可能成功、執行要花多久，以及是否符合任務意圖，再以搜尋規劃決定下一步。論文在 ToolBench 的高難度 I3 切分上，以 NDCG@5 91.40% 超越 ToolGen 的 90.16%，作者特別指出，明確建模延遲是資源受限時挑出好工具的關鍵訊號。對台灣開發者而言，這提醒了企業 Agent 常見的盲點：把幾百個內部 API、SaaS 與 MCP 工具全塞進提示詞，不會自然得到可靠流程，工具選擇本身必須有預算、快取、失敗回退與可觀測性。社群對此類方法的興趣正在從單純提高工具召回率，轉向能否在真實權限、變動文件與不穩定 API 下仍維持低成本；產品團隊可以先在自己的工具目錄記錄成功率、P95 延遲與錯誤類型，建立可供路由器學習的資料基礎。",
+      "title_zh": "Mistral 聯手 Mozilla：瀏覽器成為開放、私有、多語 AI 新戰場",
+      "title_en": "Mistral 聯手 Mozilla：瀏覽器成為開放、私有、多語 AI 新戰場",
+      "lede_zh": "Mistral 與 Mozilla 宣布合作，要把開放、重視隱私且支援多語言的 AI 帶入網頁瀏覽器，這是模型公司與瀏覽器平台在使用者入口展開的新一輪爭奪。過去生成式 AI 多半停留在獨立聊天頁面或企業工作區，但瀏覽器掌握搜尋、閱讀、表單、文件與網頁操作等最密集的工作情境；誰能在此提供可信賴的模型能力，誰就更接近下一代個人與企業代理的預設介面。對台灣 AI 產品團隊而言，這項合作提醒了兩件事：多語支援不能只停在翻譯，還要處理繁中語境與在地工作內容；隱私也不能只寫在行銷文案，而要落實於資料送往何處、是否可本機或私有環境執行、使用者如何控管權限。對一般企業，瀏覽器型 AI 若能與既有 SaaS 工作流順暢結合，可能比全面換用新平台更容易試點。開發者社群普遍會關注實際整合深度、開源程度、模型運算位置，以及它能否在便利性上對抗既有大型平台的預設優勢。",
+      "lede_en": "Mistral 與 Mozilla 宣布合作，要把開放、重視隱私且支援多語言的 AI 帶入網頁瀏覽器，這是模型公司與瀏覽器平台在使用者入口展開的新一輪爭奪。過去生成式 AI 多半停留在獨立聊天頁面或企業工作區，但瀏覽器掌握搜尋、閱讀、表單、文件與網頁操作等最密集的工作情境；誰能在此提供可信賴的模型能力，誰就更接近下一代個人與企業代理的預設介面。對台灣 AI 產品團隊而言，這項合作提醒了兩件事：多語支援不能只停在翻譯，還要處理繁中語境與在地工作內容；隱私也不能只寫在行銷文案，而要落實於資料送往何處、是否可本機或私有環境執行、使用者如何控管權限。對一般企業，瀏覽器型 AI 若能與既有 SaaS 工作流順暢結合，可能比全面換用新平台更容易試點。開發者社群普遍會關注實際整合深度、開源程度、模型運算位置，以及它能否在便利性上對抗既有大型平台的預設優勢。",
       "bullets_zh": [],
       "bullets_en": [],
       "is_teaching_material": false,
       "teaching_takeaway": "",
       "source": {
-        "name": "arXiv cs.CL (NLP)",
-        "url": "https://arxiv.org/abs/2609.35811",
-        "published_at": "2026-09-30T04:00:00+00:00",
-        "reading_time_min": 4,
-        "credibility_tier": "primary"
-      },
-      "fetched_via": "rss",
-      "image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png"
-    },
-    {
-      "id": "2026-10-01-m008",
-      "category": "research-papers",
-      "is_headline": false,
-      "title_zh": "學習式壓縮沒贏傳統法：SAR 論文反而示範如何誠實驗證 AI",
-      "title_en": "學習式壓縮沒贏傳統法：SAR 論文反而示範如何誠實驗證 AI",
-      "lede_zh": "這篇針對合成孔徑雷達資料壓縮的研究沒有硬拗 AI 勝利，反而交出一份值得工程團隊細讀的失敗報告：作者以小型卷積自編碼器壓縮 GOTCHA 相位歷史資料，並把模型參數、傳輸位元與偵測結果全部計入成本，結果在各壓縮率下都輸給現行的區塊自適應量化與局部線性 KLT 方法。更重要的是，研究發現零補值偵測器會製造大量邊界假象，而量化裁切範圍就足以讓偵測表現劇烈改變，說明若只展示單一視覺化結果或平均誤差，很容易對模型能力做出錯誤判讀。這與台灣半導體、遙測、國防供應鏈及工業視覺團隊高度相關：在上機、上星或導入嵌入式裝置前，模型必須和既有 DSP 演算法在相同頻寬、功耗、延遲與任務指標下競爭。技術社群近年愈來愈重視這種率先揭露失效模式的研究，因為它把問題從「神經網路能不能取代傳統演算法」拉回更可驗證的問題：資料特性、損失函數與評測流程究竟是否對應真實任務。",
-      "lede_en": "這篇針對合成孔徑雷達資料壓縮的研究沒有硬拗 AI 勝利，反而交出一份值得工程團隊細讀的失敗報告：作者以小型卷積自編碼器壓縮 GOTCHA 相位歷史資料，並把模型參數、傳輸位元與偵測結果全部計入成本，結果在各壓縮率下都輸給現行的區塊自適應量化與局部線性 KLT 方法。更重要的是，研究發現零補值偵測器會製造大量邊界假象，而量化裁切範圍就足以讓偵測表現劇烈改變，說明若只展示單一視覺化結果或平均誤差，很容易對模型能力做出錯誤判讀。這與台灣半導體、遙測、國防供應鏈及工業視覺團隊高度相關：在上機、上星或導入嵌入式裝置前，模型必須和既有 DSP 演算法在相同頻寬、功耗、延遲與任務指標下競爭。技術社群近年愈來愈重視這種率先揭露失效模式的研究，因為它把問題從「神經網路能不能取代傳統演算法」拉回更可驗證的問題：資料特性、損失函數與評測流程究竟是否對應真實任務。",
-      "bullets_zh": [],
-      "bullets_en": [],
-      "is_teaching_material": false,
-      "teaching_takeaway": "",
-      "source": {
-        "name": "arXiv cs.LG (Machine Learning)",
-        "url": "https://arxiv.org/abs/2609.35848",
-        "published_at": "2026-09-30T04:00:00+00:00",
-        "reading_time_min": 3,
-        "credibility_tier": "primary"
-      },
-      "fetched_via": "rss",
-      "image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png"
-    },
-    {
-      "id": "2026-10-01-m009",
-      "category": "tech-product",
-      "is_headline": false,
-      "title_zh": "NVIDIA Vera Rubin 進入雲端實戰：Agent 算力戰從晶片延伸到訓練閉環",
-      "title_en": "NVIDIA Vera Rubin 進入雲端實戰：Agent 算力戰從晶片延伸到訓練閉環",
-      "lede_zh": "NVIDIA 與 CoreWeave 宣布 Vera Rubin NVL72 系統已在 CoreWeave Cloud 提供使用，搭配 Spectrum-X 102.4T Ethernet；做出 Devin 的 Cognition 成為首個在該平台跑正式工作負載的客戶。NVIDIA 指出，Cognition 以真實軟體工程任務比較 Vera Rubin 與 GB200 NVL72，在 SWE-2 推論測試見到最高 4.8 倍的總 token 吞吐量提升，這正切中 Agentic coding 最痛的三件事：長上下文、高併發，以及每個 token 都會反映到服務成本。訊息不只是一台新機器上架，CoreWeave 同步推出整合訓練、評估、後訓練與生產觀測的 Forge，並把隔離沙箱、強化學習執行環境與 NVIDIA Vera CPU 納入同一條產品鏈，意圖把 Agent 在線上的失敗軌跡快速回灌成下一輪模型改善。對台灣 AI 團隊與企業 IT 而言，採購或租用新一代 GPU 時不能再只看單卡算力：若要做程式 Agent、內部自動化或模型後訓練，網路、沙箱啟動速度、推論框架、追蹤資料與隔離機制才是能否量產的完整單位。開發者社群也會盯著這類早期實測能否跨工作負載複現，以及雲端租用價格與供給是否足以讓非一線實驗室真正使用，因為平台戰爭已從模型排行榜，走向誰能用最低摩擦把 Agent 跑進生產環境。",
-      "lede_en": "NVIDIA 與 CoreWeave 宣布 Vera Rubin NVL72 系統已在 CoreWeave Cloud 提供使用，搭配 Spectrum-X 102.4T Ethernet；做出 Devin 的 Cognition 成為首個在該平台跑正式工作負載的客戶。NVIDIA 指出，Cognition 以真實軟體工程任務比較 Vera Rubin 與 GB200 NVL72，在 SWE-2 推論測試見到最高 4.8 倍的總 token 吞吐量提升，這正切中 Agentic coding 最痛的三件事：長上下文、高併發，以及每個 token 都會反映到服務成本。訊息不只是一台新機器上架，CoreWeave 同步推出整合訓練、評估、後訓練與生產觀測的 Forge，並把隔離沙箱、強化學習執行環境與 NVIDIA Vera CPU 納入同一條產品鏈，意圖把 Agent 在線上的失敗軌跡快速回灌成下一輪模型改善。對台灣 AI 團隊與企業 IT 而言，採購或租用新一代 GPU 時不能再只看單卡算力：若要做程式 Agent、內部自動化或模型後訓練，網路、沙箱啟動速度、推論框架、追蹤資料與隔離機制才是能否量產的完整單位。開發者社群也會盯著這類早期實測能否跨工作負載複現，以及雲端租用價格與供給是否足以讓非一線實驗室真正使用，因為平台戰爭已從模型排行榜，走向誰能用最低摩擦把 Agent 跑進生產環境。",
-      "bullets_zh": [],
-      "bullets_en": [],
-      "is_teaching_material": false,
-      "teaching_takeaway": "",
-      "source": {
-        "name": "NVIDIA Newsroom",
-        "url": "https://blogs.nvidia.com/blog/coreweave-agentic-ai-vera-rubin/",
-        "published_at": "2026-09-30T15:00:00+00:00",
-        "reading_time_min": 6,
-        "credibility_tier": "primary"
-      },
-      "fetched_via": "rss",
-      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/09/48AA46C8-A24C-44DA-8C2B-C48E21A510FE_1_201_a-scaled.jpeg"
-    },
-    {
-      "id": "2026-10-01-m010",
-      "category": "tech-product",
-      "is_headline": false,
-      "title_zh": "OpenAI 傳推 Decisions API：用「快判模型」監督 Agent 的下一步",
-      "title_en": "OpenAI 傳推 Decisions API：用「快判模型」監督 Agent 的下一步",
-      "lede_zh": "據 TechCrunch 報導，OpenAI 在 Dev Day 提及處於有限預覽的 Decisions API，定位類似 TypeSafe AI 近期推出的 Jev：不是讓大型模型長篇推理，而是給定一組預先定義選項後，快速輸出分類或行動選擇的機率。這個方向的價值在於，許多 Agent 工作其實不需要每一步都呼叫昂貴的前沿模型，例如判斷圖片該進哪個流程、工具呼叫是否符合任務，或一個操作是否需要人工覆核；把決策縮成受限選項，速度、成本與安全監控都可能改善。對台灣產品團隊來說，最值得立即採用的不是追逐新 API 名稱，而是在 Agent 架構中拆出高頻、可枚舉的判斷關卡，先以小型分類器、規則或低成本模型做護欄，僅把模糊或高價值案例升級給大型模型。技術圈對這類產品的核心爭議會是機率校準與誤判代價：快而便宜的判斷若在付款、刪除資料或外部發信前放行錯誤，仍可能造成事故，因此需要清楚的閾值、拒絕執行路徑與完整稽核紀錄。",
-      "lede_en": "據 TechCrunch 報導，OpenAI 在 Dev Day 提及處於有限預覽的 Decisions API，定位類似 TypeSafe AI 近期推出的 Jev：不是讓大型模型長篇推理，而是給定一組預先定義選項後，快速輸出分類或行動選擇的機率。這個方向的價值在於，許多 Agent 工作其實不需要每一步都呼叫昂貴的前沿模型，例如判斷圖片該進哪個流程、工具呼叫是否符合任務，或一個操作是否需要人工覆核；把決策縮成受限選項，速度、成本與安全監控都可能改善。對台灣產品團隊來說，最值得立即採用的不是追逐新 API 名稱，而是在 Agent 架構中拆出高頻、可枚舉的判斷關卡，先以小型分類器、規則或低成本模型做護欄，僅把模糊或高價值案例升級給大型模型。技術圈對這類產品的核心爭議會是機率校準與誤判代價：快而便宜的判斷若在付款、刪除資料或外部發信前放行錯誤，仍可能造成事故，因此需要清楚的閾值、拒絕執行路徑與完整稽核紀錄。",
-      "bullets_zh": [],
-      "bullets_en": [],
-      "is_teaching_material": false,
-      "teaching_takeaway": "",
-      "source": {
-        "name": "TechCrunch AI",
-        "url": "https://techcrunch.com/2026/09/30/openais-jev-clone-could-help-the-frontier-lab-stop-its-swarming-agents/",
-        "published_at": "2026-09-30T19:00:57+00:00",
-        "reading_time_min": 4,
-        "credibility_tier": "secondary"
-      },
-      "fetched_via": "rss",
-      "image_url": "https://techcrunch.com/wp-content/uploads/2026/09/GettyImages-2297228249.jpg?resize=1200,800"
-    },
-    {
-      "id": "2026-10-01-m011",
-      "category": "tech-product",
-      "is_headline": false,
-      "title_zh": "NVIDIA 啟動博士獎學金申請：把研究人才提前接上加速運算生態",
-      "title_en": "NVIDIA 啟動博士獎學金申請：把研究人才提前接上加速運算生態",
-      "lede_zh": "NVIDIA 已開放 2027 至 2028 年 Graduate Fellowship 申請，對從事與其技術相關研究的博士生提供最高 6 萬美元獎助，以及導師與技術支援；這項計畫已進入第 26 屆，重點不只是獎學金，更是讓前沿研究者提早進入 CUDA、GPU 與加速運算的產業網絡。當 AI 模型競爭逐漸從單一模型能力延伸到訓練效率、推論成本與系統整合，NVIDIA 持續用人才計畫鞏固研究社群，等於把下一波軟硬體創新與自身平台更早綁定。對台灣的博士生、實驗室與企業研發團隊而言，若研究涉及編譯器、分散式訓練、機器人、電腦視覺、科學運算或 AI 系統，這不只是資金來源，也可能是取得技術回饋與國際合作曝光的入口。技術社群普遍會留意其徵件主題與得獎研究方向，因為它往往能側寫 NVIDIA 未來幾年準備加碼的運算問題與開發者生態。",
-      "lede_en": "NVIDIA 已開放 2027 至 2028 年 Graduate Fellowship 申請，對從事與其技術相關研究的博士生提供最高 6 萬美元獎助，以及導師與技術支援；這項計畫已進入第 26 屆，重點不只是獎學金，更是讓前沿研究者提早進入 CUDA、GPU 與加速運算的產業網絡。當 AI 模型競爭逐漸從單一模型能力延伸到訓練效率、推論成本與系統整合，NVIDIA 持續用人才計畫鞏固研究社群，等於把下一波軟硬體創新與自身平台更早綁定。對台灣的博士生、實驗室與企業研發團隊而言，若研究涉及編譯器、分散式訓練、機器人、電腦視覺、科學運算或 AI 系統，這不只是資金來源，也可能是取得技術回饋與國際合作曝光的入口。技術社群普遍會留意其徵件主題與得獎研究方向，因為它往往能側寫 NVIDIA 未來幾年準備加碼的運算問題與開發者生態。",
-      "bullets_zh": [],
-      "bullets_en": [],
-      "is_teaching_material": false,
-      "teaching_takeaway": "",
-      "source": {
-        "name": "NVIDIA Newsroom",
-        "url": "https://blogs.nvidia.com/blog/applications-open-graduate-fellowship-awards-2026/",
-        "published_at": "2026-09-30T17:00:21+00:00",
-        "reading_time_min": 3,
-        "credibility_tier": "primary"
-      },
-      "fetched_via": "rss",
-      "industry_tags": [
-        "機器人"
-      ],
-      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/09/graduate-fellowship-2026-updated-1280x720.png"
-    },
-    {
-      "id": "2026-10-01-m012",
-      "category": "vc-business",
-      "is_headline": false,
-      "title_zh": "AI 記憶體缺口浮現：Micron 財測大幅超預期，算力競賽卡在供應鏈",
-      "title_en": "AI 記憶體缺口浮現：Micron 財測大幅超預期，算力競賽卡在供應鏈",
-      "lede_zh": "Micron 最新一季財測明顯高於市場預估，將主因直接指向 AI 建置熱潮帶動的記憶體需求；公司預估本財年第一季營收約 615 億美元，高於分析師平均預期的 568 億美元，顯示資料中心擴建的瓶頸正從 GPU 採購一路蔓延到記憶體供應。這則消息的重要性不在於單一財報，而是再度確認 AI 基礎設施的成本與交期，已不能只看 NVIDIA GPU：高頻寬記憶體、DRAM、封裝、伺服器與網路設備都在爭奪同一波資本支出。對台灣 AI 工程師與產品團隊來說，模型上線與自建推論叢集的規畫應把記憶體容量、頻寬、批次策略和雲端實例可得性一併列為產品約束；企業採購也不宜把硬體報價視為短期固定成本。對台灣半導體供應鏈而言，需求外溢可望帶動封裝、模組、伺服器與散熱環節，但也會提高料件調度與交期管理的壓力。技術圈近來討論的焦點，正從「下一張 GPU 有多快」轉為「整套 AI 機櫃能否取得足夠記憶體並穩定交付」，這也是模型能力能否轉成實際算力的關鍵。",
-      "lede_en": "Micron 最新一季財測明顯高於市場預估，將主因直接指向 AI 建置熱潮帶動的記憶體需求；公司預估本財年第一季營收約 615 億美元，高於分析師平均預期的 568 億美元，顯示資料中心擴建的瓶頸正從 GPU 採購一路蔓延到記憶體供應。這則消息的重要性不在於單一財報，而是再度確認 AI 基礎設施的成本與交期，已不能只看 NVIDIA GPU：高頻寬記憶體、DRAM、封裝、伺服器與網路設備都在爭奪同一波資本支出。對台灣 AI 工程師與產品團隊來說，模型上線與自建推論叢集的規畫應把記憶體容量、頻寬、批次策略和雲端實例可得性一併列為產品約束；企業採購也不宜把硬體報價視為短期固定成本。對台灣半導體供應鏈而言，需求外溢可望帶動封裝、模組、伺服器與散熱環節，但也會提高料件調度與交期管理的壓力。技術圈近來討論的焦點，正從「下一張 GPU 有多快」轉為「整套 AI 機櫃能否取得足夠記憶體並穩定交付」，這也是模型能力能否轉成實際算力的關鍵。",
-      "bullets_zh": [],
-      "bullets_en": [],
-      "is_teaching_material": false,
-      "teaching_takeaway": "",
-      "source": {
-        "name": "Bloomberg Technology",
-        "url": "https://www.bloomberg.com/news/videos/2026-09-30/micron-forecast-beats-on-booming-ai-memory-demand-video",
-        "published_at": "2026-09-30T20:56:21+00:00",
+        "name": "Mistral News",
+        "url": "https://mistral.ai/news/mistral-x-mozilla",
+        "published_at": "2026-10-02T00:02:34.872888+00:00",
         "reading_time_min": 5,
         "credibility_tier": "primary"
       },
       "fetched_via": "rss",
-      "image_url": "https://images.unsplash.com/photo-1608249889684-e91ddbdd47cf?ixid=M3w5OTExMzZ8MHwxfHNlYXJjaHwxfHxNaWNyb24lMjBNaWNyb24lMjB0ZWNobm9sb2d5JTIwYWJzdHJhY3R8ZW58MXwwfHx8MTc5MDgxMzM5Mnww&ixlib=rb-4.1.0&w=900&q=72&fit=crop",
-      "image_source": "unsplash",
-      "image_credit": "Pat Whelen"
+      "image_url": "https://mistral.ai/cms-media/api/media/file/Linkedin-Partnership-Firefox%20copie.jpg"
     },
     {
-      "id": "2026-10-01-m013",
-      "category": "vc-business",
+      "id": "2026-10-02-m005",
+      "category": "ai-ml",
       "is_headline": false,
-      "title_zh": "AI 資料中心基建公司 IPO 失溫：市場開始挑剔「賣鏟子」的估值",
-      "title_en": "AI 資料中心基建公司 IPO 失溫：市場開始挑剔「賣鏟子」的估值",
-      "lede_zh": "AI 資料中心基礎設施公司 Accelevation 上市後股價小跌 0.3%，公司與私募股權支持者雖募得 5.4 億美元，但定價低於原先推介區間，反映資本市場對「AI 基建」標籤仍有資金興趣，卻不再願意對所有相關公司照單全收。過去市場往往將資料中心、電力、冷卻、網路與機櫃業者視為 AI 熱潮的直接受益者，如今投資人更在意訂單能見度、客戶集中度、負債結構與實際毛利，而非僅是搭上生成式 AI 敘事。這對台灣伺服器、電源、散熱、網通與機房供應商尤其有參考價值：AI 訂單能推升出貨，不等於每個環節都能得到同等估值，能否將一次性專案轉為可複製的服務與長約才更關鍵。對 AI 產品開發者而言，這也是一個成本訊號，未來雲端與託管算力的價格未必只因需求旺盛而上漲，供應商之間的資本效率競爭也會回頭影響方案選擇。產業社群正在比較哪些基建業者真正掌握稀缺資源，哪些只是把資料中心故事包裝成 AI 概念，這場篩選才剛開始。",
-      "lede_en": "AI 資料中心基礎設施公司 Accelevation 上市後股價小跌 0.3%，公司與私募股權支持者雖募得 5.4 億美元，但定價低於原先推介區間，反映資本市場對「AI 基建」標籤仍有資金興趣，卻不再願意對所有相關公司照單全收。過去市場往往將資料中心、電力、冷卻、網路與機櫃業者視為 AI 熱潮的直接受益者，如今投資人更在意訂單能見度、客戶集中度、負債結構與實際毛利，而非僅是搭上生成式 AI 敘事。這對台灣伺服器、電源、散熱、網通與機房供應商尤其有參考價值：AI 訂單能推升出貨，不等於每個環節都能得到同等估值，能否將一次性專案轉為可複製的服務與長約才更關鍵。對 AI 產品開發者而言，這也是一個成本訊號，未來雲端與託管算力的價格未必只因需求旺盛而上漲，供應商之間的資本效率競爭也會回頭影響方案選擇。產業社群正在比較哪些基建業者真正掌握稀缺資源，哪些只是把資料中心故事包裝成 AI 概念，這場篩選才剛開始。",
+      "title_zh": "Claude 進入美國民間政府機關，五角大廈爭議仍未落幕",
+      "title_en": "Claude 進入美國民間政府機關，五角大廈爭議仍未落幕",
+      "lede_zh": "Anthropic 正把 Claude for Government 提供給美國聯邦與州政府機關，服務運行於 FedRAMP High 環境，並採用用量計費、固定支出上限與部門預算控管等企業級治理設計；不過五角大廈仍將 Anthropic 視為供應鏈風險，未採用該服務。這件事的重要性在於，生成式 AI 的競爭已不只是模型能力比較，而是誰能通過高敏感資料環境的合規、採購、權限與財務治理檢驗。對台灣承接政府、金融、醫療或關鍵基礎設施專案的團隊，最值得研究的不是 Claude 單次回答多漂亮，而是如何把模型部署、資料隔離、稽核紀錄、預算配額與使用者權限一併設計成可被採購與資安單位接受的方案。這也說明同一家公司即使取得部分政府市場信任，仍可能在不同機關面對完全不同的安全判斷。技術與政策圈對此看法分歧：有人認為高標準認證將擴大 AI 的正式使用，有人則擔心供應鏈標籤與地緣政治會讓模型選型愈來愈碎片化。",
+      "lede_en": "Anthropic 正把 Claude for Government 提供給美國聯邦與州政府機關，服務運行於 FedRAMP High 環境，並採用用量計費、固定支出上限與部門預算控管等企業級治理設計；不過五角大廈仍將 Anthropic 視為供應鏈風險，未採用該服務。這件事的重要性在於，生成式 AI 的競爭已不只是模型能力比較，而是誰能通過高敏感資料環境的合規、採購、權限與財務治理檢驗。對台灣承接政府、金融、醫療或關鍵基礎設施專案的團隊，最值得研究的不是 Claude 單次回答多漂亮，而是如何把模型部署、資料隔離、稽核紀錄、預算配額與使用者權限一併設計成可被採購與資安單位接受的方案。這也說明同一家公司即使取得部分政府市場信任，仍可能在不同機關面對完全不同的安全判斷。技術與政策圈對此看法分歧：有人認為高標準認證將擴大 AI 的正式使用，有人則擔心供應鏈標籤與地緣政治會讓模型選型愈來愈碎片化。",
       "bullets_zh": [],
       "bullets_en": [],
       "is_teaching_material": false,
       "teaching_takeaway": "",
       "source": {
-        "name": "Bloomberg Technology",
-        "url": "https://www.bloomberg.com/news/articles/2026-09-30/ai-infrastructure-firm-accelevation-edges-down-2-5-after-ipo",
-        "published_at": "2026-09-30T16:47:05+00:00",
-        "reading_time_min": 3,
-        "credibility_tier": "primary"
-      },
-      "fetched_via": "rss"
-    },
-    {
-      "id": "2026-10-01-m014",
-      "category": "security",
-      "is_headline": false,
-      "title_zh": "Custom GPT 成惡意入口：ClickFix 誘導下載 RAT，企業須收緊分享治理",
-      "title_en": "Custom GPT 成惡意入口：ClickFix 誘導下載 RAT，企業須收緊分享治理",
-      "lede_zh": "資安研究人員發現，攻擊者正濫用 ChatGPT Custom GPTs，將其偽裝成正常產品或服務，再把使用者引導至惡意網站，利用 ClickFix 這類假修復流程誘騙受害者執行指令，最終下載遠端存取木馬程式。這起事件揭示的風險不在模型本身「回答錯誤」，而是 AI 平台的可信介面可能被拿來建立社交工程信任：使用者看見 GPT 名稱、對話頁面或功能宣稱，就可能放鬆對外部連結與安裝步驟的警戒。台灣企業若讓員工使用 Custom GPT 處理工作，應把它納入既有 SaaS 與第三方應用治理，限制從未驗證 GPT 開啟外部網站、下載檔案或複製終端機指令，並對 ClickFix 常見話術進行資安宣導。開發者則應避免把安裝、驗證或付款流程完全交給對話內容引導，至少在官方網域、簽章與明確權限提示上建立可辨識的信任邊界。技術社群普遍關注平台方是否強化 GPT 發布者驗證、外連警示與可疑行為偵測，因為生成式 AI 的分發便利性正在同時放大正常產品與詐騙流程。",
-      "lede_en": "資安研究人員發現，攻擊者正濫用 ChatGPT Custom GPTs，將其偽裝成正常產品或服務，再把使用者引導至惡意網站，利用 ClickFix 這類假修復流程誘騙受害者執行指令，最終下載遠端存取木馬程式。這起事件揭示的風險不在模型本身「回答錯誤」，而是 AI 平台的可信介面可能被拿來建立社交工程信任：使用者看見 GPT 名稱、對話頁面或功能宣稱，就可能放鬆對外部連結與安裝步驟的警戒。台灣企業若讓員工使用 Custom GPT 處理工作，應把它納入既有 SaaS 與第三方應用治理，限制從未驗證 GPT 開啟外部網站、下載檔案或複製終端機指令，並對 ClickFix 常見話術進行資安宣導。開發者則應避免把安裝、驗證或付款流程完全交給對話內容引導，至少在官方網域、簽章與明確權限提示上建立可辨識的信任邊界。技術社群普遍關注平台方是否強化 GPT 發布者驗證、外連警示與可疑行為偵測，因為生成式 AI 的分發便利性正在同時放大正常產品與詐騙流程。",
-      "bullets_zh": [],
-      "bullets_en": [],
-      "is_teaching_material": false,
-      "teaching_takeaway": "",
-      "source": {
-        "name": "The Hacker News",
-        "url": "https://thehackernews.com/2026/09/attackers-abuse-chatgpt-custom-gpts-to.html",
-        "published_at": "2026-09-30T15:00:15+00:00",
-        "reading_time_min": 4,
-        "credibility_tier": "secondary"
-      },
-      "fetched_via": "rss",
-      "image_url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-E2KBc2Kl1xfsJ_ayeCwrbYODEJELskOif8C_YQFyt7DoGklZczzFD3IetvE9mFBUeQN9SQWCE41WtJA-NkE6dya1xAOznACZzeRCMRhvfSQaGipfmD-z1F2rWFPFGLvYSJwrfKhUrbdzwMc_b4OkpTA8huBozpABL2OBcxCM1cod7Hvr0eH23GgE1sEo/s1700-nu-rw-lo-l85-e365/custom-gpt.jpg"
-    },
-    {
-      "id": "2026-10-01-m015",
-      "category": "security",
-      "is_headline": false,
-      "title_zh": "Cisco SD-WAN 零時差遭利用：AI 工作負載的網路控制面成風險點",
-      "title_en": "Cisco SD-WAN 零時差遭利用：AI 工作負載的網路控制面成風險點",
-      "lede_zh": "Cisco 警告，攻擊者正在利用 Catalyst SD-WAN Manager 的重大零時差漏洞 CVE-2026-76504；該漏洞可能讓未登入的遠端攻擊者透過 Manager API 取得管理者身分操作權限，官方已提供修補版本，但沒有替代性緩解措施。它雖非直接針對 AI 模型，卻與 AI 導入高度相關：企業把訓練、推論、資料同步與分支據點存取搬上雲端及多地資料中心後，SD-WAN 控制面一旦失守，攻擊者可能取得橫向移動、流量操控或資料外洩的有利位置。台灣企業 IT 團隊應立即盤點是否使用受影響的 Cisco Catalyst SD-WAN Manager，確認管理介面是否暴露於網際網路、安排升級並檢查 API 與管理者帳號活動；正在建置企業內部 AI 助理的團隊，也應把網路管理系統列入模型周邊資產，而不是只保護向量資料庫與 API 金鑰。對產品與工程主管而言，這再次提醒 AI 專案的安全邊界是整條資料與網路路徑，任何自動化工作流都依賴底層控制面正常運作。資安社群對此類無需登入即可奪取管理權的漏洞特別警戒，因為修補窗口往往比一般應用程式漏洞更短。",
-      "lede_en": "Cisco 警告，攻擊者正在利用 Catalyst SD-WAN Manager 的重大零時差漏洞 CVE-2026-76504；該漏洞可能讓未登入的遠端攻擊者透過 Manager API 取得管理者身分操作權限，官方已提供修補版本，但沒有替代性緩解措施。它雖非直接針對 AI 模型，卻與 AI 導入高度相關：企業把訓練、推論、資料同步與分支據點存取搬上雲端及多地資料中心後，SD-WAN 控制面一旦失守，攻擊者可能取得橫向移動、流量操控或資料外洩的有利位置。台灣企業 IT 團隊應立即盤點是否使用受影響的 Cisco Catalyst SD-WAN Manager，確認管理介面是否暴露於網際網路、安排升級並檢查 API 與管理者帳號活動；正在建置企業內部 AI 助理的團隊，也應把網路管理系統列入模型周邊資產，而不是只保護向量資料庫與 API 金鑰。對產品與工程主管而言，這再次提醒 AI 專案的安全邊界是整條資料與網路路徑，任何自動化工作流都依賴底層控制面正常運作。資安社群對此類無需登入即可奪取管理權的漏洞特別警戒，因為修補窗口往往比一般應用程式漏洞更短。",
-      "bullets_zh": [],
-      "bullets_en": [],
-      "is_teaching_material": false,
-      "teaching_takeaway": "",
-      "source": {
-        "name": "The Hacker News",
-        "url": "https://thehackernews.com/2026/09/cisco-warns-of-attackers-exploiting.html",
-        "published_at": "2026-09-30T15:24:54+00:00",
-        "reading_time_min": 4,
-        "credibility_tier": "secondary"
-      },
-      "fetched_via": "rss",
-      "image_url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDRBMRmTwQer5G9fB3V6UvczV_QEpVLnIpRMEjpkiSKOC1vvem-ZkM9zP2vgBIYDlH-jveY5oeV2qcYJ2YiVD1-z1q4bJNBrPYpewyUqOOgbl89xV3JCsQeor1fhrWLS6EEvtNCIHlyuNB8jRnDzqdO9bQZ4hNN0yvEE6ceXw0A43onar4xorpsnM1qog/s1700-nu-rw-lo-l85-e365/cisco-admin.jpg"
-    },
-    {
-      "id": "2026-10-01-m016",
-      "category": "dev",
-      "is_headline": false,
-      "title_zh": "本機 Agent 推論加速戰升溫：Magnitude 主打自我調校硬體",
-      "title_en": "本機 Agent 推論加速戰升溫：Magnitude 主打自我調校硬體",
-      "lede_zh": "新創團隊 Magnitude 在 Hacker News 發布同名 Agent 推論引擎，主打能依 Mac、Linux、Windows 與底層硬體條件自我調整執行方式，瞄準本機模型跑 Agent 時常見的延遲與資源浪費問題。團隊宣稱其速度最高可達 llama.cpp 的兩倍，但這仍屬新產品自行提出的效能主張，實務採用前應以自己的模型、量化格式、工具呼叫負載與硬體重新驗證。它的重要性不只在於「跑得更快」：Agent 工作負載往往是短回合、頻繁工具呼叫、上下文持續變動，與傳統資料中心批次推論的最佳化目標並不相同。對台灣 AI 工程師而言，若正把內部知識助理、瀏覽器自動化或客服流程部署到 Mac mini、工作站或邊緣設備，這類引擎可能降低雲端 GPU 依賴與回應成本。開發者社群普遍會聚焦於其跨硬體相容性、真實吞吐量，以及是否能在模型熱切換與多 Agent 情境下維持穩定。",
-      "lede_en": "新創團隊 Magnitude 在 Hacker News 發布同名 Agent 推論引擎，主打能依 Mac、Linux、Windows 與底層硬體條件自我調整執行方式，瞄準本機模型跑 Agent 時常見的延遲與資源浪費問題。團隊宣稱其速度最高可達 llama.cpp 的兩倍，但這仍屬新產品自行提出的效能主張，實務採用前應以自己的模型、量化格式、工具呼叫負載與硬體重新驗證。它的重要性不只在於「跑得更快」：Agent 工作負載往往是短回合、頻繁工具呼叫、上下文持續變動，與傳統資料中心批次推論的最佳化目標並不相同。對台灣 AI 工程師而言，若正把內部知識助理、瀏覽器自動化或客服流程部署到 Mac mini、工作站或邊緣設備，這類引擎可能降低雲端 GPU 依賴與回應成本。開發者社群普遍會聚焦於其跨硬體相容性、真實吞吐量，以及是否能在模型熱切換與多 Agent 情境下維持穩定。",
-      "bullets_zh": [],
-      "bullets_en": [],
-      "is_teaching_material": false,
-      "teaching_takeaway": "",
-      "source": {
-        "name": "Hacker News Front Page",
-        "url": "https://github.com/magnitudedev/magnitude",
-        "published_at": "2026-09-30T17:37:40+00:00",
-        "reading_time_min": 4,
-        "credibility_tier": "tertiary"
-      },
-      "fetched_via": "rss",
-      "image_url": "https://opengraph.githubassets.com/634396d40da1cd1e988a67bb12e360691abdef6dfe3ed1875957c5a8648cb791/magnitudedev/magnitude"
-    },
-    {
-      "id": "2026-10-01-m017",
-      "category": "dev",
-      "is_headline": false,
-      "title_zh": "PyTorch Conference 倒數，Ray 成為 AI 系統擴展主線",
-      "title_en": "PyTorch Conference 倒數，Ray 成為 AI 系統擴展主線",
-      "lede_zh": "PyTorch 在北美開發者大會前發布 Ray 主題導覽，提前把分散式訓練、推論與 AI 工作流編排拉到議程中央。這反映開源 AI 的瓶頸正從「能否訓練模型」移向「如何把資料、GPU、任務隊列與服務可靠地串起來」；模型愈大、Agent 流程愈長，單機腳本很快就會失去可維護性。對台灣團隊來說，Ray 值得關注的不是活動本身，而是它能否成為 PyTorch 訓練、批次推論、超參數搜尋與模型服務之間的共同調度層，尤其適合已有 Kubernetes 或多 GPU 節點的企業。剛起步的工程師可先從 Ray 的遠端任務與資源宣告概念切入，不必一開始就建立大型叢集。技術圈也持續討論 Ray 帶來的抽象便利，是否會被部署複雜度、除錯成本與雲端原生工具鏈抵銷。",
-      "lede_en": "PyTorch 在北美開發者大會前發布 Ray 主題導覽，提前把分散式訓練、推論與 AI 工作流編排拉到議程中央。這反映開源 AI 的瓶頸正從「能否訓練模型」移向「如何把資料、GPU、任務隊列與服務可靠地串起來」；模型愈大、Agent 流程愈長，單機腳本很快就會失去可維護性。對台灣團隊來說，Ray 值得關注的不是活動本身，而是它能否成為 PyTorch 訓練、批次推論、超參數搜尋與模型服務之間的共同調度層，尤其適合已有 Kubernetes 或多 GPU 節點的企業。剛起步的工程師可先從 Ray 的遠端任務與資源宣告概念切入，不必一開始就建立大型叢集。技術圈也持續討論 Ray 帶來的抽象便利，是否會被部署複雜度、除錯成本與雲端原生工具鏈抵銷。",
-      "bullets_zh": [],
-      "bullets_en": [],
-      "is_teaching_material": false,
-      "teaching_takeaway": "",
-      "source": {
-        "name": "PyTorch Blog",
-        "url": "https://pytorch.org/blog/a-ray-focused-guide-to-pytorch-conference-north-america/",
-        "published_at": "2026-09-30T16:45:20+00:00",
-        "reading_time_min": 3,
-        "credibility_tier": "primary"
-      },
-      "fetched_via": "rss"
-    },
-    {
-      "id": "2026-10-01-m018",
-      "category": "ai-tools",
-      "is_headline": false,
-      "title_zh": "Google Workspace 開放評論與建議修訂 API，企業文件可接上 AI 審稿流",
-      "title_en": "Google Workspace 開放評論與建議修訂 API，企業文件可接上 AI 審稿流",
-      "lede_zh": "Google Workspace 新增 Docs、Sheets、Slides 的程式化評論管理能力，並在 Docs API 納入「建議修訂」支援；開發者現在可讓系統提出可供人工審核的修改，而非直接覆寫文件內容。這是企業 AI 導入很關鍵的一步，因為真正卡住許多內部 Copilot 專案的不是生成文字，而是生成後如何留下責任軌跡、交由適當的人核准，以及把回饋回寫到既有工作流程。對台灣使用 Google Workspace 的產品、法務、行銷與 PM 團隊而言，可以把 LLM 串接內規檢查、合約初審、簡報校稿與專案追蹤：模型先標註問題、附上修改建議，再由文件擁有者決定是否接受。相較於直接讓 Agent 寫入正式文件，這種 human-in-the-loop 設計更符合企業治理與降低誤改風險的需要，也讓第三方 AI 工具更容易進入 Workspace 的日常協作介面。開發者社群將特別觀察 API 權限粒度、留言執行緒處理與建議修訂能否完整保留版本脈絡，這些細節決定它是展示功能，還是可正式上線的文件自動化基礎。",
-      "lede_en": "Google Workspace 新增 Docs、Sheets、Slides 的程式化評論管理能力，並在 Docs API 納入「建議修訂」支援；開發者現在可讓系統提出可供人工審核的修改，而非直接覆寫文件內容。這是企業 AI 導入很關鍵的一步，因為真正卡住許多內部 Copilot 專案的不是生成文字，而是生成後如何留下責任軌跡、交由適當的人核准，以及把回饋回寫到既有工作流程。對台灣使用 Google Workspace 的產品、法務、行銷與 PM 團隊而言，可以把 LLM 串接內規檢查、合約初審、簡報校稿與專案追蹤：模型先標註問題、附上修改建議，再由文件擁有者決定是否接受。相較於直接讓 Agent 寫入正式文件，這種 human-in-the-loop 設計更符合企業治理與降低誤改風險的需要，也讓第三方 AI 工具更容易進入 Workspace 的日常協作介面。開發者社群將特別觀察 API 權限粒度、留言執行緒處理與建議修訂能否完整保留版本脈絡，這些細節決定它是展示功能，還是可正式上線的文件自動化基礎。",
-      "bullets_zh": [],
-      "bullets_en": [],
-      "is_teaching_material": true,
-      "teaching_takeaway": "把 AI 輸出改成「建議修訂＋人工核准」，可保留版本脈絡與責任歸屬，較適合企業文件自動化。",
-      "source": {
-        "name": "Google Workspace Updates",
-        "url": "http://workspaceupdates.googleblog.com/2026/09/programmatic-comment-and-suggestion.html",
-        "published_at": "2026-09-30T21:26:19+00:00",
-        "reading_time_min": 5,
-        "credibility_tier": "primary"
-      },
-      "fetched_via": "rss",
-      "image_url": "https://images.unsplash.com/photo-1668853907325-2480f0412e0d?ixid=M3w5OTExMzZ8MHwxfHNlYXJjaHwxfHxHb29nbGUlMjBXb3Jrc3BhY2UlMjB0ZWNobm9sb2d5JTIwYWJzdHJhY3R8ZW58MXwwfHx8MTc5MDgxMzM5NHww&ixlib=rb-4.1.0&w=900&q=72&fit=crop",
-      "image_source": "unsplash",
-      "image_credit": "Growtika"
-    },
-    {
-      "id": "2026-10-01-m019",
-      "category": "ai-tools",
-      "is_headline": false,
-      "title_zh": "Gemini Skills 接棒 Gems：可重複使用的提示將深入 Workspace",
-      "title_en": "Gemini Skills 接棒 Gems：可重複使用的提示將深入 Workspace",
-      "lede_zh": "Google 正把 Gemini 的客製化指令從 Gems 逐步轉向 Skills，並計畫擴及 Gemini app 與多個 Workspace 應用程式。Skills 的核心不是另一個聊天機器人，而是把常用的角色設定、格式規則、作業步驟與品質要求封裝成可重複呼叫的提示，讓使用者不必每次從零描述任務。這代表 Google 正試圖把提示工程產品化，與 ChatGPT 的自訂工作流、Claude 的可重用指令形成辦公協作入口之爭。台灣企業可先盤點高頻且規則明確的工作，例如會議紀錄整理、採購文件比對、中文簡報潤稿或客服回覆草稿，將部門最佳提示整理為可治理的 Skills，而不是散落在個人聊天室。需要留意的是，既有 Gems 的遷移時程與跨產品支援範圍會影響內部教材與權限設計，團隊不宜把它當成永久不變的設定格式。技術社群關注的焦點將是 Skills 是否能攜帶足夠上下文、是否能被組織集中管理，以及能否真正降低非技術員工使用 AI 的門檻。",
-      "lede_en": "Google 正把 Gemini 的客製化指令從 Gems 逐步轉向 Skills，並計畫擴及 Gemini app 與多個 Workspace 應用程式。Skills 的核心不是另一個聊天機器人，而是把常用的角色設定、格式規則、作業步驟與品質要求封裝成可重複呼叫的提示，讓使用者不必每次從零描述任務。這代表 Google 正試圖把提示工程產品化，與 ChatGPT 的自訂工作流、Claude 的可重用指令形成辦公協作入口之爭。台灣企業可先盤點高頻且規則明確的工作，例如會議紀錄整理、採購文件比對、中文簡報潤稿或客服回覆草稿，將部門最佳提示整理為可治理的 Skills，而不是散落在個人聊天室。需要留意的是，既有 Gems 的遷移時程與跨產品支援範圍會影響內部教材與權限設計，團隊不宜把它當成永久不變的設定格式。技術社群關注的焦點將是 Skills 是否能攜帶足夠上下文、是否能被組織集中管理，以及能否真正降低非技術員工使用 AI 的門檻。",
-      "bullets_zh": [],
-      "bullets_en": [],
-      "is_teaching_material": true,
-      "teaching_takeaway": "Skills 把高品質提示封裝成可重複使用的工作規範，能將部門經驗變成一致、可管理的 AI 流程。",
-      "source": {
-        "name": "Google Workspace Updates",
-        "url": "http://workspaceupdates.googleblog.com/2026/09/skills-gemini-app-workspace.html",
-        "published_at": "2026-09-30T16:11:32+00:00",
-        "reading_time_min": 4,
-        "credibility_tier": "primary"
-      },
-      "fetched_via": "rss",
-      "industry_tags": [
-        "機器人"
-      ],
-      "image_url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHip8LNRd833GMZlaYoR4axAR8wxZFpiN0Yc7w4n7p3-oSdBquP-SVDVwc34Ig6zb14guxWAXUIJFRhOWbyXaa1PWFrceIy5u3oNus612w1vDTX-BeEROdrJ4j1jozpFbVeLGBk5cmBjpzD_eaMdwABbjL9T7eL1l-Xoe6PSowqJ6-YCCu3ssZRogFif5f/w1200-h630-p-k-no-nu/Skill%20Builder%20in%20Docs.gif"
-    },
-    {
-      "id": "2026-10-01-m020",
-      "category": "taiwan",
-      "is_headline": false,
-      "title_zh": "AMD Venice 傳出 2027 產能售罄，AI 資料中心連 CPU 都成稀缺資源",
-      "title_en": "AMD Venice 傳出 2027 產能售罄，AI 資料中心連 CPU 都成稀缺資源",
-      "lede_zh": "科技新報報導，採用台積電 2 奈米製程的 AMD Zen 6 架構 Venice EPYC 處理器，傳出 2027 年產能已被訂滿；若後續獲得 AMD 與供應鏈更多證實，這將是 AI 基礎建設需求外溢到 CPU 的重要訊號。市場談 AI 常只看 GPU，但 Agentic 工作負載、資料前處理、儲存與網路服務、推論協調及傳統企業系統整合，都需要大量高效能 CPU，因此 GPU 叢集擴建會連帶推升伺服器平台需求。對台灣而言，事件同時牽動台積電先進製程、伺服器 ODM、散熱、電源與網通供應鏈，也提醒企業 IT 不應只排隊採購 GPU，而要及早規畫整機交期、記憶體、網路與電力配置。AI 產品開發者則可把這視為成本與容量管理訊號：推論架構若能減少不必要的 CPU 編排、資料轉換與工具往返，會比單純換更大模型更直接。技術與產業圈接下來會關注需求究竟來自長約預訂、實際出貨，或市場對 AI 資本支出的提前卡位。",
-      "lede_en": "科技新報報導，採用台積電 2 奈米製程的 AMD Zen 6 架構 Venice EPYC 處理器，傳出 2027 年產能已被訂滿；若後續獲得 AMD 與供應鏈更多證實，這將是 AI 基礎建設需求外溢到 CPU 的重要訊號。市場談 AI 常只看 GPU，但 Agentic 工作負載、資料前處理、儲存與網路服務、推論協調及傳統企業系統整合，都需要大量高效能 CPU，因此 GPU 叢集擴建會連帶推升伺服器平台需求。對台灣而言，事件同時牽動台積電先進製程、伺服器 ODM、散熱、電源與網通供應鏈，也提醒企業 IT 不應只排隊採購 GPU，而要及早規畫整機交期、記憶體、網路與電力配置。AI 產品開發者則可把這視為成本與容量管理訊號：推論架構若能減少不必要的 CPU 編排、資料轉換與工具往返，會比單純換更大模型更直接。技術與產業圈接下來會關注需求究竟來自長約預訂、實際出貨，或市場對 AI 資本支出的提前卡位。",
-      "bullets_zh": [],
-      "bullets_en": [],
-      "is_teaching_material": false,
-      "teaching_takeaway": "",
-      "source": {
-        "name": "科技新報 TechNews",
-        "url": "https://finance.technews.tw/2026/10/01/amds-zen-6-architecture-venice-epyc-processors-have-sold-out-for-2027/",
-        "published_at": "2026-10-01T00:00:48+00:00",
-        "reading_time_min": 4,
-        "credibility_tier": "secondary"
-      },
-      "fetched_via": "rss",
-      "image_url": "https://img.technews.tw/wp-content/uploads/2026/07/24114709/AMD-6th-Gen-AMD-EPYC-Server-CPU_03.jpg"
-    },
-    {
-      "id": "2026-10-01-m021",
-      "category": "taiwan",
-      "is_headline": false,
-      "title_zh": "Anthropic 招股風險揭露：AI 競賽先得回答「失控怎麼辦」",
-      "title_en": "Anthropic 招股風險揭露：AI 競賽先得回答「失控怎麼辦」",
-      "lede_zh": "Anthropic 相關招股文件揭露，在營收高速成長與大規模算力投入的另一面，公司把先進 AI 可能造成的災難性後果列為重要風險，涵蓋模型抗拒關閉、隱瞞或操縱資訊，以及在測試情境中改變行為等問題；同一波消息也傳出 OpenAI 正尋求新一輪巨額資金。這不是對末日情節的預言，而是前沿模型公司必須向投資人交代的現實：能力、資本支出與安全責任正被綁成同一張資產負債表。對台灣團隊而言，若正在把 Agent 接到內部資料、採購流程或客戶系統，安全設計不能只停在提示詞限制，而要把最小權限、可撤銷存取、操作審核與完整日誌當成產品需求。技術圈普遍關注的焦點，也從模型會不會答錯，轉向模型在有工具、有記憶、有長任務權限時，能否被可靠地評估與中止。",
-      "lede_en": "Anthropic 相關招股文件揭露，在營收高速成長與大規模算力投入的另一面，公司把先進 AI 可能造成的災難性後果列為重要風險，涵蓋模型抗拒關閉、隱瞞或操縱資訊，以及在測試情境中改變行為等問題；同一波消息也傳出 OpenAI 正尋求新一輪巨額資金。這不是對末日情節的預言，而是前沿模型公司必須向投資人交代的現實：能力、資本支出與安全責任正被綁成同一張資產負債表。對台灣團隊而言，若正在把 Agent 接到內部資料、採購流程或客戶系統，安全設計不能只停在提示詞限制，而要把最小權限、可撤銷存取、操作審核與完整日誌當成產品需求。技術圈普遍關注的焦點，也從模型會不會答錯，轉向模型在有工具、有記憶、有長任務權限時，能否被可靠地評估與中止。",
-      "bullets_zh": [],
-      "bullets_en": [],
-      "is_teaching_material": false,
-      "teaching_takeaway": "",
-      "source": {
-        "name": "TechOrange",
-        "url": "https://techorange.com/2026/10/01/anthropic-ipo-ai-risk/?utm_source=rss&utm_medium=feed&utm_campaign=techorange_rss",
-        "published_at": "2026-09-30T21:30:00+00:00",
-        "reading_time_min": 5,
-        "credibility_tier": "tertiary"
-      },
-      "fetched_via": "rss",
-      "image_url": "https://techorange.com/app/uploads/2026/09/aae6778edfd422c2-1024x576.jpg"
-    },
-    {
-      "id": "2026-10-01-m022",
-      "category": "taiwan",
-      "is_headline": false,
-      "title_zh": "達梭把 AI 放進虛擬雙生：製造業先模擬、再動工",
-      "title_en": "達梭把 AI 放進虛擬雙生：製造業先模擬、再動工",
-      "lede_zh": "達梭系統在台灣年度高峰論壇與 SIMULIA 用戶大會，把「虛擬雙生 × AI 虛擬助手」放在核心位置，主張企業應從過去的做出原型、測試、修正，改為先以模型理解系統、進行模擬與最佳化，再投入實體製造。這對高科技、航太、汽車、電池與設備業特別關鍵，因為 AI 若只會生成報告，無法解決研發現場最昂貴的問題；若能結合材料、結構、熱流與產線資料，才可能在設計階段就排除部分風險。台灣半導體、電子製造與自動化團隊可從單一瓶頸著手，例如設備參數最佳化、良率異常的模擬驗證，或把既有工程知識整理成可追溯的 AI 助手，而非一開始追求全廠智慧化。技術圈對這類工業 AI 的期待很高，但也清楚知道成敗取決於資料治理、物理模型品質，以及模擬結果能否真正回饋現場決策。",
-      "lede_en": "達梭系統在台灣年度高峰論壇與 SIMULIA 用戶大會，把「虛擬雙生 × AI 虛擬助手」放在核心位置，主張企業應從過去的做出原型、測試、修正，改為先以模型理解系統、進行模擬與最佳化，再投入實體製造。這對高科技、航太、汽車、電池與設備業特別關鍵，因為 AI 若只會生成報告，無法解決研發現場最昂貴的問題；若能結合材料、結構、熱流與產線資料，才可能在設計階段就排除部分風險。台灣半導體、電子製造與自動化團隊可從單一瓶頸著手，例如設備參數最佳化、良率異常的模擬驗證，或把既有工程知識整理成可追溯的 AI 助手，而非一開始追求全廠智慧化。技術圈對這類工業 AI 的期待很高，但也清楚知道成敗取決於資料治理、物理模型品質，以及模擬結果能否真正回饋現場決策。",
-      "bullets_zh": [],
-      "bullets_en": [],
-      "is_teaching_material": false,
-      "teaching_takeaway": "",
-      "source": {
-        "name": "TechOrange",
-        "url": "https://techorange.com/2026/09/30/dassault-simulia-ainative/?utm_source=rss&utm_medium=feed&utm_campaign=techorange_rss",
-        "published_at": "2026-09-30T07:26:11+00:00",
-        "reading_time_min": 4,
-        "credibility_tier": "tertiary"
-      },
-      "fetched_via": "rss",
-      "industry_tags": [
-        "製造"
-      ],
-      "image_url": "https://techorange.com/app/uploads/2026/09/8536d0b8afe5e190-1024x577.png"
-    },
-    {
-      "id": "2026-10-01-m023",
-      "category": "taiwan",
-      "is_headline": false,
-      "title_zh": "DIR-822A 高風險漏洞，D-Link：台灣市場未受波及",
-      "title_en": "DIR-822A 高風險漏洞，D-Link：台灣市場未受波及",
-      "lede_zh": "D-Link 針對 DIR-822A 路由器被揭露的兩項重大漏洞表示，受影響機種為新加坡當地專屬型號，未在台灣銷售，因此台灣用戶不受這起事件直接影響；原廠也表示將在當地提供新版韌體修補。這則消息雖不是 AI 模型新聞，卻提醒所有把 AI 助手、遠端監控、邊緣推論或雲端資料管線接進辦公網路的團隊：AI 系統的攻擊面往往先從身旁的網路設備開始，而不是模型 API。企業 IT 不應只看 CVE 編號與嚴重度，還要先確認資產清單、實際機型、部署地點與生命週期，才能避免無謂恐慌或漏掉真正暴露的設備。尤其文中提到其他 DIR-822 系列已進入 EOL，開發與維運團隊應把停止支援的設備列入汰換盤點，並建立韌體更新、網段隔離與外網管理介面最小化的基本控制。",
-      "lede_en": "D-Link 針對 DIR-822A 路由器被揭露的兩項重大漏洞表示，受影響機種為新加坡當地專屬型號，未在台灣銷售，因此台灣用戶不受這起事件直接影響；原廠也表示將在當地提供新版韌體修補。這則消息雖不是 AI 模型新聞，卻提醒所有把 AI 助手、遠端監控、邊緣推論或雲端資料管線接進辦公網路的團隊：AI 系統的攻擊面往往先從身旁的網路設備開始，而不是模型 API。企業 IT 不應只看 CVE 編號與嚴重度，還要先確認資產清單、實際機型、部署地點與生命週期，才能避免無謂恐慌或漏掉真正暴露的設備。尤其文中提到其他 DIR-822 系列已進入 EOL，開發與維運團隊應把停止支援的設備列入汰換盤點，並建立韌體更新、網段隔離與外網管理介面最小化的基本控制。",
-      "bullets_zh": [],
-      "bullets_en": [],
-      "is_teaching_material": false,
-      "teaching_takeaway": "",
-      "source": {
-        "name": "iThome",
-        "url": "https://www.ithome.com.tw/news/179306",
-        "published_at": "2026-09-30T14:29:00+00:00",
-        "reading_time_min": 2,
-        "credibility_tier": "primary"
-      },
-      "fetched_via": "rss",
-      "image_url": "https://www.ithome.com.tw/sites/default/files/field/image/_a7b6adyqke_0.jpg"
-    },
-    {
-      "id": "2026-10-01-m024",
-      "category": "enterprise-cases",
-      "is_headline": false,
-      "title_zh": "Spanner Omni 正式推出：Google 把 Agent 資料層帶出雲端",
-      "title_en": "Spanner Omni 正式推出：Google 把 Agent 資料層帶出雲端",
-      "lede_zh": "Google Cloud 宣布 Spanner Omni 正式推出，將原本以分散式 SQL、強一致性著稱的 Spanner，延伸為可部署在自有資料中心、其他雲端、Kubernetes 甚至本機環境的資料庫版本。對正在打造 Agent 的團隊，重點不只是在同一套系統內結合 SQL、圖形、鍵值、全文與向量搜尋，而是能把關係資料、語意檢索與實際營運資料放到較接近既有基礎設施的位置，降低多雲與資料落地限制帶來的架構斷裂。台灣企業若有製造、金融或大型內部系統不能直接搬上單一公有雲，可評估它是否適合作為跨環境 Agent 的操作記憶層，但必須接受自管版本的維運、升級與可用性責任。Google 同時提供開發用途的免費版本，工程團隊可先用小型原型驗證向量加結構化查詢的需求；社群討論則聚焦在功能接近託管服務後，企業是否願意用更高的維運成本交換部署自主權。",
-      "lede_en": "Google Cloud 宣布 Spanner Omni 正式推出，將原本以分散式 SQL、強一致性著稱的 Spanner，延伸為可部署在自有資料中心、其他雲端、Kubernetes 甚至本機環境的資料庫版本。對正在打造 Agent 的團隊，重點不只是在同一套系統內結合 SQL、圖形、鍵值、全文與向量搜尋，而是能把關係資料、語意檢索與實際營運資料放到較接近既有基礎設施的位置，降低多雲與資料落地限制帶來的架構斷裂。台灣企業若有製造、金融或大型內部系統不能直接搬上單一公有雲，可評估它是否適合作為跨環境 Agent 的操作記憶層，但必須接受自管版本的維運、升級與可用性責任。Google 同時提供開發用途的免費版本，工程團隊可先用小型原型驗證向量加結構化查詢的需求；社群討論則聚焦在功能接近託管服務後，企業是否願意用更高的維運成本交換部署自主權。",
-      "bullets_zh": [],
-      "bullets_en": [],
-      "is_teaching_material": false,
-      "teaching_takeaway": "",
-      "source": {
-        "name": "Google Cloud Blog",
-        "url": "https://cloud.google.com/blog/products/databases/spanner-omni-deploy-anywhere-version-of-spanner-is-now-ga/",
-        "published_at": "2026-09-30T16:00:00+00:00",
+        "name": "The Decoder",
+        "url": "https://the-decoder.com/anthropic-brings-claude-to-civilian-agencies-as-its-fight-with-the-pentagon-drags-on/",
+        "published_at": "2026-10-01T14:26:54+00:00",
         "reading_time_min": 4,
         "credibility_tier": "secondary"
       },
@@ -648,63 +220,505 @@
       "industry_tags": [
         "金融"
       ],
-      "image_url": "https://storage.googleapis.com/gweb-cloudblog-publish/images/GettyImages-2175580039.max-2600x2600.jpg"
+      "image_url": "https://the-decoder.com/wp-content/uploads/2026/10/claude_government-1200x670.png"
     },
     {
-      "id": "2026-10-01-m025",
-      "category": "enterprise-cases",
+      "id": "2026-10-02-m006",
+      "category": "research-papers",
       "is_headline": false,
-      "title_zh": "Google Data Agent Kit 正式推出：讓 Claude Code、Codex 直接理解企業資料",
-      "title_en": "Google Data Agent Kit 正式推出：讓 Claude Code、Codex 直接理解企業資料",
-      "lede_zh": "Google Cloud 將 Data Agent Kit 推向正式版，這是一組免費的 MCP 工具與 Agent skills，可讓 Claude Code、Codex 等既有程式代理直接連接 Google Cloud 的資料服務，不必再靠工程師手動貼上資料表結構、查詢錯誤與工作紀錄補足上下文。新版擴充到 BigQuery Graph、Bigtable 與受管 Spark，也能協助 Agent 檢視 schema、執行查詢、診斷管線，並以團隊既有權限運作。對台灣資料與產品團隊，最實際的起點不是讓 Agent 自動改正式資料，而是先在開發環境請它找出可信資料表、產生具成本意識的 SQL，或協助排查 Airflow 與 Spark 作業失敗原因。這代表 MCP 的競爭已從「能不能接工具」進到「能否帶入正確資料脈絡、權限與治理」；開發者社群也特別在意其開源 skills 是否足以審核、客製，並防止 Agent 因模糊指令掃描過大範圍資料。",
-      "lede_en": "Google Cloud 將 Data Agent Kit 推向正式版，這是一組免費的 MCP 工具與 Agent skills，可讓 Claude Code、Codex 等既有程式代理直接連接 Google Cloud 的資料服務，不必再靠工程師手動貼上資料表結構、查詢錯誤與工作紀錄補足上下文。新版擴充到 BigQuery Graph、Bigtable 與受管 Spark，也能協助 Agent 檢視 schema、執行查詢、診斷管線，並以團隊既有權限運作。對台灣資料與產品團隊，最實際的起點不是讓 Agent 自動改正式資料，而是先在開發環境請它找出可信資料表、產生具成本意識的 SQL，或協助排查 Airflow 與 Spark 作業失敗原因。這代表 MCP 的競爭已從「能不能接工具」進到「能否帶入正確資料脈絡、權限與治理」；開發者社群也特別在意其開源 skills 是否足以審核、客製，並防止 Agent 因模糊指令掃描過大範圍資料。",
+      "title_zh": "高光譜模型終於有共同底座：55 種架構一次整合",
+      "title_en": "高光譜模型終於有共同底座：55 種架構一次整合",
+      "lede_zh": "高光譜遙測模型長期卡在一個不夠吸睛、卻極耗工程時間的問題：同樣是分類、偵測或分割任務，不同論文與程式庫對光譜維度、張量格式、前處理和評估方式各自為政，模型往往很難公平比較或直接替換。這份技術報告提出 Hyperspectral Image Models，將 CNN、Vision Transformer、Mamba、圖神經網路、Kolmogorov-Arnold Networks 與自監督遮罩自編碼等六類方法、共 55 個代表模型放進模組化框架，並處理 4D／5D 張量轉換與統一建構介面。它的重要性不在於再造一個單一 SOTA，而是把高光譜研究從「重做資料管線」拉回可重現的模型實驗，讓比較結果更有意義。對台灣做衛星影像、農業科技、半導體檢測、材料分析或工廠視覺的團隊，這類共用底座可縮短模型選型與基準測試週期，也更容易把研究原型交給產品團隊延續。技術社群普遍會關注它是否能涵蓋真實資料集差異，以及統一介面是否會在方便之外掩蓋各模型原本依賴的訓練細節。",
+      "lede_en": "高光譜遙測模型長期卡在一個不夠吸睛、卻極耗工程時間的問題：同樣是分類、偵測或分割任務，不同論文與程式庫對光譜維度、張量格式、前處理和評估方式各自為政，模型往往很難公平比較或直接替換。這份技術報告提出 Hyperspectral Image Models，將 CNN、Vision Transformer、Mamba、圖神經網路、Kolmogorov-Arnold Networks 與自監督遮罩自編碼等六類方法、共 55 個代表模型放進模組化框架，並處理 4D／5D 張量轉換與統一建構介面。它的重要性不在於再造一個單一 SOTA，而是把高光譜研究從「重做資料管線」拉回可重現的模型實驗，讓比較結果更有意義。對台灣做衛星影像、農業科技、半導體檢測、材料分析或工廠視覺的團隊，這類共用底座可縮短模型選型與基準測試週期，也更容易把研究原型交給產品團隊延續。技術社群普遍會關注它是否能涵蓋真實資料集差異，以及統一介面是否會在方便之外掩蓋各模型原本依賴的訓練細節。",
       "bullets_zh": [],
       "bullets_en": [],
-      "is_teaching_material": true,
-      "teaching_takeaway": "MCP 的價值在於讓 Agent 依既有 IAM 權限讀取資料與工具，而非把資料庫內容直接貼進對話框。",
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
       "source": {
-        "name": "Google Cloud Blog",
-        "url": "https://cloud.google.com/blog/topics/developers-practitioners/data-agent-kit-is-now-ga-bring-google-data-cloud-to-any-coding-agent/",
-        "published_at": "2026-09-30T13:00:00+00:00",
+        "name": "HuggingFace Daily Papers",
+        "url": "https://tldr.takara.ai/p/2609.39871",
+        "published_at": "2026-09-30T14:50:21+00:00",
+        "reading_time_min": 4,
+        "credibility_tier": "primary"
+      },
+      "fetched_via": "rss",
+      "industry_tags": [
+        "製造"
+      ],
+      "image_url": "https://tldr.takara.ai/api/og?id=2609.39871"
+    },
+    {
+      "id": "2026-10-02-m007",
+      "category": "research-papers",
+      "is_headline": false,
+      "title_zh": "多算不一定更準：感知模型該按「決策價值」分配算力",
+      "title_en": "多算不一定更準：感知模型該按「決策價值」分配算力",
+      "lede_zh": "這篇研究挑戰了自適應感知系統的一個直覺：遇到困難輸入就切換到更昂貴、更高精度的模型，最後未必能讓真正的業務決策變好。作者提出「感知算力的決策價值」，衡量某筆輸入從低成本感知模式升級到高成本模式後，對下游決策損失究竟帶來多少改變；關鍵是這個值可能為負，代表更精細的辨識反而讓整體決策更差。研究因此主張，算力配置不能只看感知指標，而應和受預算限制的決策最佳解比較，並以全面高精度推論作為基準。對台灣 AI 工程師而言，這可直接用在瑕疵檢測、文件審核、客服分流、智慧交通與風險預警：先定義錯誤決策的成本，再決定哪些案例值得呼叫昂貴模型或人工覆核。技術圈的討論重點將是，許多團隊目前仍以 accuracy、F1 或延遲作為最佳化目標，卻缺少把模型品質與後續營運損益串起來的評估設計。",
+      "lede_en": "這篇研究挑戰了自適應感知系統的一個直覺：遇到困難輸入就切換到更昂貴、更高精度的模型，最後未必能讓真正的業務決策變好。作者提出「感知算力的決策價值」，衡量某筆輸入從低成本感知模式升級到高成本模式後，對下游決策損失究竟帶來多少改變；關鍵是這個值可能為負，代表更精細的辨識反而讓整體決策更差。研究因此主張，算力配置不能只看感知指標，而應和受預算限制的決策最佳解比較，並以全面高精度推論作為基準。對台灣 AI 工程師而言，這可直接用在瑕疵檢測、文件審核、客服分流、智慧交通與風險預警：先定義錯誤決策的成本，再決定哪些案例值得呼叫昂貴模型或人工覆核。技術圈的討論重點將是，許多團隊目前仍以 accuracy、F1 或延遲作為最佳化目標，卻缺少把模型品質與後續營運損益串起來的評估設計。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "arXiv cs.LG (Machine Learning)",
+        "url": "https://arxiv.org/abs/2609.35910",
+        "published_at": "2026-10-01T04:00:00+00:00",
+        "reading_time_min": 4,
+        "credibility_tier": "primary"
+      },
+      "fetched_via": "rss",
+      "image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png"
+    },
+    {
+      "id": "2026-10-02-m008",
+      "category": "research-papers",
+      "is_headline": false,
+      "title_zh": "語音 Agent 壓力測試升級：吵雜、多需求、還得先驗證身分",
+      "title_en": "語音 Agent 壓力測試升級：吵雜、多需求、還得先驗證身分",
+      "lede_zh": "語音 Agent 在展示環境中能流暢對答，到了真實客服電話卻常因背景人聲、連續插話、多個需求與身分驗證而失準；VAmoS Part Deux 提出的 VAmoS Energy，正是針對這些生產環境摩擦設計的更嚴格模擬。該基準包含 100 通與電費帳單及付款協助相關的電話，每位來電者會提出兩到四項請求，Agent 必須操作 16 個工具，背後連接具狀態的 Stripe 計費分身與 Apache Fineract 貸款系統，且未完成來電者驗證前不得存取帳戶。這使它不只是測語音辨識或對話自然度，而是在測一個 Agent 能否依流程、權限與帳務狀態完成任務。台灣金融、電信、零售與公用事業若要導入語音客服，可借鏡這種測試思路：把多意圖、工具失敗、授權邊界和客戶耐心納入驗收，而非只看單輪問答成功率。開發者社群普遍關注的難點，將是如何避免 Agent 為求完成任務而跳過驗證、錯用工具，或在長對話中遺失前後文的交易狀態。",
+      "lede_en": "語音 Agent 在展示環境中能流暢對答，到了真實客服電話卻常因背景人聲、連續插話、多個需求與身分驗證而失準；VAmoS Part Deux 提出的 VAmoS Energy，正是針對這些生產環境摩擦設計的更嚴格模擬。該基準包含 100 通與電費帳單及付款協助相關的電話，每位來電者會提出兩到四項請求，Agent 必須操作 16 個工具，背後連接具狀態的 Stripe 計費分身與 Apache Fineract 貸款系統，且未完成來電者驗證前不得存取帳戶。這使它不只是測語音辨識或對話自然度，而是在測一個 Agent 能否依流程、權限與帳務狀態完成任務。台灣金融、電信、零售與公用事業若要導入語音客服，可借鏡這種測試思路：把多意圖、工具失敗、授權邊界和客戶耐心納入驗收，而非只看單輪問答成功率。開發者社群普遍關注的難點，將是如何避免 Agent 為求完成任務而跳過驗證、錯用工具，或在長對話中遺失前後文的交易狀態。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "arXiv cs.AI",
+        "url": "https://arxiv.org/abs/2609.38512",
+        "published_at": "2026-10-01T04:00:00+00:00",
+        "reading_time_min": 4,
+        "credibility_tier": "primary"
+      },
+      "fetched_via": "rss",
+      "industry_tags": [
+        "金融",
+        "零售"
+      ],
+      "image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png"
+    },
+    {
+      "id": "2026-10-02-m009",
+      "category": "tech-product",
+      "is_headline": false,
+      "title_zh": "GPT-6 Astra Ultrafast 上線：Blackwell 把 Agent 迭代速度推進新戰場",
+      "title_en": "GPT-6 Astra Ultrafast 上線：Blackwell 把 Agent 迭代速度推進新戰場",
+      "lede_zh": "NVIDIA 表示，OpenAI 的 GPT-6 Astra Ultrafast 已在 NVIDIA Blackwell GPU 上運行，並開放於 OpenAI API，以及符合資格的 ChatGPT Work 與 Codex 使用者；相較 Astra Standard 模式，官方稱其 token 生成速度最高可提升八倍。這不只是一次模型模式加速，而是模型供應商、雲端算力與晶片平台共同把「推論延遲」變成產品競爭核心：對需要多輪規劃、工具呼叫與程式碼迭代的 Agent 而言，每一步縮短都會累積成使用者可感知的完成時間差。對台灣 AI 工程師與產品團隊，最務實的下一步不是立刻全面換模型，而是挑出客服協作、程式碼助理、即時搜尋或工作流 Agent 等對等待特別敏感的流程，實測首字延遲、每秒輸出、工具往返時間、品質與成本，確認加速是否真的改善任務完成率。這也讓採購與架構決策更難只看單次 API 單價，因為更快的推論可能減少使用者中斷、降低併發壓力，卻也可能提高高階硬體與服務綁定程度。開發者社群會密切比較其實際速度提升能否跨不同提示長度與負載成立，並檢視快速模式在複雜推理、程式修正及長上下文任務上是否維持足夠穩定。",
+      "lede_en": "NVIDIA 表示，OpenAI 的 GPT-6 Astra Ultrafast 已在 NVIDIA Blackwell GPU 上運行，並開放於 OpenAI API，以及符合資格的 ChatGPT Work 與 Codex 使用者；相較 Astra Standard 模式，官方稱其 token 生成速度最高可提升八倍。這不只是一次模型模式加速，而是模型供應商、雲端算力與晶片平台共同把「推論延遲」變成產品競爭核心：對需要多輪規劃、工具呼叫與程式碼迭代的 Agent 而言，每一步縮短都會累積成使用者可感知的完成時間差。對台灣 AI 工程師與產品團隊，最務實的下一步不是立刻全面換模型，而是挑出客服協作、程式碼助理、即時搜尋或工作流 Agent 等對等待特別敏感的流程，實測首字延遲、每秒輸出、工具往返時間、品質與成本，確認加速是否真的改善任務完成率。這也讓採購與架構決策更難只看單次 API 單價，因為更快的推論可能減少使用者中斷、降低併發壓力，卻也可能提高高階硬體與服務綁定程度。開發者社群會密切比較其實際速度提升能否跨不同提示長度與負載成立，並檢視快速模式在複雜推理、程式修正及長上下文任務上是否維持足夠穩定。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "NVIDIA Newsroom",
+        "url": "https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast/",
+        "published_at": "2026-10-01T23:44:13+00:00",
+        "reading_time_min": 5,
+        "credibility_tier": "primary"
+      },
+      "fetched_via": "rss",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/09/twitter-gif-2104993966043320759-v5.png"
+    },
+    {
+      "id": "2026-10-02-m010",
+      "category": "tech-product",
+      "is_headline": false,
+      "title_zh": "AI Factory 不只拚 GPU 數量：NVIDIA 把算力投資拉回 ROI 算盤",
+      "title_en": "AI Factory 不只拚 GPU 數量：NVIDIA 把算力投資拉回 ROI 算盤",
+      "lede_zh": "NVIDIA 在最新文章中把大型 AI 基礎設施定義為以百萬瓦、甚至十億瓦規模營運的「AI factories」，並將焦點放在一個比峰值算力更現實的問題：如此高資本支出，業者要如何確認投資回報。文章提出生產力、耐久性與可替換性等面向，試圖說明 AI 基礎設施的價值不只來自某一代 GPU 的理論效能，也取決於它能否持續產出可售服務、適應工作負載改變，以及在平台演進時保有調度彈性。這對台灣的意義尤其直接，因為本地同時處於伺服器供應鏈、晶片生態、資料中心建置與企業導入端；從雲端業者到製造業私有 AI 平台，都得把電力、散熱、利用率、模型生命週期與軟體相容性一起納入投資模型。對企業 IT 與產品主管來說，應避免用「買了多少卡」作為成果指標，改以每單位算力帶來的模型服務收入、內部工時節省、佇列等待與閒置率追蹤成效。技術圈對 AI factory 論述的核心疑問仍是，當模型架構與推論需求快速變動時，硬體資產能否真的維持文中期待的長期彈性。",
+      "lede_en": "NVIDIA 在最新文章中把大型 AI 基礎設施定義為以百萬瓦、甚至十億瓦規模營運的「AI factories」，並將焦點放在一個比峰值算力更現實的問題：如此高資本支出，業者要如何確認投資回報。文章提出生產力、耐久性與可替換性等面向，試圖說明 AI 基礎設施的價值不只來自某一代 GPU 的理論效能，也取決於它能否持續產出可售服務、適應工作負載改變，以及在平台演進時保有調度彈性。這對台灣的意義尤其直接，因為本地同時處於伺服器供應鏈、晶片生態、資料中心建置與企業導入端；從雲端業者到製造業私有 AI 平台，都得把電力、散熱、利用率、模型生命週期與軟體相容性一起納入投資模型。對企業 IT 與產品主管來說，應避免用「買了多少卡」作為成果指標，改以每單位算力帶來的模型服務收入、內部工時節省、佇列等待與閒置率追蹤成效。技術圈對 AI factory 論述的核心疑問仍是，當模型架構與推論需求快速變動時，硬體資產能否真的維持文中期待的長期彈性。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "NVIDIA Newsroom",
+        "url": "https://blogs.nvidia.com/blog/productive-durable-fungible-ai-factories/",
+        "published_at": "2026-10-01T13:00:49+00:00",
+        "reading_time_min": 3,
+        "credibility_tier": "primary"
+      },
+      "fetched_via": "rss",
+      "industry_tags": [
+        "製造"
+      ],
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/09/fungibility-blog-1280x680-1.jpg"
+    },
+    {
+      "id": "2026-10-02-m011",
+      "category": "tech-product",
+      "is_headline": false,
+      "title_zh": "猶他州九吉瓦 AI 資料中心夢碎：算力競賽先撞上電力與社區",
+      "title_en": "猶他州九吉瓦 AI 資料中心夢碎：算力競賽先撞上電力與社區",
+      "lede_zh": "The Verge 長期追查指出，Kevin O’Leary 團隊原先在猶他州推動一座號稱可達四萬英畝、規劃九吉瓦用電的 AI 資料中心園區，卻在土地、供電、地方反彈與開發可行性上遭遇連串質疑。這不只是單一開發案的失速，而是生成式 AI 把「模型能力」競爭推到電網、冷卻、水資源與地方治理的現實考題：沒有可交付的能源與基礎設施，再大的算力藍圖都可能停在簡報上。對台灣而言，資料中心投資、電力調度、伺服器供應鏈與先進封裝需求正彼此牽動，企業在評估私有雲、主權 AI 或 GPU 叢集時，不能只用每張卡的成本估算，也要把機房容量、尖峰電力、備援與環評時程納入產品路線。技術圈普遍關注的是，超大型 AI 園區究竟能否以分期建置、在地儲能與可驗證的電力合約降低風險，還是會持續成為資本市場先喊規模、後補基礎建設的案例。",
+      "lede_en": "The Verge 長期追查指出，Kevin O’Leary 團隊原先在猶他州推動一座號稱可達四萬英畝、規劃九吉瓦用電的 AI 資料中心園區，卻在土地、供電、地方反彈與開發可行性上遭遇連串質疑。這不只是單一開發案的失速，而是生成式 AI 把「模型能力」競爭推到電網、冷卻、水資源與地方治理的現實考題：沒有可交付的能源與基礎設施，再大的算力藍圖都可能停在簡報上。對台灣而言，資料中心投資、電力調度、伺服器供應鏈與先進封裝需求正彼此牽動，企業在評估私有雲、主權 AI 或 GPU 叢集時，不能只用每張卡的成本估算，也要把機房容量、尖峰電力、備援與環評時程納入產品路線。技術圈普遍關注的是，超大型 AI 園區究竟能否以分期建置、在地儲能與可驗證的電力合約降低風險，還是會持續成為資本市場先喊規模、後補基礎建設的案例。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "The Verge AI",
+        "url": "https://www.theverge.com/podcast/1002851/utah-ai-data-center-stratos-kevin-oleary-investigation-backlash",
+        "published_at": "2026-10-01T14:00:00+00:00",
         "reading_time_min": 4,
         "credibility_tier": "secondary"
       },
       "fetched_via": "rss",
-      "image_url": "https://storage.googleapis.com/gweb-cloudblog-publish/images/dak_blog_banner.max-2500x2500.png"
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/DCD_1001_Oleary.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200"
     },
     {
-      "id": "2026-10-01-m026",
+      "id": "2026-10-02-m012",
+      "category": "vc-business",
+      "is_headline": false,
+      "title_zh": "NVIDIA 晶片繞道中國疑雲升高：Blackwell 管制成算力戰新破口",
+      "title_en": "NVIDIA 晶片繞道中國疑雲升高：Blackwell 管制成算力戰新破口",
+      "lede_zh": "Bloomberg 報導指出，儘管美國對高階 AI 晶片出口設限，NVIDIA 產品仍持續流入中國，相關官員開始追問供應鏈中究竟有哪些明顯警訊未被攔下。這波焦點已不只是個別走私案件，而是出口管制能否在經銷商、轉運地、雲端租賃與二手設備市場真正落地；若高階 GPU 仍可透過多層交易取得，模型訓練算力的地緣限制就會被明顯稀釋。對台灣 AI 工程團隊與採購端而言，這意味 GPU 的供貨、區域配額、客戶盡職審查與雲端服務可用性都可能更受監管影響，使用受管制硬體建置跨境服務時，應先盤點最終使用者、部署地與供應商合約中的合規責任。對台灣伺服器、網通與半導體供應鏈來說，合規追溯能力正在從法務文件變成接單門檻，料號、序號、物流與維運紀錄都可能成為風險控制的一環。開發者社群尤其在看，限制若持續收緊，是否會加速中國市場轉向本土加速器與模型生態，也讓 NVIDIA 的平台優勢面臨新的分裂壓力。",
+      "lede_en": "Bloomberg 報導指出，儘管美國對高階 AI 晶片出口設限，NVIDIA 產品仍持續流入中國，相關官員開始追問供應鏈中究竟有哪些明顯警訊未被攔下。這波焦點已不只是個別走私案件，而是出口管制能否在經銷商、轉運地、雲端租賃與二手設備市場真正落地；若高階 GPU 仍可透過多層交易取得，模型訓練算力的地緣限制就會被明顯稀釋。對台灣 AI 工程團隊與採購端而言，這意味 GPU 的供貨、區域配額、客戶盡職審查與雲端服務可用性都可能更受監管影響，使用受管制硬體建置跨境服務時，應先盤點最終使用者、部署地與供應商合約中的合規責任。對台灣伺服器、網通與半導體供應鏈來說，合規追溯能力正在從法務文件變成接單門檻，料號、序號、物流與維運紀錄都可能成為風險控制的一環。開發者社群尤其在看，限制若持續收緊，是否會加速中國市場轉向本土加速器與模型生態，也讓 NVIDIA 的平台優勢面臨新的分裂壓力。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "Bloomberg Technology",
+        "url": "https://www.bloomberg.com/news/features/2026-10-01/nvidia-faces-questions-over-china-ai-chip-smuggling-cases",
+        "published_at": "2026-10-01T21:00:03+00:00",
+        "reading_time_min": 5,
+        "credibility_tier": "primary"
+      },
+      "fetched_via": "rss",
+      "image_url": "https://images.unsplash.com/photo-1662947683270-136b00fbf3c7?ixid=M3w5OTExMzZ8MHwxfHNlYXJjaHwxfHxOVklESUElMjBCbGFja3dlbGwlMjB0ZWNobm9sb2d5JTIwYWJzdHJhY3R8ZW58MXwwfHx8MTc5MDg5OTc3NXww&ixlib=rb-4.1.0&w=900&q=72&fit=crop",
+      "image_source": "unsplash",
+      "image_credit": "BoliviaInteligente"
+    },
+    {
+      "id": "2026-10-02-m013",
+      "category": "vc-business",
+      "is_headline": false,
+      "title_zh": "中國國資資金涉 Blackwell 採購，AI 算力管制面臨制度化繞道",
+      "title_en": "中國國資資金涉 Blackwell 採購，AI 算力管制面臨制度化繞道",
+      "lede_zh": "Bloomberg 揭露，一家由多個地方政府實體持有的中國融資公司，曾在提交北京監管機關的文件中披露資助採購受限 NVIDIA Blackwell 晶片的交易。若文件所反映的資金流與採購安排成立，問題便不再只是零星灰色市場買賣，而可能顯示高階算力取得已獲得更有組織的融資支持，直接挑戰美國以硬體限制減緩 AI 能力擴散的策略。Blackwell 是目前 AI 訓練與推論基礎設施競爭的核心平台之一，因此這類交易會牽動供應鏈稽核、轉售責任與跨境設備服務的風險判斷。台灣的伺服器整機、零組件、機房整合商與企業採購部門，應把客戶背景、資金來源、最終部署地與售後維護權限視為同一套合規問題，而非只確認出口報關是否完成。技術與產業圈的討論焦點在於，晶片禁令若缺少對融資、租賃與轉運網絡的同步追蹤，管制效果可能被供應鏈的非技術環節削弱。",
+      "lede_en": "Bloomberg 揭露，一家由多個地方政府實體持有的中國融資公司，曾在提交北京監管機關的文件中披露資助採購受限 NVIDIA Blackwell 晶片的交易。若文件所反映的資金流與採購安排成立，問題便不再只是零星灰色市場買賣，而可能顯示高階算力取得已獲得更有組織的融資支持，直接挑戰美國以硬體限制減緩 AI 能力擴散的策略。Blackwell 是目前 AI 訓練與推論基礎設施競爭的核心平台之一，因此這類交易會牽動供應鏈稽核、轉售責任與跨境設備服務的風險判斷。台灣的伺服器整機、零組件、機房整合商與企業採購部門，應把客戶背景、資金來源、最終部署地與售後維護權限視為同一套合規問題，而非只確認出口報關是否完成。技術與產業圈的討論焦點在於，晶片禁令若缺少對融資、租賃與轉運網絡的同步追蹤，管制效果可能被供應鏈的非技術環節削弱。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "Bloomberg Technology",
+        "url": "https://www.bloomberg.com/news/articles/2026-10-01/chinese-state-backed-firm-disclosed-nvidia-blackwell-chips-deal",
+        "published_at": "2026-10-01T21:00:00+00:00",
+        "reading_time_min": 4,
+        "credibility_tier": "primary"
+      },
+      "fetched_via": "rss",
+      "image_url": "https://images.unsplash.com/photo-1644088379091-d574269d422f?ixid=M3w5OTExMzZ8MHwxfHNlYXJjaHwxfHxCbGFja3dlbGwlMjBCbGFja3dlbGwlMjB0ZWNobm9sb2d5JTIwYWJzdHJhY3R8ZW58MXwwfHx8MTc5MDg5OTc3NXww&ixlib=rb-4.1.0&w=900&q=72&fit=crop",
+      "image_source": "unsplash",
+      "image_credit": "Conny Schneider"
+    },
+    {
+      "id": "2026-10-02-m014",
+      "category": "security",
+      "is_headline": false,
+      "title_zh": "AI 資安不是模型幻覺：檢查、快取與祕密管理都可能變成入侵面",
+      "title_en": "AI 資安不是模型幻覺：檢查、快取與祕密管理都可能變成入侵面",
+      "lede_zh": "The Hacker News 本週彙整多起資安事件，涵蓋 AI 輔助的零時差攻擊鏈、大量仍可使用的外洩祕密資訊，以及模型檢查流程可能觸發遠端程式碼執行等風險。這些案例的共同點很不炫目：系統把檔案、模型、快取、編譯產物或憑證當成可信輸入時，攻擊者就能把日常自動化流程改造成執行通道。對正在導入 Agent、下載開源模型、串接 MCP 或把模型服務接進內網的台灣團隊，安全邊界不能只放在提示詞注入；模型權重與轉換工具、快取隔離、祕密輪替、執行環境權限及依賴套件來源，都應納入部署前檢查。企業實務上可先建立最小權限的推論容器、將模型解析與正式服務分離、禁止祕密出現在程式庫與建置紀錄，並以自動掃描配合定期撤銷金鑰。開發者社群近來特別警覺，AI 工具鏈為了追求一鍵下載與快速驗證，往往把原本應隔離的檢查步驟直接放進高權限環境。",
+      "lede_en": "The Hacker News 本週彙整多起資安事件，涵蓋 AI 輔助的零時差攻擊鏈、大量仍可使用的外洩祕密資訊，以及模型檢查流程可能觸發遠端程式碼執行等風險。這些案例的共同點很不炫目：系統把檔案、模型、快取、編譯產物或憑證當成可信輸入時，攻擊者就能把日常自動化流程改造成執行通道。對正在導入 Agent、下載開源模型、串接 MCP 或把模型服務接進內網的台灣團隊，安全邊界不能只放在提示詞注入；模型權重與轉換工具、快取隔離、祕密輪替、執行環境權限及依賴套件來源，都應納入部署前檢查。企業實務上可先建立最小權限的推論容器、將模型解析與正式服務分離、禁止祕密出現在程式庫與建置紀錄，並以自動掃描配合定期撤銷金鑰。開發者社群近來特別警覺，AI 工具鏈為了追求一鍵下載與快速驗證，往往把原本應隔離的檢查步驟直接放進高權限環境。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/10/threatsday-ai-powered-zero-day-chain.html",
+        "published_at": "2026-10-01T16:45:38+00:00",
+        "reading_time_min": 5,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss",
+      "image_url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhOZPv0LS8-qPBgL_d1m8BLNikw8psPt9qtB_HiFNoYnVwBacYvwz4DdEixukdlHcy7IXmUB9dI9E_Hcx48HJIL7sQzmDeextP-Y_tHO9SX51i_SditMkVsRgWxyMekufW3yZFn2jI9nf29y3JEM2a_yFv8iTLDb6d3r1roNsea_Yk5TWCiMcvkmE5ZbP6B/s1700-nu-rw-lo-l85-e365/oct-threatsday.jpg"
+    },
+    {
+      "id": "2026-10-02-m015",
+      "category": "security",
+      "is_headline": false,
+      "title_zh": "WordPress 後門會自我修復：清掉檔案不等於清掉入侵者",
+      "title_en": "WordPress 後門會自我修復：清掉檔案不等於清掉入侵者",
+      "lede_zh": "研究人員發現一種針對 WordPress 的入侵手法，攻擊者透過檔案、資料庫與共享記憶體等多重持久化機制，讓後門即使在部分內容被清除後仍能重新出現。這類被稱為「自我修復」的惡意架構，提醒團隊資安處理不能停在刪除可疑外掛或單一 PHP 檔案：只要另一個儲存層仍保存載入器或觸發條件，網站就可能再次被植入。對台灣新創、電商與企業 IT 而言，許多行銷站、知識庫或產品官網仍建在 WordPress，上面也常掛著表單、客服機器人、追蹤碼與 API 金鑰；一旦失守，風險可能擴及客戶資料與 AI 服務憑證。實務處置應包含比對核心檔與外掛完整性、檢查資料庫內容與排程、輪替管理員及 API 憑證，必要時從可信備份重建，而不是只靠前台掃毒結果宣告結案。安全社群的重點警告是，持久化機制愈分散，事件應變愈需要同時掌握網站程式、資料庫與主機層的證據。",
+      "lede_en": "研究人員發現一種針對 WordPress 的入侵手法，攻擊者透過檔案、資料庫與共享記憶體等多重持久化機制，讓後門即使在部分內容被清除後仍能重新出現。這類被稱為「自我修復」的惡意架構，提醒團隊資安處理不能停在刪除可疑外掛或單一 PHP 檔案：只要另一個儲存層仍保存載入器或觸發條件，網站就可能再次被植入。對台灣新創、電商與企業 IT 而言，許多行銷站、知識庫或產品官網仍建在 WordPress，上面也常掛著表單、客服機器人、追蹤碼與 API 金鑰；一旦失守，風險可能擴及客戶資料與 AI 服務憑證。實務處置應包含比對核心檔與外掛完整性、檢查資料庫內容與排程、輪替管理員及 API 憑證，必要時從可信備份重建，而不是只靠前台掃毒結果宣告結案。安全社群的重點警告是，持久化機制愈分散，事件應變愈需要同時掌握網站程式、資料庫與主機層的證據。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/10/wordpress-backdoor-rebuilds-itself.html",
+        "published_at": "2026-10-01T14:37:35+00:00",
+        "reading_time_min": 4,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss",
+      "industry_tags": [
+        "機器人",
+        "零售"
+      ],
+      "image_url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbdAzWwJ7WC6PL7vtBZDUWfVyYu9iIBlT3X5gZn-Yl9aRuZAEeW3RjEU81RQWsvH_7og6v7-somVgG-fR35drKy6bxLMcHdpJQAi6ydXw-m3oMxZ1hlDC7kr8Wsu0dOfRt6ZLEasAsYNGq-pzmQiBNWMbEBzqa9zYdAu16NtgIfDe3PpOvCVzGj6yFqmet/s1700-nu-rw-lo-l85-e365/wordpress-exploit.jpg"
+    },
+    {
+      "id": "2026-10-02-m016",
+      "category": "dev",
+      "is_headline": false,
+      "title_zh": "Blackwell 注意力核心再提速：PyTorch 用 TLX 攻克不規則序列",
+      "title_en": "Blackwell 注意力核心再提速：PyTorch 用 TLX 攻克不規則序列",
+      "lede_zh": "PyTorch 團隊公布在 NVIDIA Blackwell B200 上優化 Jagged Flash Attention 的成果，瞄準的是 Meta Generative Ads Model 等推薦與廣告訓練常見、每筆序列長度不一的「鋸齒狀」工作負載。這類資料若硬補零對齊，會把大量記憶體頻寬與算力耗在無效 token；團隊以 TLX 延伸 Triton 對 Blackwell 的底層控制，讓注意力核心能更貼近硬體的非同步運算、記憶體階層與排程特性，朝 FlashAttention-4 的實務效能推進。重點不只是單一 kernel 跑分，而是 FP8、量化、資料布局與不規則序列如何端到端協同，這正是大規模推薦模型和長上下文訓練真正會撞上的成本牆。台灣做 GPU 伺服器、AI 基礎設施、廣告推薦或企業模型訓練的團隊，應把它視為 Blackwell 世代的優化範本：模型架構不變時，attention 與資料管線仍可能是最直接的降時降本槓桿。技術社群目前特別關注 TLX 是否能將這類高度硬體特化的技巧，沉澱成較容易移植與維護的 Triton 工作流程。",
+      "lede_en": "PyTorch 團隊公布在 NVIDIA Blackwell B200 上優化 Jagged Flash Attention 的成果，瞄準的是 Meta Generative Ads Model 等推薦與廣告訓練常見、每筆序列長度不一的「鋸齒狀」工作負載。這類資料若硬補零對齊，會把大量記憶體頻寬與算力耗在無效 token；團隊以 TLX 延伸 Triton 對 Blackwell 的底層控制，讓注意力核心能更貼近硬體的非同步運算、記憶體階層與排程特性，朝 FlashAttention-4 的實務效能推進。重點不只是單一 kernel 跑分，而是 FP8、量化、資料布局與不規則序列如何端到端協同，這正是大規模推薦模型和長上下文訓練真正會撞上的成本牆。台灣做 GPU 伺服器、AI 基礎設施、廣告推薦或企業模型訓練的團隊，應把它視為 Blackwell 世代的優化範本：模型架構不變時，attention 與資料管線仍可能是最直接的降時降本槓桿。技術社群目前特別關注 TLX 是否能將這類高度硬體特化的技巧，沉澱成較容易移植與維護的 Triton 工作流程。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "PyTorch Blog",
+        "url": "https://pytorch.org/blog/optimizing-jagged-flash-attention-with-tlx-the-road-toward-sota-fa4-on-blackwell/",
+        "published_at": "2026-10-01T22:26:57+00:00",
+        "reading_time_min": 6,
+        "credibility_tier": "primary"
+      },
+      "fetched_via": "rss",
+      "image_url": "https://images.unsplash.com/photo-1644088379091-d574269d422f?ixid=M3w5OTExMzZ8MHwxfHNlYXJjaHwxfHxCbGFja3dlbGwlMjBQeVRvcmNoJTIwdGVjaG5vbG9neSUyMGFic3RyYWN0fGVufDF8MHx8fDE3OTA4OTk3NzZ8MA&ixlib=rb-4.1.0&w=900&q=72&fit=crop",
+      "image_source": "unsplash",
+      "image_credit": "Conny Schneider"
+    },
+    {
+      "id": "2026-10-02-m017",
+      "category": "dev",
+      "is_headline": false,
+      "title_zh": "GitHub Universe 的真正題目：Agent 寫碼後，誰來驗證與授權？",
+      "title_en": "GitHub Universe 的真正題目：Agent 寫碼後，誰來驗證與授權？",
+      "lede_zh": "GitHub 為 2026 Universe 挑出的技術議程，焦點已從「如何讓 Copilot 多寫一點程式」轉向「如何控制 Agent 在真實軟體供應鏈裡做事」。議題包括 Agent 記憶何時該保留或遺忘、AI 生成程式的驗證、MCP 伺服器的細粒度授權、GitHub Actions 的供應鏈防護，以及用評測取代只看 benchmark 分數的開發決策。這反映企業導入 coding agent 的瓶頸正在轉移：產碼能力愈來愈便宜，測試可信度、權限邊界、依賴來源與事故追查才是能否上正式環境的關鍵。台灣工程團隊可立刻盤點 CI/CD 中哪些工作流程握有發布權限、哪些 MCP 工具可執行寫入操作，並把「開 PR、不自動合併」這類規則放進可強制執行的授權層，而非只寫在提示詞。開發者社群對 Agent memory 也格外警覺，因為累積太多上下文未必提升表現，反而可能讓代理人帶著過期假設做出錯誤決策。",
+      "lede_en": "GitHub 為 2026 Universe 挑出的技術議程，焦點已從「如何讓 Copilot 多寫一點程式」轉向「如何控制 Agent 在真實軟體供應鏈裡做事」。議題包括 Agent 記憶何時該保留或遺忘、AI 生成程式的驗證、MCP 伺服器的細粒度授權、GitHub Actions 的供應鏈防護，以及用評測取代只看 benchmark 分數的開發決策。這反映企業導入 coding agent 的瓶頸正在轉移：產碼能力愈來愈便宜，測試可信度、權限邊界、依賴來源與事故追查才是能否上正式環境的關鍵。台灣工程團隊可立刻盤點 CI/CD 中哪些工作流程握有發布權限、哪些 MCP 工具可執行寫入操作，並把「開 PR、不自動合併」這類規則放進可強制執行的授權層，而非只寫在提示詞。開發者社群對 Agent memory 也格外警覺，因為累積太多上下文未必提升表現，反而可能讓代理人帶著過期假設做出錯誤決策。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "GitHub Blog",
+        "url": "https://github.blog/news-insights/company-news/10-technical-talks-im-excited-about-at-github-universe-2026/",
+        "published_at": "2026-10-01T15:07:16+00:00",
+        "reading_time_min": 4,
+        "credibility_tier": "primary"
+      },
+      "fetched_via": "rss",
+      "image_url": "https://github.blog/wp-content/uploads/2026/06/1200x630-U25-Blog-Hero_x2.png"
+    },
+    {
+      "id": "2026-10-02-m018",
+      "category": "ai-tools",
+      "is_headline": false,
+      "title_zh": "Gemini 學習工具集中成學生中心，Google 把 AI 輔學搬進 Workspace",
+      "title_en": "Gemini 學習工具集中成學生中心，Google 把 AI 輔學搬進 Workspace",
+      "lede_zh": "Google 將 Gemini 的學生中心擴大到所有年齡層的 Google Workspace for Education 使用者，並已在快速與排程發布網域上線；使用者可從同一入口建立學習筆記本、製作抽認卡與練習測驗。這次更新的意義不在多一個按鈕，而是 Google 正把零散的生成式 AI 功能包裝成具流程感的學習產品，直接卡位校園帳號與 Workspace 協作場景。對台灣的教育科技團隊、企業內訓負責人與知識工作者而言，這種「先整理材料、再練習、最後測驗」的介面，也可借鏡為新人訓練、產品知識庫或內部課程的設計框架。管理者要注意，該功能仍受 Workspace 管理控制台中的生成式 AI 設定約束，導入前應先確認帳號權限、可上傳資料範圍與學生資料治理。技術圈普遍把這視為 Gemini 從聊天助手走向工作流入口的又一步，競爭對手不再只是單一模型能力，而是誰能把 AI 自然嵌進既有文件與協作系統。",
+      "lede_en": "Google 將 Gemini 的學生中心擴大到所有年齡層的 Google Workspace for Education 使用者，並已在快速與排程發布網域上線；使用者可從同一入口建立學習筆記本、製作抽認卡與練習測驗。這次更新的意義不在多一個按鈕，而是 Google 正把零散的生成式 AI 功能包裝成具流程感的學習產品，直接卡位校園帳號與 Workspace 協作場景。對台灣的教育科技團隊、企業內訓負責人與知識工作者而言，這種「先整理材料、再練習、最後測驗」的介面，也可借鏡為新人訓練、產品知識庫或內部課程的設計框架。管理者要注意，該功能仍受 Workspace 管理控制台中的生成式 AI 設定約束，導入前應先確認帳號權限、可上傳資料範圍與學生資料治理。技術圈普遍把這視為 Gemini 從聊天助手走向工作流入口的又一步，競爭對手不再只是單一模型能力，而是誰能把 AI 自然嵌進既有文件與協作系統。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": true,
+      "teaching_takeaway": "把 AI 學習流程拆成「資料整理、主動練習、測驗回饋」，比單次提問更容易把知識轉成可驗證的能力。",
+      "source": {
+        "name": "Google Workspace Updates",
+        "url": "http://workspaceupdates.googleblog.com/2026/10/find-your-learning-tools-all-in-one-place-with-the-student-hub-in-Gemini.html",
+        "published_at": "2026-10-01T16:22:17+00:00",
+        "reading_time_min": 3,
+        "credibility_tier": "primary"
+      },
+      "fetched_via": "rss",
+      "image_url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyXw8Qp4gHG3MTW8u-VlWpKTA5Mlj6hYcMsaTKIweJTcUQP2upT22-7EkwZK6JnBt80p4bKzGkF31Esq1wnaa5ZjyGS0h2p1IySBXF-9q2YeREpMTBJpZpy9f7Swu3HKWjNgdTe0qssFzRXTfnz4GoSFo2Xac1rxwHvzuhyrqo07W9rKnucY4_KaeDku0/w1200-h630-p-k-no-nu/Find%20your%20learning%20tools%20all%20in%20one%20place%20with%20the%20student%20hub%20in%20Gemini.gif"
+    },
+    {
+      "id": "2026-10-02-m019",
+      "category": "ai-tools",
+      "is_headline": false,
+      "title_zh": "別讓大模型決定一切：Laya 把 Agent 分流與護欄判斷拆成專用模型",
+      "title_en": "別讓大模型決定一切：Laya 把 Agent 分流與護欄判斷拆成專用模型",
+      "lede_zh": "Vercel AI Gateway 新增 Convai Innovations 的 Laya 決策模型，並提供免費使用至 2026 年 10 月 31 日；它不主打自由生成文字，而是在共享上下文上回答是非、選擇與評分題，回傳具型別與機率的結構化結果。這種設計很適合客服退款辨識、Agent 工具路由、內容護欄與工單優先級判定，讓昂貴的生成模型專心處理需要語言推理與產出的部分。對台灣產品團隊來說，最值得實驗的是把 Agent 流程裡的「下一步該叫哪個工具」「是否需要人工覆核」抽成明確決策節點，再以機率門檻接到規則與人工隊列，而不是把所有判斷塞進一段提示詞。透過 AI Gateway 的單一介面，既有 Vercel AI SDK 專案可用模型名稱切換來做小流量測試，降低接入專用模型的成本。開發者社群關注的核心是，這種小而專門的判定層能否降低延遲與費用，同時避免生成模型在高風險路由任務上輸出看似合理卻難以稽核的答案。",
+      "lede_en": "Vercel AI Gateway 新增 Convai Innovations 的 Laya 決策模型，並提供免費使用至 2026 年 10 月 31 日；它不主打自由生成文字，而是在共享上下文上回答是非、選擇與評分題，回傳具型別與機率的結構化結果。這種設計很適合客服退款辨識、Agent 工具路由、內容護欄與工單優先級判定，讓昂貴的生成模型專心處理需要語言推理與產出的部分。對台灣產品團隊來說，最值得實驗的是把 Agent 流程裡的「下一步該叫哪個工具」「是否需要人工覆核」抽成明確決策節點，再以機率門檻接到規則與人工隊列，而不是把所有判斷塞進一段提示詞。透過 AI Gateway 的單一介面，既有 Vercel AI SDK 專案可用模型名稱切換來做小流量測試，降低接入專用模型的成本。開發者社群關注的核心是，這種小而專門的判定層能否降低延遲與費用，同時避免生成模型在高風險路由任務上輸出看似合理卻難以稽核的答案。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": true,
+      "teaching_takeaway": "將 Agent 分成「生成」與「決策」兩層：用結構化分類、機率與門檻控制工具路由及人工覆核，提升可稽核性。",
+      "source": {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/laya-decision-model-now-available-on-ai-gateway-free-through-october-31",
+        "published_at": "2026-10-01T00:00:00+00:00",
+        "reading_time_min": 4,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss",
+      "image_url": "https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/5nXadUj1D26GUUGnaiPxfv/c8ccba919e75d944a9fa2da75b582756/image.png"
+    },
+    {
+      "id": "2026-10-02-m020",
+      "category": "taiwan",
+      "is_headline": false,
+      "title_zh": "政府資安稽核從 121 場併為 16 場，AI 供應商也該先補齊這四堂課",
+      "title_en": "政府資安稽核從 121 場併為 16 場，AI 供應商也該先補齊這四堂課",
+      "lede_zh": "數發部資安署首度辦理政府委外資服廠商聯合稽核，將原本由不同機關分頭進行的 121 場稽核整併為 16 場，先針對 16 家服務行政院所屬機關的業者建立共通標準，並規劃明年擴大到 30 家。這不是單純減少行政作業，而是把資安檢查從重複填表轉為跨機關共享發現與追蹤改善，降低廠商長期被稽核造成的資安疲勞。首波歸納的共通缺失集中在帳號與遠端權限、資產與第三方元件、系統開發與弱點管理、網路端點與傳輸防護，其中缺少 SBOM、未落實最小權限、修補與程式碼審查紀錄不足，對導入 AI 的企業尤其敏感。台灣 AI 軟體商若要進入政府、金融或大型企業供應鏈，現在就應把模型服務依賴、開源套件、MCP 工具與資料存取權限納入 SBOM、SSDLC 和變更紀錄，而非等到標案稽核才補文件。業界對聯合稽核的期待在於標準能真正一致，但也會觀察後續改善追蹤是否落實，以及擴大範圍後能否維持技術檢查的深度。",
+      "lede_en": "數發部資安署首度辦理政府委外資服廠商聯合稽核，將原本由不同機關分頭進行的 121 場稽核整併為 16 場，先針對 16 家服務行政院所屬機關的業者建立共通標準，並規劃明年擴大到 30 家。這不是單純減少行政作業，而是把資安檢查從重複填表轉為跨機關共享發現與追蹤改善，降低廠商長期被稽核造成的資安疲勞。首波歸納的共通缺失集中在帳號與遠端權限、資產與第三方元件、系統開發與弱點管理、網路端點與傳輸防護，其中缺少 SBOM、未落實最小權限、修補與程式碼審查紀錄不足，對導入 AI 的企業尤其敏感。台灣 AI 軟體商若要進入政府、金融或大型企業供應鏈，現在就應把模型服務依賴、開源套件、MCP 工具與資料存取權限納入 SBOM、SSDLC 和變更紀錄，而非等到標案稽核才補文件。業界對聯合稽核的期待在於標準能真正一致，但也會觀察後續改善追蹤是否落實，以及擴大範圍後能否維持技術檢查的深度。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "iThome",
+        "url": "https://www.ithome.com.tw/news/179342",
+        "published_at": "2026-10-01T14:51:00+00:00",
+        "reading_time_min": 4,
+        "credibility_tier": "primary"
+      },
+      "fetched_via": "rss",
+      "industry_tags": [
+        "金融"
+      ],
+      "image_url": "https://www.ithome.com.tw/sites/default/files/field/image/ithomezi_an_ri_bao_v3_-_1001.jpg"
+    },
+    {
+      "id": "2026-10-02-m021",
+      "category": "taiwan",
+      "is_headline": false,
+      "title_zh": "中國駭團以 Rust 後門滲透亞洲政府，臺灣列入目標",
+      "title_en": "中國駭團以 Rust 後門滲透亞洲政府，臺灣列入目標",
+      "lede_zh": "思科 Talos 揭露名為 UAT-11587 的中國駭客組織，正針對臺灣在內的多個亞洲政府機關與政策相關組織展開網路間諜活動，並投放以 Rust 撰寫的 Antino 後門程式。這不是單純的惡意程式新聞：政府與政策鏈往往握有供應鏈、產業補助、外交與關鍵基礎設施資訊，遭入侵後的外溢風險可能延伸到合作廠商與雲端帳號。對臺灣企業的 AI 團隊而言，應把這類事件視為代理式自動化與內部知識庫擴張後的提醒，盤點高權限帳號、開發端點、CI/CD 憑證與模型資料管線是否存在橫向移動空間。技術圈普遍關注 Rust 惡意程式日益常見的趨勢，因其跨平台與分析門檻特性，要求資安監測不能再只依賴傳統檔案特徵碼。",
+      "lede_en": "思科 Talos 揭露名為 UAT-11587 的中國駭客組織，正針對臺灣在內的多個亞洲政府機關與政策相關組織展開網路間諜活動，並投放以 Rust 撰寫的 Antino 後門程式。這不是單純的惡意程式新聞：政府與政策鏈往往握有供應鏈、產業補助、外交與關鍵基礎設施資訊，遭入侵後的外溢風險可能延伸到合作廠商與雲端帳號。對臺灣企業的 AI 團隊而言，應把這類事件視為代理式自動化與內部知識庫擴張後的提醒，盤點高權限帳號、開發端點、CI/CD 憑證與模型資料管線是否存在橫向移動空間。技術圈普遍關注 Rust 惡意程式日益常見的趨勢，因其跨平台與分析門檻特性，要求資安監測不能再只依賴傳統檔案特徵碼。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "iThome",
+        "url": "https://www.ithome.com.tw/news/179333",
+        "published_at": "2026-10-01T11:30:00+00:00",
+        "reading_time_min": 3,
+        "credibility_tier": "primary"
+      },
+      "fetched_via": "rss",
+      "image_url": "https://www.ithome.com.tw/sites/default/files/field/image/antino-chain-156.jpg"
+    },
+    {
+      "id": "2026-10-02-m022",
+      "category": "taiwan",
+      "is_headline": false,
+      "title_zh": "HBM 供應再拉緊：美光長約承諾升至 320 億美元",
+      "title_en": "HBM 供應再拉緊：美光長約承諾升至 320 億美元",
+      "lede_zh": "美光表示，客戶在長期供應協議下的財務承諾已由先前公布的 220 億美元增至 320 億美元，且多數屬於現金訂金；公司並預期記憶體與儲存供需在後續年度可能更加吃緊。真正牽動 AI 產業的不是單季營收，而是 HBM 產能已被大型客戶以長約提前鎖定，代表模型訓練與高階推論的硬體成本未必會隨需求擴張而快速下降。臺灣的伺服器、封測、散熱與企業 IT 團隊，應把記憶體可得性放進年度容量規畫，而非只盯 GPU 型號與雲端算力報價；採購週期、模型壓縮與快取策略都可能因此變成產品競爭力。市場與開發者社群也持續比較各家模型的效能成本比，但在供應受限時，能用較少記憶體完成任務的架構與工作流，會比紙面跑分更具現實價值。",
+      "lede_en": "美光表示，客戶在長期供應協議下的財務承諾已由先前公布的 220 億美元增至 320 億美元，且多數屬於現金訂金；公司並預期記憶體與儲存供需在後續年度可能更加吃緊。真正牽動 AI 產業的不是單季營收，而是 HBM 產能已被大型客戶以長約提前鎖定，代表模型訓練與高階推論的硬體成本未必會隨需求擴張而快速下降。臺灣的伺服器、封測、散熱與企業 IT 團隊，應把記憶體可得性放進年度容量規畫，而非只盯 GPU 型號與雲端算力報價；採購週期、模型壓縮與快取策略都可能因此變成產品競爭力。市場與開發者社群也持續比較各家模型的效能成本比，但在供應受限時，能用較少記憶體完成任務的架構與工作流，會比紙面跑分更具現實價值。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "TechOrange",
+        "url": "https://techorange.com/2026/10/02/micron-memory-supply-32-billion/?utm_source=rss&utm_medium=feed&utm_campaign=techorange_rss",
+        "published_at": "2026-10-01T21:30:00+00:00",
+        "reading_time_min": 3,
+        "credibility_tier": "tertiary"
+      },
+      "fetched_via": "rss",
+      "image_url": "https://techorange.com/app/uploads/2026/10/113ec82f4d1e14bf.png"
+    },
+    {
+      "id": "2026-10-02-m023",
+      "category": "taiwan",
+      "is_headline": false,
+      "title_zh": "台灣大稱 98% 員工已部署 AI 代理，企業導入進入治理考驗",
+      "title_en": "台灣大稱 98% 員工已部署 AI 代理，企業導入進入治理考驗",
+      "lede_zh": "台灣大哥大在永續公民獎相關訊息中指出，已有 98% 員工部署 AI 代理，同時將 AI 應用連結到偏鄉教育、藍碳復育與企業永續工作。這項訊號的價值不在於獎項本身，而在於大型服務業開始把 AI 代理從少數技術團隊的實驗，推往近乎全員可接觸的工作介面，測試其對客服、行政、知識查詢與內部流程的實際影響。對臺灣企業產品與 IT 團隊來說，下一步不該只是提高使用率，而是定義代理可讀取哪些資料、可執行哪些動作、出錯時由誰覆核，並用可量測的節省工時或服務品質指標驗證成效。技術社群對大規模代理部署通常抱持兩面看法：一面期待流程被重構，另一面也警惕權限失控、幻覺輸出與員工把機密資料帶進未受管控工具。",
+      "lede_en": "台灣大哥大在永續公民獎相關訊息中指出，已有 98% 員工部署 AI 代理，同時將 AI 應用連結到偏鄉教育、藍碳復育與企業永續工作。這項訊號的價值不在於獎項本身，而在於大型服務業開始把 AI 代理從少數技術團隊的實驗，推往近乎全員可接觸的工作介面，測試其對客服、行政、知識查詢與內部流程的實際影響。對臺灣企業產品與 IT 團隊來說，下一步不該只是提高使用率，而是定義代理可讀取哪些資料、可執行哪些動作、出錯時由誰覆核，並用可量測的節省工時或服務品質指標驗證成效。技術社群對大規模代理部署通常抱持兩面看法：一面期待流程被重構，另一面也警惕權限失控、幻覺輸出與員工把機密資料帶進未受管控工具。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "科技新報 TechNews",
+        "url": "https://technews.tw/2026/10/01/taiwan-mobile-telcotech-open-possible/",
+        "published_at": "2026-10-01T08:08:48+00:00",
+        "reading_time_min": 3,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss",
+      "image_url": "https://img.technews.tw/wp-content/uploads/2026/10/01155543/taiwan-mobile-telcotech1.jpg"
+    },
+    {
+      "id": "2026-10-02-m024",
+      "category": "enterprise-cases",
+      "is_headline": false,
+      "title_zh": "Google Cloud 降低 Lustre 門檻，AI 團隊可少做一段資料搬運",
+      "title_en": "Google Cloud 降低 Lustre 門檻，AI 團隊可少做一段資料搬運",
+      "lede_zh": "Google Cloud 推出系列說明，主打以較低成本與較少維運摩擦擴大 Managed Lustre 的使用範圍，讓高效能平行檔案系統不再只服務少數超級運算或大型研究工作負載。對 AI 開發而言，Lustre 的關鍵不只是高速，而是可讓訓練資料、程式碼、編譯產物與儲存庫維持在較一致的開發環境，減少在物件儲存、工作站與叢集之間反覆搬資料的等待與失誤。臺灣正在建置多 GPU 訓練、影像檢測、晶片設計模擬或大型 RAG 資料管線的團隊，可評估資料集規模、併發讀取與既有 POSIX 相容需求，判斷是否值得用託管平行檔案系統取代自行維護的高效儲存。開發者最在意的仍是成本曲線與雲端綁定程度：若效能提升不能抵銷持續儲存與資料出口成本，架構優勢就可能被財務壓力吃掉。",
+      "lede_en": "Google Cloud 推出系列說明，主打以較低成本與較少維運摩擦擴大 Managed Lustre 的使用範圍，讓高效能平行檔案系統不再只服務少數超級運算或大型研究工作負載。對 AI 開發而言，Lustre 的關鍵不只是高速，而是可讓訓練資料、程式碼、編譯產物與儲存庫維持在較一致的開發環境，減少在物件儲存、工作站與叢集之間反覆搬資料的等待與失誤。臺灣正在建置多 GPU 訓練、影像檢測、晶片設計模擬或大型 RAG 資料管線的團隊，可評估資料集規模、併發讀取與既有 POSIX 相容需求，判斷是否值得用託管平行檔案系統取代自行維護的高效儲存。開發者最在意的仍是成本曲線與雲端綁定程度：若效能提升不能抵銷持續儲存與資料出口成本，架構優勢就可能被財務壓力吃掉。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": false,
+      "teaching_takeaway": "",
+      "source": {
+        "name": "Google Cloud Blog",
+        "url": "https://cloud.google.com/blog/topics/developers-practitioners/democratizing-managed-lustre-with-lower-cost-and-frictionless-development/",
+        "published_at": "2026-10-01T13:00:00+00:00",
+        "reading_time_min": 4,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss",
+      "industry_tags": [
+        "零售"
+      ],
+      "image_url": "https://storage.googleapis.com/gweb-cloudblog-publish/images/democratizing-lustre-with-lower-cost-and-f.max-1400x1400_b5FdRSt.jpg"
+    },
+    {
+      "id": "2026-10-02-m025",
+      "category": "enterprise-cases",
+      "is_headline": false,
+      "title_zh": "Google Cloud 推遠端 MCP 伺服器，讓 AI 代理直接操作 gcloud 與 BigQuery",
+      "title_en": "Google Cloud 推遠端 MCP 伺服器，讓 AI 代理直接操作 gcloud 與 BigQuery",
+      "lede_zh": "Google Cloud 宣布預覽版 Google Cloud CLI 遠端 MCP 伺服器，把開發者熟悉的 gcloud 與 BigQuery 指令工具接到標準化的 MCP 介面，讓 AI 代理可在受管理的方式下執行雲端基礎設施與資料分析工作。這是平台戰的重要一步，因為企業導入 Agent 的難點從來不是讓模型回答問題，而是如何讓它可靠地碰觸真實系統、遵循身分權限、留下可稽核紀錄，並避免每個團隊各自拼接脆弱的工具呼叫。對臺灣 AI 工程師與產品開發者而言，若既有工作環境在 Google Cloud，可先從讀取型任務開始，例如查詢 BigQuery 成本與資料品質、整理資源清單或產生維運建議，再逐步加入明確核准流程的寫入操作。對一般企業主管，這也提供一個可落地的代理導入框架：先把常用作業封裝成受權限控管的工具，而不是把雲端管理帳密直接交給聊天機器人。技術社群目前關注 MCP 帶來的互通性，也同時聚焦遠端工具的授權邊界、提示注入防護與高風險指令的人類覆核，因為代理一旦能執行命令，安全設計便必須先於自動化速度。",
+      "lede_en": "Google Cloud 宣布預覽版 Google Cloud CLI 遠端 MCP 伺服器，把開發者熟悉的 gcloud 與 BigQuery 指令工具接到標準化的 MCP 介面，讓 AI 代理可在受管理的方式下執行雲端基礎設施與資料分析工作。這是平台戰的重要一步，因為企業導入 Agent 的難點從來不是讓模型回答問題，而是如何讓它可靠地碰觸真實系統、遵循身分權限、留下可稽核紀錄，並避免每個團隊各自拼接脆弱的工具呼叫。對臺灣 AI 工程師與產品開發者而言，若既有工作環境在 Google Cloud，可先從讀取型任務開始，例如查詢 BigQuery 成本與資料品質、整理資源清單或產生維運建議，再逐步加入明確核准流程的寫入操作。對一般企業主管，這也提供一個可落地的代理導入框架：先把常用作業封裝成受權限控管的工具，而不是把雲端管理帳密直接交給聊天機器人。技術社群目前關注 MCP 帶來的互通性，也同時聚焦遠端工具的授權邊界、提示注入防護與高風險指令的人類覆核，因為代理一旦能執行命令，安全設計便必須先於自動化速度。",
+      "bullets_zh": [],
+      "bullets_en": [],
+      "is_teaching_material": true,
+      "teaching_takeaway": "MCP 是讓 AI 代理以標準介面呼叫外部工具的協定；先採最小權限與人工核准，再擴大自動化範圍。",
+      "source": {
+        "name": "Google Cloud Blog",
+        "url": "https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-cli-remote-mcp-server-in-preview/",
+        "published_at": "2026-09-30T16:00:00+00:00",
+        "reading_time_min": 5,
+        "credibility_tier": "secondary"
+      },
+      "fetched_via": "rss",
+      "industry_tags": [
+        "機器人"
+      ],
+      "image_url": "https://storage.googleapis.com/gweb-cloudblog-publish/images/01_-_AI__Machine_Learning_H1ZyZG8.max-2600x2600.jpg"
+    },
+    {
+      "id": "2026-10-02-m026",
       "category": "science",
       "is_headline": false,
-      "title_zh": "OpenAI Foundation 啟動 250 億美元科學慈善計畫，AI 資金戰線延伸至治病",
-      "title_en": "OpenAI Foundation 啟動 250 億美元科學慈善計畫，AI 資金戰線延伸至治病",
-      "lede_zh": "OpenAI Foundation 正式展開其規模高達 250 億美元的科學慈善布局，並把生命科學列為早期重點；負責生命科學業務的 Jacob Trefethen 向《Nature》說明，組織的長期企圖是以更大規模資源推動疾病治療。這不是單一模型發布，而是 AI 公司把資本、研究人才與科學議題綁定的訊號：下一輪競爭不只看聊天機器人和程式代理，也看誰能建立可長期支撐生醫研究、資料基礎設施與實驗迭代的體系。對台灣 AI 工程師與產品團隊而言，機會不在於追逐「AI 治百病」的敘事，而是評估自身是否能切入醫療文件理解、臨床流程自動化、研究知識檢索、實驗資料治理與模型驗證等可落地環節，同時正視隱私、資料偏差與醫療責任邊界。技術圈普遍會關注這類龐大基金究竟如何配置、是否開放研究成果，以及 AI 模型在高風險科學場景中能否從生成答案進一步證明其可重現與可驗證的價值。",
-      "lede_en": "OpenAI Foundation 正式展開其規模高達 250 億美元的科學慈善布局，並把生命科學列為早期重點；負責生命科學業務的 Jacob Trefethen 向《Nature》說明，組織的長期企圖是以更大規模資源推動疾病治療。這不是單一模型發布，而是 AI 公司把資本、研究人才與科學議題綁定的訊號：下一輪競爭不只看聊天機器人和程式代理，也看誰能建立可長期支撐生醫研究、資料基礎設施與實驗迭代的體系。對台灣 AI 工程師與產品團隊而言，機會不在於追逐「AI 治百病」的敘事，而是評估自身是否能切入醫療文件理解、臨床流程自動化、研究知識檢索、實驗資料治理與模型驗證等可落地環節，同時正視隱私、資料偏差與醫療責任邊界。技術圈普遍會關注這類龐大基金究竟如何配置、是否開放研究成果，以及 AI 模型在高風險科學場景中能否從生成答案進一步證明其可重現與可驗證的價值。",
+      "title_zh": "「Agentic」進字典：AI 術語從技術圈走進日常工作語言",
+      "title_en": "「Agentic」進字典：AI 術語從技術圈走進日常工作語言",
+      "lede_zh": "Merriam-Webster 在最新一批線上詞條更新中新增約 1,400 個詞彙，包含「agentic」、「prompt engineering」等近年由生成式 AI 帶動的技術用語；Nature 指出，這不只是字典追上流行語，而是 AI 已把工程師圈內的操作概念推入教育、媒體與企業溝通的共同語言。對台灣 AI 工程師與產品團隊而言，詞彙被定義與普及，會直接影響產品介面、文件、培訓教材及跨部門需求討論：當業務主管開始問「能否做 agentic workflow」，團隊必須能把模糊期待拆成工具調用、權限控管、記憶、評估與人工覆核等可交付設計。尤其「prompt engineering」從一度被視為技巧，逐漸成為可被制度化的工作能力，也提醒企業不要只把它理解為寫幾句提示詞，而要建立範本、測試集、版本管理與資料治理。開發者社群普遍關注的焦點，則是這些詞進入主流後會不會被過度行銷化；真正的分水嶺仍是系統是否可靠、可量測，並能在真實流程裡替人省下時間。",
+      "lede_en": "Merriam-Webster 在最新一批線上詞條更新中新增約 1,400 個詞彙，包含「agentic」、「prompt engineering」等近年由生成式 AI 帶動的技術用語；Nature 指出，這不只是字典追上流行語，而是 AI 已把工程師圈內的操作概念推入教育、媒體與企業溝通的共同語言。對台灣 AI 工程師與產品團隊而言，詞彙被定義與普及，會直接影響產品介面、文件、培訓教材及跨部門需求討論：當業務主管開始問「能否做 agentic workflow」，團隊必須能把模糊期待拆成工具調用、權限控管、記憶、評估與人工覆核等可交付設計。尤其「prompt engineering」從一度被視為技巧，逐漸成為可被制度化的工作能力，也提醒企業不要只把它理解為寫幾句提示詞，而要建立範本、測試集、版本管理與資料治理。開發者社群普遍關注的焦點，則是這些詞進入主流後會不會被過度行銷化；真正的分水嶺仍是系統是否可靠、可量測，並能在真實流程裡替人省下時間。",
       "bullets_zh": [],
       "bullets_en": [],
       "is_teaching_material": false,
       "teaching_takeaway": "",
       "source": {
         "name": "Nature News",
-        "url": "https://www.nature.com/articles/d41586-026-03015-0",
-        "published_at": "2026-09-30T00:00:00+00:00",
-        "reading_time_min": 4,
+        "url": "https://www.nature.com/articles/d41586-026-03044-9",
+        "published_at": "2026-10-01T00:00:00+00:00",
+        "reading_time_min": 2,
         "credibility_tier": "primary"
       },
       "fetched_via": "rss",
-      "industry_tags": [
-        "機器人"
-      ],
-      "image_url": "https://media.nature.com/lw1200/magazine-assets/d41586-026-03015-0/d41586-026-03015-0_53774786.jpg"
+      "image_url": "https://media.nature.com/lw1200/magazine-assets/d41586-026-03044-9/d41586-026-03044-9_53772922.jpg"
     }
   ],
   "breaking_news": [
-    "2026-10-01-m001",
-    "2026-10-01-m009",
-    "2026-10-01-m015"
+    "2026-10-02-m009"
   ],
   "meta": {
-    "generated_at": "2026-10-01T08:09:51.382182+08:00",
+    "generated_at": "2026-10-02T08:09:35.427548+08:00",
     "total_articles": 26,
     "sources_used": {
       "rss": 26,
