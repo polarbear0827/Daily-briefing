@@ -12,6 +12,17 @@
       "file": "data/issues/2026-10-13-morning.json"
     },
     {
+      "issue_number": 304,
+      "date": "2026-10-13",
+      "edition": "evening",
+      "key": "2026-10-13-evening",
+      "headline_zh": "AWS 把跨節點推論封裝化：大模型不再只能困在單一 GPU 機房",
+      "headline_en": "AWS 把跨節點推論封裝化：大模型不再只能困在單一 GPU 機房",
+      "article_count": 25,
+      "breaking_news_count": 3,
+      "file": "data/issues/2026-10-13-evening.json"
+    },
+    {
       "issue_number": 301,
       "date": "2026-10-12",
       "edition": "morning",
@@ -3326,6 +3337,6 @@
       "last_updated": "2026-04-25T07:55:39.282219+08:00"
     }
   ],
-  "last_updated": "2026-10-13T08:12:04.915540+08:00",
-  "total_issues": 303
+  "last_updated": "2026-10-13T20:12:29.663700+08:00",
+  "total_issues": 304
 }
