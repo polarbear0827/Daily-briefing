@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "briefing_date": "2026-10-27",
+  "timezone": "Asia/Taipei",
+  "observation_cutoff": "2026-10-27T10:46:17.445218+08:00",
+  "source_count": 5,
+  "event_count": 5,
+  "editorial_review": {
+    "type": "agent-editorial-review",
+    "independent_fact_check": false
+  },
+  "limitations": [
+    "All five article bodies were read on CNA; they are not five independent publishers.",
+    "Official source documents and Apple device behavior were not directly verified.",
+    "Anthropic article was published today but describes a plan disclosed on October 26 in the United States.",
+    "Forward-looking offering, language-support and submarine-deployment statements are not completed outcomes."
+  ],
+  "sources": [
+    {
+      "id": 2,
+      "headline": "Anthropic募資估逾千億美元　執行長阿莫戴：偉大歷史機遇",
+      "publisher": "中央社 CNA",
+      "url": "https://www.cna.com.tw/news/afe/202610270013.aspx",
+      "published_at": "2026-10-27T07:46:00+08:00",
+      "modified_at": "2026-10-27T08:09:00+08:00",
+      "retrieved_at": "2026-10-27T10:45:57.056662+08:00",
+      "evidence_kind": "browser-observed-public-article-body",
+      "title": "Anthropic募資估逾千億美元　執行長阿莫戴：偉大歷史機遇"
+    },
+    {
+      "id": 3,
+      "headline": "澳洲稱AI威脅前所未見　惡意活動警告年增8成",
+      "publisher": "中央社 CNA",
+      "url": "https://www.cna.com.tw/news/aopl/202610270024.aspx",
+      "published_at": "2026-10-27T09:22:00+08:00",
+      "modified_at": "2026-10-27T09:33:00+08:00",
+      "retrieved_at": "2026-10-27T10:45:58.370054+08:00",
+      "evidence_kind": "browser-observed-public-article-body",
+      "title": "澳洲稱AI威脅前所未見　惡意活動警告年增8成"
+    },
+    {
+      "id": 4,
+      "headline": "蘋果iOS 27.2更新上線　Siri AI年底前支援繁中",
+      "publisher": "中央社 CNA",
+      "url": "https://www.cna.com.tw/news/ait/202610270020.aspx",
+      "published_at": "2026-10-27T09:00:00+08:00",
+      "modified_at": "2026-10-27T09:00:00+08:00",
+      "retrieved_at": "2026-10-27T10:46:14.119943+08:00",
+      "evidence_kind": "browser-observed-public-article-body",
+      "title": "蘋果iOS 27.2更新上線　Siri AI年底前支援繁中"
+    },
+    {
+      "id": 5,
+      "headline": "半導體需求強勁　韓國第3季經濟成長超乎預期",
+      "publisher": "中央社 CNA",
+      "url": "https://www.cna.com.tw/news/aopl/202610270033.aspx",
+      "published_at": "2026-10-27T10:26:00+08:00",
+      "modified_at": "2026-10-27T10:26:00+08:00",
+      "retrieved_at": "2026-10-27T10:46:16.034359+08:00",
+      "evidence_kind": "browser-observed-public-article-body",
+      "title": "半導體需求強勁　韓國第3季經濟成長超乎預期"
+    },
+    {
+      "id": 6,
+      "headline": "澳英美深化軍事合作　美核動力潛艦將輪調部署",
+      "publisher": "中央社 CNA",
+      "url": "https://www.cna.com.tw/news/aopl/202610270028.aspx",
+      "published_at": "2026-10-27T09:47:00+08:00",
+      "modified_at": "2026-10-27T10:09:00+08:00",
+      "retrieved_at": "2026-10-27T10:46:17.445218+08:00",
+      "evidence_kind": "browser-observed-public-article-body",
+      "title": "澳英美深化軍事合作　美核動力潛艦將輪調部署"
+    }
+  ]
+}
