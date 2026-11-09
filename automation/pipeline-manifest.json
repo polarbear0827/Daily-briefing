@@ -1,0 +1,27 @@
+{
+  "deployed_at": "2026-11-09T18:41:37.372161+08:00",
+  "legacy_archives": "preserved; new editions use date-edition identity",
+  "model": "gpt-6.1-sol",
+  "news_discovery": "user-designated RSS only; no web search",
+  "photography": "Source-supplied verified real photography only; no generated substitute; omit uncertain images",
+  "preflight": "actual 12-story private GPT-6.1-sol/high preview approved; not a published current edition",
+  "preparation_times": [
+    "07:00",
+    "19:00"
+  ],
+  "publication_times": [
+    "08:00",
+    "20:00"
+  ],
+  "quality": "three-story batch editorial review, bounded correction, final issue review; quoted evidence identity checks",
+  "reasoning": "high",
+  "schema_version": 1,
+  "service": "Daily Briefing editorial pipeline",
+  "status": "configured_awaiting_first_scheduled_edition",
+  "timezone": "Asia/Taipei",
+  "windows": {
+    "boundary": "start-inclusive,end-exclusive",
+    "evening": "current07:00 to current19:00",
+    "morning": "previous19:00 to current07:00"
+  }
+}
