@@ -1,6 +1,6 @@
 // =============================================================================
 // Daily Briefing — Client-side renderer
-// Loads data/latest.json (or data/issues/YYYY-MM-DD.json) and renders UI.
+// October reader template: Chinese UI; modern reader-editions with legacy fallback.
 // =============================================================================
 
 (function () {
@@ -60,14 +60,27 @@
   async function loadAllEditions() {
     // URL param ?date=YYYY-MM-DD&edition=morning|evening overrides
     const params = new URLSearchParams(window.location.search);
-    const date = params.get('date');
-    const editionParam = params.get('edition');
+    const date = params.get('date') || window.EDITORIAL_REQUESTED_DATE;
+    const editionParam = params.get('edition') || window.EDITORIAL_REQUESTED_EDITION;
+
+    // Prefer an entire modern pair, never mix a missing edition with stale legacy data.
+    const prefix = date ? `${encodeURIComponent(date)}-` : '';
+    const [readerMorning, readerEvening] = await Promise.all([
+      fetchJson(`data/reader-editions/${prefix}morning.json`),
+      fetchJson(`data/reader-editions/${prefix}evening.json`),
+    ]);
+    if (readerMorning || readerEvening) {
+      return { morning: readerMorning, evening: readerEvening, legacy: null, requestedEdition: editionParam };
+    }
 
     if (date) {
-      const morning = await fetchJson(`data/issues/${date}-morning.json`);
-      const evening = await fetchJson(`data/issues/${date}-evening.json`);
+      const datePath = encodeURIComponent(date);
+      const [morning, evening] = await Promise.all([
+        fetchJson(`data/issues/${datePath}-morning.json`),
+        fetchJson(`data/issues/${datePath}-evening.json`),
+      ]);
       // Fallback to legacy single-file format if neither edition file exists.
-      const legacy = (!morning && !evening) ? await fetchJson(`data/issues/${date}.json`) : null;
+      const legacy = (!morning && !evening) ? await fetchJson(`data/issues/${datePath}.json`) : null;
       return { morning, evening, legacy, requestedEdition: editionParam };
     }
 
@@ -85,9 +98,9 @@
     main.innerHTML = `
       <div style="max-width:600px;margin:120px auto;padding:40px;text-align:center;">
         <h1 style="font-family:var(--font-display-zh);font-size:32px;margin-bottom:16px;">
-          載入失敗 · Load Failed
+          載入失敗
         </h1>
-        <p style="color:var(--ink-muted);">${err.message}</p>
+        <p style="color:var(--ink-muted);">${escapeHtml(err.message)}</p>
       </div>
     `;
   }
@@ -117,9 +130,9 @@
 
   function renderWeather(issue) {
     const locations = getWeatherLocations(issue).filter(location => {
-      const hasName = Boolean(location.location_zh || location.location_en);
+      const hasName = Boolean(location.location_zh);
       const hasTemp = Number.isFinite(Number(location.temp_c));
-      const hasCondition = Boolean(location.condition_zh || location.condition_en);
+      const hasCondition = Boolean(location.condition_zh);
       return hasName && hasTemp && hasCondition;
     });
 
@@ -130,9 +143,9 @@
     return `
       <div class="weather-list">
         ${locations.map(location => {
-          const name = location.location_zh || location.location_en || '天氣';
+          const name = location.location_zh || '天氣';
           const temp = `${Math.round(Number(location.temp_c))}°C`;
-          const condition = location.condition_zh || location.condition_en || '資料暫缺';
+          const condition = location.condition_zh || '資料暫缺';
           return `
             <span class="weather-chip">
               <span class="weather-city">${escapeHtml(name)}</span>
@@ -144,24 +157,31 @@
     `;
   }
 
+  function issueLabel(issue) {
+    if (issue.issue_label_zh) return String(issue.issue_label_zh);
+    const value = String(issue.issue_number == null ? '' : issue.issue_number);
+    const dated = value.match(/^(\d{4})-(\d{2})-(\d{2})-(morning|evening)$/);
+    if (dated) return `${dated[1]}年${Number(dated[2])}月${Number(dated[3])}日${dated[4] === 'morning' ? '早報' : '晚報'}`;
+    return /^\d+$/.test(value) ? `第 ${value} 期` : value;
+  }
+
   function renderMasthead(issue) {
     return `
       <header class="masthead">
         <div class="masthead-meta">
-          <div class="issue-number">第 ${issue.issue_number} 期 · No. ${issue.issue_number}</div>
+          <div class="issue-number">${escapeHtml(issueLabel(issue))}</div>
           <div class="weather">
             ${renderWeather(issue)}
           </div>
-          <div class="date">${issue.date_display_zh}</div>
+          <div class="date">${escapeHtml(issue.date_display_zh)}</div>
         </div>
         <h1 class="masthead-title">Daily Briefing</h1>
         <p class="masthead-tagline">
           ${escapeHtml(issue.tagline_zh)}
-          <span class="en">${escapeHtml(issue.tagline_en)}</span>
         </p>
         <p class="masthead-cross">
           <a href="https://polarbear0827.github.io/My-Way/" style="color:inherit;text-decoration:none;border:1px solid currentColor;border-radius:999px;padding:.3rem 1rem;font-size:.85rem;opacity:.85;">
-            穗稻忠武的專欄 · AI Radar · Podcast →
+            穗稻忠武的專欄 · 人工智慧雷達 · 播客 →
           </a>
         </p>
       </header>
@@ -180,7 +200,7 @@
       const c = counts[cat.id] || 0;
       if (c === 0) return;
       items.push(
-        `<button class="tab" data-cat="${cat.id}">${escapeHtml(cat.name_zh)}<span class="count">${c}</span></button>`
+        `<button class="tab" data-cat="${escapeAttr(cat.id)}">${escapeHtml(cat.name_zh)}<span class="count">${c}</span></button>`
       );
     });
 
@@ -191,10 +211,10 @@
     if (articles.length === 0) return '';
     const articleHtml = articles.map(a => renderArticle(a, cat)).join('');
     return `
-      <section class="category-section" data-cat="${cat.id}">
+      <section class="category-section" data-cat="${escapeAttr(cat.id)}">
         <div class="category-title">
           <h2>${escapeHtml(cat.name_zh)}</h2>
-          <span class="count-label">${articles.length} 則 · ${escapeHtml(cat.name_en)}</span>
+          <span class="count-label">${articles.length} 則</span>
         </div>
         <div class="articles">${articleHtml}</div>
       </section>
@@ -206,8 +226,8 @@
     const headlineClass = article.is_headline ? ' is-headline' : '';
     const breakingClass = opts.breaking ? ' is-breaking' : '';
     const kickerLabel = opts.breaking
-      ? '🚨 重大快訊 · Breaking'
-      : (article.is_headline ? '頭條 · Headline' : escapeHtml(cat.name_zh));
+      ? '🚨 重大快訊'
+      : (article.is_headline ? '頭條' : escapeHtml(cat.name_zh));
     const bulletsArr = Array.isArray(article.bullets_zh) ? article.bullets_zh.filter(b => b && String(b).trim()) : [];
     const bulletsHtml = bulletsArr.length
       ? `<ul class="article-bullets">${bulletsArr.map(b => `<li>${escapeHtml(b)}</li>`).join('')}</ul>`
@@ -218,7 +238,7 @@
       ? `<div class="article-media"><img src="${escapeAttr(article.image_url)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.article-media').remove()"></div>`
       : '';
     const pulseHtml = article.community_pulse
-      ? `<div class="article-pulse"><span class="pulse-label">💬 社群怎麼看 · On X（Grok）</span><p>${escapeHtml(article.community_pulse)}</p></div>`
+      ? `<div class="article-pulse"><span class="pulse-label">💬 社群觀察</span><p>${escapeHtml(article.community_pulse)}</p></div>`
       : '';
     // 產業標籤 chip(垂直導覽);不重複顯示等於本身分類的標籤(robotics 分類就不再掛「機器人」)
     const TAG_EMOJI = { '機器人': '🤖', '金融': '💰', '製造': '🏭', '零售': '🛒' };
@@ -230,17 +250,16 @@
       : '';
 
     return `
-      <article class="article${headlineClass}${breakingClass}${readSet.has(article.id) ? ' is-read' : ''}" data-id="${article.id}">
+      <article class="article${headlineClass}${breakingClass}${readSet.has(article.id) ? ' is-read' : ''}" data-id="${escapeAttr(article.id)}">
         ${imageHtml}
         <div class="article-kicker">
           <span class="kicker-badge">${kickerLabel}</span>
           ${article.is_teaching_material ? '<span class="teaching-badge" title="教學素材：適合企業學員上手的 AI 工具或概念">🎓 教學素材</span>' : ''}
         </div>
         <h3 class="article-title">${escapeHtml(article.title_zh)}</h3>
-        ${article.title_en && article.title_en !== article.title_zh ? `<p class="article-title-en">${escapeHtml(article.title_en)}</p>` : ''}
         <p class="article-summary">${escapeHtml(article.lede_zh)}</p>
         ${tagsHtml}
-        <span class="article-more">閱讀全文 →</span>
+        <span class="article-more">閱讀摘要 →</span>
         <div class="article-footer">
           <span class="article-source">${escapeHtml(article.source.name)}</span>
           <span class="dot">·</span>
@@ -249,7 +268,7 @@
           <span>${readingTime} 分鐘</span>
           <div class="article-actions">
             <a href="${escapeAttr(article.source.url)}" target="_blank" rel="noopener"
-               onclick="event.stopPropagation()">原文 EN</a>
+               onclick="event.stopPropagation()">原文來源</a>
           </div>
           <div class="article-reactions" data-article-id="${escapeAttr(article.id)}">
             <button class="reaction-btn" data-reaction="interested"
@@ -311,7 +330,7 @@
   function renderFooter(issue) {
     return `
       <footer class="site-footer">
-        <div>第 ${issue.issue_number} 期 · 共 ${issue.meta.total_articles} 則 · 生成時間 ${formatTime(issue.meta.generated_at)}</div>
+        <div>${escapeHtml(issueLabel(issue))} · 共 ${issue.meta.total_articles} 則 · 生成時間 ${formatTime(issue.meta.generated_at)}</div>
         <div style="margin-top:12px;">
           <a href="index.html">最新一期</a>
           <a href="archive.html">歷史期數</a>
@@ -336,29 +355,17 @@
     const navList = window.__navList || [];
     const _idx = navList.findIndex(a => a.id === article.id);
     const bzArr = Array.isArray(article.bullets_zh) ? article.bullets_zh.filter(b => b && String(b).trim()) : [];
-    const beArr = Array.isArray(article.bullets_en) ? article.bullets_en.filter(b => b && String(b).trim()) : [];
     const bulletsZh = bzArr.map(b => `<li>${escapeHtml(b)}</li>`).join('');
-    const bulletsEn = beArr.map(b => `<li>${escapeHtml(b)}</li>`).join('');
-    const hasDistinctEn = article.title_en && article.title_en !== article.title_zh;
 
     overlay.innerHTML = `
-      <div class="reader-paper" data-lang="${hasDistinctEn ? 'both' : 'zh'}">
-        <button class="reader-close" aria-label="Close">×</button>
-        ${hasDistinctEn ? `<div class="reader-lang-toggle">
-          <button data-lang="zh">中文</button>
-          <button data-lang="both" class="active">中英對照</button>
-          <button data-lang="en">EN</button>
-        </div>` : ''}
+      <div class="reader-paper" data-lang="zh">
+        <button class="reader-close" aria-label="關閉">×</button>
 
-        <div class="reader-kicker">${escapeHtml(cat.name_zh)}${hasDistinctEn ? ' · ' + escapeHtml(cat.name_en) : ''}</div>
+        <div class="reader-kicker">${escapeHtml(cat.name_zh)}</div>
 
         <h1 class="reader-title zh-only">${escapeHtml(article.title_zh)}</h1>
-        <h1 class="reader-title en-only" style="font-family:var(--font-display-en);font-style:italic;">${escapeHtml(article.title_en)}</h1>
-        <p class="reader-title-en en-only" style="display:none;"></p>
-        <p class="reader-title-en zh-only" style="display:none;"></p>
 
         <p class="reader-lede zh-only">${escapeHtml(article.lede_zh)}</p>
-        <p class="reader-lede en-only" style="font-family:var(--font-body-en);">${escapeHtml(article.lede_en)}</p>
 
         ${article.is_teaching_material && article.teaching_takeaway ? `
         <div class="reader-takeaway">
@@ -367,18 +374,25 @@
         </div>` : ''}
 
         <ul class="reader-bullets zh-only"${bulletsZh ? '' : ' style="display:none;"'}>${bulletsZh}</ul>
-        <ul class="reader-bullets en-only"${bulletsEn ? '' : ' style="display:none;"'}>${bulletsEn}</ul>
+
+        ${article.editorial_analysis_zh ? `<aside class="reader-takeaway reader-editorial-analysis">
+          <div class="reader-takeaway-label">編輯觀察</div>
+          <p class="reader-takeaway-text">${escapeHtml(article.editorial_analysis_zh)}</p>
+        </aside>` : ''}
 
         ${article.community_pulse ? `<div class="reader-pulse">
-          <div class="reader-pulse-label">💬 社群怎麼看 · On X（Grok）</div>
+          <div class="reader-pulse-label">💬 社群觀察</div>
           <p>${escapeHtml(article.community_pulse)}</p>
         </div>` : ''}
 
         <div class="reader-source-block">
-          <div class="label">原文來源 · Source</div>
+          <div class="label">原文來源</div>
+          <p class="reader-evidence-note">${escapeHtml(article.source_evidence_note_zh || article.evidence_note_zh || '本文為來源摘要整理，未取得的原文內容不作全文轉述；請參閱原文核對。')}</p>
           <a href="${escapeAttr(article.source.url)}" target="_blank" rel="noopener">
             ${escapeHtml(article.source.name)} · ${escapeHtml(new URL(article.source.url).hostname)}
           </a>
+          ${(Array.isArray(article.supporting_sources) ? article.supporting_sources : []).filter(s => s && /^https?:\/\//i.test(s.source_url || '')).map(s => `
+          <p><a href="${escapeAttr(s.source_url)}" target="_blank" rel="noopener">${escapeHtml(s.source_name || '延伸來源')}</a></p>`).join('')}
         </div>
 
         <div class="reader-nav">
@@ -407,16 +421,6 @@
     if (_pv) _pv.addEventListener('click', (e) => { e.stopPropagation(); gotoReader(_idx - 1); });
     const _nx = qs('.reader-next', overlay);
     if (_nx) _nx.addEventListener('click', (e) => { e.stopPropagation(); gotoReader(_idx + 1); });
-
-    // Language toggle
-    qsa('.reader-lang-toggle button', overlay).forEach(btn => {
-      btn.addEventListener('click', () => {
-        const lang = btn.dataset.lang;
-        qs('.reader-paper', overlay).dataset.lang = lang;
-        qsa('.reader-lang-toggle button', overlay).forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-      });
-    });
   }
 
   function closeReader() {
@@ -538,7 +542,7 @@
       <section class="category-section breaking-section" data-cat="all">
         <div class="category-title breaking-title">
           <h2>🚨 重大快訊</h2>
-          <span class="count-label">Breaking News · ${articles.length} 則</span>
+          <span class="count-label">${articles.length} 則</span>
         </div>
         <div class="articles">${articleHtml}</div>
       </section>
@@ -585,12 +589,12 @@
     if (headlineArticle) {
       const headlineCat = catMap[headlineArticle.category] || { name_zh: '頭條', name_en: 'Headline' };
       const articleHtml = renderArticle(headlineArticle, headlineCat)
-        .replace('class="article', `data-owner-cat="${headlineArticle.category}" class="article`);
+        .replace('class="article', `data-owner-cat="${escapeAttr(headlineArticle.category)}" class="article`);
       headlineSection = `
         <section class="category-section headline-section" data-cat="all">
           <div class="category-title">
             <h2>頭條</h2>
-            <span class="count-label">Headline · ${escapeHtml(headlineCat.name_zh)}</span>
+            <span class="count-label">${escapeHtml(headlineCat.name_zh)}</span>
           </div>
           <div class="articles">${articleHtml}</div>
         </section>
@@ -628,7 +632,7 @@
     });
     bindTabs();
     applyReactionStateAll();
-    document.title = `第 ${issue.issue_number} 期 · ${issue.edition_label_zh || ''} · Daily Briefing`;
+    document.title = `${issueLabel(issue)} · ${issue.edition_label_zh || ''} · Daily Briefing`;
   }
 
   // ---------------------------------------------------------------------------
@@ -639,7 +643,7 @@
     const { morning, evening, legacy, requestedEdition } = await loadAllEditions();
 
     if (!morning && !evening && !legacy) {
-      renderError(new Error('No issue data available'));
+      renderError(new Error('暫無可讀的報期資料'));
       return;
     }
 

@@ -15,13 +15,12 @@
   <header class="masthead">
     <div class="masthead-meta">
       <div class="issue-number"><a href="index.html" style="color:inherit;text-decoration:none;">← 最新一期</a></div>
-      <div class="weather">Archive</div>
+      <div class="weather">新聞存檔</div>
       <div class="date"></div>
     </div>
     <h1 class="masthead-title" style="font-size:clamp(48px,8vw,96px);">歷史期數</h1>
     <p class="masthead-tagline">
-      所有過往的每日早報
-      <span class="en">All past issues of Daily Briefing</span>
+      所有過往的早晚報
     </p>
   </header>
 
@@ -35,31 +34,16 @@
 
   <script>
     (async function () {
+      const escapeHtml = s => String(s || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
+      const get = async path => { try { const r=await fetch(path,{cache:'no-store'});return r.ok?await r.json():null; }catch{return null;} };
       try {
-        const res = await fetch('data/archive.json');
-        const data = await res.json();
-        const list = document.getElementById('archive-list');
-        const issues = [...data.issues].reverse(); // newest first
-        list.innerHTML = issues.map(issue => `
-          <a class="archive-item" href="index.html?date=${issue.date}">
-            <div class="archive-date">${issue.date}</div>
-            <div class="archive-issue-num">No. ${issue.issue_number}</div>
-            <div class="archive-headline">
-              ${escapeHtml(issue.headline_zh)}
-              <span class="en">${escapeHtml(issue.headline_en)}</span>
-            </div>
-          </a>
-        `).join('');
-      } catch (err) {
-        document.getElementById('archive-list').innerHTML =
-          `<p style="text-align:center;color:var(--ink-muted);padding:40px;">載入失敗：${err.message}</p>`;
-      }
-
-      function escapeHtml(s) {
-        return String(s || '').replace(/[&<>"']/g, c => ({
-          '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;'
-        }[c]));
-      }
+        const [legacy,modern]=await Promise.all([get('data/archive.json'),get('data/editions/index.json')]);
+        if(!legacy && !modern)throw new Error('無法取得歷史期數');
+        const rows=[...((legacy&&legacy.issues)||[]).map(i=>({date:i.date,label:'第 '+i.issue_number+' 期',title:i.headline_zh,url:'index.html?date='+encodeURIComponent(i.date)})),
+          ...((modern&&modern.editions)||[]).map(i=>({date:i.date,label:i.edition==='morning'?'早報':'晚報',title:i.title,url:'index.html?date='+encodeURIComponent(i.date)+'&edition='+encodeURIComponent(i.edition)}))];
+        rows.sort((a,b)=>b.date.localeCompare(a.date)||(a.label==='晚報'?-1:1));
+        document.getElementById('archive-list').innerHTML=rows.map(i=>`<a class="archive-item" href="${escapeHtml(i.url)}"><div class="archive-date">${escapeHtml(i.date)}</div><div class="archive-issue-num">${escapeHtml(i.label)}</div><div class="archive-headline">${escapeHtml(i.title)}</div></a>`).join('');
+      }catch(err){document.getElementById('archive-list').textContent='載入失敗：'+err.message;}
     })();
   </script>
 </body>

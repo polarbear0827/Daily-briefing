@@ -1,0 +1,359 @@
+{
+  "schema_version": 2,
+  "issue_number": "2026-11-10-morning",
+  "issue_label_zh": "2026-11-10 早報",
+  "date": "2026-11-10",
+  "edition": "morning",
+  "edition_label_zh": "早報",
+  "date_display_zh": "2026年11月10日·星期二·早報",
+  "weather_locations": [],
+  "tagline_zh": "由 AI 為你策展，每日早晚讀物",
+  "categories": [
+    {
+      "id": "world",
+      "name_zh": "國際"
+    },
+    {
+      "id": "technology",
+      "name_zh": "科技"
+    },
+    {
+      "id": "finance",
+      "name_zh": "財經"
+    },
+    {
+      "id": "society",
+      "name_zh": "社會"
+    },
+    {
+      "id": "taiwan",
+      "name_zh": "台灣"
+    },
+    {
+      "id": "ai",
+      "name_zh": "人工智慧"
+    }
+  ],
+  "articles": [
+    {
+      "id": "2026-11-10-morning:event-01",
+      "original_id": "event-01",
+      "category": "world",
+      "is_headline": true,
+      "title_zh": "川普會卡達總理稱伊朗戰爭「實際上已結束」　魯比歐警告談判距突破仍遠",
+      "lede_zh": "Al Jazeera的RSS標題引述川普稱，伊朗戰爭「實際上已結束」，摘要則指他與卡達總理討論對伊朗斡旋。FOX World的RSS摘要稱，會談在白宮舉行，魯比歐警告伊朗談判距離突破仍遠。",
+      "bullets_zh": [],
+      "source": {
+        "name": "Al Jazeera",
+        "url": "https://www.aljazeera.com/news/2026/11/9/trump-calls-iran-war-effectively-over-after-talks-with-qatar-pm?traffic_source=rss",
+        "published_at": "2026-11-09T22:31:19+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "rss",
+      "evidence_kind": "rss-summary",
+      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
+      "editorial_analysis_zh": "川普對戰事的說法與魯比歐對談判進度的警告應分別歸因，不能據此認定戰爭已結束。",
+      "supporting_sources": [
+        {
+          "source_name": "FOX World",
+          "source_title": "Trump meets key Iran war mediator as UAE reveals major oil export surge despite conflict",
+          "source_url": "https://www.foxnews.com/world/trump-meets-key-iran-war-mediator-uae-reveals-major-oil-export-surge-despite-conflict"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-10-morning:event-02",
+      "original_id": "event-02",
+      "category": "world",
+      "is_headline": false,
+      "title_zh": "Thomas Massie推動彈劾Pete Hegseth表決　指控未經國會批准開戰",
+      "lede_zh": "NYT的RSS摘要指出，眾議員Thomas Massie已啟動彈劾Pete Hegseth的表決程序，最遲須於週三表決。Deutsche Welle摘要稱，Massie指控Hegseth未經國會批准發動戰爭。眾院若通過彈劾指控，才會進入參院審判。",
+      "bullets_zh": [],
+      "source": {
+        "name": "NYT",
+        "url": "https://www.nytimes.com/2026/11/09/us/politics/hegseth-impeachment-massie.html",
+        "published_at": "2026-11-09T22:35:05+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "rss",
+      "evidence_kind": "rss-summary",
+      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
+      "editorial_analysis_zh": "眾院若通過彈劾指控，將啟動參院審判。",
+      "supporting_sources": [
+        {
+          "source_name": "Deutsche Welle",
+          "source_title": "Republican Thomas Massie seeks to force House vote on impeaching Defense Secretary Pete Hegseth over Iran war",
+          "source_url": "https://www.dw.com/en/republican-thomas-massie-seeks-to-force-house-vote-on-impeaching-defense-secretary-pete-hegseth-over-iran-war/a-79905323?maca=en-rss-en-all-1573-rdf"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-10-morning:event-03",
+      "original_id": "event-03",
+      "category": "world",
+      "is_headline": false,
+      "title_zh": "烏克蘭和談：美方倡更廣泛歐洲安全協議　歐洲官員與專家表疑慮",
+      "lede_zh": "Washington Post World的RSS摘要指出，歐洲官員與專家擔憂，美方談判代表呼籲就歐洲安全達成更廣泛協議，呼應克里姆林宮的論述。The Economist的RSS摘要則分析，美國斡旋的談判可能讓俄羅斯延長戰爭。",
+      "bullets_zh": [],
+      "source": {
+        "name": "Washington Post World",
+        "url": "https://www.washingtonpost.com/world/2026/11/09/us-gives-russia-an-early-win-even-before-ukraine-peace-talks-begin-abu-dhabi/",
+        "published_at": "2026-11-09T21:22:11+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "rss",
+      "evidence_kind": "rss-summary",
+      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
+      "editorial_analysis_zh": "",
+      "supporting_sources": [
+        {
+          "source_name": "The Economist",
+          "source_title": "Donald Trump is in a hurry for peace in Ukraine. Vladimir Putin is not",
+          "source_url": "https://www.economist.com/europe/2026/11/09/donald-trump-is-in-a-hurry-for-peace-in-ukraine-vladimir-putin-is-not"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-10-morning:event-04",
+      "original_id": "event-04",
+      "category": "technology",
+      "is_headline": false,
+      "title_zh": "黃仁勳承認婚外情　輝達董事會調查、美議員要求資訊",
+      "lede_zh": "據RSS摘要，黃仁勳承認婚外情，輝達董事會展開獨立調查，股價開盤跌逾8%。Bloomberg Technology稱，對象被指為中國間諜，美國兩黨議員要求更多資訊，以評估潛在國安影響。川普則表示，FBI正在調查。",
+      "bullets_zh": [],
+      "source": {
+        "name": "中央社財經",
+        "url": "https://www.cna.com.tw/news/afe/202611090291.aspx",
+        "published_at": "2026-11-09T22:46:10+08:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "rss",
+      "evidence_kind": "rss-summary",
+      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
+      "editorial_analysis_zh": "",
+      "supporting_sources": [
+        {
+          "source_name": "FT Markets",
+          "source_title": "Nvidia shares fall as it probes alleged Chinese spy scandal",
+          "source_url": "https://www.ft.com/content/fa3b0a35-1aa9-4f31-97b4-e4c599e3e654?syn-25a6b1a6=1"
+        },
+        {
+          "source_name": "BBC World",
+          "source_title": "Trump says Nvidia boss told him he had no idea woman he had affair with was Chinese spy",
+          "source_url": "https://www.bbc.co.uk/news/articles/cqg7x7dpvym8o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "source_name": "Bloomberg Technology",
+          "source_title": "US Lawmakers Demand Details on Nvidia Amid Jensen Huang Scandal",
+          "source_url": "https://www.bloomberg.com/news/articles/2026-11-09/us-lawmakers-demand-details-on-nvidia-amid-jensen-huang-scandal"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-10-morning:event-05",
+      "original_id": "event-05",
+      "category": "finance",
+      "is_headline": false,
+      "title_zh": "科技股反彈、美股主要指數收高　亞洲股市跟漲仍屬預期",
+      "lede_zh": "據RSS摘要，上週暴跌的科技股反彈，美股主要指數收盤齊揚。FT Markets指出，油價下跌有助股指抵銷輝達股價下跌的影響。Bloomberg Markets稱，美股創7個月最佳單日表現，並預期亞洲股市跟漲，尚非亞洲市場實際交易結果。",
+      "bullets_zh": [],
+      "source": {
+        "name": "中央社財經",
+        "url": "https://www.cna.com.tw/news/afe/202611100009.aspx",
+        "published_at": "2026-11-10T05:49:48+08:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "rss",
+      "evidence_kind": "rss-summary",
+      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
+      "editorial_analysis_zh": "",
+      "supporting_sources": [
+        {
+          "source_name": "FT Markets",
+          "source_title": "US stocks rebound after AI rout",
+          "source_url": "https://www.ft.com/content/b8644327-86e7-4d1c-a71f-3fb1d552723b?syn-25a6b1a6=1"
+        },
+        {
+          "source_name": "Bloomberg Markets",
+          "source_title": "Asian Stocks to Rally on US Tech Surge, Oil Slump: Markets Wrap",
+          "source_url": "https://www.bloomberg.com/news/articles/2026-11-09/stock-market-today-dow-s-p-live-updates"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-10-morning:event-06",
+      "original_id": "event-06",
+      "category": "finance",
+      "is_headline": false,
+      "title_zh": "市場期待外交斡旋　國際油價跌至8月以來低點",
+      "lede_zh": "據RSS摘要，中東戰事與攻擊仍持續，但市場期待外交斡旋有望結束戰爭，國際油價跌至8月以來低點。FT Markets的RSS標題指出，川普稱對伊朗發動攻擊「極不可能」；摘要則稱布蘭特原油延續上週跌勢。",
+      "bullets_zh": [],
+      "source": {
+        "name": "中央社財經",
+        "url": "https://www.cna.com.tw/news/afe/202611100008.aspx",
+        "published_at": "2026-11-10T05:37:46+08:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "rss",
+      "evidence_kind": "rss-summary",
+      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
+      "editorial_analysis_zh": "",
+      "supporting_sources": [
+        {
+          "source_name": "FT Markets",
+          "source_title": "Oil prices hit 10-week low after Trump says strikes on Iran ‘highly unlikely’",
+          "source_url": "https://www.ft.com/content/1b818c16-5197-45f4-857a-49f99a10252f?syn-25a6b1a6=1"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-10-morning:event-07",
+      "original_id": "event-07",
+      "category": "society",
+      "is_headline": false,
+      "title_zh": "核一、核二廠採購案遭搜索清查　台電稱查證屬實將嚴懲",
+      "lede_zh": "中央社RSS摘要指出，台北地檢署指揮法務部廉政署，針對核一、核二廠民國101年至113年間採購案進行搜索清查。台電表示，已配合檢廉偵辦，案件進入司法程序，如查證屬實將依規定嚴懲。",
+      "bullets_zh": [],
+      "source": {
+        "name": "中央社財經",
+        "url": "https://www.cna.com.tw/news/afe/202611090287.aspx",
+        "published_at": "2026-11-09T22:25:01+08:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "rss",
+      "evidence_kind": "rss-summary",
+      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
+      "editorial_analysis_zh": "案件涉及兩座核電廠多年間的採購案；目前已進入司法程序，台電所稱懲處以查證屬實為前提。",
+      "supporting_sources": []
+    },
+    {
+      "id": "2026-11-10-morning:event-08",
+      "original_id": "event-08",
+      "category": "taiwan",
+      "is_headline": false,
+      "title_zh": "空污法修法10日協商　經濟部憂近8千家業者受影響",
+      "lede_zh": "中央社RSS摘要指出，立法院預計11月10日就《空氣污染防制法》修正草案進行朝野黨團協商。經濟部表示，修法將影響製造業、電力業及醫院、旅館等近8千家業者，憂倉促修法衝擊營運、民生與能源韌性，呼籲充分徵詢意見並維持現行管理機制。",
+      "bullets_zh": [],
+      "source": {
+        "name": "中央社財經",
+        "url": "https://www.cna.com.tw/news/afe/202611090283.aspx",
+        "published_at": "2026-11-09T22:03:52+08:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "rss",
+      "evidence_kind": "rss-summary",
+      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
+      "editorial_analysis_zh": "經濟部稱修法影響範圍涵蓋製造業、電力業及醫院、旅館等民生行業，並對營運、民生與能源韌性提出疑慮；這些衝擊屬經濟部的評估。",
+      "supporting_sources": []
+    },
+    {
+      "id": "2026-11-10-morning:event-09",
+      "original_id": "event-09",
+      "category": "technology",
+      "is_headline": false,
+      "title_zh": "法國指控伊朗駭入超市冷藏系統　數百家超市受波及",
+      "lede_zh": "NYT與BBC的RSS標題及摘要指出，法國指控伊朗涉及上月波及數百家超市的冷藏系統網路攻擊；BBC摘要稱，冷藏與冷凍設備升溫導致數噸食品腐壞。法國外長表示已召見伊朗駐法大使，NYT摘要稱伊朗未立即回應。",
+      "bullets_zh": [],
+      "source": {
+        "name": "NYT World",
+        "url": "https://www.nytimes.com/2026/11/09/world/europe/france-iran-refrigerators-cyberattack.html",
+        "published_at": "2026-11-09T19:29:39+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "rss",
+      "evidence_kind": "rss-summary",
+      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
+      "editorial_analysis_zh": "",
+      "supporting_sources": [
+        {
+          "source_name": "BBC World",
+          "source_title": "France accuses Iran of supermarket fridge hacking",
+          "source_url": "https://www.bbc.co.uk/news/articles/cmg474vk6dyqo?at_medium=RSS&at_campaign=rss"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-10-morning:event-10",
+      "original_id": "event-10",
+      "category": "ai",
+      "is_headline": false,
+      "title_zh": "Anthropic發布Fable 5.2與Mythos 5.2，AWS宣布上架",
+      "lede_zh": "據RSS摘要，Anthropic發布Claude Fable 5.2與Mythos 5.2，宣稱程式設計、推理及視覺能力提升，並已限制模型加速自我開發的能力。AWS另表示，兩款模型已在Amazon Bedrock及Claude Platform on AWS上架。",
+      "bullets_zh": [],
+      "source": {
+        "name": "TechCrunch AI",
+        "url": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/",
+        "published_at": "2026-11-09T19:24:51+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "rss",
+      "evidence_kind": "rss-summary",
+      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
+      "editorial_analysis_zh": "",
+      "supporting_sources": [
+        {
+          "source_name": "The Decoder",
+          "source_title": "Claude Fable 5.2 and Mythos 5.2 cement Anthropic's AI lead just before its IPO",
+          "source_url": "https://the-decoder.com/claude-fable-5-2-and-mythos-5-2-cement-anthropics-ai-lead-just-before-its-ipo/"
+        },
+        {
+          "source_name": "AWS Machine Learning",
+          "source_title": "Introducing Claude Fable 5.2 on AWS",
+          "source_url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-2-on-aws/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-10-morning:event-11",
+      "original_id": "event-11",
+      "category": "society",
+      "is_headline": false,
+      "title_zh": "土耳其西部鋼鐵廠爆炸起火，至少6死、8名工人失蹤",
+      "lede_zh": "中央社RSS摘要引述土耳其官員表示，土耳其西部一座鋼鐵廠發生爆炸並引發火災，造成至少6人死亡。救援人員仍在搜尋8名失蹤工人。",
+      "bullets_zh": [],
+      "source": {
+        "name": "中央社國際",
+        "url": "https://www.cna.com.tw/news/aopl/202611090281.aspx",
+        "published_at": "2026-11-09T21:37:48+08:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "rss",
+      "evidence_kind": "rss-summary",
+      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
+      "editorial_analysis_zh": "",
+      "supporting_sources": []
+    },
+    {
+      "id": "2026-11-10-morning:event-12",
+      "original_id": "event-12",
+      "category": "world",
+      "is_headline": false,
+      "title_zh": "歐盟執委會：德義等9國依目前進度恐難達2030減排目標",
+      "lede_zh": "中央社RSS摘要引述歐盟執委會表示，包括德國與義大利在內的9個歐盟成員國，依目前進度將無法達成2030年減排目標。",
+      "bullets_zh": [],
+      "source": {
+        "name": "中央社國際",
+        "url": "https://www.cna.com.tw/news/aopl/202611090290.aspx",
+        "published_at": "2026-11-09T22:41:08+08:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "rss",
+      "evidence_kind": "rss-summary",
+      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
+      "editorial_analysis_zh": "",
+      "supporting_sources": []
+    }
+  ],
+  "breaking_news": [],
+  "meta": {
+    "generated_at": "2026-11-10T07:09:49.760300+08:00",
+    "total_articles": 12,
+    "schema_version": "2.0",
+    "edition": "morning",
+    "model": "gpt-6.1-sol",
+    "source_mode": "rss-only",
+    "reading_time_estimated": true
+  },
+  "window_start": "2026-11-09T19:00:00+08:00",
+  "window_end": "2026-11-10T07:00:00+08:00"
+}

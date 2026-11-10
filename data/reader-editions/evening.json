@@ -1,0 +1,329 @@
+{
+  "schema_version": 2,
+  "issue_number": "2026-11-09-evening",
+  "issue_label_zh": "2026-11-09 晚報",
+  "date": "2026-11-09",
+  "edition": "evening",
+  "edition_label_zh": "晚報",
+  "date_display_zh": "2026年11月9日·星期一·晚報",
+  "weather_locations": [],
+  "tagline_zh": "由 AI 為你策展，每日早晚讀物",
+  "categories": [
+    {
+      "id": "technology",
+      "name_zh": "科技"
+    },
+    {
+      "id": "world",
+      "name_zh": "國際"
+    },
+    {
+      "id": "society",
+      "name_zh": "社會"
+    },
+    {
+      "id": "taiwan",
+      "name_zh": "台灣"
+    },
+    {
+      "id": "finance",
+      "name_zh": "財經"
+    },
+    {
+      "id": "ai",
+      "name_zh": "人工智慧"
+    }
+  ],
+  "articles": [
+    {
+      "id": "2026-11-09-evening:event-01",
+      "original_id": "event-01",
+      "category": "technology",
+      "is_headline": true,
+      "title_zh": "輝達稱啟動獨立調查，釐清黃仁勳疑遭外國情報鎖定報導",
+      "lede_zh": "據《衛報》RSS摘要，輝達表示，因報導指執行長黃仁勳疑遭外國情報行動鎖定，將啟動獨立調查。《紐約時報》摘要稱，美國高層官員關切他與一名被指涉及中國情報活動女子的關係；中央社摘要則報導輝達盤後股價下跌。中央社另報導，川普稱黃仁勳「為人正直」，但尚未與他談過涉及中國女間諜的指控。",
+      "bullets_zh": [],
+      "source": {
+        "name": "The Guardian",
+        "url": "https://www.theguardian.com/us-news/2026/nov/08/nvidia-jensen-huang-investigation",
+        "published_at": "2026-11-09T00:25:28+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "rss",
+      "evidence_kind": "rss-summary",
+      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
+      "editorial_analysis_zh": "",
+      "supporting_sources": [
+        {
+          "source_name": "中央社國際",
+          "source_title": "黃仁勳涉遭外國情報機構鎖定公司啟動調查　輝達盤後股價挫跌",
+          "source_url": "https://www.cna.com.tw/news/aopl/202611090152.aspx"
+        },
+        {
+          "source_name": "NYT",
+          "source_title": "Rubio Warned Officials About Nvidia Chief’s Entanglement With Chinese Spy",
+          "source_url": "https://www.nytimes.com/2026/11/08/us/politics/rubio-nvidia-ceo-chinese-spy.html"
+        },
+        {
+          "source_name": "中央社科技",
+          "source_title": "川普稱輝達執行長黃仁勳「為人正直」　盼外界聽取其說法",
+          "source_url": "https://www.cna.com.tw/news/aopl/202611090014.aspx"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-09-evening:event-02",
+      "original_id": "event-02",
+      "category": "world",
+      "is_headline": false,
+      "title_zh": "COP31土耳其召開，聯合國秘書長警告極端氣候成常態",
+      "lede_zh": "據中央社RSS摘要，聯合國秘書長警告，世界已進入極端氣候成為常態的新局面，呼籲出席土耳其COP31的各國領袖認真應對。德國之聲摘要指出，主辦國土耳其雖試圖推動全球轉向潔淨能源，仍高度依賴化石燃料。",
+      "bullets_zh": [],
+      "source": {
+        "name": "中央社國際",
+        "url": "https://www.cna.com.tw/news/aopl/202611090188.aspx",
+        "published_at": "2026-11-09T17:12:20+08:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "rss",
+      "evidence_kind": "rss-summary",
+      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
+      "editorial_analysis_zh": "",
+      "supporting_sources": [
+        {
+          "source_name": "Deutsche Welle",
+          "source_title": "Turkey pushes for transition at COP31 as coal burns",
+          "source_url": "https://www.dw.com/en/turkey-pushes-for-transition-at-cop31-as-coal-burns/a-79871687?maca=en-rss-en-all-1573-rdf"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-09-evening:event-03",
+      "original_id": "event-03",
+      "category": "society",
+      "is_headline": false,
+      "title_zh": "波蘭克拉科夫槍擊案嫌犯傷重死亡，當局續查動機",
+      "lede_zh": "據德國之聲RSS摘要，波蘭當局表示，克拉科夫槍擊案嫌犯因與警方交火受傷，於醫院死亡。BBC摘要稱槍擊造成至少6死，另在嫌犯家中發現3名家人遺體；FOX摘要報導槍擊造成6死15傷。彭博摘要指出，當局仍在追查犯案動機。",
+      "bullets_zh": [],
+      "source": {
+        "name": "DW World",
+        "url": "https://www.dw.com/en/krakow-mass-shooting-suspect-has-died-in-hospital-police-in-poland-say/a-79895626?maca=en-rss-en-world-4025-xml-mrss",
+        "published_at": "2026-11-09T06:53:00+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "rss",
+      "evidence_kind": "rss-summary",
+      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
+      "editorial_analysis_zh": "",
+      "supporting_sources": [
+        {
+          "source_name": "BBC World",
+          "source_title": "Krakow shooting suspect has died in hospital, police say",
+          "source_url": "https://www.bbc.co.uk/news/articles/c6y434dw8319o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "source_name": "Bloomberg Markets",
+          "source_title": "Gunman in Polish Mass Shooting Dies as Terrorism Probe Proceeds",
+          "source_url": "https://www.bloomberg.com/news/articles/2026-11-09/krakow-mass-shooter-dies-in-the-hospital-polish-police-says"
+        },
+        {
+          "source_name": "FOX World",
+          "source_title": "Gunman who killed 6 in Poland's Krakow square dies in hospital after police shootout",
+          "source_url": "https://www.foxnews.com/world/poland-krakow-square-shooting-gunman-dies"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-09-evening:event-04",
+      "original_id": "event-04",
+      "category": "taiwan",
+      "is_headline": false,
+      "title_zh": "中國4艘海警船航入金門限制水域　海巡耗時2小時驅離",
+      "lede_zh": "中央社RSS摘要指出，東北季風增強、海象惡劣之際，中國4艘海警船編隊航入金門限制水域。海巡署調派巡防艇，以中、英文廣播，耗時2小時將4船全數驅離。",
+      "bullets_zh": [],
+      "source": {
+        "name": "中央社政治",
+        "url": "https://www.cna.com.tw/news/aipl/202611090216.aspx",
+        "published_at": "2026-11-09T17:54:21+08:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "rss",
+      "evidence_kind": "rss-summary",
+      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
+      "editorial_analysis_zh": "此事件涉及金門限制水域的海巡執法，以及惡劣海象下的驅離作業。",
+      "supporting_sources": []
+    },
+    {
+      "id": "2026-11-09-evening:event-05",
+      "original_id": "event-05",
+      "category": "finance",
+      "is_headline": false,
+      "title_zh": "台股收漲1960.06點　外資仍連8個交易日賣超",
+      "lede_zh": "中央社RSS摘要指出，台股收漲1960.06點，外資仍連續8個交易日賣超。摘要引述投顧分析，台股是否真正落底，仍須觀察美股走勢與外資後續動向。",
+      "bullets_zh": [],
+      "source": {
+        "name": "中央社財經",
+        "url": "https://www.cna.com.tw/news/afe/202611090237.aspx",
+        "published_at": "2026-11-09T18:46:07+08:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "rss",
+      "evidence_kind": "rss-summary",
+      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
+      "editorial_analysis_zh": "台股大漲與外資持續賣超同時出現；摘要引述的投顧分析仍將美股及外資後續動向列為觀察重點。",
+      "supporting_sources": []
+    },
+    {
+      "id": "2026-11-09-evening:event-06",
+      "original_id": "event-06",
+      "category": "finance",
+      "is_headline": false,
+      "title_zh": "財政部估全年出口值突破9000億美元　規模將超越日本",
+      "lede_zh": "中央社RSS摘要引述財政部預估，今年全年出口值可望突破9000億美元、創歷史新高，並超越日本。財政部也預期，台灣出口世界排名可望由去年的第12名升至第8名，並有望挑戰第7名。",
+      "bullets_zh": [],
+      "source": {
+        "name": "中央社財經",
+        "url": "https://www.cna.com.tw/news/afe/202611090234.aspx",
+        "published_at": "2026-11-09T18:36:00+08:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "rss",
+      "evidence_kind": "rss-summary",
+      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
+      "editorial_analysis_zh": "財政部預估涉及全年出口值新高及世界排名提升，但仍屬預估，並非全年實績。",
+      "supporting_sources": []
+    },
+    {
+      "id": "2026-11-09-evening:event-07",
+      "original_id": "event-07",
+      "category": "finance",
+      "is_headline": false,
+      "title_zh": "中國將對美額外24%關稅等報復措施暫停期限再延兩個月",
+      "lede_zh": "Bloomberg Economics的RSS摘要指出，中國將對美國商品加徵24%關稅等報復措施的暫停期限再延長兩個月。此舉將兩國領導人延長貿易休戰至明年1月的決定正式化。",
+      "bullets_zh": [],
+      "source": {
+        "name": "Bloomberg Economics",
+        "url": "https://www.bloomberg.com/news/articles/2026-11-09/china-extends-pause-on-24-us-tariffs-to-january-keeps-10-rate",
+        "published_at": "2026-11-09T04:36:35+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "rss",
+      "evidence_kind": "rss-summary",
+      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
+      "editorial_analysis_zh": "",
+      "supporting_sources": []
+    },
+    {
+      "id": "2026-11-09-evening:event-08",
+      "original_id": "event-08",
+      "category": "world",
+      "is_headline": false,
+      "title_zh": "美國主導俄烏和平談判本週於阿布達比恢復　停火不列議程",
+      "lede_zh": "NYT World的RSS摘要指出，美國主導、旨在結束俄烏戰爭的談判將於本週在阿布達比恢復。停火不在此次談判議程內。",
+      "bullets_zh": [],
+      "source": {
+        "name": "NYT World",
+        "url": "https://www.nytimes.com/2026/11/09/world/europe/ukraine-russia-peace-talks.html",
+        "published_at": "2026-11-09T09:59:53+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "rss",
+      "evidence_kind": "rss-summary",
+      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
+      "editorial_analysis_zh": "",
+      "supporting_sources": []
+    },
+    {
+      "id": "2026-11-09-evening:event-09",
+      "original_id": "event-09",
+      "category": "technology",
+      "is_headline": false,
+      "title_zh": "Google宣布Gemini中文版購物功能在台推出",
+      "lede_zh": "中央社RSS摘要報導，Google宣布在台灣推出Gemini中文版購物功能。Google表示，使用者可用日常口語描述需求與預算，由Gemini產生商品圖卡，列出價格、評價、庫存、購買管道及規格比較表。",
+      "bullets_zh": [],
+      "source": {
+        "name": "中央社科技",
+        "url": "https://www.cna.com.tw/news/ait/202611090093.aspx",
+        "published_at": "2026-11-09T13:38:51+08:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "rss",
+      "evidence_kind": "rss-summary",
+      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
+      "editorial_analysis_zh": "",
+      "supporting_sources": []
+    },
+    {
+      "id": "2026-11-09-evening:event-10",
+      "original_id": "event-10",
+      "category": "technology",
+      "is_headline": false,
+      "title_zh": "挪威將暫停為資料中心新增預留電力連接　評估電網負擔",
+      "lede_zh": "據Bloomberg Markets的RSS摘要，挪威將暫停為資料中心進一步預留電力連接，同時評估如何因應資料中心對電網造成的負擔。",
+      "bullets_zh": [],
+      "source": {
+        "name": "Bloomberg Markets",
+        "url": "https://www.bloomberg.com/news/articles/2026-11-09/norway-halts-power-connections-for-new-data-centers",
+        "published_at": "2026-11-09T09:51:49+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "rss",
+      "evidence_kind": "rss-summary",
+      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
+      "editorial_analysis_zh": "",
+      "supporting_sources": []
+    },
+    {
+      "id": "2026-11-09-evening:event-11",
+      "original_id": "event-11",
+      "category": "finance",
+      "is_headline": false,
+      "title_zh": "韓國主管機關指酷澎濫用餐飲外送市場地位　裁罰3009億韓元",
+      "lede_zh": "中央社RSS摘要報導，韓國公平交易委員會以酷澎濫用餐飲外送市場主導地位為由，裁罰3009億韓元（約2億2059萬美元）。",
+      "bullets_zh": [],
+      "source": {
+        "name": "中央社國際",
+        "url": "https://www.cna.com.tw/news/aopl/202611090208.aspx",
+        "published_at": "2026-11-09T17:35:04+08:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "rss",
+      "evidence_kind": "rss-summary",
+      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
+      "editorial_analysis_zh": "",
+      "supporting_sources": []
+    },
+    {
+      "id": "2026-11-09-evening:event-12",
+      "original_id": "event-12",
+      "category": "ai",
+      "is_headline": false,
+      "title_zh": "生醫語言模型配對研究：微調後適當不作答表現可能下降",
+      "lede_zh": "arXiv研究摘要指出，研究以11個對應基礎模型檢查點，配對稽核25個生醫領域微調大型語言模型。在MedAbstain基準，適當不作答比例的中位數由8.3%降至4.2%，25組中有21組下降；各配對的變化幅度與方向不一。",
+      "bullets_zh": [],
+      "source": {
+        "name": "arXiv NLP",
+        "url": "https://arxiv.org/abs/2611.08780",
+        "published_at": "2026-11-09T00:00:00-05:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "rss",
+      "evidence_kind": "rss-summary",
+      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
+      "editorial_analysis_zh": "",
+      "supporting_sources": []
+    }
+  ],
+  "breaking_news": [],
+  "meta": {
+    "generated_at": "2026-11-09T19:09:03.755437+08:00",
+    "total_articles": 12,
+    "schema_version": "2.0",
+    "edition": "evening",
+    "model": "gpt-6.1-sol",
+    "source_mode": "rss-only",
+    "reading_time_estimated": true
+  },
+  "window_start": "2026-11-09T07:00:00+08:00",
+  "window_end": "2026-11-09T19:00:00+08:00"
+}
