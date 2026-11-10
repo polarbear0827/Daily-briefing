@@ -140,32 +140,25 @@
   }
 
   function renderWeather(issue) {
-    const locations = getWeatherLocations(issue).filter(location => {
-      const hasName = Boolean(location.location_zh);
-      const hasTemp = Number.isFinite(Number(location.temp_c));
-      const hasCondition = Boolean(location.condition_zh);
-      return hasName && hasTemp && hasCondition;
-    });
-
-    if (locations.length === 0) {
-      return '<div class="weather-empty">天氣資料暫缺</div>';
-    }
-
-    return `
-      <div class="weather-list">
-        ${locations.map(location => {
-          const name = location.location_zh || '天氣';
-          const temp = `${Math.round(Number(location.temp_c))}°C`;
-          const condition = location.condition_zh || '資料暫缺';
-          return `
-            <span class="weather-chip">
-              <span class="weather-city">${escapeHtml(name)}</span>
-              <span class="weather-reading">${escapeHtml(temp)} · ${escapeHtml(condition)}</span>
-            </span>
-          `;
-        }).join('')}
-      </div>
-    `;
+    // This is the current county forecast, separate from the article's historical date.
+    const data = window.__countyWeather;
+    const empty = '<div class="weather-empty">新北市｜天氣資料暫缺</div>';
+    const now = Date.now();
+    const updated = Date.parse(data?.updated_at);
+    if (data?.status !== 'ok' || data.location_id !== '65' || data.location_zh !== '新北市'
+        || data.source_name !== '中央氣象署' || !Number.isFinite(updated)
+        || updated > now + 300000 || now - updated > 86400000 || !Array.isArray(data.periods)) return empty;
+    const current = data.periods.filter(p => p && Date.parse(p.start) <= now && now < Date.parse(p.end));
+    if (current.length !== 1) return empty;
+    const p = current[0];
+    if (!Number.isFinite(p.min_c) || !Number.isFinite(p.max_c) || p.min_c > p.max_c
+        || p.min_c < -30 || p.max_c > 60 || !p.condition_zh || typeof p.condition_zh !== 'string') return empty;
+    const temp = p.min_c === p.max_c ? `${p.min_c}°C` : `${p.min_c}–${p.max_c}°C`;
+    const detail = `中央氣象署｜目前預報：${p.start} 至 ${p.end}（不含終點）｜資料更新：${data.updated_at}`;
+    return `<div class="weather-list"><span class="weather-chip" title="${escapeAttr(detail)}">
+      <span class="weather-city">新北市</span>
+      <span class="weather-reading">預報 ${escapeHtml(temp)} · ${escapeHtml(p.condition_zh)}</span>
+    </span></div>`;
   }
 
   function editionDisplayText(value) {
@@ -703,7 +696,10 @@
   // ---------------------------------------------------------------------------
 
   async function main() {
-    const { morning, midday, evening, legacy, requestedEdition } = await loadAllEditions();
+    const [{ morning, midday, evening, legacy, requestedEdition }, weather] = await Promise.all([
+      loadAllEditions(), fetchJson('data/weather/new-taipei.json').catch(() => null)
+    ]);
+    window.__countyWeather = weather;
     if (requestedEdition && (!['morning', 'midday', 'evening'].includes(requestedEdition)
         || !({ morning, midday, evening })[requestedEdition])) {
       renderError(new Error('指定的報期不存在或尚未提供'));
