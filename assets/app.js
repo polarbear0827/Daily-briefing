@@ -168,11 +168,16 @@
     `;
   }
 
+  function editionDisplayText(value) {
+    const names = {'科技早報':'科技早報','科技晚報':'科技晚報','早報':'科技早報','中報':'時事焦點','晚報':'科技晚報'};
+    return String(value == null ? '' : value).replace(/科技早報|科技晚報|早報|中報|晚報/g, name => names[name]);
+  }
+
   function issueLabel(issue) {
-    if (issue.issue_label_zh) return String(issue.issue_label_zh);
+    if (issue.issue_label_zh) return editionDisplayText(issue.issue_label_zh);
     const value = String(issue.issue_number == null ? '' : issue.issue_number);
     const dated = value.match(/^(\d{4})-(\d{2})-(\d{2})-(morning|midday|evening)$/);
-    if (dated) return `${dated[1]}年${Number(dated[2])}月${Number(dated[3])}日${{ morning: '早報', midday: '中報', evening: '晚報' }[dated[4]]}`;
+    if (dated) return `${dated[1]}年${Number(dated[2])}月${Number(dated[3])}日${{ morning: '科技早報', midday: '時事焦點', evening: '科技晚報' }[dated[4]]}`;
     return /^\d+$/.test(value) ? `第 ${value} 期` : value;
   }
 
@@ -182,7 +187,7 @@
       (issue.trial || issue.coverage_note_zh) && issue.window_start && issue.window_end
         ? `收錄窗口：${issue.window_start} 至 ${issue.window_end}（不含終點）` : '',
       issue.coverage_note_zh || '',
-    ].filter(Boolean).join(' · ');
+    ].filter(Boolean).map(editionDisplayText).join(' · ');
     return `
       <header class="masthead">
         <div class="masthead-meta">
@@ -190,11 +195,11 @@
           <div class="weather">
             ${renderWeather(issue)}
           </div>
-          <div class="date">${escapeHtml(issue.date_display_zh)}</div>
+          <div class="date">${escapeHtml(editionDisplayText(issue.date_display_zh))}</div>
         </div>
         <h1 class="masthead-title">Daily Briefing</h1>
         <p class="masthead-tagline">
-          ${escapeHtml(issue.tagline_zh)}
+          ${escapeHtml(issue.tagline_zh === '由 AI 為你策展，每日早晚讀物' ? '由 AI 為你策展，掌握科技與時事' : issue.tagline_zh)}
           ${notice ? `<br>${escapeHtml(notice)}` : ''}
         </p>
         <p class="masthead-cross">
@@ -577,9 +582,9 @@
     return `
       <div class="edition-switcher-wrap">
         <div class="edition-switcher">
-          ${btn('morning', '☀️ 早報')}
-          ${btn('midday', '中報')}
-          ${btn('evening', '🌙 晚報')}
+          ${btn('morning', '☀️ 科技早報')}
+          ${btn('midday', '時事焦點')}
+          ${btn('evening', '🌙 科技晚報')}
         </div>
       </div>
     `;
@@ -690,7 +695,7 @@
     });
     bindTabs();
     applyReactionStateAll();
-    document.title = `${issueLabel(issue)} · ${issue.edition_label_zh || ''} · Daily Briefing`;
+    document.title = `${issueLabel(issue)} · ${editionDisplayText(issue.edition_label_zh)} · Daily Briefing`;
   }
 
   // ---------------------------------------------------------------------------
