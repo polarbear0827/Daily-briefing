@@ -221,6 +221,29 @@
     `;
   }
 
+  function renderPhotoCredit(article, full = false) {
+    if (!article.image_url) return '';
+    let sourceUrl;
+    try {
+      const image = new URL(article.image_url);
+      const source = new URL(article.image_source_url || article.source.url);
+      if (image.protocol !== 'https:' || source.protocol !== 'https:' || image.username || image.password || source.username || source.password) return '';
+      sourceUrl = article.image_source_url || article.source.url;
+    } catch { return ''; }
+    const credit = (article.image_credit || '').replace(/Image source,\s*/g, '');
+    let licenseLink = '';
+    try {
+      const license = new URL(article.image_license_url);
+      if (license.protocol === 'https:' && !license.username && !license.password) licenseLink = ` · <a href="${escapeAttr(article.image_license_url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">授權條款</a>`;
+    } catch {}
+    if (!credit && !licenseLink) return '';
+    const outlet = article.image_source_name || (credit.includes(' · ') ? credit.split(' · ')[0] : article.source.name);
+    const label = full ? (credit || outlet) : outlet;
+    const archive = /^資料照片|檔案照片/.test(article.image_caption || '') || /檔案照片|資料照/.test(credit) ? '（資料照）' : '';
+    const link = `<a href="${escapeAttr(sourceUrl)}" title="${escapeAttr(credit)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">圖片：${escapeHtml(label)}${archive}</a>${licenseLink}`;
+    return full ? `<p class="reader-evidence-note">${link}</p>` : `<small class="article-photo-credit article-source">${link}</small>`;
+  }
+
   function renderPhoto(article) {
     if (!article.image_url) return '';
     let imageUrl, sourceUrl;
@@ -231,15 +254,9 @@
       imageUrl = article.image_url; sourceUrl = article.image_source_url || article.source.url;
     } catch { return ''; }
     const caption = article.image_caption || '';
-    const credit = article.image_credit || '';
-    let licenseLink = '';
-    try {
-      const license = new URL(article.image_license_url);
-      if (license.protocol === 'https:' && !license.username && !license.password) licenseLink = ` · <a href="${escapeAttr(article.image_license_url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">授權條款</a>`;
-    } catch {}
-    const attribution = caption || credit || licenseLink
-      ? `<p class="article-source">${escapeHtml(caption)}${caption && credit ? ' · ' : ''}<a href="${escapeAttr(sourceUrl)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${credit ? '圖片：' + escapeHtml(credit) : '原圖來源'}</a>${licenseLink}</p>` : '';
-    return `<div class="article-photo"><div class="article-media"><img src="${escapeAttr(imageUrl)}" alt="${escapeAttr(article.image_alt || caption || '來源新聞配圖')}" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.article-photo').remove()"></div>${attribution}</div>`;
+    const y = article.image_focus_y ?? (article.is_headline && article.image_publication_basis === 'user-directed-source-reference' ? 0 : undefined);
+    const focus = typeof y === 'number' && Number.isFinite(y) && y >= 0 && y <= 100 ? ` style="object-position:50% ${y}%"` : '';
+    return `<div class="article-photo"><div class="article-media"><img src="${escapeAttr(imageUrl)}" alt="${escapeAttr(article.image_alt || caption || '來源新聞配圖')}"${focus} loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.article-photo').remove()"></div>${renderPhotoCredit(article)}</div>`;
   }
 
   function renderArticle(article, cat, opts) {
@@ -383,7 +400,7 @@
         <div class="reader-kicker">${escapeHtml(cat.name_zh)}</div>
 
         <h1 class="reader-title zh-only">${escapeHtml(article.title_zh)}</h1>
-        ${renderPhoto(article)}
+
 
         <p class="reader-lede zh-only">${escapeHtml(article.lede_zh)}</p>
 
@@ -413,6 +430,7 @@
           </a>
           ${(Array.isArray(article.supporting_sources) ? article.supporting_sources : []).filter(s => s && /^https?:\/\//i.test(s.source_url || '')).map(s => `
           <p><a href="${escapeAttr(s.source_url)}" target="_blank" rel="noopener">${escapeHtml(s.source_name || '延伸來源')}</a></p>`).join('')}
+          ${renderPhotoCredit(article, true)}
         </div>
 
         <div class="reader-nav">
