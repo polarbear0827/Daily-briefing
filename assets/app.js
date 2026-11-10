@@ -254,7 +254,9 @@
     } catch {}
     if (!credit && !licenseLink) return '';
     const outlet = article.image_source_name || (credit.includes(' · ') ? credit.split(' · ')[0] : article.source.name);
-    const label = full ? (credit || outlet) : outlet;
+    const nonPhoto = ['brand-logo', 'product-image'].includes(article.media_kind);
+    const mediaLabel = nonPhoto ? (article.label_zh || (article.media_kind === 'brand-logo' ? '品牌標誌（非新聞照片）' : '官方產品圖（非新聞照片）')) + ' · ' : '';
+    const label = mediaLabel + (full ? (credit || outlet) : outlet);
     const archive = /^資料照片|檔案照片/.test(article.image_caption || '') || /檔案照片|資料照/.test(credit) ? '（資料照）' : '';
     const link = `<a href="${escapeAttr(sourceUrl)}" title="${escapeAttr(credit)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">圖片：${escapeHtml(label)}${archive}</a>${licenseLink}`;
     return full ? `<p class="reader-evidence-note">${link}</p>` : `<small class="article-photo-credit article-source">${link}</small>`;
@@ -271,7 +273,8 @@
     } catch { return ''; }
     const caption = article.image_caption || '';
     const y = article.image_focus_y ?? (article.is_headline && article.image_publication_basis === 'user-directed-source-reference' ? 0 : undefined);
-    const focus = typeof y === 'number' && Number.isFinite(y) && y >= 0 && y <= 100 ? ` style="object-position:50% ${y}%"` : '';
+    const nonPhoto = ['brand-logo', 'product-image'].includes(article.media_kind);
+    const focus = nonPhoto ? ' style="object-fit:contain;object-position:center"' : (typeof y === 'number' && Number.isFinite(y) && y >= 0 && y <= 100 ? ` style="object-position:50% ${y}%"` : '');
     return `<div class="article-photo"><div class="article-media"><img src="${escapeAttr(imageUrl)}" alt="${escapeAttr(article.image_alt || caption || '來源新聞配圖')}"${focus} loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.article-photo').remove()"></div>${renderPhotoCredit(article)}</div>`;
   }
 
@@ -311,7 +314,7 @@
         <h3 class="article-title">${escapeHtml(article.title_zh)}</h3>
         <p class="article-summary">${escapeHtml(article.lede_zh)}</p>
         ${tagsHtml}
-        <span class="article-more">閱讀摘要 →</span>
+        <span class="article-more">閱讀文章 →</span>
         <div class="article-footer">
           <span class="article-source">${escapeHtml(article.source.name)}</span>
           <span class="dot">·</span>
@@ -419,7 +422,7 @@
         <h1 class="reader-title zh-only">${escapeHtml(article.title_zh)}</h1>
 
 
-        <p class="reader-lede zh-only">${escapeHtml(article.lede_zh)}</p>
+        ${String(article.lede_zh || '').split(/\n\s*\n/).filter(p => p.trim()).map(p => `<p class="reader-lede zh-only">${escapeHtml(p)}</p>`).join('\n')}
 
         ${article.is_teaching_material && article.teaching_takeaway ? `
         <div class="reader-takeaway">
@@ -441,7 +444,7 @@
 
         <div class="reader-source-block">
           <div class="label">原文來源</div>
-          <p class="reader-evidence-note">${escapeHtml(article.source_evidence_note_zh || article.evidence_note_zh || '本文為來源摘要整理，未取得的原文內容不作全文轉述；請參閱原文核對。')}</p>
+          <p class="reader-evidence-note">${escapeHtml(article.source_evidence_note_zh || article.evidence_note_zh || '來源與延伸閱讀如下。')}</p>
           <a href="${escapeAttr(article.source.url)}" target="_blank" rel="noopener">
             ${escapeHtml(article.source.name)} · ${escapeHtml(new URL(article.source.url).hostname)}
           </a>
