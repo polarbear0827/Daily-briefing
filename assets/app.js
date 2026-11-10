@@ -17,9 +17,19 @@
   const THEME_KEY = 'dailyBriefing.theme.v1';
   function _loadJSON(k, dflt) { try { const v = JSON.parse(localStorage.getItem(k)); return v == null ? dflt : v; } catch { return dflt; } }
   const readSet = new Set(_loadJSON(READ_KEY, []));
+  function storageId(id) {
+    const issue = window.__currentIssue || {};
+    const dated = String(issue.issue_number || '').match(/^(\d{4}-\d{2}-\d{2})-(morning|midday|evening)$/);
+    const date = issue.date || (dated && dated[1]) || new URLSearchParams(window.location.search).get('date') || window.EDITORIAL_REQUESTED_DATE;
+    const edition = issue.edition || (dated && dated[2]) || window.__currentEdition;
+    // Keep already-projected namespaces and their saved state byte-for-byte.
+    if (date && edition && String(id).startsWith(`${date}-${edition}:`)) return id;
+    // Unscoped historical identifiers remain readable; modern IDs never leak across issues.
+    return date && edition ? JSON.stringify([date, edition, id]) : id;
+  }
   function markRead(id) {
-    if (!id || readSet.has(id)) return;
-    readSet.add(id);
+    if (!id || readSet.has(storageId(id))) return;
+    readSet.add(storageId(id));
     localStorage.setItem(READ_KEY, JSON.stringify([...readSet]));
     const card = qs(`.article[data-id="${CSS.escape(id)}"]`);
     if (card) card.classList.add('is-read');
@@ -58,19 +68,20 @@
   }
 
   async function loadAllEditions() {
-    // URL param ?date=YYYY-MM-DD&edition=morning|evening overrides
+    // URL param ?date=YYYY-MM-DD&edition=morning|midday|evening overrides
     const params = new URLSearchParams(window.location.search);
     const date = params.get('date') || window.EDITORIAL_REQUESTED_DATE;
     const editionParam = params.get('edition') || window.EDITORIAL_REQUESTED_EDITION;
 
-    // Prefer an entire modern pair, never mix a missing edition with stale legacy data.
+    // Prefer the whole modern set; never mix missing slots with legacy aliases.
     const prefix = date ? `${encodeURIComponent(date)}-` : '';
-    const [readerMorning, readerEvening] = await Promise.all([
+    const [readerMorning, readerMidday, readerEvening] = await Promise.all([
       fetchJson(`data/reader-editions/${prefix}morning.json`),
+      fetchJson(`data/reader-editions/${prefix}midday.json`),
       fetchJson(`data/reader-editions/${prefix}evening.json`),
     ]);
-    if (readerMorning || readerEvening) {
-      return { morning: readerMorning, evening: readerEvening, legacy: null, requestedEdition: editionParam };
+    if (readerMorning || readerMidday || readerEvening) {
+      return { morning: readerMorning, midday: readerMidday, evening: readerEvening, legacy: null, requestedEdition: editionParam };
     }
 
     if (date) {
@@ -160,12 +171,18 @@
   function issueLabel(issue) {
     if (issue.issue_label_zh) return String(issue.issue_label_zh);
     const value = String(issue.issue_number == null ? '' : issue.issue_number);
-    const dated = value.match(/^(\d{4})-(\d{2})-(\d{2})-(morning|evening)$/);
-    if (dated) return `${dated[1]}年${Number(dated[2])}月${Number(dated[3])}日${dated[4] === 'morning' ? '早報' : '晚報'}`;
+    const dated = value.match(/^(\d{4})-(\d{2})-(\d{2})-(morning|midday|evening)$/);
+    if (dated) return `${dated[1]}年${Number(dated[2])}月${Number(dated[3])}日${{ morning: '早報', midday: '中報', evening: '晚報' }[dated[4]]}`;
     return /^\d+$/.test(value) ? `第 ${value} 期` : value;
   }
 
   function renderMasthead(issue) {
+    const notice = [
+      issue.trial ? (issue.trial_label_zh || '試刊') : '',
+      (issue.trial || issue.coverage_note_zh) && issue.window_start && issue.window_end
+        ? `收錄窗口：${issue.window_start} 至 ${issue.window_end}（不含終點）` : '',
+      issue.coverage_note_zh || '',
+    ].filter(Boolean).join(' · ');
     return `
       <header class="masthead">
         <div class="masthead-meta">
@@ -178,6 +195,7 @@
         <h1 class="masthead-title">Daily Briefing</h1>
         <p class="masthead-tagline">
           ${escapeHtml(issue.tagline_zh)}
+          ${notice ? `<br>${escapeHtml(notice)}` : ''}
         </p>
         <p class="masthead-cross">
           <a href="https://polarbear0827.github.io/My-Way/" style="color:inherit;text-decoration:none;border:1px solid currentColor;border-radius:999px;padding:.3rem 1rem;font-size:.85rem;opacity:.85;">
@@ -286,7 +304,7 @@
       : '';
 
     return `
-      <article class="article${headlineClass}${breakingClass}${readSet.has(article.id) ? ' is-read' : ''}" data-id="${escapeAttr(article.id)}">
+      <article class="article${headlineClass}${breakingClass}${readSet.has(storageId(article.id)) ? ' is-read' : ''}" data-id="${escapeAttr(article.id)}">
         ${imageHtml}
         <div class="article-kicker">
           <span class="kicker-badge">${kickerLabel}</span>
@@ -338,7 +356,8 @@
   window.toggleReaction = function (btn) {
     const wrap = btn.closest('.article-reactions');
     if (!wrap) return;
-    const articleId = wrap.dataset.articleId;
+    const originalId = wrap.dataset.articleId;
+    const articleId = storageId(originalId);
     const reaction = btn.dataset.reaction;
     const map = loadReactions();
     map[articleId] = map[articleId] || {};
@@ -347,7 +366,7 @@
     if (Object.keys(map[articleId]).length === 0) delete map[articleId];
     saveReactions(map);
     // 把互動回饋累積成分類 affinity → 下次載入依此把喜歡的分類往上排
-    const _art = ((window.__currentIssue && window.__currentIssue.articles) || []).find(a => a.id === articleId);
+    const _art = ((window.__currentIssue && window.__currentIssue.articles) || []).find(a => a.id === originalId);
     if (_art) bumpAffinity(_art.category, (map[articleId] && map[articleId][reaction]) ? 1 : -1);
     btn.classList.toggle('is-active', !!(map[articleId] && map[articleId][reaction]));
   };
@@ -356,7 +375,7 @@
     const map = loadReactions();
     qsa('.article-reactions').forEach(wrap => {
       const id = wrap.dataset.articleId;
-      const state = map[id] || {};
+      const state = map[storageId(id)] || {};
       qsa('.reaction-btn', wrap).forEach(b => {
         b.classList.toggle('is-active', !!state[b.dataset.reaction]);
       });
@@ -559,6 +578,7 @@
       <div class="edition-switcher-wrap">
         <div class="edition-switcher">
           ${btn('morning', '☀️ 早報')}
+          ${btn('midday', '中報')}
           ${btn('evening', '🌙 晚報')}
         </div>
       </div>
@@ -592,7 +612,7 @@
     const total = arts.length;
     const mins = arts.reduce((s, a) => s + ((a.source && a.source.reading_time_min) || 3), 0);
     const breaking = (issue.breaking_news || []).length;
-    const read = arts.filter(a => readSet.has(a.id)).length;
+    const read = arts.filter(a => readSet.has(storageId(a.id))).length;
     const personalized = Object.keys(loadAffinity()).length > 0;
     return `<div class="overview-bar" id="overview">
       <span class="ov-item"><b>${total}</b> 則</span><span class="ov-sep">·</span>
@@ -606,7 +626,7 @@
   }
   function updateOverviewRead() {
     const el = qs('#ov-read-n'); const issue = window.__currentIssue;
-    if (el && issue) el.textContent = (issue.articles || []).filter(a => readSet.has(a.id)).length;
+    if (el && issue) el.textContent = (issue.articles || []).filter(a => readSet.has(storageId(a.id))).length;
   }
 
   function renderIssueInto(rootEl, issue) {
@@ -678,15 +698,20 @@
   // ---------------------------------------------------------------------------
 
   async function main() {
-    const { morning, evening, legacy, requestedEdition } = await loadAllEditions();
+    const { morning, midday, evening, legacy, requestedEdition } = await loadAllEditions();
+    if (requestedEdition && (!['morning', 'midday', 'evening'].includes(requestedEdition)
+        || !({ morning, midday, evening })[requestedEdition])) {
+      renderError(new Error('指定的報期不存在或尚未提供'));
+      return;
+    }
 
-    if (!morning && !evening && !legacy) {
+    if (!morning && !midday && !evening && !legacy) {
       renderError(new Error('暫無可讀的報期資料'));
       return;
     }
 
     // Legacy single-file: render as-is, no switcher.
-    if (legacy && !morning && !evening) {
+    if (legacy && !morning && !midday && !evening) {
       renderIssueInto(qs('#app'), legacy);
       document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') closeReader();
@@ -694,36 +719,52 @@
       return;
     }
 
-    const editions = { morning, evening };
+    const editions = { morning, midday, evening };
 
     // Pick default edition.
     let active;
     if (requestedEdition && editions[requestedEdition]) {
       active = requestedEdition;
-    } else if (morning && evening) {
-      const mt = new Date(morning.meta.generated_at).getTime();
-      const et = new Date(evening.meta.generated_at).getTime();
-      active = (et >= mt) ? 'evening' : 'morning';
     } else {
-      active = morning ? 'morning' : 'evening';
+      const timestamp = key => Date.parse(editions[key].publication?.published_at || editions[key].trial_staged_at || editions[key].meta?.generated_at) || 0;
+      active = Object.keys(editions).filter(k => editions[k] && timestamp(k) <= Date.now()).reduce((latest, k) => {
+        return !latest || timestamp(k) >= timestamp(latest) ? k : latest;
+      }, null);
     }
 
     const app = qs('#app');
-    function show(editionKey) {
+    function show(editionKey, push = false) {
       const issue = editions[editionKey];
       if (!issue) return;
+      closeReader();
+      if (push) {
+        const params = new URLSearchParams(window.location.search);
+        if (!params.has('date') && window.EDITORIAL_REQUESTED_DATE) params.set('date', window.EDITORIAL_REQUESTED_DATE);
+        params.set('edition', editionKey);
+        window.history.pushState(null, '', `${window.location.pathname}?${params}${window.location.hash || ''}`);
+      }
       app.innerHTML = renderEditionSwitcher(editions, editionKey)
         + '<div id="issue-root"></div>';
+      window.__currentEdition = editionKey;
       renderIssueInto(qs('#issue-root'), issue);
       qsa('.edition-tab', app).forEach(btn => {
         btn.addEventListener('click', () => {
           const k = btn.dataset.edition;
           if (k === editionKey || !editions[k]) return;
-          show(k);
+          show(k, true);
         });
       });
     }
     show(active);
+    window.addEventListener('popstate', () => {
+      const key = new URLSearchParams(window.location.search).get('edition') || active;
+      closeReader();
+      if (!['morning', 'midday', 'evening'].includes(key) || !editions[key]) {
+        renderError(new Error('指定的報期不存在或尚未提供'));
+        return;
+      }
+      show(key);
+    });
 
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') closeReader();
