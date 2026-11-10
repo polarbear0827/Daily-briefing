@@ -221,6 +221,27 @@
     `;
   }
 
+  function renderPhoto(article) {
+    if (!article.image_url) return '';
+    let imageUrl, sourceUrl;
+    try {
+      const image = new URL(article.image_url);
+      const source = new URL(article.image_source_url || article.source.url);
+      if (image.protocol !== 'https:' || source.protocol !== 'https:' || image.username || image.password || source.username || source.password) return '';
+      imageUrl = article.image_url; sourceUrl = article.image_source_url || article.source.url;
+    } catch { return ''; }
+    const caption = article.image_caption || '';
+    const credit = article.image_credit || '';
+    let licenseLink = '';
+    try {
+      const license = new URL(article.image_license_url);
+      if (license.protocol === 'https:' && !license.username && !license.password) licenseLink = ` · <a href="${escapeAttr(article.image_license_url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">授權條款</a>`;
+    } catch {}
+    const attribution = caption || credit || licenseLink
+      ? `<p class="article-source">${escapeHtml(caption)}${caption && credit ? ' · ' : ''}<a href="${escapeAttr(sourceUrl)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${credit ? '圖片：' + escapeHtml(credit) : '原圖來源'}</a>${licenseLink}</p>` : '';
+    return `<div class="article-photo"><div class="article-media"><img src="${escapeAttr(imageUrl)}" alt="${escapeAttr(article.image_alt || caption || '來源新聞配圖')}" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.article-photo').remove()"></div>${attribution}</div>`;
+  }
+
   function renderArticle(article, cat, opts) {
     opts = opts || {};
     const headlineClass = article.is_headline ? ' is-headline' : '';
@@ -234,9 +255,7 @@
       : '';
     const readingTime = article.source.reading_time_min || 3;
     const publishedAgo = relativeTime(article.source.published_at);
-    const imageHtml = article.image_url
-      ? `<div class="article-media"><img src="${escapeAttr(article.image_url)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.article-media').remove()"></div>`
-      : '';
+    const imageHtml = renderPhoto(article);
     const pulseHtml = article.community_pulse
       ? `<div class="article-pulse"><span class="pulse-label">💬 社群觀察</span><p>${escapeHtml(article.community_pulse)}</p></div>`
       : '';
@@ -364,6 +383,7 @@
         <div class="reader-kicker">${escapeHtml(cat.name_zh)}</div>
 
         <h1 class="reader-title zh-only">${escapeHtml(article.title_zh)}</h1>
+        ${renderPhoto(article)}
 
         <p class="reader-lede zh-only">${escapeHtml(article.lede_zh)}</p>
 
