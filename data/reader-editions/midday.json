@@ -1,13 +1,667 @@
 {
-  "schema_version": 2,
-  "issue_number": "2026-11-10-midday",
-  "issue_label_zh": "2026-11-10 中報試刊",
-  "date": "2026-11-10",
-  "edition": "midday",
-  "edition_label_zh": "中報試刊",
-  "date_display_zh": "2026年11月10日·星期二·中報試刊 · 延後試刊 2026-11-10T15:22:47.973442+08:00",
-  "weather_locations": [],
-  "tagline_zh": "由 AI 為你策展，每日早晚讀物",
+  "articles": [
+    {
+      "bullets_zh": [],
+      "category": "world",
+      "editorial_analysis_zh": "外交行程增加，不等於終戰條件已獲共識。是否提出具體方案，以及歐洲如何參與涉及自身安全的安排，是判讀後續進展的重要觀察點。",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "fetched_via": "publisher",
+      "id": "2026-11-12-midday:event-01",
+      "is_headline": true,
+      "lede_zh": "阿布達比兩天的俄烏終戰會談後，美國特使魏科夫與庫許納預定11月12日先赴莫斯科會見俄羅斯總統普丁，再前往愛爾蘭首都都柏林，向烏克蘭總統澤倫斯基簡報。這波外交行程將延續美方斡旋，但歐洲對談判是否已有實質進展，仍有不同評估。\n\n已抵達愛爾蘭的澤倫斯基表示，2027年之前或許存在結束戰爭的「機會之窗」，並稱參與談判者都希望在此前取得成果。他期待美方帶著具體方案與普丁會談，也能帶回具體內容；不過，他同時表明自己仍抱持懷疑態度，並未宣告談判已經突破。\n\n談判範圍也是焦點。澤倫斯基歡迎美方對讓歐洲參與斡旋的態度轉變；另一方面，俄方推動重新檢討整個歐洲的安全格局，莫斯科首席談判代表更以現代版「雅爾達會議」描述目標。俄方的訴求及美方提出的新架構，已讓歐洲各國感到不安。\n\n約50位歐洲領袖預定12日在都柏林開會，阿布達比會談預料將是主要議題。歐盟官員認為，和平進程目前幾乎沒有實質進展，戰火停止前也沒有必要與莫斯科討論更廣泛的安全規畫；北約秘書長呂特則表示，會談顯示美國、烏克蘭與歐洲立場一致且團結。",
+      "original_id": "event-01",
+      "source": {
+        "name": "中央社國際",
+        "published_at": "2026-11-12T10:34:39+08:00",
+        "reading_time_min": 1,
+        "url": "https://www.cna.com.tw/news/aopl/202611120061.aspx"
+      },
+      "source_evidence_note_zh": "依中央社兩篇報導的已取得正文節錄整合，資料均標示為publisher-excerpt；未取得其所據法新社原文，兩篇報導不視為獨立來源的交叉驗證。",
+      "supporting_sources": [
+        {
+          "source_name": "中央社國際",
+          "source_title": "澤倫斯基：俄烏終戰談判2027年前有望迎來機會之窗",
+          "source_url": "https://www.cna.com.tw/news/aopl/202611120011.aspx"
+        }
+      ],
+      "title_zh": "美特使將分晤普丁、澤倫斯基　歐洲對終戰進程評估不一"
+    },
+    {
+      "bullets_zh": [],
+      "category": "world",
+      "editorial_analysis_zh": "川普一面強調全面勝利，一面淡化重啟重大戰事的可能性，兩者仍須透過具體停戰條件銜接。美以通話內容存在爭議，不能據此認定雙方已公開決裂。",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "fetched_via": "publisher",
+      "id": "2026-11-12-midday:event-02",
+      "is_headline": false,
+      "lede_zh": "美國總統川普11月11日在阿靈頓國家公墓的退伍軍人節紀念儀式上，再度為伊朗戰爭辯護，宣稱衝突很快就會結束，但美國要取得的是「全面勝利」，而非「93%的勝利」。這是他的政策宣示與預測，並非已達成停戰協議的消息。\n\n美國與以色列自2月28日聯手對伊朗開戰，至今已超過8個月。川普在演說中稱，美國已經獲勝，問題只是何時結束戰爭；他並表示，美方失去18條生命，重申不能讓伊朗擁有核武。他也宣稱，衝突結束後，世界將更加安全與和平。\n\n川普近期對重啟大規模戰事的態度較為保留。他8日接受「60分鐘」訪問時，表示不認為有理由恢復打擊伊朗；9日在白宮會晤卡達總理穆罕默德後，也淡化短期內重啟重大戰事的可能性，但仍未接受伊朗既有的停火方案。卡達與其他波灣國家則持續遊說美方不要恢復戰事。\n\n美以之間是否對後續路線存在衝突，也受到關注。以色列《新消息報》與Ynet引述消息人士稱，總理尼坦雅胡在上週末通話中要求恢復戰事，川普則主張繼續推進外交談判，雙方因此爭執。尼坦雅胡辦公室否認這項報導；一名以色列高階官員承認兩人曾通話，但否認發生口角。",
+      "original_id": "event-02",
+      "source": {
+        "name": "中央社國際",
+        "published_at": "2026-11-12T07:07:59+08:00",
+        "reading_time_min": 1,
+        "url": "https://www.cna.com.tw/news/aopl/202611120016.aspx"
+      },
+      "source_evidence_note_zh": "依中央社兩篇報導的已取得正文節錄整合，資料均標示為publisher-excerpt。未取得演說全文、《新消息報》、Ynet或「60分鐘」原始內容；通話爭執的說法及以方否認均依中央社所載處理。",
+      "supporting_sources": [
+        {
+          "source_name": "中央社國際",
+          "source_title": "以色列媒體：尼坦雅胡和川普為伊朗戰爭起爭執　上演飆罵大賽",
+          "source_url": "https://www.cna.com.tw/news/aopl/202611120013.aspx"
+        }
+      ],
+      "title_zh": "川普稱伊朗戰爭將結束　以方否認與美方因重啟戰事爭執"
+    },
+    {
+      "bullets_zh": [],
+      "category": "world",
+      "editorial_analysis_zh": "結束戰爭的訴求跨越兩黨受訪者，但支持比例差距仍大。民調可作為觀察新國會施政壓力的依據，不能替代對立法進度與政策結果的查證。",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "fetched_via": "publisher",
+      "id": "2026-11-12-midday:event-03",
+      "is_headline": false,
+      "lede_zh": "美國期中選舉後公布的路透社／益普索民調顯示，71%受訪者希望國會通過法案，結束美國對伊朗的戰爭；另有62%支持撤銷川普政府對進口商品課徵的關稅。兩項議題都獲過半受訪者支持，但調查反映的是民意，並不代表國會已採取行動。\n\n結束戰爭的主張在兩黨受訪者中均獲過半支持，其中民主黨受訪者支持比例為93%，共和黨受訪者為51%。兩者差距明顯，也顯示共和黨受訪者並非一致支持延續戰爭；至於撤銷關稅，已取得資料僅列出整體支持比例，沒有兩黨各自的數據。\n\n這項調查透過網路在全美進行，為期4天，於11月9日結束，共取得1,705名美國成年人的回覆，抽樣誤差約為正負2個百分點。調查對象是美國成年人，而非僅限已投票選民。\n\n民主黨在期中選舉後取得參眾兩院多數，新一屆國會將於2027年1月3日宣誓就職。民主黨領袖已承諾處理生活成本問題，並設法促使美國結束對伊朗的戰爭；黨內也有許多人承諾終止關稅。這些政治承諾與民調呈現的態度相呼應，但仍不能據此判定相關法案必然通過或政策必然改變。",
+      "original_id": "event-03",
+      "source": {
+        "name": "中央社國際",
+        "published_at": "2026-11-12T01:18:26+08:00",
+        "reading_time_min": 1,
+        "url": "https://www.cna.com.tw/news/aopl/202611120004.aspx"
+      },
+      "source_evidence_note_zh": "依中央社已取得的報導正文節錄撰寫，資料標示為publisher-excerpt；未取得路透社原文、民調完整問卷或原始數據，無法另行核對題目措辭及其他分組結果。",
+      "supporting_sources": [],
+      "title_zh": "路透／益普索民調：71%美國受訪者盼國會立法結束伊朗戰爭"
+    },
+    {
+      "bullets_zh": [],
+      "category": "world",
+      "editorial_analysis_zh": "兩場多邊峰會提供美中領袖接續對話的機會；但雙方表達對話意願，不等於已就非核化或三方會晤達成具體協議。",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "fetched_via": "publisher",
+      "id": "2026-11-12-midday:event-04",
+      "is_headline": false,
+      "lede_zh": "美國國務卿盧比歐與中國外交部長王毅11日通話，討論美國總統川普赴中國出席APEC峰會，以及中國國家主席習近平隨後赴美出席G20峰會的安排。依目前公布的行程，兩國領袖預計在年底前接續互訪，川普並將在深圳與習近平再次會晤。\n\n美國國務院發布的通話摘要指出，這次通話應中方要求進行。雙方重申兩國領導人的承諾，要在尊重、公平與互惠基礎上，建立具建設性的戰略穩定關係；雙方也認為，領導人層級的實質對話，對推動和平及非核化等目標至關重要。\n\n川普預計先赴菲律賓，於11月17日出席東協－美國特別峰會，再轉往中國深圳參加APEC峰會。若按計畫與習近平會面，將是繼5月北京峰會、9月華府峰會後，兩人今年第三度會晤。習近平則預計12月赴佛羅里達州，參加由川普主持的G20峰會。\n\n通話內容也提及可能與俄羅斯舉行三方領導人會晤，但這仍是可能選項，並非已確定的峰會安排。此次公開說明的具體行程，仍以川習互訪及兩場多邊峰會為主。",
+      "original_id": "event-04",
+      "source": {
+        "name": "中央社國際",
+        "published_at": "2026-11-12T09:23:53+08:00",
+        "reading_time_min": 1,
+        "url": "https://www.cna.com.tw/news/aopl/202611120040.aspx"
+      },
+      "source_evidence_note_zh": "本則依中央社報導節錄撰寫；資料取得標記為publisher-excerpt。未另取得美國國務院通話摘要原文、中方說明或其他獨立來源，行程均依報導所載的預定安排表述。",
+      "supporting_sources": [],
+      "title_zh": "盧比歐與王毅通話討論川習互訪　三方領袖會晤仍屬可能選項"
+    },
+    {
+      "bullets_zh": [],
+      "category": "world",
+      "editorial_analysis_zh": "這場選舉同時涉及政黨席次翻轉與非裔政治代表性的變化；判讀結果時，仍應區分媒體勝選判定、對手認敗與正式認證。",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "fetched_via": "publisher",
+      "id": "2026-11-12-midday:event-05",
+      "is_headline": false,
+      "lede_zh": "美國密西西比州聯邦參議員選舉出現席次翻轉。美聯社及包括CNN、NBC在內的多家媒體11日判定，民主黨候選人柯隆擊敗尋求連任的共和黨參議員海德－史密斯；她的發言人隨後證實，海德－史密斯已致電對手承認敗選。\n\n這場選舉的結果經過數天計票才逐漸明朗，地方選務人員持續處理郵寄選票，以及州內稱為「誓詞選票」的臨時選票後，美聯社作出柯隆勝選的判定。目前所獲資訊是媒體判定與對手認敗，並非選務機關的正式認證結果。\n\n43歲的柯隆擔任地方檢察官。依媒體判定結果，他將成為140多年來首位從密西西比州當選聯邦參議員的非裔美國人，也打破該州自1947年以來未選出民主黨籍聯邦參議員的局面。這次席次翻轉發生在民主黨重新取得聯邦參眾兩院多數的期中選舉中。\n\n柯隆競選期間強調，他要代表全體密西西比州民，並主張民主黨應重新代表鄉村、郊區與都市地區的民眾，以具體成果改善選民生活。在種族分歧長期影響政治與社會發展的密西西比州，這項競選訴求與此次勝選的代表性，成為選舉受到關注的重要面向。",
+      "original_id": "event-05",
+      "source": {
+        "name": "中央社國際",
+        "published_at": "2026-11-12T08:20:20+08:00",
+        "reading_time_min": 1,
+        "url": "https://www.cna.com.tw/news/aopl/202611120025.aspx"
+      },
+      "source_evidence_note_zh": "本則僅取得中央社報導節錄，取得標記為publisher-excerpt；未直接取得文中提及的美聯社、法新社、CNN及NBC原始報導，也未取得官方計票明細或認證文件。勝負以媒體判定及對手承認敗選表述。",
+      "supporting_sources": [],
+      "title_zh": "媒體判定柯隆贏得密西西比州參議員選舉　海德－史密斯承認敗選"
+    },
+    {
+      "bullets_zh": [],
+      "category": "finance",
+      "editorial_analysis_zh": "合格存戶全數收到部分退款，與所有損失獲得清償是不同進度。銀行涉及公共資金與退休金業務，也使資金追償及責任釐清不只是私人存款問題。",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "fetched_via": "publisher",
+      "id": "2026-11-12-midday:event-06",
+      "is_headline": false,
+      "lede_zh": "巴拉圭數位銀行Ueno Bank倒閉後，存戶退款已有進展。巴拉圭中央銀行11日表示，所有符合存款保障基金理賠資格的客戶，都已至少取回部分存款，累計有181萬2348人收到部分退款；這不代表存款已全數償還，銀行持有的大部分資金仍未追回。\n\nUeno Bank因嚴重償付能力疑慮，於11月3日遭接管，存戶帳戶遭凍結、無法提款，並引發大規模抗議。央行官員阿科斯達表示，合格客戶已「百分之百」獲得至少部分退款，但銀行高階主管與股東不在存款保障基金的理賠範圍內。\n\n危機影響也不僅限於個別存戶。Ueno Bank曾持有逾8億美元公共資金，並承辦國家退休金業務及多個政府機構帳戶。這家原本規模不大的金融科技公司，以數位服務為主要營運模式，吸引許多低收入客戶，短短3年內成為金融業的重要業者。\n\n與銀行有關聯的前總統潘尼亞於11月6日遭彈劾，目前被羈押候審。他曾持有Ueno Bank控股公司股份，直到去年才出售。潘尼亞被控利用總統職權，將數百萬美元政府存款轉入該銀行，並在外界已對放貸及償付能力提出警告後，隱瞞或淡化財務困境；他否認所有指控。",
+      "original_id": "event-06",
+      "source": {
+        "name": "中央社國際",
+        "published_at": "2026-11-12T10:46:54+08:00",
+        "reading_time_min": 1,
+        "url": "https://www.cna.com.tw/news/aopl/202611120068.aspx"
+      },
+      "source_evidence_note_zh": "本則依中央社報導節錄撰寫，取得標記為publisher-excerpt；未另取得巴拉圭央行公告、退款明細、司法文件或法新社原始報導。退款進度依報導所載央行說法，對潘尼亞的指控與其否認並列。",
+      "supporting_sources": [],
+      "title_zh": "巴拉圭Ueno Bank倒閉後啟動退款　央行稱合格存戶均已取回部分存款"
+    },
+    {
+      "bullets_zh": [],
+      "category": "world",
+      "editorial_analysis_zh": "",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "fetched_via": "publisher",
+      "id": "2026-11-12-midday:event-07",
+      "is_headline": false,
+      "lede_zh": "義大利超過6000所公立學校11月11日收到炸彈恐嚇郵件，數百所學校緊急疏散。警方清查後未發現爆裂物，學校12日恢復上課。恐嚇信寄件地址使用台灣大葉大學網域，駐義代表處表示，台灣相關機構願與義大利當局合作，提供技術支援、協助查明真相。\n\n這批郵件約在11日上午9時50分寄抵各地學校，聲稱校內裝有遙控爆炸裝置。各校處置不一，部分緊急通知家長接走學生，也有學校在檢查確認安全後，讓師生返回校內繼續上課。\n\n義大利總理梅洛尼當天下午召開緊急會議，晚間透過影片表示，目前沒有具體危險，不會讓匿名郵件決定學校行事曆。她也警告，類似恐嚇可能再次出現，目的在於製造恐懼與混亂。\n\n恐嚇信的寄件人顯示名稱為繁體中文，內文卻以俄文名字署名。報導提及信箱疑遭盜用，但實際寄件者與寄送方式仍待查明，不能僅憑郵件網域或署名判定來源。駐義代表處同時表明，台灣譴責任何恐嚇行為。",
+      "original_id": "event-07",
+      "source": {
+        "name": "中央社國際",
+        "published_at": "2026-11-12T07:57:07+08:00",
+        "reading_time_min": 1,
+        "url": "https://www.cna.com.tw/news/aopl/202611120019.aspx"
+      },
+      "source_evidence_note_zh": "依已取得的中央社報導節錄整理，並非獨立取得義大利媒體全文、恐嚇郵件原件或官方聲明原文；郵件來源與信箱是否遭盜用尚未獲確認。",
+      "supporting_sources": [],
+      "title_zh": "義大利逾6000所學校收炸彈恐嚇信　警方未發現爆裂物"
+    },
+    {
+      "bullets_zh": [],
+      "category": "society",
+      "editorial_analysis_zh": "",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "fetched_via": "publisher",
+      "id": "2026-11-12-midday:event-08",
+      "is_headline": false,
+      "lede_zh": "美國紐約市布魯克林福來布許一棟3層樓建築，11月11日下午約4時倒塌。CNN較晚消息指出，事故造成至少1人死亡、12人受傷，仍有1人受困；消防人員持續在瓦礫中搜尋。\n\n事故發生時間為台灣時間12日上午5時左右。紐約市消防局稍早公布的傷亡為1人死亡、4人傷勢危急送醫，另有6人受輕傷，與後續報導的受傷總數有時間差。現場影像顯示，倒塌建築的牆面崩落，臥室及衣櫃外露；已有多人從瓦礫中獲救，其中一名兒童由擔架抬出。\n\n倒塌建築附近有一處工地，但事故原因仍待釐清，尚不能認定與鄰近工程有關。紐約市建築局表示，稽查人員已到場協助搜救，並檢查附近建築物的結構穩定性。",
+      "original_id": "event-08",
+      "source": {
+        "name": "中央社國際",
+        "published_at": "2026-11-12T08:18:18+08:00",
+        "reading_time_min": 1,
+        "url": "https://www.cna.com.tw/news/aopl/202611120024.aspx"
+      },
+      "source_evidence_note_zh": "依已取得的中央社報導節錄整理，未獨立取得CNN、法新社報導全文或紐約市主管機關通報。傷亡與受困人數保留節錄中的消息時序，未獲後續更新。",
+      "supporting_sources": [],
+      "title_zh": "紐約布魯克林3層樓建築倒塌　至少1死12傷、仍有人受困"
+    },
+    {
+      "bullets_zh": [],
+      "category": "world",
+      "editorial_analysis_zh": "",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "fetched_via": "publisher",
+      "id": "2026-11-12-midday:event-09",
+      "is_headline": false,
+      "lede_zh": "俄羅斯駐美國大使達爾奇耶夫逝世，享年66歲。俄羅斯外交部11月11日證實死訊，但未公布具體死因及相關細節；美國國務院也證實，他當天在莫斯科逝世。\n\n達爾奇耶夫於2025年3月獲任命為駐美大使，任職約一年半，長期負責俄美外交事務。他曾在2014年至2021年間擔任俄羅斯駐加拿大大使，並於2021年至2024年間出任俄羅斯外交部北美司司長。\n\n俄羅斯外交部形容他是傑出的外交官、經驗豐富的領導者與親切友善的同事。美國國務院發言人則向他的家人及親友表達哀悼，並表示有關逝世的其他詳細資訊，應向俄羅斯政府洽詢。雙方已確認死訊，但目前公布的資訊未說明死亡原因。",
+      "original_id": "event-09",
+      "source": {
+        "name": "中央社國際",
+        "published_at": "2026-11-12T09:10:42+08:00",
+        "reading_time_min": 1,
+        "url": "https://www.cna.com.tw/news/aopl/202611120035.aspx"
+      },
+      "source_evidence_note_zh": "依已取得的中央社報導節錄整理，未獨立取得法新社全文、俄羅斯外交部聲明或美國國務院回應原文；死因及其他細節未公布。",
+      "supporting_sources": [],
+      "title_zh": "俄駐美大使達爾奇耶夫逝世　享年66歲、死因未公布"
+    },
+    {
+      "bullets_zh": [],
+      "category": "world",
+      "editorial_analysis_zh": "聲明同時涵蓋台海安全、國際航運與台灣國際參與，顯示相關政策表態不只著眼於兩岸，也涉及印太共同秩序。總統府則以自我防衛、社會韌性及國際合作回應。",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "fetched_via": "publisher",
+      "id": "2026-11-12-midday:event-10",
+      "is_headline": false,
+      "lede_zh": "七大工業國集團（G7）外長在巴黎會議後發表聯合聲明，重申維持台灣海峽和平與穩定至關重要，反對以武力或脅迫片面改變現狀，並支持台灣有意義地參與國際組織。總統府11月12日回應，台灣將持續強化自我防衛能力與全社會韌性，並與國際夥伴合作維護區域穩定。\n\n法國擔任2026年G7輪值主席國，G7外長與歐盟外交與安全政策高級代表於11月9日至10日在巴黎開會。會後聲明涵蓋烏克蘭、中東及印太情勢；在台海議題上，外長們對中國在台灣以東海域日益強勢的活動表達關切，認為這些活動威脅區域穩定、航行自由及國際航運安全，並鼓勵透過建設性對話和平解決兩岸議題。\n\n聲明也將台海置於更廣泛的印太安全脈絡，強調主權、領土完整、法治與和平解決爭端等原則，重申維護航行及飛越自由，呼籲各國遵守包括《聯合國海洋法公約》在內的國際法義務，並對東海、南海局勢表達嚴重關切。\n\n總統府發言人郭雅慧表示，台海及印太和平穩定攸關全球安全與繁榮，感謝G7成員國與歐盟持續關切台海情勢。她說，台灣將與包括G7成員國在內、理念相近的國際夥伴緊密合作，善盡國際義務，維護區域安全與繁榮。",
+      "original_id": "event-10",
+      "source": {
+        "name": "中央社政治",
+        "published_at": "2026-11-12T00:43:23+08:00",
+        "reading_time_min": 1,
+        "url": "https://www.cna.com.tw/news/aipl/202611120003.aspx"
+      },
+      "source_evidence_note_zh": "取得中央社兩篇報導的正文節錄，分別涉及G7聯合聲明及總統府回應；未直接取得英國政府網站所刊聲明或總統府新聞稿原文。",
+      "supporting_sources": [
+        {
+          "source_name": "中央社政治",
+          "source_title": "G7外長重申台海和平　總統府：持續強化自我防衛能力",
+          "source_url": "https://www.cna.com.tw/news/aipl/202611120063.aspx"
+        }
+      ],
+      "title_zh": "G7外長重申反對武力改變台海現狀，總統府表達感謝"
+    },
+    {
+      "bullets_zh": [],
+      "category": "technology",
+      "editorial_analysis_zh": "這起事件涉及高階主管利益衝突、接班安排與出口管制三個不同層次。董事會調查、國會要求說明及轉運指控應分開檢視，不能因彼此相關，就將未證實的關係或手法推定為違法結論。",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "fetched_via": "publisher",
+      "id": "2026-11-12-midday:event-11",
+      "is_headline": false,
+      "lede_zh": "輝達執行長黃仁勳面臨董事會調查與美國國會要求說明。董事會已就他承認與Megaspeed高階主管黃樂的婚外情啟動調查；另有知情人士透露，董事會預計11月11日討論其去留，並與外部機構尋找潛在接班人。會議與接班安排仍屬消息人士說法，尚無撤換決定獲得證實。\n\n公司治理爭議也涉及另一項尚未證實的指控。《紐約時報》引述5名輝達前員工稱，黃仁勳與直接向他報告工作的醫療保健事業部副總裁鮑爾發展婚外情。輝達行為準則要求員工避免私人關係造成利益衝突；針對這項關係指控，公司拒絕評論，鮑爾未立即回應。董事會先前啟動的調查由外部律師事務所主導。\n\n黃樂被美方指為中國情報人員，中國否認相關間諜指控，黃樂尚未回應置評請求。美國聯邦眾議院3個委員會的共和黨籍領導人已要求黃仁勳出席聯合閉門簡報，說明雙方往來。議員表示，若他未同意出席，可能發出傳票；目前取得的報導並未確認傳票已發出，也未證實黃仁勳洩露機密。\n\n爭議另延伸至Megaspeed的晶片出口管制問題。Axios的消息人士指稱，美國財長貝森特曾質問商務部長盧特尼克，為何尚未將這家被控非法轉運美國晶片至中國的公司列入實體清單。相關閉門交涉與官員阻擋追究責任的說法，均來自匿名消息人士。Megaspeed先前表示，已啟動專案調查，並多次向美國政府表達全力配合的意願。\n\n科技記者、黃仁勳傳記作者維特則提出，涉案資料中心可能以假伺服器營造設備已安裝的假象，再將真設備轉運中國。他也談到遠端出租算力等可能途徑，但這些屬於對規避管制手法的分析與推測，不能視為Megaspeed已被證實採用的做法。",
+      "original_id": "event-11",
+      "source": {
+        "name": "中央社財經",
+        "published_at": "2026-11-12T09:18:45+08:00",
+        "reading_time_min": 2,
+        "url": "https://www.cna.com.tw/news/afe/202611120036.aspx"
+      },
+      "source_evidence_note_zh": "取得中央社四篇、TechCrunch兩篇報導的正文節錄。涉及《紐約時報》、路透社、彭博、《華爾街日報》、Axios及Hard Fork訪談的內容，均來自已取得報導中的轉述，未直接取得上述原始報導、訪談或調查文件；多篇接班報導援用重疊消息來源，不視為各自獨立證實。",
+      "supporting_sources": [
+        {
+          "source_name": "TechCrunch",
+          "source_title": "Nvidia’s stock drops as board reportedly preps to oust CEO Jensen Huang",
+          "source_url": "https://techcrunch.com/2026/11/11/nvidias-stock-drops-as-board-reportedly-preps-to-oust-ceo-jensen-huang/"
+        },
+        {
+          "source_name": "中央社國際",
+          "source_title": "紐約時報：黃仁勳遭爆與下屬發展婚外情　輝達內部早有議論",
+          "source_url": "https://www.cna.com.tw/news/aopl/202611120021.aspx"
+        },
+        {
+          "source_name": "TechCrunch",
+          "source_title": "Congress to call Jensen Huang in to answer for alleged Chinese spy affair",
+          "source_url": "https://techcrunch.com/2026/11/11/congress-to-call-jensen-huang-in-to-answer-for-alleged-chinese-spy-affair/"
+        },
+        {
+          "source_name": "中央社國際",
+          "source_title": "輝達客戶涉轉運晶片輸中　傳美財長質問商務部長為何不列管",
+          "source_url": "https://www.cna.com.tw/news/aopl/202611120008.aspx"
+        },
+        {
+          "source_name": "中央社科技",
+          "source_title": "黃仁勳傳記作者拆解輝達晶片走私黑幕　假伺服器調包偷天換日",
+          "source_url": "https://www.cna.com.tw/news/ait/202611110088.aspx"
+        }
+      ],
+      "title_zh": "輝達傳研議黃仁勳去留，國會要求說明涉諜爭議"
+    },
+    {
+      "bullets_zh": [],
+      "category": "society",
+      "editorial_analysis_zh": "核心問題不只是能否辨識AI文字，而是成績能否可靠反映學生能力。現場表現、學習過程與批判性修改等方式，代表評量重點可能由繳交成品轉向可核實的理解與表達。",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "fetched_via": "publisher",
+      "id": "2026-11-12-midday:event-12",
+      "is_headline": false,
+      "lede_zh": "英格蘭高等教育監管機構Office for Students（OfS）要求大學增加不依賴AI的評量，鼓勵採用傳統考試與現場簡報，並警告，未能建立可靠評量方式的學校可能面臨制裁。這項警告針對評量制度的可信度，並非已對學校作出處分。\n\nOfS與Advance HE共同調查127所機構的逾300名受訪者，發現學生大量使用AI撰寫文章及學位論文，往往未被察覺，成績也與未使用AI者相近。調查報告提及，有學生以ChatGPT完成整篇作業，事後卻無法回憶基本內容；教師也反映，收到大批引用來源及文風高度一致的作業。這些發現來自受訪者經驗，不能直接當作所有學生使用AI的比例。\n\nOfS策略主管Josh Fleming認為，這對學位公信力構成「世代風險」，要求更廣泛採用不使用AI的評量。部分大學已轉向口試、重視學習過程的評量，或要求學生批判性修改AI生成文字。英國教育部也要求大學認真處理，並希望OfS就AI使用建立明確、有力且持久的監管架構。",
+      "original_id": "event-12",
+      "source": {
+        "name": "The Decoder",
+        "published_at": "2026-11-11T11:54:46+00:00",
+        "reading_time_min": 1,
+        "url": "https://the-decoder.com/uk-regulator-threatens-universities-with-sanctions-unless-they-adopt-ai-proof-exam-formats/"
+      },
+      "source_evidence_note_zh": "僅取得The Decoder報導的正文節錄，其中轉述《衛報》及OfS與Advance HE調查；未直接取得調查全文、監管公告或《衛報》原始報導。報導所述OfS監管範圍為英格蘭，不擴張為全英國。",
+      "supporting_sources": [],
+      "title_zh": "英格蘭高教監管機構促增加現場評量，警告不改善可能受制裁"
+    },
+    {
+      "bullets_zh": [],
+      "category": "taiwan",
+      "editorial_analysis_zh": "計畫把語言學習與政策實務交流納入同一架構；判讀其進展時，應區分已簽署啟動的美方來台安排，以及台方仍在爭取的赴美機會。",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "fetched_via": "publisher",
+      "id": "2026-11-12-midday:event-13",
+      "is_headline": false,
+      "lede_zh": "台美11月10日在華府簽署合作瞭解備忘錄，啟動台灣學人計畫，將安排美國官員來台接受華語訓練，再進入政府機關、立法院或非政府組織交流。外交部次長陳明祺12日表示，來台官員不會處理機敏資料；台灣也正爭取派員赴美，但尚非已確立的對等安排。\n\n備忘錄由駐美代表俞大㵢與美國在台協會執行理事藍鶯代表簽署。依駐美代表處說明，美方官員可先在台學習中文至多一年，接著在相關機構工作至多一年。外交部指出，計畫結合語言訓練、政策研習與實務交流，目標是培育熟悉台灣議題及印太區域事務的美國政府專業人才。\n\n對於實務交流的範圍，陳明祺說明，主要是參與、推動及觀察一般政務，讓美方官員了解台灣政策如何運作，不涉及機敏資料。至於台方赴美交流，他表示仍在爭取機會，並提及外交部及其他部會人員已有參與美國智庫的交流經驗。\n\n這次簽署也是先前立法走向執行的進展。美國聯邦眾議員貝拉於2021年提出台灣學人法案，法案納入2023年國防授權法，於2022年12月簽署生效。貝拉表示，讓美國官員在台生活與工作、取得第一手經驗，有助累積未來強化雙方關係所需的專業與人脈。",
+      "original_id": "event-13",
+      "source": {
+        "name": "中央社政治",
+        "published_at": "2026-11-12T08:22:22+08:00",
+        "reading_time_min": 1,
+        "url": "https://www.cna.com.tw/news/aipl/202611120026.aspx"
+      },
+      "source_evidence_note_zh": "依中央社4篇報導的已取得正文節錄整合，evidence_kind均為publisher-excerpt，非全文取得；計畫安排及執行界線來自報導所載台美官員與機構說明，未另取得備忘錄原文。",
+      "supporting_sources": [
+        {
+          "source_name": "中央社政治",
+          "source_title": "外交部：台灣學人計畫　美官員受訓不涉機敏",
+          "source_url": "https://www.cna.com.tw/news/aipl/202611120065.aspx"
+        },
+        {
+          "source_name": "中央社政治",
+          "source_title": "台灣學人計畫  美議員貝拉：讓美國官員更瞭解台灣",
+          "source_url": "https://www.cna.com.tw/news/aipl/202611120022.aspx"
+        },
+        {
+          "source_name": "中央社政治",
+          "source_title": "台灣學人計畫啟動　外交部：深化台美關係重要成果",
+          "source_url": "https://www.cna.com.tw/news/aipl/202611110320.aspx"
+        }
+      ],
+      "title_zh": "台美簽署備忘錄啟動學人計畫　外交部：來台美官員不處理機敏資料"
+    },
+    {
+      "bullets_zh": [],
+      "category": "taiwan",
+      "editorial_analysis_zh": "此次代表人選與會前目標，呈現台灣以產業及供應鏈議題推動國際參與的方向；實際參與條件與合作成果，仍須與會前政治表態分開檢視。",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "fetched_via": "publisher",
+      "id": "2026-11-12-midday:event-14",
+      "is_headline": false,
+      "lede_zh": "總統府11月11日宣布，總統賴清德敦請宏碁集團創辦人暨榮譽董事長施振榮，代表台灣出席今年的亞太經濟合作經濟領袖會議。會議預定11月18日至19日在中國深圳舉行。\n\n知情人士表示，賴清德期許此行達成三項目標：讓台灣聲音在國際舞台清楚傳遞、彰顯台灣在關鍵半導體供應鏈中的不可或缺性，以及表達台灣將持續扮演區域和平與繁榮的穩定力量。這些是會前設定的出席目標，尚非會議成果。\n\n該人士指出，選擇產業領袖擔任代表，是要凸顯台灣參與APEC聚焦經濟合作、追求務實成果的目的，並借重施振榮的產業經驗，向各經濟體傳達政策願景。供應鏈韌性也是此行論述重點，知情人士以施振榮倡議的全球分工與資源整合，說明透過互補合作建立安全供應網絡的方向。\n\n對於中國可能限制台灣參與，知情人士12日表示，台灣不會因此放棄會員義務，並稱中國爭取主辦權時曾承諾保障各會員權益及會議品質。該人士認為，若北京違反承諾，將反映其對國際規則的態度。這些說法屬會前風險評估與政治表態，不能視為本屆會議已發生具體限制。",
+      "original_id": "event-14",
+      "source": {
+        "name": "中央社政治",
+        "published_at": "2026-11-11T17:45:10+08:00",
+        "reading_time_min": 1,
+        "url": "https://www.cna.com.tw/news/aipl/202611110268.aspx"
+      },
+      "source_evidence_note_zh": "依中央社2篇報導的已取得正文節錄整合，evidence_kind均為publisher-excerpt，非全文取得。出席目標、主辦承諾及可能設限的評估均來自報導中的匿名知情人士，未取得中方回應或會議安排原始文件。",
+      "supporting_sources": [
+        {
+          "source_name": "中央社政治",
+          "source_title": "APEC領袖會　知情人士：台灣不因中國打壓放棄國際責任",
+          "source_url": "https://www.cna.com.tw/news/aipl/202611120051.aspx"
+        }
+      ],
+      "title_zh": "施振榮將代表台灣出席深圳APEC領袖會議　聚焦經濟合作與供應鏈"
+    },
+    {
+      "bullets_zh": [],
+      "category": "society",
+      "editorial_analysis_zh": "協商共識將照顧支持範圍延伸至學齡初期，但家庭與雇主規劃請假安排時，仍須確認最終通過條文及施行規定，不能把協商結果直接當成現行權利。",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "fetched_via": "publisher",
+      "id": "2026-11-12-midday:event-15",
+      "is_headline": false,
+      "lede_zh": "立法院衛環委員會11月11日就性別平等工作法、就業保險法修法進行黨團協商，同意將育兒留職停薪及彈性育兒假的適用期限放寬至子女未滿9歲，並同意雙親都領滿6個月育兒留職停薪津貼後，雙方可各再多領3個月。相關內容仍待完成立法，並非已生效的新制。\n\n年齡上限是這次協商的主要進展。勞動部條件及就業平等司長黃琦雅表示，6至8歲兒童仍可能因腸病毒等情況臨時停課，因此同意放寬至9歲以前。原主張延伸至12歲的民眾黨立委邱慧洳，同意此次先以未滿9歲為期限，另提出附帶決議，要求勞動部以獎勵方式鼓勵企業支持9至12歲子女的照顧需求。\n\n產假與產檢假天數則尚未取得共識。勞動部提出產檢假增至10個工作日、產假延長為12週的方案，但朝野立委仍有歧見，相關條文保留後續協商。這與先前行政部門提出的育兒假可用到6歲等措施，應分別看待，不能一併當作已通過的法律。\n\n立法院長韓國瑜預定13日上午召集協商，再依議事規定處理。由於法案已過一個月協商冷凍期，最快可能於當天三讀，但是否通過及最終條文內容，仍須以後續議事結果為準。",
+      "original_id": "event-15",
+      "source": {
+        "name": "中央社政治",
+        "published_at": "2026-11-11T17:12:28+08:00",
+        "reading_time_min": 1,
+        "url": "https://www.cna.com.tw/news/aipl/202611110248.aspx"
+      },
+      "source_evidence_note_zh": "依中央社單篇報導的已取得正文節錄整理，evidence_kind為publisher-excerpt，非全文取得；未另取得協商紀錄、修正條文或後續議事結果。",
+      "supporting_sources": [],
+      "title_zh": "育兒留停放寬至子女未滿9歲獲協商共識　產假、產檢假仍待議"
+    },
+    {
+      "bullets_zh": [],
+      "category": "taiwan",
+      "editorial_analysis_zh": "用電需求估計上修，使供電建設進度與電網韌性成為檢視政策的重要環節；十年規畫、核三重啟評估及新型核能接軌，仍須區分各自的程序與前提，不能視為已落實的供電能力。",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "fetched_via": "publisher",
+      "id": "2026-11-12-midday:event-16",
+      "is_headline": false,
+      "lede_zh": "行政院長卓榮泰11月11日表示，政府未來十年的電力供應規畫已納入AI產業成長需求，並將持續推動智慧儲能、科技節能及電網韌性建設。核三廠則正依程序確認是否重啟，尚非已決定重啟。\n\n卓榮泰在接見國家磐石獎及海外台商磐石獎得獎企業時指出，經濟部估計，未來十年國家用電需求的平均年成長率，將由原先的1.7%提高至2.5%。他表示，相關供電需求已納入計畫；這是政府對需求與供應規畫的說明，並非已完成供電建設的成果。\n\n在既有供電規畫之外，卓榮泰將核三重啟列為可能增加的能源選項，並表示台灣正接觸研發中的小型模組化反應爐（SMR）等新型核能。但他也提出前提：技術必須安全、核廢料能有更好的處理方式，且具備足夠社會共識，才會與相關先進技術接軌。\n\n產業配套方面，卓榮泰表示，政府提出「中小微企業轉型升級條例」，希望協助中小微企業成為高科技產業的合作夥伴，政策涵蓋範圍也包括觀光、商圈、夜市、傳統市場及農業。他另提到跨國勞動力引進方案與串連南北水資源的珍珠串計畫，將人力、水與電力供應一併列為支持產業發展的政策工作。",
+      "original_id": "event-16",
+      "source": {
+        "name": "中央社政治",
+        "published_at": "2026-11-11T17:12:25+08:00",
+        "reading_time_min": 1,
+        "url": "https://www.cna.com.tw/news/aipl/202611110247.aspx"
+      },
+      "source_evidence_note_zh": "本則依中央社一篇報導的已取得正文節錄整理，證據類型為publisher-excerpt；未取得政府十年電力規畫原件、需求估算明細或其他獨立來源，供電規畫與核能政策內容均保留政府說法歸屬。",
+      "supporting_sources": [],
+      "title_zh": "卓榮泰：十年供電規畫納入AI需求　核三是否重啟仍待程序確認"
+    },
+    {
+      "bullets_zh": [],
+      "category": "taiwan",
+      "editorial_analysis_zh": "本案須分開檢視資料是否按要求提供，以及投資程序是否涉及利益衝突。補件時程與公開程度是監督焦點，但不能直接代替對投資合法性的查核結論。",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "fetched_via": "publisher",
+      "id": "2026-11-12-midday:event-17",
+      "is_headline": false,
+      "lede_zh": "曠世智能獲政府投資引發利益衝突迴避爭議，國民黨立法院黨團11月11日要求國發會、財政部在24小時內公布完整投審資料。財政部回應，已提供資料給審計部，並正依後續要求彙整補充內容；國發基金則表示，已依法提供立委所需資料並配合查核。\n\n爭議涉及擔任曠世智能董事的蘇巧純，她是民進黨新北市長參選人蘇巧慧的妹妹。國民黨團書記長許宇甄質疑，財政部未按先前承諾提出完整說明，並表示若當週仍未提出報告，將嚴審相關首長與機關預算。立委王鴻薇另質疑，財政部11月6日提交的內容未滿足審計部要求。這些均為國民黨方面的質疑，尚不能據此認定存在違法或利益輸送。\n\n財政部長莊翠雲在立法院答詢時否認拖延，說明審計部要求提供所有泛公股金融資料，彙整需要時間，財政部已於11月6日送交相關資料。審計部11月9日再行文要求其他資料，財政部正彙整中，將於文到七日內依要求項目答覆。\n\n國發基金表示，將在符合法令及資訊保護規範的前提下，持續配合審計、監察機關調閱與查核，兼顧資訊透明及企業合法權益。基金並提出後續作法：在受理申請階段，主動提醒申請者留意是否涉及「公職人員利益衝突迴避法」所定關係人，鼓勵揭露相關資訊，並持續落實投後管理。",
+      "original_id": "event-17",
+      "source": {
+        "name": "中央社政治",
+        "published_at": "2026-11-11T19:25:33+08:00",
+        "reading_time_min": 1,
+        "url": "https://www.cna.com.tw/news/aipl/202611110306.aspx"
+      },
+      "source_evidence_note_zh": "本則依中央社一篇報導的已取得正文節錄整理，證據類型為publisher-excerpt，包含國民黨團、財政部及國發基金回應；未取得投審卷宗、審計部函文或查核結論，無法據此判定是否違法或涉及利益輸送。",
+      "supporting_sources": [],
+      "title_zh": "曠世智能投資案遭要求公開投審資料　財政部稱正補件回覆審計部"
+    },
+    {
+      "bullets_zh": [],
+      "category": "finance",
+      "editorial_analysis_zh": "台股整體權重上升與個別成分股權重下降可以同時發生；投資人需區分市場配置比重、個股進出及指數間轉列，不能把此次調整一概解讀為所有台股同步受惠。",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "fetched_via": "publisher",
+      "id": "2026-11-12-midday:event-18",
+      "is_headline": false,
+      "lede_zh": "MSCI於11月12日公布半年度調整結果，台股在全球市場、全球新興市場及亞洲除日本三項指數的權重同步提高，相關權重與成分股調整將於11月30日收盤生效。全球標準指數的台灣成分股新增三檔、刪除四檔，全球小型指數則為18檔納入、12檔剔除。\n\n權重方面，台股在全球市場指數由3.25%升至3.28%，增加0.03個百分點；在全球新興市場指數由28.86%升至29.01%，增加0.15個百分點；在亞洲除日本指數由32.72%升至32.83%，增加0.11個百分點。全球新興市場指數中，印度權重增幅最大，增加0.17個百分點；中國降幅最大，減少0.13個百分點。\n\n全球標準指數新增台燿、南電、景碩，刪除中租-KY、嘉澤、元太及萬海，MSCI台灣指數成分股降為73檔。台燿權重增加0.37個百分點至0.37%，為此次調升最多的成分股；台積電則減少0.25個百分點至54.29%，為調降最多者。另有24檔成分股調整在外流通股數。\n\n台燿、南電與景碩今年8月曾列入全球標準指數新增名單，但當時三檔股票均遭台灣證券交易所列為處置股，受指數編纂規則限制而延後納入，仍留在小型指數。本次調整後，三檔由小型指數轉入標準指數；中租-KY、元太與嘉澤則由標準指數轉入小型指數。小型指數其他新增成分股包括營邦、永擎及波若威，其他剔除者包括中碳、東方風能及崑鼎。\n\nMSCI每年2月、5月、8月及11月進行定期審核與調整。此次變動可能影響全球基金對台股及個別股票的資金配置，但權重提高本身不等於已發生資金流入，也不能直接推算流入金額。",
+      "original_id": "event-18",
+      "source": {
+        "name": "中央社財經",
+        "published_at": "2026-11-12T10:41:50+08:00",
+        "reading_time_min": 1,
+        "url": "https://www.cna.com.tw/news/afe/202611120066.aspx"
+      },
+      "source_evidence_note_zh": "本則整併中央社兩篇報導的已取得正文節錄，證據類型均為publisher-excerpt；兩篇屬同一媒體來源，未取得MSCI原始公告或實際基金交易資料。小型指數名單於正文列出部分個股，並非完整名單。",
+      "supporting_sources": [
+        {
+          "source_name": "中央社財經",
+          "source_title": "MSCI成分股調整　景碩入列標準指數、小型指數18進12出",
+          "source_url": "https://www.cna.com.tw/news/afe/202611120027.aspx"
+        }
+      ],
+      "title_zh": "MSCI調升台股三項指數權重　成分股調整11月30日收盤生效"
+    },
+    {
+      "bullets_zh": [],
+      "category": "finance",
+      "editorial_analysis_zh": "這次布局同時涵蓋玻纖布及其上游玻纖紗，重點不只在單一工廠擴產，也在材料供應的垂直整合。不過，投資決議與產能規劃仍須和實際投產、訂單需求分開看待。",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "fetched_via": "publisher",
+      "id": "2026-11-12-midday:event-19",
+      "is_headline": false,
+      "lede_zh": "南亞董事會11月11日通過，擬投資新台幣115.3億元，在彰化縣彰濱廠區興建第5座玻纖布廠，規劃年產能1億公尺、月產約800萬至900萬公尺，重點生產薄布與超薄布。同時，南亞將對全資子公司台灣必成增資8億元，擴充上游特殊玻纖紗產能。\n\n南亞目前在台灣的4座玻纖布廠均位於嘉義新港，新廠則選址彰濱，鄰近台塑新智能的電芯工廠。公司表示，未來也將持續規劃在彰濱擴建銅箔基板等電子材料產能；這些後續布局仍屬規劃，並非已完成投產。\n\n此次投資的需求判斷，來自南亞對AI伺服器、網通產品等高階應用成長的預期。公司認為，印刷電路板層數提高，將帶動玻纖布需求；除台灣新廠外，也將持續規劃增加兩岸產能。南亞目前在中國大陸昆山另有4座玻纖布廠。\n\n上游布局方面，台灣必成目前股本約10億元，設有3座大型工廠，主要生產通用級電子級玻纖紗。南亞表示，這次增資是因應特殊玻纖紗擴產所需資金，希望透過玻纖紗與玻纖布的產能配置，強化上下游材料的垂直整合。",
+      "original_id": "event-19",
+      "source": {
+        "name": "中央社財經",
+        "published_at": "2026-11-12T09:35:00+08:00",
+        "reading_time_min": 1,
+        "url": "https://www.cna.com.tw/news/afe/202611120043.aspx"
+      },
+      "source_evidence_note_zh": "依中央社財經已取得的報導節錄整理，非另行取得完整原始公告；本則僅有單一媒體來源，未取得董事會文件或其他來源交叉核對。",
+      "supporting_sources": [],
+      "title_zh": "南亞擬投資115.3億元建彰濱玻纖布廠，另增資台灣必成8億元"
+    },
+    {
+      "bullets_zh": [],
+      "category": "finance",
+      "editorial_analysis_zh": "規模與參與人數增加，使投資人是否理解「單日兩倍」的適用範圍更為重要。基金規模、淨申購金額與投資報酬各有不同意義，不能彼此替代，也不代表未來績效。",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "fetched_via": "publisher",
+      "id": "2026-11-12-midday:event-20",
+      "is_headline": false,
+      "lede_zh": "元大台灣50正2（00631L）ETF資產規模首度突破新台幣3000億元。根據台灣證券交易所統計，最新規模達3186億元，位居台股ETF規模第6名；資產擴大的同時，這項以指數單日正向兩倍報酬為目標的產品，也讓槓桿操作風險受到關注。\n\n元大投信指出，00631L規模今年4月16日突破1000億元、6月12日跨過2000億元，11月11日再突破3000億元。公司將規模成長歸因於今年台股上漲及資金挹注，不能將資產規模的增加全數視為新投入資金。\n\n集保結算所數據則顯示，今年以來截至11月6日當週，00631L累計淨申購金額為2220億元，投資人數增加35.2萬人，達39.1萬人。這組數據呈現資金與參與人數的變化，與基金資產規模是不同的觀察指標。\n\n元大投信表示，00631L以台灣50指數為標的，操作目標是追蹤指數「單日」正向兩倍報酬，並提醒產品僅適合能持續留意行情變化的投資人，操作時應審慎評估、嚴設停損。單日報酬目標不應被當成任何持有期間都能取得兩倍報酬的承諾。",
+      "original_id": "event-20",
+      "source": {
+        "name": "中央社財經",
+        "published_at": "2026-11-12T10:43:52+08:00",
+        "reading_time_min": 1,
+        "url": "https://www.cna.com.tw/news/afe/202611120067.aspx"
+      },
+      "source_evidence_note_zh": "依中央社財經已取得的報導節錄整理。交易所、集保結算所統計及投信說法均來自該節錄，未另行取得原始統計表或基金文件，也無其他來源交叉核對。",
+      "supporting_sources": [],
+      "title_zh": "元大台灣50正2規模突破3000億元，投信提醒留意單日槓桿風險"
+    },
+    {
+      "bullets_zh": [],
+      "category": "finance",
+      "editorial_analysis_zh": "CoreWeave的資金安排呈現AI算力擴張中的取捨：預付款有助降低眼前借款需求，短約提供調價彈性，但長約較能支持放款方重視的穩定現金流。資金來源改變，不等於風險消失。",
+      "evidence_kind": "publisher-article",
+      "evidence_note_zh": "依來源文章整理。",
+      "fetched_via": "publisher",
+      "id": "2026-11-12-midday:event-21",
+      "is_headline": false,
+      "lede_zh": "出租AI運算能力的CoreWeave，正調整支應算力擴張的資金來源，增加客戶預付款、以特定客戶合約支持的借款，並爭取價格較高的短期合約。公司第三季營收達36.6億美元、年增168%，但同季仍有7.09億美元淨損，利息支出達8.46億美元，顯示營收快速成長仍伴隨沉重的融資成本。\n\n執行長Michael Intrator在財報電話會議表示，公司不會以目前殖利率水準進入無擔保債市場籌資，也認為沒有必要。CoreWeave計畫改以特定客戶合約作為貸款支持，按資金需求分批動用，支應履行1325億美元待履行訂單所需的大部分待建基礎設施。\n\n公司預期，未來3個月將取得約90億美元的客戶預付款與訂金，其中超過30億美元與已建置產能的新客戶合約有關，不需額外投入硬體支出。這些金額仍是公司預期，並非已全數收取的現金。預付款可望降低近期借款需求，但也意味公司須依約定價格提供後續服務。\n\n短期合約則是另一條籌資與定價路徑。CoreWeave在8月完成一筆26億美元貸款，專為較短期的客戶合約設計，可依需求分期借款。公司表示，7月曾將各項服務價格調高約25%，當季稍後再調高10%，本季價格仍持續上升；這些定價變化屬公司說法。\n\n短約讓公司更頻繁調整價格，卻未必同樣有利於融資。放款方更重視長約帶來的可預測現金流，即使其價格較低。TechCrunch報導，CoreWeave部分債券殖利率上月曾超過15%；新策略能否改善資金壓力，仍取決於後續需求、續約與定價能力，不能僅憑營收成長就判定債務風險已解除。",
+      "original_id": "event-21",
+      "source": {
+        "name": "TechCrunch",
+        "published_at": "2026-11-11T19:54:00+00:00",
+        "reading_time_min": 1,
+        "url": "https://techcrunch.com/2026/11/11/coreweave-turns-to-customer-prepayments-shorter-contracts-to-fund-ai-growth/"
+      },
+      "source_evidence_note_zh": "已取得TechCrunch報導正文，非RSS摘要。本則僅有單一媒體來源，未另行取得公司財報、電話會議逐字稿或貸款文件；公司數據與展望依報導所載內容整理。",
+      "supporting_sources": [],
+      "title_zh": "CoreWeave營收增168%仍虧損，轉向客戶預付款與合約融資"
+    },
+    {
+      "bullets_zh": [],
+      "category": "finance",
+      "editorial_analysis_zh": "支出集中與單位價格下降須分開觀察：企業增加AI用量，不等於供應商收入或利潤同步增加；而這份客戶樣本也不足以證明AI已普遍滲透所有產業。",
+      "evidence_kind": "publisher-article",
+      "evidence_note_zh": "依來源文章整理。",
+      "fetched_via": "publisher",
+      "id": "2026-11-12-midday:event-22",
+      "is_headline": false,
+      "lede_zh": "金融服務業者Ramp的AI支出指數顯示，其美國企業客戶2026年10月的AI支出再創新高，較前月增加1.65%，但成長幅度有限。這項指數取自逾8.5萬家美國企業的支付資料，呈現的是Ramp客戶的支出變化，不能直接視為全美企業的採用情況。\n\n樣本內的支出差距相當大。AI支出最高的1%企業，每名員工每月AI支出中位數達1萬200美元，增加9%；相較之下，一般企業為16.32美元，較前月增加不到1美元。Ramp首席經濟學家Ara Kharazian指出，樣本中僅1%的企業便貢獻OpenAI與Anthropic相關營收的80%，這些高支出客戶主要是獲創投支持的科技、金融與技術服務企業。\n\n使用量增加，也未必帶來同等幅度的收入成長。Ramp資料顯示，平均每百萬文字token的價格較前月下跌21%，用量成長快於支出。不過，token用量與相關支出數據僅來自使用Ramp Token Spend Management的企業，不能代表整個平台的AI支出。\n\n部門用途也出現變化：軟體開發團隊仍占追蹤支出的72%，但支出已較夏季高點下降；客服與客戶成功部門的占比則從6月的0.8%升至10月的13.3%。Kharazian認為，這類用途較偏好便宜、快速的模型，新客戶未必能帶來同樣高的利潤。解讀整體趨勢仍須注意，Ramp客戶較偏向成長型、熟悉科技且規模較大的企業，免費工具與個人帳號使用也可能未被納入，採用率因此可能偏高。",
+      "original_id": "event-22",
+      "source": {
+        "name": "The Decoder",
+        "published_at": "2026-11-11T19:35:11+00:00",
+        "reading_time_min": 1,
+        "url": "https://the-decoder.com/us-corporate-ai-spending-hits-a-new-high-in-october-but-growth-slows-to-1-65-percent/"
+      },
+      "source_evidence_note_zh": "已取得The Decoder報導正文；本則僅有這一項報導來源，未直接取得Ramp原始指數或分析全文。",
+      "supporting_sources": [],
+      "title_zh": "Ramp客戶10月AI支出創高、月增1.65%　高額支出仍集中少數企業"
+    },
+    {
+      "bullets_zh": [],
+      "category": "technology",
+      "editorial_analysis_zh": "這項研究凸顯兩個不同風險：發布時的預設分享權限，以及生成程式本身的授權邏輯。應用具備登入畫面，不等於資料存取限制已正確生效。",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "fetched_via": "publisher",
+      "id": "2026-11-12-midday:event-23",
+      "is_headline": false,
+      "lede_zh": "資安公司Claroc表示，在其檢查的37,571個仍在線Grok生成應用程式中，有35,578個不需登入即可存取，占94.7%。研究發現，部分應用包含病患資料、明文密碼及企業機密；這項比例指的是受檢應用的公開存取狀態，並不代表全部都含敏感資料或已遭入侵。\n\nGrok的「Build」模式讓使用者透過對話描述需求，再由AI生成程式；建立者點選發布後，應用便取得grok.me網址。Claroc指出，其測試使用的付費帳號在發布視窗中，預先勾選的是允許持有連結者存取。每個應用又有獨立子網域，首次造訪後，名稱便可能出現在可依規則搜尋的商業被動DNS資料庫，使網址不難被找到。\n\nClaroc稱，多數公開應用是遊戲、介紹頁或計算工具，但估計有650至800個含私人資料。確認案例包括載有病患檢驗數值的加護病房簡報，以及原始碼內含18組帳號與明文密碼的工時紀錄應用。另有24個公開應用來自SpaceXSI與X員工，其中包含機密新人到職計畫、594個策略客戶及銷售商機資料。\n\n研究也指出，加入登入功能不必然代表權限控管正確。Claroc自行建立的銷售團隊測試應用，會先把已登入者加入團隊，之後才檢查成員資格，導致外部Google帳號仍能讀取、修改與刪除紀錄。Claroc表示，寫入與刪除測試只在自有應用進行；將權限設為僅本人使用時，則能阻擋外部存取。\n\nSpaceXSI回應，應用在建立者分享前維持私人狀態，發布須經多個步驟並包含法律告知，員工帳號也預設僅本人可用。Claroc則主張，最後一步若仍預選開放連結存取，多次確認並不足夠。報導指出，24個員工應用已下線，其他使用者與組織的公開應用尚未移除；Claroc正直接通知受影響者。該公司本身也銷售AI生成應用的資安產品。",
+      "original_id": "event-23",
+      "source": {
+        "name": "The Decoder",
+        "published_at": "2026-11-11T12:53:07+00:00",
+        "reading_time_min": 2,
+        "url": "https://the-decoder.com/grok-built-apps-exposed-patient-data-plaintext-passwords-and-spacexsis-own-sales-pipeline/"
+      },
+      "source_evidence_note_zh": "取得的是The Decoder報導節錄，未直接取得Claroc研究原文或獨立檢測資料；樣本結果、測試與業者回應均依該節錄整理。",
+      "supporting_sources": [],
+      "title_zh": "資安公司檢查Grok應用：94.7%可免登入存取，部分含病患與企業資料"
+    },
+    {
+      "bullets_zh": [],
+      "category": "technology",
+      "editorial_analysis_zh": "信用卡資訊未被納入可能外洩範圍，不代表其他個資風險已排除；事件仍須區分可能受影響範圍與最終確認的外洩規模。",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "fetched_via": "publisher",
+      "id": "2026-11-12-midday:event-24",
+      "is_headline": false,
+      "lede_zh": "日本家具連鎖企業宜得利（NITORI）公布，伺服器遭到非法存取，最多可能有約3762萬筆會員及網路購物使用者的個人資料外洩，可能涉及姓名、住址與電子郵件等資訊。\n\n宜得利控股表示，已於11月6日確認伺服器遭非法存取。由於系統未保存信用卡資訊，信用卡資料不在這次可能外洩的範圍內。目前公布的是可能受影響的資料筆數，並非已確認外洩的總量，也不能直接視為相同數量的受影響人數。",
+      "original_id": "event-24",
+      "source": {
+        "name": "中央社科技",
+        "published_at": "2026-11-11T15:33:23+08:00",
+        "reading_time_min": 1,
+        "url": "https://www.cna.com.tw/news/ait/202611110191.aspx"
+      },
+      "source_evidence_note_zh": "取得的是中央社報導節錄，其中宜得利資訊來自朝日電視台報導的公司說明；未直接取得宜得利公告或事件調查報告。現有資料未交代入侵手法，亦無證據可將本案與AI攻擊連結。",
+      "supporting_sources": [],
+      "title_zh": "日本宜得利伺服器遭非法存取　最多約3762萬筆會員資料恐外洩"
+    },
+    {
+      "bullets_zh": [],
+      "category": "technology",
+      "editorial_analysis_zh": "評估軍事AI的人類監督，關鍵不只在於是否設有授權步驟，還包括審查者能否核對證據，以及責任紀錄能否支援追查。現有資料足以說明產品承諾，尚不足以判定其實際成效。",
+      "evidence_kind": "publisher-article",
+      "evidence_note_zh": "依來源文章整理。",
+      "fetched_via": "publisher",
+      "id": "2026-11-12-midday:event-25",
+      "is_headline": false,
+      "lede_zh": "德國國防科技公司Helsing在柏林發表Clarity平台，主打將感測器、公開情報與軍事報告整合為目標建議，再交由人員審查。公司表示，選擇打擊目標的權限仍由人類掌握，每次將資料交付武器系統，都必須取得人員授權。\n\n依Helsing說明，Clarity可處理軍事單位能取得的各類資料，透過數百個專門化AI代理，辨識軍事部隊、設施及位置，整理敵方資產資訊。平台會先將分析結果交付人員檢視，再把資料整理成適合相應武器系統使用的形式；這些代理的訓練資料包括真實作戰資料、AI生成的合成資料及模擬環境。\n\n在監督機制上，Helsing宣稱，只有當獨立來源相互吻合、評估具高度可信度時，系統才會提出目標建議，而且每項決策都會記錄負責人的姓名。這些是公司提出的設計與使用承諾，不能直接等同於實際作戰中已能確保人員充分審查或避免錯誤。\n\n資料控制也是產品訴求之一。Helsing表示，Clarity在客戶自己的基礎設施上運行，模型與介面均在歐洲開發，資料及操作由使用的軍隊掌控。公司並稱，平台遵循模組化開放系統架構與北約標準，可連接不同製造商的武器系統；但並未說明是否已有客戶實際運行Clarity。",
+      "original_id": "event-25",
+      "source": {
+        "name": "The Decoder",
+        "published_at": "2026-11-11T15:12:53+00:00",
+        "reading_time_min": 1,
+        "url": "https://the-decoder.com/helsing-built-an-ai-system-that-prepares-targets-for-weapons-systems-and-says-every-decision-will-carry-a-human-name/"
+      },
+      "source_evidence_note_zh": "已取得The Decoder報導正文，取得標記為完整。產品功能、資料主權與人員監督機制主要來自報導所載的Helsing說明；未取得公司新聞稿原文、客戶部署資料或獨立驗證結果。",
+      "supporting_sources": [],
+      "title_zh": "Helsing發表軍事AI平台Clarity，稱目標交付武器系統須由人員授權"
+    },
+    {
+      "bullets_zh": [],
+      "category": "technology",
+      "editorial_analysis_zh": "這項工作值得關注之處，是將形式驗證推進至實際運行的程式；但判讀安全性時，仍須區分「符合所定義的安全要求」與「整套服務沒有任何漏洞」。",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "fetched_via": "publisher",
+      "id": "2026-11-12-midday:event-26",
+      "is_headline": false,
+      "lede_zh": "Google DeepMind發表AlphaProof Code，研究團隊表示，這套AI系統以Signal實際在使用者裝置上運行的密碼核心程式為對象，在四週內完成通常需要數年的形式驗證工作。這項成果針對指定程式與安全規格，不代表Signal整體或所有軟體已不存在漏洞。\n\n研究人員Pushmeet Kohli與Swarat Chaudhuri說明，過去相關驗證工作停留在理論設計階段，此次則進一步檢查實際程式。流程先由專家定義形式化安全要求，再由以Gemini Carbon為基礎的AI代理，使用Lean證明語言撰寫超過600萬行內容，並標記約百分之一的程式碼交由人員審查。\n\n依團隊公布的測試結果，兩個刻意植入的錯誤都立即被找出。Signal技術長Ehren Kret認為，這種方法有助在AI威脅增加之際強化資料隱私的信任；DeepMind也計畫透過CodeMender等系統，將方法延伸至電網及醫療裝置。這些後續用途仍屬計畫，不能視為已完成同等驗證。",
+      "original_id": "event-26",
+      "source": {
+        "name": "The Decoder",
+        "published_at": "2026-11-11T18:18:25+00:00",
+        "reading_time_min": 1,
+        "url": "https://the-decoder.com/google-deepminds-alphaproof-code-verified-signals-cryptographic-core-in-four-weeks-instead-of-years/"
+      },
+      "source_evidence_note_zh": "僅取得The Decoder報導節錄，並非全文；未取得研究團隊部落格、形式化規格、證明內容或獨立審查資料。時程、程式碼規模及測試結果均依節錄所載的研究團隊說法整理。",
+      "supporting_sources": [],
+      "title_zh": "AlphaProof Code驗證Signal密碼核心，研究團隊稱四週完成"
+    },
+    {
+      "bullets_zh": [],
+      "category": "science",
+      "editorial_analysis_zh": "更長的有效預測時間與多情境推估，對防災判斷具有價值；但單一風暴的成功案例不能代表所有情況，模型之間的差異及預測變動仍需要專業解讀。",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "fetched_via": "publisher",
+      "id": "2026-11-12-midday:event-27",
+      "is_headline": false,
+      "lede_zh": "AI模型已成為美國颶風預報的作業工具之一。美國國家颶風中心作業部門主管布朗表示，中心於2025年6月底開始在實際作業中使用AI模型，並在2026年將Google DeepMind模型納入部分路徑與強度綜合預測輔助系統；不過，最終預報仍須由專家綜合不同模型與觀測資料判斷。\n\nDeepMind於8月在《自然》發表的研究指出，其模型平均可將同等準確度的預測時間向後延長一天，也就是把原本未來兩天的準確度水準，延伸至未來三天。模型還能為每個氣旋產生1000種可能發展情境，同步推估降雨量、行進路徑及強度。這反映的是研究所述的平均表現，並非每場風暴都能獲得相同幅度的改善。\n\n在伊賽亞斯颶風案例中，DeepMind模型於風暴形成前一週辨識出其可能發展為熱帶氣旋。布朗表示，AI模型在這次風暴的路徑預測表現良好，似乎擅長快速預測複雜引導氣流的變化。國家颶風中心也使用歐洲中期天氣預報中心及美國國家氣象局的AI模型，而非只依賴單一工具。\n\n限制在於，個別模型對路徑或強度的預測，可能在不同預測週期之間大幅變動。布朗指出，專家必須判斷哪些模型較能掌握特定風暴，再整合結果；演算法呈現的路徑機率，也不能取代人員查看即時飛機觀測與衛星資料、判讀風暴當下結構的工作。",
+      "original_id": "event-27",
+      "source": {
+        "name": "中央社科技",
+        "published_at": "2026-11-11T12:39:18+08:00",
+        "reading_time_min": 1,
+        "url": "https://www.cna.com.tw/news/ait/202611110106.aspx"
+      },
+      "source_evidence_note_zh": "取得中央社報導文字，但來源取得標記為節錄，並非已核對的完整原文。未另行取得其所據外電、《自然》研究全文或美國國家颶風中心原始資料；本文限於已提供的預報研究與作業說明。",
+      "supporting_sources": [],
+      "title_zh": "AI納入美國颶風預報作業，專家仍須整合模型與即時觀測"
+    },
+    {
+      "bullets_zh": [],
+      "category": "culture",
+      "editorial_analysis_zh": "這項保護的重點在於產地名稱與傳統製作規範，而非要求每道工序都集中在產區。保留部分跨地區分工，呈現傳統工藝保護與匠人參與之間的安排。",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "fetched_via": "publisher",
+      "id": "2026-11-12-midday:event-28",
+      "is_headline": false,
+      "lede_zh": "瑞典傳統工藝達拉木馬於11月4日取得歐盟手工藝與工業產品地理標示保護，成為瑞典首件申請通過的手工藝品。未來只有符合指定產區及傳統製作規範的木馬，才能使用受保護的達拉木馬名稱；不過，這並不代表所有製作步驟都必須在產區內完成。\n\n達拉木馬源自瑞典中部達拉納省的莫拉地區，原是家庭中的木雕裝飾。1939年紐約世界博覽會期間，瑞典館在門口設置大型達拉木馬，進一步打開國際知名度，讓這項地方工藝成為瑞典的文化象徵與遊客伴手禮。\n\n達拉納的工坊也聘用瑞典其他地區的匠人協助製作。住在南部阿爾維斯塔的退休美術老師特德斯湯，就是其中之一。他向中央社表示，自己從工坊帶回150隻已有雛形的木馬、4把刀具及2隻完成品作為參考。雕刻要求包括四腿粗細一致、腹部平坦、臉部不帶特別表情，整隻木馬則須留下手工雕刻痕跡；他選擇在閒暇時每天雕刻5隻。\n\n產地保護與跨地區分工如何並存，是這次取得保護後的具體界線。特德斯湯表示，依規定，製程須包括9個步驟，其中3個可在指定產區以外完成，雕刻便是其一，工坊經理也已向他保證工作不受影響。對這位擁有木工與藝術背景的退休教師而言，雕刻木馬不只是工作，也讓他重新連結童年在瑞典北部接觸的木工傳統，並參與技藝的代代傳承。",
+      "original_id": "event-28",
+      "source": {
+        "name": "中央社國際",
+        "published_at": "2026-11-12T07:23:02+08:00",
+        "reading_time_min": 1,
+        "url": "https://www.cna.com.tw/news/acul/202611120017.aspx"
+      },
+      "source_evidence_note_zh": "依中央社報導的已取得正文節錄整理，來源標記為 publisher-excerpt；未另取得歐盟核准文件或製作規範原文。製程步驟及產區外雕刻的適用說明，依報導中特德斯湯的說法呈現。",
+      "supporting_sources": [],
+      "title_zh": "瑞典達拉木馬獲歐盟地理標示保護，產區外雕刻仍可納入製程"
+    }
+  ],
+  "breaking_news": [],
   "categories": [
     {
       "id": "world",
@@ -18,12 +672,16 @@
       "name_zh": "財經"
     },
     {
-      "id": "taiwan",
-      "name_zh": "台灣"
-    },
-    {
       "id": "society",
       "name_zh": "社會"
+    },
+    {
+      "id": "technology",
+      "name_zh": "科技"
+    },
+    {
+      "id": "taiwan",
+      "name_zh": "台灣"
     },
     {
       "id": "science",
@@ -34,677 +692,36 @@
       "name_zh": "文化"
     }
   ],
-  "articles": [
-    {
-      "id": "2026-11-10-midday:event-01",
-      "original_id": "event-01",
-      "category": "world",
-      "is_headline": true,
-      "title_zh": "川普與卡達總理談伊朗斡旋　美方對談判進展說法不同",
-      "lede_zh": "據Al Jazeera與FOX World的RSS摘要，美國總統川普與卡達總理會面，討論對伊朗的斡旋，會面地點為白宮。Al Jazeera與Financial Times的報導標題，分別呈現川普稱伊朗戰事「實質上已結束」、朝結束戰爭有「正面進展」的說法；後者摘要指出，相關發言是在他與區域領袖通話、會見卡達總理後提出。不過，FOX World摘要同時引述魯比歐警告，對伊朗談判距離突破仍遠。這些資料呈現美方對進展的不同表述，不能據此認定戰爭已經結束。",
-      "bullets_zh": [],
-      "source": {
-        "name": "Al Jazeera",
-        "url": "https://www.aljazeera.com/news/2026/11/9/trump-calls-iran-war-effectively-over-after-talks-with-qatar-pm?traffic_source=rss",
-        "published_at": "2026-11-09T22:31:19+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "rss",
-      "evidence_kind": "rss-summary",
-      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
-      "editorial_analysis_zh": "",
-      "supporting_sources": [
-        {
-          "source_name": "FOX World",
-          "source_title": "Trump meets key Iran war mediator as UAE reveals major oil export surge despite conflict",
-          "source_url": "https://www.foxnews.com/world/trump-meets-key-iran-war-mediator-uae-reveals-major-oil-export-surge-despite-conflict"
-        },
-        {
-          "source_name": "Financial Times",
-          "source_title": "Trump hails ‘positive momentum’ towards ending Iran war",
-          "source_url": "https://www.ft.com/content/4a75299e-a705-493f-91a7-07d3b87ecc4e?syn-25a6b1a6=1"
-        }
-      ],
-      "image_url": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6af249716f78-1794263409.jpg?resize=770%2C513&quality=80",
-      "image_credit": "Al Jazeera · Mandel Ngan/AFP",
-      "image_caption": "原始報導配圖；原圖說見來源。",
-      "image_alt": "原始報導配圖；原圖說見來源。",
-      "image_source_url": "https://www.aljazeera.com/news/2026/11/9/trump-calls-iran-war-effectively-over-after-talks-with-qatar-pm?traffic_source=rss",
-      "image_rights_verified": false,
-      "image_rights_status": "unconfirmed",
-      "image_publication_basis": "user-directed-source-reference"
-    },
-    {
-      "id": "2026-11-10-midday:event-02",
-      "original_id": "event-02",
-      "category": "world",
-      "is_headline": false,
-      "title_zh": "馬西推動彈劾美國防部長赫格塞斯　眾院須於週三前表決",
-      "lede_zh": "據NYT的RSS摘要，肯塔基州共和黨籍眾議員馬西已啟動程序，要求眾議院最遲於週三就彈劾國防部長赫格塞斯進行表決。Deutsche Welle摘要指出，馬西指控赫格塞斯未經國會批准便發動戰爭；Financial Times摘要另列出濫用權力及違反美國憲法等指控。這些是馬西提出的指控，並非已經確立的裁決。依NYT摘要，若眾議院通過彈劾指控，才會進入參議院審判，目前資料並未顯示彈劾已獲通過。",
-      "bullets_zh": [],
-      "source": {
-        "name": "NYT",
-        "url": "https://www.nytimes.com/2026/11/09/us/politics/hegseth-impeachment-massie.html",
-        "published_at": "2026-11-09T22:35:05+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "rss",
-      "evidence_kind": "rss-summary",
-      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
-      "editorial_analysis_zh": "此案涉及開戰是否取得國會授權，以及國會如何監督行政部門；判讀進展時，須區分啟動表決、眾議院通過彈劾與參議院審判。",
-      "supporting_sources": [
-        {
-          "source_name": "Deutsche Welle",
-          "source_title": "Republican Thomas Massie seeks to force House vote on impeaching Defense Secretary Pete Hegseth over Iran war",
-          "source_url": "https://www.dw.com/en/republican-thomas-massie-seeks-to-force-house-vote-on-impeaching-defense-secretary-pete-hegseth-over-iran-war/a-79905323?maca=en-rss-en-all-1573-rdf"
-        },
-        {
-          "source_name": "Financial Times",
-          "source_title": "Republican lawmaker moves to impeach US defence secretary Pete Hegseth",
-          "source_url": "https://www.ft.com/content/ed09fc96-5ad5-4ff8-a8a9-900740c6fcbb?syn-25a6b1a6=1"
-        }
-      ],
-      "image_url": "https://static.dw.com/image/78359206_605.jpg",
-      "image_credit": "Deutsche Welle · Matias Delacroix/AP Photo/picture alliance",
-      "image_caption": "原始報導配圖；原圖說見來源。",
-      "image_alt": "原始報導配圖；原圖說見來源。",
-      "image_source_url": "https://www.dw.com/en/republican-thomas-massie-seeks-to-force-house-vote-on-impeaching-defense-secretary-pete-hegseth-over-iran-war/a-79905323?maca=en-rss-en-all-1573-rdf",
-      "image_rights_verified": false,
-      "image_rights_status": "unconfirmed",
-      "image_publication_basis": "user-directed-source-reference"
-    },
-    {
-      "id": "2026-11-10-midday:event-03",
-      "original_id": "event-03",
-      "category": "world",
-      "is_headline": false,
-      "title_zh": "俄烏和談本週於阿布達比恢復　停火不列議程",
-      "lede_zh": "據NYT World的RSS摘要，美國主導、旨在結束俄烏戰爭的會談將於本週在阿布達比恢復，但停火不在議程上。Washington Post World摘要指出，歐洲官員與專家擔心，美方談判代表呼籲達成更廣泛的歐洲安全協議，呼應了克里姆林宮的論述。The Economist摘要則提出分析，認為美國斡旋的會談可能幫助俄羅斯延長戰爭。後兩者分別是受訪者的疑慮與媒體分析，不代表會談已產生相關結果。",
-      "bullets_zh": [],
-      "source": {
-        "name": "Washington Post World",
-        "url": "https://www.washingtonpost.com/world/2026/11/09/us-gives-russia-an-early-win-even-before-ukraine-peace-talks-begin-abu-dhabi/",
-        "published_at": "2026-11-09T21:22:11+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "rss",
-      "evidence_kind": "rss-summary",
-      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
-      "editorial_analysis_zh": "恢復會談不等於即將停火。停火未列入議程，是判讀這輪談判進展的重要限制；歐洲安全協議引發的疑慮，也應與已確認的會談安排分開看待。",
-      "supporting_sources": [
-        {
-          "source_name": "The Economist",
-          "source_title": "Donald Trump is in a hurry for peace in Ukraine. Vladimir Putin is not",
-          "source_url": "https://www.economist.com/europe/2026/11/09/donald-trump-is-in-a-hurry-for-peace-in-ukraine-vladimir-putin-is-not"
-        },
-        {
-          "source_name": "NYT World",
-          "source_title": "Ukraine Peace Talks Resume This Week in Abu Dhabi",
-          "source_url": "https://www.nytimes.com/2026/11/09/world/europe/ukraine-russia-peace-talks.html"
-        }
-      ]
-    },
-    {
-      "id": "2026-11-10-midday:event-06",
-      "original_id": "event-06",
-      "category": "finance",
-      "is_headline": false,
-      "title_zh": "外交斡旋期待帶動國際油價跌至8月來低點，中東攻擊仍持續",
-      "lede_zh": "據中央社RSS摘要，市場對外交斡旋有望結束中東戰爭抱持樂觀態度，帶動國際油價跌至8月以來最低水準。FT Markets摘要另指出，布蘭特原油延續上週跌勢。中央社同時指出，中東戰事與攻擊行動仍未停歇；油價下跌反映市場對外交進展的期待，不能據此認定和平協議已達成或戰爭已結束。",
-      "bullets_zh": [],
-      "source": {
-        "name": "中央社財經",
-        "url": "https://www.cna.com.tw/news/afe/202611100008.aspx",
-        "published_at": "2026-11-10T05:37:46+08:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "rss",
-      "evidence_kind": "rss-summary",
-      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
-      "editorial_analysis_zh": "",
-      "supporting_sources": [
-        {
-          "source_name": "FT Markets",
-          "source_title": "Oil prices hit 10-week low after Trump says strikes on Iran ‘highly unlikely’",
-          "source_url": "https://www.ft.com/content/1b818c16-5197-45f4-857a-49f99a10252f?syn-25a6b1a6=1"
-        }
-      ]
-    },
-    {
-      "id": "2026-11-10-midday:event-07",
-      "original_id": "event-07",
-      "category": "taiwan",
-      "is_headline": false,
-      "title_zh": "檢廉搜索核一、核二廠採購案　台電：查證屬實將依規定嚴懲",
-      "lede_zh": "依中央社RSS摘要，台北地檢署11月9日指揮法務部廉政署，至台電核一廠及核二廠，針對民國101年至113年間的採購案進行搜索清查。台電表示，已與檢廉單位緊密聯繫及合作，將秉持勿枉勿縱、絕不護短的原則，配合司法偵查。本案已進入司法程序，台電表示，如查證屬實，將依規定嚴懲不貸。",
-      "bullets_zh": [],
-      "source": {
-        "name": "中央社財經",
-        "url": "https://www.cna.com.tw/news/afe/202611090287.aspx",
-        "published_at": "2026-11-09T22:25:01+08:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "rss",
-      "evidence_kind": "rss-summary",
-      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
-      "editorial_analysis_zh": "此案涉及公共事業採購與廉政監督；搜索清查不等於違法事實已獲認定，後續應區分偵查進度與台電的處置承諾。",
-      "supporting_sources": []
-    },
-    {
-      "id": "2026-11-10-midday:event-08",
-      "original_id": "event-08",
-      "category": "taiwan",
-      "is_headline": false,
-      "title_zh": "空污法修法預計10日協商　經濟部憂影響近8000家業者",
-      "lede_zh": "依中央社RSS摘要，立法院預計11月10日就「空氣污染防制法」修正草案召開朝野黨團協商。經濟部表示，修法內容牽連甚廣，影響製造業、電力業，以及醫院、旅館等民生行業近8000家業者。經濟部認為，倉促修法恐對企業營運、民生及國家能源韌性造成重大衝擊，呼籲充分徵詢各界意見，並維持現行管理機制。",
-      "bullets_zh": [],
-      "source": {
-        "name": "中央社財經",
-        "url": "https://www.cna.com.tw/news/afe/202611090283.aspx",
-        "published_at": "2026-11-09T22:03:52+08:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "rss",
-      "evidence_kind": "rss-summary",
-      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
-      "editorial_analysis_zh": "受影響家數及衝擊程度均為經濟部的說法。摘要未提供具體修正條文或其他各方意見，目前不足以判斷修法的完整效果。",
-      "supporting_sources": []
-    },
-    {
-      "id": "2026-11-10-midday:event-11",
-      "original_id": "event-11",
-      "category": "society",
-      "is_headline": false,
-      "title_zh": "土耳其鋼鐵廠爆炸，BBC較晚標題更新為至少17死",
-      "lede_zh": "土耳其西部一座鋼鐵廠發生爆炸並引發火災，BBC較晚發布的RSS標題將死亡人數更新為至少17人。中央社較早的RSS摘要引述官員說法，通報至少6人死亡、8名工人失蹤，當時救援人員仍在搜尋。德國之聲其後摘要報導至少16名工人死亡，並指出土耳其總統在內閣會議後更新傷亡數字；各次通報不應相加。半島電視台摘要報導，起重機倒入熔爐引發爆炸，總統已宣布展開調查，事故責任仍待釐清。BBC摘要另引述目擊者表示，爆炸震動地面，有人一度以為發生地震。",
-      "bullets_zh": [],
-      "source": {
-        "name": "中央社國際",
-        "url": "https://www.cna.com.tw/news/aopl/202611090281.aspx",
-        "published_at": "2026-11-09T21:37:48+08:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "rss",
-      "evidence_kind": "rss-summary",
-      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
-      "editorial_analysis_zh": "",
-      "supporting_sources": [
-        {
-          "source_name": "BBC World",
-          "source_title": "Turkey steel factory blast kills at least 17 people",
-          "source_url": "https://www.bbc.co.uk/news/articles/cq2d6d5z9y5jo?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "source_name": "Al Jazeera",
-          "source_title": "Explosion at Turkish steel plant kills at least 16 people",
-          "source_url": "https://www.aljazeera.com/news/2026/11/9/explosion-at-turkish-steel-plant-kills-at-least-16-people?traffic_source=rss"
-        },
-        {
-          "source_name": "Deutsche Welle",
-          "source_title": "Turkey: Workers killed in Izmir steel plant blast",
-          "source_url": "https://www.dw.com/en/turkey-workers-killed-in-izmir-steel-plant-blast/a-79900748?maca=en-rss-en-all-1573-rdf"
-        }
-      ],
-      "image_url": "https://ichef.bbci.co.uk/ace/standard/819/cpsprodpb/5625/live/fd460940-dc61-11f1-8fe6-5becaee5408f.jpg",
-      "image_credit": "BBC World · Image source, Getty Images",
-      "image_caption": "原始報導配圖；原圖說見來源。",
-      "image_alt": "原始報導配圖；原圖說見來源。",
-      "image_source_url": "https://www.bbc.co.uk/news/articles/cq2d6d5z9y5jo?at_medium=RSS&at_campaign=rss",
-      "image_rights_verified": false,
-      "image_rights_status": "unconfirmed",
-      "image_publication_basis": "user-directed-source-reference"
-    },
-    {
-      "id": "2026-11-10-midday:event-12",
-      "original_id": "event-12",
-      "category": "world",
-      "is_headline": false,
-      "title_zh": "歐盟執委會：德國、義大利等9國依目前進度難達2030減排目標",
-      "lede_zh": "中央社RSS摘要報導，歐洲聯盟執行委員會表示，包括德國與義大利在內的9個歐盟成員國，依目前進度將無法達成2030年減排目標。這項評估於聯合國氣候峰會登場之際提出；摘要未列出其餘7國、各國減排落差或後續補強措施。",
-      "bullets_zh": [],
-      "source": {
-        "name": "中央社國際",
-        "url": "https://www.cna.com.tw/news/aopl/202611090290.aspx",
-        "published_at": "2026-11-09T22:41:08+08:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "rss",
-      "evidence_kind": "rss-summary",
-      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
-      "editorial_analysis_zh": "這是依目前進度作出的達標評估，不代表2030年的最終結果；後續觀察重點是相關國家是否提出足以縮小落差的措施。",
-      "supporting_sources": [],
-      "image_url": "https://imgcdn.cna.com.tw/www/WebPhotos/1024/20261110/960x640_wmkn_733523887373_0.jpg",
-      "image_credit": "中央社 · 路透社",
-      "image_caption": "第31屆聯合國氣候變化綱要公約締約方大會（COP31）在土耳其舉行。（路透社）",
-      "image_alt": "第31屆聯合國氣候變化綱要公約締約方大會（COP31）在土耳其舉行。（路透社）",
-      "image_source_url": "https://www.cna.com.tw/news/aopl/202611090290.aspx",
-      "image_rights_verified": false,
-      "image_rights_status": "unconfirmed",
-      "image_publication_basis": "user-directed-source-reference"
-    },
-    {
-      "id": "2026-11-10-midday:revision-4d041d2da554dffdaeec2045",
-      "original_id": "revision-4d041d2da554dffdaeec2045",
-      "category": "taiwan",
-      "is_headline": false,
-      "title_zh": "經部認定韓中電磁鋼品案產業受損，鋁箔案停稅恐續受損害",
-      "lede_zh": "據中央社RSS摘要，經濟部召開貿易救濟審議會，審議韓國及中國大陸冷軋扁軋非方向性電磁鋼品反傾銷案，以及中國大陸特定鋁箔反傾銷稅屆滿5年的落日調查案。電磁鋼品案認定國內產業遭受實質損害；鋁箔案則認定，停止課徵反傾銷稅可能使國內產業損害繼續或再發生。後續將由財政部提交關稅稅率審議小組，審議是否課徵反傾銷稅，尚非課稅決定。",
-      "bullets_zh": [],
-      "source": {
-        "name": "中央社財經",
-        "url": "https://www.cna.com.tw/news/afe/202611090278.aspx",
-        "published_at": "2026-11-09T21:20:39+08:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "rss",
-      "evidence_kind": "rss-summary",
-      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
-      "editorial_analysis_zh": "兩案的損害認定不同，且損害認定與是否課稅是不同程序，不能將本次審議結果直接視為課稅定案。",
-      "supporting_sources": []
-    },
-    {
-      "id": "2026-11-10-midday:revision-d721056f2f7bf3cc37e615de",
-      "original_id": "revision-d721056f2f7bf3cc37e615de",
-      "category": "world",
-      "is_headline": false,
-      "title_zh": "川普再度質疑期中選舉結果　多家媒體指出舞弊說法無證據",
-      "lede_zh": "據中央社的RSS摘要，美國總統川普再度提出沒有根據的選舉舞弊指控，質疑上週期中選舉的正當性；民主黨在這場選舉中贏得國會參眾兩院。NYT摘要指出，川普起初表示會接受選舉結果，之後又重提投票遭操控的說法。BBC World摘要則稱，他於週一在Truth Social發布相關指控，未提出證據。這些摘要記載的是川普的指控與立場變化，並未提供舞弊獲證實的資訊。",
-      "bullets_zh": [],
-      "source": {
-        "name": "中央社國際",
-        "url": "https://www.cna.com.tw/news/aopl/202611100002.aspx",
-        "published_at": "2026-11-10T01:25:28+08:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "rss",
-      "evidence_kind": "rss-summary",
-      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
-      "editorial_analysis_zh": "",
-      "supporting_sources": [
-        {
-          "source_name": "NYT",
-          "source_title": "Trump Veers Back Into Claims of Rigged Election, Questioning Midterm Results",
-          "source_url": "https://www.nytimes.com/2026/11/09/us/politics/trump-election-fraud-rigging-midterms.html"
-        },
-        {
-          "source_name": "BBC World",
-          "source_title": "Trump questions midterm elections integrity after previously accepting results",
-          "source_url": "https://www.bbc.co.uk/news/articles/ck79p9350zp9o?at_medium=RSS&at_campaign=rss"
-        }
-      ]
-    },
-    {
-      "id": "2026-11-10-midday:revision-d97331dec20220b596fcddd3",
-      "original_id": "revision-d97331dec20220b596fcddd3",
-      "category": "finance",
-      "is_headline": false,
-      "title_zh": "法國基本薪資將調至每月稅後1502歐元　工會仍號召示威",
-      "lede_zh": "據中央社的RSS摘要，法國政府11月9日宣布，基本薪資將調升至每月稅後1502歐元，約新台幣5萬5160元，自今年12月1日起生效。政府希望藉此回應民怨，但工會並不滿意，仍號召群眾於11月17日再次上街示威。Bloomberg Economics的RSS摘要引述法國總理表示，政府調升基本薪資，是為了回應生活成本引發的抗議，同時避免進一步加重脆弱的公共財政負擔。",
-      "bullets_zh": [],
-      "source": {
-        "name": "中央社國際",
-        "url": "https://www.cna.com.tw/news/aopl/202611090289.aspx",
-        "published_at": "2026-11-09T22:34:06+08:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "rss",
-      "evidence_kind": "rss-summary",
-      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
-      "editorial_analysis_zh": "調薪金額與生效日已明確，但工會仍安排示威，不能將政策宣布視為勞資爭議或民怨已經平息。",
-      "supporting_sources": [
-        {
-          "source_name": "Bloomberg Economics",
-          "source_title": "French Government Boosts Minimum Wage in Response to Protests",
-          "source_url": "https://www.bloomberg.com/news/articles/2026-11-09/french-government-boosts-minimum-wage-in-response-to-protests"
-        }
-      ]
-    },
-    {
-      "id": "2026-11-10-midday:revision-85392b8c098424bfbd67d7f6",
-      "original_id": "revision-85392b8c098424bfbd67d7f6",
-      "category": "society",
-      "is_headline": false,
-      "title_zh": "波蘭克拉科夫槍擊嫌犯死亡　檢方尚無特定政治動機證據",
-      "lede_zh": "據The Guardian的RSS摘要，波蘭克拉科夫市集廣場槍擊造成6人死亡、16人受傷，24歲波蘭籍嫌犯與警方交火重傷後，於週一在醫院死亡。BBC World摘要另稱，嫌犯3名家屬的遺體在住處被發現。NYT World摘要以克拉科夫及另一城鎮合計至少9人死亡概述案情，並稱嫌犯動機仍不明。據The Guardian摘要，檢方表示目前沒有證據將嫌犯與特定政治意識形態連結，恐怖主義調查仍將繼續。另一則NYT World摘要指出，政府指責極右派煽動槍手，反對派則批評政府維安鬆散；這些政治指控不等於已確認的犯案動機。",
-      "bullets_zh": [],
-      "source": {
-        "name": "The Guardian",
-        "url": "https://www.theguardian.com/world/2026/nov/09/krakow-shooting-suspected-gunman-dead",
-        "published_at": "2026-11-09T15:52:26+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "rss",
-      "evidence_kind": "rss-summary",
-      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
-      "editorial_analysis_zh": "",
-      "supporting_sources": [
-        {
-          "source_name": "NYT World",
-          "source_title": "Suspect in Mass Shooting in Krakow, Poland, Dies in Hospital. Here’s What to Know.",
-          "source_url": "https://www.nytimes.com/2026/11/08/world/europe/poland-krakow-mass-shooting.html"
-        },
-        {
-          "source_name": "BBC World",
-          "source_title": "Krakow shooting suspect has died in hospital, police say",
-          "source_url": "https://www.bbc.co.uk/news/articles/c6y434dw8319o?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "source_name": "NYT World",
-          "source_title": "Mass Killing in Poland Becomes Cause for a Political Fight",
-          "source_url": "https://www.nytimes.com/2026/11/09/world/europe/poland-mass-shooting-krakow-politics.html"
-        }
-      ]
-    },
-    {
-      "id": "2026-11-10-midday:revision-9f9a6bf688a215f1d489af4c",
-      "original_id": "revision-9f9a6bf688a215f1d489af4c",
-      "category": "society",
-      "is_headline": false,
-      "title_zh": "塞內加爾外海移民船沉沒，至少39人死亡",
-      "lede_zh": "BBC World的RSS標題指出，一艘前往歐洲的移民船在塞內加爾外海沉沒，至少39人死亡。其摘要指出，移民橫越大西洋、前往西班牙加納利群島的航線仍然危險。NYT World的RSS摘要則指出，抵達歐洲的移民人數整體下降，但移民旅程仍造成傷亡，地方官員也承受接應壓力。",
-      "bullets_zh": [],
-      "source": {
-        "name": "BBC World",
-        "url": "https://www.bbc.co.uk/news/articles/cv2d6dpge65go?at_medium=RSS&at_campaign=rss",
-        "published_at": "2026-11-09T16:33:55+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "rss",
-      "evidence_kind": "rss-summary",
-      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
-      "editorial_analysis_zh": "",
-      "supporting_sources": [
-        {
-          "source_name": "NYT World",
-          "source_title": "Shipwreck Off Senegal Kills Dozens as Canary Islands Declare Migrant Emergency",
-          "source_url": "https://www.nytimes.com/2026/11/09/world/africa/senegal-migrant-boat-capsize-europe.html"
-        }
-      ]
-    },
-    {
-      "id": "2026-11-10-midday:revision-b5e118cba3a435ef01cb8c1c",
-      "original_id": "revision-b5e118cba3a435ef01cb8c1c",
-      "category": "society",
-      "is_headline": false,
-      "title_zh": "克里特島外海移民船沉沒釀13死，18名蘇丹籍人士獲救",
-      "lede_zh": "BBC World的RSS標題指出，克里特島外海發生移民船沉沒事件，造成13人死亡。摘要引述希臘海岸防衛隊表示，已救起18人，獲救者全為蘇丹籍人士。",
-      "bullets_zh": [],
-      "source": {
-        "name": "BBC World",
-        "url": "https://www.bbc.co.uk/news/articles/c65ynyxrjdyeo?at_medium=RSS&at_campaign=rss",
-        "published_at": "2026-11-09T13:50:01+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "rss",
-      "evidence_kind": "rss-summary",
-      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
-      "editorial_analysis_zh": "",
-      "supporting_sources": []
-    },
-    {
-      "id": "2026-11-10-midday:revision-a276511d95d5c0e29109f747",
-      "original_id": "revision-a276511d95d5c0e29109f747",
-      "category": "society",
-      "is_headline": false,
-      "title_zh": "藝人羅素．布蘭德強暴、性侵罪成立，判刑10年6個月",
-      "lede_zh": "依BBC News與Al Jazeera提供的RSS資料，藝人羅素．布蘭德因強暴及性侵罪遭判處10年6個月徒刑。Deutsche Welle的RSS摘要指出，他於上週被判定強暴一名女性、性侵另外三人罪名成立。BBC News摘要並指出，本案在南華克刑事法院經過4週審理，於週一宣判。",
-      "bullets_zh": [],
-      "source": {
-        "name": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/ckzd6dl18dmyo?at_medium=RSS&at_campaign=rss",
-        "published_at": "2026-11-09T17:31:08+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "rss",
-      "evidence_kind": "rss-summary",
-      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
-      "editorial_analysis_zh": "",
-      "supporting_sources": [
-        {
-          "source_name": "BBC News",
-          "source_title": "What happened inside court as Brand was sentenced",
-          "source_url": "https://www.bbc.co.uk/news/videos/cq99z9mrv35lo?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "source_name": "Deutsche Welle",
-          "source_title": "Russell Brand sentenced to over 10 years in prison for rape and sexual assault convictions",
-          "source_url": "https://www.dw.com/en/russell-brand-sentenced-to-over-10-years-in-prison-for-rape-and-sexual-assault-convictions/a-79896124?maca=en-rss-en-all-1573-rdf"
-        },
-        {
-          "source_name": "Al Jazeera",
-          "source_title": "Russell Brand sentenced to 10.5 years over sexual assault charges",
-          "source_url": "https://www.aljazeera.com/video/newsfeed/2026/11/9/russell-brand-sentenced-to-10-5-years-over-sexual-assault-charges?traffic_source=rss"
-        }
-      ]
-    },
-    {
-      "id": "2026-11-10-midday:revision-eef41a81bc90370ea86d7b10",
-      "original_id": "revision-eef41a81bc90370ea86d7b10",
-      "category": "world",
-      "is_headline": false,
-      "title_zh": "遭列「外國代理人」並被要求遷出，Novaya Gazeta關閉莫斯科編輯室",
-      "lede_zh": "根據DW World與Deutsche Welle的RSS摘要，俄羅斯調查報紙Novaya Gazeta在遭俄國當局列為「外國代理人」、並被要求搬離莫斯科辦公處所後，關閉當地編輯室。BBC World的RSS摘要補充，該報遭迫遷的辦公室已使用約30年，報方並表示，接收捐款的管道也遭阻斷。現有資料涉及莫斯科編輯室關閉，不能據此認定該報所有出版活動均已停止。",
-      "bullets_zh": [],
-      "source": {
-        "name": "DW World",
-        "url": "https://www.dw.com/en/russia-independent-novaya-gazeta-shuts-its-moscow-newsroom/a-79899827?maca=en-rss-en-world-4025-xml-mrss",
-        "published_at": "2026-11-09T16:22:00+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "rss",
-      "evidence_kind": "rss-summary",
-      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
-      "editorial_analysis_zh": "編輯室遭迫遷與報方所稱的捐款受阻，分別涉及採編空間及資金來源，是觀察新聞媒體運作條件的重要面向。",
-      "supporting_sources": [
-        {
-          "source_name": "BBC World",
-          "source_title": "Russia's leading independent newspaper closes after eviction",
-          "source_url": "https://www.bbc.co.uk/news/videos/cvrlylj9r11go?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "source_name": "Deutsche Welle",
-          "source_title": "Russia: Independent Novaya Gazeta shuts its Moscow newsroom",
-          "source_url": "https://www.dw.com/en/russia-independent-novaya-gazeta-shuts-its-moscow-newsroom/a-79899827?maca=en-rss-en-all-1573-rdf"
-        }
-      ],
-      "image_url": "https://static.dw.com/image/79902470_605.jpg",
-      "image_credit": "Deutsche Welle · AP Photo/dpa/picture alliance",
-      "image_caption": "原始報導配圖；原圖說見來源。",
-      "image_alt": "原始報導配圖；原圖說見來源。",
-      "image_source_url": "https://www.dw.com/en/russia-independent-novaya-gazeta-shuts-its-moscow-newsroom/a-79899827?maca=en-rss-en-world-4025-xml-mrss",
-      "image_rights_verified": false,
-      "image_rights_status": "unconfirmed",
-      "image_publication_basis": "user-directed-source-reference"
-    },
-    {
-      "id": "2026-11-10-midday:revision-c5e502014c4e3f429dd26bcb",
-      "original_id": "revision-c5e502014c4e3f429dd26bcb",
-      "category": "world",
-      "is_headline": false,
-      "title_zh": "沙烏地阿拉伯通報東西向輸油管遭攻擊",
-      "lede_zh": "Al Jazeera的RSS標題指出，沙烏地阿拉伯通報東西向輸油管再遭攻擊；FT Markets也報導該管線遇襲。Al Jazeera摘要說明，這條輸油管穿越沙漠通往海岸，是繞過荷莫茲海峽的重要路線。FT Markets摘要提到，胡塞組織與伊拉克民兵曾多次威脅這條原油出口要道，但這不構成本次攻擊的歸責證據。現有RSS資料未交代攻擊者、管線受損程度或實際停輸規模。",
-      "bullets_zh": [],
-      "source": {
-        "name": "Al Jazeera",
-        "url": "https://www.aljazeera.com/news/2026/11/9/saudi-arabia-reports-new-attack-on-key-east-west-pipeline?traffic_source=rss",
-        "published_at": "2026-11-09T22:10:52+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "rss",
-      "evidence_kind": "rss-summary",
-      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
-      "editorial_analysis_zh": "這條管線提供繞過荷莫茲海峽的輸油路線，因此遇襲涉及替代出口通道的安全；但缺乏停輸資訊，目前無法判斷實際供應影響。",
-      "supporting_sources": [
-        {
-          "source_name": "FT Markets",
-          "source_title": "Saudi Arabia’s vital East-West pipeline struck in attack",
-          "source_url": "https://www.ft.com/content/45dce79e-2758-43f2-a06c-3c56db392f39?syn-25a6b1a6=1"
-        }
-      ]
-    },
-    {
-      "id": "2026-11-10-midday:revision-3fa8371c0fc3a5160c012a52",
-      "original_id": "revision-3fa8371c0fc3a5160c012a52",
-      "category": "world",
-      "is_headline": false,
-      "title_zh": "NYT World：移民經第三國轉送，送往美方不得直接遣返的國家",
-      "lede_zh": "NYT World的RSS摘要指出，與川普政府合作的外國夥伴先接收遭美方遣返者，再將他們轉送至美國本身依法不得直接遣送的國家。報導標題並指，儘管有法院命令，移民仍遭有系統地送回原籍。這份摘要未列出涉及國家、個案或法院命令的具體內容，無法據此判斷各案經過。",
-      "bullets_zh": [],
-      "source": {
-        "name": "NYT World",
-        "url": "https://www.nytimes.com/2026/11/09/world/africa/trump-deportations-court-orders-refoulement.html",
-        "published_at": "2026-11-09T21:54:45+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "rss",
-      "evidence_kind": "rss-summary",
-      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
-      "editorial_analysis_zh": "這項報導提出的核心問題，是經第三國轉送的安排，是否繞過直接遣返的法律限制與法院命令；現有摘要不足以對個別案件作出法律判斷。",
-      "supporting_sources": []
-    },
-    {
-      "id": "2026-11-10-midday:revision-c2af70570e42ea3bbf8455ce",
-      "original_id": "revision-c2af70570e42ea3bbf8455ce",
-      "category": "world",
-      "is_headline": false,
-      "title_zh": "美國與多國分別洽談衛生協議，公衛專家認為全球協議更有效",
-      "lede_zh": "據NYT World的RSS摘要，川普政府正與數十個國家分別談判協議。摘要引述公共衛生專家意見，認為全球性協議會更有效；這是專家對協議策略的評估，摘要未提供具體協議條款或防疫成效數據。",
-      "bullets_zh": [],
-      "source": {
-        "name": "NYT World",
-        "url": "https://www.nytimes.com/2026/11/06/us/politics/pandemic-prevention-african-countries.html",
-        "published_at": "2026-11-09T20:37:21+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "rss",
-      "evidence_kind": "rss-summary",
-      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
-      "editorial_analysis_zh": "",
-      "supporting_sources": []
-    },
-    {
-      "id": "2026-11-10-midday:revision-7c0111a5a14269c9db935742",
-      "original_id": "revision-7c0111a5a14269c9db935742",
-      "category": "science",
-      "is_headline": false,
-      "title_zh": "美國登革熱傳播現況：摘要指目前多來自當地蚊媒",
-      "lede_zh": "據NYT的RSS摘要，過去美國民眾感染登革熱，是在旅行期間遭蚊子叮咬；目前的傳播則多來自當地蚊子。摘要未提供病例總數、統計範圍或完整研究，不能據此推估全美疫情規模。",
-      "bullets_zh": [],
-      "source": {
-        "name": "NYT",
-        "url": "https://www.nytimes.com/2026/11/09/us/dengue-united-states-florida-mosquitos.html",
-        "published_at": "2026-11-09T20:06:05+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "rss",
-      "evidence_kind": "rss-summary",
-      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
-      "editorial_analysis_zh": "",
-      "supporting_sources": []
-    },
-    {
-      "id": "2026-11-10-midday:revision-6f2ce286d4fbf72b86a5dd59",
-      "original_id": "revision-6f2ce286d4fbf72b86a5dd59",
-      "category": "world",
-      "is_headline": false,
-      "title_zh": "COP31在土耳其開幕　能源危機下推動再生能源與電氣化",
-      "lede_zh": "據The Guardian與Al Jazeera的RSS摘要，COP31已在土耳其開幕，會議面臨戰爭造成的能源供應干擾，以及對化石燃料依賴再度升高的局面。聯合國氣候事務主管在開幕全體會議上警告，全球化石燃料價格危機正推升各地通膨。The Guardian摘要指出，土耳其與主導談判的澳洲共同推動再生能源及新的電氣化目標，會中正討論加速電氣化轉型。",
-      "bullets_zh": [],
-      "source": {
-        "name": "The Guardian",
-        "url": "https://www.theguardian.com/environment/2026/nov/09/high-fossil-fuel-prices-spread-inflation-like-cancer-cop31egotiator-tells-cop31",
-        "published_at": "2026-11-09T17:47:04+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "rss",
-      "evidence_kind": "rss-summary",
-      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
-      "editorial_analysis_zh": "",
-      "supporting_sources": [
-        {
-          "source_name": "Al Jazeera",
-          "source_title": "COP31 opens amid energy crisis as activists demand climate action",
-          "source_url": "https://www.aljazeera.com/video/newsfeed/2026/11/9/cop31-opens-amid-energy-crisis-as-activists-demand-climate-action?traffic_source=rss"
-        }
-      ],
-      "image_url": "https://i.guim.co.uk/img/media/3697c15560867e293649ef23a87293050bdc770d/911_0_4561_3648/master/4561.jpg?width=465&dpr=1&s=none&crop=none",
-      "image_credit": "The Guardian · Haidar Mohammed Ali/AFP/Getty",
-      "image_caption": "原始報導配圖；原圖說見來源。",
-      "image_alt": "原始報導配圖；原圖說見來源。",
-      "image_source_url": "https://www.theguardian.com/environment/2026/nov/09/high-fossil-fuel-prices-spread-inflation-like-cancer-cop31egotiator-tells-cop31",
-      "image_rights_verified": false,
-      "image_rights_status": "unconfirmed",
-      "image_publication_basis": "user-directed-source-reference"
-    },
-    {
-      "id": "2026-11-10-midday:revision-482910534367573707ce6fc9",
-      "original_id": "revision-482910534367573707ce6fc9",
-      "category": "culture",
-      "is_headline": false,
-      "title_zh": "哈里森81歲獲布克獎　成歷來最年長得主",
-      "lede_zh": "據BBC News的RSS摘要，作家哈里森以81歲之齡獲得布克獎，成為該獎歷來最年長的得主。",
-      "bullets_zh": [],
-      "source": {
-        "name": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cw0737kv52lko?at_medium=RSS&at_campaign=rss",
-        "published_at": "2026-11-09T22:16:37+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "rss",
-      "evidence_kind": "rss-summary",
-      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
-      "editorial_analysis_zh": "",
-      "supporting_sources": [],
-      "image_url": "https://ichef.bbci.co.uk/ace/standard/3840/cpsprodpb/db58/live/963bf0b0-dc49-11f1-a869-656dc96bd12d.jpg",
-      "image_credit": "BBC News · Getty Images",
-      "image_caption": "原始報導配圖；原圖說見來源。",
-      "image_alt": "原始報導配圖；原圖說見來源。",
-      "image_source_url": "https://www.bbc.co.uk/news/articles/cw0737kv52lko?at_medium=RSS&at_campaign=rss",
-      "image_rights_verified": false,
-      "image_rights_status": "unconfirmed",
-      "image_publication_basis": "user-directed-source-reference"
-    },
-    {
-      "id": "2026-11-10-midday:revision-ccd5225562bbde10a09db729",
-      "original_id": "revision-ccd5225562bbde10a09db729",
-      "category": "finance",
-      "is_headline": false,
-      "title_zh": "哥倫比亞洽談向國際貨幣基金借款約150億美元",
-      "lede_zh": "據Bloomberg Economics的RSS摘要引述知情人士，哥倫比亞正與國際貨幣基金洽談約150億美元借款。知情人士指出，政府尋求這筆借款，是為了穩定吃緊的財政；摘要未提及協議已獲批准或款項已到位。",
-      "bullets_zh": [],
-      "source": {
-        "name": "Bloomberg Economics",
-        "url": "https://www.bloomberg.com/news/articles/2026-11-09/colombia-seeks-15-billion-imf-deal-as-fiscal-pressure-mounts",
-        "published_at": "2026-11-09T21:47:30+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "rss",
-      "evidence_kind": "rss-summary",
-      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
-      "editorial_analysis_zh": "",
-      "supporting_sources": []
-    }
-  ],
-  "breaking_news": [],
+  "date": "2026-11-12",
+  "date_display_zh": "2026年11月12日·星期四·時事焦點 · 補刊 · 原定12:00 · 完成13:53 · 實際發布13:54",
+  "edition": "midday",
+  "edition_label_zh": "時事焦點",
+  "issue_label_zh": "2026-11-12 時事焦點 · 補刊",
+  "issue_number": "2026-11-12-midday",
   "meta": {
-    "generated_at": "2026-11-10T11:37:31.651465+08:00",
-    "total_articles": 23,
-    "schema_version": "2.0",
     "edition": "midday",
+    "generated_at": "2026-11-12T13:53:10.654017+08:00",
     "model": "gpt-6.1-sol",
-    "source_mode": "rss-only",
-    "reading_time_estimated": true
+    "reading_time_estimated": true,
+    "schema_version": "2.0",
+    "source_mode": "publisher-articles",
+    "total_articles": 28
   },
-  "window_start": "2026-11-09T19:00:00+08:00",
-  "window_end": "2026-11-10T07:00:00+08:00",
-  "trial": true,
-  "trial_label_zh": "中報試刊",
-  "coverage_note_zh": "本期為延後發布的中報試刊；沿用已審核綜合新聞，移除與科技早報重複事件。實際來源範圍為 2026-11-09T19:00:00+08:00 至 2026-11-10T07:00:00+08:00（起含迄不含），不是前日11:00至當日11:00的完整24小時中報窗口；未新增採集或事實。",
-  "trial_staged_at": "2026-11-10T15:22:47.973442+08:00",
   "publication": {
-    "published_at": "2026-11-10T15:25:25.810275+08:00",
-    "identity": "2026-11-10-midday",
-    "issue_sha256": "2ca3e3e4037c0d431fa0e32312629a0fac2bace54c2f77dee1e3aed6e1928b4b",
-    "legacy_archive_untouched": true
-  }
+    "identity": "2026-11-12-midday",
+    "issue_sha256": "8f968814d23107cf25e0b992ef23de1ff3deaba14d26b833c09c34583a05a63e",
+    "legacy_archive_untouched": true,
+    "published_at": "2026-11-12T13:54:15.016173+08:00"
+  },
+  "recovery": {
+    "completed_at": "2026-11-12T13:53:10.654017+08:00",
+    "cutoff_snapshot_sha256": "54351908738f9eb0190b2c73f418b83842465a375554a99a2a70f976c50bb7ce",
+    "kind": "late-midday-recovery",
+    "scheduled_publish_at": "2026-11-12T12:00:00+08:00"
+  },
+  "schema_version": 2,
+  "tagline_zh": "由 AI 為你策展，掌握科技與時事",
+  "weather_locations": [],
+  "window_end": "2026-11-12T11:00:00+08:00",
+  "window_start": "2026-11-11T11:00:00+08:00"
 }

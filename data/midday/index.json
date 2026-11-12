@@ -1,0 +1,22 @@
+{
+  "editions": [
+    {
+      "date": "2026-11-12",
+      "edition": "midday",
+      "issue_sha256": "8f968814d23107cf25e0b992ef23de1ff3deaba14d26b833c09c34583a05a63e",
+      "json": "data/editions/2026-11-12-midday.json",
+      "key": "2026-11-12-midday",
+      "published_at": "2026-11-12T13:54:15.016173+08:00",
+      "recovery": {
+        "completed_at": "2026-11-12T13:53:10.654017+08:00",
+        "cutoff_snapshot_sha256": "54351908738f9eb0190b2c73f418b83842465a375554a99a2a70f976c50bb7ce",
+        "kind": "late-midday-recovery",
+        "scheduled_publish_at": "2026-11-12T12:00:00+08:00"
+      },
+      "title": "補刊 · 國際談判、公共安全與台灣政策動態",
+      "url": "briefings/2026-11-12-midday.html"
+    }
+  ],
+  "schema_version": 1,
+  "updated_at": "2026-11-12T13:54:15.016173+08:00"
+}
