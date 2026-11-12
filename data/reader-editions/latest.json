@@ -1,21 +1,689 @@
 {
-  "schema_version": 2,
-  "issue_number": "2026-11-11-morning",
-  "issue_label_zh": "2026-11-11 科技早報",
-  "date": "2026-11-11",
-  "edition": "morning",
-  "edition_label_zh": "科技早報",
-  "date_display_zh": "2026年11月11日·星期三·科技早報",
-  "weather_locations": [],
-  "tagline_zh": "由 AI 為你策展，掌握科技與時事",
+  "articles": [
+    {
+      "bullets_zh": [],
+      "category": "ai-ml",
+      "editorial_analysis_zh": "",
+      "evidence_kind": "rss-summary",
+      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
+      "fetched_via": "rss",
+      "id": "2026-11-12-morning:event-01",
+      "is_headline": true,
+      "lede_zh": "Google推出Gemini Decisions API，由Gemini Decision模型驅動，將多模態決策能力透過API提供給開發者。\n\nGoogle將「快速」與「經校準」列為這項服務的特色。不過，目前取得的發布資訊未提供具體效能數據、比較基準或應用案例，這些描述仍屬公司對產品的定位，不能視為已經獨立驗證的效能結論。",
+      "original_id": "event-01",
+      "source": {
+        "name": "Google AI",
+        "published_at": "2026-11-11T18:00:00+00:00",
+        "reading_time_min": 1,
+        "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
+      },
+      "source_evidence_note_zh": "僅取得Google AI官方RSS摘要，未取得發布文章全文；目前資料未交代價格、開放範圍、技術規格或評測方法。",
+      "supporting_sources": [],
+      "title_zh": "Google推出Gemini Decisions API，以專用模型支援多模態決策"
+    },
+    {
+      "bullets_zh": [],
+      "category": "ai-ml",
+      "editorial_analysis_zh": "",
+      "evidence_kind": "rss-summary",
+      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
+      "fetched_via": "rss",
+      "id": "2026-11-12-morning:event-02",
+      "is_headline": false,
+      "lede_zh": "Google DeepMind公開用於分析與預測基因活動的模型後續版本，延續以人工智慧處理基因資訊的研究方向。\n\n這項模型的用途聚焦基因活動分析與預測，而非一般對話助理。目前取得的資訊不足以比較新舊版本的能力差異，也無法判定其預測準確率、研究成果或臨床應用效益。",
+      "original_id": "event-02",
+      "source": {
+        "name": "Yonhap Korean",
+        "published_at": "2026-11-12T07:04:39+09:00",
+        "reading_time_min": 1,
+        "url": "https://www.yna.co.kr/view/AKR20261112013300091"
+      },
+      "source_evidence_note_zh": "僅取得Yonhap Korean的RSS標題與摘要，摘要在後續版本名稱處中斷，未取得報導全文或研究原文。本文因此僅交代模型公開與用途，不延伸技術細節或效能結論。",
+      "supporting_sources": [],
+      "title_zh": "Google DeepMind公開基因活動分析與預測模型後續版本"
+    },
+    {
+      "bullets_zh": [],
+      "category": "research-papers",
+      "editorial_analysis_zh": "統一紀錄格式有助於把跨框架的評估流程與版本比較分開處理，但共用評分尺度不等於指標已獲驗證。導入時應先確認測試資料與指標是否對應實際任務，而非只追求整體分數提高。",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "fetched_via": "publisher",
+      "id": "2026-11-12-morning:event-25",
+      "is_headline": false,
+      "lede_zh": "AWS介紹人工智慧代理評估系統UAEF，透過轉接器將不同框架的執行紀錄轉成統一格式，再以7個面向、36項內建指標評分。系統定位是讓開發團隊更換提示詞、模型或工具後，仍能沿用一致的評估流程，檢查新版代理是否改善，或在特定能力上退步。\n\n依AWS說明，UAEF會把訊息、工具呼叫及代理間的任務交接，轉為名為AgentTrace的共通紀錄。評估涵蓋工具呼叫、回應品質、負責任人工智慧、效能、多輪對話、多代理協作與推理；部分指標直接依紀錄和標準答案計算，另一些則交由Amazon Bedrock上的大型語言模型擔任評審。需要參考答案的指標，在資料未提供答案時會自動跳過。\n\n評估結果可存入Amazon DynamoDB與Amazon S3，保留各版本的分數以供比較。系統可依設定門檻標示改善或退步，預設門檻為5%；開發者既可使用Python函式庫接入開發流程，也能透過低程式碼網頁介面操作，兩者共用評估引擎。AWS表示，電信、醫療與金融服務領域的12個組織已使用這套系統評估代理。\n\n模型評審本身也有邊界。AWS指出，受評代理的輸出應視為不可信輸入，評審回覆必須附上可核對的原文證據，找不到對應內容的分數會遭拒收；但這些分數只是評估訊號，不是安全決策，不應用來決定安全控制是否放行。UAEF已採Apache 2.0授權開源，其指標是否適合個別任務，仍須由使用團隊檢視。",
+      "original_id": "event-25",
+      "source": {
+        "name": "AWS Machine Learning",
+        "published_at": "2026-11-11T15:50:55+00:00",
+        "reading_time_min": 1,
+        "url": "https://aws.amazon.com/blogs/machine-learning/uaef-a-framework-agnostic-system-for-closed-loop-evaluation-of-ai-agents/"
+      },
+      "source_evidence_note_zh": "依據AWS Machine Learning官方文章節錄（publisher-excerpt）撰寫，並非論文或獨立評測。未另行檢視程式碼、執行工具或驗證指標有效性；使用組織數與功能描述均來自AWS。",
+      "supporting_sources": [],
+      "title_zh": "AWS介紹UAEF代理評估框架，以統一執行紀錄比較版本表現"
+    },
+    {
+      "bullets_zh": [],
+      "category": "research-papers",
+      "editorial_analysis_zh": "值得追蹤的是人工智慧能否降低形式驗證的實務門檻；四週專案本身仍不足以證明這種方法可廣泛套用，其意義須與實際驗證範圍一併判讀。",
+      "evidence_kind": "rss-summary",
+      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
+      "fetched_via": "rss",
+      "id": "2026-11-12-morning:event-27",
+      "is_headline": false,
+      "lede_zh": "Google DeepMind完成對Signal部分關鍵內容的數學驗證。Ars Technica報導，這項專案歷時四週，呈現人工智慧可能讓形式驗證更具實用性的研究方向。\n\n這次進展的範圍是Signal的部分關鍵內容，不能擴大解讀為Signal整體安全已獲保證，也不足以推論其他軟體都能以相同時程完成驗證。",
+      "original_id": "event-27",
+      "source": {
+        "name": "Ars Technica",
+        "published_at": "2026-11-11T14:08:57+00:00",
+        "reading_time_min": 1,
+        "url": "https://arstechnica.com/ai/2026/11/signals-encryption-just-passed-an-ai-powered-mathematical-checkup/"
+      },
+      "source_evidence_note_zh": "僅取得Ars Technica的RSS標題與摘要（rss-summary），未取得報導正文、原始研究或驗證成果。現有資料未交代受驗證部分、使用方法及具體限制，因此以短訊呈現。",
+      "supporting_sources": [],
+      "title_zh": "Google DeepMind完成Signal部分關鍵內容數學驗證，專案歷時四週"
+    },
+    {
+      "bullets_zh": [],
+      "category": "tech-product",
+      "editorial_analysis_zh": "這項整合的觀察重點是助理入口的跨平台延伸，而非尚未揭露的功能或效能差異。",
+      "evidence_kind": "rss-summary",
+      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
+      "fetched_via": "rss",
+      "id": "2026-11-12-morning:event-16",
+      "is_headline": false,
+      "lede_zh": "Google正將Gemini人工智慧應用加入Apple CarPlay系統，讓駕駛在車內使用助理時有更多選擇，也把Gemini的使用場景延伸至Apple的車用平台。\n\n這項整合連結了Apple裝置與車內使用情境：對於可能已在Apple裝置上使用Gemini的駕駛，CarPlay將成為另一個接觸這項助理的入口。",
+      "original_id": "event-16",
+      "source": {
+        "name": "Bloomberg Technology",
+        "published_at": "2026-11-11T18:57:04+00:00",
+        "reading_time_min": 1,
+        "url": "https://www.bloomberg.com/news/articles/2026-11-11/google-adds-gemini-voice-ai-assistant-to-apple-carplay"
+      },
+      "source_evidence_note_zh": "目前僅取得Bloomberg Technology的RSS摘要，未取得報導全文；支援地區、訂閱條件、具體操作功能與安全測試結果均未見於已取得資料。",
+      "supporting_sources": [],
+      "title_zh": "Google將Gemini加入Apple CarPlay，擴大駕駛的人工智慧助理選擇"
+    },
+    {
+      "bullets_zh": [],
+      "category": "tech-product",
+      "editorial_analysis_zh": "",
+      "evidence_kind": "rss-summary",
+      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
+      "fetched_via": "rss",
+      "id": "2026-11-12-morning:event-17",
+      "is_headline": false,
+      "lede_zh": "IBM計畫在2027年提供雙處理器量子系統的存取，並於該年結束前連結兩顆各具520量子位元的晶片。這是公司提出的量子運算平台規畫，並非系統已上線的消息。\n\n這項計畫的具體方向是將兩顆量子晶片連結運作；目前資訊尚不足以判斷其實際運算表現，也不能據此認定已達成量子優勢或能為人工智慧運算帶來加速。",
+      "original_id": "event-17",
+      "source": {
+        "name": "Ars Technica",
+        "published_at": "2026-11-11T16:33:08+00:00",
+        "reading_time_min": 1,
+        "url": "https://arstechnica.com/science/2026/11/ibm-to-offer-access-to-a-dual-processor-quantum-system-in-2027/"
+      },
+      "source_evidence_note_zh": "目前僅取得Ars Technica的RSS標題與摘要，未取得報導全文。2027年提供系統存取的時程見於標題；連結兩顆520量子位元晶片的計畫見於摘要，未取得效能或測試資料。",
+      "supporting_sources": [],
+      "title_zh": "IBM規劃2027年提供雙處理器量子系統存取，連結兩顆520量子位元晶片"
+    },
+    {
+      "bullets_zh": [],
+      "category": "tech-product",
+      "editorial_analysis_zh": "",
+      "evidence_kind": "rss-summary",
+      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
+      "fetched_via": "rss",
+      "id": "2026-11-12-morning:event-18",
+      "is_headline": false,
+      "lede_zh": "Google Labs推出名為Tabletop的群組協作實驗，主打讓團隊共同製作互動式行程、投票與對戰表，目前已開放候補登記。\n\nGoogle將這項實驗定位為供群組共同規畫與活動使用的協作空間，涵蓋行程安排、意見投票與賽事對戰安排等用途；目前提供的參與方式是加入候補名單。",
+      "original_id": "event-18",
+      "source": {
+        "name": "Google AI",
+        "published_at": "2026-11-11T16:00:00+00:00",
+        "reading_time_min": 1,
+        "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop/"
+      },
+      "source_evidence_note_zh": "目前僅取得Google AI官方頻道的RSS標題與摘要，未取得頁面全文。產品定位與用途為Google自述，未經獨立實測；已取得資料未說明是否具有生成式人工智慧功能。",
+      "supporting_sources": [],
+      "title_zh": "Google Labs推出Tabletop群組協作實驗，開放候補登記"
+    },
+    {
+      "bullets_zh": [],
+      "category": "tech-product",
+      "editorial_analysis_zh": "",
+      "evidence_kind": "rss-summary",
+      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
+      "fetched_via": "rss",
+      "id": "2026-11-12-morning:event-19",
+      "is_headline": false,
+      "lede_zh": "Apple將關閉經營28年的線上社群論壇，目前已將論壇設為唯讀，使用者無法繼續在其中新增討論內容。",
+      "original_id": "event-19",
+      "source": {
+        "name": "Ars Technica",
+        "published_at": "2026-11-11T17:04:26+00:00",
+        "reading_time_min": 1,
+        "url": "https://arstechnica.com/gadgets/2026/11/apple-is-shuttering-its-28-year-old-online-community-forum/"
+      },
+      "source_evidence_note_zh": "本則僅取得Ars Technica的RSS標題與摘要，未取得報導全文。關閉計畫與經營年數來自標題，唯讀狀態來自摘要；現有資料未提供關閉日期、資料保存政策或替代服務。",
+      "supporting_sources": [],
+      "title_zh": "Apple將關閉經營28年的線上社群論壇，已改為唯讀"
+    },
+    {
+      "bullets_zh": [],
+      "category": "vc-business",
+      "editorial_analysis_zh": "這起事件的關鍵不只在營收成長，而是AI算力擴張如何取得資金。預付款可減輕眼前借款需求，短約則提高調價彈性；但兩者都不能取代對履約能力、現金流與債務成本的檢視。",
+      "evidence_kind": "publisher-article",
+      "evidence_note_zh": "依來源文章整理。",
+      "fetched_via": "publisher",
+      "id": "2026-11-12-morning:event-03",
+      "is_headline": false,
+      "lede_zh": "人工智慧算力供應商CoreWeave正調整擴張資金來源，增加客戶預付款、以特定客戶合約支持的借款，並爭取價格較高的短期交易。公司第三季營收達36.6億美元、年增168%，但仍淨損7.09億美元，單季利息費用達8.46億美元，營收快速成長，但仍面臨虧損與高額利息支出。\n\nCoreWeave表示，預期未來三個月可取得約90億美元的客戶預付款與訂金，其中逾30億美元來自已建置算力的新客戶合約，不必另行添購硬體。公司並計畫依需求動用合約支持的貸款，支應尚待建置的基礎設施，以履行總額1,325億美元的待履約訂單。\n\n融資安排包含已完成與仍在規劃的交易。公司8月已完成一筆26億美元貸款，專為較短期客戶合約設計，可按資金需求分批借款；另據Bloomberg報導，CoreWeave在上調全年營收預測後，計畫透過投資等級貸款籌措至少40億美元，這筆資金尚不能視為已到位。\n\n短約讓公司更頻繁調整價格，但也帶來取捨。CoreWeave表示，部分短期算力交易的每百萬瓦年收入超過4,000萬美元，新建基礎設施的四至五年期合約則為2,000萬至2,500萬美元。TechCrunch分析，貸款方較重視長約帶來的可預測現金流；短約策略能否持續奏效，仍取決於需求、續約及定價能力。\n\n財報公布後，美股市場對AI投資的情緒回暖，標普與那斯達克指數均漲逾1%，輝達在連續兩個交易日大跌後止穩，那斯達克並收復前一週失土。不過，股票市場反應不代表債務風險解除：CoreWeave部分債券殖利率前一個月曾超過15%，顯示投資人仍關注資料中心投資回收前的資金壓力。",
+      "original_id": "event-03",
+      "source": {
+        "name": "TechCrunch",
+        "published_at": "2026-11-11T19:54:00+00:00",
+        "reading_time_min": 1,
+        "url": "https://techcrunch.com/2026/11/11/coreweave-turns-to-customer-prepayments-shorter-contracts-to-fund-ai-growth/"
+      },
+      "source_evidence_note_zh": "來源資訊：已取得TechCrunch報導全文；Bloomberg Technology、中央社財經與FT Markets僅取得RSS摘要，未取得三者全文。財報、定價與融資策略中的公司陳述主要依TechCrunch報導，未另取得財報或貸款文件獨立核對。",
+      "supporting_sources": [
+        {
+          "source_name": "Bloomberg Technology",
+          "source_title": "CoreWeave Plans to Raise at Least $4 Billion in High-Grade Loan",
+          "source_url": "https://www.bloomberg.com/news/articles/2026-11-11/coreweave-plans-to-raise-at-least-4-billion-in-high-grade-loan"
+        },
+        {
+          "source_name": "中央社財經",
+          "source_title": "CoreWeave財報緩解AI疑慮　美股收高輝達止穩",
+          "source_url": "https://www.cna.com.tw/news/afe/202611120010.aspx"
+        },
+        {
+          "source_name": "FT Markets",
+          "source_title": "US tech stocks rally as AI trade revives",
+          "source_url": "https://www.ft.com/content/639de881-6017-454f-abfa-cfb191d1e7cd?syn-25a6b1a6=1"
+        }
+      ],
+      "title_zh": "CoreWeave轉向客戶預付款與合約融資，另規劃至少40億美元貸款"
+    },
+    {
+      "bullets_zh": [],
+      "category": "vc-business",
+      "editorial_analysis_zh": "這項數據提供觀察人工智慧商業化規模的具體指標，但營收成長不等於已實現獲利，兩者仍須分開判讀。",
+      "evidence_kind": "rss-summary",
+      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
+      "fetched_via": "rss",
+      "id": "2026-11-12-morning:event-04",
+      "is_headline": false,
+      "lede_zh": "OpenAI單季營收據報首次突破100億美元。TechCrunch報導，這項營收數字較公司第二季的67億美元增加近五成，顯示其營收規模進一步擴大。",
+      "original_id": "event-04",
+      "source": {
+        "name": "TechCrunch",
+        "published_at": "2026-11-11T16:14:44+00:00",
+        "reading_time_min": 1,
+        "url": "https://techcrunch.com/2026/11/11/openais-quarterly-revenue-reportedly-crosses-10b-for-the-first-time/"
+      },
+      "source_evidence_note_zh": "僅取得TechCrunch的RSS摘要與標題，未取得報導全文；現有資料未提供這項營收數字的詳細計算口徑，也不足以判斷獲利、現金流或全年業績。",
+      "supporting_sources": [],
+      "title_zh": "OpenAI單季營收據報首破100億美元，較第二季增近五成"
+    },
+    {
+      "bullets_zh": [],
+      "category": "vc-business",
+      "editorial_analysis_zh": "認購需求、衍生性商品交易量與掛牌後的股票買超是不同指標。分開觀察，才能避免把上市前的市場熱度誤當成已實現的資金流入。",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "fetched_via": "publisher",
+      "id": "2026-11-12-morning:event-05",
+      "is_headline": false,
+      "lede_zh": "Anthropic預計11月19日在美國那斯達克市場開始交易，首次公開募股（IPO）目標估值為1兆4000億美元。掛牌前的認購需求與散戶參與程度受到關注，但目前的超額認購消息與買盤預估，都不是上市後的實際交易結果。\n\n金融市場研究公司Vanda Research預估，Anthropic上市首日的散戶買超金額將達約2億5000萬美元，是其所列SpaceX首次公開募股時1億1800萬美元的兩倍多，可能創下單日散戶買超紀錄。該公司並指出，自2024年以來，只有6檔股票曾出現單日散戶買超超過2億5000萬美元的情況。\n\n這項估算參考歷來股票上市首日的散戶交易紀錄，以及Anthropic在Hyperliquid平台的IPO前永續期貨交易量。這類無到期日的衍生性商品讓投資人押注未上市公司的估值，與股票掛牌後的買賣不同，因此交易熱度仍不能直接視為未來買盤。\n\n彭博另引述消息人士指出，Anthropic的IPO已獲數倍超額認購。彭博也將此次上市視為觀察人工智慧投資熱度的重要窗口，報導華爾街期待它帶動下一波人工智慧相關股票行情；這些期待能否實現，仍有待掛牌後的交易表現。",
+      "original_id": "event-05",
+      "source": {
+        "name": "中央社國際",
+        "published_at": "2026-11-12T03:38:35+08:00",
+        "reading_time_min": 1,
+        "url": "https://www.cna.com.tw/news/aopl/202611120007.aspx"
+      },
+      "source_evidence_note_zh": "中央社來源為已取得的報導節錄；Bloomberg Markets與Bloomberg Technology來源僅取得RSS摘要，未取得全文或完整影音。超額認購為彭博摘要中的消息人士說法，散戶買超金額與紀錄比較為Vanda Research的估算及資料，均未經獨立驗證。",
+      "supporting_sources": [
+        {
+          "source_name": "Bloomberg Markets",
+          "source_title": "Anthropic IPO Is ‘Jenga Block’ Holding Up Next Leg of AI Trade",
+          "source_url": "https://www.bloomberg.com/news/articles/2026-11-11/anthropic-ipo-is-jenga-block-holding-up-next-leg-of-ai-trade"
+        },
+        {
+          "source_name": "Bloomberg Technology",
+          "source_title": "Anthropic IPO Demand Surges as CoreWeave Calms AI Fears",
+          "source_url": "https://www.bloomberg.com/news/videos/2026-11-11/bloomberg-tech-11-10-2026-video"
+        }
+      ],
+      "title_zh": "Anthropic預計11月19日掛牌，研調估首日散戶買超達2.5億美元"
+    },
+    {
+      "bullets_zh": [],
+      "category": "vc-business",
+      "editorial_analysis_zh": "募資條件反映公司的資金需求與估值期待，投資人是否接受則是另一回事。部分投資人的疑慮值得關注，但不足以推論整輪募資受挫或市場全面轉向。",
+      "evidence_kind": "rss-summary",
+      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
+      "fetched_via": "rss",
+      "id": "2026-11-12-morning:event-06",
+      "is_headline": false,
+      "lede_zh": "OpenAI據報為新一輪募資提出至少300億美元的新資金需求，估值條件為1兆4000億美元。彭博引述知情人士指出，部分投資人認為條件過高；這些數字仍是募資洽談條件，並非已完成交易的結果。\n\n報導指出，OpenAI於9月下旬展開這一輪募資討論，在與表達興趣的潛在出資者初步接觸後提出條件。部分投資人的反應顯示，即使先前有參與意願，也不代表接受公司提出的估值與募資要求。",
+      "original_id": "event-06",
+      "source": {
+        "name": "Bloomberg Technology",
+        "published_at": "2026-11-11T21:39:14+00:00",
+        "reading_time_min": 1,
+        "url": "https://www.bloomberg.com/news/articles/2026-11-11/openai-anthropic-valuations-fuel-vc-fears-of-startup-correction"
+      },
+      "source_evidence_note_zh": "僅取得Bloomberg Technology的RSS摘要，未取得報導全文；送入文字在消息人士身分說明處中斷。現有資料未交代最終募資金額、成交估值或投資人是否退出，不能據此判定募資成敗。",
+      "supporting_sources": [],
+      "title_zh": "OpenAI據報以1.4兆美元估值洽談募資，部分投資人認為條件過高"
+    },
+    {
+      "bullets_zh": [],
+      "category": "vc-business",
+      "editorial_analysis_zh": "董事會調查、管理階層去留與出口合規要求是不同層次的風險。判讀後續發展時，應分別確認正式調查結果、人事決議與監管措施，不能把市場反應或議員要求當成既定結論。",
+      "evidence_kind": "rss-summary",
+      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
+      "fetched_via": "rss",
+      "id": "2026-11-12-morning:event-07",
+      "is_headline": false,
+      "lede_zh": "輝達董事會已委任律師事務所，調查執行長黃仁勳與一名被指涉嫌為中國從事間諜活動的女子之關係。《衛報》報導，董事會聘請紐約律師事務所 Wachtell, Lipton, Rosen & Katz，由合夥人 Joon Kim 主導調查；相關情報活動指控尚不能視為已獲證實。\n\n調查之外，黃仁勳的職務前景也受到關注。《紐約時報》報導，董事會預計開會討論他的去留；彭博所載消息則指，董事會正準備撤換黃仁勳。這些消息仍屬會議預期及人事變動報導，不能據此認定他已遭撤職。輝達股價在11月11日盤後交易下跌，彭博將市場反應與投資人評估黃仁勳可能離任的影響連結。\n\n美國國會方面，眾議員 Brian Mast、John Moolenaar 與 Rick Crawford 已致函黃仁勳，要求他就與 Megaspeed 人員 Alice Huang 的關係，向相關委員會進行聯合閉門簡報。Moolenaar 表示，若黃仁勳未同意出席，可能遭到傳喚；Mast 也表示，其委員會正準備在未獲回應時發出傳票。這與已正式發出傳票仍有區別。\n\n另一名眾議員 Raja Krishnamoorthi 也要求黃仁勳說明，並主張檢視輝達對中國的出口許可、加強防止先進美國晶片流向受限制中國實體的管制。相關要求已從個人關係爭議延伸至公司治理與出口合規，但目前仍是議員提出的主張，並非已公布的新管制措施。",
+      "original_id": "event-07",
+      "source": {
+        "name": "The Guardian",
+        "published_at": "2026-11-11T21:59:07+00:00",
+        "reading_time_min": 1,
+        "url": "https://www.theguardian.com/technology/2026/nov/11/nvidia-hires-leading-us-law-firm-to-investigate-jensen-huang-relationship"
+      },
+      "source_evidence_note_zh": "TechCrunch 取得內容為報導節錄；《衛報》、《紐約時報》及彭博各篇僅取得 RSS 摘要，未取得完整內文。彭博關於董事會準備撤換黃仁勳的摘要轉述《華爾街日報》，未取得後者原文。TechCrunch 節錄表示，輝達未立即回應其置評要求。現有資料不足以確認情報活動指控、正式撤換決議或傳票已發出。",
+      "supporting_sources": [
+        {
+          "source_name": "NYT",
+          "source_title": "Nvidia’s Board Is Expected to Meet to Discuss Jensen Huang’s Future",
+          "source_url": "https://www.nytimes.com/2026/11/11/technology/nvidia-jensen-huang.html"
+        },
+        {
+          "source_name": "Bloomberg Technology",
+          "source_title": "Nvidia Preparing to Oust Jensen Huang After Affairs, WSJ Says",
+          "source_url": "https://www.bloomberg.com/news/articles/2026-11-11/nvidia-ceo-had-an-affair-with-health-executive-at-firm-nyt-says"
+        },
+        {
+          "source_name": "TechCrunch",
+          "source_title": "Congress to call Jensen Huang in to answer for alleged Chinese spy affair",
+          "source_url": "https://techcrunch.com/2026/11/11/congress-to-call-jensen-huang-in-to-answer-for-alleged-chinese-spy-affair/"
+        },
+        {
+          "source_name": "Bloomberg Technology",
+          "source_title": "Nvidia China Scandal Demands Answers, Says Congressman",
+          "source_url": "https://www.bloomberg.com/news/videos/2026-11-11/nvidia-china-scandal-demands-answers-says-congressman-video"
+        },
+        {
+          "source_name": "Bloomberg Markets",
+          "source_title": "Nvidia Tumbles as Investors Consider Future Without CEO Huang",
+          "source_url": "https://www.bloomberg.com/news/articles/2026-11-11/nvidia-tumbles-as-investors-consider-future-without-ceo-huang"
+        }
+      ],
+      "title_zh": "輝達董事會委任律師調查黃仁勳，國會要求出席閉門說明"
+    },
+    {
+      "bullets_zh": [],
+      "category": "vc-business",
+      "editorial_analysis_zh": "人工智慧基礎設施投資同時受到晶片流向審查與當地設置規範影響。對業者而言，是否正式列管、出口許可如何變動，以及資料中心審查標準，應分開評估，避免將政策爭論誤認為已生效的供應限制。",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "fetched_via": "publisher",
+      "id": "2026-11-12-morning:event-08",
+      "is_headline": false,
+      "lede_zh": "輝達客戶 Megaspeed 涉嫌將美國晶片轉運至中國，引發美國政府內部對出口管制執行的爭議。知情人士表示，美國財長貝森特曾在白宮戰情室會議中，當面質問商務部長盧特尼克，為何尚未將 Megaspeed 列入商務部實體清單；盧特尼克回應會了解此事。相關交涉來自知情人士說法，並非已公布的列管決定。\n\n依這些人士的說法，盧特尼克過去一年曾阻擋其他官員追究 Megaspeed 責任的行動，顧慮是可能使美中貿易戰升高；商務部次長凱斯勒也曾多次接獲相關警告，但表示應由部長決定。Megaspeed 非法轉運晶片的說法目前仍屬指控。\n\n這場爭議也讓東南亞人工智慧供應鏈面臨更多不確定性。泰國 IMC Institute 執行董事塔納猜向中央社表示，美國可能更密切監控泰國及其他東南亞國家的繪圖處理器流向，尤其關注是否有企業透過第三地將運算能力輸往中國。他認為，泰國資料中心取得晶片原已不易，若管制進一步收緊，短期發展可能受影響，但不至於改變人工智慧產業的長期趨勢。\n\n另一方面，泰國內閣已批准將資料中心分為七個等級的新監管架構，既有計畫須遵守統一營運及監督標準，新案與尚未獲准的項目則將接受更嚴格審查，涵蓋選址、電力、供水、社區影響及經濟效益。這是泰國本地監管制度的調整，不等同美國已對泰國實施新的晶片限制；晶片取得難度可能增加，仍是專家的條件式預測。",
+      "original_id": "event-08",
+      "source": {
+        "name": "中央社國際",
+        "published_at": "2026-11-12T03:59:37+08:00",
+        "reading_time_min": 1,
+        "url": "https://www.cna.com.tw/news/aopl/202611120008.aspx"
+      },
+      "source_evidence_note_zh": "兩篇中央社來源均取得報導節錄，未取得或核對其所引用的 Axios、Bangkok Post 原文。美國官員交涉及阻擋列管的說法來自中央社轉述的知情人士；東南亞晶片供應影響為受訪專家預測，來源未提供美國已實施新限制的證據。",
+      "supporting_sources": [
+        {
+          "source_name": "中央社財經",
+          "source_title": "黃仁勳爭議牽動東南亞晶片供應鏈監管　泰專家：資料中心受考驗",
+          "source_url": "https://www.cna.com.tw/news/afe/202611110321.aspx"
+        }
+      ],
+      "title_zh": "Megaspeed列管爭議升溫，泰國專家憂晶片監管收緊衝擊資料中心"
+    },
+    {
+      "bullets_zh": [],
+      "category": "vc-business",
+      "editorial_analysis_zh": "",
+      "evidence_kind": "rss-summary",
+      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
+      "fetched_via": "rss",
+      "id": "2026-11-12-morning:event-09",
+      "is_headline": false,
+      "lede_zh": "英國 Fractile 取得7.2億美元融資，持續投入人工智慧專用晶片領域。TechCrunch 報導指出，這筆融資使 Fractile 成為該領域募資規模居前的業者之一。\n\n這項消息呈現資金持續投入人工智慧專用晶片的動向，但募資規模本身不能證明產品效能或商業進展，也不能據此判定 Fractile 已在晶片市場取得領先地位。",
+      "original_id": "event-09",
+      "source": {
+        "name": "TechCrunch",
+        "published_at": "2026-11-11T19:34:55+00:00",
+        "reading_time_min": 1,
+        "url": "https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips/"
+      },
+      "source_evidence_note_zh": "僅取得 TechCrunch 標題與 RSS 摘要，未取得報導全文；7.2億美元融資金額及英國公司資訊來自標題。現有資料未提供投資人名單、估值、晶片效能或量產時程，募資地位亦未經獨立核驗。",
+      "supporting_sources": [],
+      "title_zh": "英國Fractile獲7.2億美元融資，投入人工智慧專用晶片競爭"
+    },
+    {
+      "bullets_zh": [],
+      "category": "vc-business",
+      "editorial_analysis_zh": "這項承諾把資料中心用電需求與成本由誰承擔連在一起；後續判斷重點應是具體供電及費率安排，而非將目標視為已落實的成果。",
+      "evidence_kind": "rss-summary",
+      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
+      "fetched_via": "rss",
+      "id": "2026-11-12-morning:event-10",
+      "is_headline": false,
+      "lede_zh": "Microsoft提出資料中心供電目標，希望找到不依賴政府補貼、也不增加其他電力用戶成本的供電方式，將算力建設的電力成本分攤問題納入公司承諾。\n\n這是Microsoft提出的方向，並非已完成的供電或費率安排。目前取得的資訊未交代具體執行方案、適用地區與時程，也不足以確認公司已取得所需電力或落實上述目標。",
+      "original_id": "event-10",
+      "source": {
+        "name": "Bloomberg Technology",
+        "published_at": "2026-11-11T20:33:16+00:00",
+        "reading_time_min": 1,
+        "url": "https://www.bloomberg.com/news/articles/2026-11-11/microsoft-vows-to-pay-its-own-way-to-power-data-centers"
+      },
+      "source_evidence_note_zh": "僅取得Bloomberg Technology的RSS摘要，未取得報導全文；供電目標屬Microsoft自述，尚無執行細節或成果可供核對。",
+      "supporting_sources": [],
+      "title_zh": "Microsoft提出資料中心供電目標：不靠政府補貼、不推高其他用戶成本"
+    },
+    {
+      "bullets_zh": [],
+      "category": "vc-business",
+      "editorial_analysis_zh": "評估人工智慧基礎建設供給時，應區分宣布計畫與實際落地；地方接受度、許可與供電條件，都是不能由投資宣示取代的檢視項目。",
+      "evidence_kind": "rss-summary",
+      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
+      "fetched_via": "rss",
+      "id": "2026-11-12-morning:event-11",
+      "is_headline": false,
+      "lede_zh": "資料中心建設熱潮正遭遇地方反對、許可延誤與電力資源競爭。TechCrunch的影音與節目內容指出，這些現實障礙拖慢建設，而更基本的問題是，許多已宣布的專案可能根本不會興建。\n\n這項判斷涉及人工智慧基礎建設從宣布到落地的落差，但目前取得的內容未列出個別取消案、未落地比例或相關投資損失，不能據此推算整體建設規模將縮減多少。",
+      "original_id": "event-11",
+      "source": {
+        "name": "TechCrunch",
+        "published_at": "2026-11-11T20:15:15+00:00",
+        "reading_time_min": 1,
+        "url": "https://techcrunch.com/video/why-the-data-center-you-dread-might-never-even-be-built/"
+      },
+      "source_evidence_note_zh": "僅取得TechCrunch影音與TechCrunch AI節目稿的RSS摘要，兩筆摘要文字相同，合併為同一事件，不視為兩份獨立佐證；未取得完整影音、逐字稿或報導全文。",
+      "supporting_sources": [
+        {
+          "source_name": "TechCrunch AI",
+          "source_title": "How backlash and red tape continue to slow data centers post-Blue Wave",
+          "source_url": "https://techcrunch.com/podcast/how-backlash-and-red-tape-continue-to-slow-data-centers-post-blue-wave/"
+        }
+      ],
+      "title_zh": "資料中心擴張遇地方反對與供電競爭，宣布計畫未必落地"
+    },
+    {
+      "bullets_zh": [],
+      "category": "security",
+      "editorial_analysis_zh": "兩起事件的實際後果不同，不能將超市商品損失套用到血液中心。共同的政策焦點，是如何讓連網實體設備落實基本資安規範，而不只關注資料是否外洩。",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "fetched_via": "publisher",
+      "id": "2026-11-12-morning:event-28",
+      "is_headline": false,
+      "lede_zh": "法國超市冷藏設備與血液中心冷藏系統近期接連遭到網路攻擊，讓連網設備的資安風險延伸至實體設施。法國國民議會已將強化基礎設施數位安全的法案重新列入議程，恢復審議；法案先前已於2025年獲參議院通過。\n\n10月中旬，法國數百家家樂福、Monoprix等大型零售商的冷藏或冷凍設備控制系統遭到攻擊，設備溫度升高，業者因此丟棄大量商品。法國外交部長巴霍指控伊朗是幕後黑手，伊朗則否認。另一起發生於11月稍早的攻擊涉及法國血液中心冷藏庫，庫內存放血液樣本及供輸血、製藥使用的血漿袋，但未造成影響或損失，巴黎檢方正調查此案。\n\n恢復審議的法案旨在將歐盟3項指令轉為法國法律，包括2022年通過的NIS 2。這項指令要求重要或關鍵實體落實最低限度的資安規則，例如定期更新系統、提高員工對網路釣魚的警覺，以及制定安全政策。\n\n法案也將擴大納管範圍，涵蓋公共行政、郵政、廢棄物管理與食品等領域，違規者可能面臨高額罰款，企業高階主管也可能被追究個人責任。法國國家資訊系統安全局的工業系統指南則提醒，因設備運作正常而不調整設定，或以合約禁止修改系統、連資安措施也不能實施，都可能使連網設備暴露於風險。",
+      "original_id": "event-28",
+      "source": {
+        "name": "中央社國際",
+        "published_at": "2026-11-11T22:34:53+08:00",
+        "reading_time_min": 1,
+        "url": "https://www.cna.com.tw/news/aopl/202611110340.aspx"
+      },
+      "source_evidence_note_zh": "依據中央社已取得的報導節錄撰寫；來源標記為publisher-excerpt，非另行取得的完整網頁或官方法案文本。",
+      "supporting_sources": [],
+      "title_zh": "法國冷藏設備接連遭網攻，國民議會恢復審議基礎設施資安法案"
+    },
+    {
+      "bullets_zh": [],
+      "category": "security",
+      "editorial_analysis_zh": "這項措施凸顯人工智慧代理代辦服務的權限界線：能否替使用者操作，不只取決於代理能力，也取決於平台是否允許其存取帳號與執行交易。",
+      "evidence_kind": "rss-summary",
+      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
+      "fetched_via": "rss",
+      "id": "2026-11-12-morning:event-29",
+      "is_headline": false,
+      "lede_zh": "United Airlines正著手阻擋第三方人工智慧代理代訂機票及存取顧客帳號，時間點落在假期旅遊旺季之前。隨著航空業使用人工智慧的情形增加，相關隱私疑慮也受到關注；這次限制同時涉及訂票操作與顧客帳號存取兩個環節。",
+      "original_id": "event-29",
+      "source": {
+        "name": "Bloomberg Technology",
+        "published_at": "2026-11-11T18:50:22+00:00",
+        "reading_time_min": 1,
+        "url": "https://www.bloomberg.com/news/articles/2026-11-11/united-blocks-ai-agents-from-booking-flights-ahead-of-holidays"
+      },
+      "source_evidence_note_zh": "僅取得Bloomberg Technology的RSS摘要，未取得報導全文。現有資料未交代具體封鎖方式、適用服務、實施範圍或是否曾發生資料外洩。",
+      "supporting_sources": [],
+      "title_zh": "United Airlines著手阻擋第三方人工智慧代理訂票與存取帳號"
+    },
+    {
+      "bullets_zh": [],
+      "category": "dev",
+      "editorial_analysis_zh": "代理工具目錄必須兼顧資訊新鮮度與變更審核。此設計把同步和發布拆開，有助於釐清自動化邊界，但團隊仍須處理延遲、冷啟動與核准等待造成的資訊落差。",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "fetched_via": "publisher",
+      "id": "2026-11-12-morning:event-24",
+      "is_headline": false,
+      "lede_zh": "AWS提出事件驅動的Agent Registry更新架構，讓部署於Amazon Bedrock AgentCore的MCP伺服器變更後，自動將最新工具資訊同步至目錄。這套範例支援單一帳號及跨帳號環境，目的是減少工具已更新、目錄卻仍保留舊結構定義的落差。\n\n流程由CloudTrail擷取UpdateAgentRuntime呼叫，再由EventBridge將事件送至Lambda。Lambda解析伺服器識別資訊，透過AgentCore Identity取得OAuth權杖，向MCP伺服器查詢目前的工具清單，再比對目錄中的名稱、描述及輸入結構；確認有變更後，才更新對應紀錄。跨帳號部署則將伺服器所在帳號的事件，轉送至集中管理目錄的帳號。\n\n自動同步不等於自動對外發布。依AWS說明，紀錄更新後會回到草稿狀態，使用者仍看到先前核准的版本，必須由管理者或負責審核的人員再次核准，新工具資訊才可被搜尋及使用。範例也只會更新既有且已核准的紀錄，不會替新發現的MCP伺服器自動建立登錄資料。\n\n這套設計亦非即時同步：AWS列出的CloudTrail事件傳遞延遲約為5至15分鐘。另一項已知限制是，若MCP伺服器處於冷啟動狀態並回傳零個工具，現有Lambda不會重試；AWS將指數退避重試及工具數為零時略過更新，列為可增補的可靠性措施。\n\n對採用這套範例的團隊而言，目錄更新速度仍受事件傳遞、伺服器回應與人工審核影響。它提供的是把變更偵測、身分驗證及發布治理串接起來的參考流程，而非已排除所有同步與安全風險的完整保證。",
+      "original_id": "event-24",
+      "source": {
+        "name": "AWS Machine Learning",
+        "published_at": "2026-11-11T20:52:48+00:00",
+        "reading_time_min": 1,
+        "url": "https://aws.amazon.com/blogs/machine-learning/automating-aws-agent-registry-updates-with-push-based-architecture/"
+      },
+      "source_evidence_note_zh": "取得AWS Machine Learning的正文節錄，來源標記為publisher-excerpt。內容為AWS提出的架構與實作範例，未取得獨立部署測試或安全驗證資料；延遲、審核流程及已知限制均依該節錄整理。",
+      "supporting_sources": [],
+      "title_zh": "AWS提出Agent Registry推送同步架構，MCP工具更新仍須經審核發布"
+    },
+    {
+      "bullets_zh": [],
+      "category": "ai-tools",
+      "editorial_analysis_zh": "這是串流模型軟體費用的計量方式調整，不能直接解讀為整體成本降低。採購與開發團隊應同時確認音訊計量規則、端點費用，以及連線中斷時的回報與對帳方式。",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "fetched_via": "publisher",
+      "id": "2026-11-12-morning:event-26",
+      "is_headline": false,
+      "lede_zh": "AWS宣布，Amazon SageMaker AI雙向串流推論新增用量回報機制，讓模型供應商能依即時工作階段中的實際用量，計算AWS Marketplace軟體費用。Deepgram是首發合作夥伴，支援語音轉文字與文字轉語音的用量計費；託管模型的SageMaker AI端點基礎設施費用仍須另外支付。\n\n這項變更處理的是串流服務與一般請求回應不同的計費問題。依AWS說明，一般推論可在HTTP回應標頭提供計費數量，但雙向串流的用量會隨工作階段持續累積，直到結束才知道總量，因此不能只靠單次回應標頭回報。\n\n新機制在推論資料連線旁，另開一條WebSocket中繼資料連線，由模型伺服器逐步傳送用量紀錄。AWS建議隨用量累積回報，以減少連線意外結束時尚未回報的數量。若計量連線中斷，預設仍會繼續推論；供應商也可設定停止推論，在服務持續可用與計量連續性之間作取捨。\n\n對使用轉錄、客服中心、語音代理或字幕服務的企業而言，重點是看清楚產品如何定義計費單位。AWS舉例，若產品按音訊秒數收費，12分鐘的計量音訊對應720單位，但連線開啟12分鐘，不代表一定產生同等音訊用量。供應商仍須核對用量回報、Marketplace報表與買方帳單；資料成功傳送，也不等於已成功計費。",
+      "original_id": "event-26",
+      "source": {
+        "name": "AWS Machine Learning",
+        "published_at": "2026-11-11T15:10:23+00:00",
+        "reading_time_min": 1,
+        "url": "https://aws.amazon.com/blogs/machine-learning/introducing-usage-based-pricing-for-amazon-sagemaker-ai-bidirectional-streaming/"
+      },
+      "source_evidence_note_zh": "依據AWS Machine Learning官方文章節錄（publisher-excerpt）撰寫，未獨立測試串流、計量或帳務結果。來源未提供具體費率、節省比例或完整服務可用區域。",
+      "supporting_sources": [],
+      "title_zh": "SageMaker雙向串流新增用量計費支援，Deepgram為首發夥伴"
+    },
+    {
+      "bullets_zh": [],
+      "category": "taiwan",
+      "editorial_analysis_zh": "此次草案不僅新增技術，也調整既有項目的名稱與範圍。相關業者檢視技術保護要求時，應同時留意新增項目及既有項目的修正，而非只看清單總數。",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "fetched_via": "publisher",
+      "id": "2026-11-12-morning:event-12",
+      "is_headline": false,
+      "lede_zh": "國科會11月11日預告修正國家核心關鍵技術項目，擬新增4項、變更6項，清單總數預計由42項增至46項。新增範圍涵蓋高階AI晶片載板、無人機與低軌衛星通訊等領域，目前仍在預告階段，尚未完成審認及公告程序。\n\n新增技術包括國科會主管的「低軌道衛星通訊酬載軟體定義無線通信及波束合成控制技術」，以及經濟部主管的「IC封測－高階AI晶片載板技術」、「無人機姿態穩定之虛擬化雙作業系統飛控技術」。另一項為衛福部主管的「腸病毒A71型（EV-A71）疫苗製造技術」。\n\n既有項目也將調整名稱與涵蓋內容。例如，「網路主動防禦技術」擬改為「AI網路主動防禦技術」；量子位元項目則由設計與製程，調整為設計、製作、量測與操控。衛星操控與太空規格影像感測器相關項目也列入名稱變更。\n\n國科會表示，此次修正旨在強化核心關鍵技術營業秘密保護，草案已經各部會盤點、評估並徵詢各界意見。預告期間仍將蒐集建議，交由技術主管機關研議，預定年底前召開審議會進行技術項目審認，再送行政院公告；最終清單與保護範疇仍須以後續程序結果為準。",
+      "original_id": "event-12",
+      "source": {
+        "name": "中央社財經",
+        "published_at": "2026-11-11T19:41:44+08:00",
+        "reading_time_min": 1,
+        "url": "https://www.cna.com.tw/news/afe/202611110311.aspx"
+      },
+      "source_evidence_note_zh": "取得中央社報導的出版者節錄，來源標記為publisher-excerpt，非全文取得；草案內容與程序說明均依節錄中的國科會說法整理。",
+      "supporting_sources": [],
+      "title_zh": "國科會預告增修核心關鍵技術清單，納高階AI晶片載板與低軌衛星通訊"
+    },
+    {
+      "bullets_zh": [],
+      "category": "taiwan",
+      "editorial_analysis_zh": "AI相關需求已反映在多個電子產業的營收，但總額增幅、產業成長因素與個別公司表現仍須分開判讀，不能將整體成長視為所有上櫃企業的共同趨勢。",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "fetched_via": "publisher",
+      "id": "2026-11-12-morning:event-13",
+      "is_headline": false,
+      "lede_zh": "上櫃公司10月合計營收達新台幣3678億元，較去年同期成長47%；前10月累計營收3兆2870億元，年增34%。櫃買中心11月11日公布統計，人工智慧伺服器液冷散熱、記憶體與雲端機房建置需求，是帶動相關電子產業營收成長的重要因素。\n\n依櫃買中心說明，10月營收年增的主要產業包括半導體、電腦及周邊設備、電子通路。半導體業受惠於AI伺服器液冷散熱系統與記憶體需求；電腦及周邊設備業則因AI需求，帶動工業用記憶體與中央處理器出貨成長，電子通路業也受惠於AI雲端機房建置及記憶體產品需求。\n\n累計前10月，營收成長的主要產業另包括其他電子業。櫃買中心指出，AI應用帶動先進封裝需求，加上貴金屬價格上漲，共同推升該產業累計營收，成長因素並非全數來自AI。\n\n此次統計涵蓋897家上櫃公司，包括30家KY公司，均已於11月10日前完成申報。其中，10月營收年增者622家、衰退者272家、持平者3家；前10月累計營收則有654家成長、242家衰退、1家持平，整體營收增加並不代表所有公司同步受惠。",
+      "original_id": "event-13",
+      "source": {
+        "name": "中央社財經",
+        "published_at": "2026-11-11T19:41:42+08:00",
+        "reading_time_min": 1,
+        "url": "https://www.cna.com.tw/news/afe/202611110310.aspx"
+      },
+      "source_evidence_note_zh": "來源為中央社財經已取得的報導正文節錄，非另行取得的櫃買中心原始統計資料；產業成長因素依報導中的櫃買中心說明整理。",
+      "supporting_sources": [],
+      "title_zh": "上櫃公司10月營收年增47%，AI伺服器與記憶體需求帶動電子產業"
+    },
+    {
+      "bullets_zh": [],
+      "category": "taiwan",
+      "editorial_analysis_zh": "旺矽財報提供觀察半導體測試供應鏈的具體數字；評估後續成長時，應區分已公布業績、公司所述產能利用情況，以及仍在開發或驗證中的客戶計畫。",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "fetched_via": "publisher",
+      "id": "2026-11-12-morning:event-14",
+      "is_headline": false,
+      "lede_zh": "半導體探針卡與測試設備商旺矽第三季營收、獲利再創新高，合併營收新台幣59.04億元，季增13%、年增73%；歸屬母公司業主獲利約18.8億元，每股純益19.18元，連續三季單季每股純益超過10元。\n\n累計前三季，旺矽合併營收150.7億元，年增58%；稅後獲利46.3億元，較去年同期倍增，每股純益47.26元。第三季合併毛利率接近62%，報導指出，主要反映產品組合變化與稼動率。\n\n旺矽將業務成長連結至全球AI客戶持續擴建及AI雲端服務供應商加速資本支出，並表示公司在中高階測試介面的全球市占增加。產能方面，公司指出，垂直式探針卡與MEMS探針卡自2025年下半年起進入滿載，懸臂式探針卡也因客戶新晶片訂單而持續滿載。\n\n後續布局上，旺矽表示，與客戶的開發合作計畫能見度已達2028年，預期今年營運維持強勁雙位數百分比成長、營收逐季向上；公司也正與國際客戶進行共同封裝光學（CPO）設備驗證及設計討論。這些展望與驗證進度均屬公司說法，開發合作計畫的能見度並不等同已確認至2028年的營收。",
+      "original_id": "event-14",
+      "source": {
+        "name": "中央社財經",
+        "published_at": "2026-11-11T19:23:31+08:00",
+        "reading_time_min": 1,
+        "url": "https://www.cna.com.tw/news/afe/202611110305.aspx"
+      },
+      "source_evidence_note_zh": "來源為中央社財經已取得的報導正文節錄，未另行取得完整財報或公司簡報。市占、產能、客戶合作與營運展望依報導所載公司說法整理，未經獨立驗證。",
+      "supporting_sources": [],
+      "title_zh": "旺矽第三季營收、獲利創高，每股純益19.18元"
+    },
+    {
+      "bullets_zh": [],
+      "category": "taiwan",
+      "editorial_analysis_zh": "雙鴻本季數字顯示，營收擴張不必然帶來相同比例的獲利成長。觀察散熱供應商表現，除了出貨與營收，也需要同時追蹤毛利率及淨利變化。",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "fetched_via": "publisher",
+      "id": "2026-11-12-morning:event-15",
+      "is_headline": false,
+      "lede_zh": "散熱廠雙鴻第三季營收明顯成長，獲利增幅卻未同步。公司11月11日公布財報，單季營收新台幣97.87億元，年增64.2%；歸屬母公司淨利10.8億元，季增11.5%、年增10.9%。每股純益11.59元，為歷史次高，僅低於今年第一季的12.61元。\n\n第三季毛利率為25.65%，較去年同期下降4.12個百分點，也比第二季減少2.77個百分點。累計前三季，雙鴻歸屬母公司淨利32.13億元，年增95.6%，每股稅後純益34.59元，累計獲利仍較去年同期明顯增加。\n\n展望後續出貨，董事長林育申先前表示，輝達Vera Rubin及AWS、Meta等ASIC的AI新品將於今年底開始出貨，並預期11、12月是公司今年營運高峰，動能可望延續至明年第一季。上述時程與營運走勢屬公司預測，仍須與後續實際業績分開看待。\n\n林育申也提及第三季處於新舊產品轉換期，但現有資料並未明確交代毛利率下降的原因，不能直接將轉換期或特定AI產品訂單，視為本季利潤率變化的已確認解釋。",
+      "original_id": "event-15",
+      "source": {
+        "name": "中央社財經",
+        "published_at": "2026-11-11T22:36:59+08:00",
+        "reading_time_min": 1,
+        "url": "https://www.cna.com.tw/news/afe/202611110343.aspx"
+      },
+      "source_evidence_note_zh": "來源為中央社財經已取得的報導正文節錄，未另行取得完整財報。產品出貨時程與營運高峰為報導所載董事長先前預測，未經獨立驗證；節錄未提供毛利率下降的明確原因。",
+      "supporting_sources": [],
+      "title_zh": "雙鴻第三季營收增64.2%，淨利增幅落後、毛利率降至25.65%"
+    },
+    {
+      "bullets_zh": [],
+      "category": "enterprise-cases",
+      "editorial_analysis_zh": "這個案例的重點不只是擴大模型，而是將「每一份運算該分給誰」本身變成機器學習問題。評估其商業價值時，仍應區分公司宣稱的整體排序改善，與個別配置機制或人工智慧代理各自帶來的貢獻。",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "fetched_via": "publisher",
+      "id": "2026-11-12-morning:event-20",
+      "is_headline": false,
+      "lede_zh": "Meta公開介紹廣告運算資源配置系統Intelligent Delivery，透過機器學習判斷不同廣告請求、模型與硬體能從額外運算中獲得多少效益，再動態分配資源。公司指出，廣告排序模型正朝大型語言模型規模成長，硬體供給卻難以同步擴張，因此必須在有限容量與嚴格延遲限制下，提高整體系統效率。\n\n這套系統先以共享模型理解每筆請求，預測調整資源對排序結果、運算消耗與延遲的影響，再由不同層級的決策機制執行。配置範圍涵蓋將流量導向哪個資料中心區域、選擇何種硬體，以及單一主機內每筆請求能取得多少資源。Meta強調，不同工作負載適合的硬體不同，不能只以單一晶片的速度判斷配置優劣。\n\nMeta也將人工智慧代理導入最佳化流程，讓代理閱讀程式碼、設計文件與歷年實驗紀錄，找出值得測試的調整，並設計、執行實驗；最終變更仍須由工程師審查核准後才會上線。公司表示，這種做法讓最佳化週期從數月縮短至數週。\n\n成效方面，Meta宣稱，從2017年至2026年上半年，Intelligent Delivery在模型與系統既有進展之外，為主要服務的廣告排序效能帶來約10%的額外改善。後續研究方向包括將請求理解與配置決策整合進單一即時模型，以及針對GPU的固定資源區塊、批次處理與記憶體特性，重新設計資源調配機制。",
+      "original_id": "event-20",
+      "source": {
+        "name": "Meta Engineering",
+        "published_at": "2026-11-11T17:00:38+00:00",
+        "reading_time_min": 1,
+        "url": "https://engineering.fb.com/2026/11/11/ml-applications/intelligent-delivery-serve-better-ads/"
+      },
+      "source_evidence_note_zh": "取得來源為Meta Engineering官方文章節錄，標記為publisher-excerpt，並非另行取得的完整報導。架構、效能數據與開發週期變化均為Meta自述，未有本次資料之外的獨立驗證。",
+      "supporting_sources": [],
+      "title_zh": "Meta公開Intelligent Delivery，以機器學習調配廣告排序運算資源"
+    },
+    {
+      "bullets_zh": [],
+      "category": "enterprise-cases",
+      "editorial_analysis_zh": "",
+      "evidence_kind": "rss-summary",
+      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
+      "fetched_via": "rss",
+      "id": "2026-11-12-morning:event-21",
+      "is_headline": false,
+      "lede_zh": "Adobe與Disney達成多年合作，將協助開發客製化人工智慧模型與工具，供Disney旗下主題樂園、影視製作與運動媒體業務使用。\n\n合作範圍橫跨Disney多個業務領域，聚焦依企業需求開發模型及工具，而非僅限於單一內容製作環節。",
+      "original_id": "event-21",
+      "source": {
+        "name": "Bloomberg Technology",
+        "published_at": "2026-11-11T19:14:15+00:00",
+        "reading_time_min": 1,
+        "url": "https://www.bloomberg.com/news/videos/2026-11-11/how-adobe-is-helping-disney-with-custom-ai-tools-video"
+      },
+      "source_evidence_note_zh": "本則僅取得Bloomberg Technology影音報導的RSS摘要，未取得影片逐字稿或報導全文。現有資料未交代模型名稱、授權條件、導入時程或使用成效。",
+      "supporting_sources": [],
+      "title_zh": "Adobe與Disney簽訂多年合作，開發客製人工智慧模型與工具"
+    },
+    {
+      "bullets_zh": [],
+      "category": "enterprise-cases",
+      "editorial_analysis_zh": "企業導入維運代理時，模型選擇與操作授權是不同問題。此案例的參考價值在於明確劃分兩者責任；成效數字則仍須與提供方的量測條件分開看待。",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "fetched_via": "publisher",
+      "id": "2026-11-12-morning:event-22",
+      "is_headline": false,
+      "lede_zh": "DXC Technology在企業IT維運平台DXC OASIS中，將模型存取與代理執行工作拆成兩層：底層透過Amazon Bedrock連接多種模型，上層則由DXC負責工作協調、政策執行、人工核准與稽核。AWS與DXC共同發布的案例說明，這項設計不只處理模型選擇，也把代理能否修改正式環境的權限問題獨立出來。\n\n依案例介紹，平台透過同一介面使用Anthropic Claude、Amazon Nova、Meta Llama及開放權重模型，並以Bedrock Guardrails處理內容過濾、個人識別資訊遮蔽及禁止主題政策。推論流量經AWS PrivateLink傳送，不經公開網際網路。不過，統一介面不代表模型行為一致；替換模型前，DXC仍須以自身任務測試組合評估，而非只調整路由。\n\n在案例提供的虛構航空公司示範環境中，代理可診斷伺服器磁碟空間問題、提出處理計畫，但必須取得工程師明確核准，才能變更正式伺服器。執行了哪些指令、由誰核准及執行時間，則由上層系統留下紀錄，不依賴代理自行描述。DXC並表示，各類代理角色起初都只有唯讀權限，再逐步授予更大的操作範圍。\n\nDXC表示，OASIS於2026年3月正式推出後，在56個已量測使用案例中，平均問題解決時間縮短95%。這是案例提供方公布的成效，不能視為獨立驗證結果；其架構上的重點，則是將模型輸出控管與實際操作授權分開，避免把內容防護直接等同於代理執行安全。",
+      "original_id": "event-22",
+      "source": {
+        "name": "AWS Machine Learning",
+        "published_at": "2026-11-11T20:45:45+00:00",
+        "reading_time_min": 1,
+        "url": "https://aws.amazon.com/blogs/machine-learning/how-dxc-technology-built-a-multi-model-ai-substrate-on-amazon-bedrock/"
+      },
+      "source_evidence_note_zh": "取得AWS Machine Learning刊載、與DXC共同撰寫的正文節錄，來源標記為publisher-excerpt。架構、治理機制與成效均來自案例提供方，未取得獨立測試或第三方驗證資料；文中航空公司情境為示範環境，非真實客戶實績。",
+      "supporting_sources": [],
+      "title_zh": "DXC以Bedrock打造多模型維運架構，將模型存取與代理權限分層治理"
+    },
+    {
+      "bullets_zh": [],
+      "category": "enterprise-cases",
+      "editorial_analysis_zh": "這個案例將代理的用途從執行任務延伸到管理資訊取得；評估價值時，仍須區分「能提供回答」與「回答足以支持決策」。",
+      "evidence_kind": "rss-summary",
+      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
+      "fetched_via": "rss",
+      "id": "2026-11-12-morning:event-23",
+      "is_headline": false,
+      "lede_zh": "Databricks執行長Ali Ghodsi使用公司新版Genie代理，協助了解組織內部出現的問題，呈現人工智慧代理支援管理決策的使用情境。\n\nGhodsi表示，Databricks已有1萬2,000名員工，他不可能認識所有人，員工也未必願意直接向他坦承哪些事情出了差錯，因此使用Genie協助掌握情況。這項用途反映管理者希望藉人工智慧補足資訊落差，但僅憑這段使用者自述，尚不能判斷代理回答的準確性，或是否已改善組織績效。",
+      "original_id": "event-23",
+      "source": {
+        "name": "TechCrunch AI",
+        "published_at": "2026-11-11T15:00:00+00:00",
+        "reading_time_min": 1,
+        "url": "https://techcrunch.com/2026/11/11/databricks-new-ai-agent-tells-ceo-ali-ghodsi-the-unvarnished-truth/"
+      },
+      "source_evidence_note_zh": "僅取得TechCrunch AI的RSS摘要，未取得報導全文。現有資料未交代Genie使用的資料來源、查詢方式、權限設計或成效驗證，本文因此限於使用情境與當事人自述。",
+      "supporting_sources": [],
+      "title_zh": "Databricks執行長使用新版Genie代理，協助掌握公司內部問題"
+    }
+  ],
+  "breaking_news": [],
   "categories": [
     {
       "id": "ai-ml",
       "name_zh": "一手模型消息"
     },
     {
-      "id": "robotics",
-      "name_zh": "機器人／具身智慧"
+      "id": "research-papers",
+      "name_zh": "論文／評測"
     },
     {
       "id": "tech-product",
@@ -44,729 +712,39 @@
     {
       "id": "enterprise-cases",
       "name_zh": "企業人工智慧案例"
-    },
-    {
-      "id": "science",
-      "name_zh": "人工智慧研究趨勢"
     }
   ],
-  "articles": [
-    {
-      "id": "2026-11-11-morning:event-09",
-      "original_id": "event-09",
-      "category": "ai-ml",
-      "is_headline": true,
-      "title_zh": "DeepMind介紹AlphaProof Code，稱以300萬行證明驗證Signal核心加密",
-      "lede_zh": "Google DeepMind介紹AlphaProof Code，表示其人工智慧代理以Lean撰寫了300萬行證明，用於驗證Signal的核心加密。公司公布的工作聚焦於以證明驗證軟體，而非僅產生程式碼。\n\n這項成果目前屬於DeepMind的自述。公布的驗證對象是Signal核心加密，不能據此推論Signal整體軟體均已通過安全稽核；300萬行則是公司宣稱的證明規模，並非獨立安全評測結果。",
-      "bullets_zh": [],
-      "source": {
-        "name": "Google DeepMind",
-        "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
-        "published_at": "2026-11-10T12:02:28+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "rss",
-      "evidence_kind": "rss-summary",
-      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
-      "editorial_analysis_zh": "這項消息值得關注的方向，是人工智慧代理能否協助軟體驗證；判斷其實際價值，仍須區分證明的數量、涵蓋範圍與是否經過獨立檢驗。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "僅取得Google DeepMind官方RSS摘要，未取得公告全文、證明內容、驗證方法或獨立評測，無法進一步確認具體驗證範圍與限制。"
-    },
-    {
-      "id": "2026-11-11-morning:event-11",
-      "original_id": "event-11",
-      "category": "robotics",
-      "is_headline": false,
-      "title_zh": "DeepMind公布Gemini Robotics 2.5，同步推出開放安全評測",
-      "lede_zh": "DeepMind公布Gemini Robotics 2.5，以及名為ASIMOV-jailbreak的開放安全評測，將機器人模型更新與安全測試一併列為此次發布內容。\n\nArs Technica以「部分任務的成功表現最高可達兩倍」描述新模型，但未交代比較對象或基準。目前取得的資訊也未列出任務種類、測試條件或安全評測結果，因此不能將這項描述解讀為所有任務的全面提升，也不足以判定模型在實際部署中的安全性。",
-      "bullets_zh": [],
-      "source": {
-        "name": "Ars Technica",
-        "url": "https://arstechnica.com/google/2026/11/deepmind-reveals-gemini-robotics-2-5-and-open-safety-benchmark-asimov-jailbreak/",
-        "published_at": "2026-11-10T15:00:39+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "rss",
-      "evidence_kind": "rss-summary",
-      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
-      "editorial_analysis_zh": "模型更新與安全評測同步公布，提供了效能之外的觀察方向；但仍須取得測試範圍與方法，才能判斷兩者對實際機器人應用的意義。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "來源資訊：僅取得Ars Technica的RSS標題與摘要，未取得報導正文、模型文件或評測資料。發布項目依標題確認；效能說法保留報導歸屬，未經獨立驗證。"
-    },
-    {
-      "id": "2026-11-11-morning:event-12",
-      "original_id": "event-12",
-      "category": "robotics",
-      "is_headline": false,
-      "title_zh": "Ring成立機器人部門，推居家巡邏無人機與企業保全機器人",
-      "lede_zh": "Amazon旗下居家保全公司Ring成立Ring Robotics部門，並公布居家保全無人機Ring Drone Cam與企業巡邏機器人Ring Rover Cam。兩項產品分別鎖定住宅與商業場所，把保全攝影機從固定位置延伸到可移動的巡查設備。\n\nRing Drone Cam的定位是室內飛行攝影機，供使用者外出時巡查住家。依產品介紹，它可在不同房間之間移動，搭載2K攝影與LED照明，並支援排定巡邏時間。Ring也表示，產品可與既有保全裝置整合，設計上能在特定區域發出警報時前往查看；未使用時則停放於底座。\n\n面向企業的Ring Rover Cam可設定巡邏路線與時間，透過Ring手機應用程式提供連續4K影像，並可設定偵測到人時觸發錄影。它另配備可調整高度、用來查看障礙物後方的潛望式攝影機，以及讓遠端使用者與現場人員交談的雙向語音功能。\n\n這次布局的主要差異，在於居家產品採飛行方式查看不同空間，企業產品則以地面巡邏及遠端互動為主。上述功能屬產品介紹，尚不能據此判定實際巡查涵蓋率、警報判讀品質或保全成效。",
-      "bullets_zh": [],
-      "source": {
-        "name": "TechCrunch AI",
-        "url": "https://techcrunch.com/2026/11/10/ring-known-for-its-doorbell-cameras-launches-a-home-security-drone-and-an-enterprise-security-robot/",
-        "published_at": "2026-11-10T13:30:00+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-article",
-      "evidence_note_zh": "依來源文章整理。",
-      "editorial_analysis_zh": "Ring把既有保全裝置與移動攝影設備結合，顯示其產品布局正從定點監看延伸至巡邏服務。移動能力能否帶來可靠的保全價值，仍需實際使用與測試結果支持。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "已取得TechCrunch AI報導正文（publisher-article，標示為完整）。產品功能依報導及其中公司介紹整理，未取得獨立實測資料。"
-    },
-    {
-      "id": "2026-11-11-morning:event-13",
-      "original_id": "event-13",
-      "category": "tech-product",
-      "is_headline": false,
-      "title_zh": "Google新增兩款TPU，分攻機密模型運算與高記憶體需求",
-      "lede_zh": "Google擴充自家人工智慧晶片產品線，推出TPU 8tx與TPU 8i Max，分別面向機密模型訓練、推論，以及需要更大記憶體容量的工作負載。TechCrunch報導，兩款新品都是Google今年4月介紹的第八代TPU延伸版本，也反映其雲端業務降低對外部晶片供應商依賴的方向。\n\nTPU 8tx由Google與AMD共同設計，以TPU 8t為基礎。Google表示，這款晶片將安全機制直接建置於硬體層，讓敏感資料與模型權重即使在使用中，也能維持保護與隔離；其用途不只包括執行模型，也涵蓋機密環境下的訓練。\n\nGoogle另稱，TPU 8tx具備客製化推論網路，可在訓練同時執行推理，支援即時蒸餾與訓練小型模型。公司提出的應用情境，是企業利用自有資料訓練模型時，不必在不同裝置間搬移資料；這是Google對產品用途的說明，並非獨立安全驗證結果。\n\n另一款TPU 8i Max則將兩顆偏重推論的TPU 8i整合於單一封裝。報導指出，其記憶體容量、運算能力與頻寬均為原本的兩倍，使模型在處理查詢時能涵蓋更大範圍的資訊。兩款新品的分工，顯示Google正以資料保護與記憶體需求，進一步細分人工智慧硬體用途。",
-      "bullets_zh": [],
-      "source": {
-        "name": "TechCrunch AI",
-        "url": "https://techcrunch.com/2026/11/10/google-broadens-its-ai-hardware-portfolio-with-two-new-specialized-chips/",
-        "published_at": "2026-11-10T15:54:08+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-article",
-      "evidence_note_zh": "依來源文章整理。",
-      "editorial_analysis_zh": "這次產品分化的觀察重點，不只是運算能力，而是企業對資料隔離與大型工作負載記憶體容量的不同需求；實際安全性與效能仍需測試佐證。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "已取得TechCrunch報導正文，並非僅有RSS摘要；未另取得報導所引Google公告。安全機制及應用情境依報導中的Google說法整理，未有獨立測試資料。"
-    },
-    {
-      "id": "2026-11-11-morning:event-15",
-      "original_id": "event-15",
-      "category": "tech-product",
-      "is_headline": false,
-      "title_zh": "Meta介紹Your Algorithm，以自然語言調整Facebook動態消息與Reels推薦",
-      "lede_zh": "Meta介紹Facebook推薦控制工具Your Algorithm，讓使用者透過可編輯的興趣清單，以自己的話說明想看與不想看的內容，並共同影響動態消息與Reels。Meta表示，這套系統將明確表達的偏好與既有行為訊號結合，目標是讓推薦更透明，也更能回應使用者要求。\n\n介面頂端以一句話整理近期觀看活動，下方分成「有興趣」與「不感興趣」兩份清單。前者預先填入從過往活動推估的興趣，後者納入使用者明確拒絕、關閉或隱藏的主題；使用者可以新增、移動或刪除項目。兩個內容版位讀取同一份偏好儲存資料，使頁面顯示的設定與排序使用的設定一致。\n\n對新增興趣，系統會主動尋找相關候選內容，再透過排序提高曝光機會；同時安排推薦間隔、限制各興趣每日占比，避免單一主題占滿畫面。對不感興趣的項目，則在多個階段採取過濾、降權及最終檢查。減少人工智慧生成內容等品質要求，會對應專門的降權訊號，而不是只比對主題。\n\n大型語言模型在其中分擔不同任務，包括產生初始興趣與近期活動描述、檢查新增偏好是否合理及重複，以及在排序後移除符合排除條件的內容。Meta另設完整性與安全檢查元件，並非僅由語言模型判定。為處理設定變更前已備妥的推薦，系統也會額外擷取新內容，或在裝置端移除符合排除條件的快取項目。\n\n上述透明度與回應能力的改善，仍屬Meta對系統的說明。公司也承認，如何解讀模糊輸入、讓推薦更精確回應要求，仍有改善空間。",
-      "bullets_zh": [],
-      "source": {
-        "name": "Meta Engineering",
-        "url": "https://engineering.fb.com/2026/11/10/ml-applications/your-algorithm-giving-people-more-ways-to-personalize-facebook-recommendations/",
-        "published_at": "2026-11-10T17:00:49+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-article",
-      "evidence_note_zh": "依來源文章整理。",
-      "editorial_analysis_zh": "推薦控制的關鍵不只在於能否輸入偏好，也在於設定是否真正進入排序流程，以及能否清除已排定的內容。這套設計提供了檢視使用者控制權的具體切入點，但不能直接等同於完整掌控推薦結果。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "已取得Meta Engineering官方文章正文，並非僅有RSS摘要。介面、系統流程及改善效果均依公司說明整理，未有獨立使用測試或成效驗證資料。"
-    },
-    {
-      "id": "2026-11-11-morning:event-21",
-      "original_id": "event-21",
-      "category": "tech-product",
-      "is_headline": false,
-      "title_zh": "Google與Adobe擴大整合，將PDF編輯帶入Drive、AI功能帶入Gemini",
-      "lede_zh": "Google宣布與Adobe整合創意及生產力工具，公布的方向包括在Drive中編輯PDF，以及在Gemini中使用Adobe的人工智慧功能。\n\n依Google說明，這項合作分別把Adobe功能帶進檔案處理與人工智慧互動場景：Drive端著重PDF編輯，Gemini端則串接Adobe AI。兩項整合呈現雙方將既有工具帶入Google應用程式的合作方向。",
-      "bullets_zh": [],
-      "source": {
-        "name": "Google AI",
-        "url": "https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration/",
-        "published_at": "2026-11-10T14:00:00+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "rss",
-      "evidence_kind": "rss-summary",
-      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
-      "editorial_analysis_zh": "",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "本則僅取得Google AI官方RSS摘要，未取得公告全文。摘要未交代具體Adobe功能、推出時程、適用方案、地區或是否全面開放；產品整合內容為Google的官方說明。"
-    },
-    {
-      "id": "2026-11-11-morning:event-23",
-      "original_id": "event-23",
-      "category": "tech-product",
-      "is_headline": false,
-      "title_zh": "ChatGPT推出商家資料頁與專屬代理，新增瀏覽及點擊指標",
-      "lede_zh": "OpenAI推出測試版Business Hub，讓企業建立商家資料頁，驗證並更新產品與服務資訊。這項更新把ChatGPT的消費者探索用途，延伸至企業可管理自身資料、回應產品問題的介面，功能形式接近搜尋引擎既有的商家資料頁。\n\n符合資格的企業也能建立並推出專屬商家代理，讓ChatGPT使用者詢問企業及其產品相關問題。OpenAI表示，這是讓企業更深入參與ChatGPT的早期一步，目標是連結透過AI探索商品、比較選項及作決定的使用者與商家。\n\nBusiness Hub另提供有限的商業洞察資料，涵蓋資料頁瀏覽、商家被提及的次數及網站點擊等指標，讓企業了解使用者如何與其產品資訊互動。不過，企業須經正式程序驗證資料頁；OpenAI尚未公開完整流程，負責營利業務的副總裁Benji Shomair僅表示，會依不同市場與企業類型採用多種驗證方式。\n\n這次更新也與OpenAI先前嘗試讓使用者直接在ChatGPT購物的方向有所不同。該公司已於3月結束包含結帳購物車、採佣金制的直接購物計畫；此次公布的重點則是商家資訊、問答與互動指標。商家代理的具體資格條件及完整驗證細節，仍有待進一步說明。",
-      "bullets_zh": [],
-      "source": {
-        "name": "TechCrunch AI",
-        "url": "https://techcrunch.com/2026/11/10/openai-rolls-out-new-business-profiles-making-chatgpt-just-a-little-bit-more-like-google/",
-        "published_at": "2026-11-10T18:49:52+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-article",
-      "evidence_note_zh": "依來源文章整理。",
-      "editorial_analysis_zh": "商家資料頁與互動指標，讓企業能更直接管理在ChatGPT中的資訊呈現。但功能推出不等於已證明導流或交易效果，仍須區分資訊服務與實際商業成果。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "已取得TechCrunch報導正文；目前資訊未完整交代商家代理資格與資料頁驗證程序，亦未提供可判斷新功能成效的數據。"
-    },
-    {
-      "id": "2026-11-11-morning:event-01",
-      "original_id": "event-01",
-      "category": "vc-business",
-      "is_headline": false,
-      "title_zh": "輝達董事會委任律師調查黃仁勳，晶片流向爭議延燒",
-      "lede_zh": "輝達董事會針對執行長黃仁勳展開的調查有新進展。彭博報導，獨立董事已聘請前美國聯邦檢察官協助調查；紐約時報則指出，調查由Wachtell Lipton合夥人Joon H. Kim主導。事件同時牽動市場信心與人工智慧晶片出口管制爭議，但相關情報身分及違規指控尚不能視為定論。\n\n中央社報導，輝達11月10日在格林威治標準時間17時15分左右，股價下跌6.3%至167.35美元。自黃仁勳前一個週末承認婚外情後，公司市值已縮水超過4,000億美元，全球市值排名降至第三，落後蘋果與微軟；上述股價為盤中數字，並非收盤結果。\n\n晶片流向方面，中央社轉述The Information的報導指稱，與黃仁勳有關係的女商人利用企業網絡及與輝達、經銷商的關係，協助約24萬顆H100、H200及部分A100晶片運入中國，涉及價值至少75億美元。報導並將上海世紀利通、Megaspeed及其馬來西亞子公司Speedmatrix列為相關企業網絡的一部分。這些內容仍屬媒體提出的指控，不能據此認定違反出口管制。\n\n德國之聲報導，Megaspeed因涉嫌將輝達晶片走私至中國而在美國接受調查，公司否認走私指控。金融時報另報導，Megaspeed尚未被列入美國商務部的實體清單；調查與是否列入貿易限制名單，是不同的程序狀態。\n\n中央社取得的報導也載明，路透社無法獨立查證The Information的內容，輝達未立即回應置評請求。董事會調查、晶片流向指控與市場價格變動應分開看待，目前不能將股價下跌當作違規情事成立的證據。",
-      "bullets_zh": [],
-      "source": {
-        "name": "NYT",
-        "url": "https://www.nytimes.com/2026/11/10/business/nvidia-wachtell-lipton-jensen-huang.html",
-        "published_at": "2026-11-10T19:33:36+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "rss",
-      "evidence_kind": "rss-summary",
-      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
-      "editorial_analysis_zh": "此案的科技產業焦點在於董事會監督與受管制晶片的供應鏈流向。判斷後續影響，應以調查結果及監管措施為依據，而非私人關係細節或短期股價反應。",
-      "supporting_sources": [
-        {
-          "source_name": "Bloomberg Technology",
-          "source_title": "Nvidia Board Members Tap Wachtell’s Kim for Huang Probe",
-          "source_url": "https://www.bloomberg.com/news/articles/2026-11-10/nvidia-board-members-tap-wachtell-lipton-to-probe-ceo-affair"
-        },
-        {
-          "source_name": "中央社財經",
-          "source_title": "黃仁勳出軌拖累輝達重挫逾6%　市值急縮落後蘋果與微軟",
-          "source_url": "https://www.cna.com.tw/news/afe/202611110005.aspx"
-        },
-        {
-          "source_name": "Deutsche Welle",
-          "source_title": "Megaspeed and the battle to go high-end Nvidia chips into China",
-          "source_url": "https://www.dw.com/en/megaspeed-and-the-battle-to-go-high-end-nvidia-chips-into-china/a-79909129?maca=en-rss-en-all-1573-rdf"
-        },
-        {
-          "source_name": "Financial Times",
-          "source_title": "US commerce department delays Megaspeed’s inclusion on trade blacklist",
-          "source_url": "https://www.ft.com/content/afb6c960-a910-4d67-9588-73ba3bea5b06?syn-25a6b1a6=1"
-        },
-        {
-          "source_name": "中央社國際",
-          "source_title": "美媒：黃仁勳婚外情關係　助75億美元輝達晶片銷往中國",
-          "source_url": "https://www.cna.com.tw/news/aopl/202611100372.aspx"
-        }
-      ],
-      "source_evidence_note_zh": "中央社兩篇來源取得報導節錄；紐約時報、彭博、德國之聲與金融時報僅取得RSS摘要，未取得全文。The Information的晶片流向指控由中央社轉述，未直接取得原文；中央社所載內容亦註明路透社無法獨立查證。股價資料為報導所載盤中時點。"
-    },
-    {
-      "id": "2026-11-11-morning:event-02",
-      "original_id": "event-02",
-      "category": "vc-business",
-      "is_headline": false,
-      "title_zh": "Anthropic公布IPO價格區間，完全稀釋估值最高達1.404兆美元",
-      "lede_zh": "Anthropic公布首次公開募股（IPO）暫定價格區間，每股70至78美元，預計出售8億2,500萬股A類股，發售金額約577.5億至643.5億美元。依價格上限計算，完全稀釋估值可達1.404兆美元；這是發行計畫的估算，並非已完成募資或上市後市值。\n\n估值口徑是理解這筆交易的關鍵。中央社報導，約1.4兆美元的數字納入股票選擇權、限制型股票等證券；若不計這些證券，以未稀釋股數計算，市值約為1兆美元。此次估值也低於先前市場曾預期的最高2兆美元，上市案將考驗投資人在人工智慧相關類股波動下，願意接受的價格。\n\n公開發行之外，Anthropic表示已達成另一筆260億美元私募協議，將按IPO價格向Google、輝達、超微、博通、美光、微軟及台積電出售無投票權的N類股。TechCrunch報導，Google與輝達各擬投入100億美元；紐約時報也報導輝達的投資計畫。這些安排應與公開發行金額分開理解，不能直接當作已入帳資金。\n\n七名共同創辦人各計畫出售337萬8,378股，若以區間中點74美元計算，每人售股金額約2.5億美元，實際所得仍取決於最終定價及交易完成情況。創辦人透過具特殊投票權的F類股維持多數表決權，一般A類股投資人的治理影響力有限。公司預計最多將兩成發售股份分配給散戶；彭博另報導，澳洲散戶也可參與此次IPO。\n\n募資規模之外，申報文件揭露的營運數字同樣值得關注。據TechCrunch報導，公司第三季營收為170億美元，前九個月營收332億美元、淨損1,040億美元，運算與基礎設施承諾支出達9,009億美元。營收成長並不等於已實現獲利，投資人仍須衡量業務擴張與龐大資金承諾之間的關係。",
-      "bullets_zh": [],
-      "source": {
-        "name": "TechCrunch AI",
-        "url": "https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion/",
-        "published_at": "2026-11-10T14:01:39+00:00",
-        "reading_time_min": 2
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-article",
-      "evidence_note_zh": "依來源文章整理。",
-      "editorial_analysis_zh": "這次發行同時涉及模型公司的資金需求、科技業投資人的持股布局與散戶參與。評估交易時，必須區分估值、發售金額、私募資金及創辦人售股所得，避免將不同口徑混為一談。",
-      "supporting_sources": [
-        {
-          "source_name": "FT Markets",
-          "source_title": "Anthropic targets valuation of up to $1.4tn in IPO",
-          "source_url": "https://www.ft.com/content/5654e210-4be3-4550-b975-129c9a2e7fe5?syn-25a6b1a6=1"
-        },
-        {
-          "source_name": "TechCrunch AI",
-          "source_title": "All 7 Anthropic founders will each cash out about $250M in IPO",
-          "source_url": "https://techcrunch.com/2026/11/10/all-7-anthropic-founders-will-each-cash-out-about-250m-in-ipo/"
-        },
-        {
-          "source_name": "NYT",
-          "source_title": "Anthropic’s Giant IPO Will Tie It Closer to Nvidia",
-          "source_url": "https://www.nytimes.com/2026/11/10/business/anthropic-ipo-nvidia.html"
-        },
-        {
-          "source_name": "Bloomberg Markets",
-          "source_title": "Anthropic Lodges Australian Prospectus, Opening IPO to Retail",
-          "source_url": "https://www.bloomberg.com/news/articles/2026-11-10/anthropic-lodges-australian-prospectus-opening-ipo-to-retail"
-        },
-        {
-          "source_name": "中央社財經",
-          "source_title": "Anthropic將在美IPO　估值上看1.4兆美元",
-          "source_url": "https://www.cna.com.tw/news/aopl/202611100361.aspx"
-        }
-      ],
-      "source_evidence_note_zh": "已取得TechCrunch兩篇報導正文、中央社報導節錄；FT Markets、紐約時報與Bloomberg Markets僅取得RSS摘要。未直接取得招股文件或私募協議；申報數字與交易安排依上述媒體報導整理。兩篇TechCrunch對創辦人表決權百分比記載不一致，因此僅採共同支持的「維持多數表決權」，不列精確比例。"
-    },
-    {
-      "id": "2026-11-11-morning:event-03",
-      "original_id": "event-03",
-      "category": "vc-business",
-      "is_headline": false,
-      "title_zh": "彭博：OpenAI單季營收首度達100億美元",
-      "lede_zh": "OpenAI截至9月的三個月營收首度達到100億美元。彭博引述一名知情人士報導，成長動能來自市場對其最新人工智慧軟體的強勁需求。\n\n這項數字反映OpenAI軟體業務的營收規模，但報導所提供的資訊未涉及成本或獲利，不能據此判定公司已實現獲利。",
-      "bullets_zh": [],
-      "source": {
-        "name": "Bloomberg Technology",
-        "url": "https://www.bloomberg.com/news/articles/2026-11-10/openai-third-quarter-revenue-soars-nearly-50-to-10-billion",
-        "published_at": "2026-11-10T22:33:06+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "rss",
-      "evidence_kind": "rss-summary",
-      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
-      "editorial_analysis_zh": "單季營收跨越100億美元，是觀察人工智慧軟體商業化規模的一項指標；要評估商業模式的可持續性，仍需成本與獲利等資訊。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "僅取得Bloomberg Technology的RSS摘要，未取得報導全文或公司財務文件。營收數字及需求動能均為彭博引述知情人士的說法。"
-    },
-    {
-      "id": "2026-11-11-morning:event-04",
-      "original_id": "event-04",
-      "category": "vc-business",
-      "is_headline": false,
-      "title_zh": "CoreWeave 季度業績優於預期、上調全年展望，後續籌資仍受關注",
-      "lede_zh": "人工智慧算力供應商 CoreWeave 季度業績優於分析師預期，並上調全年展望，緩解投資人對這家背負債務的公司可能面臨業務放緩的疑慮。\n\n不過，業績改善與後續資金需求仍是兩個不同的觀察面向。D.A Davidson 科技研究主管 Gil Luria 在 Bloomberg 節目中肯定這次業績，並表示算力供給仍不足；但他也認為，CoreWeave 若要持續營運，進一步籌措資金將面臨困難。這項籌資判斷屬於分析師評論，並非公司已宣布的融資結果。",
-      "bullets_zh": [],
-      "source": {
-        "name": "Bloomberg Technology",
-        "url": "https://www.bloomberg.com/news/articles/2026-11-10/coreweave-boosts-annual-forecast-easing-concerns-about-slowdown",
-        "published_at": "2026-11-10T21:13:53+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "rss",
-      "evidence_kind": "rss-summary",
-      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
-      "editorial_analysis_zh": "單季業績與上調展望提供營運面的正面訊號，但不能直接回答後續資金是否充足，也不足以推論整體人工智慧算力產業已排除放緩風險。",
-      "supporting_sources": [
-        {
-          "source_name": "Bloomberg Technology",
-          "source_title": "CoreWeave Earnings Top Estimates, Boosts Annual Forecast",
-          "source_url": "https://www.bloomberg.com/news/videos/2026-11-10/coreweave-earnings-top-estimates-boosts-annual-forecast-video"
-        }
-      ],
-      "source_evidence_note_zh": "取得資料為 Bloomberg Technology 的一則新聞 RSS 摘要及一則影音節目 RSS 簡介，未取得報導全文或觀看節目。摘要未提供季度財務數字、全年展望金額或具體融資安排。"
-    },
-    {
-      "id": "2026-11-11-morning:event-24",
-      "original_id": "event-24",
-      "category": "vc-business",
-      "is_headline": false,
-      "title_zh": "傳微軟促美擱置中製光纖收發器禁令，憂AI資料中心供應受阻",
-      "lede_zh": "知情人士透露，微軟正要求美國政府擱置禁止進口中國製AI資料中心關鍵零組件的計畫，並與其他企業及產業團體提出供應鏈疑慮。美國聯邦傳播委員會目前仍在研擬相關限制，尚非已實施的進口禁令；微軟對此婉拒置評。\n\n爭議焦點是連接資料中心伺服器、路由器與交換器的光纖收發器，部分資料中心需要數以百萬計的這類零件。限制構想涉及對資料竊取、惡意軟體及服務中斷的安全疑慮；業界則主張，供應受阻可能拖慢資料中心建置。兩名消息人士表示，微軟曾於9月與白宮科技政策辦公室及國家安全會議官員會面，示警供應鏈挑戰。\n\n資訊科技業協會公開反對推動禁令。該協會首席法務顧問米勒表示，許多雲端業者已採購AI晶片，若缺少光纖收發器，晶片仍無法連接使用。市場情報公司Cleanview的資料顯示，微軟在美國有35座資料中心興建中，另有134座處於規劃階段。\n\n替代供應能力是另一項爭點。Counterpoint Research估計，中國企業占全球光纖收發器市場約三分之二；美國創新基金會的報告則指出，Coherent與Lumentum雖有可競爭的技術，產能規模仍不足以取代中國供應商。這些資料呈現業者對供應中斷的擔憂，但不代表禁令必然造成建置停擺。\n\n限制範圍仍待定案。摩根士丹利10月報告指出，政府正考慮針對每秒可處理3.2 Terabits資料的中國製光纖收發器設限，並預期這類產品到2028年才開始擴大量產、2029年廣泛安裝。兩名消息人士也稱此門檻正在研議，但聯邦傳播委員會尚未公開說明。9月另有跨黨派議員提出法案，擬禁止敏感政府系統使用中國製光纖收發器，與一般進口限制的研議範圍不同。",
-      "bullets_zh": [],
-      "source": {
-        "name": "中央社財經",
-        "url": "https://www.cna.com.tw/news/aopl/202611100351.aspx",
-        "published_at": "2026-11-10T21:35:16+08:00",
-        "reading_time_min": 2
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "這場爭議凸顯AI基礎設施不只受晶片供應影響，也取決於連接設備的取得。政策若採不同速度門檻、適用範圍或實施時程，對現有建置與未來採購的影響將有所不同，不能把業界警告當成已發生的結果。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "取得資料為中央社報導節錄，並非完整原文；其中知情人士消息、研究數據及報告內容均依該節錄整理，未另行取得其所述原始文件或報導核對。政策門檻仍屬研議，時程為摩根士丹利預估。"
-    },
-    {
-      "id": "2026-11-11-morning:event-29",
-      "original_id": "event-29",
-      "category": "vc-business",
-      "is_headline": false,
-      "title_zh": "Proximal Ventures首支基金募得2,750萬美元，鎖定AI藥物開發服務",
-      "lede_zh": "Proximal Ventures為首支基金募集2,750萬美元，將投資以人工智慧改造藥物開發工具、基礎設施與服務的新創。創辦人Sahir Raoof曾任SignalFire投資人，這次以個人主導的創投基金切入製藥產業服務市場。\n\n基金計畫投資種子前輪與種子輪公司，單筆投資規模為50萬至150萬美元，目前已投資七家新創。其中包括ChronicleBio，由前OpenAI主管Fidji Simo共同創辦，運用AI分析生物與醫療資料，目標是增進對慢性疾病的理解，並辨識潛在治療方式。\n\nRaoof的投資論點不是只押注新藥本身，而是藥物開發過程中可由AI改造的外包工作。製藥公司長期向專業服務商採購化合物合成、量產製程規劃及臨床試驗資料分析等服務。他認為，AI可將其中許多工作自動化，讓新創以較低成本、更短時間提供服務；這仍是他的商業判斷，不能視為已證實的降本或研發成效。\n\nProximal的出資者包括SignalFire、Kleiner Perkins及Bertelsmann Healthcare Investments等機構。Raoof也曾在臨床試驗招募新創Iterative Health負責業務開發，並在腫瘤資料公司Flatiron Health主管合作業務。他將協助新創建立早期客戶關係，視為投資之外的重要工作，反映這支基金同時著重技術應用與商業銷售能力。",
-      "bullets_zh": [],
-      "source": {
-        "name": "TechCrunch",
-        "url": "https://techcrunch.com/2026/11/10/proximal-ventures-raises-debut-fund-to-back-startups-bringing-ai-to-drug-development/",
-        "published_at": "2026-11-10T20:47:05+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-article",
-      "evidence_note_zh": "依來源文章整理。",
-      "editorial_analysis_zh": "這筆募資呈現一條不同於直接押注新藥的AI投資路徑：從製藥公司既有的服務採購需求切入。後續應觀察的是新創取得客戶與交付服務的能力，而非僅以募資金額判斷技術成效。",
-      "supporting_sources": []
-    },
-    {
-      "id": "2026-11-11-morning:event-30",
-      "original_id": "event-30",
-      "category": "vc-business",
-      "is_headline": false,
-      "title_zh": "OpenAI收購AI旅遊新創Odessia，尚未公布旅遊產品計畫",
-      "lede_zh": "AI旅遊新創Odessia創辦人Francis Davidson宣布，公司已被OpenAI收購，他也已加入OpenAI，投入旅遊相關工作。OpenAI發言人向TechCrunch確認Davidson加入，但未進一步說明旅遊產品規畫，交易條件也未公開。\n\nOdessia成立約一年，曾完成由Sequoia領投的600萬美元種子前輪募資，約五個月前推出AI旅遊代理工具。Davidson在宣布交易時，著重介紹自己如何指揮多組AI代理打造產品；這項工具目前已關閉。\n\nDavidson曾於2014年就讀大學期間創辦旅遊新創Sonder，業務聚焦全球主要城市的高級公寓短期租賃。他於2025年6月宣布辭去執行長職務。這段創業經歷提供了他在旅遊產業的背景，但不能據此推定Odessia收購案的具體整合方向。\n\nOpenAI表示，旅遊是聊天機器人使用者經常詢問的領域之一，但尚未宣布新的旅遊專用產品或計畫。目前能確認的進展，是Davidson披露收購，以及OpenAI確認他已加入；至於交易金額、Odessia技術將如何運用，或是否推出訂房服務，都沒有具體資訊。",
-      "bullets_zh": [],
-      "source": {
-        "name": "TechCrunch",
-        "url": "https://techcrunch.com/2026/11/10/openai-acquires-odessia-travel-startup-created-by-sonder-founder/",
-        "published_at": "2026-11-10T21:08:52+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-article",
-      "evidence_note_zh": "依來源文章整理。",
-      "editorial_analysis_zh": "這起交易顯示OpenAI延攬旅遊領域創業者的動作，但人員加入與產品推出仍是不同層次的進展，不宜把收購直接解讀為即將提供訂房或完整旅遊代理服務。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "已取得TechCrunch報導正文。收購資訊來自報導所載Davidson的宣布；OpenAI發言人確認的是他加入公司，並未提供更多旅遊產品規畫。"
-    },
-    {
-      "id": "2026-11-11-morning:event-05",
-      "original_id": "event-05",
-      "category": "security",
-      "is_headline": false,
-      "title_zh": "紐約州開放大型 AI 開發商註冊，RAISE Act 將要求72小時內通報重大事件",
-      "lede_zh": "紐約州已開放大型前沿人工智慧開發商的註冊入口，為2027年初實施的 RAISE Act 建立執行機制。Anthropic、OpenAI 等受規範業者最遲須於2027年1月1日完成註冊，後續也將承擔安全措施與模型資訊的公開義務。\n\n法規要求年營收超過5億美元的大型前沿人工智慧開發商，在網站公布安全框架、於重大安全事件發生後72小時內通報，並發布公開的模型透明度報告。監管要求因此不只涉及事前揭露，也涵蓋模型運作期間的事件通報。\n\n新成立的 DIGIT 辦公室將負責執行 RAISE Act，並監督大型前沿人工智慧實驗室。單次違規最高可罰100萬美元，後續違規最高可罰300萬美元。州政府也能對未完成註冊的公司採取執法行動，但發言人未說明具體做法。\n\n州長 Kathy Hochul 同時宣布成立設於 Binghamton University 的人工智慧責任與研究中心。該中心將獨立評估先進人工智慧系統的安全性、資安與運作情形，並與 DIGIT 合作審查企業的安全框架，使企業揭露、安全評估與政府監督形成相互連結的制度安排。",
-      "bullets_zh": [],
-      "source": {
-        "name": "TechCrunch",
-        "url": "https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect/",
-        "published_at": "2026-11-10T20:52:13+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "對適用業者而言，合規工作不只是完成註冊，還包括持續公開安全框架、準備透明度報告，以及建立能在72小時內處理重大安全事件的通報流程。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "依據實際取得的 TechCrunch 報導正文節錄撰寫，並非完整報導；未另取得法規原文或州政府公告。註冊期限、營收門檻、通報時限與罰款資訊均見於該節錄。"
-    },
-    {
-      "id": "2026-11-11-morning:event-06",
-      "original_id": "event-06",
-      "category": "security",
-      "is_headline": false,
-      "title_zh": "研究人員發現約3.5萬個 Grok Build 應用程式可被外部存取",
-      "lede_zh": "研究人員發現，約3.5萬個 Grok Build 應用程式處於對外開放狀態，任何找到這些應用程式的人都能存取，暴露出人工智慧開發工具的存取控制風險。",
-      "bullets_zh": [],
-      "source": {
-        "name": "Ars Technica",
-        "url": "https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/",
-        "published_at": "2026-11-10T21:12:59+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "rss",
-      "evidence_kind": "rss-summary",
-      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
-      "editorial_analysis_zh": "評估這類開發工具的風險，重點應放在存取控制與可能暴露的資料範圍，不能僅憑應用程式數量推定實際損害。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "僅取得 Ars Technica 的 RSS 摘要，未取得報導全文或研究人員的技術說明。現有資料不足以確認暴露資料的具體內容、是否遭到竊取、受影響人數或修補狀態；約3.5萬指應用程式數量，不是受害人數。"
-    },
-    {
-      "id": "2026-11-11-morning:event-07",
-      "original_id": "event-07",
-      "category": "security",
-      "is_headline": false,
-      "title_zh": "N-able因零時差漏洞關閉雲端服務，籲自架N-Central客戶停用",
-      "lede_zh": "遠端存取服務商N-able在多項零時差漏洞遭公開後，關閉雲端託管的N-Central服務，並呼籲自行架設N-Central的客戶停用部署，以降低攻擊者利用已公開漏洞入侵企業網路的風險。\n\nN-able表示，託管服務將在保護環境、執行必要修補期間維持離線，客戶在此期間無法使用N-Central。這項服務原本可讓企業遠端存取及管理同一網路內的其他裝置與系統，因此停服也直接影響客戶的遠端管理作業。\n\n資安研究人員Ben Bales於週日在GitHub公開這批漏洞，並以Able2Shell稱呼。他表示，漏洞組合可被用來竊取憑證、建立新的管理員帳號，以及取得受影響系統的最高權限。這些是研究人員對漏洞能力的描述，不代表已確認有客戶遭到上述攻擊。\n\nN-able表示，目前沒有證據顯示任何客戶環境遭成功利用漏洞入侵。不過，「沒有發現證據」並不等於已排除入侵；現有資訊也未釐清公司是否具備足夠紀錄，可完整查核客戶環境的利用情況。",
-      "bullets_zh": [],
-      "source": {
-        "name": "TechCrunch",
-        "url": "https://techcrunch.com/2026/11/10/n-able-takes-its-remote-access-service-offline-after-researcher-publishes-dozens-of-zero-day-bugs/",
-        "published_at": "2026-11-10T15:45:27+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "這起事件同時涉及入侵風險與防護措施造成的服務中斷。對企業客戶而言，是否已遭攻擊，以及何時能安全恢復遠端管理，是兩個仍須分開確認的問題。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "取得資料為TechCrunch報導正文節錄，非完整全文。節錄載明，記者詢問N-able是否具備伺服器紀錄等查核能力，但未獲公司發言人回覆；未取得漏洞技術文件或獨立驗證結果。"
-    },
-    {
-      "id": "2026-11-11-morning:event-08",
-      "original_id": "event-08",
-      "category": "security",
-      "is_headline": false,
-      "title_zh": "法國超市冷藏設備遭網攻、食品毀損，伊朗否認涉案指控",
-      "lede_zh": "法國超市冷藏設備遭網路攻擊，上月數百家超市的冷藏櫃與冷凍櫃溫度升高，導致數噸冷藏及冷凍食品毀損。事件顯示，網路攻擊的影響不只限於資料與資訊系統，也可能直接波及實體設備與食品保存。\n\n法國指控IRGC涉案，並表示對回應措施不排除任何選項。伊朗則斷然否認，稱法方指控「毫無根據且片面」。目前取得的資料未交代具體入侵手法，也不足以獨立判定攻擊者身分，法方的責任歸屬說法仍須與設備受損、食品損失等事件資訊分開看待。",
-      "bullets_zh": [],
-      "source": {
-        "name": "DW World",
-        "url": "https://www.dw.com/en/iran-denies-role-in-fridge-hack-france-summons-ambassador/a-79910206?maca=en-rss-en-world-4025-xml-mrss",
-        "published_at": "2026-11-10T15:57:00+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "rss",
-      "evidence_kind": "rss-summary",
-      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
-      "editorial_analysis_zh": "這起事件凸顯實體設備資安與營運損失的直接連結；但損失規模與攻擊歸屬是不同問題，不能以食品毀損的事實替代對攻擊者身分的證明。",
-      "supporting_sources": [
-        {
-          "source_name": "BBC World",
-          "source_title": "Iran rejects French claims it was behind supermarket fridge hacking",
-          "source_url": "https://www.bbc.co.uk/news/articles/cmg474vk6dyqo?at_medium=RSS&at_campaign=rss"
-        }
-      ],
-      "source_evidence_note_zh": "僅取得DW World與BBC World的RSS摘要，未取得報導全文、技術調查或攻擊歸屬證據。DW提供法伊雙方說法，BBC提供設備升溫與食品損失資訊。"
-    },
-    {
-      "id": "2026-11-11-morning:event-28",
-      "original_id": "event-28",
-      "category": "security",
-      "is_headline": false,
-      "title_zh": "網攻考驗開放AI平台，Hugging Face主管警告參與門檻恐提高",
-      "lede_zh": "開放人工智慧平台如何在防堵攻擊時維持社群參與，正成為資安治理難題。Hugging Face政策長暨策略資深副總裁Irene Solaiman警告，讓業餘開發者也能自由貢獻的開放機制，加上平台持有的大量資料，同時使這些平台成為攻擊目標；安全壓力可能讓開源生態走向更嚴格的存取限制。\n\n近期事件顯示，風險不只存在於開放社群。10月針對OpenCode的攻擊鎖定使用者的第三方API金鑰，並造成財務損失。AI基礎設施新創Fireworks也揭露，攻擊者取得部分客戶的模型權重、資料集及帳務資訊，公司在調查期間暫停部分自助式資料集功能。不過，這起事件不能直接歸因於平台的開放程度。\n\nSolaiman表示，Hugging Face目前仍設法避免以限縮參與來換取安全，已加強監控與預防措施、更頻繁輪替管理員存取權杖，並採取更嚴格的網路控管。她也指出，持續維護監控工具需要成本，並非所有平台都能負擔。限制誰能上傳模型、加強身分驗證或事先審核開發者，則是可能出現的收緊方向，不代表Hugging Face已宣布實施。\n\n安全與開放也不必然只能二選一。GitHub負責軟體供應鏈安全的工程師Zach Steindler認為，平台可以修補原有的不安全機制，並投資異常行為偵測與事件控制能力，而不必從根本上限制參與。兩人的觀點共同凸顯，防護措施如何設計，將影響獨立研究者與業餘開發者能否繼續參與開放社群。",
-      "bullets_zh": [],
-      "source": {
-        "name": "TechCrunch AI",
-        "url": "https://techcrunch.com/2026/11/10/cyberattacks-threaten-to-make-open-source-ai-a-little-less-open-hugging-face-exec-warns/",
-        "published_at": "2026-11-10T13:00:00+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "值得觀察的不只是驗證門檻是否提高，而是平台能否以權限管理、異常偵測與事件控制降低風險，避免將防護成本轉化為社群參與障礙。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "本則依據已取得的TechCrunch報導節錄撰寫，來源標記為publisher-excerpt，並非完整正文；資安事件及平台措施未經另行獨立查核。"
-    },
-    {
-      "id": "2026-11-11-morning:event-14",
-      "original_id": "event-14",
-      "category": "dev",
-      "is_headline": false,
-      "title_zh": "Meta介紹TLX，讓Triton開發者直接協調GPU執行與資料搬移",
-      "lede_zh": "Meta介紹Triton延伸工具TLX，讓開發者在保留既有張量運算寫法的同時，直接控制GPU的warp group與cluster層級執行。其設計不是另起一套低階語言，而是在Triton之上增加協調機制，處理非同步資料搬移、運算分工與同步。\n\nMeta指出，新一代GPU的效能愈來愈取決於多個執行單位如何合作，而不只是計算本身。CUDA能表達這些執行關係，但往往需要大量架構專屬程式碼；Triton則將部分控制藏在編譯器抽象之下。TLX試圖填補兩者之間的空間，讓開發者明確安排執行流程，又不必放棄Python與自動調校工具。\n\n以矩陣乘法為例，TLX可讓不同warp group分別負責搬移資料、執行張量核心運算與處理結果，透過同步機制串成管線，使資料傳輸與計算重疊。它也支援多個執行區塊透過分散式共享記憶體合作；記憶體布局則可先由編譯器推導，開發者只在需要調校時介入。\n\nMeta表示，TLX已在內部正式環境運行數月，涵蓋推薦系統訓練、推論與大型語言模型預訓練。其中，推薦推論案例著重減少重複複製使用者特徵；混合專家模型的預訓練案例，則結合分組矩陣乘法與通訊。公司宣稱這些部署帶來效能改善，但屬內部案例，不能視為所有工作負載都能取得相同收益。\n\n後續開發方向包括支援更多加速器、自動推導warp group協調方式，以及將TLX整合為torch.compile的後端。這些仍是Meta提出的開發目標，並非已全面提供的功能。",
-      "bullets_zh": [],
-      "source": {
-        "name": "Meta Engineering",
-        "url": "https://engineering.fb.com/2026/11/10/open-source/tlx-a-hardware-native-gpu-compiler-for-production-ml/",
-        "published_at": "2026-11-10T16:59:31+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "TLX呈現的開發方向，是讓機器學習工程師能逐步介入硬體執行細節，而非只能在高階抽象與完整低階實作之間二選一。其價值仍應依具體模型、硬體與維護成本評估。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "已取得Meta Engineering官方文章節錄，內容於尾端遭截斷，並非完整全文。部署情形與效能改善均為Meta自述，未取得獨立評測；本文未延伸引用文中連結的其他技術文章。"
-    },
-    {
-      "id": "2026-11-11-morning:event-16",
-      "original_id": "event-16",
-      "category": "dev",
-      "is_headline": false,
-      "title_zh": "AWS整理AgentCore代理評估方法，從任務完成到個資外洩分項檢查",
-      "lede_zh": "AWS發布Amazon Bedrock AgentCore代理評估技術指南，說明如何搭配內建評估器、DeepEval與AutoEval，檢查代理是否完成任務、在多輪對話中遺漏要求，或洩漏個人資料。指南的重點不是選出單一最高分，而是先定義業務目標，再把目標拆成可觀察、可分別評估的行為。\n\n依AWS介紹，內建評估器涵蓋回答品質、任務完成、工具與技能使用，以及安全性；DeepEval提供對話完整性、知識保留與個資外洩等檢查；AutoEval則提供惡意輸出、錯判任務無法完成等訊號。開發團隊也能以既有評估器為基礎，更換評判模型、提示或評分規則。\n\n對於可能各自出錯的條件，指南建議不要只看混合總分。例如客服回答即使解決問題，仍可能違反資料政策。自訂多維度評估器可在同一次模型判讀中，分別回傳各項結果；但若指標需要不同模型、不同評估層級，或只有部分項目需要標準答案，就應拆開處理。\n\n執行方式包括開發除錯時的隨選評估、抽樣正式流量的線上評估，以及針對固定資料集的批次評估。需要標準答案或預期工具路徑的檢查，則限於批次模式。AWS建議先選兩、三項最能反映業務成果的行為，再依實際發現的失敗情境增加指標，而非一開始就堆滿評分項目。",
-      "bullets_zh": [],
-      "source": {
-        "name": "AWS Machine Learning",
-        "url": "https://aws.amazon.com/blogs/machine-learning/the-agent-evaluation-playbook-built-in-deepeval-and-autoeval-on-agentcore/",
-        "published_at": "2026-11-10T22:35:03+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "這份指南的實務價值在於把「代理能運作」與「代理符合業務要求」分開，也提醒團隊不能用任務完成率掩蓋個資或合規問題；評估器本身的效果仍須另行驗證。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "來源為AWS Machine Learning官方技術文章的已取得正文節錄，evidence_kind為publisher-excerpt；非獨立評測，未另行驗證各評估器的可靠度或偵測效果。"
-    },
-    {
-      "id": "2026-11-11-morning:event-19",
-      "original_id": "event-19",
-      "category": "ai-tools",
-      "is_headline": false,
-      "title_zh": "Google Cloud推出醫療用Gemini，整合分散資料與行政工作流程",
-      "lede_zh": "Google Cloud宣布推出醫療用Gemini平台，目標是串接醫院、保險業者及其他醫療體系之間分散的資訊，並將部分工作流程自動化。公司將整合臨床資料、減少行政工作負擔列為這項產品的主要用途。\n\nGoogle Cloud醫療業務全球負責人Aashima Gupta在Bloomberg節目中介紹，平台可連結病歷、臨床指引與業務系統。相較於單一資料查詢工具，這項產品的定位涵蓋不同醫療資訊與行政系統之間的串接。\n\nGupta也表示，Google正將隱私、安全及HIPAA法規遵循納入平台設計。這些屬於公司的產品與設計說明，不代表平台已取得獨立合規認證，也不能據此推論其醫療成效。",
-      "bullets_zh": [],
-      "source": {
-        "name": "Google AI",
-        "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare/",
-        "published_at": "2026-11-10T13:00:00+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "rss",
-      "evidence_kind": "rss-summary",
-      "evidence_note_zh": "依來源訂閱文字整理；未另行開啟新聞網頁。",
-      "editorial_analysis_zh": "這項產品將人工智慧的應用焦點放在醫療資料串接與行政流程，而非直接宣稱改善診療結果；評估時應區分流程整合能力、合規設計與醫療成效。",
-      "supporting_sources": [
-        {
-          "source_name": "Bloomberg Technology",
-          "source_title": "Google’s Gemini Targets Health Care’s Data Problem",
-          "source_url": "https://www.bloomberg.com/news/videos/2026-11-10/google-s-gemini-targets-health-care-s-data-problem-video"
-        }
-      ],
-      "source_evidence_note_zh": "本則依Google AI官方RSS摘要及Bloomberg Technology節目RSS摘要撰寫；未取得官方網頁全文、節目完整影音或逐字稿。隱私、安全與HIPAA相關內容為公司說法，未有獨立驗證資料。"
-    },
-    {
-      "id": "2026-11-11-morning:event-20",
-      "original_id": "event-20",
-      "category": "ai-tools",
-      "is_headline": false,
-      "title_zh": "Anthropic推出Claude Meetings，讓會議討論同步轉成計畫與任務",
-      "lede_zh": "Anthropic推出Claude Meetings，讓團隊將Claude以可見參與者的身分加入視訊會議，在討論進行時同步處理工作。這項功能以測試版提供給Team與Enterprise方案，推出時支援Google Meet。\n\n依公司介紹，Claude可隨著談話草擬計畫、在白板上安排時程、回答會議聊天室中的問題，也能從已串接的工作應用程式取回資料，例如去年的數字。通話結束後，會議紀錄、待辦事項及過程中產出的其他內容會留在claude.ai。Anthropic主張，這能讓原本會後才開始的工作提前至會議中進行。\n\n參與者告知與外部來賓權限也是功能設計的一部分。Claude會表明自己的參與者身分，並在聊天室張貼通知；未經管理員授權，不會加入有外部來賓的通話，若外部來賓加入則會自動離開。\n\n同批推出的Claude Whiteboards讓團隊與Claude共同整理視覺化工作區，納入時程與截止日期，並可將白板轉成文件或簡報，也能在Claude Meetings內使用。另一項Claude Sheets則支援建立與協作編輯試算表，包含分頁、公式、格式及下拉選單；公司表示，Claude會直接修改儲存格，並說明變更內容。兩者皆以測試版提供給付費方案，支援網頁、桌面與行動裝置。\n\nAnthropic另宣布，原名Claude Dashboards的Claude Data正式開放，可連接資料倉儲或CRM，以儀表板、文字資料故事或旁白影片回答問題；互動式連接器則讓團隊在Claude內開啟Adobe、Atlassian及HubSpot等應用程式。這波更新不只增加會議紀錄功能，也把協作文件、資料分析與既有工作應用納入同一工作空間。",
-      "bullets_zh": [],
-      "source": {
-        "name": "TechCrunch AI",
-        "url": "https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/",
-        "published_at": "2026-11-10T17:30:00+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-article",
-      "evidence_note_zh": "依來源文章整理。",
-      "editorial_analysis_zh": "這波更新的競爭重點，是讓人工智慧從會後整理工具轉向會議中的協作角色。除了產出品質，參與者告知、外部來賓權限與工作資料存取，也值得企業在導入時一併檢視。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "已取得TechCrunch AI報導全文。文中產品功能、權限機制及供應範圍依該報導所載公告整理；未取得獨立實測，不據此判定輸出準確度或實際節省工時。"
-    },
-    {
-      "id": "2026-11-11-morning:event-22",
-      "original_id": "event-22",
-      "category": "ai-tools",
-      "is_headline": false,
-      "title_zh": "Adobe擴充創作工具AI功能，Firefly推原型設計、開放更多聊天機器人串接",
-      "lede_zh": "Adobe在邁阿密舉行的MAX活動公布新一波產品更新，將人工智慧功能擴展至Photoshop、Premiere與Firefly等工具，並推出本機端Model Context Protocol（MCP），讓ChatGPT、Claude或Gemini等聊天機器人取用更多Adobe軟體功能。這波更新同時涵蓋創作工具內的操作，以及外部AI助理與創作軟體的串接。\n\nFirefly新增名為Builder的原型製作工具，目前處於非公開測試階段，讓使用者製作設計、展示構想，產品範圍進一步靠近Figma。其他新功能包括符合品牌風格的圖表製作，以及修改影像局部、保留其他物件的編輯工具；影片工具則可將片段、圖片及音效等素材組合成影片。\n\n既有創作軟體也各有更新：Photoshop加入重新打光功能，以及調整提示詞生成風格的滑桿；Premiere新增專業調色系統與影片物件移除功能；Lightroom則加入閉眼修正及瑕疵移除工具。Adobe也規劃讓AI代理持續運作、主動掌握工作脈絡，並簡化移除背景、生成影片縮圖等操作。\n\n在軟體串接方面，Adobe原本已有ChatGPT與Claude整合，此次透過本機端MCP進一步開放Creative Cloud功能。Adobe副總裁Deepa Subramaniam表示，公司仍在決定開放哪些能力，會依使用者回饋調整；目前提供的端點與功能涉及Illustrator、Photoshop、After Effects及Premiere，並非所有功能都已確定開放範圍。",
-      "bullets_zh": [],
-      "source": {
-        "name": "TechCrunch AI",
-        "url": "https://techcrunch.com/2026/11/10/adobe-adds-more-ai-to-its-products-and-launches-an-mcp/",
-        "published_at": "2026-11-10T14:05:10+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-article",
-      "evidence_note_zh": "依來源文章整理。",
-      "editorial_analysis_zh": "這波更新的重點不只是增加生成工具，也包括讓外部聊天機器人接入創作軟體。後續值得觀察的是實際開放的功能範圍，以及這些串接能否融入既有工作流程，而非僅看新增功能數量。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "已取得TechCrunch報導正文；產品功能與代理運作方式依報導中的Adobe發布內容整理，未經獨立實測。"
-    },
-    {
-      "id": "2026-11-11-morning:event-25",
-      "original_id": "event-25",
-      "category": "taiwan",
-      "is_headline": false,
-      "title_zh": "藍天前三季營收增13%，2027年首季規劃推出RTX Spark新機",
-      "lede_zh": "藍天電腦規劃於2027年第1季推出RTX Spark Mini Workstation，擴充人工智慧個人電腦（AI PC）產品陣容。公司11月10日公布2026年前三季財報，合併營收為新台幣172.3億元、年增13%，歸屬母公司業主淨利23.65億元，每股盈餘4.09元。\n\n前三季營收成長並非來自筆電出貨量增加。藍天累計筆電出貨87.3萬台，年減20%，但受惠於平均售價大幅提高及有利匯率因素，筆電營收仍達149.3億元、年增15%。若單看第3季，筆電營收為49.3億元、季減15%，顯示當季成長動能承壓。\n\n藍天表示，面對主要零組件缺料與成本上揚，公司透過節能、散熱、降噪等差異化設計，提供客製化服務，支撐營收維持雙位數成長。接下來將持續深化中高階筆電布局，並以RTX Spark新機強化AI PC產品線。",
-      "bullets_zh": [],
-      "source": {
-        "name": "中央社財經",
-        "url": "https://www.cna.com.tw/news/afe/202611100362.aspx",
-        "published_at": "2026-11-10T22:10:45+08:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "出貨量下滑與營收成長同時出現，顯示觀察藍天營運不能只看台數，也須區分售價與匯率的影響；新機布局則仍應與已實現的財務成果分開判讀。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "來源資訊：依中央社財經已取得的報導節錄（publisher-excerpt）撰寫，非完整網頁全文；產品規劃與差異化設計成效為報導所載公司說法，未取得獨立產品測試資料。"
-    },
-    {
-      "id": "2026-11-11-morning:event-26",
-      "original_id": "event-26",
-      "category": "taiwan",
-      "is_headline": false,
-      "title_zh": "LINE Pay前三季營收64.33億元，擴展日常支付與韓國跨境合作",
-      "lede_zh": "LINE Pay公布2026年前三季合併營收新台幣64.33億元，年增13%、創歷史新高；歸屬母公司業主淨利4.35億元，年增6%，每股盈餘6.09元。公司接下來將持續拓展電子支付使用場景，並深化韓國跨境合作。\n\n在電子支付業務方面，LINE Pay表示，子公司LINE Pay Money用戶數已突破450萬戶，且持續穩定成長。公司並稱，代收付、儲值及轉帳三項核心業務金額逐月增加，規模持續居同業之冠。\n\n擴大使用情境是後續布局重點。LINE Pay Money透過乘車碼通勤回饋、好友推薦及未成年帳戶開通優惠，將服務延伸至大眾運輸、好友轉帳與家庭日常支付。跨境方面，除了針對韓國熱門旅遊場域推出回饋與點數活動，與美妝通路OLIVE YOUNG的合作也由韓國實體門市延伸至OLIVE YOUNG Global官方網站。\n\n展望第4季，LINE Pay預期百貨週年慶、電商購物節及海外旅遊需求將帶動支付需求升溫，並表示將深化支付服務、增加應用場景及提升營運效率。這些仍屬公司對後續業務的展望，不能等同於跨境合作已帶來的營收或獲利成果。",
-      "bullets_zh": [],
-      "source": {
-        "name": "中央社財經",
-        "url": "https://www.cna.com.tw/news/afe/202611100365.aspx",
-        "published_at": "2026-11-10T22:15:51+08:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "這次布局涵蓋通勤、家庭與跨境購物，觀察重點是支付場景的延伸，而非僅以用戶數或促銷活動推定獲利成效。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "依中央社財經已取得的報導節錄撰寫，非完整網頁全文；用戶數、同業排名及需求展望均為報導所載公司說法，未取得獨立驗證資料。"
-    },
-    {
-      "id": "2026-11-11-morning:event-27",
-      "original_id": "event-27",
-      "category": "taiwan",
-      "is_headline": false,
-      "title_zh": "Diraq矽基量子電腦進駐商用資料中心測試，創辦人盼分擔AI運算負荷",
-      "lede_zh": "澳洲新創公司Diraq開發以矽晶片為基底的小型量子電腦，目前正在雪梨一座商用資料中心進行實地測試。這項進展讓量子系統進入實際資料中心環境，但能否降低人工智慧運算的耗電，仍是公司提出的應用願景，尚不能視為已證實的節能成果。\n\n這套機型被描述為獨立完整系統，耗電功率不到20瓩，可設置於室溫資料中心，與一般電腦共同運作。量子電腦通常需要極低溫運作環境，因此系統能在資料中心部署，與量子運算元件本身的運作條件，仍須分開理解。\n\nDiraq創辦人祖拉克認為，新世代AI面對的部分問題更適合交由量子運算處理，並預期量子運算可在5年內為資料中心分擔負荷。他也提出分子行為計算、製藥、電池及化學工業等潛在用途；這些都是對技術應用的預期，並非此次實地測試已交付的成果。\n\nDiraq也是全球六家進入美國國防先進研究計畫局「量子基準測試計畫」第3階段的企業之一。該計畫尋求量子電腦能在2033年底前，以符合成本效益的方式解決實際問題。相較於進入測試階段，能否在具體工作上同時達成實用性與成本效益，仍是後續需要驗證的關鍵。",
-      "bullets_zh": [],
-      "source": {
-        "name": "中央社科技",
-        "url": "https://www.cna.com.tw/news/ait/202611100352.aspx",
-        "published_at": "2026-11-10T21:45:23+08:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "單一系統的功率數字，尚不足以證明量子運算比現有AI運算更節能；是否能完成可比較的實際工作，以及整體成本效益，才是判斷應用價值的重點。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "依中央社科技已取得的報導節錄撰寫，該報導綜合法新社內容；未直接取得法新社全文、公司技術文件或測試數據。系統功率與部署描述未經獨立驗證，5年內分擔AI運算負荷為創辦人預測。"
-    },
-    {
-      "id": "2026-11-11-morning:event-17",
-      "original_id": "event-17",
-      "category": "enterprise-cases",
-      "is_headline": false,
-      "title_zh": "TCS以多代理串接金融業測試流程，內部基準測試稱工時減少88%",
-      "lede_zh": "TCS以Amazon Bedrock AgentCore建立測試協調系統，將金融服務與保險客戶的需求文件轉成測試情境、程式碼及執行報告。TCS表示，系統已用於客戶正式環境；在約100個測試情境的受控內部比較中，工程投入由約200小時降至約24小時，減少88%。這項數字僅代表該次比較，實際結果會隨工作負載、應用複雜度與團隊而異。\n\n平台可接收Jira需求、業務需求文件、Swagger規格及GitLab原始碼等輸入，產生Gherkin功能檔與可執行的Java或Python測試。工作由專責代理分工，涵蓋情境生成、對話修訂、需求轉換、增量更新與測試執行，而不是交給單一大型提示一次完成。\n\n為避免不同客戶的資料混用，架構採共享運算、隔離資料與身分的方式，每個租戶配置自己的使用者集區、金鑰、儲存空間、資料表與知識庫。代理檢索專案內容前，也會依租戶、專案與工作階段篩選。API測試與瀏覽器介面測試則分流到不同執行環境。\n\n自動修正流程設有固定步驟與重試上限。只有判定為程式錯誤、且符合重試政策的失敗，才會交給修正代理；連線或驗證等環境問題不會送去改碼，安全檢查也會拒絕空白檔案、非預期新增檔案或檔案大小劇烈變動。TCS將品質工程師的角色定位為審查及治理AI產出，保留風險分析、探索式測試與發布決策工作。",
-      "bullets_zh": [],
-      "source": {
-        "name": "AWS Machine Learning",
-        "url": "https://aws.amazon.com/blogs/machine-learning/how-tcs-built-an-agentic-test-orchestrator-with-amazon-bedrock-agentcore/",
-        "published_at": "2026-11-10T16:59:43+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "此案例值得關注的是需求、生成、執行與修正之間的控制設計，而不只是節省工時的百分比。租戶隔離、有限重試及錯誤分類，都是判斷類似系統能否納入受管制測試流程的重要檢查點。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "來源為AWS Machine Learning與TCS人員共同撰寫的案例文章，取得內容標示為publisher-excerpt正文節錄。架構、正式使用情況與效益均為案例方說明；88%為TCS受控內部基準測試結果，未取得獨立驗證。"
-    },
-    {
-      "id": "2026-11-11-morning:event-18",
-      "original_id": "event-18",
-      "category": "enterprise-cases",
-      "is_headline": false,
-      "title_zh": "Trovata將AI代理嵌入企業資金管理，以角色權限限制操作範圍",
-      "lede_zh": "Trovata以Amazon Bedrock與Amazon Bedrock AgentCore建立企業資金管理代理，將自然語言查詢、現金流預測與異常監控整合進既有平台。依Trovata與AWS介紹，這套設計不只提供問答，而是讓代理依排程、觸發事件或規則持續監看資料、解釋差異並傳送更新。\n\n架構由Bedrock提供大型語言模型推論，AgentCore負責代理協調與工作流程。使用者提出問題後，系統透過Trovata自身的API層取得資料，再進行分析與回覆；管理者則可透過設定介面調整代理行為與工作範圍。角色型存取控制用來限制代理權限，讓代理遵循與使用者相同的存取邊界。\n\n案例列出的應用包括跨銀行現金流預測、以自然語言查詢帳戶資金狀況、偵測異常交易或餘額變化，以及產生多帳戶對帳摘要。這些是平台所描述的功能與流程，不能直接視為預測準確度、異常偵測效果或自動化成效已經獲得驗證。\n\n部署方式也涵蓋銀行品牌工具，讓銀行將代理功能納入對企業客戶提供的服務。Trovata表示，已有客戶建立正式運作的代理，並整理出十種代理模式；後續規畫包括擴充代理模式、深化企業資源規劃系統整合，以及增加全球銀行連線。",
-      "bullets_zh": [],
-      "source": {
-        "name": "AWS Machine Learning",
-        "url": "https://aws.amazon.com/blogs/machine-learning/autonomous-treasury-agents-how-trovata-built-an-ai-native-solution-on-amazon-bedrock-and-agentcore/",
-        "published_at": "2026-11-10T18:11:08+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "企業資金管理代理的關鍵不只是能否回答問題，也在於資料取得途徑、持續執行的條件與權限邊界。銀行品牌部署提供一種導入方式，但功能描述仍不足以證明財務操作的正確性與安全性。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "來源為AWS Machine Learning刊登、由Trovata與AWS人員撰寫的案例文章，取得內容為publisher-excerpt正文節錄；部分章節僅見標題，不能視為已取得完整安全治理與成果細節。功能、部署與未來規畫均屬案例方說明，未取得獨立成效驗證。"
-    },
-    {
-      "id": "2026-11-11-morning:event-10",
-      "original_id": "event-10",
-      "category": "science",
-      "is_headline": false,
-      "title_zh": "PSI借助Anthropic模型提出量子運算難題解答，探索AI科研商業化",
-      "lede_zh": "新創研究實驗室Physical Superintelligence（PSI）借助提前取得的Anthropic Fable 5.2模型，提出一項懸而未決18年的量子運算問題解答。參與研究的David Turturean利用模型處理Aaronson-Ambainis猜想；這項進展也讓PSI以人工智慧解決科學問題的商業路線受到關注。\n\n解答的可信度與人類能否理解，仍是不同層次的問題。提出猜想的研究者之一Scott Aaronson表示，自己尚未完全理解這份證明，但因證明已透過Lean語言自動形式化，加上PSI分享成果的研究團隊提供說明，他相信結果正確。這是研究者對成果的判斷，不能等同已完成獨立驗證或同儕審查。\n\nPSI的做法不只依靠單一模型。執行長Matt Pines表示，研究系統還需要工具、記憶系統與模擬基礎設施，才能深入探索不同解法。公司目前的營收來自資料中心最佳化，透過工具模擬熱、電力、水與聲音等變數；長期目標則是把理論物理突破轉化為實際技術。\n\n從計算結果走向現實應用，仍有另一道門檻。Pines指出，物理研究最終必須接受自然現象的檢驗，PSI正研究如何更有效率地以實驗驗證計算結果。團隊也曾在成果公開前與相關研究者交流，反映AI加速解題之際，成果說明、專家檢視與公開方式仍在摸索。",
-      "bullets_zh": [],
-      "source": {
-        "name": "TechCrunch AI",
-        "url": "https://techcrunch.com/2026/11/10/psi-is-trying-to-make-a-business-out-of-ai-driven-scientific-discovery/",
-        "published_at": "2026-11-10T19:03:52+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "這起案例的觀察重點不只是模型能否提出解答，也包括研究者能否理解、驗證並轉化成果。PSI現有的資料中心業務與長期科研目標，呈現了AI科學探索走向商業應用的兩個不同階段。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "取得TechCrunch AI報導節錄（publisher-excerpt），並非經確認的完整全文。未另取得研究論文、Lean形式化內容、Anthropic模型公告或獨立驗證資料；研究成果與商業模式依報導及其中受訪者說法呈現。"
-    }
-  ],
-  "breaking_news": [],
+  "date": "2026-11-12",
+  "date_display_zh": "補刊 · 2026年11月12日·星期四·科技早報 · 原定08:00 · 完成08:52 · 實際補刊09:03",
+  "edition": "morning",
+  "edition_label_zh": "科技早報",
+  "issue_label_zh": "補刊 · 2026-11-12 科技早報",
+  "issue_number": "2026-11-12-morning",
   "meta": {
-    "generated_at": "2026-11-11T07:20:58.177962+08:00",
-    "total_articles": 30,
-    "schema_version": "2.0",
     "edition": "morning",
+    "generated_at": "2026-11-12T08:52:43.026594+08:00",
     "model": "gpt-6.1-sol",
+    "reading_time_estimated": true,
+    "recovery_completed_at": "2026-11-12T08:52:43.026594+08:00",
+    "schema_version": "2.0",
     "source_mode": "mixed-source",
-    "reading_time_estimated": true
+    "total_articles": 29
   },
-  "window_start": "2026-11-10T19:00:00+08:00",
-  "window_end": "2026-11-11T07:00:00+08:00",
   "publication": {
-    "published_at": "2026-11-11T08:00:03.601710+08:00",
-    "issue_sha256": "2e5d7686de23863e32b325bcc544eed9fe41cc5a69601adfce35954a0a9ded65",
-    "identity": "2026-11-11-morning",
-    "legacy_archive_untouched": true
-  }
+    "identity": "2026-11-12-morning",
+    "issue_sha256": "f4f17ff402a4f6ebb50615d150bb439e397afd4ff0dd7e4362337b710bb77e2b",
+    "legacy_archive_untouched": true,
+    "published_at": "2026-11-12T09:03:12.261382+08:00"
+  },
+  "recovery": {
+    "completed_at": "2026-11-12T08:52:43.026594+08:00",
+    "cutoff_snapshot_sha256": "4a67960dc4df8f536fae57e128ac084928630b4316f856e0326e2aeb396a0139",
+    "kind": "late-edition-recovery",
+    "scheduled_publish_at": "2026-11-12T08:00:00+08:00"
+  },
+  "schema_version": 2,
+  "tagline_zh": "由 AI 為你策展，掌握科技與時事",
+  "weather_locations": [],
+  "window_end": "2026-11-12T07:00:00+08:00",
+  "window_start": "2026-11-11T19:00:00+08:00"
 }

@@ -1,0 +1,2251 @@
+{
+  "articles": [
+    {
+      "candidate_ids": [
+        "c06fca3b9549fb95708df0f2"
+      ],
+      "category": "ai-ml",
+      "claims": [
+        {
+          "evidence_id": "c06fca3b9549fb95708df0f2",
+          "quote": "Meet the Gemini Decisions API, powered by our state-of-the-art model Gemini Decision"
+        }
+      ],
+      "evidence_field": "rss-description",
+      "evidence_kind": "rss-summary",
+      "id": "event-01",
+      "photo": null,
+      "published_at": "2026-11-11T18:00:00+00:00",
+      "source_access_note_zh": "僅取得Google AI官方RSS摘要，未取得發布文章全文；目前資料未交代價格、開放範圍、技術規格或評測方法。",
+      "source_id": "user-075",
+      "source_name": "Google AI",
+      "source_title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
+      "source_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+      "summary_zh": "Google推出Gemini Decisions API，由Gemini Decision模型驅動，將多模態決策能力透過API提供給開發者。\n\nGoogle將「快速」與「經校準」列為這項服務的特色。不過，目前取得的發布資訊未提供具體效能數據、比較基準或應用案例，這些描述仍屬公司對產品的定位，不能視為已經獨立驗證的效能結論。",
+      "supporting_sources": [],
+      "title_zh": "Google推出Gemini Decisions API，以專用模型支援多模態決策"
+    },
+    {
+      "candidate_ids": [
+        "a7c392a32271e7abff9f0582"
+      ],
+      "category": "ai-ml",
+      "claims": [
+        {
+          "evidence_id": "a7c392a32271e7abff9f0582",
+          "quote": "구글의 인공지능(AI) 부문인 딥마인드가 유전자 활동을 분석·예측하는 모델 '알파게놈'의 후속작"
+        }
+      ],
+      "evidence_field": "rss-description",
+      "evidence_kind": "rss-summary",
+      "id": "event-02",
+      "photo": null,
+      "published_at": "2026-11-12T07:04:39+09:00",
+      "source_access_note_zh": "僅取得Yonhap Korean的RSS標題與摘要，摘要在後續版本名稱處中斷，未取得報導全文或研究原文。本文因此僅交代模型公開與用途，不延伸技術細節或效能結論。",
+      "source_id": "user-053",
+      "source_name": "Yonhap Korean",
+      "source_title": "구글, DNA분석 '알파게놈2' 공개…세포별 변이 정밀 예측",
+      "source_url": "https://www.yna.co.kr/view/AKR20261112013300091",
+      "summary_zh": "Google DeepMind公開用於分析與預測基因活動的模型後續版本，延續以人工智慧處理基因資訊的研究方向。\n\n這項模型的用途聚焦基因活動分析與預測，而非一般對話助理。目前取得的資訊不足以比較新舊版本的能力差異，也無法判定其預測準確率、研究成果或臨床應用效益。",
+      "supporting_sources": [],
+      "title_zh": "Google DeepMind公開基因活動分析與預測模型後續版本"
+    },
+    {
+      "body_provenance": {
+        "adapter": "techcrunch-entry-v1",
+        "body_sha256": "71ccf1ddc3797883b23ea1ab27b09472d7e1479429dc4a6e9d9622436baf3c7d",
+        "canonical_url": "https://techcrunch.com/2026/11/11/coreweave-turns-to-customer-prepayments-shorter-contracts-to-fund-ai-growth/",
+        "completeness": "full",
+        "extracted_chars": 3744,
+        "extraction_completeness": "full",
+        "observed_at": "2026-11-11T23:02:57.889205+00:00",
+        "page_published_at": "2026-11-11T19:54:00+00:00",
+        "page_title": "CoreWeave turns to customer prepayments, shorter contracts to fund AI growth",
+        "raw_sha256": "4e18109c0ac23e9c96a354c299eff49c54337fdc43ad0d54ca21fe54fc840c6d",
+        "rss_origin_sha256": "47c3cffede74f9c6ec5a91ec50b856f9699ede9136b0fea6c06c0502e5b961d5",
+        "source_url": "https://techcrunch.com/2026/11/11/coreweave-turns-to-customer-prepayments-shorter-contracts-to-fund-ai-growth/",
+        "supplied_chars": 3744,
+        "supplied_sha256": "71ccf1ddc3797883b23ea1ab27b09472d7e1479429dc4a6e9d9622436baf3c7d"
+      },
+      "candidate_ids": [
+        "e4e9565de9f6f79762855b04",
+        "231a8d7652050e5d9f6bfea4",
+        "c4bb144d1b3c16ac5346403f",
+        "8e802f7efc507f57910f29a7"
+      ],
+      "category": "vc-business",
+      "claims": [
+        {
+          "evidence_id": "e4e9565de9f6f79762855b04",
+          "quote": "it also posted a $709 million net loss and $846 million in quarterly interest expense."
+        },
+        {
+          "evidence_id": "231a8d7652050e5d9f6bfea4",
+          "quote": "plans to raise at least $4 billion through an investment-grade loan offering"
+        },
+        {
+          "evidence_id": "c4bb144d1b3c16ac5346403f",
+          "quote": "標普與那指皆漲逾1%"
+        },
+        {
+          "evidence_id": "8e802f7efc507f57910f29a7",
+          "quote": "Nasdaq erases last week’s losses"
+        }
+      ],
+      "editorial_analysis_zh": "這起事件的關鍵不只在營收成長，而是AI算力擴張如何取得資金。預付款可減輕眼前借款需求，短約則提高調價彈性；但兩者都不能取代對履約能力、現金流與債務成本的檢視。",
+      "evidence_field": "article_body",
+      "evidence_kind": "publisher-article",
+      "id": "event-03",
+      "photo": null,
+      "published_at": "2026-11-11T19:54:00+00:00",
+      "source_access_note_zh": "來源資訊：已取得TechCrunch報導全文；Bloomberg Technology、中央社財經與FT Markets僅取得RSS摘要，未取得三者全文。財報、定價與融資策略中的公司陳述主要依TechCrunch報導，未另取得財報或貸款文件獨立核對。",
+      "source_id": "user-068",
+      "source_name": "TechCrunch",
+      "source_title": "CoreWeave turns to customer prepayments, shorter contracts to fund AI growth",
+      "source_url": "https://techcrunch.com/2026/11/11/coreweave-turns-to-customer-prepayments-shorter-contracts-to-fund-ai-growth/",
+      "summary_zh": "人工智慧算力供應商CoreWeave正調整擴張資金來源，增加客戶預付款、以特定客戶合約支持的借款，並爭取價格較高的短期交易。公司第三季營收達36.6億美元、年增168%，但仍淨損7.09億美元，單季利息費用達8.46億美元，營收快速成長，但仍面臨虧損與高額利息支出。\n\nCoreWeave表示，預期未來三個月可取得約90億美元的客戶預付款與訂金，其中逾30億美元來自已建置算力的新客戶合約，不必另行添購硬體。公司並計畫依需求動用合約支持的貸款，支應尚待建置的基礎設施，以履行總額1,325億美元的待履約訂單。\n\n融資安排包含已完成與仍在規劃的交易。公司8月已完成一筆26億美元貸款，專為較短期客戶合約設計，可按資金需求分批借款；另據Bloomberg報導，CoreWeave在上調全年營收預測後，計畫透過投資等級貸款籌措至少40億美元，這筆資金尚不能視為已到位。\n\n短約讓公司更頻繁調整價格，但也帶來取捨。CoreWeave表示，部分短期算力交易的每百萬瓦年收入超過4,000萬美元，新建基礎設施的四至五年期合約則為2,000萬至2,500萬美元。TechCrunch分析，貸款方較重視長約帶來的可預測現金流；短約策略能否持續奏效，仍取決於需求、續約及定價能力。\n\n財報公布後，美股市場對AI投資的情緒回暖，標普與那斯達克指數均漲逾1%，輝達在連續兩個交易日大跌後止穩，那斯達克並收復前一週失土。不過，股票市場反應不代表債務風險解除：CoreWeave部分債券殖利率前一個月曾超過15%，顯示投資人仍關注資料中心投資回收前的資金壓力。",
+      "supporting_sources": [
+        {
+          "evidence_kind": "rss-summary",
+          "id": "231a8d7652050e5d9f6bfea4",
+          "published_at": "2026-11-11T22:42:47+00:00",
+          "source_name": "Bloomberg Technology",
+          "source_title": "CoreWeave Plans to Raise at Least $4 Billion in High-Grade Loan",
+          "source_url": "https://www.bloomberg.com/news/articles/2026-11-11/coreweave-plans-to-raise-at-least-4-billion-in-high-grade-loan"
+        },
+        {
+          "evidence_kind": "rss-summary",
+          "id": "c4bb144d1b3c16ac5346403f",
+          "published_at": "2026-11-12T05:34:43+08:00",
+          "source_name": "中央社財經",
+          "source_title": "CoreWeave財報緩解AI疑慮　美股收高輝達止穩",
+          "source_url": "https://www.cna.com.tw/news/afe/202611120010.aspx"
+        },
+        {
+          "evidence_kind": "rss-summary",
+          "id": "8e802f7efc507f57910f29a7",
+          "published_at": "2026-11-11T21:04:17+00:00",
+          "source_name": "FT Markets",
+          "source_title": "US tech stocks rally as AI trade revives",
+          "source_url": "https://www.ft.com/content/639de881-6017-454f-abfa-cfb191d1e7cd?syn-25a6b1a6=1"
+        }
+      ],
+      "title_zh": "CoreWeave轉向客戶預付款與合約融資，另規劃至少40億美元貸款"
+    },
+    {
+      "candidate_ids": [
+        "f31248890af40385bfab1b68"
+      ],
+      "category": "vc-business",
+      "claims": [
+        {
+          "evidence_id": "f31248890af40385bfab1b68",
+          "quote": "Sales of $10 billion represents an almost 50% jump from revenue of $6.7 billion"
+        }
+      ],
+      "editorial_analysis_zh": "這項數據提供觀察人工智慧商業化規模的具體指標，但營收成長不等於已實現獲利，兩者仍須分開判讀。",
+      "evidence_field": "rss-description",
+      "evidence_kind": "rss-summary",
+      "id": "event-04",
+      "photo": null,
+      "published_at": "2026-11-11T16:14:44+00:00",
+      "source_access_note_zh": "僅取得TechCrunch的RSS摘要與標題，未取得報導全文；現有資料未提供這項營收數字的詳細計算口徑，也不足以判斷獲利、現金流或全年業績。",
+      "source_id": "user-068",
+      "source_name": "TechCrunch",
+      "source_title": "OpenAI’s quarterly revenue reportedly crosses $10B for the first time",
+      "source_url": "https://techcrunch.com/2026/11/11/openais-quarterly-revenue-reportedly-crosses-10b-for-the-first-time/",
+      "summary_zh": "OpenAI單季營收據報首次突破100億美元。TechCrunch報導，這項營收數字較公司第二季的67億美元增加近五成，顯示其營收規模進一步擴大。",
+      "supporting_sources": [],
+      "title_zh": "OpenAI單季營收據報首破100億美元，較第二季增近五成"
+    },
+    {
+      "body_provenance": {
+        "adapter": "cna-paragraph-v1",
+        "body_sha256": "472a9142c8c2c61643ae8e8254c8f7b1617e6470e1a29d764011be8c843cba7f",
+        "canonical_url": "https://www.cna.com.tw/news/aopl/202611120007.aspx",
+        "completeness": "excerpt",
+        "extracted_chars": 625,
+        "extraction_completeness": "excerpt",
+        "observed_at": "2026-11-11T23:02:57.343366+00:00",
+        "page_published_at": "2026-11-12T03:38:00+08:00",
+        "page_title": "研調：Anthropic掛牌日散戶買超可能破SpaceX紀錄",
+        "raw_sha256": "ac2a084b4aa0488eac2f4bf826cd374da0ea7624b87725215203787c645aac9b",
+        "rss_origin_sha256": "da9342d966cae0f28854bb0532096be61918acd963fa31490e4965951df2ef44",
+        "source_url": "https://www.cna.com.tw/news/aopl/202611120007.aspx",
+        "supplied_chars": 625,
+        "supplied_sha256": "472a9142c8c2c61643ae8e8254c8f7b1617e6470e1a29d764011be8c843cba7f"
+      },
+      "candidate_ids": [
+        "fc253d4082ddc433c6453758",
+        "34386eaa1575f95c5f64aea7",
+        "5bfd9e7ae0a91db15103d9c7"
+      ],
+      "category": "vc-business",
+      "claims": [
+        {
+          "evidence_id": "fc253d4082ddc433c6453758",
+          "quote": "Anthropic上市首日吸引的散戶買超將達約2億5000萬美元"
+        },
+        {
+          "evidence_id": "fc253d4082ddc433c6453758",
+          "quote": "Anthropic的IPO目標估值1兆4000億美元，其股票預計本月19日開始在美國那斯達克市場交易。"
+        },
+        {
+          "evidence_id": "5bfd9e7ae0a91db15103d9c7",
+          "quote": "with sources saying it's already multiple times oversubscribed."
+        },
+        {
+          "evidence_id": "34386eaa1575f95c5f64aea7",
+          "quote": "Wall Street hopes it will spur the next leg"
+        }
+      ],
+      "editorial_analysis_zh": "認購需求、衍生性商品交易量與掛牌後的股票買超是不同指標。分開觀察，才能避免把上市前的市場熱度誤當成已實現的資金流入。",
+      "evidence_field": "article_body",
+      "evidence_kind": "publisher-excerpt",
+      "id": "event-05",
+      "photo": null,
+      "published_at": "2026-11-12T03:38:35+08:00",
+      "source_access_note_zh": "中央社來源為已取得的報導節錄；Bloomberg Markets與Bloomberg Technology來源僅取得RSS摘要，未取得全文或完整影音。超額認購為彭博摘要中的消息人士說法，散戶買超金額與紀錄比較為Vanda Research的估算及資料，均未經獨立驗證。",
+      "source_id": "user-055",
+      "source_name": "中央社國際",
+      "source_title": "研調：Anthropic掛牌日散戶買超可能破SpaceX紀錄",
+      "source_url": "https://www.cna.com.tw/news/aopl/202611120007.aspx",
+      "summary_zh": "Anthropic預計11月19日在美國那斯達克市場開始交易，首次公開募股（IPO）目標估值為1兆4000億美元。掛牌前的認購需求與散戶參與程度受到關注，但目前的超額認購消息與買盤預估，都不是上市後的實際交易結果。\n\n金融市場研究公司Vanda Research預估，Anthropic上市首日的散戶買超金額將達約2億5000萬美元，是其所列SpaceX首次公開募股時1億1800萬美元的兩倍多，可能創下單日散戶買超紀錄。該公司並指出，自2024年以來，只有6檔股票曾出現單日散戶買超超過2億5000萬美元的情況。\n\n這項估算參考歷來股票上市首日的散戶交易紀錄，以及Anthropic在Hyperliquid平台的IPO前永續期貨交易量。這類無到期日的衍生性商品讓投資人押注未上市公司的估值，與股票掛牌後的買賣不同，因此交易熱度仍不能直接視為未來買盤。\n\n彭博另引述消息人士指出，Anthropic的IPO已獲數倍超額認購。彭博也將此次上市視為觀察人工智慧投資熱度的重要窗口，報導華爾街期待它帶動下一波人工智慧相關股票行情；這些期待能否實現，仍有待掛牌後的交易表現。",
+      "supporting_sources": [
+        {
+          "evidence_kind": "rss-summary",
+          "id": "34386eaa1575f95c5f64aea7",
+          "published_at": "2026-11-11T21:15:02+00:00",
+          "source_name": "Bloomberg Markets",
+          "source_title": "Anthropic IPO Is ‘Jenga Block’ Holding Up Next Leg of AI Trade",
+          "source_url": "https://www.bloomberg.com/news/articles/2026-11-11/anthropic-ipo-is-jenga-block-holding-up-next-leg-of-ai-trade"
+        },
+        {
+          "evidence_kind": "rss-summary",
+          "id": "5bfd9e7ae0a91db15103d9c7",
+          "published_at": "2026-11-11T18:42:10+00:00",
+          "source_name": "Bloomberg Technology",
+          "source_title": "Anthropic IPO Demand Surges as CoreWeave Calms AI Fears",
+          "source_url": "https://www.bloomberg.com/news/videos/2026-11-11/bloomberg-tech-11-10-2026-video"
+        }
+      ],
+      "title_zh": "Anthropic預計11月19日掛牌，研調估首日散戶買超達2.5億美元"
+    },
+    {
+      "candidate_ids": [
+        "2bc1e21cb76d43ed4a9e0867"
+      ],
+      "category": "vc-business",
+      "claims": [
+        {
+          "evidence_id": "2bc1e21cb76d43ed4a9e0867",
+          "quote": "at least $30 billion in new capital at a $1.4 trillion valuation."
+        },
+        {
+          "evidence_id": "2bc1e21cb76d43ed4a9e0867",
+          "quote": "some investors felt the terms were too lofty, according to people familiar with the matter"
+        }
+      ],
+      "editorial_analysis_zh": "募資條件反映公司的資金需求與估值期待，投資人是否接受則是另一回事。部分投資人的疑慮值得關注，但不足以推論整輪募資受挫或市場全面轉向。",
+      "evidence_field": "rss-description",
+      "evidence_kind": "rss-summary",
+      "id": "event-06",
+      "photo": null,
+      "published_at": "2026-11-11T21:39:14+00:00",
+      "source_access_note_zh": "僅取得Bloomberg Technology的RSS摘要，未取得報導全文；送入文字在消息人士身分說明處中斷。現有資料未交代最終募資金額、成交估值或投資人是否退出，不能據此判定募資成敗。",
+      "source_id": "user-066",
+      "source_name": "Bloomberg Technology",
+      "source_title": "OpenAI, Anthropic Valuations Fuel VC Fears of Startup Correction",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-11-11/openai-anthropic-valuations-fuel-vc-fears-of-startup-correction",
+      "summary_zh": "OpenAI據報為新一輪募資提出至少300億美元的新資金需求，估值條件為1兆4000億美元。彭博引述知情人士指出，部分投資人認為條件過高；這些數字仍是募資洽談條件，並非已完成交易的結果。\n\n報導指出，OpenAI於9月下旬展開這一輪募資討論，在與表達興趣的潛在出資者初步接觸後提出條件。部分投資人的反應顯示，即使先前有參與意願，也不代表接受公司提出的估值與募資要求。",
+      "supporting_sources": [],
+      "title_zh": "OpenAI據報以1.4兆美元估值洽談募資，部分投資人認為條件過高"
+    },
+    {
+      "candidate_ids": [
+        "59ca7f6d6630d5d0375cbe71",
+        "5f3f955a3f30136bbbf244f5",
+        "2000e95fc44d8bf819b6e2eb",
+        "86409c70a4f047e99a48942e",
+        "f66405061feb01de24633703",
+        "efcd056c199af083fc8df513"
+      ],
+      "category": "vc-business",
+      "claims": [
+        {
+          "evidence_id": "59ca7f6d6630d5d0375cbe71",
+          "quote": "has hired New York-based Wachtell, Lipton, Rosen & Katz"
+        },
+        {
+          "evidence_id": "2000e95fc44d8bf819b6e2eb",
+          "quote": "board is preparing to oust Chief Executive Officer Jensen Huang"
+        },
+        {
+          "evidence_id": "86409c70a4f047e99a48942e",
+          "quote": "If he doesn’t agree to the briefing, he’ll likely be subpoenaed"
+        },
+        {
+          "evidence_id": "efcd056c199af083fc8df513",
+          "quote": "stock sank in extended trading"
+        }
+      ],
+      "editorial_analysis_zh": "董事會調查、管理階層去留與出口合規要求是不同層次的風險。判讀後續發展時，應分別確認正式調查結果、人事決議與監管措施，不能把市場反應或議員要求當成既定結論。",
+      "evidence_field": "rss-description",
+      "evidence_kind": "rss-summary",
+      "id": "event-07",
+      "photo": null,
+      "published_at": "2026-11-11T21:59:07+00:00",
+      "source_access_note_zh": "TechCrunch 取得內容為報導節錄；《衛報》、《紐約時報》及彭博各篇僅取得 RSS 摘要，未取得完整內文。彭博關於董事會準備撤換黃仁勳的摘要轉述《華爾街日報》，未取得後者原文。TechCrunch 節錄表示，輝達未立即回應其置評要求。現有資料不足以確認情報活動指控、正式撤換決議或傳票已發出。",
+      "source_id": "user-043",
+      "source_name": "The Guardian",
+      "source_title": "Nvidia hires leading US law firm to investigate Jensen Huang’s relationship",
+      "source_url": "https://www.theguardian.com/technology/2026/nov/11/nvidia-hires-leading-us-law-firm-to-investigate-jensen-huang-relationship",
+      "summary_zh": "輝達董事會已委任律師事務所，調查執行長黃仁勳與一名被指涉嫌為中國從事間諜活動的女子之關係。《衛報》報導，董事會聘請紐約律師事務所 Wachtell, Lipton, Rosen & Katz，由合夥人 Joon Kim 主導調查；相關情報活動指控尚不能視為已獲證實。\n\n調查之外，黃仁勳的職務前景也受到關注。《紐約時報》報導，董事會預計開會討論他的去留；彭博所載消息則指，董事會正準備撤換黃仁勳。這些消息仍屬會議預期及人事變動報導，不能據此認定他已遭撤職。輝達股價在11月11日盤後交易下跌，彭博將市場反應與投資人評估黃仁勳可能離任的影響連結。\n\n美國國會方面，眾議員 Brian Mast、John Moolenaar 與 Rick Crawford 已致函黃仁勳，要求他就與 Megaspeed 人員 Alice Huang 的關係，向相關委員會進行聯合閉門簡報。Moolenaar 表示，若黃仁勳未同意出席，可能遭到傳喚；Mast 也表示，其委員會正準備在未獲回應時發出傳票。這與已正式發出傳票仍有區別。\n\n另一名眾議員 Raja Krishnamoorthi 也要求黃仁勳說明，並主張檢視輝達對中國的出口許可、加強防止先進美國晶片流向受限制中國實體的管制。相關要求已從個人關係爭議延伸至公司治理與出口合規，但目前仍是議員提出的主張，並非已公布的新管制措施。",
+      "supporting_sources": [
+        {
+          "evidence_kind": "rss-summary",
+          "id": "5f3f955a3f30136bbbf244f5",
+          "published_at": "2026-11-11T22:48:55+00:00",
+          "source_name": "NYT",
+          "source_title": "Nvidia’s Board Is Expected to Meet to Discuss Jensen Huang’s Future",
+          "source_url": "https://www.nytimes.com/2026/11/11/technology/nvidia-jensen-huang.html"
+        },
+        {
+          "evidence_kind": "rss-summary",
+          "id": "2000e95fc44d8bf819b6e2eb",
+          "published_at": "2026-11-11T22:27:33+00:00",
+          "source_name": "Bloomberg Technology",
+          "source_title": "Nvidia Preparing to Oust Jensen Huang After Affairs, WSJ Says",
+          "source_url": "https://www.bloomberg.com/news/articles/2026-11-11/nvidia-ceo-had-an-affair-with-health-executive-at-firm-nyt-says"
+        },
+        {
+          "body_provenance": {
+            "adapter": "techcrunch-entry-v1",
+            "body_sha256": "1b76e9cbddf36b64a0c23b563bced742c36ff2f4f9ab2818b76411723176e7cd",
+            "canonical_url": "https://techcrunch.com/2026/11/11/congress-to-call-jensen-huang-in-to-answer-for-alleged-chinese-spy-affair/",
+            "completeness": "excerpt",
+            "extracted_chars": 919,
+            "extraction_completeness": "excerpt",
+            "observed_at": "2026-11-11T23:03:01.882287+00:00",
+            "page_published_at": "2026-11-11T19:22:22+00:00",
+            "page_title": "Congress to call Jensen Huang in to answer for alleged Chinese spy affair",
+            "raw_sha256": "8be0ff4cd2574a5826b4e7911d27bdf83e04c9bcd3070f1f7125b2a82d09e168",
+            "rss_origin_sha256": "367cad16c80b52eb8ca659619b2e66fa7e1364d3d403ab60614a77e6eef4c12f",
+            "source_url": "https://techcrunch.com/2026/11/11/congress-to-call-jensen-huang-in-to-answer-for-alleged-chinese-spy-affair/",
+            "supplied_chars": 919,
+            "supplied_sha256": "1b76e9cbddf36b64a0c23b563bced742c36ff2f4f9ab2818b76411723176e7cd"
+          },
+          "evidence_field": "article_body",
+          "evidence_kind": "publisher-excerpt",
+          "id": "86409c70a4f047e99a48942e",
+          "published_at": "2026-11-11T19:22:22+00:00",
+          "source_name": "TechCrunch",
+          "source_title": "Congress to call Jensen Huang in to answer for alleged Chinese spy affair",
+          "source_url": "https://techcrunch.com/2026/11/11/congress-to-call-jensen-huang-in-to-answer-for-alleged-chinese-spy-affair/"
+        },
+        {
+          "evidence_kind": "rss-summary",
+          "id": "f66405061feb01de24633703",
+          "published_at": "2026-11-11T19:03:28+00:00",
+          "source_name": "Bloomberg Technology",
+          "source_title": "Nvidia China Scandal Demands Answers, Says Congressman",
+          "source_url": "https://www.bloomberg.com/news/videos/2026-11-11/nvidia-china-scandal-demands-answers-says-congressman-video"
+        },
+        {
+          "evidence_kind": "rss-summary",
+          "id": "efcd056c199af083fc8df513",
+          "published_at": "2026-11-11T22:48:40+00:00",
+          "source_name": "Bloomberg Markets",
+          "source_title": "Nvidia Tumbles as Investors Consider Future Without CEO Huang",
+          "source_url": "https://www.bloomberg.com/news/articles/2026-11-11/nvidia-tumbles-as-investors-consider-future-without-ceo-huang"
+        }
+      ],
+      "title_zh": "輝達董事會委任律師調查黃仁勳，國會要求出席閉門說明"
+    },
+    {
+      "body_provenance": {
+        "adapter": "cna-paragraph-v1",
+        "body_sha256": "ef9dbc032c492f44ebfb185c4a162486b3292411841db249e99d7ff41bd04140",
+        "canonical_url": "https://www.cna.com.tw/news/aopl/202611120008.aspx",
+        "completeness": "excerpt",
+        "extracted_chars": 528,
+        "extraction_completeness": "excerpt",
+        "observed_at": "2026-11-11T23:02:56.470310+00:00",
+        "page_published_at": "2026-11-12T03:59:00+08:00",
+        "page_title": "輝達客戶涉轉運晶片輸中　傳美財長質問商務部長為何不列管",
+        "raw_sha256": "6edf0d5b076cb639b61137b39c1dfbd2f0d5261ac3d912b4ee7dff6edcaf08e1",
+        "rss_origin_sha256": "86d2876affe229ebc3fcaa14b4cf6bae84fe8078f4d46bbec3121c0e3521f4d4",
+        "source_url": "https://www.cna.com.tw/news/aopl/202611120008.aspx",
+        "supplied_chars": 528,
+        "supplied_sha256": "ef9dbc032c492f44ebfb185c4a162486b3292411841db249e99d7ff41bd04140"
+      },
+      "candidate_ids": [
+        "27c13c20c66cbaad95e82a6c",
+        "36de40de23409eeeacb8a21e"
+      ],
+      "category": "vc-business",
+      "claims": [
+        {
+          "evidence_id": "27c13c20c66cbaad95e82a6c",
+          "quote": "知情人士告訴美國新聞網站Axios，美國財長貝森特在白宮戰情室當面質問商務部長盧特尼克，不滿商務部未將輝達（Nvidia）客戶Megaspeed列入國安疑慮企業名單。"
+        },
+        {
+          "evidence_id": "36de40de23409eeeacb8a21e",
+          "quote": "塔納猜告訴中央社，泰國資料中心取得GPU已經不容易，如果美國進一步收緊管制，短期可能對產業發展造成影響。"
+        },
+        {
+          "evidence_id": "36de40de23409eeeacb8a21e",
+          "quote": "泰國內閣已批准新的資料中心監管架構，將資料中心分為7個等級。"
+        }
+      ],
+      "editorial_analysis_zh": "人工智慧基礎設施投資同時受到晶片流向審查與當地設置規範影響。對業者而言，是否正式列管、出口許可如何變動，以及資料中心審查標準，應分開評估，避免將政策爭論誤認為已生效的供應限制。",
+      "evidence_field": "article_body",
+      "evidence_kind": "publisher-excerpt",
+      "id": "event-08",
+      "photo": null,
+      "published_at": "2026-11-12T03:59:37+08:00",
+      "source_access_note_zh": "兩篇中央社來源均取得報導節錄，未取得或核對其所引用的 Axios、Bangkok Post 原文。美國官員交涉及阻擋列管的說法來自中央社轉述的知情人士；東南亞晶片供應影響為受訪專家預測，來源未提供美國已實施新限制的證據。",
+      "source_id": "user-055",
+      "source_name": "中央社國際",
+      "source_title": "輝達客戶涉轉運晶片輸中　傳美財長質問商務部長為何不列管",
+      "source_url": "https://www.cna.com.tw/news/aopl/202611120008.aspx",
+      "summary_zh": "輝達客戶 Megaspeed 涉嫌將美國晶片轉運至中國，引發美國政府內部對出口管制執行的爭議。知情人士表示，美國財長貝森特曾在白宮戰情室會議中，當面質問商務部長盧特尼克，為何尚未將 Megaspeed 列入商務部實體清單；盧特尼克回應會了解此事。相關交涉來自知情人士說法，並非已公布的列管決定。\n\n依這些人士的說法，盧特尼克過去一年曾阻擋其他官員追究 Megaspeed 責任的行動，顧慮是可能使美中貿易戰升高；商務部次長凱斯勒也曾多次接獲相關警告，但表示應由部長決定。Megaspeed 非法轉運晶片的說法目前仍屬指控。\n\n這場爭議也讓東南亞人工智慧供應鏈面臨更多不確定性。泰國 IMC Institute 執行董事塔納猜向中央社表示，美國可能更密切監控泰國及其他東南亞國家的繪圖處理器流向，尤其關注是否有企業透過第三地將運算能力輸往中國。他認為，泰國資料中心取得晶片原已不易，若管制進一步收緊，短期發展可能受影響，但不至於改變人工智慧產業的長期趨勢。\n\n另一方面，泰國內閣已批准將資料中心分為七個等級的新監管架構，既有計畫須遵守統一營運及監督標準，新案與尚未獲准的項目則將接受更嚴格審查，涵蓋選址、電力、供水、社區影響及經濟效益。這是泰國本地監管制度的調整，不等同美國已對泰國實施新的晶片限制；晶片取得難度可能增加，仍是專家的條件式預測。",
+      "supporting_sources": [
+        {
+          "body_provenance": {
+            "adapter": "cna-paragraph-v1",
+            "body_sha256": "56489c0b20ff1792184f0f3cfa740d7c0596283ce27655fdf03b6f0e959fc3a4",
+            "canonical_url": "https://www.cna.com.tw/news/afe/202611110321.aspx",
+            "completeness": "excerpt",
+            "extracted_chars": 1074,
+            "extraction_completeness": "excerpt",
+            "observed_at": "2026-11-11T23:03:07.289641+00:00",
+            "page_published_at": "2026-11-11T20:30:00+08:00",
+            "page_title": "黃仁勳爭議牽動東南亞晶片供應鏈監管　泰專家：資料中心受考驗",
+            "raw_sha256": "70922615483e573e57a1d4958f94772d4e579b2583c2158b101e781be5bcadf4",
+            "rss_origin_sha256": "7b27e093da1f555bdacf448db43932d3ccd99a91d420d70a1ab50438eb9f31cb",
+            "source_url": "https://www.cna.com.tw/news/afe/202611110321.aspx",
+            "supplied_chars": 1074,
+            "supplied_sha256": "56489c0b20ff1792184f0f3cfa740d7c0596283ce27655fdf03b6f0e959fc3a4"
+          },
+          "evidence_field": "article_body",
+          "evidence_kind": "publisher-excerpt",
+          "id": "36de40de23409eeeacb8a21e",
+          "published_at": "2026-11-11T20:30:06+08:00",
+          "source_name": "中央社財經",
+          "source_title": "黃仁勳爭議牽動東南亞晶片供應鏈監管　泰專家：資料中心受考驗",
+          "source_url": "https://www.cna.com.tw/news/afe/202611110321.aspx"
+        }
+      ],
+      "title_zh": "Megaspeed列管爭議升溫，泰國專家憂晶片監管收緊衝擊資料中心"
+    },
+    {
+      "candidate_ids": [
+        "22d6799f13a3486d4568cc73"
+      ],
+      "category": "vc-business",
+      "claims": [
+        {
+          "evidence_id": "22d6799f13a3486d4568cc73",
+          "quote": "Fractile has now become one of the top-funded players in the race for purpose-built AI chips."
+        }
+      ],
+      "evidence_field": "rss-description",
+      "evidence_kind": "rss-summary",
+      "id": "event-09",
+      "photo": null,
+      "published_at": "2026-11-11T19:34:55+00:00",
+      "source_access_note_zh": "僅取得 TechCrunch 標題與 RSS 摘要，未取得報導全文；7.2億美元融資金額及英國公司資訊來自標題。現有資料未提供投資人名單、估值、晶片效能或量產時程，募資地位亦未經獨立核驗。",
+      "source_id": "user-068",
+      "source_name": "TechCrunch",
+      "source_title": "With $720M round, Britain’s Fractile gets a leg up in the race for AI chips",
+      "source_url": "https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips/",
+      "summary_zh": "英國 Fractile 取得7.2億美元融資，持續投入人工智慧專用晶片領域。TechCrunch 報導指出，這筆融資使 Fractile 成為該領域募資規模居前的業者之一。\n\n這項消息呈現資金持續投入人工智慧專用晶片的動向，但募資規模本身不能證明產品效能或商業進展，也不能據此判定 Fractile 已在晶片市場取得領先地位。",
+      "supporting_sources": [],
+      "title_zh": "英國Fractile獲7.2億美元融資，投入人工智慧專用晶片競爭"
+    },
+    {
+      "candidate_ids": [
+        "69203b0d4239ff9d32712899"
+      ],
+      "category": "vc-business",
+      "claims": [
+        {
+          "evidence_id": "69203b0d4239ff9d32712899",
+          "quote": "Microsoft Corp. aims to find ways to power its data centers"
+        },
+        {
+          "evidence_id": "69203b0d4239ff9d32712899",
+          "quote": "without relying on government subsidies or driving up costs for other electricity consumers."
+        }
+      ],
+      "editorial_analysis_zh": "這項承諾把資料中心用電需求與成本由誰承擔連在一起；後續判斷重點應是具體供電及費率安排，而非將目標視為已落實的成果。",
+      "evidence_field": "rss-description",
+      "evidence_kind": "rss-summary",
+      "id": "event-10",
+      "photo": null,
+      "published_at": "2026-11-11T20:33:16+00:00",
+      "source_access_note_zh": "僅取得Bloomberg Technology的RSS摘要，未取得報導全文；供電目標屬Microsoft自述，尚無執行細節或成果可供核對。",
+      "source_id": "user-066",
+      "source_name": "Bloomberg Technology",
+      "source_title": "Microsoft Vows to Pay Its Own Way to Power Data Centers",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-11-11/microsoft-vows-to-pay-its-own-way-to-power-data-centers",
+      "summary_zh": "Microsoft提出資料中心供電目標，希望找到不依賴政府補貼、也不增加其他電力用戶成本的供電方式，將算力建設的電力成本分攤問題納入公司承諾。\n\n這是Microsoft提出的方向，並非已完成的供電或費率安排。目前取得的資訊未交代具體執行方案、適用地區與時程，也不足以確認公司已取得所需電力或落實上述目標。",
+      "supporting_sources": [],
+      "title_zh": "Microsoft提出資料中心供電目標：不靠政府補貼、不推高其他用戶成本"
+    },
+    {
+      "candidate_ids": [
+        "351392b31b9f8e2235920237",
+        "fe5a008bd23712d19711cf7b"
+      ],
+      "category": "vc-business",
+      "claims": [
+        {
+          "evidence_id": "351392b31b9f8e2235920237",
+          "quote": "from widespread local opposition and permitting delays to a scramble for electricity."
+        },
+        {
+          "evidence_id": "fe5a008bd23712d19711cf7b",
+          "quote": "A lot of the projects being announced may never get built in the first place."
+        }
+      ],
+      "editorial_analysis_zh": "評估人工智慧基礎建設供給時，應區分宣布計畫與實際落地；地方接受度、許可與供電條件，都是不能由投資宣示取代的檢視項目。",
+      "evidence_field": "rss-description",
+      "evidence_kind": "rss-summary",
+      "id": "event-11",
+      "photo": null,
+      "published_at": "2026-11-11T20:15:15+00:00",
+      "source_access_note_zh": "僅取得TechCrunch影音與TechCrunch AI節目稿的RSS摘要，兩筆摘要文字相同，合併為同一事件，不視為兩份獨立佐證；未取得完整影音、逐字稿或報導全文。",
+      "source_id": "user-068",
+      "source_name": "TechCrunch",
+      "source_title": "Why the data center you dread might never even be built",
+      "source_url": "https://techcrunch.com/video/why-the-data-center-you-dread-might-never-even-be-built/",
+      "summary_zh": "資料中心建設熱潮正遭遇地方反對、許可延誤與電力資源競爭。TechCrunch的影音與節目內容指出，這些現實障礙拖慢建設，而更基本的問題是，許多已宣布的專案可能根本不會興建。\n\n這項判斷涉及人工智慧基礎建設從宣布到落地的落差，但目前取得的內容未列出個別取消案、未落地比例或相關投資損失，不能據此推算整體建設規模將縮減多少。",
+      "supporting_sources": [
+        {
+          "evidence_kind": "rss-summary",
+          "id": "fe5a008bd23712d19711cf7b",
+          "published_at": "2026-11-11T20:02:14+00:00",
+          "source_name": "TechCrunch AI",
+          "source_title": "How backlash and red tape continue to slow data centers post-Blue Wave",
+          "source_url": "https://techcrunch.com/podcast/how-backlash-and-red-tape-continue-to-slow-data-centers-post-blue-wave/"
+        }
+      ],
+      "title_zh": "資料中心擴張遇地方反對與供電競爭，宣布計畫未必落地"
+    },
+    {
+      "body_provenance": {
+        "adapter": "cna-paragraph-v1",
+        "body_sha256": "23f0c4ff51d5391832c29d8e5d3074c73bd31a9be955b2e4a655dbd8136a79bf",
+        "canonical_url": "https://www.cna.com.tw/news/afe/202611110311.aspx",
+        "completeness": "excerpt",
+        "extracted_chars": 823,
+        "extraction_completeness": "excerpt",
+        "observed_at": "2026-11-11T23:03:07.843080+00:00",
+        "page_published_at": "2026-11-11T19:41:00+08:00",
+        "page_title": "國家關鍵技術清單增修　涵括高階載板、低軌衛星通訊",
+        "raw_sha256": "b504c493230fe8588ced0a08e7c2f7a8d48cd9aa94b2178658fe5183f2ac7057",
+        "rss_origin_sha256": "70d4ab64ae89bc0620c3efb32c98e9c270df5b95d11cde04b49f1dceea02b832",
+        "source_url": "https://www.cna.com.tw/news/afe/202611110311.aspx",
+        "supplied_chars": 823,
+        "supplied_sha256": "23f0c4ff51d5391832c29d8e5d3074c73bd31a9be955b2e4a655dbd8136a79bf"
+      },
+      "candidate_ids": [
+        "cc8e6c1158475ae9f1de7a4c"
+      ],
+      "category": "taiwan",
+      "claims": [
+        {
+          "evidence_id": "cc8e6c1158475ae9f1de7a4c",
+          "quote": "預計新增4項及變更6項技術項目，由原先42項增至46項技術。"
+        },
+        {
+          "evidence_id": "cc8e6c1158475ae9f1de7a4c",
+          "quote": "「IC封測－高階AI晶片載板技術」及「無人機姿態穩定之虛擬化雙作業系統飛控技術」"
+        },
+        {
+          "evidence_id": "cc8e6c1158475ae9f1de7a4c",
+          "quote": "並預定於年底前召開國家核心關鍵技術審議會進行技術項目審認，再送交行政院進行公告。"
+        }
+      ],
+      "editorial_analysis_zh": "此次草案不僅新增技術，也調整既有項目的名稱與範圍。相關業者檢視技術保護要求時，應同時留意新增項目及既有項目的修正，而非只看清單總數。",
+      "evidence_field": "article_body",
+      "evidence_kind": "publisher-excerpt",
+      "id": "event-12",
+      "photo": null,
+      "published_at": "2026-11-11T19:41:44+08:00",
+      "source_access_note_zh": "取得中央社報導的出版者節錄，來源標記為publisher-excerpt，非全文取得；草案內容與程序說明均依節錄中的國科會說法整理。",
+      "source_id": "user-057",
+      "source_name": "中央社財經",
+      "source_title": "國家關鍵技術清單增修　涵括高階載板、低軌衛星通訊",
+      "source_url": "https://www.cna.com.tw/news/afe/202611110311.aspx",
+      "summary_zh": "國科會11月11日預告修正國家核心關鍵技術項目，擬新增4項、變更6項，清單總數預計由42項增至46項。新增範圍涵蓋高階AI晶片載板、無人機與低軌衛星通訊等領域，目前仍在預告階段，尚未完成審認及公告程序。\n\n新增技術包括國科會主管的「低軌道衛星通訊酬載軟體定義無線通信及波束合成控制技術」，以及經濟部主管的「IC封測－高階AI晶片載板技術」、「無人機姿態穩定之虛擬化雙作業系統飛控技術」。另一項為衛福部主管的「腸病毒A71型（EV-A71）疫苗製造技術」。\n\n既有項目也將調整名稱與涵蓋內容。例如，「網路主動防禦技術」擬改為「AI網路主動防禦技術」；量子位元項目則由設計與製程，調整為設計、製作、量測與操控。衛星操控與太空規格影像感測器相關項目也列入名稱變更。\n\n國科會表示，此次修正旨在強化核心關鍵技術營業秘密保護，草案已經各部會盤點、評估並徵詢各界意見。預告期間仍將蒐集建議，交由技術主管機關研議，預定年底前召開審議會進行技術項目審認，再送行政院公告；最終清單與保護範疇仍須以後續程序結果為準。",
+      "supporting_sources": [],
+      "title_zh": "國科會預告增修核心關鍵技術清單，納高階AI晶片載板與低軌衛星通訊"
+    },
+    {
+      "body_provenance": {
+        "adapter": "cna-paragraph-v1",
+        "body_sha256": "6391f3feb073db01424b2c2958ab3b6f56ca1ffdc587fb91e0706be7647cfaf3",
+        "canonical_url": "https://www.cna.com.tw/news/afe/202611110310.aspx",
+        "completeness": "excerpt",
+        "extracted_chars": 592,
+        "extraction_completeness": "excerpt",
+        "observed_at": "2026-11-11T23:03:08.473248+00:00",
+        "page_published_at": "2026-11-11T19:41:00+08:00",
+        "page_title": "AI伺服器等需求帶動　上櫃公司10月營收年增47%",
+        "raw_sha256": "65bfa1d6a21db8a82d21a697883be5c11320a5f6f7ba1623e46c2c136f8fd96e",
+        "rss_origin_sha256": "bec19b25c40a75ca279992d9c9fd8c4607ba100ac6711a45798ea374cf3ad60c",
+        "source_url": "https://www.cna.com.tw/news/afe/202611110310.aspx",
+        "supplied_chars": 592,
+        "supplied_sha256": "6391f3feb073db01424b2c2958ab3b6f56ca1ffdc587fb91e0706be7647cfaf3"
+      },
+      "candidate_ids": [
+        "b9f7326e6c46d0a60c382220"
+      ],
+      "category": "taiwan",
+      "claims": [
+        {
+          "evidence_id": "b9f7326e6c46d0a60c382220",
+          "quote": "上櫃公司10月營收合計新台幣3678億元，年增47%；前10月營收3兆2870億元，年增34%。"
+        },
+        {
+          "evidence_id": "b9f7326e6c46d0a60c382220",
+          "quote": "半導體業受惠AI伺服器液冷散熱系統及記憶體需求暢旺"
+        },
+        {
+          "evidence_id": "b9f7326e6c46d0a60c382220",
+          "quote": "上櫃公司10月營收與去年同期相較，成長622家、衰退272家、持平3家"
+        }
+      ],
+      "editorial_analysis_zh": "AI相關需求已反映在多個電子產業的營收，但總額增幅、產業成長因素與個別公司表現仍須分開判讀，不能將整體成長視為所有上櫃企業的共同趨勢。",
+      "evidence_field": "article_body",
+      "evidence_kind": "publisher-excerpt",
+      "id": "event-13",
+      "photo": null,
+      "published_at": "2026-11-11T19:41:42+08:00",
+      "source_access_note_zh": "來源為中央社財經已取得的報導正文節錄，非另行取得的櫃買中心原始統計資料；產業成長因素依報導中的櫃買中心說明整理。",
+      "source_id": "user-057",
+      "source_name": "中央社財經",
+      "source_title": "AI伺服器等需求帶動　上櫃公司10月營收年增47%",
+      "source_url": "https://www.cna.com.tw/news/afe/202611110310.aspx",
+      "summary_zh": "上櫃公司10月合計營收達新台幣3678億元，較去年同期成長47%；前10月累計營收3兆2870億元，年增34%。櫃買中心11月11日公布統計，人工智慧伺服器液冷散熱、記憶體與雲端機房建置需求，是帶動相關電子產業營收成長的重要因素。\n\n依櫃買中心說明，10月營收年增的主要產業包括半導體、電腦及周邊設備、電子通路。半導體業受惠於AI伺服器液冷散熱系統與記憶體需求；電腦及周邊設備業則因AI需求，帶動工業用記憶體與中央處理器出貨成長，電子通路業也受惠於AI雲端機房建置及記憶體產品需求。\n\n累計前10月，營收成長的主要產業另包括其他電子業。櫃買中心指出，AI應用帶動先進封裝需求，加上貴金屬價格上漲，共同推升該產業累計營收，成長因素並非全數來自AI。\n\n此次統計涵蓋897家上櫃公司，包括30家KY公司，均已於11月10日前完成申報。其中，10月營收年增者622家、衰退者272家、持平者3家；前10月累計營收則有654家成長、242家衰退、1家持平，整體營收增加並不代表所有公司同步受惠。",
+      "supporting_sources": [],
+      "title_zh": "上櫃公司10月營收年增47%，AI伺服器與記憶體需求帶動電子產業"
+    },
+    {
+      "body_provenance": {
+        "adapter": "cna-paragraph-v1",
+        "body_sha256": "2c9fe7268fc14f3a0939927924c02a95ae64148b5c5e5da62fc0eaa16278682b",
+        "canonical_url": "https://www.cna.com.tw/news/afe/202611110305.aspx",
+        "completeness": "excerpt",
+        "extracted_chars": 536,
+        "extraction_completeness": "excerpt",
+        "observed_at": "2026-11-11T23:03:08.991720+00:00",
+        "page_published_at": "2026-11-11T19:23:00+08:00",
+        "page_title": "旺矽第3季獲利續創高　能見度看到2028年",
+        "raw_sha256": "38177ecd89d2c8bbe3b7987599dcc10004a2647f1d48467da810b0d3c4631ca0",
+        "rss_origin_sha256": "eb073571c26f902afb36e169032a8c1e23ecaa5bf0a8652f3b72e539ba4c1195",
+        "source_url": "https://www.cna.com.tw/news/afe/202611110305.aspx",
+        "supplied_chars": 536,
+        "supplied_sha256": "2c9fe7268fc14f3a0939927924c02a95ae64148b5c5e5da62fc0eaa16278682b"
+      },
+      "candidate_ids": [
+        "e00fcd1ca869dac6119e4f11"
+      ],
+      "category": "taiwan",
+      "claims": [
+        {
+          "evidence_id": "e00fcd1ca869dac6119e4f11",
+          "quote": "合併營收新台幣59.04億元，季增13%、年增73%，續創新高，單季歸屬母公司業主獲利約18.8億元"
+        },
+        {
+          "evidence_id": "e00fcd1ca869dac6119e4f11",
+          "quote": "旺矽第3季合併毛利率近62%，主要反映產品組合變化與稼動率。"
+        },
+        {
+          "evidence_id": "e00fcd1ca869dac6119e4f11",
+          "quote": "旺矽表示，與客戶開發合作計畫能見度已達2028年"
+        }
+      ],
+      "editorial_analysis_zh": "旺矽財報提供觀察半導體測試供應鏈的具體數字；評估後續成長時，應區分已公布業績、公司所述產能利用情況，以及仍在開發或驗證中的客戶計畫。",
+      "evidence_field": "article_body",
+      "evidence_kind": "publisher-excerpt",
+      "id": "event-14",
+      "photo": null,
+      "published_at": "2026-11-11T19:23:31+08:00",
+      "source_access_note_zh": "來源為中央社財經已取得的報導正文節錄，未另行取得完整財報或公司簡報。市占、產能、客戶合作與營運展望依報導所載公司說法整理，未經獨立驗證。",
+      "source_id": "user-057",
+      "source_name": "中央社財經",
+      "source_title": "旺矽第3季獲利續創高　能見度看到2028年",
+      "source_url": "https://www.cna.com.tw/news/afe/202611110305.aspx",
+      "summary_zh": "半導體探針卡與測試設備商旺矽第三季營收、獲利再創新高，合併營收新台幣59.04億元，季增13%、年增73%；歸屬母公司業主獲利約18.8億元，每股純益19.18元，連續三季單季每股純益超過10元。\n\n累計前三季，旺矽合併營收150.7億元，年增58%；稅後獲利46.3億元，較去年同期倍增，每股純益47.26元。第三季合併毛利率接近62%，報導指出，主要反映產品組合變化與稼動率。\n\n旺矽將業務成長連結至全球AI客戶持續擴建及AI雲端服務供應商加速資本支出，並表示公司在中高階測試介面的全球市占增加。產能方面，公司指出，垂直式探針卡與MEMS探針卡自2025年下半年起進入滿載，懸臂式探針卡也因客戶新晶片訂單而持續滿載。\n\n後續布局上，旺矽表示，與客戶的開發合作計畫能見度已達2028年，預期今年營運維持強勁雙位數百分比成長、營收逐季向上；公司也正與國際客戶進行共同封裝光學（CPO）設備驗證及設計討論。這些展望與驗證進度均屬公司說法，開發合作計畫的能見度並不等同已確認至2028年的營收。",
+      "supporting_sources": [],
+      "title_zh": "旺矽第三季營收、獲利創高，每股純益19.18元"
+    },
+    {
+      "body_provenance": {
+        "adapter": "cna-paragraph-v1",
+        "body_sha256": "61568eb584b8fbce9d741796cc56b3c4cc5a53dd5e055c8df27948edce39cb82",
+        "canonical_url": "https://www.cna.com.tw/news/afe/202611110343.aspx",
+        "completeness": "excerpt",
+        "extracted_chars": 375,
+        "extraction_completeness": "excerpt",
+        "observed_at": "2026-11-11T23:03:05.876872+00:00",
+        "page_published_at": "2026-11-11T22:36:00+08:00",
+        "page_title": "雙鴻第3季毛利率降　每股純益11.59元寫歷史次高",
+        "raw_sha256": "561638da9543bcfd740a6981059c2ea010eee0338266c7b54b900b6fc5fa7f01",
+        "rss_origin_sha256": "b4fb9fdf2b220d15dfa8de881ba89b8c81b5265d996387a418a90ad8fc70f706",
+        "source_url": "https://www.cna.com.tw/news/afe/202611110343.aspx",
+        "supplied_chars": 375,
+        "supplied_sha256": "61568eb584b8fbce9d741796cc56b3c4cc5a53dd5e055c8df27948edce39cb82"
+      },
+      "candidate_ids": [
+        "f07ed75d72a24e42e7b57260"
+      ],
+      "category": "taiwan",
+      "claims": [
+        {
+          "evidence_id": "f07ed75d72a24e42e7b57260",
+          "quote": "單季營收新台幣97.87億元，年增64.2%；歸屬母公司淨利10.8億元，季增11.5%、年增10.9%"
+        },
+        {
+          "evidence_id": "f07ed75d72a24e42e7b57260",
+          "quote": "雙鴻第3季毛利率25.65%，較去年同期下滑4.12個百分點，也比第2季減少2.77個百分點。"
+        },
+        {
+          "evidence_id": "f07ed75d72a24e42e7b57260",
+          "quote": "11、12月將是雙鴻今年營運的最高峰，動能延續到明年第1季可望淡季不淡。"
+        }
+      ],
+      "editorial_analysis_zh": "雙鴻本季數字顯示，營收擴張不必然帶來相同比例的獲利成長。觀察散熱供應商表現，除了出貨與營收，也需要同時追蹤毛利率及淨利變化。",
+      "evidence_field": "article_body",
+      "evidence_kind": "publisher-excerpt",
+      "id": "event-15",
+      "photo": null,
+      "published_at": "2026-11-11T22:36:59+08:00",
+      "source_access_note_zh": "來源為中央社財經已取得的報導正文節錄，未另行取得完整財報。產品出貨時程與營運高峰為報導所載董事長先前預測，未經獨立驗證；節錄未提供毛利率下降的明確原因。",
+      "source_id": "user-057",
+      "source_name": "中央社財經",
+      "source_title": "雙鴻第3季毛利率降　每股純益11.59元寫歷史次高",
+      "source_url": "https://www.cna.com.tw/news/afe/202611110343.aspx",
+      "summary_zh": "散熱廠雙鴻第三季營收明顯成長，獲利增幅卻未同步。公司11月11日公布財報，單季營收新台幣97.87億元，年增64.2%；歸屬母公司淨利10.8億元，季增11.5%、年增10.9%。每股純益11.59元，為歷史次高，僅低於今年第一季的12.61元。\n\n第三季毛利率為25.65%，較去年同期下降4.12個百分點，也比第二季減少2.77個百分點。累計前三季，雙鴻歸屬母公司淨利32.13億元，年增95.6%，每股稅後純益34.59元，累計獲利仍較去年同期明顯增加。\n\n展望後續出貨，董事長林育申先前表示，輝達Vera Rubin及AWS、Meta等ASIC的AI新品將於今年底開始出貨，並預期11、12月是公司今年營運高峰，動能可望延續至明年第一季。上述時程與營運走勢屬公司預測，仍須與後續實際業績分開看待。\n\n林育申也提及第三季處於新舊產品轉換期，但現有資料並未明確交代毛利率下降的原因，不能直接將轉換期或特定AI產品訂單，視為本季利潤率變化的已確認解釋。",
+      "supporting_sources": [],
+      "title_zh": "雙鴻第三季營收增64.2%，淨利增幅落後、毛利率降至25.65%"
+    },
+    {
+      "candidate_ids": [
+        "331c3f0d22c41450057168a4"
+      ],
+      "category": "tech-product",
+      "claims": [
+        {
+          "evidence_id": "331c3f0d22c41450057168a4",
+          "quote": "Google is adding its Gemini artificial intelligence app to Apple Inc.’s CarPlay system"
+        },
+        {
+          "evidence_id": "331c3f0d22c41450057168a4",
+          "quote": "expanding options for drivers who may already be using the assistant on their Apple devices."
+        }
+      ],
+      "editorial_analysis_zh": "這項整合的觀察重點是助理入口的跨平台延伸，而非尚未揭露的功能或效能差異。",
+      "evidence_field": "rss-description",
+      "evidence_kind": "rss-summary",
+      "id": "event-16",
+      "photo": null,
+      "published_at": "2026-11-11T18:57:04+00:00",
+      "source_access_note_zh": "目前僅取得Bloomberg Technology的RSS摘要，未取得報導全文；支援地區、訂閱條件、具體操作功能與安全測試結果均未見於已取得資料。",
+      "source_id": "user-066",
+      "source_name": "Bloomberg Technology",
+      "source_title": "Google Adds Gemini Voice AI Assistant to Apple CarPlay",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-11-11/google-adds-gemini-voice-ai-assistant-to-apple-carplay",
+      "summary_zh": "Google正將Gemini人工智慧應用加入Apple CarPlay系統，讓駕駛在車內使用助理時有更多選擇，也把Gemini的使用場景延伸至Apple的車用平台。\n\n這項整合連結了Apple裝置與車內使用情境：對於可能已在Apple裝置上使用Gemini的駕駛，CarPlay將成為另一個接觸這項助理的入口。",
+      "supporting_sources": [],
+      "title_zh": "Google將Gemini加入Apple CarPlay，擴大駕駛的人工智慧助理選擇"
+    },
+    {
+      "candidate_ids": [
+        "3419fb86b36d862410f0938f"
+      ],
+      "category": "tech-product",
+      "claims": [
+        {
+          "evidence_id": "3419fb86b36d862410f0938f",
+          "quote": "The company plans on linking two 520-qubit chips before next year is over."
+        }
+      ],
+      "evidence_field": "rss-description",
+      "evidence_kind": "rss-summary",
+      "id": "event-17",
+      "photo": null,
+      "published_at": "2026-11-11T16:33:08+00:00",
+      "source_access_note_zh": "目前僅取得Ars Technica的RSS標題與摘要，未取得報導全文。2027年提供系統存取的時程見於標題；連結兩顆520量子位元晶片的計畫見於摘要，未取得效能或測試資料。",
+      "source_id": "user-071",
+      "source_name": "Ars Technica",
+      "source_title": "IBM to offer access to a dual-processor quantum system in 2027",
+      "source_url": "https://arstechnica.com/science/2026/11/ibm-to-offer-access-to-a-dual-processor-quantum-system-in-2027/",
+      "summary_zh": "IBM計畫在2027年提供雙處理器量子系統的存取，並於該年結束前連結兩顆各具520量子位元的晶片。這是公司提出的量子運算平台規畫，並非系統已上線的消息。\n\n這項計畫的具體方向是將兩顆量子晶片連結運作；目前資訊尚不足以判斷其實際運算表現，也不能據此認定已達成量子優勢或能為人工智慧運算帶來加速。",
+      "supporting_sources": [],
+      "title_zh": "IBM規劃2027年提供雙處理器量子系統存取，連結兩顆520量子位元晶片"
+    },
+    {
+      "candidate_ids": [
+        "eac4d84ef949975e755c40f9"
+      ],
+      "category": "tech-product",
+      "claims": [
+        {
+          "evidence_id": "eac4d84ef949975e755c40f9",
+          "quote": "Tabletop is a new Google Labs experiment for group collaboration."
+        },
+        {
+          "evidence_id": "eac4d84ef949975e755c40f9",
+          "quote": "Build interactive itineraries, polls, and brackets with your team. Join the waitlist."
+        }
+      ],
+      "evidence_field": "rss-description",
+      "evidence_kind": "rss-summary",
+      "id": "event-18",
+      "photo": null,
+      "published_at": "2026-11-11T16:00:00+00:00",
+      "source_access_note_zh": "目前僅取得Google AI官方頻道的RSS標題與摘要，未取得頁面全文。產品定位與用途為Google自述，未經獨立實測；已取得資料未說明是否具有生成式人工智慧功能。",
+      "source_id": "user-075",
+      "source_name": "Google AI",
+      "source_title": "Try Tabletop: Customizable, collaborative spaces for groups to plan, play and do more together.",
+      "source_url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop/",
+      "summary_zh": "Google Labs推出名為Tabletop的群組協作實驗，主打讓團隊共同製作互動式行程、投票與對戰表，目前已開放候補登記。\n\nGoogle將這項實驗定位為供群組共同規畫與活動使用的協作空間，涵蓋行程安排、意見投票與賽事對戰安排等用途；目前提供的參與方式是加入候補名單。",
+      "supporting_sources": [],
+      "title_zh": "Google Labs推出Tabletop群組協作實驗，開放候補登記"
+    },
+    {
+      "candidate_ids": [
+        "2288e8744b897e955682b2b7"
+      ],
+      "category": "tech-product",
+      "claims": [
+        {
+          "evidence_id": "2288e8744b897e955682b2b7",
+          "quote": "Apple has already made the forum read-only."
+        }
+      ],
+      "evidence_field": "rss-description",
+      "evidence_kind": "rss-summary",
+      "id": "event-19",
+      "photo": null,
+      "published_at": "2026-11-11T17:04:26+00:00",
+      "source_access_note_zh": "本則僅取得Ars Technica的RSS標題與摘要，未取得報導全文。關閉計畫與經營年數來自標題，唯讀狀態來自摘要；現有資料未提供關閉日期、資料保存政策或替代服務。",
+      "source_id": "user-071",
+      "source_name": "Ars Technica",
+      "source_title": "Apple is shuttering its 28-year-old online community forum",
+      "source_url": "https://arstechnica.com/gadgets/2026/11/apple-is-shuttering-its-28-year-old-online-community-forum/",
+      "summary_zh": "Apple將關閉經營28年的線上社群論壇，目前已將論壇設為唯讀，使用者無法繼續在其中新增討論內容。",
+      "supporting_sources": [],
+      "title_zh": "Apple將關閉經營28年的線上社群論壇，已改為唯讀"
+    },
+    {
+      "body_provenance": {
+        "adapter": "meta-engineering-entry-v1",
+        "body_sha256": "c41b76f300ce23983ce4e0961d04f202b9e4434461538be070a311376f184986",
+        "canonical_url": "https://engineering.fb.com/2026/11/11/ml-applications/intelligent-delivery-serve-better-ads/",
+        "completeness": "excerpt",
+        "extracted_chars": 12460,
+        "extraction_completeness": "excerpt",
+        "observed_at": "2026-11-11T23:02:56.030797+00:00",
+        "page_published_at": "2026-11-11T17:00:38+00:00",
+        "page_title": "Intelligent Delivery: Making Every Unit of Compute Serve Better Ads",
+        "raw_sha256": "f9a7d4c5447b7b04a68a41b0a8e35989d31528ee71d1171492431999d76e5213",
+        "rss_origin_sha256": "f3d47879013e9a036c8fc847f6b49eb0b01fb731f8b28f6727d46004c94c2560",
+        "source_url": "https://engineering.fb.com/2026/11/11/ml-applications/intelligent-delivery-serve-better-ads/",
+        "supplied_chars": 12460,
+        "supplied_sha256": "c41b76f300ce23983ce4e0961d04f202b9e4434461538be070a311376f184986"
+      },
+      "candidate_ids": [
+        "b25fe14c3ef6574e1c270801"
+      ],
+      "category": "enterprise-cases",
+      "claims": [
+        {
+          "evidence_id": "b25fe14c3ef6574e1c270801",
+          "quote": "an ML-driven system that allocates resources across the serving stack toward the system-wide optimum."
+        },
+        {
+          "evidence_id": "b25fe14c3ef6574e1c270801",
+          "quote": "Engineers review and approve the final change before it ships."
+        },
+        {
+          "evidence_id": "b25fe14c3ef6574e1c270801",
+          "quote": "~10% improvement in ads ranking performance"
+        }
+      ],
+      "editorial_analysis_zh": "這個案例的重點不只是擴大模型，而是將「每一份運算該分給誰」本身變成機器學習問題。評估其商業價值時，仍應區分公司宣稱的整體排序改善，與個別配置機制或人工智慧代理各自帶來的貢獻。",
+      "evidence_field": "article_body",
+      "evidence_kind": "publisher-excerpt",
+      "id": "event-20",
+      "photo": null,
+      "published_at": "2026-11-11T17:00:38+00:00",
+      "source_access_note_zh": "取得來源為Meta Engineering官方文章節錄，標記為publisher-excerpt，並非另行取得的完整報導。架構、效能數據與開發週期變化均為Meta自述，未有本次資料之外的獨立驗證。",
+      "source_id": "user-077",
+      "source_name": "Meta Engineering",
+      "source_title": "Intelligent Delivery: Making Every Unit of Compute Serve Better Ads",
+      "source_url": "https://engineering.fb.com/2026/11/11/ml-applications/intelligent-delivery-serve-better-ads/",
+      "summary_zh": "Meta公開介紹廣告運算資源配置系統Intelligent Delivery，透過機器學習判斷不同廣告請求、模型與硬體能從額外運算中獲得多少效益，再動態分配資源。公司指出，廣告排序模型正朝大型語言模型規模成長，硬體供給卻難以同步擴張，因此必須在有限容量與嚴格延遲限制下，提高整體系統效率。\n\n這套系統先以共享模型理解每筆請求，預測調整資源對排序結果、運算消耗與延遲的影響，再由不同層級的決策機制執行。配置範圍涵蓋將流量導向哪個資料中心區域、選擇何種硬體，以及單一主機內每筆請求能取得多少資源。Meta強調，不同工作負載適合的硬體不同，不能只以單一晶片的速度判斷配置優劣。\n\nMeta也將人工智慧代理導入最佳化流程，讓代理閱讀程式碼、設計文件與歷年實驗紀錄，找出值得測試的調整，並設計、執行實驗；最終變更仍須由工程師審查核准後才會上線。公司表示，這種做法讓最佳化週期從數月縮短至數週。\n\n成效方面，Meta宣稱，從2017年至2026年上半年，Intelligent Delivery在模型與系統既有進展之外，為主要服務的廣告排序效能帶來約10%的額外改善。後續研究方向包括將請求理解與配置決策整合進單一即時模型，以及針對GPU的固定資源區塊、批次處理與記憶體特性，重新設計資源調配機制。",
+      "supporting_sources": [],
+      "title_zh": "Meta公開Intelligent Delivery，以機器學習調配廣告排序運算資源"
+    },
+    {
+      "candidate_ids": [
+        "2fc047358815583cd50a613d"
+      ],
+      "category": "enterprise-cases",
+      "claims": [
+        {
+          "evidence_id": "2fc047358815583cd50a613d",
+          "quote": "Adobe and Disney have entered a multi-year partnership to help develop custom AI models and tools"
+        },
+        {
+          "evidence_id": "2fc047358815583cd50a613d",
+          "quote": "across its theme parks, studio and sports ‌media businesses."
+        }
+      ],
+      "evidence_field": "rss-description",
+      "evidence_kind": "rss-summary",
+      "id": "event-21",
+      "photo": null,
+      "published_at": "2026-11-11T19:14:15+00:00",
+      "source_access_note_zh": "本則僅取得Bloomberg Technology影音報導的RSS摘要，未取得影片逐字稿或報導全文。現有資料未交代模型名稱、授權條件、導入時程或使用成效。",
+      "source_id": "user-066",
+      "source_name": "Bloomberg Technology",
+      "source_title": "How Adobe Is Helping Disney with Custom AI Tools",
+      "source_url": "https://www.bloomberg.com/news/videos/2026-11-11/how-adobe-is-helping-disney-with-custom-ai-tools-video",
+      "summary_zh": "Adobe與Disney達成多年合作，將協助開發客製化人工智慧模型與工具，供Disney旗下主題樂園、影視製作與運動媒體業務使用。\n\n合作範圍橫跨Disney多個業務領域，聚焦依企業需求開發模型及工具，而非僅限於單一內容製作環節。",
+      "supporting_sources": [],
+      "title_zh": "Adobe與Disney簽訂多年合作，開發客製人工智慧模型與工具"
+    },
+    {
+      "body_provenance": {
+        "adapter": "aws-rdfa-body-v1",
+        "body_sha256": "e1c5076024a799a69d944cfa2c16daaa68033ac5e8453387efe1bb1f41ae9e3c",
+        "canonical_url": "https://aws.amazon.com/blogs/machine-learning/how-dxc-technology-built-a-multi-model-ai-substrate-on-amazon-bedrock/",
+        "completeness": "excerpt",
+        "extracted_chars": 14503,
+        "extraction_completeness": "excerpt",
+        "observed_at": "2026-11-11T23:03:00.870116+00:00",
+        "page_published_at": "2026-11-11T12:45:45-08:00",
+        "page_title": "How DXC Technology built a multi-model AI substrate on Amazon Bedrock",
+        "raw_sha256": "9087c1d2b45211ec2c20fd4ec8acad46066d92d598c174bc7fe5608876b99277",
+        "rss_origin_sha256": "0402cdc6e174966dd0047e901da0af92ce3c0c5a5428331147dba9a0bb82c24a",
+        "source_url": "https://aws.amazon.com/blogs/machine-learning/how-dxc-technology-built-a-multi-model-ai-substrate-on-amazon-bedrock/",
+        "supplied_chars": 14503,
+        "supplied_sha256": "e1c5076024a799a69d944cfa2c16daaa68033ac5e8453387efe1bb1f41ae9e3c"
+      },
+      "candidate_ids": [
+        "4b6be27b08661b0692852b15"
+      ],
+      "category": "enterprise-cases",
+      "claims": [
+        {
+          "evidence_id": "4b6be27b08661b0692852b15",
+          "quote": "The first is a governed model substrate built on Amazon Bedrock."
+        },
+        {
+          "evidence_id": "4b6be27b08661b0692852b15",
+          "quote": "Across 56 measured use cases, DXC OASIS has reduced resolution time by 95 percent on average."
+        }
+      ],
+      "editorial_analysis_zh": "企業導入維運代理時，模型選擇與操作授權是不同問題。此案例的參考價值在於明確劃分兩者責任；成效數字則仍須與提供方的量測條件分開看待。",
+      "evidence_field": "article_body",
+      "evidence_kind": "publisher-excerpt",
+      "id": "event-22",
+      "photo": null,
+      "published_at": "2026-11-11T20:45:45+00:00",
+      "source_access_note_zh": "取得AWS Machine Learning刊載、與DXC共同撰寫的正文節錄，來源標記為publisher-excerpt。架構、治理機制與成效均來自案例提供方，未取得獨立測試或第三方驗證資料；文中航空公司情境為示範環境，非真實客戶實績。",
+      "source_id": "user-082",
+      "source_name": "AWS Machine Learning",
+      "source_title": "How DXC Technology built a multi-model AI substrate on Amazon Bedrock",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/how-dxc-technology-built-a-multi-model-ai-substrate-on-amazon-bedrock/",
+      "summary_zh": "DXC Technology在企業IT維運平台DXC OASIS中，將模型存取與代理執行工作拆成兩層：底層透過Amazon Bedrock連接多種模型，上層則由DXC負責工作協調、政策執行、人工核准與稽核。AWS與DXC共同發布的案例說明，這項設計不只處理模型選擇，也把代理能否修改正式環境的權限問題獨立出來。\n\n依案例介紹，平台透過同一介面使用Anthropic Claude、Amazon Nova、Meta Llama及開放權重模型，並以Bedrock Guardrails處理內容過濾、個人識別資訊遮蔽及禁止主題政策。推論流量經AWS PrivateLink傳送，不經公開網際網路。不過，統一介面不代表模型行為一致；替換模型前，DXC仍須以自身任務測試組合評估，而非只調整路由。\n\n在案例提供的虛構航空公司示範環境中，代理可診斷伺服器磁碟空間問題、提出處理計畫，但必須取得工程師明確核准，才能變更正式伺服器。執行了哪些指令、由誰核准及執行時間，則由上層系統留下紀錄，不依賴代理自行描述。DXC並表示，各類代理角色起初都只有唯讀權限，再逐步授予更大的操作範圍。\n\nDXC表示，OASIS於2026年3月正式推出後，在56個已量測使用案例中，平均問題解決時間縮短95%。這是案例提供方公布的成效，不能視為獨立驗證結果；其架構上的重點，則是將模型輸出控管與實際操作授權分開，避免把內容防護直接等同於代理執行安全。",
+      "supporting_sources": [],
+      "title_zh": "DXC以Bedrock打造多模型維運架構，將模型存取與代理權限分層治理"
+    },
+    {
+      "candidate_ids": [
+        "d5ce8d4f2e7d567c6d43a125"
+      ],
+      "category": "enterprise-cases",
+      "claims": [
+        {
+          "evidence_id": "d5ce8d4f2e7d567c6d43a125",
+          "quote": "He uses Databricks' newly revised Genie agent for that."
+        }
+      ],
+      "editorial_analysis_zh": "這個案例將代理的用途從執行任務延伸到管理資訊取得；評估價值時，仍須區分「能提供回答」與「回答足以支持決策」。",
+      "evidence_field": "rss-description",
+      "evidence_kind": "rss-summary",
+      "id": "event-23",
+      "photo": null,
+      "published_at": "2026-11-11T15:00:00+00:00",
+      "source_access_note_zh": "僅取得TechCrunch AI的RSS摘要，未取得報導全文。現有資料未交代Genie使用的資料來源、查詢方式、權限設計或成效驗證，本文因此限於使用情境與當事人自述。",
+      "source_id": "user-069",
+      "source_name": "TechCrunch AI",
+      "source_title": "Databricks’ new AI agent tells CEO Ali Ghodsi the unvarnished truth",
+      "source_url": "https://techcrunch.com/2026/11/11/databricks-new-ai-agent-tells-ceo-ali-ghodsi-the-unvarnished-truth/",
+      "summary_zh": "Databricks執行長Ali Ghodsi使用公司新版Genie代理，協助了解組織內部出現的問題，呈現人工智慧代理支援管理決策的使用情境。\n\nGhodsi表示，Databricks已有1萬2,000名員工，他不可能認識所有人，員工也未必願意直接向他坦承哪些事情出了差錯，因此使用Genie協助掌握情況。這項用途反映管理者希望藉人工智慧補足資訊落差，但僅憑這段使用者自述，尚不能判斷代理回答的準確性，或是否已改善組織績效。",
+      "supporting_sources": [],
+      "title_zh": "Databricks執行長使用新版Genie代理，協助掌握公司內部問題"
+    },
+    {
+      "body_provenance": {
+        "adapter": "aws-rdfa-body-v1",
+        "body_sha256": "c0c8f2385e8c02a61621337b067356d9cacb8a7b10dc17518b9640d2ab2f2642",
+        "canonical_url": "https://aws.amazon.com/blogs/machine-learning/automating-aws-agent-registry-updates-with-push-based-architecture/",
+        "completeness": "excerpt",
+        "extracted_chars": 14389,
+        "extraction_completeness": "excerpt",
+        "observed_at": "2026-11-11T23:02:59.532287+00:00",
+        "page_published_at": "2026-11-11T12:52:48-08:00",
+        "page_title": "Automating AWS Agent Registry updates with push-based architecture",
+        "raw_sha256": "5d5c6e7a4b76a89bd43c5e5994fa261cd390df213546790a77246c3294728698",
+        "rss_origin_sha256": "f8d7b7e1c4e4539f78bb1dcb908d0d417a4dadfb1050ac757b91a6358e418210",
+        "source_url": "https://aws.amazon.com/blogs/machine-learning/automating-aws-agent-registry-updates-with-push-based-architecture/",
+        "supplied_chars": 14389,
+        "supplied_sha256": "c0c8f2385e8c02a61621337b067356d9cacb8a7b10dc17518b9640d2ab2f2642"
+      },
+      "candidate_ids": [
+        "b43c29322d5fd474a6150322"
+      ],
+      "category": "dev",
+      "claims": [
+        {
+          "evidence_id": "b43c29322d5fd474a6150322",
+          "quote": "AWS CloudTrail records this as a management event in Account B, with a delivery delay of approximately 5–15 minutes."
+        },
+        {
+          "evidence_id": "b43c29322d5fd474a6150322",
+          "quote": "When the Lambda updates a record with new tool definitions, the record automatically reverts to Draft status."
+        }
+      ],
+      "editorial_analysis_zh": "代理工具目錄必須兼顧資訊新鮮度與變更審核。此設計把同步和發布拆開，有助於釐清自動化邊界，但團隊仍須處理延遲、冷啟動與核准等待造成的資訊落差。",
+      "evidence_field": "article_body",
+      "evidence_kind": "publisher-excerpt",
+      "id": "event-24",
+      "photo": null,
+      "published_at": "2026-11-11T20:52:48+00:00",
+      "source_access_note_zh": "取得AWS Machine Learning的正文節錄，來源標記為publisher-excerpt。內容為AWS提出的架構與實作範例，未取得獨立部署測試或安全驗證資料；延遲、審核流程及已知限制均依該節錄整理。",
+      "source_id": "user-082",
+      "source_name": "AWS Machine Learning",
+      "source_title": "Automating AWS Agent Registry updates with push-based architecture",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/automating-aws-agent-registry-updates-with-push-based-architecture/",
+      "summary_zh": "AWS提出事件驅動的Agent Registry更新架構，讓部署於Amazon Bedrock AgentCore的MCP伺服器變更後，自動將最新工具資訊同步至目錄。這套範例支援單一帳號及跨帳號環境，目的是減少工具已更新、目錄卻仍保留舊結構定義的落差。\n\n流程由CloudTrail擷取UpdateAgentRuntime呼叫，再由EventBridge將事件送至Lambda。Lambda解析伺服器識別資訊，透過AgentCore Identity取得OAuth權杖，向MCP伺服器查詢目前的工具清單，再比對目錄中的名稱、描述及輸入結構；確認有變更後，才更新對應紀錄。跨帳號部署則將伺服器所在帳號的事件，轉送至集中管理目錄的帳號。\n\n自動同步不等於自動對外發布。依AWS說明，紀錄更新後會回到草稿狀態，使用者仍看到先前核准的版本，必須由管理者或負責審核的人員再次核准，新工具資訊才可被搜尋及使用。範例也只會更新既有且已核准的紀錄，不會替新發現的MCP伺服器自動建立登錄資料。\n\n這套設計亦非即時同步：AWS列出的CloudTrail事件傳遞延遲約為5至15分鐘。另一項已知限制是，若MCP伺服器處於冷啟動狀態並回傳零個工具，現有Lambda不會重試；AWS將指數退避重試及工具數為零時略過更新，列為可增補的可靠性措施。\n\n對採用這套範例的團隊而言，目錄更新速度仍受事件傳遞、伺服器回應與人工審核影響。它提供的是把變更偵測、身分驗證及發布治理串接起來的參考流程，而非已排除所有同步與安全風險的完整保證。",
+      "supporting_sources": [],
+      "title_zh": "AWS提出Agent Registry推送同步架構，MCP工具更新仍須經審核發布"
+    },
+    {
+      "body_provenance": {
+        "adapter": "aws-rdfa-body-v1",
+        "body_sha256": "116f6ad92f629aa15689a597190d617ed942b4902e4416e8f393f076dfc88502",
+        "canonical_url": "https://aws.amazon.com/blogs/machine-learning/uaef-a-framework-agnostic-system-for-closed-loop-evaluation-of-ai-agents/",
+        "completeness": "excerpt",
+        "extracted_chars": 21311,
+        "extraction_completeness": "excerpt",
+        "observed_at": "2026-11-11T23:03:03.382879+00:00",
+        "page_published_at": "2026-11-11T07:50:55-08:00",
+        "page_title": "UAEF: A framework-agnostic system for closed-loop evaluation of AI agents",
+        "raw_sha256": "84b7f0d2bc24145b47f483a17a31db08fbddce8c0d009fe5d43fefcb417a05c0",
+        "rss_origin_sha256": "69f36656eb177bfc64cc5d570137d2f1fa9965ecef270c93a9266dcf7f820e5d",
+        "source_url": "https://aws.amazon.com/blogs/machine-learning/uaef-a-framework-agnostic-system-for-closed-loop-evaluation-of-ai-agents/",
+        "supplied_chars": 21311,
+        "supplied_sha256": "116f6ad92f629aa15689a597190d617ed942b4902e4416e8f393f076dfc88502"
+      },
+      "candidate_ids": [
+        "7611a838f306fadab6e95940"
+      ],
+      "category": "research-papers",
+      "claims": [
+        {
+          "evidence_id": "7611a838f306fadab6e95940",
+          "quote": "then scores those traces with 36 built-in metrics across 7 dimensions."
+        },
+        {
+          "evidence_id": "7611a838f306fadab6e95940",
+          "quote": "Judge scores are evaluation signal, not a safety decision, and should not gate a security control."
+        }
+      ],
+      "editorial_analysis_zh": "統一紀錄格式有助於把跨框架的評估流程與版本比較分開處理，但共用評分尺度不等於指標已獲驗證。導入時應先確認測試資料與指標是否對應實際任務，而非只追求整體分數提高。",
+      "evidence_field": "article_body",
+      "evidence_kind": "publisher-excerpt",
+      "id": "event-25",
+      "photo": null,
+      "published_at": "2026-11-11T15:50:55+00:00",
+      "source_access_note_zh": "依據AWS Machine Learning官方文章節錄（publisher-excerpt）撰寫，並非論文或獨立評測。未另行檢視程式碼、執行工具或驗證指標有效性；使用組織數與功能描述均來自AWS。",
+      "source_id": "user-082",
+      "source_name": "AWS Machine Learning",
+      "source_title": "UAEF: A framework-agnostic system for closed-loop evaluation of AI agents",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/uaef-a-framework-agnostic-system-for-closed-loop-evaluation-of-ai-agents/",
+      "summary_zh": "AWS介紹人工智慧代理評估系統UAEF，透過轉接器將不同框架的執行紀錄轉成統一格式，再以7個面向、36項內建指標評分。系統定位是讓開發團隊更換提示詞、模型或工具後，仍能沿用一致的評估流程，檢查新版代理是否改善，或在特定能力上退步。\n\n依AWS說明，UAEF會把訊息、工具呼叫及代理間的任務交接，轉為名為AgentTrace的共通紀錄。評估涵蓋工具呼叫、回應品質、負責任人工智慧、效能、多輪對話、多代理協作與推理；部分指標直接依紀錄和標準答案計算，另一些則交由Amazon Bedrock上的大型語言模型擔任評審。需要參考答案的指標，在資料未提供答案時會自動跳過。\n\n評估結果可存入Amazon DynamoDB與Amazon S3，保留各版本的分數以供比較。系統可依設定門檻標示改善或退步，預設門檻為5%；開發者既可使用Python函式庫接入開發流程，也能透過低程式碼網頁介面操作，兩者共用評估引擎。AWS表示，電信、醫療與金融服務領域的12個組織已使用這套系統評估代理。\n\n模型評審本身也有邊界。AWS指出，受評代理的輸出應視為不可信輸入，評審回覆必須附上可核對的原文證據，找不到對應內容的分數會遭拒收；但這些分數只是評估訊號，不是安全決策，不應用來決定安全控制是否放行。UAEF已採Apache 2.0授權開源，其指標是否適合個別任務，仍須由使用團隊檢視。",
+      "supporting_sources": [],
+      "title_zh": "AWS介紹UAEF代理評估框架，以統一執行紀錄比較版本表現"
+    },
+    {
+      "body_provenance": {
+        "adapter": "aws-rdfa-body-v1",
+        "body_sha256": "4fb4c977b89c52e132e70ab967dce3db6c28126b9b49fcd6a9d7c01809045768",
+        "canonical_url": "https://aws.amazon.com/blogs/machine-learning/introducing-usage-based-pricing-for-amazon-sagemaker-ai-bidirectional-streaming/",
+        "completeness": "excerpt",
+        "extracted_chars": 14538,
+        "extraction_completeness": "excerpt",
+        "observed_at": "2026-11-11T23:03:04.370603+00:00",
+        "page_published_at": "2026-11-11T07:10:23-08:00",
+        "page_title": "Introducing usage-based pricing for Amazon SageMaker AI bidirectional streaming",
+        "raw_sha256": "ea8e230b3cb507a9cb90fbc97a1fbb87102aa51326a9e61b61aa285bd2a3717c",
+        "rss_origin_sha256": "525ce137e1851fc7d6b7fbc9307f3a216497c56ed46ab2308aff89ff2d0a8a29",
+        "source_url": "https://aws.amazon.com/blogs/machine-learning/introducing-usage-based-pricing-for-amazon-sagemaker-ai-bidirectional-streaming/",
+        "supplied_chars": 14538,
+        "supplied_sha256": "4fb4c977b89c52e132e70ab967dce3db6c28126b9b49fcd6a9d7c01809045768"
+      },
+      "candidate_ids": [
+        "e7b7fb1e9e2688d990bdb701"
+      ],
+      "category": "ai-tools",
+      "claims": [
+        {
+          "evidence_id": "e7b7fb1e9e2688d990bdb701",
+          "quote": "Deepgram, the real-time speech AI company, is the launch partner for this capability"
+        },
+        {
+          "evidence_id": "e7b7fb1e9e2688d990bdb701",
+          "quote": "Amazon SageMaker AI endpoint infrastructure charges remain separate and still apply."
+        }
+      ],
+      "editorial_analysis_zh": "這是串流模型軟體費用的計量方式調整，不能直接解讀為整體成本降低。採購與開發團隊應同時確認音訊計量規則、端點費用，以及連線中斷時的回報與對帳方式。",
+      "evidence_field": "article_body",
+      "evidence_kind": "publisher-excerpt",
+      "id": "event-26",
+      "photo": null,
+      "published_at": "2026-11-11T15:10:23+00:00",
+      "source_access_note_zh": "依據AWS Machine Learning官方文章節錄（publisher-excerpt）撰寫，未獨立測試串流、計量或帳務結果。來源未提供具體費率、節省比例或完整服務可用區域。",
+      "source_id": "user-082",
+      "source_name": "AWS Machine Learning",
+      "source_title": "Introducing usage-based pricing for Amazon SageMaker AI bidirectional streaming",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/introducing-usage-based-pricing-for-amazon-sagemaker-ai-bidirectional-streaming/",
+      "summary_zh": "AWS宣布，Amazon SageMaker AI雙向串流推論新增用量回報機制，讓模型供應商能依即時工作階段中的實際用量，計算AWS Marketplace軟體費用。Deepgram是首發合作夥伴，支援語音轉文字與文字轉語音的用量計費；託管模型的SageMaker AI端點基礎設施費用仍須另外支付。\n\n這項變更處理的是串流服務與一般請求回應不同的計費問題。依AWS說明，一般推論可在HTTP回應標頭提供計費數量，但雙向串流的用量會隨工作階段持續累積，直到結束才知道總量，因此不能只靠單次回應標頭回報。\n\n新機制在推論資料連線旁，另開一條WebSocket中繼資料連線，由模型伺服器逐步傳送用量紀錄。AWS建議隨用量累積回報，以減少連線意外結束時尚未回報的數量。若計量連線中斷，預設仍會繼續推論；供應商也可設定停止推論，在服務持續可用與計量連續性之間作取捨。\n\n對使用轉錄、客服中心、語音代理或字幕服務的企業而言，重點是看清楚產品如何定義計費單位。AWS舉例，若產品按音訊秒數收費，12分鐘的計量音訊對應720單位，但連線開啟12分鐘，不代表一定產生同等音訊用量。供應商仍須核對用量回報、Marketplace報表與買方帳單；資料成功傳送，也不等於已成功計費。",
+      "supporting_sources": [],
+      "title_zh": "SageMaker雙向串流新增用量計費支援，Deepgram為首發夥伴"
+    },
+    {
+      "candidate_ids": [
+        "b5b225f8da047fd6d2e7b401"
+      ],
+      "category": "research-papers",
+      "claims": [
+        {
+          "evidence_id": "b5b225f8da047fd6d2e7b401",
+          "quote": "The four-week project hints that AI could make formal verification far more practical."
+        }
+      ],
+      "editorial_analysis_zh": "值得追蹤的是人工智慧能否降低形式驗證的實務門檻；四週專案本身仍不足以證明這種方法可廣泛套用，其意義須與實際驗證範圍一併判讀。",
+      "evidence_field": "rss-description",
+      "evidence_kind": "rss-summary",
+      "id": "event-27",
+      "photo": null,
+      "published_at": "2026-11-11T14:08:57+00:00",
+      "source_access_note_zh": "僅取得Ars Technica的RSS標題與摘要（rss-summary），未取得報導正文、原始研究或驗證成果。現有資料未交代受驗證部分、使用方法及具體限制，因此以短訊呈現。",
+      "source_id": "user-071",
+      "source_name": "Ars Technica",
+      "source_title": "Google DeepMind just mathematically verified key parts of Signal",
+      "source_url": "https://arstechnica.com/ai/2026/11/signals-encryption-just-passed-an-ai-powered-mathematical-checkup/",
+      "summary_zh": "Google DeepMind完成對Signal部分關鍵內容的數學驗證。Ars Technica報導，這項專案歷時四週，呈現人工智慧可能讓形式驗證更具實用性的研究方向。\n\n這次進展的範圍是Signal的部分關鍵內容，不能擴大解讀為Signal整體安全已獲保證，也不足以推論其他軟體都能以相同時程完成驗證。",
+      "supporting_sources": [],
+      "title_zh": "Google DeepMind完成Signal部分關鍵內容數學驗證，專案歷時四週"
+    },
+    {
+      "body_provenance": {
+        "adapter": "cna-paragraph-v1",
+        "body_sha256": "163c27656d915b3ccfb8ab7d73cb833bda050e2d5f575f57483c628adc0b8ced",
+        "canonical_url": "https://www.cna.com.tw/news/aopl/202611110340.aspx",
+        "completeness": "excerpt",
+        "extracted_chars": 1055,
+        "extraction_completeness": "excerpt",
+        "observed_at": "2026-11-11T23:03:06.391008+00:00",
+        "page_published_at": "2026-11-11T22:34:00+08:00",
+        "page_title": "法國超市及血庫相繼遭網攻　加快立法防堵安全破口",
+        "raw_sha256": "f7109327e3338ec2605a2ebd680f94ee10cc6bde31e9151d5a1eb7da838165a3",
+        "rss_origin_sha256": "84fb24fedcd372610e49f97b2a974346cc33f3a1a082aab27e1dc4dfbd3b4cba",
+        "source_url": "https://www.cna.com.tw/news/aopl/202611110340.aspx",
+        "supplied_chars": 1055,
+        "supplied_sha256": "163c27656d915b3ccfb8ab7d73cb833bda050e2d5f575f57483c628adc0b8ced"
+      },
+      "candidate_ids": [
+        "d49817bb6df1cdc280e837fa"
+      ],
+      "category": "security",
+      "claims": [
+        {
+          "evidence_id": "d49817bb6df1cdc280e837fa",
+          "quote": "今年10月中旬，法國數百家家樂福（Carrefour）、Monoprix等大型零售商的冷藏或冷凍設備控制系統遭遇網攻"
+        },
+        {
+          "evidence_id": "d49817bb6df1cdc280e837fa",
+          "quote": "但沒有造成影響或損失。巴黎檢方正調查此案。"
+        },
+        {
+          "evidence_id": "d49817bb6df1cdc280e837fa",
+          "quote": "這項法案終於在本週稍早被列入國民議會議程，恢復審議。"
+        }
+      ],
+      "editorial_analysis_zh": "兩起事件的實際後果不同，不能將超市商品損失套用到血液中心。共同的政策焦點，是如何讓連網實體設備落實基本資安規範，而不只關注資料是否外洩。",
+      "evidence_field": "article_body",
+      "evidence_kind": "publisher-excerpt",
+      "id": "event-28",
+      "photo": null,
+      "published_at": "2026-11-11T22:34:53+08:00",
+      "source_access_note_zh": "依據中央社已取得的報導節錄撰寫；來源標記為publisher-excerpt，非另行取得的完整網頁或官方法案文本。",
+      "source_id": "user-055",
+      "source_name": "中央社國際",
+      "source_title": "法國超市及血庫相繼遭網攻　加快立法防堵安全破口",
+      "source_url": "https://www.cna.com.tw/news/aopl/202611110340.aspx",
+      "summary_zh": "法國超市冷藏設備與血液中心冷藏系統近期接連遭到網路攻擊，讓連網設備的資安風險延伸至實體設施。法國國民議會已將強化基礎設施數位安全的法案重新列入議程，恢復審議；法案先前已於2025年獲參議院通過。\n\n10月中旬，法國數百家家樂福、Monoprix等大型零售商的冷藏或冷凍設備控制系統遭到攻擊，設備溫度升高，業者因此丟棄大量商品。法國外交部長巴霍指控伊朗是幕後黑手，伊朗則否認。另一起發生於11月稍早的攻擊涉及法國血液中心冷藏庫，庫內存放血液樣本及供輸血、製藥使用的血漿袋，但未造成影響或損失，巴黎檢方正調查此案。\n\n恢復審議的法案旨在將歐盟3項指令轉為法國法律，包括2022年通過的NIS 2。這項指令要求重要或關鍵實體落實最低限度的資安規則，例如定期更新系統、提高員工對網路釣魚的警覺，以及制定安全政策。\n\n法案也將擴大納管範圍，涵蓋公共行政、郵政、廢棄物管理與食品等領域，違規者可能面臨高額罰款，企業高階主管也可能被追究個人責任。法國國家資訊系統安全局的工業系統指南則提醒，因設備運作正常而不調整設定，或以合約禁止修改系統、連資安措施也不能實施，都可能使連網設備暴露於風險。",
+      "supporting_sources": [],
+      "title_zh": "法國冷藏設備接連遭網攻，國民議會恢復審議基礎設施資安法案"
+    },
+    {
+      "candidate_ids": [
+        "91f069786ff48d85d1874aa6"
+      ],
+      "category": "security",
+      "claims": [
+        {
+          "evidence_id": "91f069786ff48d85d1874aa6",
+          "quote": "is moving to block third-party artificial intelligence agents from booking flights and accessing customer accounts"
+        },
+        {
+          "evidence_id": "91f069786ff48d85d1874aa6",
+          "quote": "as the growing use of AI in the airline industry raises concerns about privacy."
+        }
+      ],
+      "editorial_analysis_zh": "這項措施凸顯人工智慧代理代辦服務的權限界線：能否替使用者操作，不只取決於代理能力，也取決於平台是否允許其存取帳號與執行交易。",
+      "evidence_field": "rss-description",
+      "evidence_kind": "rss-summary",
+      "id": "event-29",
+      "photo": null,
+      "published_at": "2026-11-11T18:50:22+00:00",
+      "source_access_note_zh": "僅取得Bloomberg Technology的RSS摘要，未取得報導全文。現有資料未交代具體封鎖方式、適用服務、實施範圍或是否曾發生資料外洩。",
+      "source_id": "user-066",
+      "source_name": "Bloomberg Technology",
+      "source_title": "United Blocks AI Agents From Booking Flights Ahead of Holidays",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-11-11/united-blocks-ai-agents-from-booking-flights-ahead-of-holidays",
+      "summary_zh": "United Airlines正著手阻擋第三方人工智慧代理代訂機票及存取顧客帳號，時間點落在假期旅遊旺季之前。隨著航空業使用人工智慧的情形增加，相關隱私疑慮也受到關注；這次限制同時涉及訂票操作與顧客帳號存取兩個環節。",
+      "supporting_sources": [],
+      "title_zh": "United Airlines著手阻擋第三方人工智慧代理訂票與存取帳號"
+    }
+  ],
+  "canonical_url": "https://polarbear0827.github.io/Daily-briefing/briefings/2026-11-12-morning.html",
+  "date": "2026-11-12",
+  "edition": "morning",
+  "editorial_note": "本期補刊；1則稿件未通過審核，未列入刊出。本期選出30個事件，已合併同一事件的財報、市場反應與重複影音內容。來源資訊限制：所有入選證據均為RSS摘要，未取得報導全文、完整官方文件、論文或評測資料；部分摘要僅足以支持短訊。公司效能、安全性與導入成果主張，以及募資洽談、指控和市場預測，均須保留歸屬，未經獨立驗證。機器人／具身智慧等領域未有足夠具體證據，不補足分類配額；未選無直接科技關聯的一般政治、戰爭、犯罪及醫療新聞。",
+  "editorial_profile": "september-tech-ai",
+  "evidence_notice": "本期依實際取得的來源整合撰寫；各篇來源資訊區分報導正文、可讀節錄與訂閱文字，並附原始連結。",
+  "generated_at": "2026-11-12T08:52:43.026594+08:00",
+  "model": "gpt-6.1-sol",
+  "preview": false,
+  "provider": "openai-codex",
+  "publication": {
+    "identity": "2026-11-12-morning",
+    "issue_sha256": "f4f17ff402a4f6ebb50615d150bb439e397afd4ff0dd7e4362337b710bb77e2b",
+    "legacy_archive_untouched": true,
+    "published_at": "2026-11-12T09:03:12.261382+08:00"
+  },
+  "reasoning_effort": "high",
+  "recovery": {
+    "completed_at": "2026-11-12T08:52:43.026594+08:00",
+    "cutoff_snapshot_sha256": "4a67960dc4df8f536fae57e128ac084928630b4316f856e0326e2aeb396a0139",
+    "kind": "late-edition-recovery",
+    "scheduled_publish_at": "2026-11-12T08:00:00+08:00"
+  },
+  "review": {
+    "_model": {
+      "client_class": "CodexAuxiliaryClient",
+      "elapsed_seconds": 78.214,
+      "endpoint": "https://chatgpt.com/backend-api/codex",
+      "fallback": false,
+      "max_retries": 0,
+      "provider": "openai-codex",
+      "reported_model": "gpt-6.1-sol",
+      "reported_reasoning": "high",
+      "requested_model": "gpt-6.1-sol",
+      "requested_reasoning": "high",
+      "resolved_model": "gpt-6.1-sol",
+      "server_token_cap": null,
+      "wire_byte_cap": 4194304,
+      "wire_bytes": 133076,
+      "wire_events": 103,
+      "wire_reasoning": "high"
+    },
+    "approved": true,
+    "independent_external_fact_check": false,
+    "problems": [],
+    "reviewer": "gpt-6.1-sol",
+    "reviewer_type": "model_editorial_review"
+  },
+  "schema_version": "2.0",
+  "source_health": [
+    {
+      "bytes_received": 53070,
+      "content_type": "application/xml",
+      "counts": {
+        "eligible_candidates": 21,
+        "entries_seen": 23,
+        "outside_window": 2
+      },
+      "elapsed_seconds": 1.096,
+      "final_feed_url": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
+      "selected_candidates": 19,
+      "source_id": "user-037",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "NYT",
+      "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 120539,
+      "content_type": "application/xml",
+      "counts": {
+        "eligible_candidates": 15,
+        "entries_seen": 55,
+        "outside_window": 40
+      },
+      "elapsed_seconds": 1.249,
+      "final_feed_url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
+      "selected_candidates": 15,
+      "source_id": "user-038",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "NYT World",
+      "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 26620,
+      "content_type": "text/xml; charset=utf-8",
+      "counts": {
+        "eligible_candidates": 26,
+        "entries_seen": 33,
+        "outside_window": 7
+      },
+      "elapsed_seconds": 1.25,
+      "final_feed_url": "https://feeds.bbci.co.uk/news/rss.xml",
+      "selected_candidates": 21,
+      "source_id": "user-039",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "BBC News",
+      "source_url": "https://feeds.bbci.co.uk/news/rss.xml",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 20060,
+      "content_type": "text/xml; charset=utf-8",
+      "counts": {
+        "eligible_candidates": 15,
+        "entries_seen": 25,
+        "outside_window": 10
+      },
+      "elapsed_seconds": 1.651,
+      "final_feed_url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "selected_candidates": 14,
+      "source_id": "user-040",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "BBC World",
+      "source_url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 115243,
+      "content_type": "text/xml; charset=UTF-8",
+      "counts": {
+        "eligible_candidates": 13,
+        "entries_seen": 125,
+        "outside_window": 112
+      },
+      "elapsed_seconds": 1.248,
+      "final_feed_url": "https://rss.dw.com/rdf/rss-en-all",
+      "selected_candidates": 13,
+      "source_id": "user-041",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "Deutsche Welle",
+      "source_url": "https://rss.dw.com/rdf/rss-en-all",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 7916,
+      "content_type": "application/xml; charset=UTF-8",
+      "counts": {
+        "eligible_candidates": 5,
+        "entries_seen": 11,
+        "outside_window": 6
+      },
+      "elapsed_seconds": 1.359,
+      "final_feed_url": "https://rss.dw.com/xml/rss-en-world",
+      "selected_candidates": 5,
+      "source_id": "user-042",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "DW World",
+      "source_url": "https://rss.dw.com/xml/rss-en-world",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 150491,
+      "content_type": "text/xml; charset=UTF-8",
+      "counts": {
+        "eligible_candidates": 25,
+        "entries_seen": 45,
+        "outside_window": 20
+      },
+      "elapsed_seconds": 1.051,
+      "final_feed_url": "https://www.theguardian.com/world/rss",
+      "selected_candidates": 25,
+      "source_id": "user-043",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "The Guardian",
+      "source_url": "https://www.theguardian.com/world/rss",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 152185,
+      "content_type": "text/xml",
+      "counts": {
+        "eligible_candidates": 13,
+        "entries_seen": 200,
+        "entry_cap_reached": 1,
+        "outside_window": 187
+      },
+      "elapsed_seconds": 0.803,
+      "final_feed_url": "https://www.economist.com/latest/rss.xml",
+      "selected_candidates": 13,
+      "source_id": "user-044",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "The Economist",
+      "source_url": "https://www.economist.com/latest/rss.xml",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 110878,
+      "content_type": "text/xml",
+      "counts": {
+        "eligible_candidates": 0,
+        "entries_seen": 200,
+        "entry_cap_reached": 1,
+        "outside_window": 200
+      },
+      "elapsed_seconds": 0.757,
+      "final_feed_url": "https://www.economist.com/the-world-this-week/rss.xml",
+      "selected_candidates": 0,
+      "source_id": "user-045",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "The Economist Weekly",
+      "source_url": "https://www.economist.com/the-world-this-week/rss.xml",
+      "status": "ok_no_eligible"
+    },
+    {
+      "counts": {},
+      "elapsed_seconds": 18.645,
+      "reason": "network_timeout",
+      "selected_candidates": 0,
+      "source_id": "user-046",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "Washington Post",
+      "source_url": "https://www.washingtonpost.com/arcio/rss/",
+      "status": "timeout"
+    },
+    {
+      "bytes_received": 9755,
+      "content_type": "text/xml; charset=utf-8",
+      "counts": {
+        "eligible_candidates": 3,
+        "entries_seen": 14,
+        "outside_window": 11
+      },
+      "elapsed_seconds": 9.788,
+      "final_feed_url": "https://feeds.washingtonpost.com/rss/world",
+      "selected_candidates": 3,
+      "source_id": "user-047",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "Washington Post World",
+      "source_url": "https://feeds.washingtonpost.com/rss/world",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 190107,
+      "content_type": "text/xml;charset=utf-8",
+      "counts": {
+        "eligible_candidates": 25,
+        "entries_seen": 25
+      },
+      "elapsed_seconds": 1.394,
+      "final_feed_url": "https://moxie.foxnews.com/google-publisher/latest.xml",
+      "selected_candidates": 22,
+      "source_id": "user-048",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "FOX News",
+      "source_url": "https://moxie.foxnews.com/google-publisher/latest.xml",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 229377,
+      "content_type": "text/xml;charset=utf-8",
+      "counts": {
+        "eligible_candidates": 6,
+        "entries_seen": 25,
+        "outside_window": 19
+      },
+      "elapsed_seconds": 0.999,
+      "final_feed_url": "https://moxie.foxnews.com/google-publisher/world.xml",
+      "selected_candidates": 6,
+      "source_id": "user-049",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "FOX World",
+      "source_url": "https://moxie.foxnews.com/google-publisher/world.xml",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 16998,
+      "content_type": "application/rss+xml; charset=UTF-8",
+      "counts": {
+        "eligible_candidates": 25,
+        "entries_seen": 25
+      },
+      "elapsed_seconds": 0.539,
+      "final_feed_url": "https://www.aljazeera.com/xml/rss/all.xml",
+      "selected_candidates": 25,
+      "source_id": "user-050",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/xml/rss/all.xml",
+      "status": "ok"
+    },
+    {
+      "counts": {},
+      "elapsed_seconds": 0.889,
+      "reason": "redirect_host_not_allowlisted",
+      "selected_candidates": 0,
+      "source_id": "user-051",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "NHK News",
+      "source_url": "https://www.nhk.or.jp/rss/news/cat0.xml",
+      "status": "fetch_error"
+    },
+    {
+      "bytes_received": 56915,
+      "content_type": "application/xml;charset=UTF-8",
+      "counts": {
+        "eligible_candidates": 10,
+        "entries_seen": 94,
+        "outside_window": 84
+      },
+      "elapsed_seconds": 0.854,
+      "final_feed_url": "https://en.yna.co.kr/RSS/news.xml",
+      "selected_candidates": 10,
+      "source_id": "user-052",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "Yonhap English",
+      "source_url": "https://en.yna.co.kr/RSS/news.xml",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 95241,
+      "content_type": "application/xml;charset=UTF-8",
+      "counts": {
+        "eligible_candidates": 120,
+        "entries_seen": 120
+      },
+      "elapsed_seconds": 0.951,
+      "final_feed_url": "https://www.yna.co.kr/rss/news.xml",
+      "selected_candidates": 26,
+      "source_id": "user-053",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "Yonhap Korean",
+      "source_url": "https://www.yna.co.kr/rss/news.xml",
+      "status": "ok"
+    },
+    {
+      "counts": {},
+      "reason": "rss_only_feed_directory_candidate",
+      "selected_candidates": 0,
+      "source_id": "user-054",
+      "source_kind": "feed_directory_candidate",
+      "source_name": "IPS",
+      "source_url": "https://www.ipsnews.net/rss-feeds/",
+      "status": "skipped"
+    },
+    {
+      "bytes_received": 13468,
+      "content_type": "text/xml; charset=utf-8",
+      "counts": {
+        "eligible_candidates": 20,
+        "entries_seen": 20
+      },
+      "elapsed_seconds": 1.606,
+      "final_feed_url": "https://feeds.feedburner.com/rsscna/intworld",
+      "selected_candidates": 16,
+      "source_id": "user-055",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "中央社國際",
+      "source_url": "https://feeds.feedburner.com/rsscna/intworld",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 14527,
+      "content_type": "text/xml; charset=utf-8",
+      "counts": {
+        "eligible_candidates": 7,
+        "entries_seen": 20,
+        "outside_window": 13
+      },
+      "elapsed_seconds": 1.609,
+      "final_feed_url": "https://feeds.feedburner.com/rsscna/politics",
+      "selected_candidates": 7,
+      "source_id": "user-056",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "中央社政治",
+      "source_url": "https://feeds.feedburner.com/rsscna/politics",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 12921,
+      "content_type": "text/xml; charset=utf-8",
+      "counts": {
+        "eligible_candidates": 20,
+        "entries_seen": 20
+      },
+      "elapsed_seconds": 1.64,
+      "final_feed_url": "https://feeds.feedburner.com/rsscna/finance",
+      "selected_candidates": 18,
+      "source_id": "user-057",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "中央社財經",
+      "source_url": "https://feeds.feedburner.com/rsscna/finance",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 13843,
+      "content_type": "text/xml; charset=utf-8",
+      "counts": {
+        "eligible_candidates": 0,
+        "entries_seen": 20,
+        "outside_window": 20
+      },
+      "elapsed_seconds": 1.633,
+      "final_feed_url": "https://feeds.feedburner.com/rsscna/technology",
+      "selected_candidates": 0,
+      "source_id": "user-058",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "中央社科技",
+      "source_url": "https://feeds.feedburner.com/rsscna/technology",
+      "status": "ok_no_eligible"
+    },
+    {
+      "bytes_received": 9518,
+      "content_type": "application/rss+xml",
+      "counts": {
+        "eligible_candidates": 0,
+        "entries_seen": 10,
+        "outside_window": 10
+      },
+      "elapsed_seconds": 0.606,
+      "final_feed_url": "https://public.twreporter.org/rss/twreporter-rss.xml",
+      "selected_candidates": 0,
+      "source_id": "user-059",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "報導者",
+      "source_url": "https://public.twreporter.org/rss/twreporter-rss.xml",
+      "status": "ok_no_eligible"
+    },
+    {
+      "bytes_received": 22525,
+      "content_type": "application/rss+xml; charset=utf-8",
+      "counts": {
+        "date_invalid": 30,
+        "eligible_candidates": 0,
+        "entries_seen": 30
+      },
+      "elapsed_seconds": 0.643,
+      "final_feed_url": "https://www.ithome.com.tw/rss",
+      "selected_candidates": 0,
+      "source_id": "user-060",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "iThome",
+      "source_url": "https://www.ithome.com.tw/rss",
+      "status": "ok_no_eligible"
+    },
+    {
+      "bytes_received": 136398,
+      "content_type": "application/rss+xml; charset=utf-8",
+      "counts": {
+        "date_timezone_missing": 30,
+        "eligible_candidates": 0,
+        "entries_seen": 30
+      },
+      "elapsed_seconds": 0.658,
+      "final_feed_url": "https://www.ithome.com.tw/rss/security",
+      "selected_candidates": 0,
+      "source_id": "user-061",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "iThome 資安",
+      "source_url": "https://www.ithome.com.tw/rss/security",
+      "status": "ok_no_eligible"
+    },
+    {
+      "bytes_received": 7299,
+      "content_type": "text/xml; charset=utf-8",
+      "counts": {
+        "eligible_candidates": 5,
+        "entries_seen": 9,
+        "outside_window": 4
+      },
+      "elapsed_seconds": 1.15,
+      "final_feed_url": "https://www.ft.com/rss/home/international",
+      "selected_candidates": 3,
+      "source_id": "user-062",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "Financial Times",
+      "source_url": "https://www.ft.com/?format=rss",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 11797,
+      "content_type": "text/xml; charset=utf-8",
+      "counts": {
+        "eligible_candidates": 7,
+        "entries_seen": 25,
+        "outside_window": 18
+      },
+      "elapsed_seconds": 1.277,
+      "final_feed_url": "https://www.ft.com/markets?format=rss",
+      "selected_candidates": 7,
+      "source_id": "user-063",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "FT Markets",
+      "source_url": "https://www.ft.com/markets?format=rss",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 14868,
+      "content_type": "text/xml; charset=utf-8",
+      "counts": {
+        "eligible_candidates": 20,
+        "entries_seen": 20
+      },
+      "elapsed_seconds": 1.05,
+      "final_feed_url": "https://www.bloomberg.com/feeds/news.rss",
+      "selected_candidates": 13,
+      "source_id": "user-064",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "Bloomberg",
+      "source_url": "https://www.bloomberg.com/feeds/news.rss",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 14865,
+      "content_type": "text/xml; charset=utf-8",
+      "counts": {
+        "eligible_candidates": 18,
+        "entries_seen": 20,
+        "outside_window": 2
+      },
+      "elapsed_seconds": 1.556,
+      "final_feed_url": "https://www.bloomberg.com/feeds/markets/news.rss",
+      "selected_candidates": 18,
+      "source_id": "user-065",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "Bloomberg Markets",
+      "source_url": "https://www.bloomberg.com/feeds/markets/news.rss",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 16768,
+      "content_type": "text/xml; charset=utf-8",
+      "counts": {
+        "eligible_candidates": 19,
+        "entries_seen": 20,
+        "outside_window": 1
+      },
+      "elapsed_seconds": 0.956,
+      "final_feed_url": "https://www.bloomberg.com/feeds/technology/news.rss",
+      "selected_candidates": 19,
+      "source_id": "user-066",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "Bloomberg Technology",
+      "source_url": "https://www.bloomberg.com/feeds/technology/news.rss",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 13925,
+      "content_type": "text/xml; charset=utf-8",
+      "counts": {
+        "eligible_candidates": 7,
+        "entries_seen": 18,
+        "outside_window": 11
+      },
+      "elapsed_seconds": 0.903,
+      "final_feed_url": "https://www.bloomberg.com/feeds/economics/news.rss",
+      "selected_candidates": 7,
+      "source_id": "user-067",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "Bloomberg Economics",
+      "source_url": "https://www.bloomberg.com/feeds/economics/news.rss",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 17116,
+      "content_type": "application/rss+xml; charset=UTF-8",
+      "counts": {
+        "eligible_candidates": 11,
+        "entries_seen": 20,
+        "outside_window": 9
+      },
+      "elapsed_seconds": 0.655,
+      "final_feed_url": "https://techcrunch.com/feed/",
+      "selected_candidates": 9,
+      "source_id": "user-068",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/feed/",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 18089,
+      "content_type": "application/rss+xml; charset=UTF-8",
+      "counts": {
+        "eligible_candidates": 10,
+        "entries_seen": 20,
+        "outside_window": 10
+      },
+      "elapsed_seconds": 0.705,
+      "final_feed_url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "selected_candidates": 3,
+      "source_id": "user-069",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "TechCrunch AI",
+      "source_url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 92592,
+      "content_type": "application/rss+xml; charset=UTF-8",
+      "counts": {
+        "eligible_candidates": 0,
+        "entries_seen": 10,
+        "outside_window": 10
+      },
+      "elapsed_seconds": 0.988,
+      "final_feed_url": "https://www.technologyreview.com/topic/artificial-intelligence/feed",
+      "selected_candidates": 0,
+      "source_id": "user-070",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "MIT Technology Review AI",
+      "source_url": "https://www.technologyreview.com/topic/artificial-intelligence/feed",
+      "status": "ok_no_eligible"
+    },
+    {
+      "bytes_received": 73685,
+      "content_type": "application/rss+xml; charset=UTF-8",
+      "counts": {
+        "eligible_candidates": 10,
+        "entries_seen": 20,
+        "outside_window": 10
+      },
+      "elapsed_seconds": 0.552,
+      "final_feed_url": "https://feeds.arstechnica.com/arstechnica/index",
+      "selected_candidates": 10,
+      "source_id": "user-071",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "Ars Technica",
+      "source_url": "https://feeds.arstechnica.com/arstechnica/index",
+      "status": "ok"
+    },
+    {
+      "counts": {},
+      "elapsed_seconds": 19.11,
+      "reason": "network_timeout",
+      "selected_candidates": 0,
+      "source_id": "user-072",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "The Decoder",
+      "source_url": "https://the-decoder.com/feed/",
+      "status": "timeout"
+    },
+    {
+      "bytes_received": 840658,
+      "content_type": "text/xml; charset=utf-8",
+      "counts": {
+        "eligible_candidates": 0,
+        "entries_seen": 200,
+        "entry_cap_reached": 1,
+        "outside_window": 200
+      },
+      "elapsed_seconds": 0.737,
+      "final_feed_url": "https://openai.com/news/rss.xml",
+      "selected_candidates": 0,
+      "source_id": "user-073",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "OpenAI",
+      "source_url": "https://openai.com/news/rss.xml",
+      "status": "ok_no_eligible"
+    },
+    {
+      "counts": {},
+      "elapsed_seconds": 0.599,
+      "reason": "compressed_response_prohibited",
+      "selected_candidates": 0,
+      "source_id": "user-074",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "Google DeepMind",
+      "source_url": "https://deepmind.google/blog/rss.xml",
+      "status": "fetch_error"
+    },
+    {
+      "bytes_received": 30112,
+      "content_type": "application/xml; charset=utf-8",
+      "counts": {
+        "eligible_candidates": 2,
+        "entries_seen": 20,
+        "outside_window": 18
+      },
+      "elapsed_seconds": 0.75,
+      "final_feed_url": "https://blog.google/innovation-and-ai/technology/ai/rss/",
+      "selected_candidates": 2,
+      "source_id": "user-075",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "Google AI",
+      "source_url": "https://blog.google/innovation-and-ai/technology/ai/rss/",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 78627,
+      "content_type": "application/rss+xml; charset=utf-8",
+      "counts": {
+        "eligible_candidates": 1,
+        "entries_seen": 100,
+        "outside_window": 99
+      },
+      "elapsed_seconds": 1.055,
+      "final_feed_url": "https://research.google/blog/rss/",
+      "selected_candidates": 1,
+      "source_id": "user-076",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "Google Research",
+      "source_url": "https://research.google/blog/rss/",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 246790,
+      "content_type": "application/rss+xml; charset=UTF-8",
+      "counts": {
+        "eligible_candidates": 1,
+        "entries_seen": 9,
+        "outside_window": 8
+      },
+      "elapsed_seconds": 1.17,
+      "final_feed_url": "https://engineering.fb.com/feed/",
+      "selected_candidates": 1,
+      "source_id": "user-077",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "Meta Engineering",
+      "source_url": "https://engineering.fb.com/feed/",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 232217,
+      "content_type": "application/rss+xml; charset=UTF-8",
+      "counts": {
+        "eligible_candidates": 0,
+        "entries_seen": 18,
+        "outside_window": 18
+      },
+      "elapsed_seconds": 0.666,
+      "final_feed_url": "https://blogs.nvidia.com/feed/",
+      "selected_candidates": 0,
+      "source_id": "user-078",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "NVIDIA",
+      "source_url": "https://blogs.nvidia.com/feed/",
+      "status": "ok_no_eligible"
+    },
+    {
+      "bytes_received": 781593,
+      "content_type": "application/atom+xml; charset=UTF-8",
+      "counts": {
+        "eligible_candidates": 1,
+        "entries_seen": 100,
+        "outside_window": 99
+      },
+      "elapsed_seconds": 0.838,
+      "final_feed_url": "https://developer.nvidia.com/blog/feed/",
+      "selected_candidates": 1,
+      "source_id": "user-079",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "NVIDIA Developer",
+      "source_url": "https://developer.nvidia.com/blog/feed/",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 385088,
+      "content_type": "application/rss+xml; charset=UTF-8",
+      "counts": {
+        "eligible_candidates": 0,
+        "entries_seen": 10,
+        "outside_window": 10
+      },
+      "elapsed_seconds": 3.689,
+      "final_feed_url": "https://www.microsoft.com/en-us/research/feed/",
+      "selected_candidates": 0,
+      "source_id": "user-080",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "Microsoft Research",
+      "source_url": "https://www.microsoft.com/en-us/research/feed/",
+      "status": "ok_no_eligible"
+    },
+    {
+      "bytes_received": 10017,
+      "content_type": "text/xml",
+      "counts": {
+        "eligible_candidates": 0,
+        "entries_seen": 10,
+        "outside_window": 10
+      },
+      "elapsed_seconds": 0.713,
+      "final_feed_url": "https://machinelearning.apple.com/rss.xml",
+      "selected_candidates": 0,
+      "source_id": "user-081",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "Apple Machine Learning",
+      "source_url": "https://machinelearning.apple.com/rss.xml",
+      "status": "ok_no_eligible"
+    },
+    {
+      "bytes_received": 587923,
+      "content_type": "application/rss+xml;charset=UTF-8",
+      "counts": {
+        "eligible_candidates": 8,
+        "entries_seen": 20,
+        "outside_window": 12
+      },
+      "elapsed_seconds": 1.101,
+      "final_feed_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "selected_candidates": 8,
+      "source_id": "user-082",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "AWS Machine Learning",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 267166,
+      "content_type": "application/rss+xml; charset=utf-8",
+      "counts": {
+        "eligible_candidates": 0,
+        "entries_seen": 200,
+        "entry_cap_reached": 1,
+        "outside_window": 200
+      },
+      "elapsed_seconds": 1.142,
+      "final_feed_url": "https://huggingface.co/blog/feed.xml",
+      "selected_candidates": 0,
+      "source_id": "user-083",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "Hugging Face",
+      "source_url": "https://huggingface.co/blog/feed.xml",
+      "status": "ok_no_eligible"
+    },
+    {
+      "bytes_received": 27752,
+      "content_type": "text/plain; charset=UTF-8",
+      "counts": {
+        "eligible_candidates": 0,
+        "entries_seen": 94,
+        "outside_window": 94
+      },
+      "elapsed_seconds": 0.74,
+      "final_feed_url": "https://mistral.ai/news/rss",
+      "selected_candidates": 0,
+      "source_id": "user-084",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "Mistral AI",
+      "source_url": "https://mistral.ai/news/rss",
+      "status": "ok_no_eligible"
+    },
+    {
+      "bytes_received": 827868,
+      "content_type": "application/rss+xml",
+      "counts": {
+        "eligible_candidates": 0,
+        "entries_seen": 200,
+        "entry_cap_reached": 1,
+        "outside_window": 200
+      },
+      "elapsed_seconds": 1.06,
+      "final_feed_url": "https://export.arxiv.org/rss/cs.AI",
+      "selected_candidates": 0,
+      "source_id": "user-085",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "arXiv Artificial Intelligence",
+      "source_url": "https://export.arxiv.org/rss/cs.AI",
+      "status": "ok_no_eligible"
+    },
+    {
+      "bytes_received": 820476,
+      "content_type": "application/rss+xml",
+      "counts": {
+        "eligible_candidates": 0,
+        "entries_seen": 200,
+        "entry_cap_reached": 1,
+        "outside_window": 200
+      },
+      "elapsed_seconds": 0.895,
+      "final_feed_url": "https://export.arxiv.org/rss/cs.LG",
+      "selected_candidates": 0,
+      "source_id": "user-086",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "arXiv Machine Learning",
+      "source_url": "https://export.arxiv.org/rss/cs.LG",
+      "status": "ok_no_eligible"
+    },
+    {
+      "bytes_received": 386772,
+      "content_type": "application/rss+xml",
+      "counts": {
+        "eligible_candidates": 0,
+        "entries_seen": 178,
+        "outside_window": 178
+      },
+      "elapsed_seconds": 0.808,
+      "final_feed_url": "https://export.arxiv.org/rss/cs.CL",
+      "selected_candidates": 0,
+      "source_id": "user-087",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "arXiv NLP",
+      "source_url": "https://export.arxiv.org/rss/cs.CL",
+      "status": "ok_no_eligible"
+    },
+    {
+      "bytes_received": 521014,
+      "content_type": "application/rss+xml",
+      "counts": {
+        "eligible_candidates": 0,
+        "entries_seen": 200,
+        "entry_cap_reached": 1,
+        "outside_window": 200
+      },
+      "elapsed_seconds": 0.949,
+      "final_feed_url": "https://export.arxiv.org/rss/cs.CV",
+      "selected_candidates": 0,
+      "source_id": "user-088",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "arXiv Computer Vision",
+      "source_url": "https://export.arxiv.org/rss/cs.CV",
+      "status": "ok_no_eligible"
+    },
+    {
+      "bytes_received": 46416,
+      "content_type": "application/rss+xml; charset=utf-8",
+      "counts": {
+        "eligible_candidates": 0,
+        "entries_seen": 29,
+        "outside_window": 29
+      },
+      "elapsed_seconds": 1.553,
+      "final_feed_url": "https://flipboard.com/@associatedpress/top-stories-u7govdf1z.rss",
+      "selected_candidates": 0,
+      "source_id": "user-089",
+      "source_kind": "distribution_feed_candidate",
+      "source_name": "AP",
+      "source_url": "https://flipboard.com/@associatedpress/top-stories-u7govdf1z.rss",
+      "status": "ok_no_eligible"
+    },
+    {
+      "bytes_received": 133052,
+      "content_type": "application/xml; charset=utf-8",
+      "counts": {
+        "eligible_candidates": 0,
+        "entries_seen": 100,
+        "outside_window": 38,
+        "unresolved_aggregator": 62
+      },
+      "elapsed_seconds": 1.113,
+      "final_feed_url": "https://news.google.com/rss/search?q=when:24h+site:reuters.com&hl=en-US&gl=US&ceid=US:en",
+      "selected_candidates": 0,
+      "source_id": "user-090",
+      "source_kind": "third_party_discovery_feed",
+      "source_name": "Reuters",
+      "source_url": "https://news.google.com/rss/search?q=when:24h+site:reuters.com&hl=en-US&gl=US&ceid=US:en",
+      "status": "ok_no_eligible"
+    },
+    {
+      "bytes_received": 114402,
+      "content_type": "application/xml; charset=utf-8",
+      "counts": {
+        "eligible_candidates": 0,
+        "entries_seen": 100,
+        "outside_window": 44,
+        "unresolved_aggregator": 56
+      },
+      "elapsed_seconds": 1.095,
+      "final_feed_url": "https://news.google.com/rss/search?q=when:24h+site:cnn.com&hl=en-US&gl=US&ceid=US:en",
+      "selected_candidates": 0,
+      "source_id": "user-091",
+      "source_kind": "third_party_discovery_feed",
+      "source_name": "CNN",
+      "source_url": "https://news.google.com/rss/search?q=when:24h+site:cnn.com&hl=en-US&gl=US&ceid=US:en",
+      "status": "ok_no_eligible"
+    },
+    {
+      "bytes_received": 114311,
+      "content_type": "application/xml; charset=utf-8",
+      "counts": {
+        "eligible_candidates": 0,
+        "entries_seen": 100,
+        "outside_window": 86,
+        "unresolved_aggregator": 14
+      },
+      "elapsed_seconds": 1.293,
+      "final_feed_url": "https://news.google.com/rss/search?q=when:7d+site:afp.com&hl=en-US&gl=US&ceid=US:en",
+      "selected_candidates": 0,
+      "source_id": "user-092",
+      "source_kind": "third_party_discovery_feed",
+      "source_name": "AFP",
+      "source_url": "https://news.google.com/rss/search?q=when:7d+site:afp.com&hl=en-US&gl=US&ceid=US:en",
+      "status": "ok_no_eligible"
+    },
+    {
+      "counts": {},
+      "reason": "rss_only_official_webpage_candidate",
+      "selected_candidates": 0,
+      "source_id": "user-093",
+      "source_kind": "official_webpage_candidate",
+      "source_name": "Anthropic",
+      "source_url": "https://www.anthropic.com/news",
+      "status": "skipped"
+    },
+    {
+      "counts": {},
+      "reason": "rss_only_official_webpage_candidate",
+      "selected_candidates": 0,
+      "source_id": "user-094",
+      "source_kind": "official_webpage_candidate",
+      "source_name": "Meta AI",
+      "source_url": "https://ai.meta.com/blog/",
+      "status": "skipped"
+    },
+    {
+      "counts": {},
+      "reason": "rss_only_official_webpage_candidate",
+      "selected_candidates": 0,
+      "source_id": "user-095",
+      "source_kind": "official_webpage_candidate",
+      "source_name": "xAI",
+      "source_url": "https://x.ai/news",
+      "status": "skipped"
+    }
+  ],
+  "title": "補刊 · 人工智慧模型更新、算力融資與平台治理動態",
+  "window_end": "2026-11-12T07:00:00+08:00",
+  "window_start": "2026-11-11T19:00:00+08:00"
+}
