@@ -97,7 +97,21 @@
       fetchJson(`data/reader-editions/${prefix}evening.json`),
     ]);
     if (readerMorning || readerMidday || readerEvening) {
-      return { morning: readerMorning, midday: readerMidday, evening: readerEvening, legacy: null, requestedEdition: editionParam };
+      const scoped = { morning: readerMorning, midday: readerMidday, evening: readerEvening };
+      // Never substitute an explicitly requested missing issue. Once the
+      // requested dated issue is found, adjacent tabs may offer their latest
+      // published issue, showing its own date rather than a disabled control.
+      if (date && editionParam && !scoped[editionParam]) {
+        return { ...scoped, legacy: null, requestedEdition: editionParam };
+      }
+      const initialEdition = editionParam || (date ? ['evening', 'midday', 'morning'].find(k => scoped[k]) : null);
+      if (date) {
+        await Promise.all(Object.keys(scoped).filter(k => k !== initialEdition).map(async k => {
+          const latest = await fetchJson(`data/reader-editions/${k}.json`);
+          if (latest) scoped[k] = latest;
+        }));
+      }
+      return { ...scoped, legacy: null, requestedEdition: initialEdition };
     }
 
     if (date) {
@@ -773,7 +787,9 @@
         const params = new URLSearchParams(window.location.search);
         // Latest-slot navigation must stay latest-slot on reload; do not pin
         // yesterday's evening to the homepage's embedded morning date.
-        if (!params.has('date') && /\/briefings\//.test(window.location.pathname) && window.EDITORIAL_REQUESTED_DATE) params.set('date', window.EDITORIAL_REQUESTED_DATE);
+        if (params.has('date') || /\/briefings\//.test(window.location.pathname)) {
+          if (issue.date) params.set('date', issue.date);
+        }
         params.set('edition', editionKey);
         window.history.pushState(null, '', `${window.location.pathname}?${params}${window.location.hash || ''}`);
       }
