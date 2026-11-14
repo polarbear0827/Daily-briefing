@@ -82,7 +82,11 @@
   async function loadAllEditions() {
     // URL param ?date=YYYY-MM-DD&edition=morning|midday|evening overrides
     const params = new URLSearchParams(window.location.search);
-    const date = params.get('date') || window.EDITORIAL_REQUESTED_DATE;
+    // The homepage's embedded date identifies its initial issue, not a filter
+    // hiding the latest published midday/evening slots from previous days.
+    // Explicit history queries and dated standalone pages remain date-pinned.
+    const standalone = /\/briefings\/\d{4}-\d{2}-\d{2}-(?:morning|midday|evening)\.html$/.test(window.location.pathname);
+    const date = params.get('date') || (standalone ? window.EDITORIAL_REQUESTED_DATE : null);
     const editionParam = params.get('edition') || window.EDITORIAL_REQUESTED_EDITION;
 
     // Prefer the whole modern set; never mix missing slots with legacy aliases.
@@ -594,8 +598,10 @@
     const btn = (k, label) => {
       const disabled = !has(k);
       const active = (k === activeEdition);
+      const date = editions[k]?.date;
+      const stamp = date ? `<span style="display:block;font-size:11px;line-height:1.2;margin-top:3px">${escapeHtml(date)}</span>` : '';
       return `<button class="edition-tab${active ? ' active' : ''}${disabled ? ' disabled' : ''}"
-              data-edition="${k}" ${disabled ? 'disabled' : ''}>${label}</button>`;
+              data-edition="${k}" ${disabled ? 'disabled' : ''}>${label}${stamp}</button>`;
     };
     return `
       <div class="edition-switcher-wrap">
@@ -765,7 +771,9 @@
       closeReader();
       if (push) {
         const params = new URLSearchParams(window.location.search);
-        if (!params.has('date') && window.EDITORIAL_REQUESTED_DATE) params.set('date', window.EDITORIAL_REQUESTED_DATE);
+        // Latest-slot navigation must stay latest-slot on reload; do not pin
+        // yesterday's evening to the homepage's embedded morning date.
+        if (!params.has('date') && /\/briefings\//.test(window.location.pathname) && window.EDITORIAL_REQUESTED_DATE) params.set('date', window.EDITORIAL_REQUESTED_DATE);
         params.set('edition', editionKey);
         window.history.pushState(null, '', `${window.location.pathname}?${params}${window.location.hash || ''}`);
       }
