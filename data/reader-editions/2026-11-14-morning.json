@@ -1,0 +1,482 @@
+{
+  "schema_version": 2,
+  "issue_number": "2026-11-14-morning",
+  "issue_label_zh": "2026-11-14 科技早報",
+  "date": "2026-11-14",
+  "edition": "morning",
+  "edition_label_zh": "科技早報",
+  "date_display_zh": "2026年11月14日·星期六·科技早報",
+  "weather_locations": [],
+  "tagline_zh": "由 AI 為你策展，掌握科技與時事",
+  "categories": [
+    {
+      "id": "tech-product",
+      "name_zh": "產品發布／平台戰爭"
+    },
+    {
+      "id": "vc-business",
+      "name_zh": "產業深度／商業應用"
+    },
+    {
+      "id": "security",
+      "name_zh": "技術風險"
+    },
+    {
+      "id": "dev",
+      "name_zh": "社群熱度／開發者"
+    },
+    {
+      "id": "ai-tools",
+      "name_zh": "人工智慧工具"
+    },
+    {
+      "id": "taiwan",
+      "name_zh": "中文科技"
+    },
+    {
+      "id": "enterprise-cases",
+      "name_zh": "企業人工智慧案例"
+    }
+  ],
+  "articles": [
+    {
+      "id": "2026-11-14-morning:event-08",
+      "original_id": "event-08",
+      "category": "tech-product",
+      "is_headline": true,
+      "title_zh": "OpenAI推出ChatGPT Wallet，初期美國用戶付款仍須逐筆核准",
+      "lede_zh": "OpenAI推出ChatGPT Wallet，讓人工智慧代理能代使用者付款。功能初期僅在美國透過Dots提供，使用者須為成年人、訂閱ChatGPT Pro，並持有符合資格的美國銀行卡。這是OpenAI停止彈性不足的Instant Checkout後，再次調整人工智慧購物服務。\n\n使用者先綁定卡片，每次購買前，系統會顯示商品、總金額及選用卡片，再由使用者透過Face ID或指紋等安全檢查核准付款。付款夥伴American Express、Mastercard與Visa會產生附有安全碼的支付代碼，取代真實卡號，代理與網路商店都不會看到實際卡片資料。OpenAI表示，原有卡片回饋及符合資格爭議的銀行保障仍適用。\n\n依OpenAI說明，購物流程從使用者描述需求開始，ChatGPT再透過公開網路、API或商家商品資料尋找選項。使用者比較並選定商品後，代理可操作商家既有網站，或透過支援購物車管理等結構化操作的外掛完成購買。\n\n代理購物仍可能遭網站或支付系統當成機器人攔截。OpenAI因此同步推出Commerce Partner Playbook，協助商家調整防火牆、提供商品資料並與支付業者協作。至於讓使用者設定支出上限、商品類別與期限後，交由代理全權採購，則仍是未來計畫，並非目前逐筆核准流程已具備的能力。",
+      "bullets_zh": [],
+      "source": {
+        "name": "The Decoder",
+        "url": "https://the-decoder.com/openai-rebuilt-ai-shopping-from-scratch-with-chatgpt-wallet/",
+        "published_at": "2026-11-13T18:55:21+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "ChatGPT Wallet將代理購物延伸到付款，但目前仍保留使用者逐筆確認。能否順利完成交易，不只取決於代理能力，也取決於商家網站與支付系統是否接受代理操作。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "來源為The Decoder報導正文節錄，取得類型為publisher-excerpt，並非完整全文。支付流程與卡片保障包含OpenAI說法；未取得獨立交易測試或銀行保障條款供核對。"
+    },
+    {
+      "id": "2026-11-14-morning:event-01",
+      "original_id": "event-01",
+      "category": "vc-business",
+      "is_headline": false,
+      "title_zh": "輝達由克瑞斯暫掌，接班布局與AI新創融資走向受關注",
+      "lede_zh": "黃仁勳宣布辭去輝達執行長後，董事會已任命財務長克瑞斯暫代，長期接班人選仍未確定。金融時報報導，董事會已接洽安謀執行長哈斯，將他列入數名潛在人選之一，但不代表一定邀請他出任，也不代表他會接受。安謀拒絕置評，輝達未立即回應；路透社表示無法獨立核實這項接班消息。\n\n交接的不確定性也延伸至AI新創融資。TechCrunch援引PitchBook資料指出，輝達今年已參與105輪融資。Seligman Ventures合夥人Padval表示，過去許多重大投資決策由黃仁勳本人推動；受訪投資人擔心，新管理層可能縮小投資規模、提高篩選門檻。不過，這些仍是對未來決策的判斷，不能視為輝達已撤回投資或停止支持新創。\n\n授信安排是另一項觀察重點。The Decoder報導，輝達曾向AI雲端業者與資料中心開發商提供數十億美元財務保證，協助其購買晶片，並約定分享營收；克瑞斯先前已質疑保證的估值與回報。報導另稱，與OpenAI資料中心有關的保證承諾在她介入後減半，縮減版協議已於8月簽署，早於此次執行長交接。\n\n公司內部與市場也持續消化變化。中央社報導，連線雜誌檢視的內部通訊顯示，一篇要求董事會考量員工意見的貼文吸引逾1600則留言，其中有員工主張請黃仁勳回任，但不能據此代表全體員工立場。11月13日美股開盤約15分鐘，輝達股價下跌2.1%，當時尚非收盤結果。\n\n產業反應並非一致悲觀。Databricks執行長格哈德西認為，接班者將影響這家高度連結創辦人風格的公司；Flapping Airplanes創辦人史派克特則表示，輝達一直是良好合作夥伴，仍看好產業前景。部分投資人期待其他雲端或晶片業者補上融資需求，但是否願意承擔早期基礎設施投資，仍有疑問。",
+      "bullets_zh": [],
+      "source": {
+        "name": "中央社科技",
+        "url": "https://www.cna.com.tw/news/ait/202611140004.aspx",
+        "published_at": "2026-11-14T03:15:18+08:00",
+        "reading_time_min": 2
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "這次交接值得追蹤的不只是接班人選，也包括晶片銷售、財務保證與新創投資如何相互連動。後續應以新管理層實際公布的交易與資本配置，區分市場擔憂和已發生的政策轉變。",
+      "supporting_sources": [
+        {
+          "source_name": "中央社國際",
+          "source_title": "黃仁勳卸任輝達執行長　矽谷不安看待AI產業可能衝擊",
+          "source_url": "https://www.cna.com.tw/news/aopl/202611130307.aspx"
+        },
+        {
+          "source_name": "TechCrunch",
+          "source_title": "Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say",
+          "source_url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/"
+        },
+        {
+          "source_name": "The Decoder",
+          "source_title": "Jensen Huang's ouster likely traces back to Nvidia's risky business practices more than his personal life",
+          "source_url": "https://the-decoder.com/jensen-huangs-ouster-likely-traces-back-to-nvidias-risky-business-practices-more-than-his-personal-life/"
+        },
+        {
+          "source_name": "中央社國際",
+          "source_title": "黃仁勳請辭　輝達部分員工籲董事會「把老大請回來」",
+          "source_url": "https://www.cna.com.tw/news/aopl/202611130293.aspx"
+        },
+        {
+          "source_name": "中央社財經",
+          "source_title": "美股早盤漲跌互見　輝達賣壓持續再跌逾2%",
+          "source_url": "https://www.cna.com.tw/news/afe/202611130334.aspx"
+        }
+      ],
+      "source_evidence_note_zh": "已取得TechCrunch與The Decoder報導正文，以及4篇中央社報導節錄。哈斯接班消息來自中央社所載金融時報報導；授信安排來自The Decoder整理的華爾街日報報導；員工反應來自中央社所載連線雜誌報導，未另取得上述原始報導或公司內部文件。融資收縮及競爭變化屬受訪者預測，未獨立驗證。"
+    },
+    {
+      "id": "2026-11-14-morning:event-02",
+      "original_id": "event-02",
+      "category": "vc-business",
+      "is_headline": false,
+      "title_zh": "Megaspeed晶片轉運疑雲擴大，文件指向上海設施、取得途徑仍待釐清",
+      "lede_zh": "新加坡資料中心業者Megaspeed相關晶片流向受到進一步檢視。彭博報導，其查閱文件顯示，黃樂創辦的中國企業所列硬體，包含原先售予新加坡業者、搭載輝達H800晶片的伺服器，後來出現在上海一處AI設施。不過，文件未交代晶片如何取得，也未說明黃樂本人是否參與交易，尚不能據此確定完整轉運途徑或個人責任。\n\n依彭博報導，Aperia Cloud Services曾向戴爾購入22台搭載H800的伺服器；美國於2023年限制向中國銷售這款晶片。上海龍騰智慧數據集團旗下一家子公司的申報材料，列出了這批硬體，顯示其安裝於上海的193台伺服器之中。彭博另將伺服器序號交給熟悉交易的人士核對，對方證實Aperia是戴爾客戶，但這不等於已釐清後續所有權與運輸環節。\n\n戴爾表示，因擔心未經授權的轉運，已於2025年2月停止向Aperia International提供銷售及支援服務。同月，Aperia執行長在新加坡因涉嫌欺詐伺服器供應商遭逮捕；他不認罪，目前等待審判，Aperia也否認不當行為。輝達表示，對方被捕時已非活躍客戶，之後亦從公開雲端合作夥伴名單移除。\n\nMegaspeed的營運狀況同樣受到關注。法新社實地走訪發現，其新加坡辦公室及馬來西亞子公司Speedmatrix的辦公室均未見員工；新加坡辦公室鄰居稱，數月來未見人員進出。這些現場觀察並不能單獨證明違法轉運。Megaspeed表示正在調查出口管制遵循情況，馬來西亞也正調查其一家子公司是否將先進AI晶片轉運至其他國家。\n\n監管爭議已延伸至美國政府內部。財政部長貝森特接受CNBC訪問時表示，財政部等部門數月來支持將Megaspeed列入貿易黑名單，並批評掌握決定權的商務部尚未列管。這是貝森特對監管程序的說法，並非新的列管公告，也不是對轉運指控的司法定案。",
+      "bullets_zh": [],
+      "source": {
+        "name": "中央社財經",
+        "url": "https://www.cna.com.tw/news/aopl/202611130323.aspx",
+        "published_at": "2026-11-13T22:11:36+08:00",
+        "reading_time_min": 2
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "此案的關鍵在於能否把最初銷售、後續轉手與最終使用設施連成可核實的證據鏈。辦公室狀況與列管爭論提供了調查背景，不能取代對晶片流向及各方責任的證明。",
+      "supporting_sources": [
+        {
+          "source_name": "中央社國際",
+          "source_title": "黃樂曾任高層　新加坡Megaspeed與子公司辦公室人去樓空",
+          "source_url": "https://www.cna.com.tw/news/aopl/202611130314.aspx"
+        },
+        {
+          "source_name": "中央社國際",
+          "source_title": "新加坡公司涉黃仁勳醜聞　美財長怪罪商務部未列管",
+          "source_url": "https://www.cna.com.tw/news/aopl/202611130332.aspx"
+        }
+      ],
+      "source_evidence_note_zh": "取得資料為3篇中央社報導節錄，內容分別涵蓋彭博的文件查核、法新社的現場走訪及貝森特受訪說法；未直接取得彭博、法新社原始全文、申報文件、伺服器交易紀錄或CNBC訪談。轉運指控仍待調查，文件未交代晶片取得方式及黃樂是否參與交易。"
+    },
+    {
+      "id": "2026-11-14-morning:event-03",
+      "original_id": "event-03",
+      "category": "vc-business",
+      "is_headline": false,
+      "title_zh": "中國逾32億美元AI運算計畫涉及受管制輝達晶片，供應進度仍有不確定性",
+      "lede_zh": "中國多項AI運算建設仍規劃採用受美國出口管制的輝達處理器。路透社檢視逾150份政府採購公告、投資計畫、建築合約及企業揭露文件後，估算相關計畫與設備協議總值超過人民幣230億元，約32億美元，呈現中國對輝達硬體持續存在的需求。\n\n這項金額並非單純的晶片採購支出，也不代表全部投資已經完成。估算同時涵蓋規劃中的投資、已簽合約及已完工設施，包含建築物、電力系統與其他基礎設施。相關計畫涉及大型區域運算樞紐、地方政府支持的合資企業、大學及改造後的商業場所，規劃採用的處理器包括H100、H200與H800。\n\n計畫進度與硬體到貨情況並不一致。部分設施已營運或正在興建；甘肅一處設施原先預估年底前安裝數千顆輝達晶片，但目前仍不清楚是否到貨。路透社報導指出，出口管制收緊可能使營運商面臨延誤、供應受阻，或必須投入額外成本，改用中國自研晶片重新設計。這些屬潛在風險，不能視為所有計畫均已受阻。\n\n中國商務部與輝達均未立即回應路透社置評請求。雖然Megaspeed另涉及晶片採購爭議，路透社明確指出，目前未發現上述中國計畫與Megaspeed或涉及黃仁勳的指控有關，兩者不宜合併視為同一條供應鏈事件。",
+      "bullets_zh": [],
+      "source": {
+        "name": "中央社國際",
+        "url": "https://www.cna.com.tw/news/aopl/202611130290.aspx",
+        "published_at": "2026-11-13T19:44:21+08:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "判讀這類AI基礎設施投資，必須分開看計畫總值、已簽支出、設施完工程度與晶片實際到貨，才能避免把建設意向誤認為已取得運算能力。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "僅取得中央社轉述路透社調查的報導節錄，未直接取得路透社原文及其檢視的逾150份文件。32億美元為相關計畫與設備協議的估算總值，包含非晶片基礎設施及不同執行階段；部分晶片是否到貨仍不明。"
+    },
+    {
+      "id": "2026-11-14-morning:event-05",
+      "original_id": "event-05",
+      "category": "vc-business",
+      "is_headline": false,
+      "title_zh": "LangChain募得3億美元，估值30億美元、聚焦AI代理管理",
+      "lede_zh": "LangChain宣布完成3億美元C輪募資，估值達30億美元，由CapitalG領投，參與者包括GIC、DFJ Growth、IVP與Sapphire Ventures。相較約一年前由IVP領投、募得1.25億美元時的12.5億美元估值，本輪估值已超過當時兩倍。\n\n這筆募資背後，是LangChain從開源框架走向人工智慧代理管理的業務轉向。公司起於2022年的開源專案，協助早期大型語言模型處理網路搜尋、呼叫API及資料庫互動等工作。隨著前沿AI實驗室提供能執行這些任務的配套工具，LangChain將重心轉向企業如何建立與管理代理。\n\n其產品LangSmith以代理建立與管理為定位。LangChain主張，產品不會把使用者綁定在特定模型、雲端或生態系，也宣稱能約束代理行為、降低使用門檻。這些是公司的產品定位與能力主張，不能直接視為已經獨立驗證的效果。\n\nLangChain並稱，LangSmith已有7,000家客戶，包括Harvey、Rippling、Clay，以及Nvidia、Toyota與Salesforce。企業採用與跨平台自主性，成為公司在代理管理市場爭取客戶的主要訴求；報導也指出，市場已有其他新創提出類似主張。",
+      "bullets_zh": [],
+      "source": {
+        "name": "TechCrunch AI",
+        "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
+        "published_at": "2026-11-13T19:37:57+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-article",
+      "evidence_note_zh": "依來源文章整理。",
+      "editorial_analysis_zh": "LangChain的轉向顯示，企業AI工具的競爭不只在於讓模型執行任務，也延伸至代理的管理方式與平台選擇權。募資與估值反映資本支持，但不等同產品能力已獲驗證。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "取得TechCrunch報導正文。募資資訊來自公司公告；客戶數、客戶名單、不綁定平台及代理行為管理能力為公司說法，所提供資料未含獨立驗證。"
+    },
+    {
+      "id": "2026-11-14-morning:event-06",
+      "original_id": "event-06",
+      "category": "vc-business",
+      "is_headline": false,
+      "title_zh": "Anthropic傳上市申購達可配售股數6倍，中港投資人遭部分銀行拒單",
+      "lede_zh": "Anthropic上市籌資傳出強勁申購需求，同時出現投資人配置限制。The Decoder報導，申購訂單已達可供配售股數的6倍；Anthropic及共同創辦人目標透過公開發行籌集最多644億美元，另以私募籌集260億美元，目標估值約1.4兆美元。這些仍是交易目標，並非已完成的募資結果。\n\n在配售方面，報導指既有投資人將獲優先配置，但中國大陸與香港投資人的申購面臨阻礙。多家銀行據報已拒絕來自這些地區的買單，或認為獲配機會不高；部分相關人士將原因指向美國規範國防相關物品的出口管制規則ITAR。Anthropic拒絕評論。\n\n目前資訊反映的是銀行的申購處理與配置判斷，不能直接等同主管機關已對所有中港投資人作出統一禁令。相關出口管制理由也來自部分人士說法，尚不能據此確定每家銀行拒單的法律依據。\n\n發行案由Goldman Sachs與Morgan Stanley主導，另有20家銀行參與。依報導時程，股票預計在11月18日定價後，以ANT為代號在Nasdaq交易；實際定價、募資規模與最終配售結果仍待交易推進。",
+      "bullets_zh": [],
+      "source": {
+        "name": "The Decoder",
+        "url": "https://the-decoder.com/anthropics-ipo-is-six-times-oversubscribed-and-on-track-to-become-the-largest-public-offering-in-history/",
+        "published_at": "2026-11-13T15:15:08+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "申購熱度與投資人能否獲配是兩個不同問題。這起交易值得觀察的不只是估值，也包括銀行如何處理出口管制疑慮，以及這些判斷最終如何影響配售。",
+      "supporting_sources": [
+        {
+          "source_name": "The Decoder",
+          "source_title": "Banks bar Chinese and Hong Kong investors from Anthropic IPO over US export controls",
+          "source_url": "https://the-decoder.com/banks-bar-chinese-and-hong-kong-investors-from-anthropic-ipo-over-us-export-controls/"
+        }
+      ],
+      "source_evidence_note_zh": "取得The Decoder兩篇報導的正文節錄，兩篇均將核心消息歸於Bloomberg；未取得Bloomberg原文、正式發行文件或主管機關文件。申購倍數、籌資與估值目標、配售限制及上市時程均依報導呈現，未獨立驗證。"
+    },
+    {
+      "id": "2026-11-14-morning:event-07",
+      "original_id": "event-07",
+      "category": "vc-business",
+      "is_headline": false,
+      "title_zh": "Drogue募資2,000萬美元，規劃以海洋溫差發電支撐浮動資料中心",
+      "lede_zh": "新創公司Drogue正開發利用海洋溫差發電的浮動資料中心，希望讓伺服器直接在海上取得電力。公司表示，成立約六個月已募得2,000萬美元，投資者包括XYZ Venture Capital、Toyota Ventures與Tamarack Global等；目前已設計出數百萬瓦級原型，預計安裝於傳統遠洋船舶，於2028年初出海。\n\n這套系統採用海洋溫差發電技術：先引入溫暖的表層海水替資料中心冷卻，再利用升溫後的海水使氨汽化，推動渦輪發電。系統另從約1,000公尺深處抽取冷海水，透過冷凝器讓氨恢復液態，在封閉迴路內反覆循環。後續版本則規劃採用更接近離岸石油平台的浮動結構。\n\n創辦人暨執行長Sam Sipe認為，傳統資料中心涉及土地與電網協調，開發時程難以配合人工智慧需求。他的構想是將運算設備移到能源所在地，避免把海上電力透過昂貴的長距離電纜送回陸地；依其規劃，每艘船將在海上運作約十年。\n\nDrogue已取得American Bureau of Shipping的原則性核可，正購買第一艘船以建造原型。不過，初步核可並不等於系統已完成海上運轉驗證；供電表現、部署速度與商業效益，仍待原型實際運行檢驗。",
+      "bullets_zh": [],
+      "source": {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/13/this-young-startup-wants-to-power-floating-data-centers-with-the-oceans-heat-and-investors-are-already-on-board/",
+        "published_at": "2026-11-13T20:07:24+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "這項構想把資料中心選址問題轉為海上能源與設備整合問題。判斷其價值的關鍵，不只是能否發電，還包括能否長期穩定支撐運算，以及部署與維運成本是否可行。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "來源為TechCrunch報導正文節錄，取得類型為publisher-excerpt，並非完整全文。募資、設計與部署規劃主要來自公司及創辦人說法；提供資料未包含獨立運轉測試或商業效益驗證。"
+    },
+    {
+      "id": "2026-11-14-morning:event-19",
+      "original_id": "event-19",
+      "category": "vc-business",
+      "is_headline": false,
+      "title_zh": "美國公部門工會爭取AI保障，以重訓取代裁員、保留人工監督",
+      "lede_zh": "美國公部門導入人工智慧，工會也開始爭取更具體的工作保障，從以再培訓取代AI相關裁員，到要求系統運作保留人工監督。依Ernst and Young一項調查，美國近七成政府機關已使用生成式AI，讓自動化與勞動權益的協商更為迫切。\n\n在奧克蘭，IFPTE Local 21於10月進行罷工表決後，爭取到以再培訓方案取代AI相關裁員。賓州州長Josh Shapiro則向SEIU Local 668保證，在OpenAI的ChatGPT Enterprise試辦期間保留人工監督。俄亥俄州的運輸工人工會另取得對自動駕駛車輛的否決權；這些成果分別涉及人力調整、生成式AI試辦與運輸自動化，保障內容並不相同。\n\n州級措施也有所進展。加州州長Gavin Newsom於9月禁止被稱為「bossware」的AI員工監控軟體，以及自動化解僱。紐約州則自2025年底起，以法律保障州政府員工免因AI而被取代。這些措施與個別工會取得的保障分屬不同層級，不能視為全美共同適用的規範。\n\n工會領袖的立場並非全面排斥AI。Liz Shuler（AFL-CIO）、Lorena Gonzalez與John Samuelsen（TWU）支持能協助勞工的AI安全系統，但主張工作場所每一項AI應用都必須由人類掌控。協商焦點因此不只是是否採用AI，也包括誰能監督系統，以及導入後如何保障工作。",
+      "bullets_zh": [],
+      "source": {
+        "name": "The Decoder",
+        "url": "https://the-decoder.com/nearly-70-percent-of-us-agencies-use-generative-ai-and-unions-are-finally-catching-up-with-guardrails/",
+        "published_at": "2026-11-13T15:53:49+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "這些個案顯示，AI導入的勞動治理已出現具體協商工具，包括再培訓、人工監督與否決權。評估保障效果時，仍須區分個別工會成果與州級規範，不能由局部進展推論全國勞工已獲同等保障。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "本則依The Decoder已取得的報導節錄撰寫，並非完整報導。節錄部分內容引述The Guardian；未取得該報導全文、Ernst and Young調查原文、工會協議、州法或行政措施原文，無法進一步核對調查方法及各項保障的完整適用範圍。"
+    },
+    {
+      "id": "2026-11-14-morning:event-10",
+      "original_id": "event-10",
+      "category": "security",
+      "is_headline": false,
+      "title_zh": "OpenAI推出兩款Daybreak資安產品，分工漏洞探測與程式碼修補",
+      "lede_zh": "OpenAI推出Daybreak系列兩款資安產品，分別處理網頁應用程式的漏洞探測與程式碼修補。已開放搶先體驗的Daybreak Red Team，透過AI代理分析原始碼與應用程式情境，找出可能的攻擊路徑，並自動探測漏洞。\n\nRed Team也能驗證漏洞獎勵計畫或程式碼掃描器回報的安全缺陷，以及測試修補是否有效。另一款Daybreak Defense Factory則著重防禦工作流程：代理掃描企業程式碼庫、產生修補內容，再將修正與配套測試整理成可供部署的程式碼合併請求，交由開發者核准。兩款產品皆採用OpenAI的GPT-6 Cyber模型。\n\n負責Cyber-Applied AI的Nancy Wang表示，Red Team的設計目標，是以自動化持續掃描的速度，提供深度可比擬人工測試人員的滲透測試。這是公司對產品能力的說法，而非已經獨立驗證的測試結果；就已公布的工作流程而言，Defense Factory產生修補後，仍保留開發者的核准環節。",
+      "bullets_zh": [],
+      "source": {
+        "name": "The Decoder",
+        "url": "https://the-decoder.com/openai-enters-the-cybersecurity-market-with-two-daybreak-products/",
+        "published_at": "2026-11-13T15:08:57+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "兩款產品將漏洞驗證與修補產出分成不同工作流程。評估其價值時，應區分自動產生測試與修補的能力，以及修補結果是否可靠，不能僅以自動化程度取代安全品質判斷。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "依The Decoder已取得的報導節錄撰寫，並非完整報導；未取得獨立效能或安全測試資料。"
+    },
+    {
+      "id": "2026-11-14-morning:event-14",
+      "original_id": "event-14",
+      "category": "dev",
+      "is_headline": false,
+      "title_zh": "AWS示範程式代理模型路由，改以每個成功任務成本比較方案",
+      "lede_zh": "程式代理在低價與高能力模型間切換，是否真的省錢，不能只看單次呼叫或每個詞元價格。AWS公布整合NVIDIA NeMo Switchyard、LiteLLM與Amazon Bedrock的部署範例，主張將所有嘗試的成本除以通過測試的任務數，藉此比較路由策略與單一模型的實際取捨。\n\n範例透過AWS CDK部署閘道，讓LiteLLM與Switchyard外掛在ECS的Fargate環境執行，再呼叫Bedrock模型。Stage策略根據對話歷史中近期的工具活動與結果，在兩個候選模型間選擇；Random策略則按權重分流，可用於A/B比較。兩者都不需額外呼叫裁判模型，但Stage要求代理每次傳送完整的支援格式對話歷史。\n\n評估工具會讓小型程式代理讀寫檔案、修改程式並執行單元測試，記錄成功數與估算成本。AWS提醒，低價模型若需要更多輪修正，或多次失敗，單次任務成本雖低，每個成功任務反而可能更貴；Stage也無法在困難任務開始前就預知失敗，升級模型時還須重送先前歷史。\n\n這套範例並未證明路由一定優於單一模型。AWS明言，少數示範任務不足以推論成本或品質，開發者應換成自身程式庫的代表性任務，增加重複測試，並先比較成功率，再看每個成功任務成本。工具按詞元用量與價格表估算支出，並非帳單實際金額。\n\n部署限制同樣重要：範例採用實驗性整合，定位為非正式環境用途。測試工具會在本機執行模型產生的Python程式，並非作業系統沙箱，仍可讀取使用者有權存取的檔案及連線網路；AWS因此建議使用可拋棄的開發環境，且不要在磁碟保留長期AWS憑證。",
+      "bullets_zh": [],
+      "source": {
+        "name": "AWS Machine Learning",
+        "url": "https://aws.amazon.com/blogs/machine-learning/route-coding-agent-requests-to-the-right-model-on-amazon-bedrock-with-nvidia-nemo-switchyard/",
+        "published_at": "2026-11-13T22:30:12+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "模型路由應被視為待驗證的部署選項，而非自動省錢功能。把失敗嘗試也納入成本，才能避免低單價掩蓋重試與多輪互動的支出。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "來源為AWS Machine Learning的已取得文章節錄，取得標記為publisher-excerpt，非RSS摘要；送入文字於作者介紹處截斷。本文為官方技術範例，未取得獨立測試結果，不能據此認定路由方案具有成本或品質優勢。"
+    },
+    {
+      "id": "2026-11-14-morning:event-15",
+      "original_id": "event-15",
+      "category": "dev",
+      "is_headline": false,
+      "title_zh": "AgentCore runtime V2改採快照啟動，AWS說明代理冷啟動取捨",
+      "lede_zh": "Amazon Bedrock AgentCore runtime V2將代理工作階段的初始化移到部署階段：容器準備完成後建立快照，新工作階段再於獨立微型虛擬機中還原。AWS表示，這能讓啟動時間更快、更一致，但開發者也須調整初始化、檔案載入與動態資料的安排，才能取得效益。\n\nV2在建立或更新runtime時啟動容器，等待健康檢查通過，清除作業系統檔案快取後，再保存記憶體與磁碟狀態。因此，每次部署會多花數分鐘建立快照，換取後續工作階段不必重新執行同一套初始化。還原時，記憶體中的物件會保留，映像檔內的檔案區塊則於首次讀取時載入。\n\n這也改變了常見的延遲最佳化方向。AWS建議把靜態匯入、客戶端建立及小型索引等工作移到初始化階段，而非延後至第一個請求。不過，保留更多記憶體會增加快照大小，也會在每個工作階段產生對應的記憶體費用，必須量測端到端時間，確認不是把延遲從處理程序轉移到快照還原。\n\nV2亦支援build hooks，分別在快照前與測試還原後呼叫指定端點：前者可將常用內容留在記憶體，後者用於讀取工作階段需要的檔案，調整還原後的首次載入。動態工具清單、價格表及每個工作階段的專屬值，則不應固定在快照中，須由請求處理程式另行取得。\n\n量測方面，AWS區分首位元組延遲與平台額外延遲，並建議檢查P90、P99等分位數，而非只看平均值。對聊天或語音互動，官方提出在使用者開啟視窗時先啟動工作階段，以隱藏等待時間；代價是部分使用者即使沒有送出訊息，也已消耗工作階段資源。",
+      "bullets_zh": [],
+      "source": {
+        "name": "AWS Machine Learning",
+        "url": "https://aws.amazon.com/blogs/machine-learning/architecture-patterns-for-fast-session-startup-on-amazon-bedrock-agentcore-runtime/",
+        "published_at": "2026-11-13T22:02:39+00:00",
+        "reading_time_min": 2
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "快照架構讓部署時間、記憶體費用與首次回應速度成為同一組取捨。最佳化重點不是一味增加預載內容，而是先辨識等待發生在哪個階段，再決定是否預載或提前啟動工作階段。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "來源為AWS Machine Learning的已取得文章節錄，取得標記為publisher-excerpt，非RSS摘要。啟動速度、記憶體管理效益及最佳化建議均來自AWS官方說明，未取得獨立效能量測；文中未將官方情境數字當作普遍保證。"
+    },
+    {
+      "id": "2026-11-14-morning:event-16",
+      "original_id": "event-16",
+      "category": "dev",
+      "is_headline": false,
+      "title_zh": "AI工具費用如何分帳？AWS示範Bedrock個人與團隊成本歸屬",
+      "lede_zh": "企業擴大使用AI程式開發與生產力工具後，如何把推論支出分回個人、團隊與成本中心，成為預算管理課題。AWS發布技術教學，說明如何運用Amazon Bedrock既有的IAM身分追蹤與組織標籤建立成本報表，再搭配用量限制；這是既有能力的實作說明，並非新產品發布。\n\n依AWS說明，成本歸屬機制運作於Bedrock推論端點層，不必修改工具的API呼叫。教學以IAM Identity Center串接外部身分提供者，讓每位使用者保有可辨識的工作階段，再將團隊、成本中心等標籤帶入CUR 2.0成本與用量報表。若多人共用固定的工作階段名稱，或由閘道統一使用自身角色呼叫，費用就可能集中到同一身分，失去個人層級的辨識能力。\n\n報表的粒度也有界線：CUR依匯出設定，以每小時或每日彙整各身分、各用量類型的費用，並不提供逐筆請求成本。若要追查單次提示的細節，仍須使用模型呼叫紀錄或請求中繼資料標籤。企業可透過Athena查詢帳務資料，或以Cost Explorer依已啟用的標籤檢視支出；標籤啟用不會回溯套用到過去資料。\n\n看見成本不代表能即時阻止超支。AWS指出，Budgets每日最多更新三次，Bedrock費用也可能延遲最多24小時才出現在帳務資料中，因此預算動作可能來不及攔下快速累積的用量。其他選項包括以CloudWatch與Lambda縮短執行延遲、在憑證更新時檢查個人配額，或由LLM閘道逐次阻擋請求，但各自需要不同程度的維運投入。",
+      "bullets_zh": [],
+      "source": {
+        "name": "AWS Machine Learning",
+        "url": "https://aws.amazon.com/blogs/machine-learning/cost-attribution-and-controls-for-ai-developer-and-productivity-tools-on-amazon-bedrock/",
+        "published_at": "2026-11-13T18:44:02+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "成本可追蹤與支出可即時受控是兩件事。企業評估AI工具治理時，應同時確認身分是否能穿透共用角色或閘道，以及限制機制的延遲是否符合預算容忍度。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "來源為AWS Machine Learning官方文章的已取得正文節錄，取得標記為publisher-excerpt，並非獨立報導或本次實測。本文未另行驗證工具相容性、帳務歸屬與用量限制的實際運作。"
+    },
+    {
+      "id": "2026-11-14-morning:event-17",
+      "original_id": "event-17",
+      "category": "dev",
+      "is_headline": false,
+      "title_zh": "HyperPod新增推論資料擷取，AWS示範從流量分析到模型微調",
+      "lede_zh": "Amazon SageMaker HyperPod新增Data Capture功能，可將線上推論的輸入與輸出記錄到Amazon S3。AWS以家電客服工單分類器示範，如何從擷取流量、查詢分類變化、建立標註規則，一路接到微調與重新部署；整套案例使用合成資料，不能視為真實企業導入成效。\n\n示範情境是分類器遇到原有標籤未涵蓋的新冷氣產品。AWS回放900筆合成工單，再以Athena查詢，找出新產品工單落入「其他」或被誤送冰箱類別的情況。團隊據此用SQL規則建立訓練標籤，並在同一叢集的第二張GPU進行LoRA微調，讓原端點持續服務，再以第二個端點部署新版模型。\n\nAWS的結果也呈現這套方法的限制。部分誤分類工單雖然得到模型自報的高信心分數，答案仍然錯誤；該分數不是經過校準的機率。另以24筆人工撰寫的探測工單測試時，微調模型答對20筆，但仍把提到特定產品名稱的庫存與比價問題歸入冷氣類別，顯示標註規則可能讓模型學到過度簡化的判斷方式。\n\n實作上，Data Capture提供三個可獨立啟用的擷取層級。第一與第三層都儲存完整輸入輸出，同時開啟會重複存下每筆紀錄；第二層則適合只需要流量中繼資料的情況。完整內容可能包含姓名、地址與訂單編號，AWS建議在轉為訓練資料前，搭配抽樣、加密、儲存生命週期規則及個資遮蔽。其範例也提醒，請求必須經過擷取代理，若直接送到模型連接埠，就不會被記錄。",
+      "bullets_zh": [],
+      "source": {
+        "name": "AWS Machine Learning",
+        "url": "https://aws.amazon.com/blogs/machine-learning/build-a-model-improvement-flywheel-with-amazon-sagemaker-hyperpod-data-capture/",
+        "published_at": "2026-11-13T18:01:15+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "推論紀錄能讓模型改善建立在可追查的互動資料上，但擷取資料不等於取得可靠標籤。這個範例的重點不只在微調流程，也在於如何檢查標註規則、錯誤信心與個資處理。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "來源為AWS Machine Learning官方文章的已取得正文節錄，取得標記為publisher-excerpt。準確度、訓練與延遲表現均為AWS自述；案例使用合成資料，本文未獨立重現測試，也未取得企業實際部署成果。"
+    },
+    {
+      "id": "2026-11-14-morning:event-09",
+      "original_id": "event-09",
+      "category": "ai-tools",
+      "is_headline": false,
+      "title_zh": "Meta Muse向美國付費訂戶開放代打電話，商家拒接仍是障礙",
+      "lede_zh": "Meta的人工智慧代理Muse已向美國所有付費訂戶開放代打電話功能，可代表使用者致電美國商家。這項功能曾於9月測試，如今擴大提供給符合條件的訂戶。\n\nMeta人工智慧主管Alexandr Wang表示，Muse可處理致電有線電視業者、車輛管理機關與餐廳等繁瑣事務，並稱該代理已有超過1,000萬名使用者。這個數字是Muse整體使用者規模，不能視為代打電話功能的使用人數。他也表示，Muse不久後將取得免費電子郵件地址。\n\n代打電話的用途之一，是替使用者等待接聽、操作複雜的電話語音選單，但商家是否願意接聽仍是實務限制。有商家一辨識出來電方是人工智慧就掛斷，Meta也因此曾在9月暫時測試由真人接線員代為處理。功能開放並不代表每通電話都能由人工智慧順利完成。",
+      "bullets_zh": [],
+      "source": {
+        "name": "The Decoder",
+        "url": "https://the-decoder.com/metas-muse-now-calls-businesses-for-you-but-many-companies-might-just-hang-up-on-the-ai/",
+        "published_at": "2026-11-13T15:12:44+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "電話代理的實用性不只在於語音是否自然，也在於能否通過電話選單、等待接通，並獲得商家配合。商家拒接的情況，使通話完成率比功能是否上線更值得觀察。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "來源為The Decoder報導正文節錄，取得類型為publisher-excerpt，並非完整全文。使用者規模與電子郵件規劃來自Meta主管說法；資料未提供通話完成率、拒接比例或獨立實測。"
+    },
+    {
+      "id": "2026-11-14-morning:event-18",
+      "original_id": "event-18",
+      "category": "ai-tools",
+      "is_headline": false,
+      "title_zh": "AWS示範在JumpStart部署OpenFold3-preview，支援非同步結構預測",
+      "lede_zh": "AWS公布透過Amazon SageMaker JumpStart部署OpenFold3-preview的方法，讓研究團隊在自己的AWS帳號內執行生物分子結構預測。這項教學聚焦雲端部署與批次工作管理，不是新模型發布；OpenFold3開發者將此版本定位為研究預覽，模型可預測蛋白質、DNA、RNA、小分子配體及其複合體的三維結構。\n\n由於結構預測可能耗時數分鐘，部署方式採用非同步推論。使用者先將請求上傳至S3，端點接收後排入佇列，單次呼叫逾時上限可達一小時，再把結果或錯誤資訊寫回指定位置。研究團隊可一次提交多筆工作，不必另建工作佇列；輸出包含候選結構與對應信心指標，供後續檢視。\n\n多GPU配置的用途是增加平行處理量，而非縮短單一預測時間。依AWS說明，每次預測使用一張GPU，多GPU執行個體可把不同請求分配到不同GPU。閒置時也能設定縮減至零個執行個體，但從零恢復後，首筆請求須等待警示觸發、執行個體啟動及預測完成；S3等其他費用仍會持續產生。\n\n資料處理方面，AWS表示端點採網路隔離，不會呼叫外部多重序列比對服務，而是接受使用者預先計算的MSA。專有序列的保護仍須涵蓋前處理流程，以及S3請求與結果的權限、加密和保留期限，不能只依賴推論端點的隔離設定。\n\nAWS也展示加入MSA前後的複合體預測差異，但明確提醒，該案例及相近結構可能已在模型訓練資料中，因此只能用來說明工作流程與MSA的影響，不能當作新標的預測準確度的評測。教學程式供實驗使用，涉及專有或受監管資料時，仍須由使用者確認安全與合規要求。",
+      "bullets_zh": [],
+      "source": {
+        "name": "AWS Machine Learning",
+        "url": "https://aws.amazon.com/blogs/machine-learning/openfold3-on-amazon-sagemaker-jumpstart-predict-biomolecular-structures/",
+        "published_at": "2026-11-13T21:53:40+00:00",
+        "reading_time_min": 2
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "這項部署方式主要處理長時間推論、批次排程與閒置資源成本。研究團隊仍須分開評估部署便利性、序列保護與模型對新標的的預測能力，不能用範例成功取代準確度驗證。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "來源為AWS Machine Learning官方文章的已取得正文節錄，取得標記為publisher-excerpt。部署、平行處理及結構預測結果均依官方說明，本文未獨立測試；來源本身亦聲明，所用複合體案例不是新標的準確度評測。"
+    },
+    {
+      "id": "2026-11-14-morning:event-04",
+      "original_id": "event-04",
+      "category": "taiwan",
+      "is_headline": false,
+      "title_zh": "精材與台積電簽逾7年封裝合作協議，規劃2029年首期量產",
+      "lede_zh": "精材11月13日公告，董事會通過與台積電簽訂產能外包協議，將在台積電中部科學園區廠房建置先進封裝後段製程產線，並負責生產營運。協議自公告當日起至2033年12月31日止，合作期間超過7年。\n\n依精材規劃，第一期產線預計於2029年量產，建置與量產時程將逐步推進。為支應初期產能建置需求，董事會同時通過發行新台幣150億元轉換公司債；這是籌資安排，並非已完成募資。\n\n精材表示，人工智慧、高效能運算與資料中心應用普及，帶動先進封裝產能的結構性需求。公司將投入生產設備、自動物料搬運系統等資本支出，並負責製造與產線營運，參與CoWoS先進封裝供應鏈中的oS模組業務。\n\n新產線將結合精材既有封測營運經驗，以及台積電的先進封裝技術與製造能力支援。精材表示，雙方將共同確保技術規範、品質與良率符合台積電及客戶要求；2029年量產仍屬公司規劃，並非已達成的生產進度。",
+      "bullets_zh": [],
+      "source": {
+        "name": "中央社財經",
+        "url": "https://www.cna.com.tw/news/afe/202611130329.aspx",
+        "published_at": "2026-11-13T22:39:50+08:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "這項合作把先進封裝需求轉化為具體的建線、籌資與營運分工；後續觀察重點是資金到位與產線建置能否依規劃推進，而非將遠期量產目標視為當前新增產能。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "取得中央社報導正文節錄，非完整全文。需求展望、產線安排與量產時程均為報導所載精材說法，未取得獨立產能或良率驗證資料。"
+    },
+    {
+      "id": "2026-11-14-morning:event-12",
+      "original_id": "event-12",
+      "category": "enterprise-cases",
+      "is_headline": false,
+      "title_zh": "NVIDIA介紹Synapsis AI院內病歷分析案例，臨床訊號可追溯原始紀錄",
+      "lede_zh": "NVIDIA公布Dyania Health的Synapsis AI應用案例，介紹如何以AI整理跨越多年的病歷，產生可追溯至原始紀錄的臨床訊號，供醫療團隊審閱。依其描述，系統會整合病人的診療筆記、報告與檢驗結果，連結不同年份的發現，協助辨識哪些病人需要關注及其原因；最終決策仍由臨床人員作成。\n\n部署方式是這項案例的重點。NVIDIA表示，Synapsis AI在醫療體系自身防火牆內，使用NVIDIA加速運算處理病歷，病人資料不會分享至外部或離開醫院。Dyania透過NVIDIA NeMo開放函式庫建置與訓練臨床模型，再以TensorRT與TensorRT-LLM最佳化，讓模型在院內GPU伺服器執行。\n\n在具體應用上，NVIDIA介紹Cleveland Clinic使用Synapsis AI，支援一項涵蓋2005至2021年間、超過7,800名主動脈瓣置換病人的研究。系統分析各病人的紀錄，包括術後多年新增的心臟超音波資料，協助建立術後3年、5年與10年的瓣膜劣化及再次介入風險預測模型。\n\nNVIDIA將減少人工病歷審閱負擔列為這套系統的效益，但也明確指出，它是提供病歷證據的輔助工具，仍須由臨床人員確認並採取行動。院內運算、證據可追溯與人工決策，是此案例描述的工作流程，不應直接等同於已驗證的診療成效。",
+      "bullets_zh": [],
+      "source": {
+        "name": "NVIDIA",
+        "url": "https://blogs.nvidia.com/blog/how-ai-is-helping-care-teams/",
+        "published_at": "2026-11-13T13:00:42+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-article",
+      "evidence_note_zh": "依來源文章整理。",
+      "editorial_analysis_zh": "這項案例呈現的是病歷整理與證據輔助，而非讓AI取代醫師決策。評估此類系統時，應分開檢視資料部署位置、輸出能否追溯，以及臨床效果是否經過驗證。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "來源為已取得的NVIDIA官方文章正文，屬供應商案例介紹；未取得獨立臨床驗證資料。資料不離院及減輕工作負擔等說法均依官方描述呈現。"
+    },
+    {
+      "id": "2026-11-14-morning:event-13",
+      "original_id": "event-13",
+      "category": "enterprise-cases",
+      "is_headline": false,
+      "title_zh": "AssemblyAI以GPU Spot執行語音推論，靠佇列重試處理算力中斷",
+      "lede_zh": "AssemblyAI將語音轉文字推論部署於混合式GPU運算架構，以隨需執行個體維持基本容量，再用EC2 Spot執行個體承接需求高峰。AWS公布的案例指出，這套架構透過多種GPU機型與工作重試機制，在降低成本的同時維持服務承諾；案例宣稱，相較隨需定價，推論運算成本節省70%。\n\n語音推論須串接聲學模型、語言模型與後處理流程，AssemblyAI的部署規模達數千個執行個體，每張GPU執行一個推論模型。平台以Amazon ECS管理工作，並將Spot容量分散至g4dn、g5與g6等執行個體系列及多個可用區，減少對單一容量池的依賴。\n\nSpot的代價是容量可能被收回。收到兩分鐘中斷通知後，能及時完成的工作繼續執行，其餘工作則回到Amazon SQS佇列，由其他健康的GPU工作節點接手。超過重試次數的工作會送入另一個佇列供調查。依案例說明，中斷可能讓處理時間略增，但轉錄工作仍可完成並交付。\n\n資料落地要求也影響部署方式。案例列出美國奧勒岡與英國倫敦的部署，各區域分別配置佇列、ECS叢集及GPU資源，以支援醫療、金融與法律等客戶對音訊資料地理邊界的要求。\n\nAWS將這種模式定位於短時間、可獨立重試的批次或近即時AI工作。成本效益並非單靠使用Spot，而是連同容量分散、中斷回復與區域隔離一起設計；70%的節省數字是該案例成果，不能直接視為其他工作負載的預期收益。",
+      "bullets_zh": [],
+      "source": {
+        "name": "AWS Machine Learning",
+        "url": "https://aws.amazon.com/blogs/machine-learning/cost-optimizing-assemblyai-speech-to-text-inference-on-aws-with-amazon-ec2-spot/",
+        "published_at": "2026-11-13T19:35:35+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "這個案例的參考價值在於把可被收回的算力轉化為可重試的工作流程；評估能否採用時，應同時檢查任務特性、延遲容忍度與資料落地要求，而非只比較執行個體價格。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "來源為AWS Machine Learning的已取得文章節錄，取得標記為publisher-excerpt，非RSS摘要；本文由AWS與AssemblyAI人員共同署名。成本節省與服務承諾成果屬案例自述，未有獨立帳務或效能驗證資料。"
+    }
+  ],
+  "breaking_news": [],
+  "meta": {
+    "generated_at": "2026-11-14T07:22:23.692185+08:00",
+    "total_articles": 18,
+    "schema_version": "2.0",
+    "edition": "morning",
+    "model": "gpt-6.1-sol",
+    "source_mode": "publisher-articles",
+    "reading_time_estimated": true
+  },
+  "window_start": "2026-11-13T19:00:00+08:00",
+  "window_end": "2026-11-14T07:00:00+08:00",
+  "publication": {
+    "published_at": "2026-11-14T08:00:39.363286+08:00",
+    "issue_sha256": "ac6a303490eefebd6af8723a6ca44d47035f08c61aaf56b6db00bbde9b87cc65",
+    "identity": "2026-11-14-morning",
+    "legacy_archive_untouched": true
+  }
+}

@@ -15,8 +15,15 @@
   const READ_KEY = 'dailyBriefing.read.v1';
   const AFFINITY_KEY = 'dailyBriefing.affinity.v1';
   const THEME_KEY = 'dailyBriefing.theme.v1';
-  function _loadJSON(k, dflt) { try { const v = JSON.parse(localStorage.getItem(k)); return v == null ? dflt : v; } catch { return dflt; } }
-  const readSet = new Set(_loadJSON(READ_KEY, []));
+  // Storage is optional: denied access and full quotas must never block reading.
+  function storageGet(k) { try { return localStorage.getItem(k); } catch { return null; } }
+  function storageSet(k, value) { try { localStorage.setItem(k, value); return true; } catch { return false; } }
+  function _loadJSON(k, dflt) { try { const v = JSON.parse(storageGet(k)); return v == null ? dflt : v; } catch { return dflt; } }
+  const validId = id => typeof id === 'string' && id.trim().length > 0;
+  const plainRecord = value => value !== null && typeof value === 'object'
+    && Object.getPrototypeOf(value) === Object.prototype;
+  const savedRead = _loadJSON(READ_KEY, []);
+  const readSet = new Set(Array.isArray(savedRead) ? savedRead.filter(validId) : []);
   function storageId(id) {
     const issue = window.__currentIssue || {};
     const dated = String(issue.issue_number || '').match(/^(\d{4}-\d{2}-\d{2})-(morning|midday|evening)$/);
@@ -28,28 +35,33 @@
     return date && edition ? JSON.stringify([date, edition, id]) : id;
   }
   function markRead(id) {
-    if (!id || readSet.has(storageId(id))) return;
+    if (!validId(id) || readSet.has(storageId(id))) return;
     readSet.add(storageId(id));
-    localStorage.setItem(READ_KEY, JSON.stringify([...readSet]));
+    storageSet(READ_KEY, JSON.stringify([...readSet]));
     const card = qs(`.article[data-id="${CSS.escape(id)}"]`);
     if (card) card.classList.add('is-read');
     updateOverviewRead();
   }
-  function loadAffinity() { return _loadJSON(AFFINITY_KEY, {}); }
+  function loadAffinity() {
+    const saved = _loadJSON(AFFINITY_KEY, {});
+    return Object.assign(Object.create(null), plainRecord(saved) ? Object.fromEntries(
+      Object.entries(saved).filter(([key, value]) => validId(key) && Number.isFinite(value) && value >= 0)
+    ) : {});
+  }
   function bumpAffinity(cat, delta) {
-    if (!cat) return;
+    if (!validId(cat)) return;
     const a = loadAffinity();
     a[cat] = Math.max(0, (a[cat] || 0) + delta);
-    localStorage.setItem(AFFINITY_KEY, JSON.stringify(a));
+    storageSet(AFFINITY_KEY, JSON.stringify(a));
   }
   // Dark mode — apply saved theme immediately (before render) to avoid flash.
-  if (localStorage.getItem(THEME_KEY) === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+  if (storageGet(THEME_KEY) === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
   function isDark() { return document.documentElement.getAttribute('data-theme') === 'dark'; }
   window.__toggleTheme = function () {
     const next = isDark() ? 'light' : 'dark';
     if (next === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
     else document.documentElement.removeAttribute('data-theme');
-    localStorage.setItem(THEME_KEY, next);
+    storageSet(THEME_KEY, next);
     const b = qs('#theme-toggle'); if (b) b.textContent = next === 'dark' ? '☀️' : '🌙';
   };
 
@@ -345,27 +357,37 @@
   // Reactions (Phase 1: localStorage; Phase 2: GitHub Issues sync)
   // ---------------------------------------------------------------------------
   const REACTION_KEY = 'dailyBriefing.reactions.v1';
+  const REACTIONS = ['interested', 'to-implement', 'fun'];
 
   function loadReactions() {
-    try { return JSON.parse(localStorage.getItem(REACTION_KEY) || '{}'); }
-    catch { return {}; }
+    const saved = _loadJSON(REACTION_KEY, {});
+    const map = Object.create(null);
+    if (!plainRecord(saved)) return map;
+    for (const [id, state] of Object.entries(saved)) {
+      if (!validId(id) || !plainRecord(state)) continue;
+      const safe = Object.create(null);
+      for (const reaction of REACTIONS) if (Object.hasOwn(state, reaction) && state[reaction] === true) safe[reaction] = true;
+      if (Object.keys(safe).length) map[id] = safe;
+    }
+    return map;
   }
   function saveReactions(map) {
-    localStorage.setItem(REACTION_KEY, JSON.stringify(map));
+    return storageSet(REACTION_KEY, JSON.stringify(map));
   }
 
   window.toggleReaction = function (btn) {
     const wrap = btn.closest('.article-reactions');
     if (!wrap) return;
     const originalId = wrap.dataset.articleId;
+    if (!validId(originalId) || !REACTIONS.includes(btn.dataset.reaction)) return;
     const articleId = storageId(originalId);
     const reaction = btn.dataset.reaction;
     const map = loadReactions();
-    map[articleId] = map[articleId] || {};
+    map[articleId] = map[articleId] || Object.create(null);
     map[articleId][reaction] = !map[articleId][reaction];
     if (!map[articleId][reaction]) delete map[articleId][reaction];
     if (Object.keys(map[articleId]).length === 0) delete map[articleId];
-    saveReactions(map);
+    if (!saveReactions(map)) return; // Do not display an unsaved reaction as persisted.
     // 把互動回饋累積成分類 affinity → 下次載入依此把喜歡的分類往上排
     const _art = ((window.__currentIssue && window.__currentIssue.articles) || []).find(a => a.id === originalId);
     if (_art) bumpAffinity(_art.category, (map[articleId] && map[articleId][reaction]) ? 1 : -1);

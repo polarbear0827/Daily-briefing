@@ -37,11 +37,31 @@
       const escapeHtml = s => String(s || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
       const get = async path => { try { const r=await fetch(path,{cache:'no-store'});return r.ok?await r.json():null; }catch{return null;} };
       try {
-        const [legacy,modern]=await Promise.all([get('data/archive.json'),get('data/editions/index.json')]);
-        if(!legacy && !modern)throw new Error('無法取得歷史期數');
-        const rows=[...((legacy&&legacy.issues)||[]).map(i=>({date:i.date,label:'第 '+i.issue_number+' 期',title:i.headline_zh,url:'index.html?date='+encodeURIComponent(i.date)})),
-          ...((modern&&modern.editions)||[]).map(i=>({date:i.date,label:i.edition==='morning'?'早報':'晚報',title:i.title,url:'index.html?date='+encodeURIComponent(i.date)+'&edition='+encodeURIComponent(i.edition)}))];
-        rows.sort((a,b)=>b.date.localeCompare(a.date)||(a.label==='晚報'?-1:1));
+        const [legacy,modern,midday]=await Promise.all([get('data/archive.json'),get('data/editions/index.json'),get('data/midday/index.json')]);
+        if(!legacy && !modern && !midday)throw new Error('無法取得歷史期數');
+        const labels={morning:'科技早報',midday:'時事焦點',evening:'科技晚報'};
+        const order={morning:1,midday:2,evening:3,'':0};
+        const validDate=value=>typeof value==='string' && /^\d{4}-\d{2}-\d{2}$/.test(value)
+          && Number.isFinite(Date.parse(value+'T00:00:00Z')) && new Date(value+'T00:00:00Z').toISOString().slice(0,10)===value;
+        const rowsByIdentity=new Map();
+        const add=(i,historical=false)=>{
+          if(!i || !validDate(i.date))return;
+          // Unscoped single-file archives keep their original date-only route.
+          const edition=historical && i.edition==null ? '' : i.edition;
+          if(!Object.hasOwn(labels,edition) && !(historical && i.edition==null))return;
+          if(!historical && i.key!==i.date+'-'+edition)return;
+          const key=JSON.stringify([i.date,edition]);
+          rowsByIdentity.set(key,{date:i.date,edition,
+            label:historical?'第 '+i.issue_number+' 期'+(edition?' · '+labels[edition]:''):labels[edition],
+            title:historical?i.headline_zh:i.title,
+            url:'index.html?date='+encodeURIComponent(i.date)+(edition?'&edition='+encodeURIComponent(edition):'')});
+        };
+        // Merge for display only: independent inventories are never rewritten.
+        (Array.isArray(legacy?.issues)?legacy.issues:[]).forEach(i=>add(i,true));
+        (Array.isArray(modern?.editions)?modern.editions:[]).forEach(i=>add(i));
+        (Array.isArray(midday?.editions)?midday.editions:[]).forEach(i=>add(i));
+        const rows=[...rowsByIdentity.values()];
+        rows.sort((a,b)=>b.date.localeCompare(a.date)||order[b.edition]-order[a.edition]);
         document.getElementById('archive-list').innerHTML=rows.map(i=>`<a class="archive-item" href="${escapeHtml(i.url)}"><div class="archive-date">${escapeHtml(i.date)}</div><div class="archive-issue-num">${escapeHtml(i.label)}</div><div class="archive-headline">${escapeHtml(i.title)}</div></a>`).join('');
       }catch(err){document.getElementById('archive-list').textContent='載入失敗：'+err.message;}
     })();
