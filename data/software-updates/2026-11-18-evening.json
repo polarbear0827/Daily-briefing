@@ -1,0 +1,140 @@
+{
+  "date": "2026-11-18",
+  "edition": "evening",
+  "generated_at": "2026-11-18T19:04:43.666288+08:00",
+  "items": [
+    {
+      "availability_zh": "開放條件請見官方公告",
+      "id": "5da29443bc3ea2c4c6bab29c96a0700e10dd6f1c78a76cacefa5bedaffd476bb",
+      "late_discovery": false,
+      "observed_at": "2026-11-18T11:00:58.552999+00:00",
+      "proof_sha256": "27400a13ea447e287838e36cc4106c43e8ad90445de230ce3d4e40a2fb56ab42",
+      "provider_id": "google",
+      "provider_name": "Google",
+      "published_at": null,
+      "published_date": "2026-11-18",
+      "source_kind": "official-release-log",
+      "source_url": "https://ai.google.dev/gemini-api/docs/changelog",
+      "status": "link-only",
+      "summary_zh": "中文整理暫未完成，請參閱官方來源。",
+      "title_zh": "Google 官方公告"
+    }
+  ],
+  "kind": "official-software-updates",
+  "news_minimum_applies": false,
+  "publication": {
+    "identity": "2026-11-18-evening",
+    "mode": "scheduled",
+    "published_at": "2026-11-18T20:00:52.268340+08:00",
+    "snapshot_sha256": "804ad0fe35bda6307c5dbbe60859bc880b7f06e3d268deca8063ffe4c4db9a5d"
+  },
+  "schema_version": 1,
+  "selection_applied": false,
+  "source_health": [
+    {
+      "id": "official-google-blog",
+      "observed_at": "2026-11-18T11:00:51.706040+00:00",
+      "provider_id": "google",
+      "reason_code": "collection-ok",
+      "status": "ok"
+    },
+    {
+      "id": "official-google-notebook-seed",
+      "observed_at": "2026-11-18T11:00:55.421897+00:00",
+      "provider_id": "google",
+      "reason_code": "collection-ok",
+      "status": "ok"
+    },
+    {
+      "id": "official-google-api",
+      "observed_at": "2026-11-18T11:00:58.552999+00:00",
+      "provider_id": "google",
+      "reason_code": "collection-ok",
+      "status": "ok"
+    },
+    {
+      "id": "official-deepmind",
+      "observed_at": "2026-11-18T11:00:51.506429+00:00",
+      "provider_id": "deepmind",
+      "reason_code": "collection-ok",
+      "status": "ok"
+    },
+    {
+      "id": "official-claude-api",
+      "observed_at": "2026-11-18T11:00:51.756345+00:00",
+      "provider_id": "anthropic",
+      "reason_code": "collection-unavailable",
+      "status": "unavailable"
+    },
+    {
+      "id": "official-claude-app",
+      "observed_at": "2026-11-18T11:00:56.265828+00:00",
+      "provider_id": "anthropic",
+      "reason_code": "collection-ok",
+      "status": "ok"
+    },
+    {
+      "id": "official-openai-news",
+      "observed_at": "2026-11-18T11:00:52.769869+00:00",
+      "provider_id": "openai",
+      "reason_code": "collection-ok",
+      "status": "ok"
+    },
+    {
+      "id": "official-openai-api",
+      "observed_at": "2026-11-18T11:00:55.706748+00:00",
+      "provider_id": "openai",
+      "reason_code": "collection-ok",
+      "status": "ok"
+    },
+    {
+      "id": "official-xai-api",
+      "observed_at": "2026-11-18T11:00:53.056560+00:00",
+      "provider_id": "xai",
+      "reason_code": "collection-unavailable",
+      "status": "unavailable"
+    },
+    {
+      "id": "official-meta",
+      "observed_at": "2026-11-18T11:00:53.055949+00:00",
+      "provider_id": "meta",
+      "reason_code": "collection-ok",
+      "status": "ok"
+    },
+    {
+      "id": "official-mistral",
+      "observed_at": "2026-11-18T11:00:54.105947+00:00",
+      "provider_id": "mistral",
+      "reason_code": "collection-ok",
+      "status": "ok"
+    },
+    {
+      "id": "official-github",
+      "observed_at": "2026-11-18T11:00:54.454988+00:00",
+      "provider_id": "github",
+      "reason_code": "collection-unavailable",
+      "status": "unavailable"
+    },
+    {
+      "id": "official-windows",
+      "observed_at": "2026-11-18T11:00:54.616821+00:00",
+      "provider_id": "windows",
+      "reason_code": "collection-ok",
+      "status": "ok"
+    },
+    {
+      "id": "official-chatgpt-app",
+      "observed_at": "2026-11-18T11:00:57.606392+00:00",
+      "provider_id": "openai",
+      "reason_code": "collection-unavailable",
+      "status": "unavailable"
+    },
+    {
+      "id": "official-xai-news",
+      "observed_at": "2026-11-18T11:00:56.807756+00:00",
+      "provider_id": "xai",
+      "reason_code": "collection-unavailable",
+      "status": "unavailable"
+    }
+  ]
+}
