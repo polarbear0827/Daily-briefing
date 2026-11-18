@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="各家官方功能與模型更新，早晚報分開收錄，保留真實公告日期與來源查核狀態。">
+  <title>軟體與模型更新 · 每日早報</title>
+  <style>
+    :root { color-scheme: light; --paper: #f5ecdc; --ink: #1a1814; --ink-muted: #6b655b; --accent-soft: #a8342c; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: 'Noto Serif TC', 'Songti TC', serif; font-size: 17px; line-height: 1.8; }
+    .su-masthead { max-width: 1280px; margin: 0 auto; padding: 56px 32px 32px; }
+    .su-kicker { font-size: 14px; letter-spacing: .16em; }
+    .su-masthead h1 { font-size: clamp(32px, 6vw, 60px); letter-spacing: .06em; line-height: 1.3; margin: 20px 0; }
+    .su-masthead p { max-width: 48em; }
+    .su-navigation { display: flex; flex-wrap: wrap; gap: 16px 28px; padding: 20px 0; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); }
+    .su-navigation a, .su-footer a { color: var(--accent-soft); text-underline-offset: 4px; }
+    .su-date-form { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; padding-top: 24px; }
+    .su-date-form input, .su-date-form select, .su-date-form button { min-height: 42px; padding: 8px 12px; font: inherit; font-size: 15px; color: var(--ink); background: transparent; border: 1px solid var(--ink-muted); border-radius: 0; }
+    .su-date-form button { background: var(--ink); color: var(--paper); cursor: pointer; }
+    .su-footer { max-width: 1280px; margin: 0 auto; padding: 24px 32px 48px; border-top: 1px solid var(--ink-muted); color: var(--ink-muted); font-size: 14px; }
+    a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid var(--accent-soft); outline-offset: 4px; }
+    @media (max-width: 600px) { .su-masthead { padding: 32px 20px 20px; } .su-footer { padding: 24px 20px; } }
+  </style>
+  <script defer src="/Daily-briefing/assets/software-updates.js?v=6978e8a62488"></script>
+</head>
+<body>
+  <header class="su-masthead">
+    <div class="su-kicker">每日早報 · 官方更新專頁</div>
+    <h1>軟體與模型更新</h1>
+    <p>Google／Gemini／Gemini Notebook、Anthropic、DeepMind、OpenAI、Grok／xAI 與 Meta 的官方功能與模型更新。收錄資料不套用新聞重要性篩選或篇數配額；查核範圍與缺漏依各期來源狀態揭示。</p>
+    <nav class="su-navigation" aria-label="選擇更新報期">
+      <a href="?edition=morning">最新早報更新</a>
+      <a href="?edition=evening">最新晚報更新</a>
+      <a href="/Daily-briefing/">返回每日早報</a>
+    </nav>
+    <form class="su-date-form" method="get" action="/Daily-briefing/software-updates.html">
+      <label for="su-date">指定日期</label>
+      <input id="su-date" type="date" name="date" required>
+      <label for="su-edition">報期</label>
+      <select id="su-edition" name="edition"><option value="morning">早報</option><option value="evening">晚報</option></select>
+      <button type="submit">查閱此期</button>
+    </form>
+  </header>
+  <main id="software-updates-root" aria-live="polite" aria-label="官方更新資料"></main>
+  <noscript><p>請啟用 JavaScript 以讀取官方更新資料；來源資料不會由一般新聞替代。</p></noscript>
+  <footer class="su-footer">公告日期與查得時間分別列示；僅日期的來源不補造時間。缺少某期資料時，不以其他報期取代。</footer>
+</body>
+</html>
