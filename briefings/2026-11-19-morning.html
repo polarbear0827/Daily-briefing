@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <base href="/Daily-briefing/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="依可核對來源整理的繁體中文科技與時事新聞。">
+  <title>人工智慧模型更新、代理部署與技術風險動態 · 科技早晚報與時事焦點</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/styles.css?v=october-original">
+</head>
+<body>
+  <div id="app"></div>
+  <noscript><main><h1>人工智慧模型更新、代理部署與技術風險動態</h1><p>2026-11-19 科技早報</p><article><h2>Google推出Gemini 4 Neon，開放API與約百萬詞元上下文</h2><p>Google推出Gemini 4 Neon並開放API使用，這是四週內第四款新的Gemini 4模型。Neon每百萬輸入詞元收費3美元、每百萬輸出詞元15美元；Google將其定位於複雜軟體工程、知識工作與科學工作流程，宣稱兼顧模型能力與任務完成速度。
+
+Neon提供約100萬詞元的上下文視窗，最多可產生100萬輸出詞元。輸入支援文字、圖片、影片、音訊與PDF，也支援Computer Use、程式碼執行、檔案搜尋，以及透過Google Search與Maps取得資訊依據；不過，模型不支援圖片與音訊生成，多模態輸入不等於具備相同類型的輸出能力。
+
+同系列模型的價格也有差異。Carbon與Argon目前的入門優惠價為每百萬輸入／輸出詞元2／10美元，12月1日將調升至4／20美元；Hydrogen則為1.50／7.50美元。Neon目前高於前兩者的優惠價、為Hydrogen的兩倍，但Carbon與Argon調價後，三者的價格關係將改變。</p><aside>編輯觀察：選型不只要比較當下單價，也須納入優惠到期後的成本，以及輸入格式、工具支援與輸出限制。</aside><p><a href="https://the-decoder.com/google-ships-gemini-4-neon-its-fourth-new-gemini-model-in-a-month/">The Decoder</a></p><ul></ul></article><article><h2>微軟Ignite公布七款模型，MAI Code 2以促銷價切入企業開發</h2><p>微軟在Ignite集中公布七款新模型，將價格效能比作為主要訴求，涵蓋程式開發、資安、影像、語音與任務路由等用途。微軟表示，企業希望全天候執行人工智慧代理，帶動詞元支出快速增加；其程式模型主要針對日常企業開發，尚未針對基礎研究或長時間代理工作流程等較困難任務最佳化。
+
+MAI Code 2與Code 2 Flash已在GitHub Copilot提供，後者也在Foundry進行限量預覽。Code 2在GitHub Copilot的促銷價為每百萬輸入／輸出詞元0.50／2.50美元，優惠至2027年5月17日，之後調為1／5美元；Flash同期為0.05／0.25美元，優惠結束後調為0.10／0.50美元。
+
+微軟宣稱，MAI Code 2在四項基準測試的平均表現達GPT-6.1 Sol的98%，成本則為其40%。這項成本比較已計入微軟自家模型五折促銷，其中三項測試在內部MSBench平台執行，使用GitHub Copilot CLI且未搭配子代理，因此不能直接視為所有部署情境下的效能與成本差距。
+
+Flash系列也延伸至辦公軟體。MAI Code 2 Flash主打程式碼解說、局部修改與例行修正；由Flash衍生的MAI Work Flash則用於Microsoft 365與Fabric IQ。微軟稱，Work Flash在內部Excel與PowerPoint測試中表現與GPT-6 Luna相當，在Word任務上接近GPT-6.1 Sol，同時少用約42%的輸入詞元。
+
+模型分工也進入產品流程：Microsoft-Decision-1.1在Copilot負責判斷請求應交給Copilot或Cowork；Microsoft-Retriever-1則以預覽形式推出，為Foundry IQ中的代理規劃查詢、評估搜尋結果並追查資料。這批更新不只是新增模型選項，也把不同任務交由專門模型處理。</p><aside>編輯觀察：企業評估這批模型時，應分開檢視促銷期單價、實際任務表現與產品整合條件，避免將單一基準的成本優勢直接套用到整體工作流程。</aside><p><a href="https://the-decoder.com/microsoft-is-replacing-outside-ai-models-in-its-own-products-with-cheaper-in-house-alternatives/">The Decoder</a></p><ul></ul></article><article><h2>Genie 4向Google AI Ultra訂戶開放，可用文字即時修改互動世界</h2><p>Google Deepmind更新Project Genie，將原先僅供研究預覽的Genie 4開放給Google AI Ultra訂戶。這款生成互動式3D世界的模型，讓使用者能在探索過程中以文字即時改變天氣、角色或故事情節，並產生隨場景調整的原生即時聲音。
+
+這次更新也涵蓋較舊的Genie 3，包括將單次使用時間延長至最多三分鐘、支援360度全景，以及可串接不同世界的功能。新增的人工智慧代理可協助使用者依口述描述建立世界，社群作品庫則提供分享與重新混合作品的管道。
+
+取得資格仍有區別：Genie 4已向Google AI Ultra訂戶開放，Google AI Pro會員則可加入候補名單。Google表示，所有生成內容都會帶有SynthID浮水印並通過安全檢查；這些是此次更新採用的措施，並不等同於對所有內容安全性的保證。</p><aside>編輯觀察：即時文字修改與場景聲音，讓世界生成從建立初始場景延伸到探索中的持續調整；評估功能時，也須區分Genie 4與Genie 3各自取得的更新。</aside><p><a href="https://the-decoder.com/google-deepminds-project-genie-update-brings-genie-4-chainable-worlds-and-a-community-gallery-for-remixing/">The Decoder</a></p><ul></ul></article><article><h2>RTX Spark小型桌機上市，NVIDIA攜ASUS、Dell、MSI推本機AI工作站</h2><p>NVIDIA於11月18日宣布，ASUS、Dell與MSI推出的RTX Spark小型桌機已開賣，主打在專用Windows電腦上執行本機AI模型、常駐代理，以及影像生成與模型微調工作。NVIDIA將這類桌機定位為可持續執行排程任務的設備，讓使用者攜帶筆電外出或處理其他工作時，代理與創作流程仍能運作。
+
+依NVIDIA公布的規格，RTX Spark桌機搭載20核心NVIDIA Grace CPU、具6,144個CUDA核心的NVIDIA Blackwell RTX GPU，以及最高128GB統一記憶體，並提供10Gb乙太網路連線。公司宣稱AI運算效能最高可達1 petaflop；這是官方公布的效能數字，並非獨立實測結果。
+
+軟體方面，NVIDIA表示，原生CUDA支援與透過Windows Subsystem for Linux提供的Linux開發工具，可用來建立本機AI工作流程。開發者可透過Hermes Agent或NVIDIA NemoClaw藍圖設定代理，並使用Unsloth微調支援的模型。已在Hermes提供的NVIDIA Switchyard，則可將代理任務分派至本機或雲端模型。
+
+創作應用也是這波產品的重點。NVIDIA介紹了透過Hermes Agent串接Photoshop與ComfyUI，以自然語言指令將草圖轉成影像或動畫的流程。公司並表示，在本機執行受支援模型，可讓本機處理的程式碼與檔案留在電腦上，且這些任務不必支付按詞元計費的雲端API費用；此說法不應擴大解讀為所有功能都不使用雲端。</p><aside>編輯觀察：這次產品定位不只是讓個人電腦執行模型，而是把常駐代理、模型微調與創作工具放進同一套桌面工作流程。評估採購時，仍須區分硬體規格、支援軟體與公司宣稱的效能，不能直接將峰值算力視為實際工作速度。</aside><p><a href="https://blogs.nvidia.com/blog/rtx-spark-desktop-local-ai-available-now/">NVIDIA</a></p><ul></ul></article><article><h2>Anthropic據報IPO定價每股83美元，高於原先區間</h2><p>Anthropic首次公開發行股票（IPO）據報定價為每股83美元，高於原先提出的70至78美元區間。TechCrunch於11月18日報導這項定價消息；相較原先區間上緣，每股價格高出5美元。
+
+依報導，以此次IPO價格計算，Anthropic完全稀釋後估值約為1.5兆美元，高於今年5月的9,650億美元估值，但仍低於數月前據報爭取的2兆美元目標。這些數字反映的是報導所述的發行定價與估值，並非股票掛牌後的市場交易結果。
+
+掛牌安排方面，報導指出，Anthropic預定週四在Nasdaq開始交易，股票代號為「ANT」。目前取得的定價、估值與交易時程均屬媒體報導資訊，不能據此預判首日股價或後續上市表現。</p><aside>編輯觀察：發行價格高於原先區間，是觀察AI企業資本市場定價的重要訊號；但發行估值與掛牌後的市場評價是不同階段，不宜將較高定價直接等同於上市成功或未來報酬。</aside><p><a href="https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range/">TechCrunch</a></p><ul></ul></article><article><h2>NVIDIA將於未來數週提交10-Q，改變財報當日申報慣例</h2><p>NVIDIA表示，將在未來數週向SEC提交季度報告10-Q，不會在公布季度業績後立即申報。由財務長轉任代理執行長的Colette Kress在週二季度財報電話會議上說明這項時程，但當時未解釋原因；NVIDIA過去通常在公布業績當天提交10-Q。
+
+申報時點的變化引起分析師關注。UBS分析師Timothy Arcuri在研究報告中寫道，他在公開財報電話會議後詢問此事，管理階層回覆，這與仍在進行的調查，以及是否需要在文件中新增風險因素有關。
+
+10-Q提供的營運資訊比財報新聞稿更詳細，包含可能影響公司的法律程序與風險因素。</p><aside>編輯觀察：此次時程調整值得關注的，不只是何時提交，也在於文件是否增加與調查相關的揭露。相較慣例較晚提交，不等於已逾法定期限；後續判讀應以實際申報時間與文件內容為準，並區分公司說明、分析師記述及尚未確認的推測。</aside><p><a href="https://techcrunch.com/2026/11/18/nvidia-created-a-weird-bit-of-intrigue-by-not-filing-a-routine-sec-report/">TechCrunch AI</a></p><ul></ul></article><article><h2>微軟傳洽售AI雲端服務給字節跳動，美眾院委員會主席要求簡報</h2><p>微軟據報正洽談出售人工智慧雲端服務給字節跳動，引發美國國會關切。美國聯邦眾議院「美國與中國共產黨戰略競爭特別委員會」主席穆勒納爾11月18日表示，已要求微軟向國會議員簡報，說明相關洽談。
+
+穆勒納爾在聲明中表明，微軟不應出售人工智慧工具給字節跳動，並主張美國領先科技企業不應在美中AI競賽中「兩面下注」。目前可確認的進展是主席提出簡報要求並公開反對這類交易，不能將據報洽談視為已經成交。</p><aside>編輯觀察：這項簡報要求顯示，AI雲端服務的跨境商業洽談正受到國會政治壓力；但主席的反對立場與交易是否違法、是否受到限制，仍是不同問題。</aside><p><a href="https://www.cna.com.tw/news/aopl/202611190011.aspx">中央社國際</a></p><ul></ul></article><article><h2>Meta以共用模板推廣廣告模型更新，自述單一模型工程時間減少92%</h2><p>Meta公布廣告排序模型的模板化開發方法，將模型設計拆成可重用、可組合的共用元件，讓新技術不必逐一為每個模型重新調整。公司表示，過去兩年採用這套方法後，單一模型所需的工程時間減少92%，並部署超過5,000組技術與模型的組合。
+
+Meta指出，當正式運作的模型數量增加，架構、特徵、訓練設定與服務限制也隨之分化，改善一個模型的成果未必能順利移轉到其他模型。其標準模型模板做法，是把相似模型歸入較少數的模板，共用架構選擇、特徵邏輯、訓練設定及服務組態，同時保留必要的模型專屬邏輯。
+
+開發流程也從逐一調整模型，改成先在代表性模板上評估新方法，再推廣到採用該模板的模型群。Meta表示，評估時同時考量整體表現與效能退步的比例，之後再用未參與最佳化的模型驗證，通過後才納入下一版模板；過去兩年已有80項機器學習技術經由這套流程部署。
+
+這套模板也是Meta多代理模型開發方法的基礎。依公司說明，代理可在既定結構中提出最佳化構想、啟動實驗、診斷失敗並反覆調整。不過，Meta也提醒，模板若試圖容納所有歷史特殊情況，可能重新製造原本要解決的碎片化問題；擴大模板涵蓋範圍，以及提升代理工作流程的可靠性與可解釋性，仍是後續工作。</p><aside>編輯觀察：這個案例的重點不只是單一模型效能，而是企業如何把已驗證的改進推廣到大量模型。模板化提供可重複使用的開發與驗證單位，但Meta公布的工程效益不能直接推論為其他企業也能達成的成果。</aside><p><a href="https://engineering.fb.com/2026/11/18/ml-applications/design-once-deploy-at-scale-template-driven-ml-ecosystem/">Meta Engineering</a></p><ul></ul></article><article><h2>Airbnb以每項任務成本選程式代理模型，揭露評測與上線支出的落差</h2><p>Airbnb以自有工程任務評測搭配上線後監控，決定內部程式代理使用哪些模型，而非只看模型發布時的排行榜。AWS刊載的案例指出，Airbnb每週有數千名工程師及工程相關人員使用內部工具AirChat，模型請求經由公司的大型語言模型閘道送往Amazon Bedrock。
+
+選模依據之一是「每項任務成本」：把代理執行一項任務所用的所有請求，依公開牌價計算未快取輸入、快取讀取、快取寫入及輸出詞元的費用，再與任務評分並列比較。案例說明，平均成本也納入低分嘗試，並用評測結果設定預設模型及推理強度上限，而不是只比較單次請求價格。
+
+不過，評測成本不一定等於實際使用支出。案例中的「模型A」在內部程式任務評測中，比先前最佳模型高出逾3分，每項任務成本卻大致相同；上線數週後，按牌價計算的每位使用者平均每週支出反而增至原先模型的數倍。團隊發現，模型A每次請求成本約為先前模型的三倍，平均使用者的請求數也約為三倍，且多數費用來自每次請求重新讀取的快取上下文。
+
+後來，一款較新的模型在相同任務與評分機制下取得更高分，每項任務成本約為模型A的六分之一。Airbnb透過設定變更轉移使用者後，追蹤原本重度使用模型A的同一群人；在改用新模型的第一個完整週，這群人向主要模型發出的請求數大致不變，該模型支出則降至約七分之一。
+
+團隊也把延遲、詞元用量、錯誤及限流指標，與閘道的彙整使用紀錄交叉比較，據此重新檢視預設模型與推理上限。案例另指出，Airbnb會替每個主要模型找出至少一個在自有評測中表現相當的替代選項，作為容量不足時重新分配流量的依據。</p><aside>編輯觀察：這個案例呈現兩種不同的成本問題：固定任務評測衡量模型完成工作的代價，上線監控則反映使用者如何改變工作方式。企業若只看評測成本，仍可能漏掉請求量與上下文使用方式帶來的支出變化。</aside><p><a href="https://aws.amazon.com/blogs/machine-learning/how-airbnb-uses-cost-per-task-to-operate-coding-agents-on-amazon-bedrock/">AWS Machine Learning</a></p><ul></ul></article><article><h2>Salesforce導入跨區域推論路由，保留資料落地限制與既有模型端點</h2><p>Salesforce正將模型服務的跨區域流量調度，從自行維護的內部閘道邏輯移至Amazon SageMaker AI推論路由。依AWS與Salesforce分享的案例，這套設計把分散在不同區域、不同帳號的既有模型端點整合至同一呼叫路徑，同時由閘道先判斷資料是否必須留在原區域。
+
+Salesforce的Agentforce Foundation團隊在全球30多個區域提供自訓與開源模型服務。各客戶的尖峰需求可能重疊，逐區擴充又容易出現部分區域閒置、其他區域容量不足的情況。原有閘道雖能將流量轉往其他區域，卻缺乏端點容量訊號，難以掌握何時應轉送，以及目的地是否還有餘裕。
+
+新路由優先使用本地端點，依近期請求的錯誤、限流與逾時情形調整流量；單純回應變慢或輸入無效，不會觸發跨區域轉送。它不負責部署模型、複製模型檔案或新增運算執行個體，而是調度已部署的容量。具有資料落地要求的請求，則綁定只有本地端點的路由目標，不跨越區域邊界。
+
+在整合方式上，Salesforce保留原有請求內容格式，將健康狀態判斷與故障切換交給路由層，並記錄每次請求的實際執行端點與轉送原因。案例也揭露，團隊仍規劃在更廣泛採用前，延長飽和負載測試、評估跨區域流量上限下的連鎖影響，再推向更多區域；不能將這次整合視為已在所有服務區域全面部署。</p><aside>編輯觀察：這個案例的重點是把容量調度與資料落地規則分開處理，而非讓所有請求自由跨區。對企業而言，路由層能否配合既有治理要求，與能否使用其他區域的容量同樣重要。</aside><p><a href="https://aws.amazon.com/blogs/machine-learning/how-salesforce-is-advancing-global-scale-model-serving-with-cross-region-inference-routing-in-amazon-sagemaker-ai/">AWS Machine Learning</a></p><ul></ul></article><article><h2>Social Department把選片需求化為QuickSearch流程，串接影音內容與熱門話題</h2><p>Social Department將娛樂行銷常見的片段挑選需求，整理成QuickSearch的四種操作：尋找適合分享的場景、可引用台詞、迷因畫面，以及與當前趨勢相關的片段。依公司與AWS共同介紹的案例，使用者不必先寫出完整搜尋描述，而是由系統把選定的任務展開為檢索、驗證與排序流程。
+
+四種操作採用不同的編輯條件。分享場景偏重內容完整、能獨立觀看的段落；台詞搜尋著重精簡對白，若有已流傳的外部訊號便提高權重；迷因功能從候選片段擷取畫面，再依畫面產生文字；趨勢對齊則把外部熱門話題轉成影音索引能比對的查詢。系統另保留自然語言與以圖搜尋。
+
+架構上，影片內容分析與趨勢蒐集分開運作，直到使用者發出請求才結合。影片匯入後，系統建立視覺、聲音與逐字稿等多模態索引，並產生場景描述；趨勢資料則透過每日排程及使用者主動要求的更新取得。檢索先以向量與關鍵字縮小候選範圍，再由模型重新排序，避免每次都讓大型模型處理整座片庫。
+
+這套流程由Social Department制定架構與編輯條件，TrackIt負責實作，並使用Amazon Bedrock上的TwelveLabs與Claude模型等服務。公司表示，系統會將生成內容與原始素材核對，例如捨棄不在逐字稿中的引句；每則貼文發布前仍須由客戶團隊核准。其定位是提出可供行銷人員挑選的素材，不能因此認定系統已能預測流行，或取代人工編輯判斷。</p><aside>編輯觀察：這項設計將「值得分享」等抽象需求轉為可調整的檢索條件。值得關注的是條件如何被驗證與更新，而不是把模型排出的順序直接當成觀眾反應的預測。</aside><p><a href="https://aws.amazon.com/blogs/machine-learning/how-social-department-built-culture-aware-video-discovery/">AWS Machine Learning</a></p><ul></ul></article><article><h2>Stretto建置Tara語音代理，蒐集破產諮詢資料並依律師規則分流</h2><p>Stretto與AWS、CI&amp;T合作建置語音代理Tara，將Bankruptcy.com原有的網頁表單流程，延伸為電話資料蒐集訪談。依三方介紹，Tara使用Amazon Nova 2 Sonic進行語音對話，詢問債務、資產與就業等資訊，再由系統依律師設定的明確規則分類，最終決定仍由律師作成。
+
+原有表單只蒐集部分基本欄位，增加題目又容易讓訪客中途離開。新流程在來電者撥入後，先自我介紹、取得同意，再依回答進行有條件分支的訪談。團隊先以既有13個欄位建立正式環境的基準，之後擴充至超過18類資料，涵蓋車輛、不動產、個別債務、不同收入來源與過往破產申請紀錄。
+
+技術上，Twilio接收來電，透過語音橋接服務與Amazon Bedrock上的Nova 2 Sonic雙向傳送音訊。通話結束後，逐字稿再交由Claude 3 Haiku擷取結構化欄位，存入Amazon Aurora。完整訪談可能長於單次模型串流工作階段，因此團隊設計接續機制，在接近時間限制時建立新串流，帶入既有對話文字與相同設定，再切換音訊。
+
+團隊表示，驗證範圍除了語音品質，也涵蓋來電者插話、更改答案、提供矛盾資訊、拒答，以及告知與同意程序。正式流程將資料蒐集、欄位擷取與規則分流分開處理，結果可分為符合條件、不符合條件或需要更多資料，供律師審查。這是諮詢前的資料整理與分流工具，不是由模型判定個案的法律結果。</p><aside>編輯觀察：敏感財務訪談的導入重點不只在語音是否自然，也在於能否保存對話脈絡、正確整理資料，並讓具有實質影響的決定留在明確規則與律師審查流程中。</aside><p><a href="https://aws.amazon.com/blogs/machine-learning/how-stretto-built-an-ai-voice-agent-with-amazon-nova-2-sonic/">AWS Machine Learning</a></p><ul></ul></article><article><h2>AWS推出JumpStart模型排行榜，整合品質、速度與成本比較</h2><p>AWS推出SageMaker JumpStart Model Leaderboard，讓開發者直接在SageMaker Studio內，並列比較模型品質、回應速度與執行成本。AWS表示，上線時涵蓋超過70款模型，使用者可沿用搜尋與篩選功能，依授權、供應商及輸入輸出類型縮小候選名單，再進入部署流程。
+
+品質指標採用BIG-Bench Hard、GPQA Diamond與MMLU-Pro三項公開基準，由AWS自行執行評測，分別顯示成績，而非合併為單一總分。速度與成本則由AWS向各種JumpStart部署組態的端點發送標準化測試工作負載後測量；這是平台自建的比較工具，不是獨立第三方排名。
+
+使用者可切換接近自身工作負載的情境，以及延遲、吞吐量或成本等最佳化目標，查看對應組態的表現。切換情境不會改變品質基準分數，但會更新效能與成本欄位。成本估計僅計入預設執行個體的隨需時數費率，不含資料傳輸、儲存、推論元件費用，也未計入折扣，因此不能直接視為完整帳單。
+
+AWS提醒，排行榜適合用來建立候選清單，正式上線前仍應以自己的資料與提示測試。推理與非推理模型採用不同生成參數，兩類模型的比較只能視為概略參考；小幅分數差距也可能落在正常測試波動內。部署時若改用不同組態，延遲、吞吐量與成本等結果也可能改變。</p><aside>編輯觀察：把模型品質與部署成本放在同一介面，有助於初步選型；但企業仍須區分通用基準成績、特定部署組態與自身任務需求，不能只按排名決策。</aside><p><a href="https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-sagemaker-jumpstart-model-leaderboard/">AWS Machine Learning</a></p><ul></ul></article><article><h2>AgentCore Identity支援私有CA，讓AI代理串接企業內部身分服務</h2><p>AWS為Amazon Bedrock AgentCore Identity新增私有憑證授權單位（CA）支援，讓AI代理連接採用企業私有憑證的身分提供者。依AWS說明，使用自架Keycloak或PingFederate等服務的團隊，可讓AgentCore Identity信任組織既有的私有CA，進而取得存取權杖。
+
+設定方式是將PEM格式的CA憑證存入AWS Secrets Manager或Amazon S3，再由認證提供者引用。檔案只包含公開憑證，不包含私密金鑰；AgentCore Identity會用它驗證身分服務的探索、JWKS與權杖端點所呈現的伺服器憑證。此功能須透過VPC Lattice建立私有連線，適用於設有私有端點的身分提供者。
+
+維運上，CA憑證必須是有效的根憑證或中繼憑證，PEM檔案不得超過16 KB。AWS說明，系統只在建立或更新認證提供者時讀取憑證，因此修改儲存內容後，還必須呼叫更新操作。輪替時可先讓同一檔案同時包含新舊CA，完成伺服器憑證切換並確認權杖請求成功後，再移除舊CA。
+
+AWS也揭露，AgentCore Identity不檢查憑證撤銷清單，也不使用OCSP；若伺服器憑證的私密金鑰遭未授權者取得，信任可能持續至憑證到期，或管理者停止信任其簽發CA。官方因此建議限制憑證儲存位置的寫入權限，並監控到期時間。這些是功能限制與部署注意事項，並非已發生的資安事故。</p><aside>編輯觀察：這項更新把企業既有的憑證信任架構接進代理身分流程；導入時除了完成連線，也須把憑證輪替、更新操作與寫入權限納入維運程序。</aside><p><a href="https://aws.amazon.com/blogs/machine-learning/private-certificate-authority-support-in-amazon-bedrock-agentcore-identity/">AWS Machine Learning</a></p><ul></ul></article><article><h2>Snapchat推出Easy Lens CLI，將AR特效開發接入AI程式助理</h2><p>Snapchat推出Easy Lens CLI，讓開發者在Claude Code、Cursor與Codex等既有AI程式助理工作流程中建立Lens擴增實境特效。這項命令列工具延伸既有Easy Lens功能，將原本可在網頁與行動裝置以提示生成特效的做法，帶進開發者熟悉的工具環境，並支援Mac、Windows與Linux。
+
+Snapchat表示，創作者可用自然語言描述構想，由AI助理處理從建立、預覽到發布及成效追蹤的流程，運用超過100種AR建構元件與50種AI素材生成工具。公司也稱，助理能生成素材、測試特效、處理錯誤，並將更新版本直接送到創作者手機；這些端到端能力屬公司說法，不能視為已驗證的產製品質。
+
+應用範圍包括相機效果、美顏濾鏡，以及附有排行榜的Web Lens遊戲。依Snapchat說明，遊戲開發者可將既有瀏覽器遊戲帶入平台，AI創作者可沿用偏好的素材工具，品牌與代理商則能把既有影片、圖片等行銷素材轉成AR體驗。
+
+商業機制方面，加入Lens+ Payouts計畫的開發者，可透過Easy Lens CLI製作的特效獲取收益。Snapchat表示，上月已向Lens+社群創作者支付180萬美元；這是整體計畫的付款數字，不代表新工具使用者的預期收入。公司另稱可在一天內把遊戲構想做成已發布的Lens，但實際所需時間仍未獲獨立驗證。</p><aside>編輯觀察：把AR製作接入既有AI程式工作流程，可能降低開發者轉換工具的負擔；但能否穩定完成可發布的作品，以及作品能否帶來收益，仍是不同的驗證問題。</aside><p><a href="https://techcrunch.com/2026/11/18/snapchat-now-lets-developers-build-ar-lenses-with-ai-coding-assistants-like-claude-code-and-cursor/">TechCrunch AI</a></p><ul></ul></article><article><h2>Mistral推出Vibe桌面版，整合本機與雲端平行開發任務</h2><p>Mistral推出人工智慧代理Vibe的桌面應用程式，提供macOS與Windows版本，並規畫推出Linux版。Mistral表示，使用者可同時交付多項任務，並在應用程式中查看代理平行處理的進度，讓原本透過網頁、命令列工具或手機使用的Vibe，多了一個桌面工作入口。
+
+桌面版將Vibe CLI的本機功能與Vibe Code Web的雲端工作階段整合在一起。代理可在本機程式碼儲存庫或雲端沙盒中執行工作，應用程式則透過Git worktrees，將同一專案內平行進行的任務分開處理。這次整合的重點不只是增加介面，也涵蓋工作環境的選擇與多任務管理。
+
+除了程式開發，Work模式也新增存取本機檔案的能力。對使用者而言，這讓桌面版的用途延伸至程式碼以外的檔案工作；但檔案存取與完整操作電腦是不同能力，不能據此將Vibe描述為已能操控其他應用程式。Linux版本目前仍屬規畫，尚不能與已提供的macOS、Windows版本視為相同發布狀態。</p><aside>編輯觀察：這次更新的觀察重點是代理工作流程能否在本機與雲端之間銜接，以及同一專案的平行任務如何管理，而不是僅以是否推出桌面程式判斷產品能力。</aside><p><a href="https://the-decoder.com/mistral-plays-catch-up-with-vibe-desktop-as-rivals-already-command-full-operating-systems/">The Decoder</a></p><ul></ul></article><article><h2>Hugging Face語言模型請求改走OpenRouter，調整自備金鑰政策</h2><p>Hugging Face的Inference Providers服務已將語言模型請求改由OpenRouter路由，依價格、速度與可靠性選擇供應商，並在服務中斷時自動切換。既有程式碼可維持不變，但語言模型供應商的自備API金鑰已不再適用，開發者須留意新的路由與計費安排。
+
+預設路由會綜合考量價格、速度與可靠性；開發者也可使用「:fastest」後綴選擇吞吐量最高的供應商，或以「:cheapest」選擇價格最低者，另可直接指定供應商名稱。「X-HF-Session-Id」標頭則讓路由在選擇時納入供應商快取因素。
+
+計費由Hugging Face處理，按供應商價格收費、不另加價。自備API金鑰仍可用於圖像與影片供應商；圖像、影片及音訊生成也繼續直接透過Inference Providers執行，不能將語言模型的新政策概括套用到所有模態。模型頁面另新增供應商與效能指標分頁，使用者也能在設定中停用個別供應商。
+
+OpenRouter自測宣稱，新路由使容量不足錯誤減少46%、首個詞元等待時間改善16.9%，吞吐量提高16.3%；這些數字並非獨立實測結果。Hugging Face另規畫讓使用者連結OpenRouter帳號，並讓更多任務經由OpenRouter處理，兩者目前仍屬後續計畫。</p><aside>編輯觀察：既有程式碼不必修改，不代表使用政策沒有改變。開發者仍需分別檢查供應商選擇、金鑰管理與帳務流程，並區分語言模型和其他模態的適用規則。</aside><p><a href="https://the-decoder.com/hugging-face-now-routes-model-requests-through-openrouter-for-the-best-price-or-speed/">The Decoder</a></p><ul></ul></article><article><h2>Calif藉GPT-6 Cyber協助發現Java解碼器漏洞，展示Keycloak利用方式</h2><p>資安新創Calif的研究人員在OpenAI尚未公開提供的GPT-6 Cyber模型協助下，發現Java的Base64解碼器漏洞。特定輸入可在部分機器上觸發記憶體錯誤；Calif並展示如何利用這項漏洞入侵登入系統Keycloak，使風險不只停留在程式當機。
+
+觸發條件涉及一串64個「A」字元，後面接上一個等號。這類輸入通常造成當機，但經過特定方式調整後，可能被用來取得系統的完整未授權存取權限。利用仍有特定條件；Calif也表示，將漏洞轉化為可實際攻擊的手段並不容易。
+
+修補方面，Oracle已發布重大修補更新，但未特別提及這項漏洞；網路安全暨基礎設施安全局（CISA）則呼籲組織立即修補系統。
+
+Calif預估，由於部分系統可能未獲修補，漏洞影響可能延續五至十年。這是研究團隊對後續風險的估計，而非已確認的持續時間。</p><aside>編輯觀察：漏洞發現、利用展示與修補確認是不同階段。對維運團隊而言，重點是核對自身版本、部署條件與更新內容，不能僅憑更新已發布就判定個別環境已排除風險，也不應把人工智慧參與研究直接等同於已發生大規模攻擊。</aside><p><a href="https://www.engadget.com/2320797/ai-found-a-hole-in-java-and-it-starts-with-aaaaaaaa/">Engadget</a></p><ul></ul></article><article><h2>Meta員工回報Muse疑似混用帳戶內容，公司稱多起異常屬幻覺</h2><p>Meta人工智慧代理Muse的內部測試傳出隱私與操作疑慮。曝光的員工對話顯示，Muse曾在沒有相關提問時輸出銀行餘額，也曾帶入不屬於測試者的對話脈絡。不過，這些敏感資訊究竟來自其他使用者，還是模型自行編造，目前仍無法確認。
+
+一名員工收到Muse主動提出聯絡咖啡桌賣家的建議，但該員工表示，那並非自己的對話，因而通報可能存在跨帳戶脈絡洩漏。另一名員工與Muse談論釣魚時，卻收到兩個不明銀行帳戶的餘額資訊。另有員工回報，測試期間Muse誤將寵物保險改為較昂貴的方案，造成金錢損失。
+
+Meta發言人Daniel Roberts將這些情況形容為個別事件，並表示許多被員工標記為帳戶混用的訊息其實是幻覺，公司已處理相關問題。內部說明則指出，要求代理在對話空檔主動與使用者互動的提示，可能促使模型生成不實訊息。Meta也強調，員工測試版本與公開版本不同，部分功能及行為並未對外提供。
+
+另一項爭議是代理取得私人訊息的權限範圍。報導所述的聯合測試發現，Muse在Android可透過初始設定取得的權限讀取Signal訊息，不必經由Meta的Connector工具；在macOS則可利用輔助使用功能及截圖工具取得訊息，iPhone上的相關請求則遭阻擋。這類權限存取問題，與銀行餘額是否為模型幻覺，是不同層次的風險。
+
+Signal總裁Meredith Whittaker主張，應讓應用程式開發者以一致的技術方式，標示哪些資料不得由人工智慧代理存取。Apple也已承諾增加控制措施，要求使用者以更明確的操作授予完整磁碟存取權限。現有證據支持進一步檢視授權設計與代理行為，但尚不足以將疑似跨帳戶洩漏定為已證實事件。</p><aside>編輯觀察：代理輸出不實資訊與代理讀取私人資料，需要不同的查核與防護措施；不能以「幻覺」概括所有權限疑慮，也不能把看似真實的敏感數字直接視為外洩證據。</aside><p><a href="https://arstechnica.com/tech-policy/2026/11/muse-privacy-invasions-are-freaking-out-meta-staffers-internal-chats-show/">Ars Technica</a></p><ul></ul></article><article><h2>Pangram將得獎小說99%文本標為AI生成，出版社審閱文件後仍支持獎項</h2><p>人工智慧偵測工具Pangram將秘魯作家David Silva Rojas的得獎小說《Donde el agua trabaja》99%文本標記為人工智慧生成，引發創作真實性爭議。墨西哥出版社Almadía審閱作者提供的文件後，仍支持該作品獲獎。這個百分比是工具對文本的標記結果，並非已證實作者使用人工智慧，也不代表作者使用人工智慧的機率。
+
+爭議並未停留在小說本身。報導指出，Pangram也將相關訪談、一篇文章，以及作者在Instagram發布的否認聲明中，超過八成的文本判為人工智慧生成。然而，這些工具輸出與出版社審閱文件後的立場並不一致；現有資料不足以據此裁定作品的實際創作方式。
+
+美國作家組織Authors Guild警告，不應僅憑人工智慧偵測器的結果做出決策。報導同時提到，Pangram在該組織的測試中能正確辨識人類撰寫的文本，但這項測試表現並不能直接解決本案爭議。出版社據報計畫擴大採用此類工具之際，偵測結果應如何搭配創作文件及其他證據，成為文學評獎與出版審查必須面對的問題。</p><aside>編輯觀察：偵測工具提供的是判定訊號，而非創作過程的完整證據。當結果牽涉作者名譽與獎項，編輯判斷應區分工具輸出、可核對的創作紀錄與尚未釐清的指控。</aside><p><a href="https://the-decoder.com/pangram-flags-99-percent-of-an-award-winning-peruvian-novel-as-ai-generated-but-the-publisher-stands-by-its-author/">The Decoder</a></p><ul></ul></article><article><h2>OpenAI開放四家外部組織現場稽核，報告仍設保密與延後公開機制</h2><p>OpenAI宣布讓Apollo Research、METR、Transluce與Goodfire四家外部組織，直接進入公司內部人工智慧系統進行現場稽核，檢查安全風險與模型行為。依各自任務，稽核者可在OpenAI辦公室接觸未發布模型、原始碼、訓練資料及監控系統，也能與開發者進行保密訪談。
+
+四家組織的檢查重點各不相同。Apollo Research調查模型是否暗中違背開發者意圖；METR檢視最大規模強化學習訓練中的模型不當行為；Goodfire分析模型內部運作；Transluce則評估訓練後的安全檢查。OpenAI與Transluce另規劃在2027年初進行為期八週的後續審查。
+
+整體流程由獨立安全委員會監督，委員會可接收未刪減的報告，並協調爭議。稽核組織可獨立發布調查結果，但OpenAI仍可刪除機密內容，或為先行修補風險而延後報告公開。這套安排因此同時包含外部檢查、保密與風險修補等機制，並非所有發現都會立即完整對外揭露。
+
+OpenAI表示，計畫延續先前針對監控系統的現場審查，也正考慮增加涉及公司文化與內部流程的檢查。此次進展是擴大外部組織的存取與審查範圍，尚不代表相關模型已通過安全認證；實際發現及修補成效，仍須由後續稽核結果判斷。</p><aside>編輯觀察：現場接觸內部系統，有助於讓外部檢查超越公開模型的表面表現；但透明度仍取決於報告公開範圍、延後發布的運作方式，以及後續能否說明問題如何修補。</aside><p><a href="https://the-decoder.com/openai-opens-its-ai-systems-to-four-independent-on-site-auditors-for-the-first-time/">The Decoder</a></p><ul></ul></article><article><h2>Waymo再遇施工區辨識問題，加州限制高速公路營運</h2><p>Waymo自駕計程車因高速公路施工區行駛問題，遭加州車輛管理局要求立即停止州內高速公路營運，直到能證明車輛不再對公共安全構成立即危險。Waymo表示，也已暫時限制其他營運市場的高速公路服務，以評估車隊表現；一般道路叫車服務則持續運作。
+
+施工區辨識問題先前已造成營運中斷。4月，Waymo車輛在鳳凰城有六次未辨識匝道封閉標誌、進入施工區的情況；5月，加州另有七輛車駛入正在施工的車道。Waymo於6月召回近3,800輛具備高速公路行駛能力的自駕計程車，加州車隊也曾暫停高速公路服務，直到7月下旬才恢復。
+
+Waymo在7月初向美國公路交通安全管理局說明，軟體更新將改善高速公路施工區辨識、提高這類風險的處理優先順序，並在偵測到可能進入施工區時減速。公司也表示，更新涵蓋施工區內對緊急車輛的反應，另以營運調整及遠端協助降低誤入施工區的風險。
+
+不過，11月初流傳的影片顯示，一輛Waymo車在I-280公路越過兩輛正以移動式路障管制車流的公路巡警車；加州另指出，Burlingame附近的US 101公路也發生Waymo駛入施工區事件。Waymo表示，近期US 101施工區事件沒有造成碰撞或人員受傷，並正與監管機關合作，爭取恢復高速公路營運。</p><aside>編輯觀察：這次限制的關鍵不只是能否辨識施工標誌，也包括遇到臨時交通管制時的決策。先前更新後仍出現相關事件，顯示軟體改善宣稱與監管機關要求的安全證明，仍須分開看待。</aside><p><a href="https://arstechnica.com/cars/2026/11/waymo-suspends-freeway-driving-after-california-construction-zone-complaint/">Ars Technica</a></p><ul></ul></article><article><h2>研究估算美國403座大型資料中心用電，化石能源占約54%</h2><p>刊於《Nature Sustainability》的一項哈佛大學研究估算，美國403座大型資料中心在2024年5月至2025年4月間，年用電量約為68至99太瓦時，差異取決於設備利用率假設。研究的中央情境估計為82太瓦時，相當於約820億度電、占美國總用電量約1.8%。
+
+研究團隊利用衛星影像辨識大型設施，再將估算的用電需求與所在地區電網排放資料配對，分析個別資料中心的能源與碳排放情況。這些數字是依設施及電網資料推估的結果，並非逐座取得的實際用電讀值；其中超過半數用電集中在維吉尼亞、奧勒岡、俄亥俄與愛荷華四州。
+
+研究估計，供應這批資料中心的電力約54%來自化石能源，其中天然氣約占38%、燃煤約占15%。部分設施設於燃煤比重較高、電力碳排放較密集的地區。在中央情境下，這批設施用電對應的二氧化碳排放量約為每年2,570萬公噸。
+
+研究人員提醒，觀察期間於2025年4月結束，結果只是特定時段的樣貌，不能直接視為目前資料中心的完整用電狀況。這項研究估算的是大型資料中心整體耗電，也不能將全部電力需求歸因於人工智慧。研究另未計算供電所伴隨空氣污染的具體健康影響。</p><aside>編輯觀察：資料中心的環境負擔不只取決於耗電總量，也與所在地電網的能源組成有關。閱讀這類估算時，應同時留意利用率假設、觀察期間與研究涵蓋範圍，避免把資料中心整體排放直接當成AI排放。</aside><p><a href="https://the-decoder.com/more-than-half-the-electricity-feeding-americas-largest-data-centers-comes-from-gas-and-coal/">The Decoder</a></p><ul></ul></article><article><h2>OpenAI稱與AMD合作優化GPU設計，PPA改善最高14%</h2><p>OpenAI表示，與AMD合作不到五個月，在AMD旗艦GPU的矽智財設計上，取得最高14%的功耗、效能與晶片面積（PPA）改善。這是公司對晶片設計最佳化成果的說明，不能解讀為成品GPU效能提升14%，也不代表三項指標各自改善相同比例。
+
+依OpenAI說法，合作是在AMD工程師已投入多年最佳化的設計上，進一步找出改善空間；公司將成果形容為約相當於一年的進展。OpenAI並表示，AMD已將部分變更納入送往製造的設計，但目前取得的資料未交代具體GPU型號、各項指標的變化或量產時程。
+
+OpenAI另稱，相同方法也用於其首款客製化推論晶片Jalapeño。就這次AMD合作而言，部分變更進入製造設計，是公司所述的具體應用進展；最高14%的改善幅度及「相當一年進展」的比較，仍屬OpenAI自述，尚不能視為獨立驗證結果。</p><aside>編輯觀察：這項案例的觀察重點，是AI提出的設計變更能否進入實際工程流程。公司稱部分變更已被採用，但若要判斷商業效益，仍需要更完整的測試條件與成品表現資料。</aside><p><a href="https://the-decoder.com/openai-says-its-models-delivered-a-years-worth-of-chip-optimization-on-top-of-amds-own-engineering/">The Decoder</a></p><ul></ul></article><article><h2>Payhawk完成2.8億美元C輪募資，估值升至20億美元</h2><p>以AI代理協助企業管理費用與採購的Payhawk宣布，完成2.8億美元C輪募資，由Goldman Sachs旗下成長股權投資部門領投，公司估值達20億美元，累計募資超過5億美元。其他參與投資者包括Greenoaks、Lightspeed與QED，新資金將用於全球擴張。
+
+這家英國金融科技公司成立於2018年，產品定位為企業財務管理平台，協助企業追蹤、管理支出及採購。共同創辦人暨執行長Hristo Borisov表示，公司看見為財務團隊提供AI原生產品的成長機會，希望結合AI代理、支付基礎設施與企業管控機制。
+
+Payhawk面對的同業包括Pleo、Moss與Spendesk。公司表示，目前在33個國家營運，且2022年募得的1億美元仍有70%尚未動用；該輪募資時的估值為10億美元。相較之下，這次估值已翻倍，而公司將新一輪資金用途指向全球擴張。</p><p><a href="https://techcrunch.com/2026/11/18/spend-management-platform-payhawk-announces-280m-raise-2b-valuation/">TechCrunch</a></p><ul></ul></article><article><h2>Unsiloed AI募得750萬美元，將複雜企業文件轉為AI代理可用資料</h2><p>Unsiloed AI取得Felicis領投的750萬美元種子資金，瞄準企業導入AI代理時的文件處理需求：將表格、圖表與複雜版面中的資訊，轉換成代理可使用的結構化資料。參與本輪投資者包括Y Combinator、Orange Collective與Uncorrelated Ventures，以及天使投資人Aarthi Ramamurthy、Beth Turner。
+
+這家新創的產品不只擷取文件內容，也標示資料在原始文件中的出處，讓企業能回頭核對結果。其處理對象包含帶有表格、圖像及特殊排版的商業文件；若資訊擷取錯誤，可能影響後續工作流程，對仰賴文件作業的金融、法律與醫療服務尤其重要。
+
+共同創辦人暨執行長Aman Mishra表示，公司採用稱為「雙流」的視覺模型，分別處理文字與影像資料，再以熱圖式切分方法辨識文件中的重要區域，將較多運算資源投入圖形、數字與圖表。公司也使用考量產業專有詞彙的解碼器，試圖區分不同商業情境下意義不同的用語；這些是公司對技術設計與優勢的說明。
+
+Mishra表示，公司已與金融、法律及醫療領域客戶合作，包括一家處理文件的銀行，以及將系統部署在自有伺服器、處理合約與舊案卷的律師事務所，但未公開兩者名稱。他另列出語音AI新創Bolna AI為客戶，稱其使用Unsiloed匯入知識庫，以建立語音代理。
+
+文件處理市場已有Reducto、Unstructured，以及Microsoft、Amazon的相關服務，通用AI模型也是競爭選項。Mishra表示，Unsiloed目前有7名員工，定價每頁1美分起；新資金將用於增聘研究人員與工程師、拓展銷售，並建立專有資料集以改善技術。</p><aside>編輯觀察：這項產品的觀察重點不只是能否讀取文件，也包括擷取後能否追溯原始出處。可核對的資料流程有助於企業檢查AI代理的輸入，但不等同已證明能消除錯誤或幻覺。</aside><p><a href="https://techcrunch.com/2026/11/18/felicis-leads-7-5m-bet-on-unsiloed-ai-to-make-enterprise-documents-usable-by-ai-agents/">TechCrunch AI</a></p><ul></ul></article><article><h2>Xreal推出Aura眼鏡，1,279美元起搭載Android XR</h2><p>Xreal推出搭載Android XR的Aura裝置，售價1,279美元起，報導列出的促銷價為1,099美元，優惠持續至12月。Aura採眼鏡與外接運算裝置分離的架構，透過有線連接Compute Puck執行Android XR，而非將所有運算硬體放進鏡框。
+
+Aura鏡框本體重95公克，配備空間感測、手指追蹤及拍照錄影所需的攝影機。透明鏡片讓使用者直接看見周遭環境，也能調暗至遮蔽外界視野。顯示部分採用1,920乘1,200解析度的micro-OLED螢幕，視野角度為70度。
+
+Compute Puck頂部可作為觸控板，提供手勢以外的操作方式。使用者也能將其他裝置接入Compute Puck，讓其影像出現在可調整大小的Android XR視窗，並與其他應用程式並列；若只需要虛擬大螢幕，眼鏡亦可直接連接電腦等裝置，不必透過Compute Puck。
+
+Engadget評測作者肯定Aura的配戴舒適度與影音顯示表現，但認為Android XR仍缺乏足以展現平台價值的應用。作者並回報應用程式當機、手指追蹤反應遲緩等問題，使用後更偏好透過觸控板操作。其購買建議也較保留，認為現階段更適合想提前投入Android XR的VR開發者，而非一般消費者。</p><aside>編輯觀察：Aura提供了Android XR與單純虛擬顯示器兩種使用方式。對買家而言，關鍵不只是硬體規格，而是平台應用與互動體驗是否足以支持額外支出；目前取得的評測對此仍持保留態度。</aside><p><a href="https://www.engadget.com/2320945/xreal-aura-review/">Engadget</a></p><ul></ul></article><article><h2>GTA 6陸續解鎖：Rockstar指CPU限制30 fps，PS5須先更新韌體</h2><p>Grand Theft Auto VI（GTA 6）於11月19日依各地當地時間午夜，在PS5與Xbox Series X/S陸續解鎖。上市前的技術資訊也確認，換用PS5 Pro並不代表能以更高影格率遊玩；玩家除了下載遊戲，PS5還必須完成指定的系統更新才能啟動。
+
+Rockstar表示，首發主機版的30 fps上限來自CPU限制，包括PS5 Pro在內，都不會提供40或60 fps模式。公司技術製作總監Marc Chambers說明，PS5 Pro升級的GPU與影像升頻技術，可在原有光線追蹤反射與照明之外，增加光線追蹤陰影並改善清晰度；但其處理器僅比基本款PS5稍快，不足以讓遊戲的複雜模擬以更高影格率運作。
+
+Digital Foundry的測試則指出，兩款PS5均以1440p算圖，Pro透過PSSR升頻後，畫面接近清晰的4K影像，基本款則明顯較柔。該站表示，Pro可穩定維持30 fps，影格輸出間隔也一致；基本款大多維持30 fps，但在較長、爆炸密集的場景中，仍可能降至每秒約25格。這項比較顯示，Pro的差異主要落在畫質與穩定度，而非影格率上限。
+
+安裝方面，PS5玩家須下載14.23版韌體，更新檔大小為1.267GB，內容包含系統軟體安全修正。Sony未說明這項更新為何是執行GTA 6的必要條件。遊戲數位版另有212GB下載量，Rockstar也已推出上市前修補檔，最新一份為600MB；已預載的玩家仍需確認更新完成。
+
+畫面之外，Ars Technica的評測將重點放在城市模擬與日常互動：同一空間有時容納超過百名非玩家角色，外觀與動作各異，室內配置、光影及細部動畫也獲肯定。不過，該評測同時認為部分前期任務流於重複跑腿。Engadget的上市遊玩觀察也稱讚基本款PS5上的細節表現，但對30 fps限制感到可惜，呈現視覺豐富度與操作流暢度之間的取捨。</p><aside>編輯觀察：對考慮為GTA 6升級主機的玩家而言，畫質改善與影格率提升必須分開判斷：依Rockstar說法及現有測試報導，PS5 Pro的優勢是影像清晰度、光影與30 fps穩定度，而不是解鎖更高影格率。</aside><p><a href="https://www.engadget.com/2321134/rockstar-just-settled-a-major-question-about-gta-6s-controversial-fps-decision/">Engadget</a></p><ul><li><a href="https://www.engadget.com/2320303/youll-need-the-latest-ps5-firmware-update-to-play-gta-vi/">Engadget</a></li><li><a href="https://www.engadget.com/2320788/gta-vi-launch-day-live-blog/">Engadget</a></li><li><a href="https://arstechnica.com/gaming/2026/11/grand-theft-auto-vi-the-ars-technica-review/">Ars Technica</a></li></ul></article></main></noscript>
+  <div id="reader-overlay" class="reader-overlay"></div>
+  <script>window.EDITORIAL_REQUESTED_DATE="2026-11-19";window.EDITORIAL_REQUESTED_EDITION="morning";</script>
+  <script src="assets/app.js?v=92f7bd2f98e0"></script>
+  <script defer src="assets/software-updates.js?v=6978e8a62488"></script>
+
+  <!-- Analytics：GoatCounter（免費、隱私友善、無 cookie）
+       後台流量：https://daily-briefing.goatcounter.com
+       文章點開會另送事件（path = article/<id>）→ 看得到「哪幾則最多人讀」。 -->
+  <script data-goatcounter="https://daily-briefing.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
