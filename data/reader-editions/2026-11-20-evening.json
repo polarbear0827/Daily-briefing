@@ -1,0 +1,431 @@
+{
+  "schema_version": 2,
+  "issue_number": "2026-11-20-evening",
+  "issue_label_zh": "2026-11-20 科技晚報",
+  "date": "2026-11-20",
+  "edition": "evening",
+  "edition_label_zh": "科技晚報",
+  "date_display_zh": "2026年11月20日·星期五·科技晚報",
+  "weather_locations": [],
+  "tagline_zh": "由 AI 為你策展，掌握科技與時事",
+  "categories": [
+    {
+      "id": "tech-product",
+      "name_zh": "產品發布／平台戰爭"
+    },
+    {
+      "id": "vc-business",
+      "name_zh": "產業深度／商業應用"
+    },
+    {
+      "id": "security",
+      "name_zh": "技術風險"
+    },
+    {
+      "id": "dev",
+      "name_zh": "社群熱度／開發者"
+    },
+    {
+      "id": "ai-tools",
+      "name_zh": "人工智慧工具"
+    },
+    {
+      "id": "taiwan",
+      "name_zh": "中文科技"
+    }
+  ],
+  "articles": [
+    {
+      "id": "2026-11-20-evening:event-01",
+      "original_id": "event-01",
+      "category": "tech-product",
+      "is_headline": true,
+      "title_zh": "Apple職缺透露電腦操作代理布局，第三方存取權限同步收緊",
+      "lede_zh": "Apple新刊登的工程主管職缺，透露公司正在布局可代替使用者操作電腦的人工智慧代理。招募內容涵蓋代理平台的技術方向與開發交付，但目前揭露的是開發目標，並非已推出的產品，相關工作仍處於早期階段。\n\n職缺描繪的代理不只回答問題，還要能瀏覽網站、跨應用程式工作、執行指令、撰寫與除錯程式碼，以及呼叫服務。Apple希望代理能在瀏覽器、命令列、程式碼與API等工具之間切換，選擇適合各步驟的工具，完成多階段任務。職缺也將隱私、可靠性與安全列為目標，這些要求尚不能視為已實現或經驗證的能力。\n\n與自家代理開發並行的是第三方存取權限管制。Apple已向開發者提醒，代理可能在使用者未充分察覺的情況下取得完整磁碟存取權，並推出加強使用者掌握資料存取範圍的控制措施。另有規劃指出，後續macOS 27.3將加入警告，勸阻使用者授予第三方代理完整存取權。\n\n這使Apple的代理布局同時涉及功能與授權兩個層面：一方面希望軟體能跨工具完成工作，另一方面要求高權限存取必須經過更明確的使用者操作。目前仍無法從招募內容判定最終產品的功能範圍或正式推出時程。",
+      "bullets_zh": [],
+      "source": {
+        "name": "TechCrunch AI",
+        "url": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
+        "published_at": "2026-11-20T00:56:01+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-article",
+      "evidence_note_zh": "依來源文章整理。",
+      "editorial_analysis_zh": "代理能做多少事，與平台願意授予多少權限密切相關。觀察Apple後續布局時，應將招募目標、實際交付功能與授權機制分開檢視，不能把開發願景當成產品能力。",
+      "supporting_sources": [
+        {
+          "source_name": "Engadget",
+          "source_title": "Job posting seemingly confirms Apple is working on its own AI agent for coding and other tasks",
+          "source_url": "https://www.engadget.com/2322586/job-posting-seemingly-confirms-apple-is-working-on-its-own-ai-agent-for-coding-and-other-tasks/"
+        }
+      ],
+      "source_evidence_note_zh": "已取得TechCrunch報導全文及Engadget報導節錄；未直接取得Apple職缺原頁或開發者通知。開發方向與權限措施依上述報導整理，職缺所列能力及安全目標未經獨立驗證。"
+    },
+    {
+      "id": "2026-11-20-evening:event-05",
+      "original_id": "event-05",
+      "category": "tech-product",
+      "is_headline": false,
+      "title_zh": "AgentCore付款功能接入AWS Marketplace，代理採購可併入AWS帳單",
+      "lede_zh": "Amazon Bedrock AgentCore payments新增AWS Billing付款選項，讓人工智慧代理向支援x402的AWS Marketplace賣家按次購買軟體、API、資料與內容，費用以美元列入開發者的AWS帳單。AWS表示，這條付款路徑不需另備穩定幣錢包或API金鑰，將代理的自主採購延伸到Marketplace。\n\n交易從賣家回傳HTTP 402付款要求開始，回應內含簽署報價。代理將報價交給AgentCore payments檢查付款工作階段的預算，取得付款權杖後，再帶著權杖向賣家重新請求內容。上線時，AWS Billing支援的是每次請求固定報價的x402 exact方案，款項計入設置Payment Manager的AWS帳號。\n\n開發者須建立具備AWS Billing連接器的Payment Manager，並為任務設定付款工作階段與支出上限。AgentCore Gateway另新增選用的Marketplace連接器，協助代理尋找商品與端點；若組織採用Private Marketplace，代理只能購買其中允許的商品。首次向賣家購買時會建立協議，後續採購則持續依該協議追蹤。\n\n支出治理是這次整合的另一重點。AWS表示，開發者可透過AgentCore policy設定核准賣家與支出限制，交易可在AWS CloudTrail及AWS Cost Explorer查核。官方範例另將設定預算與執行付款的IAM角色分離，使代理不能自行提高預算；防止超支與企業安全效益仍屬AWS主張，不能視為獨立驗證結果。",
+      "bullets_zh": [],
+      "source": {
+        "name": "AWS Machine Learning",
+        "url": "https://aws.amazon.com/blogs/machine-learning/enable-ai-agents-to-pay-for-aws-marketplace-x402-products-with-amazon-bedrock-agentcore-payments/",
+        "published_at": "2026-11-19T23:02:16+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "代理採購不只是增加付款能力，也涉及誰能核准賣家、調整預算及追查支出。這次整合把採購與既有AWS帳務連在一起，角色權限與付款工作階段的設定因此值得一併檢視。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "來源為AWS Machine Learning官方文章節錄，取得標示為publisher-excerpt，非完整網頁全文；交易流程與示範架構均為AWS提供，未獨立驗證付款控制或安全效益。"
+    },
+    {
+      "id": "2026-11-20-evening:event-07",
+      "original_id": "event-07",
+      "category": "tech-product",
+      "is_headline": false,
+      "title_zh": "Google桌面搜尋AI模式新增側欄，可回到近期查詢",
+      "lede_zh": "Google正於全球桌面版搜尋推出可收合側欄，讓使用者在AI模式中查看近期搜尋、重新開啟先前查詢。這項更新位於Google搜尋的AI模式內，並非一般搜尋介面全面新增相同功能。\n\n使用者點選AI搜尋視窗左側，即可展開側欄，查看近期的AI與一般搜尋紀錄；點選其中一項描述，則會開啟該主題的AI模式搜尋視窗。因此，即使紀錄來自一般搜尋，從側欄重新進入時，開啟的仍是AI模式。側欄可透過右上方的關閉圖示收起。\n\nGoogle搜尋副總裁Robby Stein表示，使用者提出的問題愈來愈不只是一次查詢就結束，並稱測試中，側欄對延續探索與推進查詢有明顯幫助。這是Google對測試效果的說明，並不等同於已獲獨立驗證的使用成效。",
+      "bullets_zh": [],
+      "source": {
+        "name": "Engadget",
+        "url": "https://www.engadget.com/2322647/google-latest-home-page-redesign-makes-gemini-even-more-prominent/",
+        "published_at": "2026-11-20T05:45:38+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "這次調整不只是增加搜尋紀錄入口，也讓一般搜尋紀錄能在AI模式中重新開啟。值得區分的是紀錄涵蓋範圍與開啟後的介面，兩者並不相同。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "本則依Engadget已取得的報導節錄撰寫，未取得全文，亦未實際操作功能或獨立驗證Google所述測試效果。"
+    },
+    {
+      "id": "2026-11-20-evening:event-12",
+      "original_id": "event-12",
+      "category": "tech-product",
+      "is_headline": false,
+      "title_zh": "SpaceX規劃屋頂微型基地台，Musk稱2027年投產補強室內訊號",
+      "lede_zh": "SpaceX執行長Elon Musk表示，公司已完成屋頂微型基地台設計，打算以地面設備補強Starlink衛星訊號難以到達的室內空間。他在本週DealBook Summit訪談中稱，這類設備預計2027年投入生產，但談到時程時仍保留「我想是明年」的語氣，並非已量產產品。\n\nMusk指出，衛星直連手機仍有室內接收的缺口，尤其金屬或較厚的屋頂會阻擋來自太空的訊號，因此需要地面設備補足。他將新硬體形容為可放在屋頂、類似Starlink天線的微型基地台，並表示，結合無線頻譜與這些設備，有望改善訊號、消除通訊死角；這些涵蓋效果仍是他的主張。\n\n這項規劃與SpaceX的衛星升級同步推進。Musk表示，公司計畫於2027年發射Direct-to-Cell V2衛星星系，並宣稱頻寬將提高至40倍。SpaceX總裁Gwynne Shotwell先前在8月財報電話會議上，也曾表示不會採用大型基地台，而將部署小型、低功耗行動通訊基地台。\n\n設備如何交付仍有待定案，Musk提出的方案之一，是將小型基地台與Starlink終端搭售。目前揭露的新進展是硬體設計已完成的公司說法，以及初步生產與搭售構想；實際室內涵蓋能力、頻寬提升幅度與投產進度，尚不能視為已實現的服務表現。",
+      "bullets_zh": [],
+      "source": {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/19/elon-musk-says-spacex-has-a-plan-to-eliminate-cell-phone-dead-zones/",
+        "published_at": "2026-11-19T23:37:56+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-article",
+      "evidence_note_zh": "依來源文章整理。",
+      "editorial_analysis_zh": "這項設計顯示，SpaceX改善衛星直連手機體驗的規劃，不只依靠衛星升級，也納入地面設備補足室內接收限制。評估服務能力時，仍須區分衛星頻寬、建築物內涵蓋與硬體部署進度。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "已取得TechCrunch報導正文。設計完成、2027年投產、頻寬提升與消除通訊死角等內容，均為SpaceX主管的說法或計畫，未取得獨立實測資料。"
+    },
+    {
+      "id": "2026-11-20-evening:event-13",
+      "original_id": "event-13",
+      "category": "tech-product",
+      "is_headline": false,
+      "title_zh": "Uber Kids在美國三城試辦，監護人可替10至12歲兒童叫車",
+      "lede_zh": "Uber開始測試供10至12歲兒童使用的Uber Kids服務，在美國奧斯汀、納許維爾與麥迪遜試辦。這項服務由家長或監護人叫車，且接車時必須在場；監護人可透過車內即時影像查看孩子的乘車情況。目前仍屬有限試辦，是否擴大至其他地區尚不明朗。\n\nUber Kids的使用方式與既有Uber for Teens不同。後者讓13至17歲青少年在加入家長或監護人的家庭帳戶後，自行預約行程；Uber Kids則將叫車權限交給家長與監護人。監護人可以陪同乘車，其他未成年人取得各自家長或監護人同意後也可同行，但每趟行程只能前往單一目的地，不提供多站停靠。\n\n駕駛端也有額外門檻。Uber僅邀請評價較高的駕駛參與，有意加入者須完成簡短課程，並在應用程式中啟用錄音、錄影，以及相機和麥克風權限。Uber表示，即時影像啟動時會通知駕駛，且只有孩子的監護人與安全人員能存取即時畫面。\n\n配合這些要求，Uber每趟向駕駛支付的報酬將比一般UberX行程多7美元，首次完成Uber Kids行程另加20美元。",
+      "bullets_zh": [],
+      "source": {
+        "name": "Engadget",
+        "url": "https://www.engadget.com/2322650/uber-kids-rides-children-aged-10-to-12-years-old/",
+        "published_at": "2026-11-20T06:27:26+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "這項試辦將兒童叫車權限、行程限制與車內監看整合進叫車服務，並以額外報酬搭配駕駛參與門檻。這些設計呈現平台服務低齡乘客的產品安排，但不等同已證實的安全成效。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "本則依Engadget報導節錄撰寫，未取得全文；試辦資訊部分由該報導轉述TechCrunch。即時影像存取規則為Uber說法，未取得獨立安全評估或實測資料。"
+    },
+    {
+      "id": "2026-11-20-evening:event-09",
+      "original_id": "event-09",
+      "category": "vc-business",
+      "is_headline": false,
+      "title_zh": "Anthropic上市首日收漲17%，完全稀釋估值一度約2兆美元",
+      "lede_zh": "AI模型公司Anthropic於11月19日在那斯達克掛牌，首日股價開高後漲幅收斂。股票以111.50美元開盤，較每股83美元的首次公開募股發行價高出34%；終場收在97.17美元，仍較發行價上漲17%，但已低於開盤價。\n\n估值須區分不同口徑。Anthropic上市首日的完全稀釋估值一度約2兆美元，計入公司承諾給員工、尚未轉換為實際股份的股票選擇權與限制型股票單位；若僅以當時已發行流通股數計算，當天市值最高為1.5兆美元。兩項數字的計算基礎不同，不宜混用。\n\n營運方面，Anthropic第3季淨虧損縮小，營收較前一季成長47%，但營收成長速度已較前一季明顯放緩。公開市場給出的估值之外，公司能否維持成長、改善虧損，仍是觀察其長期經營表現的重點。\n\n執行長阿莫戴接受CNBC專訪時表示，希望未來某個時間取得投資等級信用評等，並將債務融資視為可在適當時機運用的工具。這是公司對未來融資方式的意願，並非已取得評等或已完成債務融資。\n\nTECHnalysis Research首席分析師歐唐納爾認為，這次上市是重建市場對AI潛力信心的重要一步，但仍須觀察其他AI業者、資料中心所處政治環境，以及Anthropic長期經營績效，才能判斷市場是否趨於穩定。",
+      "bullets_zh": [],
+      "source": {
+        "name": "中央社科技",
+        "url": "https://www.cna.com.tw/news/ait/202611200054.aspx",
+        "published_at": "2026-11-20T10:24:34+08:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "首日收盤仍高於發行價，但盤中漲幅收斂，不能僅憑掛牌首日表現判定AI投資熱度已穩定。估值口徑、營收成長與虧損變化，應分開檢視。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "本則依中央社已取得的綜合外電報導節錄撰寫，未取得其引用的路透社報導、CNBC專訪全文或公司申報文件，亦未獨立核對交易與財務資料。"
+    },
+    {
+      "id": "2026-11-20-evening:event-11",
+      "original_id": "event-11",
+      "category": "vc-business",
+      "is_headline": false,
+      "title_zh": "AI供應鏈賣壓擴大，台股單週跌7641點、市值減約25兆元",
+      "lede_zh": "台灣半導體與AI供應鏈股票賣壓擴大，台股11月20日下跌2393.6點、跌幅6.23%，收在36033.29點；全週累計下跌7641.83點、跌幅17.5%，創最大單週跌點紀錄。依證交所統計，上市公司總市值降至新台幣118兆992億元，單週減少約25兆元。\n\n電子類股當天下跌6.26%，台積電收在2000元，聯發科、台達電跌停。賣壓也擴及AI相關印刷電路板、ABF載板、光通訊，以及伺服器散熱、機殼與滑軌等族群，上市櫃合計約365檔股票跌停。全週半導體成交金額占上市股票交易金額42.26%，電子零組件占20.39%，科技股仍是交易重心。\n\n三大法人當天合計賣超522.46億元，其中自營商賣超340.84億元，超過外資及陸資的94.13億元。兆豐國際投顧副總經理黃國偉認為，融資停損、ETF賣壓與法人停損，是指數進一步下探的關鍵，AI族群能否止跌須觀察籌碼是否有效沉澱；這是法人對市場交易的判讀，不能直接視為AI需求已衰退。\n\n金管會第二波限空措施於20日上路，包括個股當日收盤跌幅達3.5%以上，次一交易日不得低於前一日收盤價放空，盤中借券賣出委託數量上限也由前30個營業日日均成交量的3%降至1%。證交所董事長林修銘則表示，短期波動不改產業基本面，並認為全球AI運算與基礎建設需求仍有中長期成長空間。\n\n賣壓並非台股獨有。Anthropic掛牌首日收漲17.07%，仍未帶動科技股信心回升；20日日經225指數收跌5.06%，韓國KOSPI跌5.21%。市場對AI獲利、資本支出及監管的疑慮，與台灣供應鏈股票的停損賣壓交織，但股價修正、企業當期營運與未來需求仍須分開觀察。",
+      "bullets_zh": [],
+      "source": {
+        "name": "中央社財經",
+        "url": "https://www.cna.com.tw/news/afe/202611200217.aspx",
+        "published_at": "2026-11-20T16:54:29+08:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "這波修正同時涉及AI產業預期與交易部位調整。判斷供應鏈前景，應區分市場停損造成的短期價格壓力，以及訂單、營收與投資計畫是否實際改變，不能僅以跌幅推定需求轉弱。",
+      "supporting_sources": [
+        {
+          "source_name": "中央社財經",
+          "source_title": "AI前景疑慮罩頂族群重挫　法人：籌碼沉澱是止跌關鍵",
+          "source_url": "https://www.cna.com.tw/news/afe/202611200249.aspx"
+        },
+        {
+          "source_name": "中央社財經",
+          "source_title": "台日韓台灣跌最慘　金管會：9日以來跌9.24%",
+          "source_url": "https://www.cna.com.tw/news/afe/202611200271.aspx"
+        },
+        {
+          "source_name": "中央社財經",
+          "source_title": "台股重挫　證交所：短期市場波動不改產業基本面",
+          "source_url": "https://www.cna.com.tw/news/afe/202611200247.aspx"
+        },
+        {
+          "source_name": "中央社財經",
+          "source_title": "本週台股市值蒸發25兆元　全球排名退居第7大股市",
+          "source_url": "https://www.cna.com.tw/news/afe/202611200261.aspx"
+        },
+        {
+          "source_name": "中央社財經",
+          "source_title": "Anthropic上市難消除AI隱憂　亞股收盤盡墨",
+          "source_url": "https://www.cna.com.tw/news/afe/202611200267.aspx"
+        }
+      ],
+      "source_evidence_note_zh": "整合六篇中央社財經報導，取得形式均為報導節錄，非全文。金管會與證交所資料及回應，來自已取得報導，未另取得其原始新聞稿；法人對賣壓、政策影響與產業前景的解讀並非已驗證的因果結論。"
+    },
+    {
+      "id": "2026-11-20-evening:event-14",
+      "original_id": "event-14",
+      "category": "vc-business",
+      "is_headline": false,
+      "title_zh": "阿里巴巴遭股東提告，涉低估AI晶片出口管制風險",
+      "lede_zh": "阿里巴巴在紐約遭股東提起集體訴訟，被指在2024年至2026年的年報中，蓄意且實質低估實際或疑似違反出口管制可能帶來的業務風險，藉此推高股價。案件向曼哈頓聯邦法院提出，執行長吳泳銘也被列為被告；相關內容仍屬股東指控。\n\n訴訟爭點包括阿里巴巴與新加坡業者Megaspeed的往來。Megaspeed被指涉嫌協助北京取得輝達先進AI晶片。股東主張，媒體披露阿里巴巴與Megaspeed及其高層黃樂的關係，包括阿里巴巴已成為Megaspeed「最主要」客戶的消息，導致阿里巴巴股價在4天內下跌14%。股東也將部分跌幅歸因於另一項報導所提的風險：美方可能收緊中國AI企業遠端使用先進處理器的限制。上述股價下跌原因，是訴訟方的歸因。\n\n阿里巴巴未立即回應置評請求。吳泳銘另表示，美國限制中國取得算力的措施可能在明年影響公司產品與服務，但他仍預期，阿里巴巴可在2030年前達到外部雲端營收1,000億美元、稅息折舊及攤銷前利潤率20%的目標。這是公司提出的營運展望，並非已實現成果。",
+      "bullets_zh": [],
+      "source": {
+        "name": "中央社科技",
+        "url": "https://www.cna.com.tw/news/ait/202611200037.aspx",
+        "published_at": "2026-11-20T09:24:56+08:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "這起訴訟將AI算力取得限制與企業資訊揭露責任連結起來。觀察重點是公司如何說明出口管制對產品、服務與雲端業務目標的影響，而非把訴訟指控直接視為違規定論。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "本則依中央社報導節錄撰寫，其中訴訟資訊轉述路透社報導；未取得訴狀全文、年報原文或公司完整回應。指控與股價變動的因果關係未經獨立查核，不代表法院認定；營運目標為公司預測。"
+    },
+    {
+      "id": "2026-11-20-evening:event-16",
+      "original_id": "event-16",
+      "category": "vc-business",
+      "is_headline": false,
+      "title_zh": "美參院通過能源許可改革案　擬要求資料中心自付電網升級費",
+      "lede_zh": "美國聯邦參議院19日以62票對33票，跨黨派通過能源許可改革法案，內容包括加快大型能源與基礎建設審查，以及要求資料中心自行負擔電網升級費用。法案接下來將送交眾議院表決，相關要求尚未成為生效法律。\n\n這項「2026年跨黨派美國可負擔與就業法案」（BAAJA），把資料中心的電網升級費用納入規範。在住宅電價上漲之際，要求資料中心自行負擔這筆支出，是各界關注的訴求之一；不過，法案並未處理資料中心造成的空氣汙染與耗水問題。\n\n改革也涉及能源設施的審查與輸電能力。共同提案人、民主黨籍參議員懷特豪斯與其他支持者主張，升級老舊電網，可讓偏遠地區太陽能及風力發電計畫產出的電力，更順暢地輸送到有需求的地區。法案另限制總統對不同能源採取差別待遇的權力，可能同時影響再生能源與油氣管線計畫的政策處置。\n\n加快建設並未消除環境爭議。部分民主黨議員擔心環保把關機制遭削弱，也關注原住民團體對文化遺址可能受衝擊的反對聲音；環保團體對改革能否促進潔淨能源建設同樣意見分歧。對資料中心業者而言，後續仍須關注眾議院審議結果，不能將參院通過視為成本規範已經定案。",
+      "bullets_zh": [],
+      "source": {
+        "name": "中央社國際",
+        "url": "https://www.cna.com.tw/news/aopl/202611200140.aspx",
+        "published_at": "2026-11-20T14:35:43+08:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "這項提案同時觸及資料中心建設的兩個面向：基礎設施審查速度，以及電網升級費用由誰承擔。加速許可不等於降低所有建置成本，費用分擔仍是觀察重點。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "依據中央社報導正文節錄撰寫，未取得全文或法案原文；目前資料未提供資料中心須負擔的金額與具體計算方式。"
+    },
+    {
+      "id": "2026-11-20-evening:event-10",
+      "original_id": "event-10",
+      "category": "security",
+      "is_headline": false,
+      "title_zh": "Fireworks揭露兩起資安事件，Notion停用服務凸顯模型代管資料風險",
+      "lede_zh": "企業模型代管業者Fireworks今年秋季揭露兩起資安事件，分別涉及API憑證與客戶資料外洩。Notion表示，不到1%的工作區有AI聊天紀錄暴露，並已中斷與Fireworks的服務連接，讓企業採用外部AI平台的資料保護問題浮上檯面。\n\n兩起事件的入侵路徑與受影響資料不同。其中一起，駭客取得少數帳戶以機密資訊形式儲存的API金鑰與權杖；另一起則是攻擊者入侵Fireworks的雲端供應商，再進入開發系統，竊取客戶資料，包括帳務紀錄與部分資料集。\n\nFireworks共同創辦人Chenyu Zhao表示，攻擊動機很大一部分是尋找API金鑰與機密資訊，再到非法市場轉售模型使用額度。他宣稱，公司對推論流量的零資料保留承諾，沒有跡象顯示已遭破壞；但這項說法不代表所有產品都不會儲存資料。\n\n針對Notion資料為何外洩，Zhao解釋，Notion使用的是批次預測服務，需要上傳並儲存資料集，因此本質上不是零資料保留產品。他表示，公司正將這類服務轉向線上處理流程，只在必要期間保留資料。Fireworks以開放權重模型及客戶資料調校為主要業務，這次事件也凸顯，同一平台內不同服務的儲存方式與保留政策，必須分別檢視。",
+      "bullets_zh": [],
+      "source": {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/19/anthropic-rival-says-companies-can-mostly-skip-the-pricey-models/",
+        "published_at": "2026-11-20T00:26:03+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-article",
+      "evidence_note_zh": "依來源文章整理。",
+      "editorial_analysis_zh": "企業評估AI代管服務時，不能只看平台是否宣稱零資料保留，還須確認承諾適用的產品、批次資料儲存方式，以及雲端與開發環境的存取邊界。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "已取得TechCrunch報導正文。攻擊動機、零資料保留未受破壞及服務調整進度，均為Fireworks共同創辦人的說法，未取得獨立技術驗證資料。"
+    },
+    {
+      "id": "2026-11-20-evening:event-15",
+      "original_id": "event-15",
+      "category": "security",
+      "is_headline": false,
+      "title_zh": "韓國稅務師考生坦承用AI作弊，政府要求研發偵測技術、改革考試管理",
+      "lede_zh": "韓國國家稅務師資格考試一名榜首考生坦承利用人工智慧作弊，引發對考試公平性的關注。總統李在明11月20日要求主管機關與AI企業合作，追查涉嫌作弊案件並追究責任，同時檢討國家考試制度、開發偵測及阻止作弊的技術。\n\n在前一天舉行的大學修學能力試驗中，韓國曾在全國發送3次緊急災難簡訊，利用警報聲找出違規攜帶手機進入考場的考生，仍有考生被查獲違規。這些手機違規案件與稅務師考生坦承使用AI作弊，是不同層次的事實，不能將攜帶手機直接等同於已使用AI作答。\n\n李在明在首席幕僚會議上表示，人工智慧帶來的問題已延伸至考試、評量及招聘制度，可能造成結構性的不公平。他認為，過去慣用的防範方式恐已難以有效阻止相關作弊行為，必須因應技術變化，全面檢討考試制度。\n\n他要求政府與民間合作，除了研發偵測與防堵技術，也要強化考試管理標準、改善考場監督，並為作弊及違反防止再犯措施的行為制定嚴格處罰標準。這次提出的是後續改革與技術開發方向，並非已完成部署的AI作弊偵測方案。",
+      "bullets_zh": [],
+      "source": {
+        "name": "中央社國際",
+        "url": "https://www.cna.com.tw/news/aopl/202611200159.aspx",
+        "published_at": "2026-11-20T15:15:24+08:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "AI濫用使考試管理不只涉及考場裝置管制，也涉及評量可信度。後續應分別檢視作弊證據、偵測技術的可靠性與處罰標準，避免把一般違規或技術警示直接當成AI作弊定論。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "本則依中央社報導節錄撰寫，未取得全文、作弊案件調查資料或偵測技術評估。考生坦承使用AI與考場查獲手機違規分別敘述；現有資料未提供偵測工具的準確率或實施成效。"
+    },
+    {
+      "id": "2026-11-20-evening:event-04",
+      "original_id": "event-04",
+      "category": "dev",
+      "is_headline": false,
+      "title_zh": "Kimi Code CLI新增原生Bedrock連線，可沿用AWS憑證與單一登入",
+      "lede_zh": "Kimi Code CLI自v2.7.0起新增原生Bedrock提供者，讓開發者連接Amazon Bedrock模型時，可沿用標準AWS憑證鏈，包括具名設定檔與單一登入（SSO），不必另外取得、手動管理一組Bedrock API金鑰。AWS公布的設定說明，將這次變化聚焦在程式開發代理的驗證與連線流程。\n\n過去透過相容OpenAI的介面連線，使用者須設定區域端點並提供Bedrock API金鑰。新方式則可從既有AWS環境解析憑證，自動產生及更新短效金鑰，無須把AWS存取金鑰或手動產生的Bedrock金鑰寫入Kimi Code設定檔；但若明確提供API金鑰，仍會優先使用該金鑰。\n\n設定流程尚非全自動。依AWS說明，桌面版與網頁版介面尚未提供這套憑證鏈所需的全部欄位，須直接編輯config.toml。開發者也必須明確設定AWS區域，不能只依賴AWS CLI設定檔中的區域資訊；多數Bedrock模型的能力亦不會自動辨識，須依模型支援情況宣告工具使用、影像輸入等功能。\n\nAWS提醒，介面顯示「已連線」不代表憑證、權限、模型存取與網路路徑均已驗證，應實際送出小型請求確認。公司也建議採用短期憑證與最小權限，並在核准前檢查代理提出的檔案修改及指令。此次文件以Kimi K3.1 Pro Highspeed示範連線，重點是CLI整合方式，而非新模型發布。",
+      "bullets_zh": [],
+      "source": {
+        "name": "AWS Machine Learning",
+        "url": "https://aws.amazon.com/blogs/machine-learning/use-kimi-code-cli-with-models-on-amazon-bedrock/",
+        "published_at": "2026-11-20T00:33:30+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "這項整合的價值在於讓開發代理沿用既有身分驗證流程，而非免除憑證管理責任。導入時仍須分別確認區域、模型能力與實際呼叫權限。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "來源為AWS Machine Learning官方文章節錄，取得標示為publisher-excerpt，非完整網頁全文；功能與設定限制依AWS說明整理，未進行獨立實測。"
+    },
+    {
+      "id": "2026-11-20-evening:event-06",
+      "original_id": "event-06",
+      "category": "dev",
+      "is_headline": false,
+      "title_zh": "SageMaker年度推論更新回顧：擴充GPU調度、服務框架與跨區域路由",
+      "lede_zh": "AWS在Amazon SageMaker Inference的2026年功能回顧第二篇中，整理模型上線後的部署與調度更新，涵蓋推論設定建議、GPU資源配置、受管NVIDIA Dynamo及跨區域、跨帳號端點路由。這是年度功能彙整，並非所有功能同日推出。\n\n部署設定方面，推論建議已擴及SageMaker AI Studio與Python SDK v3，可依延遲、吞吐量或成本目標比較候選配置，也納入LoRA配接器與服務水準要求下的並行請求量搜尋。AWS表示，相關工具會在GPU基礎設施上執行評測；其建議與排序是服務產出的結果，並非獨立評測結論。\n\nGPU配置則增加控制台管理推論元件，以及利用NVIDIA Multi-Instance GPU切分資源的方式。依AWS說明，切分後的GPU運算與記憶體相互隔離，但同一執行個體上的模型仍共享主機CPU、網路等資源，且依完整執行個體時數計費，並非切分後就降低每小時單價。\n\n大型模型服務方面，HyperPod Inference加入受管NVIDIA Dynamo，支援跨節點分片、將提示處理與詞元生成分開部署，以及依KV快取狀態路由。HyperPod的Inference Gateway則可參考快取使用率、排隊情況與LoRA配接器所在位置分派請求。\n\n跨區域推論路由處理的是另一層調度：將請求送往團隊已部署、提供相同模型的端點，並支援跨帳號使用。它不會自動增加容量、複製模型或部署端點；應用程式可限制允許處理請求的區域，端點擁有者也可設定接收跨區域流量的上限。",
+      "bullets_zh": [],
+      "source": {
+        "name": "AWS Machine Learning",
+        "url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-launches-in-review-part-2/",
+        "published_at": "2026-11-20T00:34:07+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "這批更新分別處理部署配置、單機資源利用與跨區域流量調度，不能互相替代。尤其路由只能使用既有端點容量，評估導入時仍須區分配置最佳化與實際容量擴充。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "來源為AWS Machine Learning官方年度回顧文章節錄，取得標示為publisher-excerpt；本次提供24,000字元，原擷取內容為29,266字元，後段未完整提供。功能、評測流程與效益說明均來自AWS，未進行獨立實測；文中的假想客服團隊未作為真實企業案例使用。"
+    },
+    {
+      "id": "2026-11-20-evening:event-02",
+      "original_id": "event-02",
+      "category": "ai-tools",
+      "is_headline": false,
+      "title_zh": "OpenAI向少數ChatGPT Plus用戶測試開放Dots，並擴及Business Standard",
+      "lede_zh": "OpenAI正在向少數ChatGPT Plus使用者測試開放Dots個人代理，並宣布將服務擴及所有ChatGPT Business Standard使用者。這項功能先前已提供給較高階方案，如今開始接觸月費20美元的Plus方案，但仍不是全面開放，也尚未確定會否成為永久提供的功能。\n\n依Engadget介紹，Dots主打持續執行工作，即使使用者沒有持續互動，也能推進任務。報導描述，它可透過OpenAI的外掛生態系與超過4,000個應用程式互動，也能連接使用者的電腦，代為操作或協同工作；使用者則可開啟代理的「電腦」查看進度。這些是報導所述的功能，並非本次獨立實測結果。\n\n開放資格與使用額度仍須分開看待。目前Pro與Business Premium訂閱者和代理進行不涉及複雜任務的對話，不計入一般ChatGPT使用額度；Plus與Business Standard是否享有同等待遇，尚未明確。因此，取得Dots存取權，不能直接解讀為相關任務不受原有額度限制。\n\n這次擴大開放之外，Dots也新增iOS小工具、Shortcuts整合、iMessage與RCS支援，以及透過iOS通知回覆等功能。OpenAI的ChatGPT工程主管Thibault Sottiaux表示，團隊將在擴大測試時持續蒐集回饋；其對主動執行能力改善的評價，仍屬公司說法。",
+      "bullets_zh": [],
+      "source": {
+        "name": "Engadget",
+        "url": "https://www.engadget.com/2322656/openai-is-testing-dots-personal-agents-on-its-20-per-month-plus-tier/",
+        "published_at": "2026-11-20T07:31:25+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "這次變化的重點是較低月費方案開始取得代理測試資格，而非所有Plus用戶都已能使用。對評估導入成本的使用者而言，開放範圍、額度計算與是否長期提供，仍是不同且尚未全部釐清的問題。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "僅取得Engadget報導節錄，未直接取得OpenAI公告、方案條款或實測資料。代理能力及公司主管說法依節錄整理；Plus與Business Standard的額度待遇，以及Plus開放是否永久，現有資料未提供明確答案。"
+    },
+    {
+      "id": "2026-11-20-evening:event-03",
+      "original_id": "event-03",
+      "category": "ai-tools",
+      "is_headline": false,
+      "title_zh": "Hermes Agent將整合Microsoft Teams，新增團隊技能分享機制",
+      "lede_zh": "Nous Research的開源工具Hermes Agent將整合Microsoft Teams，讓企業員工能在協作對話中交付任務並檢視結果。另一項新功能Collective Wisdom，則著眼於把個人使用代理完成工作的流程，轉為經審查後可供團隊分享的技能。\n\n依Nous Research的說明，員工可交付財務分析、文件草擬或收件匣整理等任務，並在同一個對話中查看成果。Hermes的桌面應用程式也已在Microsoft Store提供。公司表示，代理在Azure Container Apps Sandboxes的隔離微型虛擬機環境中運行；這是其部署架構說明，並非獨立安全驗證。\n\n技能重用是這次功能設計的另一個重點。Hermes會自動將成功的工作流程轉成由描述與程式碼組成的技能，Collective Wisdom則讓員工在審查後與團隊分享。其設計不只是保留一次任務的結果，而是讓其他成員能重用處理流程。\n\nNous Research另表示，這些累積的知識會留在企業內部，不會成為任何人工智慧供應商的訓練資料。目前提供的資訊仍以產品設計與公司說明為主，尚不足以判定企業實際導入後的效率改善、技能品質或資料保護成效。",
+      "bullets_zh": [],
+      "source": {
+        "name": "The Decoder",
+        "url": "https://the-decoder.com/hermes-agents-collective-wisdom-feature-turns-one-employees-ai-trick-into-the-whole-teams-skill/",
+        "published_at": "2026-11-20T09:59:51+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "將代理操作轉為團隊可重用的技能，有機會降低重複建立流程的負擔；但分享前的審查如何執行，以及技能能否適用不同任務，仍是評估這類工具時需要釐清的環節。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "僅取得The Decoder報導節錄，未取得Nous Research官方文件、部署測試或企業導入成效資料。隔離執行環境與資料不供模型訓練等內容均為Nous Research的說明，未經獨立驗證。"
+    },
+    {
+      "id": "2026-11-20-evening:event-08",
+      "original_id": "event-08",
+      "category": "taiwan",
+      "is_headline": false,
+      "title_zh": "AI供應鏈推升10月外銷訂單至1238.2億美元，經部估全年突破1.1兆",
+      "lede_zh": "台灣10月外銷訂單達1238.2億美元，創歷年單月新高，年增78.3%，連續21個月正成長。經濟部11月20日公布，前10月累計接單9430.2億美元、年增58.6%，同樣寫下歷年同期新高；AI需求是帶動電子與資訊通信產品訂單的重要動能。\n\n兩大科技產品類別中，資訊通信產品10月接單467.7億美元、年增107.2%；電子產品539.1億美元、年增89.8%。經濟部統計處長黃偉傑說，表現優於預期，電子產品主要受IC設計與晶片通路業者接獲大單帶動，資通訊產品則是手機銷售比原先推估好。他推測，手機表現與機種分散及價格上漲有關。\n\nAI需求也延伸至材料與設備。基本金屬製品接單23.4億美元、年增22%，經濟部指出，AI供應鏈需求帶動銅箔及銅箔基板訂單；機械產品接單24.4億美元、年增36.3%，則受半導體業者擴產，帶動半導體與自動化設備訂單成長。\n\n不過，科技相關貨品並非全面成長。光學器材10月接單16.8億美元、年減1.8%，面板需求仍處低檔；光學檢測與量測設備雖受惠AI應用、相關供應鏈訂單增加，仍僅抵銷部分減幅。\n\n展望後續，統計處預估11月接單1150億至1187億美元，年增57.6%至62.7%，前11月累計可達1兆580億至1兆618億美元。黃偉傑認為，全年突破1.1兆美元已相當明確，但挑戰1.2兆美元仍有難度；這些數字屬預估，與已公布的10月實績不同。",
+      "bullets_zh": [],
+      "source": {
+        "name": "中央社財經",
+        "url": "https://www.cna.com.tw/news/afe/202611200273.aspx",
+        "published_at": "2026-11-20T18:19:30+08:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "這批數據的重點不只有接單總額創高，也呈現AI需求向材料與生產設備延伸。不過，光學器材仍衰退，不能把供應鏈部分環節的成長解讀為所有科技貨品同步復甦。",
+      "supporting_sources": [
+        {
+          "source_name": "中央社財經",
+          "source_title": "10月外銷訂單1238億美元續創高　年增78.3%連21紅",
+          "source_url": "https://www.cna.com.tw/news/afe/202611200201.aspx"
+        }
+      ],
+      "source_evidence_note_zh": "本則整合中央社兩篇已取得的報導節錄，並非兩家獨立媒體的交叉查證；未另取得經濟部原始統計表。11月及全年數字為統計處與官員預估。"
+    }
+  ],
+  "breaking_news": [],
+  "meta": {
+    "generated_at": "2026-11-20T19:16:20.015528+08:00",
+    "total_articles": 16,
+    "schema_version": "2.0",
+    "edition": "evening",
+    "model": "gpt-6.1-sol",
+    "source_mode": "publisher-articles",
+    "reading_time_estimated": true
+  },
+  "window_start": "2026-11-20T07:00:00+08:00",
+  "window_end": "2026-11-20T19:00:00+08:00",
+  "publication": {
+    "published_at": "2026-11-20T20:00:55.064948+08:00",
+    "issue_sha256": "0d7568865d34946469304d89e5e8d6694c86e0159556c0ebe6f05a853d1550a1",
+    "identity": "2026-11-20-evening",
+    "legacy_archive_untouched": true
+  }
+}

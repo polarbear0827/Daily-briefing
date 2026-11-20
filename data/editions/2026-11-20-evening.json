@@ -1,0 +1,3174 @@
+{
+  "articles": [
+    {
+      "body_provenance": {
+        "adapter": "techcrunch-entry-v1",
+        "body_sha256": "9e6b280d13dbfef499657d240f2aef9e379a3ff1fcf834d71c9a8259ca928a25",
+        "canonical_url": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
+        "completeness": "full",
+        "extracted_chars": 2191,
+        "extraction_completeness": "full",
+        "observed_at": "2026-11-20T11:01:41.656876+00:00",
+        "page_published_at": "2026-11-20T00:56:01+00:00",
+        "page_title": "Apple may be developing its own AI agent that runs your Mac",
+        "raw_sha256": "ffe58b9aaf94facc6f2ac701e3ea563c5c64ac1cb793444cec7415e20a857782",
+        "rss_origin_sha256": "b3b3a3ae031a4d7e7aad7950ed848a0fe3e276d67600f74c93155149ff0b92a5",
+        "source_url": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
+        "supplied_chars": 2191,
+        "supplied_sha256": "9e6b280d13dbfef499657d240f2aef9e379a3ff1fcf834d71c9a8259ca928a25"
+      },
+      "candidate_ids": [
+        "8288c457eabd2464774e3857",
+        "3c164d4a9d580aa15747bab7"
+      ],
+      "category": "tech-product",
+      "claims": [
+        {
+          "evidence_id": "8288c457eabd2464774e3857",
+          "quote": "s that the agents should be able to move “fluidly between tools” and “carry out multi-step tasks across apps, browsers, "
+        },
+        {
+          "evidence_id": "3c164d4a9d580aa15747bab7",
+          "quote": "put users at risk\" by unwittingly allowing Full Disk Access. Apple then rolled out new controls earlier this week to giv"
+        }
+      ],
+      "editorial_analysis_zh": "代理能做多少事，與平台願意授予多少權限密切相關。觀察Apple後續布局時，應將招募目標、實際交付功能與授權機制分開檢視，不能把開發願景當成產品能力。",
+      "evidence_field": "article_body",
+      "evidence_kind": "publisher-article",
+      "id": "event-01",
+      "photo": null,
+      "published_at": "2026-11-20T00:56:01+00:00",
+      "source_access_note_zh": "已取得TechCrunch報導全文及Engadget報導節錄；未直接取得Apple職缺原頁或開發者通知。開發方向與權限措施依上述報導整理，職缺所列能力及安全目標未經獨立驗證。",
+      "source_id": "user-069",
+      "source_name": "TechCrunch AI",
+      "source_title": "Apple may be developing its own AI agent that runs your Mac",
+      "source_url": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
+      "summary_zh": "Apple新刊登的工程主管職缺，透露公司正在布局可代替使用者操作電腦的人工智慧代理。招募內容涵蓋代理平台的技術方向與開發交付，但目前揭露的是開發目標，並非已推出的產品，相關工作仍處於早期階段。\n\n職缺描繪的代理不只回答問題，還要能瀏覽網站、跨應用程式工作、執行指令、撰寫與除錯程式碼，以及呼叫服務。Apple希望代理能在瀏覽器、命令列、程式碼與API等工具之間切換，選擇適合各步驟的工具，完成多階段任務。職缺也將隱私、可靠性與安全列為目標，這些要求尚不能視為已實現或經驗證的能力。\n\n與自家代理開發並行的是第三方存取權限管制。Apple已向開發者提醒，代理可能在使用者未充分察覺的情況下取得完整磁碟存取權，並推出加強使用者掌握資料存取範圍的控制措施。另有規劃指出，後續macOS 27.3將加入警告，勸阻使用者授予第三方代理完整存取權。\n\n這使Apple的代理布局同時涉及功能與授權兩個層面：一方面希望軟體能跨工具完成工作，另一方面要求高權限存取必須經過更明確的使用者操作。目前仍無法從招募內容判定最終產品的功能範圍或正式推出時程。",
+      "supporting_sources": [
+        {
+          "body_provenance": {
+            "adapter": "engadget-columns-v1",
+            "body_sha256": "35b3a88f4102cbd98b3a4ae8cfac4d41478cac323ce0ff581ead98d8e028d267",
+            "canonical_url": "https://www.engadget.com/2322586/job-posting-seemingly-confirms-apple-is-working-on-its-own-ai-agent-for-coding-and-other-tasks/",
+            "completeness": "excerpt",
+            "extracted_chars": 1436,
+            "extraction_completeness": "excerpt",
+            "observed_at": "2026-11-20T11:01:49.887336+00:00",
+            "page_published_at": "2026-11-20T00:03:22+00:00",
+            "page_title": "Job posting seemingly confirms Apple is working on its own AI agent for coding and other tasks",
+            "raw_sha256": "cf9ef730d7516f77d03e93d7cf97ab9757c90d08328e6a9762375a05f101f07e",
+            "rss_origin_sha256": "3a63a8782125c26a58710b0db379ef8423ec2c163643a6e64a36ffa5609d5ad6",
+            "source_url": "https://www.engadget.com/2322586/job-posting-seemingly-confirms-apple-is-working-on-its-own-ai-agent-for-coding-and-other-tasks/",
+            "supplied_chars": 1436,
+            "supplied_sha256": "35b3a88f4102cbd98b3a4ae8cfac4d41478cac323ce0ff581ead98d8e028d267"
+          },
+          "evidence_field": "article_body",
+          "evidence_kind": "publisher-excerpt",
+          "id": "3c164d4a9d580aa15747bab7",
+          "published_at": "2026-11-20T00:03:22+00:00",
+          "source_name": "Engadget",
+          "source_title": "Job posting seemingly confirms Apple is working on its own AI agent for coding and other tasks",
+          "source_url": "https://www.engadget.com/2322586/job-posting-seemingly-confirms-apple-is-working-on-its-own-ai-agent-for-coding-and-other-tasks/"
+        }
+      ],
+      "title_zh": "Apple職缺透露電腦操作代理布局，第三方存取權限同步收緊"
+    },
+    {
+      "body_provenance": {
+        "adapter": "engadget-columns-v1",
+        "body_sha256": "eee13068993f0c00486581400611eee810f276812d7c302dc521365a8e942d68",
+        "canonical_url": "https://www.engadget.com/2322656/openai-is-testing-dots-personal-agents-on-its-20-per-month-plus-tier/",
+        "completeness": "excerpt",
+        "extracted_chars": 2151,
+        "extraction_completeness": "excerpt",
+        "observed_at": "2026-11-20T11:01:40.489067+00:00",
+        "page_published_at": "2026-11-20T07:31:25+00:00",
+        "page_title": "OpenAI is testing Dots personal agents on its $20 per month Plus tier",
+        "raw_sha256": "1e1ada9c24a12b9d587a9ee3fbd3eb111d08e6c7f60cf9c87050eb4d8520e999",
+        "rss_origin_sha256": "0eaaeba3b63f07f6650626a9d9a2c3d43874ddf7d6eda484fd2513650f2cbcf8",
+        "source_url": "https://www.engadget.com/2322656/openai-is-testing-dots-personal-agents-on-its-20-per-month-plus-tier/",
+        "supplied_chars": 2151,
+        "supplied_sha256": "eee13068993f0c00486581400611eee810f276812d7c302dc521365a8e942d68"
+      },
+      "candidate_ids": [
+        "bceeab1525cdfc1823c51de2"
+      ],
+      "category": "ai-tools",
+      "claims": [
+        {
+          "evidence_id": "bceeab1525cdfc1823c51de2",
+          "quote": "t it's testing Dots with a small number of users on the cheaper $20 per month ChatGPT Plus plan.\n\n\"Heads up, we're start"
+        },
+        {
+          "evidence_id": "bceeab1525cdfc1823c51de2",
+          "quote": "ess Standard users starting today, Tibo said. For higher-tier plans, conversations with the agents don't count toward re"
+        }
+      ],
+      "editorial_analysis_zh": "這次變化的重點是較低月費方案開始取得代理測試資格，而非所有Plus用戶都已能使用。對評估導入成本的使用者而言，開放範圍、額度計算與是否長期提供，仍是不同且尚未全部釐清的問題。",
+      "evidence_field": "article_body",
+      "evidence_kind": "publisher-excerpt",
+      "id": "event-02",
+      "photo": null,
+      "published_at": "2026-11-20T07:31:25+00:00",
+      "source_access_note_zh": "僅取得Engadget報導節錄，未直接取得OpenAI公告、方案條款或實測資料。代理能力及公司主管說法依節錄整理；Plus與Business Standard的額度待遇，以及Plus開放是否永久，現有資料未提供明確答案。",
+      "source_id": "agent-added-engadget",
+      "source_name": "Engadget",
+      "source_title": "OpenAI is testing Dots personal agents on its $20 per month Plus tier",
+      "source_url": "https://www.engadget.com/2322656/openai-is-testing-dots-personal-agents-on-its-20-per-month-plus-tier/",
+      "summary_zh": "OpenAI正在向少數ChatGPT Plus使用者測試開放Dots個人代理，並宣布將服務擴及所有ChatGPT Business Standard使用者。這項功能先前已提供給較高階方案，如今開始接觸月費20美元的Plus方案，但仍不是全面開放，也尚未確定會否成為永久提供的功能。\n\n依Engadget介紹，Dots主打持續執行工作，即使使用者沒有持續互動，也能推進任務。報導描述，它可透過OpenAI的外掛生態系與超過4,000個應用程式互動，也能連接使用者的電腦，代為操作或協同工作；使用者則可開啟代理的「電腦」查看進度。這些是報導所述的功能，並非本次獨立實測結果。\n\n開放資格與使用額度仍須分開看待。目前Pro與Business Premium訂閱者和代理進行不涉及複雜任務的對話，不計入一般ChatGPT使用額度；Plus與Business Standard是否享有同等待遇，尚未明確。因此，取得Dots存取權，不能直接解讀為相關任務不受原有額度限制。\n\n這次擴大開放之外，Dots也新增iOS小工具、Shortcuts整合、iMessage與RCS支援，以及透過iOS通知回覆等功能。OpenAI的ChatGPT工程主管Thibault Sottiaux表示，團隊將在擴大測試時持續蒐集回饋；其對主動執行能力改善的評價，仍屬公司說法。",
+      "supporting_sources": [],
+      "title_zh": "OpenAI向少數ChatGPT Plus用戶測試開放Dots，並擴及Business Standard"
+    },
+    {
+      "body_provenance": {
+        "adapter": "decoder-wrapper-v1",
+        "body_sha256": "3e8fa241a785cebb76e8b4887b085194cb7ccd755fe1c62c1f458fa7c9da90f1",
+        "canonical_url": "https://the-decoder.com/hermes-agents-collective-wisdom-feature-turns-one-employees-ai-trick-into-the-whole-teams-skill/",
+        "completeness": "excerpt",
+        "extracted_chars": 1253,
+        "extraction_completeness": "excerpt",
+        "observed_at": "2026-11-20T11:01:39.891775+00:00",
+        "page_published_at": "2026-11-20T09:59:51+00:00",
+        "page_title": "Hermes Agent's Collective Wisdom feature turns one employee's AI trick into the whole team's skill",
+        "raw_sha256": "5b548f07866024da3b1ae1073c1dd404e230408d3c3982da18f5de68a5bfe792",
+        "rss_origin_sha256": "bfa7b8714ac7ca5aa4eab4cefc7b279ffa66fa3855cceb36f83e493d9c87d500",
+        "source_url": "https://the-decoder.com/hermes-agents-collective-wisdom-feature-turns-one-employees-ai-trick-into-the-whole-teams-skill/",
+        "supplied_chars": 1253,
+        "supplied_sha256": "3e8fa241a785cebb76e8b4887b085194cb7ccd755fe1c62c1f458fa7c9da90f1"
+      },
+      "candidate_ids": [
+        "a4af6a545f42012dc1db213c"
+      ],
+      "category": "ai-tools",
+      "claims": [
+        {
+          "evidence_id": "a4af6a545f42012dc1db213c",
+          "quote": "Companies will soon be able to run the open-source Hermes Agent from Nous Research directly inside Microsoft Teams. Acco"
+        },
+        {
+          "evidence_id": "a4af6a545f42012dc1db213c",
+          "quote": "le skills made up of a description and code. A new feature called \"Collective Wisdom\" lets employees share these skills "
+        }
+      ],
+      "editorial_analysis_zh": "將代理操作轉為團隊可重用的技能，有機會降低重複建立流程的負擔；但分享前的審查如何執行，以及技能能否適用不同任務，仍是評估這類工具時需要釐清的環節。",
+      "evidence_field": "article_body",
+      "evidence_kind": "publisher-excerpt",
+      "id": "event-03",
+      "photo": null,
+      "published_at": "2026-11-20T09:59:51+00:00",
+      "source_access_note_zh": "僅取得The Decoder報導節錄，未取得Nous Research官方文件、部署測試或企業導入成效資料。隔離執行環境與資料不供模型訓練等內容均為Nous Research的說明，未經獨立驗證。",
+      "source_id": "user-072",
+      "source_name": "The Decoder",
+      "source_title": "Hermes Agent's Collective Wisdom feature turns one employee's AI trick into the whole team's skill",
+      "source_url": "https://the-decoder.com/hermes-agents-collective-wisdom-feature-turns-one-employees-ai-trick-into-the-whole-teams-skill/",
+      "summary_zh": "Nous Research的開源工具Hermes Agent將整合Microsoft Teams，讓企業員工能在協作對話中交付任務並檢視結果。另一項新功能Collective Wisdom，則著眼於把個人使用代理完成工作的流程，轉為經審查後可供團隊分享的技能。\n\n依Nous Research的說明，員工可交付財務分析、文件草擬或收件匣整理等任務，並在同一個對話中查看成果。Hermes的桌面應用程式也已在Microsoft Store提供。公司表示，代理在Azure Container Apps Sandboxes的隔離微型虛擬機環境中運行；這是其部署架構說明，並非獨立安全驗證。\n\n技能重用是這次功能設計的另一個重點。Hermes會自動將成功的工作流程轉成由描述與程式碼組成的技能，Collective Wisdom則讓員工在審查後與團隊分享。其設計不只是保留一次任務的結果，而是讓其他成員能重用處理流程。\n\nNous Research另表示，這些累積的知識會留在企業內部，不會成為任何人工智慧供應商的訓練資料。目前提供的資訊仍以產品設計與公司說明為主，尚不足以判定企業實際導入後的效率改善、技能品質或資料保護成效。",
+      "supporting_sources": [],
+      "title_zh": "Hermes Agent將整合Microsoft Teams，新增團隊技能分享機制"
+    },
+    {
+      "body_provenance": {
+        "adapter": "aws-rdfa-body-v1",
+        "body_sha256": "dcc011f9f83a65ac2a9c5fb56ef4bbd13cea4e9ec00b1c95113a9e7fd1934e33",
+        "canonical_url": "https://aws.amazon.com/blogs/machine-learning/use-kimi-code-cli-with-models-on-amazon-bedrock/",
+        "completeness": "excerpt",
+        "extracted_chars": 15358,
+        "extraction_completeness": "excerpt",
+        "observed_at": "2026-11-20T11:01:43.043831+00:00",
+        "page_published_at": "2026-11-19T16:33:30-08:00",
+        "page_title": "Use Kimi Code CLI with models on Amazon Bedrock",
+        "raw_sha256": "ee9edaebbb473c8c9821187a407ab31a78096470e50c5271bae2d22cfd2eeb63",
+        "rss_origin_sha256": "4d657ab1291dc6011302112957bd22d1ccaa022672979d63e408a3832aa20192",
+        "source_url": "https://aws.amazon.com/blogs/machine-learning/use-kimi-code-cli-with-models-on-amazon-bedrock/",
+        "supplied_chars": 15358,
+        "supplied_sha256": "dcc011f9f83a65ac2a9c5fb56ef4bbd13cea4e9ec00b1c95113a9e7fd1934e33"
+      },
+      "candidate_ids": [
+        "5a5c979144e9fcd263552ed2"
+      ],
+      "category": "dev",
+      "claims": [
+        {
+          "evidence_id": "5a5c979144e9fcd263552ed2",
+          "quote": "ith v2.7.0, Moonshot AI adds a native bedrock provider to the CLI. You can now configure the agent to use your standard "
+        },
+        {
+          "evidence_id": "5a5c979144e9fcd263552ed2",
+          "quote": "AWS credential chain, including named profiles and single sign-on (SSO), instead of creating and managing a separate API"
+        }
+      ],
+      "editorial_analysis_zh": "這項整合的價值在於讓開發代理沿用既有身分驗證流程，而非免除憑證管理責任。導入時仍須分別確認區域、模型能力與實際呼叫權限。",
+      "evidence_field": "article_body",
+      "evidence_kind": "publisher-excerpt",
+      "id": "event-04",
+      "photo": null,
+      "published_at": "2026-11-20T00:33:30+00:00",
+      "source_access_note_zh": "來源為AWS Machine Learning官方文章節錄，取得標示為publisher-excerpt，非完整網頁全文；功能與設定限制依AWS說明整理，未進行獨立實測。",
+      "source_id": "user-082",
+      "source_name": "AWS Machine Learning",
+      "source_title": "Use Kimi Code CLI with models on Amazon Bedrock",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/use-kimi-code-cli-with-models-on-amazon-bedrock/",
+      "summary_zh": "Kimi Code CLI自v2.7.0起新增原生Bedrock提供者，讓開發者連接Amazon Bedrock模型時，可沿用標準AWS憑證鏈，包括具名設定檔與單一登入（SSO），不必另外取得、手動管理一組Bedrock API金鑰。AWS公布的設定說明，將這次變化聚焦在程式開發代理的驗證與連線流程。\n\n過去透過相容OpenAI的介面連線，使用者須設定區域端點並提供Bedrock API金鑰。新方式則可從既有AWS環境解析憑證，自動產生及更新短效金鑰，無須把AWS存取金鑰或手動產生的Bedrock金鑰寫入Kimi Code設定檔；但若明確提供API金鑰，仍會優先使用該金鑰。\n\n設定流程尚非全自動。依AWS說明，桌面版與網頁版介面尚未提供這套憑證鏈所需的全部欄位，須直接編輯config.toml。開發者也必須明確設定AWS區域，不能只依賴AWS CLI設定檔中的區域資訊；多數Bedrock模型的能力亦不會自動辨識，須依模型支援情況宣告工具使用、影像輸入等功能。\n\nAWS提醒，介面顯示「已連線」不代表憑證、權限、模型存取與網路路徑均已驗證，應實際送出小型請求確認。公司也建議採用短期憑證與最小權限，並在核准前檢查代理提出的檔案修改及指令。此次文件以Kimi K3.1 Pro Highspeed示範連線，重點是CLI整合方式，而非新模型發布。",
+      "supporting_sources": [],
+      "title_zh": "Kimi Code CLI新增原生Bedrock連線，可沿用AWS憑證與單一登入"
+    },
+    {
+      "body_provenance": {
+        "adapter": "aws-rdfa-body-v1",
+        "body_sha256": "f952e974cc759d3e0d673458d0d20d5ab7fad08bd6e3903b5a4b0c8d0f9de92f",
+        "canonical_url": "https://aws.amazon.com/blogs/machine-learning/enable-ai-agents-to-pay-for-aws-marketplace-x402-products-with-amazon-bedrock-agentcore-payments/",
+        "completeness": "excerpt",
+        "extracted_chars": 11311,
+        "extraction_completeness": "excerpt",
+        "observed_at": "2026-11-20T11:01:46.586506+00:00",
+        "page_published_at": "2026-11-19T15:02:16-08:00",
+        "page_title": "Enable AI agents to pay for AWS Marketplace x402 products with Amazon Bedrock AgentCore payments",
+        "raw_sha256": "f63d85a6cd3b62d885966934d56bcb1cdca15344c4bf8e272ed7a2403f58a9f4",
+        "rss_origin_sha256": "45ab07e1d2989334669ca0d0ebc07cdca52f84fed14e4ad7ce94a2509d525bb9",
+        "source_url": "https://aws.amazon.com/blogs/machine-learning/enable-ai-agents-to-pay-for-aws-marketplace-x402-products-with-amazon-bedrock-agentcore-payments/",
+        "supplied_chars": 11311,
+        "supplied_sha256": "f952e974cc759d3e0d673458d0d20d5ab7fad08bd6e3903b5a4b0c8d0f9de92f"
+      },
+      "candidate_ids": [
+        "4eab3c1f90feb8c76062190f"
+      ],
+      "category": "tech-product",
+      "claims": [
+        {
+          "evidence_id": "4eab3c1f90feb8c76062190f",
+          "quote": "day we extend that autonomy to AWS Marketplace, so agents can discover and buy x402-enabled software, APIs, data, and co"
+        },
+        {
+          "evidence_id": "4eab3c1f90feb8c76062190f",
+          "quote": "ntent, and pay in USD on the agent developer’s AWS bill, removing the need for stablecoin wallets or API keys.\n\nFigure 1"
+        }
+      ],
+      "editorial_analysis_zh": "代理採購不只是增加付款能力，也涉及誰能核准賣家、調整預算及追查支出。這次整合把採購與既有AWS帳務連在一起，角色權限與付款工作階段的設定因此值得一併檢視。",
+      "evidence_field": "article_body",
+      "evidence_kind": "publisher-excerpt",
+      "id": "event-05",
+      "photo": null,
+      "published_at": "2026-11-19T23:02:16+00:00",
+      "source_access_note_zh": "來源為AWS Machine Learning官方文章節錄，取得標示為publisher-excerpt，非完整網頁全文；交易流程與示範架構均為AWS提供，未獨立驗證付款控制或安全效益。",
+      "source_id": "user-082",
+      "source_name": "AWS Machine Learning",
+      "source_title": "Enable AI agents to pay for AWS Marketplace x402 products with Amazon Bedrock AgentCore payments",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/enable-ai-agents-to-pay-for-aws-marketplace-x402-products-with-amazon-bedrock-agentcore-payments/",
+      "summary_zh": "Amazon Bedrock AgentCore payments新增AWS Billing付款選項，讓人工智慧代理向支援x402的AWS Marketplace賣家按次購買軟體、API、資料與內容，費用以美元列入開發者的AWS帳單。AWS表示，這條付款路徑不需另備穩定幣錢包或API金鑰，將代理的自主採購延伸到Marketplace。\n\n交易從賣家回傳HTTP 402付款要求開始，回應內含簽署報價。代理將報價交給AgentCore payments檢查付款工作階段的預算，取得付款權杖後，再帶著權杖向賣家重新請求內容。上線時，AWS Billing支援的是每次請求固定報價的x402 exact方案，款項計入設置Payment Manager的AWS帳號。\n\n開發者須建立具備AWS Billing連接器的Payment Manager，並為任務設定付款工作階段與支出上限。AgentCore Gateway另新增選用的Marketplace連接器，協助代理尋找商品與端點；若組織採用Private Marketplace，代理只能購買其中允許的商品。首次向賣家購買時會建立協議，後續採購則持續依該協議追蹤。\n\n支出治理是這次整合的另一重點。AWS表示，開發者可透過AgentCore policy設定核准賣家與支出限制，交易可在AWS CloudTrail及AWS Cost Explorer查核。官方範例另將設定預算與執行付款的IAM角色分離，使代理不能自行提高預算；防止超支與企業安全效益仍屬AWS主張，不能視為獨立驗證結果。",
+      "supporting_sources": [],
+      "title_zh": "AgentCore付款功能接入AWS Marketplace，代理採購可併入AWS帳單"
+    },
+    {
+      "body_provenance": {
+        "adapter": "aws-rdfa-body-v1",
+        "body_sha256": "166e87d7d6604ab3531ca757db1db63705684ba4e76b0e81f74b2a56ddb1c069",
+        "canonical_url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-launches-in-review-part-2/",
+        "completeness": "excerpt",
+        "extracted_chars": 29266,
+        "extraction_completeness": "excerpt",
+        "observed_at": "2026-11-20T11:01:36.996120+00:00",
+        "page_published_at": "2026-11-19T16:34:07-08:00",
+        "page_title": "Amazon SageMaker Inference: 2026 launches in review, part 2",
+        "raw_sha256": "1d0cbd4d83bcb8f5b76017404121772a510bbabef9ab578cb3ba4f093503da1a",
+        "rss_origin_sha256": "ae320c2d2553680e0ba9f63055f56fe97225704df61c6b9ecf194ba144b72aaf",
+        "source_url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-launches-in-review-part-2/",
+        "supplied_chars": 24000,
+        "supplied_sha256": "c14670cbb10ff86acdfdb5f7a1a85e4e1b915cb616b4bd263431114334d18cd3"
+      },
+      "candidate_ids": [
+        "7fdd41f0ffe863d068ae62bd"
+      ],
+      "category": "dev",
+      "claims": [
+        {
+          "evidence_id": "7fdd41f0ffe863d068ae62bd",
+          "quote": "ditional routing strategies, broader support for model serving frameworks, and expanded multi-Region networking. The Inf"
+        },
+        {
+          "evidence_id": "7fdd41f0ffe863d068ae62bd",
+          "quote": "nds real-time and asynchronous requests across Regional endpoints a team has already deployed, in the same account or in"
+        }
+      ],
+      "editorial_analysis_zh": "這批更新分別處理部署配置、單機資源利用與跨區域流量調度，不能互相替代。尤其路由只能使用既有端點容量，評估導入時仍須區分配置最佳化與實際容量擴充。",
+      "evidence_field": "article_body",
+      "evidence_kind": "publisher-excerpt",
+      "id": "event-06",
+      "photo": null,
+      "published_at": "2026-11-20T00:34:07+00:00",
+      "source_access_note_zh": "來源為AWS Machine Learning官方年度回顧文章節錄，取得標示為publisher-excerpt；本次提供24,000字元，原擷取內容為29,266字元，後段未完整提供。功能、評測流程與效益說明均來自AWS，未進行獨立實測；文中的假想客服團隊未作為真實企業案例使用。",
+      "source_id": "user-082",
+      "source_name": "AWS Machine Learning",
+      "source_title": "Amazon SageMaker Inference: 2026 launches in review, part 2",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-launches-in-review-part-2/",
+      "summary_zh": "AWS在Amazon SageMaker Inference的2026年功能回顧第二篇中，整理模型上線後的部署與調度更新，涵蓋推論設定建議、GPU資源配置、受管NVIDIA Dynamo及跨區域、跨帳號端點路由。這是年度功能彙整，並非所有功能同日推出。\n\n部署設定方面，推論建議已擴及SageMaker AI Studio與Python SDK v3，可依延遲、吞吐量或成本目標比較候選配置，也納入LoRA配接器與服務水準要求下的並行請求量搜尋。AWS表示，相關工具會在GPU基礎設施上執行評測；其建議與排序是服務產出的結果，並非獨立評測結論。\n\nGPU配置則增加控制台管理推論元件，以及利用NVIDIA Multi-Instance GPU切分資源的方式。依AWS說明，切分後的GPU運算與記憶體相互隔離，但同一執行個體上的模型仍共享主機CPU、網路等資源，且依完整執行個體時數計費，並非切分後就降低每小時單價。\n\n大型模型服務方面，HyperPod Inference加入受管NVIDIA Dynamo，支援跨節點分片、將提示處理與詞元生成分開部署，以及依KV快取狀態路由。HyperPod的Inference Gateway則可參考快取使用率、排隊情況與LoRA配接器所在位置分派請求。\n\n跨區域推論路由處理的是另一層調度：將請求送往團隊已部署、提供相同模型的端點，並支援跨帳號使用。它不會自動增加容量、複製模型或部署端點；應用程式可限制允許處理請求的區域，端點擁有者也可設定接收跨區域流量的上限。",
+      "supporting_sources": [],
+      "title_zh": "SageMaker年度推論更新回顧：擴充GPU調度、服務框架與跨區域路由"
+    },
+    {
+      "body_provenance": {
+        "adapter": "engadget-columns-v1",
+        "body_sha256": "206445f3f92a1c8b557ff034244e1169cea4eae32ec7f290dbaace48e8ccdfd7",
+        "canonical_url": "https://www.engadget.com/2322647/google-latest-home-page-redesign-makes-gemini-even-more-prominent/",
+        "completeness": "excerpt",
+        "extracted_chars": 2017,
+        "extraction_completeness": "excerpt",
+        "observed_at": "2026-11-20T11:01:47.354358+00:00",
+        "page_published_at": "2026-11-20T05:45:38+00:00",
+        "page_title": "Google's latest home page redesign makes Gemini even more prominent",
+        "raw_sha256": "17b97fdc3f737c3b3a216f428a4cd01c90add36320364f33047afbfee533de5e",
+        "rss_origin_sha256": "8586218876e973f4e67955cb2765b54412a92041649481fb1da9db3a614104a0",
+        "source_url": "https://www.engadget.com/2322647/google-latest-home-page-redesign-makes-gemini-even-more-prominent/",
+        "supplied_chars": 2017,
+        "supplied_sha256": "206445f3f92a1c8b557ff034244e1169cea4eae32ec7f290dbaace48e8ccdfd7"
+      },
+      "candidate_ids": [
+        "28b80124c4cf7893361d5d20"
+      ],
+      "category": "tech-product",
+      "claims": [
+        {
+          "evidence_id": "28b80124c4cf7893361d5d20",
+          "quote": "test feature is a collapsible sidebar in AI mode that shows your most recent searches, in case you want to jump back to "
+        },
+        {
+          "evidence_id": "28b80124c4cf7893361d5d20",
+          "quote": "on the left of the AI search window opens up the sidebar, showing all recent searches, both AI and organic. Then, select"
+        }
+      ],
+      "editorial_analysis_zh": "這次調整不只是增加搜尋紀錄入口，也讓一般搜尋紀錄能在AI模式中重新開啟。值得區分的是紀錄涵蓋範圍與開啟後的介面，兩者並不相同。",
+      "evidence_field": "article_body",
+      "evidence_kind": "publisher-excerpt",
+      "id": "event-07",
+      "photo": null,
+      "published_at": "2026-11-20T05:45:38+00:00",
+      "source_access_note_zh": "本則依Engadget已取得的報導節錄撰寫，未取得全文，亦未實際操作功能或獨立驗證Google所述測試效果。",
+      "source_id": "agent-added-engadget",
+      "source_name": "Engadget",
+      "source_title": "Google's latest home page redesign makes Gemini even more prominent",
+      "source_url": "https://www.engadget.com/2322647/google-latest-home-page-redesign-makes-gemini-even-more-prominent/",
+      "summary_zh": "Google正於全球桌面版搜尋推出可收合側欄，讓使用者在AI模式中查看近期搜尋、重新開啟先前查詢。這項更新位於Google搜尋的AI模式內，並非一般搜尋介面全面新增相同功能。\n\n使用者點選AI搜尋視窗左側，即可展開側欄，查看近期的AI與一般搜尋紀錄；點選其中一項描述，則會開啟該主題的AI模式搜尋視窗。因此，即使紀錄來自一般搜尋，從側欄重新進入時，開啟的仍是AI模式。側欄可透過右上方的關閉圖示收起。\n\nGoogle搜尋副總裁Robby Stein表示，使用者提出的問題愈來愈不只是一次查詢就結束，並稱測試中，側欄對延續探索與推進查詢有明顯幫助。這是Google對測試效果的說明，並不等同於已獲獨立驗證的使用成效。",
+      "supporting_sources": [],
+      "title_zh": "Google桌面搜尋AI模式新增側欄，可回到近期查詢"
+    },
+    {
+      "body_provenance": {
+        "adapter": "cna-paragraph-v1",
+        "body_sha256": "0894d7d8251e0d1a569987063f8d6afdc7783842deee4bf961b423d1ccf2d9c8",
+        "canonical_url": "https://www.cna.com.tw/news/afe/202611200273.aspx",
+        "completeness": "excerpt",
+        "extracted_chars": 1504,
+        "extraction_completeness": "excerpt",
+        "observed_at": "2026-11-20T11:01:44.808913+00:00",
+        "page_published_at": "2026-11-20T18:19+08:00",
+        "page_title": "經部估11月外銷訂單累計破兆美元　全年站穩1.1兆美元",
+        "raw_sha256": "93a18a5e7ed0004f0bbe57183c605fca428d248cefecf39bc9425b14bfd1f95e",
+        "rss_origin_sha256": "b759f6f859ff439de7765dae65cf097254576e547dc37226c0038f1148c4cdcf",
+        "source_url": "https://www.cna.com.tw/news/afe/202611200273.aspx",
+        "supplied_chars": 1504,
+        "supplied_sha256": "0894d7d8251e0d1a569987063f8d6afdc7783842deee4bf961b423d1ccf2d9c8"
+      },
+      "candidate_ids": [
+        "df78e9aa034328f4bc78a85d",
+        "3a06637f8dd251f072e6e6b1"
+      ],
+      "category": "taiwan",
+      "claims": [
+        {
+          "evidence_id": "3a06637f8dd251f072e6e6b1",
+          "quote": "（中央社記者曾筠庭台北20日電）人工智慧（AI）需求續強，經濟部今天公布10月外銷訂單為1238.2億美元，創歷年單月新高，年增78.3%，連21紅。\n\n累計今年前10月外銷訂單為9430.2億美元，寫下歷年同期新高，年增58.6%。\n\n按"
+        },
+        {
+          "evidence_id": "df78e9aa034328f4bc78a85d",
+          "quote": "貨品方面，10月基本金屬製品接單23.4億美元，年增22%，主要受惠AI供應鏈需求強勁，帶動銅箔及銅箔基板接單成長；機械產品接單24.4億美元，年增36.3%，主要因AI應用持續拓展，半導體業者擴大產能，帶動半導體設備及自動化設備訂單成長。"
+        }
+      ],
+      "editorial_analysis_zh": "這批數據的重點不只有接單總額創高，也呈現AI需求向材料與生產設備延伸。不過，光學器材仍衰退，不能把供應鏈部分環節的成長解讀為所有科技貨品同步復甦。",
+      "evidence_field": "article_body",
+      "evidence_kind": "publisher-excerpt",
+      "id": "event-08",
+      "photo": null,
+      "published_at": "2026-11-20T18:19:30+08:00",
+      "source_access_note_zh": "本則整合中央社兩篇已取得的報導節錄，並非兩家獨立媒體的交叉查證；未另取得經濟部原始統計表。11月及全年數字為統計處與官員預估。",
+      "source_id": "user-057",
+      "source_name": "中央社財經",
+      "source_title": "經部估11月外銷訂單累計破兆美元　全年站穩1.1兆美元",
+      "source_url": "https://www.cna.com.tw/news/afe/202611200273.aspx",
+      "summary_zh": "台灣10月外銷訂單達1238.2億美元，創歷年單月新高，年增78.3%，連續21個月正成長。經濟部11月20日公布，前10月累計接單9430.2億美元、年增58.6%，同樣寫下歷年同期新高；AI需求是帶動電子與資訊通信產品訂單的重要動能。\n\n兩大科技產品類別中，資訊通信產品10月接單467.7億美元、年增107.2%；電子產品539.1億美元、年增89.8%。經濟部統計處長黃偉傑說，表現優於預期，電子產品主要受IC設計與晶片通路業者接獲大單帶動，資通訊產品則是手機銷售比原先推估好。他推測，手機表現與機種分散及價格上漲有關。\n\nAI需求也延伸至材料與設備。基本金屬製品接單23.4億美元、年增22%，經濟部指出，AI供應鏈需求帶動銅箔及銅箔基板訂單；機械產品接單24.4億美元、年增36.3%，則受半導體業者擴產，帶動半導體與自動化設備訂單成長。\n\n不過，科技相關貨品並非全面成長。光學器材10月接單16.8億美元、年減1.8%，面板需求仍處低檔；光學檢測與量測設備雖受惠AI應用、相關供應鏈訂單增加，仍僅抵銷部分減幅。\n\n展望後續，統計處預估11月接單1150億至1187億美元，年增57.6%至62.7%，前11月累計可達1兆580億至1兆618億美元。黃偉傑認為，全年突破1.1兆美元已相當明確，但挑戰1.2兆美元仍有難度；這些數字屬預估，與已公布的10月實績不同。",
+      "supporting_sources": [
+        {
+          "body_provenance": {
+            "adapter": "cna-paragraph-v1",
+            "body_sha256": "88ba59a52809b6a520290069f80d2543a8420255c1492da11075e755625f2b96",
+            "canonical_url": "https://www.cna.com.tw/news/afe/202611200201.aspx",
+            "completeness": "excerpt",
+            "extracted_chars": 264,
+            "extraction_completeness": "excerpt",
+            "observed_at": "2026-11-20T11:02:29.902497+00:00",
+            "page_published_at": "2026-11-20T16:20+08:00",
+            "page_title": "10月外銷訂單1238億美元續創高　年增78.3%連21紅",
+            "raw_sha256": "4fa123b9aa9a8e9abcf925d7173d117e05760c02910f3f09799fff3ec7374306",
+            "rss_origin_sha256": "2dae3a4a41cec8ced92b776c21edffd4b361e7832cac17cb55e420ca52a1ba99",
+            "source_url": "https://www.cna.com.tw/news/afe/202611200201.aspx",
+            "supplied_chars": 264,
+            "supplied_sha256": "88ba59a52809b6a520290069f80d2543a8420255c1492da11075e755625f2b96"
+          },
+          "evidence_field": "article_body",
+          "evidence_kind": "publisher-excerpt",
+          "id": "3a06637f8dd251f072e6e6b1",
+          "published_at": "2026-11-20T16:20:54+08:00",
+          "source_name": "中央社財經",
+          "source_title": "10月外銷訂單1238億美元續創高　年增78.3%連21紅",
+          "source_url": "https://www.cna.com.tw/news/afe/202611200201.aspx"
+        }
+      ],
+      "title_zh": "AI供應鏈推升10月外銷訂單至1238.2億美元，經部估全年突破1.1兆"
+    },
+    {
+      "body_provenance": {
+        "adapter": "cna-paragraph-v1",
+        "body_sha256": "2b3da448a09cd289f6800907ac77989869ea947def6af2c2b140b39f89fd85c3",
+        "canonical_url": "https://www.cna.com.tw/news/ait/202611200054.aspx",
+        "completeness": "excerpt",
+        "extracted_chars": 866,
+        "extraction_completeness": "excerpt",
+        "observed_at": "2026-11-20T11:01:54.140204+00:00",
+        "page_published_at": "2026-11-20T10:24+08:00",
+        "page_title": "Anthropic上市首日先盛後衰　AI熱潮能否延續備受關注",
+        "raw_sha256": "069d936db2953be1ba2a2cce18708cc51fab144dc4e622131c991f8d45ff396f",
+        "rss_origin_sha256": "7f9445b6a705dc7c4aaf8abac0c7a414d214a2d750f39bb87f0633f716ac67ce",
+        "source_url": "https://www.cna.com.tw/news/ait/202611200054.aspx",
+        "supplied_chars": 866,
+        "supplied_sha256": "2b3da448a09cd289f6800907ac77989869ea947def6af2c2b140b39f89fd85c3"
+      },
+      "candidate_ids": [
+        "d2fa712f463adbc859525555"
+      ],
+      "category": "vc-business",
+      "claims": [
+        {
+          "evidence_id": "d2fa712f463adbc859525555",
+          "quote": "美元，較前一天訂定的每股83美元首次公開募股（IPO）發行價高出34%。不過，漲幅隨後收斂，終場收在97.17美元，較發行價上漲17%。\n\nAnthropic約2兆美元的完全稀釋估值，包含公司承諾給予員工、但尚未轉換為實際股分的股票選擇權及"
+        },
+        {
+          "evidence_id": "d2fa712f463adbc859525555",
+          "quote": "限制型股票單位。若以Anthropic目前已發行流通股數計算，今天市值最高達1.5兆美元，與特斯拉（Tesla）相當。\n\nAI技術雖然帶動經濟成長，但不斷攀升的債務規模，以及外界對AI可能帶來災難性後果的警告引發不安。反資料中心運動可能是民"
+        }
+      ],
+      "editorial_analysis_zh": "首日收盤仍高於發行價，但盤中漲幅收斂，不能僅憑掛牌首日表現判定AI投資熱度已穩定。估值口徑、營收成長與虧損變化，應分開檢視。",
+      "evidence_field": "article_body",
+      "evidence_kind": "publisher-excerpt",
+      "id": "event-09",
+      "photo": null,
+      "published_at": "2026-11-20T10:24:34+08:00",
+      "source_access_note_zh": "本則依中央社已取得的綜合外電報導節錄撰寫，未取得其引用的路透社報導、CNBC專訪全文或公司申報文件，亦未獨立核對交易與財務資料。",
+      "source_id": "user-058",
+      "source_name": "中央社科技",
+      "source_title": "Anthropic上市首日先盛後衰　AI熱潮能否延續備受關注",
+      "source_url": "https://www.cna.com.tw/news/ait/202611200054.aspx",
+      "summary_zh": "AI模型公司Anthropic於11月19日在那斯達克掛牌，首日股價開高後漲幅收斂。股票以111.50美元開盤，較每股83美元的首次公開募股發行價高出34%；終場收在97.17美元，仍較發行價上漲17%，但已低於開盤價。\n\n估值須區分不同口徑。Anthropic上市首日的完全稀釋估值一度約2兆美元，計入公司承諾給員工、尚未轉換為實際股份的股票選擇權與限制型股票單位；若僅以當時已發行流通股數計算，當天市值最高為1.5兆美元。兩項數字的計算基礎不同，不宜混用。\n\n營運方面，Anthropic第3季淨虧損縮小，營收較前一季成長47%，但營收成長速度已較前一季明顯放緩。公開市場給出的估值之外，公司能否維持成長、改善虧損，仍是觀察其長期經營表現的重點。\n\n執行長阿莫戴接受CNBC專訪時表示，希望未來某個時間取得投資等級信用評等，並將債務融資視為可在適當時機運用的工具。這是公司對未來融資方式的意願，並非已取得評等或已完成債務融資。\n\nTECHnalysis Research首席分析師歐唐納爾認為，這次上市是重建市場對AI潛力信心的重要一步，但仍須觀察其他AI業者、資料中心所處政治環境，以及Anthropic長期經營績效，才能判斷市場是否趨於穩定。",
+      "supporting_sources": [],
+      "title_zh": "Anthropic上市首日收漲17%，完全稀釋估值一度約2兆美元"
+    },
+    {
+      "body_provenance": {
+        "adapter": "techcrunch-entry-v1",
+        "body_sha256": "13a90ae44768dfb1d69b2134ec4196f1974faf6cdb7deaad81dd73f84057ab13",
+        "canonical_url": "https://techcrunch.com/2026/11/19/anthropic-rival-says-companies-can-mostly-skip-the-pricey-models/",
+        "completeness": "full",
+        "extracted_chars": 6464,
+        "extraction_completeness": "full",
+        "observed_at": "2026-11-20T11:01:49.207832+00:00",
+        "page_published_at": "2026-11-20T00:26:03+00:00",
+        "page_title": "Anthropic rival says companies can (mostly) skip the pricey models",
+        "raw_sha256": "58bbafa45bb24af361ff583a222c9c805f132b25eb44bd76af7352238e2bc75e",
+        "rss_origin_sha256": "c43e7f850a86dfded388cf672635038b126e5eb34561d46d14f514f805995458",
+        "source_url": "https://techcrunch.com/2026/11/19/anthropic-rival-says-companies-can-mostly-skip-the-pricey-models/",
+        "supplied_chars": 6464,
+        "supplied_sha256": "13a90ae44768dfb1d69b2134ec4196f1974faf6cdb7deaad81dd73f84057ab13"
+      },
+      "candidate_ids": [
+        "126a1d2c7faef337fba6a2e0"
+      ],
+      "category": "security",
+      "claims": [
+        {
+          "evidence_id": "126a1d2c7faef337fba6a2e0",
+          "quote": ". In one, hackers reached API keys and tokens stored as secrets for a limited number of accounts; in the other, attacker"
+        },
+        {
+          "evidence_id": "126a1d2c7faef337fba6a2e0",
+          "quote": "ords and some datasets.\n\nNotion says AI chat transcripts from fewer than 1% of its workspaces were exposed, but it has d"
+        }
+      ],
+      "editorial_analysis_zh": "企業評估AI代管服務時，不能只看平台是否宣稱零資料保留，還須確認承諾適用的產品、批次資料儲存方式，以及雲端與開發環境的存取邊界。",
+      "evidence_field": "article_body",
+      "evidence_kind": "publisher-article",
+      "id": "event-10",
+      "photo": null,
+      "published_at": "2026-11-20T00:26:03+00:00",
+      "source_access_note_zh": "已取得TechCrunch報導正文。攻擊動機、零資料保留未受破壞及服務調整進度，均為Fireworks共同創辦人的說法，未取得獨立技術驗證資料。",
+      "source_id": "user-068",
+      "source_name": "TechCrunch",
+      "source_title": "Anthropic rival says companies can (mostly) skip the pricey models",
+      "source_url": "https://techcrunch.com/2026/11/19/anthropic-rival-says-companies-can-mostly-skip-the-pricey-models/",
+      "summary_zh": "企業模型代管業者Fireworks今年秋季揭露兩起資安事件，分別涉及API憑證與客戶資料外洩。Notion表示，不到1%的工作區有AI聊天紀錄暴露，並已中斷與Fireworks的服務連接，讓企業採用外部AI平台的資料保護問題浮上檯面。\n\n兩起事件的入侵路徑與受影響資料不同。其中一起，駭客取得少數帳戶以機密資訊形式儲存的API金鑰與權杖；另一起則是攻擊者入侵Fireworks的雲端供應商，再進入開發系統，竊取客戶資料，包括帳務紀錄與部分資料集。\n\nFireworks共同創辦人Chenyu Zhao表示，攻擊動機很大一部分是尋找API金鑰與機密資訊，再到非法市場轉售模型使用額度。他宣稱，公司對推論流量的零資料保留承諾，沒有跡象顯示已遭破壞；但這項說法不代表所有產品都不會儲存資料。\n\n針對Notion資料為何外洩，Zhao解釋，Notion使用的是批次預測服務，需要上傳並儲存資料集，因此本質上不是零資料保留產品。他表示，公司正將這類服務轉向線上處理流程，只在必要期間保留資料。Fireworks以開放權重模型及客戶資料調校為主要業務，這次事件也凸顯，同一平台內不同服務的儲存方式與保留政策，必須分別檢視。",
+      "supporting_sources": [],
+      "title_zh": "Fireworks揭露兩起資安事件，Notion停用服務凸顯模型代管資料風險"
+    },
+    {
+      "body_provenance": {
+        "adapter": "cna-paragraph-v1",
+        "body_sha256": "80d03228b5c426191fd8d87385f598a2adc62765646ffe7f414d4c4a5fd91be3",
+        "canonical_url": "https://www.cna.com.tw/news/afe/202611200217.aspx",
+        "completeness": "excerpt",
+        "extracted_chars": 1748,
+        "extraction_completeness": "excerpt",
+        "observed_at": "2026-11-20T11:02:17.407321+00:00",
+        "page_published_at": "2026-11-20T16:54+08:00",
+        "page_title": "台股單週下跌7641點史上之最　本土法人加入停損行列",
+        "raw_sha256": "d01d57139b9728a0ae6e74cf02c4d9f3f5ef56ccdb562878bb38f5ae6974d0b5",
+        "rss_origin_sha256": "a5f6ec87103af54740757ce825748e3ab41d205c8867c587da20e5f156e8315d",
+        "source_url": "https://www.cna.com.tw/news/afe/202611200217.aspx",
+        "supplied_chars": 1748,
+        "supplied_sha256": "80d03228b5c426191fd8d87385f598a2adc62765646ffe7f414d4c4a5fd91be3"
+      },
+      "candidate_ids": [
+        "ffb2b4e93cc659b4d61a5d67",
+        "3b5a84d01fb37483bb18f5c7",
+        "4dfbb97344a0f073af2ec128",
+        "7f559bed330128237bcd3e95",
+        "73395c359d44d187b7820929",
+        "26b84a299a4a15500dac543c"
+      ],
+      "category": "vc-business",
+      "claims": [
+        {
+          "evidence_id": "ffb2b4e93cc659b4d61a5d67",
+          "quote": "（中央社記者曾仁凱台北20日電）台股本週重跌7641.83點或17.5%，集中市場今天收在36033.29點，創下史上最大單週跌點紀錄。法人認為，台股近1個半月重挫逾14000點，持續反映市場對利空的擔憂，除了外資連續賣超、散戶融資減碼斷頭"
+        },
+        {
+          "evidence_id": "73395c359d44d187b7820929",
+          "quote": "（中央社記者曾仁凱台北20日電）台股今天下跌2393.60點，週五集中市場指數以36033.29點作收，單週跌點7641.83點；根據台灣證券交易所統計，上市公司最新總市值為新台幣118兆992億元，單週暴減約25兆元，減幅約17.45%。"
+        }
+      ],
+      "editorial_analysis_zh": "這波修正同時涉及AI產業預期與交易部位調整。判斷供應鏈前景，應區分市場停損造成的短期價格壓力，以及訂單、營收與投資計畫是否實際改變，不能僅以跌幅推定需求轉弱。",
+      "evidence_field": "article_body",
+      "evidence_kind": "publisher-excerpt",
+      "id": "event-11",
+      "photo": null,
+      "published_at": "2026-11-20T16:54:29+08:00",
+      "source_access_note_zh": "整合六篇中央社財經報導，取得形式均為報導節錄，非全文。金管會與證交所資料及回應，來自已取得報導，未另取得其原始新聞稿；法人對賣壓、政策影響與產業前景的解讀並非已驗證的因果結論。",
+      "source_id": "user-057",
+      "source_name": "中央社財經",
+      "source_title": "台股單週下跌7641點史上之最　本土法人加入停損行列",
+      "source_url": "https://www.cna.com.tw/news/afe/202611200217.aspx",
+      "summary_zh": "台灣半導體與AI供應鏈股票賣壓擴大，台股11月20日下跌2393.6點、跌幅6.23%，收在36033.29點；全週累計下跌7641.83點、跌幅17.5%，創最大單週跌點紀錄。依證交所統計，上市公司總市值降至新台幣118兆992億元，單週減少約25兆元。\n\n電子類股當天下跌6.26%，台積電收在2000元，聯發科、台達電跌停。賣壓也擴及AI相關印刷電路板、ABF載板、光通訊，以及伺服器散熱、機殼與滑軌等族群，上市櫃合計約365檔股票跌停。全週半導體成交金額占上市股票交易金額42.26%，電子零組件占20.39%，科技股仍是交易重心。\n\n三大法人當天合計賣超522.46億元，其中自營商賣超340.84億元，超過外資及陸資的94.13億元。兆豐國際投顧副總經理黃國偉認為，融資停損、ETF賣壓與法人停損，是指數進一步下探的關鍵，AI族群能否止跌須觀察籌碼是否有效沉澱；這是法人對市場交易的判讀，不能直接視為AI需求已衰退。\n\n金管會第二波限空措施於20日上路，包括個股當日收盤跌幅達3.5%以上，次一交易日不得低於前一日收盤價放空，盤中借券賣出委託數量上限也由前30個營業日日均成交量的3%降至1%。證交所董事長林修銘則表示，短期波動不改產業基本面，並認為全球AI運算與基礎建設需求仍有中長期成長空間。\n\n賣壓並非台股獨有。Anthropic掛牌首日收漲17.07%，仍未帶動科技股信心回升；20日日經225指數收跌5.06%，韓國KOSPI跌5.21%。市場對AI獲利、資本支出及監管的疑慮，與台灣供應鏈股票的停損賣壓交織，但股價修正、企業當期營運與未來需求仍須分開觀察。",
+      "supporting_sources": [
+        {
+          "body_provenance": {
+            "adapter": "cna-paragraph-v1",
+            "body_sha256": "c3df1427aac91ea4fac724a33c00521cb22dcff03071eeca8be13f58335f425d",
+            "canonical_url": "https://www.cna.com.tw/news/afe/202611200249.aspx",
+            "completeness": "excerpt",
+            "extracted_chars": 557,
+            "extraction_completeness": "excerpt",
+            "observed_at": "2026-11-20T11:02:06.589998+00:00",
+            "page_published_at": "2026-11-20T17:28+08:00",
+            "page_title": "AI前景疑慮罩頂族群重挫　法人：籌碼沉澱是止跌關鍵",
+            "raw_sha256": "33e0f1919bafc48925fafd3ebbda3e4c23c7d235f9d62d3a41b27a4fcd618807",
+            "rss_origin_sha256": "39000fe6b39950626fc220cf565ddcaf84da538711956a99a4c91ab1d20aedd7",
+            "source_url": "https://www.cna.com.tw/news/afe/202611200249.aspx",
+            "supplied_chars": 557,
+            "supplied_sha256": "c3df1427aac91ea4fac724a33c00521cb22dcff03071eeca8be13f58335f425d"
+          },
+          "evidence_field": "article_body",
+          "evidence_kind": "publisher-excerpt",
+          "id": "3b5a84d01fb37483bb18f5c7",
+          "published_at": "2026-11-20T17:28:37+08:00",
+          "source_name": "中央社財經",
+          "source_title": "AI前景疑慮罩頂族群重挫　法人：籌碼沉澱是止跌關鍵",
+          "source_url": "https://www.cna.com.tw/news/afe/202611200249.aspx"
+        },
+        {
+          "body_provenance": {
+            "adapter": "cna-paragraph-v1",
+            "body_sha256": "3dda077e6958bf256e9e04600c4526847a0dabe6a0f3ab8a64fcc430d27d182f",
+            "canonical_url": "https://www.cna.com.tw/news/afe/202611200271.aspx",
+            "completeness": "excerpt",
+            "extracted_chars": 1004,
+            "extraction_completeness": "excerpt",
+            "observed_at": "2026-11-20T11:01:53.243319+00:00",
+            "page_published_at": "2026-11-20T18:12+08:00",
+            "page_title": "台日韓台灣跌最慘　金管會：9日以來跌9.24%",
+            "raw_sha256": "6a4fb312128167328488f19d53d485954d6a7c6224e1834ec454e25db698ccb7",
+            "rss_origin_sha256": "48ba4b0c40aed8000bc80f4d82c898cfac1d3e4dbd393aee81b45172d0794af1",
+            "source_url": "https://www.cna.com.tw/news/afe/202611200271.aspx",
+            "supplied_chars": 1004,
+            "supplied_sha256": "3dda077e6958bf256e9e04600c4526847a0dabe6a0f3ab8a64fcc430d27d182f"
+          },
+          "evidence_field": "article_body",
+          "evidence_kind": "publisher-excerpt",
+          "id": "4dfbb97344a0f073af2ec128",
+          "published_at": "2026-11-20T18:12:26+08:00",
+          "source_name": "中央社財經",
+          "source_title": "台日韓台灣跌最慘　金管會：9日以來跌9.24%",
+          "source_url": "https://www.cna.com.tw/news/afe/202611200271.aspx"
+        },
+        {
+          "body_provenance": {
+            "adapter": "cna-paragraph-v1",
+            "body_sha256": "dc979df6f80bd2135c8585da32775169313b6ac437317b2258f84fcf65aab214",
+            "canonical_url": "https://www.cna.com.tw/news/afe/202611200247.aspx",
+            "completeness": "excerpt",
+            "extracted_chars": 750,
+            "extraction_completeness": "excerpt",
+            "observed_at": "2026-11-20T11:02:09.349660+00:00",
+            "page_published_at": "2026-11-20T17:24+08:00",
+            "page_title": "台股重挫　證交所：短期市場波動不改產業基本面",
+            "raw_sha256": "f312e293ffdc9666b830b480e74767c593df6ead2bc663b6bf9a87e3c957ec02",
+            "rss_origin_sha256": "5bab54a27f6c644e2be7270111f0f1dee673e6eb40fc287ecac62544e12be791",
+            "source_url": "https://www.cna.com.tw/news/afe/202611200247.aspx",
+            "supplied_chars": 750,
+            "supplied_sha256": "dc979df6f80bd2135c8585da32775169313b6ac437317b2258f84fcf65aab214"
+          },
+          "evidence_field": "article_body",
+          "evidence_kind": "publisher-excerpt",
+          "id": "7f559bed330128237bcd3e95",
+          "published_at": "2026-11-20T17:24:32+08:00",
+          "source_name": "中央社財經",
+          "source_title": "台股重挫　證交所：短期市場波動不改產業基本面",
+          "source_url": "https://www.cna.com.tw/news/afe/202611200247.aspx"
+        },
+        {
+          "body_provenance": {
+            "adapter": "cna-paragraph-v1",
+            "body_sha256": "67612fe982027d595309ff1db9064e2d289ae4d4e27fa950083501bcea78cafb",
+            "canonical_url": "https://www.cna.com.tw/news/afe/202611200261.aspx",
+            "completeness": "excerpt",
+            "extracted_chars": 663,
+            "extraction_completeness": "excerpt",
+            "observed_at": "2026-11-20T11:02:01.187033+00:00",
+            "page_published_at": "2026-11-20T17:44+08:00",
+            "page_title": "本週台股市值蒸發25兆元　全球排名退居第7大股市",
+            "raw_sha256": "4f12d312a80ea82052d3c58484e958d6e62c4ed5ac969a95e65b9aba5dc16f19",
+            "rss_origin_sha256": "1047d6ea6c04a6a6a4c9e07c5e0e2f2089c5e4c0f3f9b543b73cf1ff2041c461",
+            "source_url": "https://www.cna.com.tw/news/afe/202611200261.aspx",
+            "supplied_chars": 663,
+            "supplied_sha256": "67612fe982027d595309ff1db9064e2d289ae4d4e27fa950083501bcea78cafb"
+          },
+          "evidence_field": "article_body",
+          "evidence_kind": "publisher-excerpt",
+          "id": "73395c359d44d187b7820929",
+          "published_at": "2026-11-20T17:44:04+08:00",
+          "source_name": "中央社財經",
+          "source_title": "本週台股市值蒸發25兆元　全球排名退居第7大股市",
+          "source_url": "https://www.cna.com.tw/news/afe/202611200261.aspx"
+        },
+        {
+          "body_provenance": {
+            "adapter": "cna-paragraph-v1",
+            "body_sha256": "db5c1fff5e90f1d64ae9af26d8ad84fa025b2b4c4aa7360cba7fcf8d3a3400ec",
+            "canonical_url": "https://www.cna.com.tw/news/afe/202611200267.aspx",
+            "completeness": "excerpt",
+            "extracted_chars": 720,
+            "extraction_completeness": "excerpt",
+            "observed_at": "2026-11-20T11:01:55.935979+00:00",
+            "page_published_at": "2026-11-20T17:57+08:00",
+            "page_title": "Anthropic上市難消除AI隱憂　亞股收盤盡墨",
+            "raw_sha256": "9edeab332b64ee5c37478cfed0b42ae3269478b8a0bcb936a7af67ad26bfd8bf",
+            "rss_origin_sha256": "b5bf0fd371f321594277ed462ad69bc0914f086e628afa6f21e3d5be366200ca",
+            "source_url": "https://www.cna.com.tw/news/afe/202611200267.aspx",
+            "supplied_chars": 720,
+            "supplied_sha256": "db5c1fff5e90f1d64ae9af26d8ad84fa025b2b4c4aa7360cba7fcf8d3a3400ec"
+          },
+          "evidence_field": "article_body",
+          "evidence_kind": "publisher-excerpt",
+          "id": "26b84a299a4a15500dac543c",
+          "published_at": "2026-11-20T17:57:17+08:00",
+          "source_name": "中央社財經",
+          "source_title": "Anthropic上市難消除AI隱憂　亞股收盤盡墨",
+          "source_url": "https://www.cna.com.tw/news/afe/202611200267.aspx"
+        }
+      ],
+      "title_zh": "AI供應鏈賣壓擴大，台股單週跌7641點、市值減約25兆元"
+    },
+    {
+      "body_provenance": {
+        "adapter": "techcrunch-entry-v1",
+        "body_sha256": "a8c710833e5adce35dc44d8b4ef1d7650ccd17d5cabf01db02c8339430f8dc65",
+        "canonical_url": "https://techcrunch.com/2026/11/19/elon-musk-says-spacex-has-a-plan-to-eliminate-cell-phone-dead-zones/",
+        "completeness": "full",
+        "extracted_chars": 2919,
+        "extraction_completeness": "full",
+        "observed_at": "2026-11-20T11:01:50.908898+00:00",
+        "page_published_at": "2026-11-19T23:37:56+00:00",
+        "page_title": "Elon Musk says SpaceX has a plan to eliminate cell phone dead zones",
+        "raw_sha256": "2085ed71dd3d1d96991c348bdc41e6847e4e3b4a8c190c589f32620d272f55df",
+        "rss_origin_sha256": "1a0fa7146320aaa9c83e4d27b9c0d0aad9f416269c5d34830ce194f75920f0b9",
+        "source_url": "https://techcrunch.com/2026/11/19/elon-musk-says-spacex-has-a-plan-to-eliminate-cell-phone-dead-zones/",
+        "supplied_chars": 2919,
+        "supplied_sha256": "a8c710833e5adce35dc44d8b4ef1d7650ccd17d5cabf01db02c8339430f8dc65"
+      },
+      "candidate_ids": [
+        "a52aba1fad9e967401f5751a"
+      ],
+      "category": "tech-product",
+      "claims": [
+        {
+          "evidence_id": "a52aba1fad9e967401f5751a",
+          "quote": "CEO Elon Musk said SpaceX has completed the design of a miniature rooftop cell tower that could provide better coverage "
+        },
+        {
+          "evidence_id": "a52aba1fad9e967401f5751a",
+          "quote": "ing.\n\nThese mini cell towers are expected to go into production in 2027, Musk said, during an interview at the DealBook "
+        }
+      ],
+      "editorial_analysis_zh": "這項設計顯示，SpaceX改善衛星直連手機體驗的規劃，不只依靠衛星升級，也納入地面設備補足室內接收限制。評估服務能力時，仍須區分衛星頻寬、建築物內涵蓋與硬體部署進度。",
+      "evidence_field": "article_body",
+      "evidence_kind": "publisher-article",
+      "id": "event-12",
+      "photo": null,
+      "published_at": "2026-11-19T23:37:56+00:00",
+      "source_access_note_zh": "已取得TechCrunch報導正文。設計完成、2027年投產、頻寬提升與消除通訊死角等內容，均為SpaceX主管的說法或計畫，未取得獨立實測資料。",
+      "source_id": "user-068",
+      "source_name": "TechCrunch",
+      "source_title": "Elon Musk says SpaceX has a plan to eliminate cell phone dead zones",
+      "source_url": "https://techcrunch.com/2026/11/19/elon-musk-says-spacex-has-a-plan-to-eliminate-cell-phone-dead-zones/",
+      "summary_zh": "SpaceX執行長Elon Musk表示，公司已完成屋頂微型基地台設計，打算以地面設備補強Starlink衛星訊號難以到達的室內空間。他在本週DealBook Summit訪談中稱，這類設備預計2027年投入生產，但談到時程時仍保留「我想是明年」的語氣，並非已量產產品。\n\nMusk指出，衛星直連手機仍有室內接收的缺口，尤其金屬或較厚的屋頂會阻擋來自太空的訊號，因此需要地面設備補足。他將新硬體形容為可放在屋頂、類似Starlink天線的微型基地台，並表示，結合無線頻譜與這些設備，有望改善訊號、消除通訊死角；這些涵蓋效果仍是他的主張。\n\n這項規劃與SpaceX的衛星升級同步推進。Musk表示，公司計畫於2027年發射Direct-to-Cell V2衛星星系，並宣稱頻寬將提高至40倍。SpaceX總裁Gwynne Shotwell先前在8月財報電話會議上，也曾表示不會採用大型基地台，而將部署小型、低功耗行動通訊基地台。\n\n設備如何交付仍有待定案，Musk提出的方案之一，是將小型基地台與Starlink終端搭售。目前揭露的新進展是硬體設計已完成的公司說法，以及初步生產與搭售構想；實際室內涵蓋能力、頻寬提升幅度與投產進度，尚不能視為已實現的服務表現。",
+      "supporting_sources": [],
+      "title_zh": "SpaceX規劃屋頂微型基地台，Musk稱2027年投產補強室內訊號"
+    },
+    {
+      "body_provenance": {
+        "adapter": "engadget-columns-v1",
+        "body_sha256": "b56db96fe5db5ed95bc64043cac27521bcd5b3ffa304706bc90c258042b5ac14",
+        "canonical_url": "https://www.engadget.com/2322650/uber-kids-rides-children-aged-10-to-12-years-old/",
+        "completeness": "excerpt",
+        "extracted_chars": 2033,
+        "extraction_completeness": "excerpt",
+        "observed_at": "2026-11-20T11:01:44.185922+00:00",
+        "page_published_at": "2026-11-20T06:27:26+00:00",
+        "page_title": "Uber Kids will let parents book trips for their children aged 10 to 12 years old",
+        "raw_sha256": "c5487107ebd668764c07671fc90cb273910f514a28e05f7b8fba95495970435c",
+        "rss_origin_sha256": "a0baec411127aabbeb7181bdc8a630fcfecd9ef228e8342f8d9277c5019e665a",
+        "source_url": "https://www.engadget.com/2322650/uber-kids-rides-children-aged-10-to-12-years-old/",
+        "supplied_chars": 2033,
+        "supplied_sha256": "b56db96fe5db5ed95bc64043cac27521bcd5b3ffa304706bc90c258042b5ac14"
+      },
+      "candidate_ids": [
+        "7a079f8013d53e82cb093fec"
+      ],
+      "category": "tech-product",
+      "claims": [
+        {
+          "evidence_id": "7a079f8013d53e82cb093fec",
+          "quote": "n aged 10 to 12 years old. According to TechCrunch, it rolled out quietly in Austin, Texas, Nashville, Tennessee and Mad"
+        },
+        {
+          "evidence_id": "7a079f8013d53e82cb093fec",
+          "quote": "er Kids, only parents and guardians can order a ride for their children, and they must be present at pickup. Like on rid"
+        }
+      ],
+      "editorial_analysis_zh": "這項試辦將兒童叫車權限、行程限制與車內監看整合進叫車服務，並以額外報酬搭配駕駛參與門檻。這些設計呈現平台服務低齡乘客的產品安排，但不等同已證實的安全成效。",
+      "evidence_field": "article_body",
+      "evidence_kind": "publisher-excerpt",
+      "id": "event-13",
+      "photo": null,
+      "published_at": "2026-11-20T06:27:26+00:00",
+      "source_access_note_zh": "本則依Engadget報導節錄撰寫，未取得全文；試辦資訊部分由該報導轉述TechCrunch。即時影像存取規則為Uber說法，未取得獨立安全評估或實測資料。",
+      "source_id": "agent-added-engadget",
+      "source_name": "Engadget",
+      "source_title": "Uber Kids will let parents book trips for their children aged 10 to 12 years old",
+      "source_url": "https://www.engadget.com/2322650/uber-kids-rides-children-aged-10-to-12-years-old/",
+      "summary_zh": "Uber開始測試供10至12歲兒童使用的Uber Kids服務，在美國奧斯汀、納許維爾與麥迪遜試辦。這項服務由家長或監護人叫車，且接車時必須在場；監護人可透過車內即時影像查看孩子的乘車情況。目前仍屬有限試辦，是否擴大至其他地區尚不明朗。\n\nUber Kids的使用方式與既有Uber for Teens不同。後者讓13至17歲青少年在加入家長或監護人的家庭帳戶後，自行預約行程；Uber Kids則將叫車權限交給家長與監護人。監護人可以陪同乘車，其他未成年人取得各自家長或監護人同意後也可同行，但每趟行程只能前往單一目的地，不提供多站停靠。\n\n駕駛端也有額外門檻。Uber僅邀請評價較高的駕駛參與，有意加入者須完成簡短課程，並在應用程式中啟用錄音、錄影，以及相機和麥克風權限。Uber表示，即時影像啟動時會通知駕駛，且只有孩子的監護人與安全人員能存取即時畫面。\n\n配合這些要求，Uber每趟向駕駛支付的報酬將比一般UberX行程多7美元，首次完成Uber Kids行程另加20美元。",
+      "supporting_sources": [],
+      "title_zh": "Uber Kids在美國三城試辦，監護人可替10至12歲兒童叫車"
+    },
+    {
+      "body_provenance": {
+        "adapter": "cna-paragraph-v1",
+        "body_sha256": "7206c5abcba5b2bed78aae2283fe9e6f6d5d014da7cd3b2fbc9320f887d2e734",
+        "canonical_url": "https://www.cna.com.tw/news/ait/202611200037.aspx",
+        "completeness": "excerpt",
+        "extracted_chars": 605,
+        "extraction_completeness": "excerpt",
+        "observed_at": "2026-11-20T11:01:56.709307+00:00",
+        "page_published_at": "2026-11-20T09:24+08:00",
+        "page_title": "阿里巴巴遭股東告詐欺　涉隱瞞與輝達間諜案關係",
+        "raw_sha256": "bdd98c200d682c26955b0751a10b6a7a7e55acace23f2091577b7e5f1cc44864",
+        "rss_origin_sha256": "a5df33d3fde248f4536307818b75bcd4e0c90ade989ad5b03c0a83cdf5562f73",
+        "source_url": "https://www.cna.com.tw/news/ait/202611200037.aspx",
+        "supplied_chars": 605,
+        "supplied_sha256": "7206c5abcba5b2bed78aae2283fe9e6f6d5d014da7cd3b2fbc9320f887d2e734"
+      },
+      "candidate_ids": [
+        "bfb75aedd8c764973d4e74b3"
+      ],
+      "category": "vc-business",
+      "claims": [
+        {
+          "evidence_id": "bfb75aedd8c764973d4e74b3",
+          "quote": "，阿里巴巴在2024年、2025年及2026年的年報中，蓄意且實質低估實際或疑似違反出口管制可能對業務造成的風險，藉此推高股價。\n\n股東在訴狀中點出阿里巴巴與新加坡業者Megaspeed的關係。Megaspeed涉嫌協助北京取得輝達（Nvi"
+        },
+        {
+          "evidence_id": "bfb75aedd8c764973d4e74b3",
+          "quote": "力的措施，可能在明年影響阿里巴巴的產品和服務，但阿里巴巴仍可望在2030年前達成外部雲端營收1000億美元（約新台幣3.3兆元）、稅息折舊及攤銷前利潤（EBITDA）率20%的目標。這些限制是在黃仁勳辭去輝達職務後實施。（編譯：張茗喧）11"
+        }
+      ],
+      "editorial_analysis_zh": "這起訴訟將AI算力取得限制與企業資訊揭露責任連結起來。觀察重點是公司如何說明出口管制對產品、服務與雲端業務目標的影響，而非把訴訟指控直接視為違規定論。",
+      "evidence_field": "article_body",
+      "evidence_kind": "publisher-excerpt",
+      "id": "event-14",
+      "photo": null,
+      "published_at": "2026-11-20T09:24:56+08:00",
+      "source_access_note_zh": "本則依中央社報導節錄撰寫，其中訴訟資訊轉述路透社報導；未取得訴狀全文、年報原文或公司完整回應。指控與股價變動的因果關係未經獨立查核，不代表法院認定；營運目標為公司預測。",
+      "source_id": "user-058",
+      "source_name": "中央社科技",
+      "source_title": "阿里巴巴遭股東告詐欺　涉隱瞞與輝達間諜案關係",
+      "source_url": "https://www.cna.com.tw/news/ait/202611200037.aspx",
+      "summary_zh": "阿里巴巴在紐約遭股東提起集體訴訟，被指在2024年至2026年的年報中，蓄意且實質低估實際或疑似違反出口管制可能帶來的業務風險，藉此推高股價。案件向曼哈頓聯邦法院提出，執行長吳泳銘也被列為被告；相關內容仍屬股東指控。\n\n訴訟爭點包括阿里巴巴與新加坡業者Megaspeed的往來。Megaspeed被指涉嫌協助北京取得輝達先進AI晶片。股東主張，媒體披露阿里巴巴與Megaspeed及其高層黃樂的關係，包括阿里巴巴已成為Megaspeed「最主要」客戶的消息，導致阿里巴巴股價在4天內下跌14%。股東也將部分跌幅歸因於另一項報導所提的風險：美方可能收緊中國AI企業遠端使用先進處理器的限制。上述股價下跌原因，是訴訟方的歸因。\n\n阿里巴巴未立即回應置評請求。吳泳銘另表示，美國限制中國取得算力的措施可能在明年影響公司產品與服務，但他仍預期，阿里巴巴可在2030年前達到外部雲端營收1,000億美元、稅息折舊及攤銷前利潤率20%的目標。這是公司提出的營運展望，並非已實現成果。",
+      "supporting_sources": [],
+      "title_zh": "阿里巴巴遭股東提告，涉低估AI晶片出口管制風險"
+    },
+    {
+      "body_provenance": {
+        "adapter": "cna-paragraph-v1",
+        "body_sha256": "39195e404b04c9bcad37ddc0ea896667d6159ea45d7517dd85cc4a89e527f44c",
+        "canonical_url": "https://www.cna.com.tw/news/aopl/202611200159.aspx",
+        "completeness": "excerpt",
+        "extracted_chars": 724,
+        "extraction_completeness": "excerpt",
+        "observed_at": "2026-11-20T11:02:18.187272+00:00",
+        "page_published_at": "2026-11-20T15:15+08:00",
+        "page_title": "韓國AI作弊爭議　李在明：改革考試制度嚴懲違規",
+        "raw_sha256": "32f97c2e2bb3a2d1ebac4e63c8b991be254ff37a339d0aef1d69b019fcdbea57",
+        "rss_origin_sha256": "6998fe5691cb28119d15993dc1ced6af1195574ae75302b7963ef9d2745dcee6",
+        "source_url": "https://www.cna.com.tw/news/aopl/202611200159.aspx",
+        "supplied_chars": 724,
+        "supplied_sha256": "39195e404b04c9bcad37ddc0ea896667d6159ea45d7517dd85cc4a89e527f44c"
+      },
+      "candidate_ids": [
+        "3385d8ed7fc1fff89578b965"
+      ],
+      "category": "security",
+      "claims": [
+        {
+          "evidence_id": "3385d8ed7fc1fff89578b965",
+          "quote": "首考生坦承利用人工智慧（AI）作弊，引起軒然大波。為了防止類似事情發生，昨天的大學修學能力試驗（修能），全國發送了3次「緊急災難簡訊」，用警報聲抓出偷攜帶手機進考場的考生，不過仍有考生被查獲違規。\n\n李在明今天主持首席幕僚會議時表示，「考試"
+        },
+        {
+          "evidence_id": "3385d8ed7fc1fff89578b965",
+          "quote": "改革國家考試制度，從頭到尾徹底檢討」。\n\n李在明表示，為了開發偵測及阻止作弊所需的技術、強化考試管理標準、改善考場監督制度，以及針對作弊和違反防止再犯措施的行為制定嚴格處罰標準，「請政府與民間緊密合作、迅速採取行動」。（編輯：唐聲揚）115"
+        }
+      ],
+      "editorial_analysis_zh": "AI濫用使考試管理不只涉及考場裝置管制，也涉及評量可信度。後續應分別檢視作弊證據、偵測技術的可靠性與處罰標準，避免把一般違規或技術警示直接當成AI作弊定論。",
+      "evidence_field": "article_body",
+      "evidence_kind": "publisher-excerpt",
+      "id": "event-15",
+      "photo": null,
+      "published_at": "2026-11-20T15:15:24+08:00",
+      "source_access_note_zh": "本則依中央社報導節錄撰寫，未取得全文、作弊案件調查資料或偵測技術評估。考生坦承使用AI與考場查獲手機違規分別敘述；現有資料未提供偵測工具的準確率或實施成效。",
+      "source_id": "user-055",
+      "source_name": "中央社國際",
+      "source_title": "韓國AI作弊爭議　李在明：改革考試制度嚴懲違規",
+      "source_url": "https://www.cna.com.tw/news/aopl/202611200159.aspx",
+      "summary_zh": "韓國國家稅務師資格考試一名榜首考生坦承利用人工智慧作弊，引發對考試公平性的關注。總統李在明11月20日要求主管機關與AI企業合作，追查涉嫌作弊案件並追究責任，同時檢討國家考試制度、開發偵測及阻止作弊的技術。\n\n在前一天舉行的大學修學能力試驗中，韓國曾在全國發送3次緊急災難簡訊，利用警報聲找出違規攜帶手機進入考場的考生，仍有考生被查獲違規。這些手機違規案件與稅務師考生坦承使用AI作弊，是不同層次的事實，不能將攜帶手機直接等同於已使用AI作答。\n\n李在明在首席幕僚會議上表示，人工智慧帶來的問題已延伸至考試、評量及招聘制度，可能造成結構性的不公平。他認為，過去慣用的防範方式恐已難以有效阻止相關作弊行為，必須因應技術變化，全面檢討考試制度。\n\n他要求政府與民間合作，除了研發偵測與防堵技術，也要強化考試管理標準、改善考場監督，並為作弊及違反防止再犯措施的行為制定嚴格處罰標準。這次提出的是後續改革與技術開發方向，並非已完成部署的AI作弊偵測方案。",
+      "supporting_sources": [],
+      "title_zh": "韓國稅務師考生坦承用AI作弊，政府要求研發偵測技術、改革考試管理"
+    },
+    {
+      "body_provenance": {
+        "adapter": "cna-paragraph-v1",
+        "body_sha256": "7e652d363ef75e0555a0769c53fa339be239d2573aa5f91d9711ed79114429b5",
+        "canonical_url": "https://www.cna.com.tw/news/aopl/202611200140.aspx",
+        "completeness": "excerpt",
+        "extracted_chars": 1056,
+        "extraction_completeness": "excerpt",
+        "observed_at": "2026-11-20T11:02:28.540593+00:00",
+        "page_published_at": "2026-11-20T14:35+08:00",
+        "page_title": "美參院通過能源許可改革法案　資料中心須自付電網升級",
+        "raw_sha256": "d801c7986ce320eca8a2690d0ddca86de94ef6c4ed341bc04d91b5140191fb84",
+        "rss_origin_sha256": "5f346837cee6c0ca46e9b28289eebb5c56e85906f997a5057a1239e6d502341b",
+        "source_url": "https://www.cna.com.tw/news/aopl/202611200140.aspx",
+        "supplied_chars": 1056,
+        "supplied_sha256": "7e652d363ef75e0555a0769c53fa339be239d2573aa5f91d9711ed79114429b5"
+      },
+      "candidate_ids": [
+        "6854e97d8f0ee9b1d0bae575"
+      ],
+      "category": "vc-business",
+      "claims": [
+        {
+          "evidence_id": "6854e97d8f0ee9b1d0bae575",
+          "quote": "（中央社華盛頓19日綜合外電報導）美國聯邦參議院今天以62票對33票，跨黨派通過能源許可改革法案，將加快大型能源與基礎建設的審查，並要求資料中心自行負擔電網升級費用，法案將送交眾議院表決。\n\n法新社報導，美國兩大主要政黨均同意，現行許可證核"
+        },
+        {
+          "evidence_id": "6854e97d8f0ee9b1d0bae575",
+          "quote": "能讓川普政府無法封殺再生能源計畫，但也會讓未來的民主黨籍總統無法撤銷油氣管線計畫。\n\n法案中也明定資料中心須自行負擔電網升級費用，這是各界在住宅電價飆漲之際的一大重要訴求，但法案並未處理資料中心造成的空氣汙染和耗水問題。\n\n多數共和黨人雖支"
+        }
+      ],
+      "editorial_analysis_zh": "這項提案同時觸及資料中心建設的兩個面向：基礎設施審查速度，以及電網升級費用由誰承擔。加速許可不等於降低所有建置成本，費用分擔仍是觀察重點。",
+      "evidence_field": "article_body",
+      "evidence_kind": "publisher-excerpt",
+      "id": "event-16",
+      "photo": null,
+      "published_at": "2026-11-20T14:35:43+08:00",
+      "source_access_note_zh": "依據中央社報導正文節錄撰寫，未取得全文或法案原文；目前資料未提供資料中心須負擔的金額與具體計算方式。",
+      "source_id": "user-055",
+      "source_name": "中央社國際",
+      "source_title": "美參院通過能源許可改革法案　資料中心須自付電網升級",
+      "source_url": "https://www.cna.com.tw/news/aopl/202611200140.aspx",
+      "summary_zh": "美國聯邦參議院19日以62票對33票，跨黨派通過能源許可改革法案，內容包括加快大型能源與基礎建設審查，以及要求資料中心自行負擔電網升級費用。法案接下來將送交眾議院表決，相關要求尚未成為生效法律。\n\n這項「2026年跨黨派美國可負擔與就業法案」（BAAJA），把資料中心的電網升級費用納入規範。在住宅電價上漲之際，要求資料中心自行負擔這筆支出，是各界關注的訴求之一；不過，法案並未處理資料中心造成的空氣汙染與耗水問題。\n\n改革也涉及能源設施的審查與輸電能力。共同提案人、民主黨籍參議員懷特豪斯與其他支持者主張，升級老舊電網，可讓偏遠地區太陽能及風力發電計畫產出的電力，更順暢地輸送到有需求的地區。法案另限制總統對不同能源採取差別待遇的權力，可能同時影響再生能源與油氣管線計畫的政策處置。\n\n加快建設並未消除環境爭議。部分民主黨議員擔心環保把關機制遭削弱，也關注原住民團體對文化遺址可能受衝擊的反對聲音；環保團體對改革能否促進潔淨能源建設同樣意見分歧。對資料中心業者而言，後續仍須關注眾議院審議結果，不能將參院通過視為成本規範已經定案。",
+      "supporting_sources": [],
+      "title_zh": "美參院通過能源許可改革案　擬要求資料中心自付電網升級費"
+    }
+  ],
+  "brand_audit": {
+    "applied": 0,
+    "held": 16,
+    "preserved": 0
+  },
+  "canonical_url": "https://polarbear0827.github.io/Daily-briefing/briefings/2026-11-20-evening.html",
+  "date": "2026-11-20",
+  "edition": "evening",
+  "editorial_note": "本次選出17個事件，達最低16則，距目標24則尚缺7則。候選中的同一波科技股下跌與同次外銷訂單公布已整併；一般選舉、外交、戰爭及僅附帶提及AI的政治新聞未納入。另未以未經證實的手機外洩規格、遊戲玩法解說或缺乏具體技術風險的人事消息補數。目前沒有足夠候選支持新增模型發布、論文評測、人工智慧研究趨勢或機器人事件。來源取得限制：本次提供的是publisher-article報導文字與publisher-excerpt節錄，並非另行取得的RSS摘要；部分文字有截斷，未推定已閱讀其餘全文，也未自行查閱報導提到的職缺、公告、訴狀或原始外電。公司效能、安全、使用規模與預測均未經獨立驗證。\n本期有 1 則選入稿件經有限修訂後仍未通過審核，暫緩刊出；其餘稿件重新審核，不以補稿湊數。",
+  "editorial_profile": "september-tech-ai",
+  "evidence_notice": "本期依實際取得的來源整合撰寫；各篇來源資訊區分報導正文、可讀節錄與訂閱文字，並附原始連結。",
+  "generated_at": "2026-11-20T19:16:20.015528+08:00",
+  "model": "gpt-6.1-sol",
+  "photo_audit": {
+    "approved": 0,
+    "held": 16,
+    "source_references": 0
+  },
+  "preview": false,
+  "provider": "openai-codex",
+  "publication": {
+    "identity": "2026-11-20-evening",
+    "issue_sha256": "0d7568865d34946469304d89e5e8d6694c86e0159556c0ebe6f05a853d1550a1",
+    "legacy_archive_untouched": true,
+    "published_at": "2026-11-20T20:00:55.064948+08:00"
+  },
+  "reasoning_effort": "high",
+  "review": {
+    "_model": {
+      "client_class": "CodexAuxiliaryClient",
+      "elapsed_seconds": 38.547,
+      "endpoint": "https://chatgpt.com/backend-api/codex",
+      "fallback": false,
+      "max_retries": 0,
+      "provider": "openai-codex",
+      "reported_model": "gpt-6.1-sol",
+      "reported_reasoning": "high",
+      "requested_model": "gpt-6.1-sol",
+      "requested_reasoning": "high",
+      "resolved_model": "gpt-6.1-sol",
+      "server_token_cap": null,
+      "wire_byte_cap": 4194304,
+      "wire_bytes": 71762,
+      "wire_events": 60,
+      "wire_reasoning": "high"
+    },
+    "approved": true,
+    "independent_external_fact_check": false,
+    "note": "審核僅限所提供證據，不是獨立外部查證",
+    "problems": [],
+    "reviewer": "gpt-6.1-sol",
+    "reviewer_type": "model_editorial_review"
+  },
+  "schema_version": "2.0",
+  "source_health": [
+    {
+      "bytes_received": 47458,
+      "content_type": "application/xml",
+      "counts": {
+        "eligible_candidates": 19,
+        "entries_seen": 23,
+        "outside_window": 4
+      },
+      "elapsed_seconds": 1.157,
+      "feed_observation": {
+        "bytes_received": 47458,
+        "content_type": "application/xml",
+        "feed_url": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
+        "final_url": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-lrw94108/observation.json",
+        "observed_at": "2026-11-20T11:01:08.605317+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-lrw94108/raw.xml",
+        "sha256": "4b9b3496af4e3a0a6547ae80b24350b68e8edfe7ffb4b49768ae8254088e9861",
+        "source_id": "user-037",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
+      "selected_candidates": 9,
+      "source_id": "user-037",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "NYT",
+      "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 109621,
+      "content_type": "application/xml",
+      "counts": {
+        "eligible_candidates": 12,
+        "entries_seen": 55,
+        "outside_window": 43
+      },
+      "elapsed_seconds": 1.261,
+      "feed_observation": {
+        "bytes_received": 109621,
+        "content_type": "application/xml",
+        "feed_url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
+        "final_url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-54e6_dcs/observation.json",
+        "observed_at": "2026-11-20T11:01:08.696215+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-54e6_dcs/raw.xml",
+        "sha256": "24e1809bd6bc448db28035cd152f7ef0c3d218a3d995ef692d7e63fd44394aa0",
+        "source_id": "user-038",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
+      "selected_candidates": 9,
+      "source_id": "user-038",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "NYT World",
+      "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 25355,
+      "content_type": "text/xml; charset=utf-8",
+      "counts": {
+        "eligible_candidates": 28,
+        "entries_seen": 32,
+        "outside_window": 4
+      },
+      "elapsed_seconds": 1.296,
+      "feed_observation": {
+        "bytes_received": 25355,
+        "content_type": "text/xml; charset=utf-8",
+        "feed_url": "https://feeds.bbci.co.uk/news/rss.xml",
+        "final_url": "https://feeds.bbci.co.uk/news/rss.xml",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-fibmg8je/observation.json",
+        "observed_at": "2026-11-20T11:01:08.703401+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-fibmg8je/raw.xml",
+        "sha256": "ebf90e3f314d1b1e2bda1da317c9ea49a0a06b28e393474d7f34f0814342c456",
+        "source_id": "user-039",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://feeds.bbci.co.uk/news/rss.xml",
+      "selected_candidates": 8,
+      "source_id": "user-039",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "BBC News",
+      "source_url": "https://feeds.bbci.co.uk/news/rss.xml",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 27839,
+      "content_type": "text/xml; charset=utf-8",
+      "counts": {
+        "eligible_candidates": 15,
+        "entries_seen": 36,
+        "outside_window": 21
+      },
+      "elapsed_seconds": 1.139,
+      "feed_observation": {
+        "bytes_received": 27839,
+        "content_type": "text/xml; charset=utf-8",
+        "feed_url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+        "final_url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-jdjfkvmh/observation.json",
+        "observed_at": "2026-11-20T11:01:08.599140+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-jdjfkvmh/raw.xml",
+        "sha256": "9b80ed42fe398dcb48878d93f422642d05282846214a441acefca0fdf1fba027",
+        "source_id": "user-040",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "selected_candidates": 9,
+      "source_id": "user-040",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "BBC World",
+      "source_url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 123081,
+      "content_type": "text/xml; charset=UTF-8",
+      "counts": {
+        "eligible_candidates": 12,
+        "entries_seen": 134,
+        "outside_window": 122
+      },
+      "elapsed_seconds": 1.011,
+      "feed_observation": {
+        "bytes_received": 123081,
+        "content_type": "text/xml; charset=UTF-8",
+        "feed_url": "https://rss.dw.com/rdf/rss-en-all",
+        "final_url": "https://rss.dw.com/rdf/rss-en-all",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-wqh_vt8a/observation.json",
+        "observed_at": "2026-11-20T11:01:09.641487+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-wqh_vt8a/raw.xml",
+        "sha256": "463fa47c6b388f15ed668c5562b1778744673dfb64611ffb5be21a138fc8e057",
+        "source_id": "user-041",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://rss.dw.com/rdf/rss-en-all",
+      "selected_candidates": 9,
+      "source_id": "user-041",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "Deutsche Welle",
+      "source_url": "https://rss.dw.com/rdf/rss-en-all",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 7930,
+      "content_type": "application/xml; charset=UTF-8",
+      "counts": {
+        "eligible_candidates": 2,
+        "entries_seen": 11,
+        "outside_window": 9
+      },
+      "elapsed_seconds": 0.885,
+      "feed_observation": {
+        "bytes_received": 7930,
+        "content_type": "application/xml; charset=UTF-8",
+        "feed_url": "https://rss.dw.com/xml/rss-en-world",
+        "final_url": "https://rss.dw.com/xml/rss-en-world",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-i80olqsd/observation.json",
+        "observed_at": "2026-11-20T11:01:09.540625+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-i80olqsd/raw.xml",
+        "sha256": "ad553ad632a52703fddbf74b3f45ceb7a27f4b0b9949c41c1dc58d67328c2d3d",
+        "source_id": "user-042",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://rss.dw.com/xml/rss-en-world",
+      "selected_candidates": 2,
+      "source_id": "user-042",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "DW World",
+      "source_url": "https://rss.dw.com/xml/rss-en-world",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 162211,
+      "content_type": "text/xml; charset=UTF-8",
+      "counts": {
+        "eligible_candidates": 23,
+        "entries_seen": 45,
+        "outside_window": 22
+      },
+      "elapsed_seconds": 1.242,
+      "feed_observation": {
+        "bytes_received": 162211,
+        "content_type": "text/xml; charset=UTF-8",
+        "feed_url": "https://www.theguardian.com/world/rss",
+        "final_url": "https://www.theguardian.com/world/rss",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-ssy84tnp/observation.json",
+        "observed_at": "2026-11-20T11:01:09.890978+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-ssy84tnp/raw.xml",
+        "sha256": "cfc051efee20f4dd60fc2ecbe96fc7fa667e0004b72a0b184172cc4d3fcf714f",
+        "source_id": "user-043",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://www.theguardian.com/world/rss",
+      "selected_candidates": 9,
+      "source_id": "user-043",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "The Guardian",
+      "source_url": "https://www.theguardian.com/world/rss",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 150305,
+      "content_type": "text/xml",
+      "counts": {
+        "eligible_candidates": 2,
+        "entries_seen": 200,
+        "entry_cap_reached": 1,
+        "outside_window": 198
+      },
+      "elapsed_seconds": 1.09,
+      "feed_observation": {
+        "bytes_received": 150305,
+        "content_type": "text/xml",
+        "feed_url": "https://www.economist.com/latest/rss.xml",
+        "final_url": "https://www.economist.com/latest/rss.xml",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-anii0fs6/observation.json",
+        "observed_at": "2026-11-20T11:01:09.840232+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-anii0fs6/raw.xml",
+        "sha256": "e32a0d9e7aa10b98a47a411b09fe4b636788614d6541313a19e481829401223b",
+        "source_id": "user-044",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://www.economist.com/latest/rss.xml",
+      "selected_candidates": 2,
+      "source_id": "user-044",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "The Economist",
+      "source_url": "https://www.economist.com/latest/rss.xml",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 111321,
+      "content_type": "text/xml",
+      "counts": {
+        "eligible_candidates": 0,
+        "entries_seen": 200,
+        "entry_cap_reached": 1,
+        "outside_window": 200
+      },
+      "elapsed_seconds": 0.895,
+      "feed_observation": {
+        "bytes_received": 111321,
+        "content_type": "text/xml",
+        "feed_url": "https://www.economist.com/the-world-this-week/rss.xml",
+        "final_url": "https://www.economist.com/the-world-this-week/rss.xml",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-oclevgq4/observation.json",
+        "observed_at": "2026-11-20T11:01:10.391296+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-oclevgq4/raw.xml",
+        "sha256": "f057dcbd4c8187692a34b11146fca2449926af4bce7d953efbba0da89978cecb",
+        "source_id": "user-045",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://www.economist.com/the-world-this-week/rss.xml",
+      "selected_candidates": 0,
+      "source_id": "user-045",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "The Economist Weekly",
+      "source_url": "https://www.economist.com/the-world-this-week/rss.xml",
+      "status": "ok_no_eligible"
+    },
+    {
+      "counts": {},
+      "elapsed_seconds": 18.687,
+      "reason": "network_timeout",
+      "selected_candidates": 0,
+      "source_id": "user-046",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "Washington Post",
+      "source_url": "https://www.washingtonpost.com/arcio/rss/",
+      "status": "timeout"
+    },
+    {
+      "bytes_received": 10334,
+      "content_type": "text/xml; charset=utf-8",
+      "counts": {
+        "eligible_candidates": 4,
+        "entries_seen": 15,
+        "outside_window": 11
+      },
+      "elapsed_seconds": 10.95,
+      "feed_observation": {
+        "bytes_received": 10334,
+        "content_type": "text/xml; charset=utf-8",
+        "feed_url": "https://feeds.washingtonpost.com/rss/world",
+        "final_url": "https://feeds.washingtonpost.com/rss/world",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-128iwnz8/observation.json",
+        "observed_at": "2026-11-20T11:01:20.835019+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-128iwnz8/raw.xml",
+        "sha256": "7d3bd5e6fa08546916337a9e74bcf3032e0752b074e651105643a9de1c64f003",
+        "source_id": "user-047",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://feeds.washingtonpost.com/rss/world",
+      "selected_candidates": 4,
+      "source_id": "user-047",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "Washington Post World",
+      "source_url": "https://feeds.washingtonpost.com/rss/world",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 192078,
+      "content_type": "text/xml;charset=utf-8",
+      "counts": {
+        "eligible_candidates": 24,
+        "entries_seen": 25,
+        "outside_window": 1
+      },
+      "elapsed_seconds": 1.239,
+      "feed_observation": {
+        "bytes_received": 192078,
+        "content_type": "text/xml;charset=utf-8",
+        "feed_url": "https://moxie.foxnews.com/google-publisher/latest.xml",
+        "final_url": "https://moxie.foxnews.com/google-publisher/latest.xml",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-9df_pzhn/observation.json",
+        "observed_at": "2026-11-20T11:01:11.141384+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-9df_pzhn/raw.xml",
+        "sha256": "cac22fa1c5849e5c70437a380e75dc3387e7949be19cd877f5a3b2221d95f1ed",
+        "source_id": "user-048",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://moxie.foxnews.com/google-publisher/latest.xml",
+      "selected_candidates": 9,
+      "source_id": "user-048",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "FOX News",
+      "source_url": "https://moxie.foxnews.com/google-publisher/latest.xml",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 226376,
+      "content_type": "text/xml;charset=utf-8",
+      "counts": {
+        "eligible_candidates": 1,
+        "entries_seen": 25,
+        "outside_window": 24
+      },
+      "elapsed_seconds": 0.716,
+      "feed_observation": {
+        "bytes_received": 226376,
+        "content_type": "text/xml;charset=utf-8",
+        "feed_url": "https://moxie.foxnews.com/google-publisher/world.xml",
+        "final_url": "https://moxie.foxnews.com/google-publisher/world.xml",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-sy6ikwwi/observation.json",
+        "observed_at": "2026-11-20T11:01:11.140700+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-sy6ikwwi/raw.xml",
+        "sha256": "317ff3e973e62e0d328fff9705e246d6b135be2e961167257bbc59a2aac85d11",
+        "source_id": "user-049",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://moxie.foxnews.com/google-publisher/world.xml",
+      "selected_candidates": 1,
+      "source_id": "user-049",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "FOX World",
+      "source_url": "https://moxie.foxnews.com/google-publisher/world.xml",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 17235,
+      "content_type": "application/rss+xml; charset=UTF-8",
+      "counts": {
+        "eligible_candidates": 25,
+        "entries_seen": 25
+      },
+      "elapsed_seconds": 0.801,
+      "feed_observation": {
+        "bytes_received": 17235,
+        "content_type": "application/rss+xml; charset=UTF-8",
+        "feed_url": "https://www.aljazeera.com/xml/rss/all.xml",
+        "final_url": "https://www.aljazeera.com/xml/rss/all.xml",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-a6uqjym1/observation.json",
+        "observed_at": "2026-11-20T11:01:11.940165+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-a6uqjym1/raw.xml",
+        "sha256": "f8e02c4ff4c1e345ecdcf7de7f040afb0c322796f6e2af3ffb7e6271267148bc",
+        "source_id": "user-050",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://www.aljazeera.com/xml/rss/all.xml",
+      "selected_candidates": 9,
+      "source_id": "user-050",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/xml/rss/all.xml",
+      "status": "ok"
+    },
+    {
+      "counts": {},
+      "elapsed_seconds": 0.718,
+      "reason": "redirect_host_not_allowlisted",
+      "selected_candidates": 0,
+      "source_id": "user-051",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "NHK News",
+      "source_url": "https://www.nhk.or.jp/rss/news/cat0.xml",
+      "status": "fetch_error"
+    },
+    {
+      "bytes_received": 63439,
+      "content_type": "application/xml;charset=UTF-8",
+      "counts": {
+        "eligible_candidates": 65,
+        "entries_seen": 99,
+        "outside_window": 34
+      },
+      "elapsed_seconds": 1.005,
+      "feed_observation": {
+        "bytes_received": 63439,
+        "content_type": "application/xml;charset=UTF-8",
+        "feed_url": "https://en.yna.co.kr/RSS/news.xml",
+        "final_url": "https://en.yna.co.kr/RSS/news.xml",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-_sbcof9e/observation.json",
+        "observed_at": "2026-11-20T11:01:12.891063+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-_sbcof9e/raw.xml",
+        "sha256": "6bb2769c5b9e5b61a45fafd39e312ccd728969d5b2e86345ee3c2a56106266fd",
+        "source_id": "user-052",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://en.yna.co.kr/RSS/news.xml",
+      "selected_candidates": 8,
+      "source_id": "user-052",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "Yonhap English",
+      "source_url": "https://en.yna.co.kr/RSS/news.xml",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 94089,
+      "content_type": "application/xml;charset=UTF-8",
+      "counts": {
+        "eligible_candidates": 120,
+        "entries_seen": 120
+      },
+      "elapsed_seconds": 1.143,
+      "feed_observation": {
+        "bytes_received": 94089,
+        "content_type": "application/xml;charset=UTF-8",
+        "feed_url": "https://www.yna.co.kr/rss/news.xml",
+        "final_url": "https://www.yna.co.kr/rss/news.xml",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-bejgkclv/observation.json",
+        "observed_at": "2026-11-20T11:01:12.941224+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-bejgkclv/raw.xml",
+        "sha256": "6189a598e9ccf71048a50a9a24696107e116407ae6fb91c48daa00569d97a3a8",
+        "source_id": "user-053",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://www.yna.co.kr/rss/news.xml",
+      "selected_candidates": 8,
+      "source_id": "user-053",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "Yonhap Korean",
+      "source_url": "https://www.yna.co.kr/rss/news.xml",
+      "status": "ok"
+    },
+    {
+      "counts": {},
+      "reason": "rss_only_feed_directory_candidate",
+      "selected_candidates": 0,
+      "source_id": "user-054",
+      "source_kind": "feed_directory_candidate",
+      "source_name": "IPS",
+      "source_url": "https://www.ipsnews.net/rss-feeds/",
+      "status": "skipped"
+    },
+    {
+      "bytes_received": 13646,
+      "content_type": "text/xml; charset=utf-8",
+      "counts": {
+        "eligible_candidates": 20,
+        "entries_seen": 20
+      },
+      "elapsed_seconds": 1.69,
+      "feed_observation": {
+        "bytes_received": 13646,
+        "content_type": "text/xml; charset=utf-8",
+        "feed_url": "https://feeds.feedburner.com/rsscna/intworld",
+        "final_url": "https://feeds.feedburner.com/rsscna/intworld",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-f6djihgt/observation.json",
+        "observed_at": "2026-11-20T11:01:14.640289+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-f6djihgt/raw.xml",
+        "sha256": "f33d36a76ffec55dd2b926487a1cf02ee62724389987207081152d2d2c4b7a38",
+        "source_id": "user-055",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://feeds.feedburner.com/rsscna/intworld",
+      "selected_candidates": 20,
+      "source_id": "user-055",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "中央社國際",
+      "source_url": "https://feeds.feedburner.com/rsscna/intworld",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 14277,
+      "content_type": "text/xml; charset=utf-8",
+      "counts": {
+        "eligible_candidates": 20,
+        "entries_seen": 20
+      },
+      "elapsed_seconds": 1.797,
+      "feed_observation": {
+        "bytes_received": 14277,
+        "content_type": "text/xml; charset=utf-8",
+        "feed_url": "https://feeds.feedburner.com/rsscna/politics",
+        "final_url": "https://feeds.feedburner.com/rsscna/politics",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-w01h813d/observation.json",
+        "observed_at": "2026-11-20T11:01:14.858521+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-w01h813d/raw.xml",
+        "sha256": "4bcab559bf33ae741e2111690602336568efeba340d6040265dc9f5b858ce640",
+        "source_id": "user-056",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://feeds.feedburner.com/rsscna/politics",
+      "selected_candidates": 20,
+      "source_id": "user-056",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "中央社政治",
+      "source_url": "https://feeds.feedburner.com/rsscna/politics",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 14045,
+      "content_type": "text/xml; charset=utf-8",
+      "counts": {
+        "eligible_candidates": 20,
+        "entries_seen": 20
+      },
+      "elapsed_seconds": 1.754,
+      "feed_observation": {
+        "bytes_received": 14045,
+        "content_type": "text/xml; charset=utf-8",
+        "feed_url": "https://feeds.feedburner.com/rsscna/finance",
+        "final_url": "https://feeds.feedburner.com/rsscna/finance",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-s54bngoo/observation.json",
+        "observed_at": "2026-11-20T11:01:16.393187+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-s54bngoo/raw.xml",
+        "sha256": "a9dce1f49f76d1d88e97b921d7b7f46fc1c72f882d6566a6c6ec21d5c68977ac",
+        "source_id": "user-057",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://feeds.feedburner.com/rsscna/finance",
+      "selected_candidates": 19,
+      "source_id": "user-057",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "中央社財經",
+      "source_url": "https://feeds.feedburner.com/rsscna/finance",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 14052,
+      "content_type": "text/xml; charset=utf-8",
+      "counts": {
+        "eligible_candidates": 4,
+        "entries_seen": 20,
+        "outside_window": 16
+      },
+      "elapsed_seconds": 1.758,
+      "feed_observation": {
+        "bytes_received": 14052,
+        "content_type": "text/xml; charset=utf-8",
+        "feed_url": "https://feeds.feedburner.com/rsscna/technology",
+        "final_url": "https://feeds.feedburner.com/rsscna/technology",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-rlyfi4qi/observation.json",
+        "observed_at": "2026-11-20T11:01:16.654746+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-rlyfi4qi/raw.xml",
+        "sha256": "cb5954d31877bd23da36b8406f9e14a34637f840f471c2f87e91a62fb0d6d4bc",
+        "source_id": "user-058",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://feeds.feedburner.com/rsscna/technology",
+      "selected_candidates": 4,
+      "source_id": "user-058",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "中央社科技",
+      "source_url": "https://feeds.feedburner.com/rsscna/technology",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 9211,
+      "content_type": "application/rss+xml",
+      "counts": {
+        "eligible_candidates": 0,
+        "entries_seen": 10,
+        "outside_window": 10
+      },
+      "elapsed_seconds": 0.698,
+      "feed_observation": {
+        "bytes_received": 9211,
+        "content_type": "application/rss+xml",
+        "feed_url": "https://public.twreporter.org/rss/twreporter-rss.xml",
+        "final_url": "https://public.twreporter.org/rss/twreporter-rss.xml",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-0d1kuqam/observation.json",
+        "observed_at": "2026-11-20T11:01:17.099028+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-0d1kuqam/raw.xml",
+        "sha256": "4a24d7781427bec1994e1c519da270bb2aeca6de981eb6f73c9154d0bd30a1af",
+        "source_id": "user-059",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://public.twreporter.org/rss/twreporter-rss.xml",
+      "selected_candidates": 0,
+      "source_id": "user-059",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "報導者",
+      "source_url": "https://public.twreporter.org/rss/twreporter-rss.xml",
+      "status": "ok_no_eligible"
+    },
+    {
+      "bytes_received": 22953,
+      "content_type": "application/rss+xml; charset=utf-8",
+      "counts": {
+        "date_invalid": 30,
+        "eligible_candidates": 0,
+        "entries_seen": 30
+      },
+      "elapsed_seconds": 0.739,
+      "feed_observation": {
+        "bytes_received": 22953,
+        "content_type": "application/rss+xml; charset=utf-8",
+        "feed_url": "https://www.ithome.com.tw/rss",
+        "final_url": "https://www.ithome.com.tw/rss",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-vhmcp5v0/observation.json",
+        "observed_at": "2026-11-20T11:01:17.388117+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-vhmcp5v0/raw.xml",
+        "sha256": "4c322b2c45f7d4786c5867dc27fa28bc549987caa08362d482672308d67c36d2",
+        "source_id": "user-060",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://www.ithome.com.tw/rss",
+      "selected_candidates": 0,
+      "source_id": "user-060",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "iThome",
+      "source_url": "https://www.ithome.com.tw/rss",
+      "status": "ok_no_eligible"
+    },
+    {
+      "bytes_received": 204362,
+      "content_type": "application/rss+xml; charset=utf-8",
+      "counts": {
+        "date_timezone_missing": 30,
+        "eligible_candidates": 0,
+        "entries_seen": 30
+      },
+      "elapsed_seconds": 0.748,
+      "feed_observation": {
+        "bytes_received": 204362,
+        "content_type": "application/rss+xml; charset=utf-8",
+        "feed_url": "https://www.ithome.com.tw/rss/security",
+        "final_url": "https://www.ithome.com.tw/rss/security",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-isdgltkv/observation.json",
+        "observed_at": "2026-11-20T11:01:17.845992+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-isdgltkv/raw.xml",
+        "sha256": "0fb2ac12af034d4eb167424a97fdd01df707d38cee10fcd66ae5eace1a1d614f",
+        "source_id": "user-061",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://www.ithome.com.tw/rss/security",
+      "selected_candidates": 0,
+      "source_id": "user-061",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "iThome 資安",
+      "source_url": "https://www.ithome.com.tw/rss/security",
+      "status": "ok_no_eligible"
+    },
+    {
+      "bytes_received": 7680,
+      "content_type": "text/xml; charset=utf-8",
+      "counts": {
+        "eligible_candidates": 10,
+        "entries_seen": 10
+      },
+      "elapsed_seconds": 1.29,
+      "feed_observation": {
+        "bytes_received": 7680,
+        "content_type": "text/xml; charset=utf-8",
+        "feed_url": "https://www.ft.com/?format=rss",
+        "final_url": "https://www.ft.com/rss/home/international",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-o8au30a4/observation.json",
+        "observed_at": "2026-11-20T11:01:18.657492+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-o8au30a4/raw.xml",
+        "sha256": "012cfd6828bfc4fa37510dcaf27260163d51711e9b6d2b253087d15e98cf8ada",
+        "source_id": "user-062",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://www.ft.com/rss/home/international",
+      "selected_candidates": 10,
+      "source_id": "user-062",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "Financial Times",
+      "source_url": "https://www.ft.com/?format=rss",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 11867,
+      "content_type": "text/xml; charset=utf-8",
+      "counts": {
+        "eligible_candidates": 13,
+        "entries_seen": 25,
+        "outside_window": 12
+      },
+      "elapsed_seconds": 1.05,
+      "feed_observation": {
+        "bytes_received": 11867,
+        "content_type": "text/xml; charset=utf-8",
+        "feed_url": "https://www.ft.com/markets?format=rss",
+        "final_url": "https://www.ft.com/markets?format=rss",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-_zvfet1n/observation.json",
+        "observed_at": "2026-11-20T11:01:18.890299+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-_zvfet1n/raw.xml",
+        "sha256": "2000843aac912f0886c06eeb2ceb001f08935657360c0e0a9642898634e19c61",
+        "source_id": "user-063",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://www.ft.com/markets?format=rss",
+      "selected_candidates": 9,
+      "source_id": "user-063",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "FT Markets",
+      "source_url": "https://www.ft.com/markets?format=rss",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 15197,
+      "content_type": "text/xml; charset=utf-8",
+      "counts": {
+        "eligible_candidates": 15,
+        "entries_seen": 20,
+        "outside_window": 5
+      },
+      "elapsed_seconds": 1.214,
+      "feed_observation": {
+        "bytes_received": 15197,
+        "content_type": "text/xml; charset=utf-8",
+        "feed_url": "https://www.bloomberg.com/feeds/news.rss",
+        "final_url": "https://www.bloomberg.com/feeds/news.rss",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-22w4kwhn/observation.json",
+        "observed_at": "2026-11-20T11:01:19.887603+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-22w4kwhn/raw.xml",
+        "sha256": "b4ccedcbf09f32502da6f4b20acb499b23f9010b8f11b7ba51558d725aee7997",
+        "source_id": "user-064",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://www.bloomberg.com/feeds/news.rss",
+      "selected_candidates": 10,
+      "source_id": "user-064",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "Bloomberg",
+      "source_url": "https://www.bloomberg.com/feeds/news.rss",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 15433,
+      "content_type": "text/xml; charset=utf-8",
+      "counts": {
+        "eligible_candidates": 18,
+        "entries_seen": 20,
+        "outside_window": 2
+      },
+      "elapsed_seconds": 0.994,
+      "feed_observation": {
+        "bytes_received": 15433,
+        "content_type": "text/xml; charset=utf-8",
+        "feed_url": "https://www.bloomberg.com/feeds/markets/news.rss",
+        "final_url": "https://www.bloomberg.com/feeds/markets/news.rss",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-dsl6q4h6/observation.json",
+        "observed_at": "2026-11-20T11:01:19.853203+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-dsl6q4h6/raw.xml",
+        "sha256": "bd41e6416711f8922156748048d4c457e4be1c1df8b39b6795b2edd7cc0236b6",
+        "source_id": "user-065",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://www.bloomberg.com/feeds/markets/news.rss",
+      "selected_candidates": 17,
+      "source_id": "user-065",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "Bloomberg Markets",
+      "source_url": "https://www.bloomberg.com/feeds/markets/news.rss",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 16854,
+      "content_type": "text/xml; charset=utf-8",
+      "counts": {
+        "eligible_candidates": 18,
+        "entries_seen": 20,
+        "outside_window": 2
+      },
+      "elapsed_seconds": 0.702,
+      "feed_observation": {
+        "bytes_received": 16854,
+        "content_type": "text/xml; charset=utf-8",
+        "feed_url": "https://www.bloomberg.com/feeds/technology/news.rss",
+        "final_url": "https://www.bloomberg.com/feeds/technology/news.rss",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-ote0icon/observation.json",
+        "observed_at": "2026-11-20T11:01:20.588931+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-ote0icon/raw.xml",
+        "sha256": "10a118a84a55ec1c2fa17c0ead7a4c24343e5a942c4dd5267a20518b63e3f72c",
+        "source_id": "user-066",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://www.bloomberg.com/feeds/technology/news.rss",
+      "selected_candidates": 18,
+      "source_id": "user-066",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "Bloomberg Technology",
+      "source_url": "https://www.bloomberg.com/feeds/technology/news.rss",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 15297,
+      "content_type": "text/xml; charset=utf-8",
+      "counts": {
+        "eligible_candidates": 18,
+        "entries_seen": 20,
+        "outside_window": 2
+      },
+      "elapsed_seconds": 1.05,
+      "feed_observation": {
+        "bytes_received": 15297,
+        "content_type": "text/xml; charset=utf-8",
+        "feed_url": "https://www.bloomberg.com/feeds/economics/news.rss",
+        "final_url": "https://www.bloomberg.com/feeds/economics/news.rss",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-njracb7c/observation.json",
+        "observed_at": "2026-11-20T11:01:20.907335+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-njracb7c/raw.xml",
+        "sha256": "dafb96456c70b8533d07990dacbf4d3d8165ccb39c6ca7005d44f0a80279758c",
+        "source_id": "user-067",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://www.bloomberg.com/feeds/economics/news.rss",
+      "selected_candidates": 18,
+      "source_id": "user-067",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "Bloomberg Economics",
+      "source_url": "https://www.bloomberg.com/feeds/economics/news.rss",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 16803,
+      "content_type": "application/rss+xml; charset=UTF-8",
+      "counts": {
+        "eligible_candidates": 5,
+        "entries_seen": 20,
+        "outside_window": 15
+      },
+      "elapsed_seconds": 0.838,
+      "feed_observation": {
+        "bytes_received": 16803,
+        "content_type": "application/rss+xml; charset=UTF-8",
+        "feed_url": "https://techcrunch.com/feed/",
+        "final_url": "https://techcrunch.com/feed/",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-4fvitx6c/observation.json",
+        "observed_at": "2026-11-20T11:01:21.402080+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-4fvitx6c/raw.xml",
+        "sha256": "559c9c567529f419a59b5bbd0c757484ac151a50020a84878006fc45f1ff06d7",
+        "source_id": "user-068",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://techcrunch.com/feed/",
+      "selected_candidates": 3,
+      "source_id": "user-068",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/feed/",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 17478,
+      "content_type": "application/rss+xml; charset=UTF-8",
+      "counts": {
+        "eligible_candidates": 2,
+        "entries_seen": 20,
+        "outside_window": 18
+      },
+      "elapsed_seconds": 0.767,
+      "feed_observation": {
+        "bytes_received": 17478,
+        "content_type": "application/rss+xml; charset=UTF-8",
+        "feed_url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+        "final_url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-m6oafuk3/observation.json",
+        "observed_at": "2026-11-20T11:01:21.604245+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-m6oafuk3/raw.xml",
+        "sha256": "3b3fb8a46928bfec2f99b2285dbdb53fb2033f5efafda31c110dc918e5ae0beb",
+        "source_id": "user-069",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "selected_candidates": 2,
+      "source_id": "user-069",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "TechCrunch AI",
+      "source_url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 110187,
+      "content_type": "application/rss+xml; charset=UTF-8",
+      "counts": {
+        "eligible_candidates": 0,
+        "entries_seen": 10,
+        "outside_window": 10
+      },
+      "elapsed_seconds": 1.057,
+      "feed_observation": {
+        "bytes_received": 110187,
+        "content_type": "application/rss+xml; charset=UTF-8",
+        "feed_url": "https://www.technologyreview.com/topic/artificial-intelligence/feed",
+        "final_url": "https://www.technologyreview.com/topic/artificial-intelligence/feed",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-fx60ebbb/observation.json",
+        "observed_at": "2026-11-20T11:01:21.999507+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-fx60ebbb/raw.xml",
+        "sha256": "5433b5bbcb6c06831e904654c7b02bf37fe78e6f1167f6b60ef9d25a358966db",
+        "source_id": "user-070",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://www.technologyreview.com/topic/artificial-intelligence/feed",
+      "selected_candidates": 0,
+      "source_id": "user-070",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "MIT Technology Review AI",
+      "source_url": "https://www.technologyreview.com/topic/artificial-intelligence/feed",
+      "status": "ok_no_eligible"
+    },
+    {
+      "bytes_received": 77868,
+      "content_type": "application/rss+xml; charset=UTF-8",
+      "counts": {
+        "eligible_candidates": 0,
+        "entries_seen": 20,
+        "outside_window": 20
+      },
+      "elapsed_seconds": 0.561,
+      "feed_observation": {
+        "bytes_received": 77868,
+        "content_type": "application/rss+xml; charset=UTF-8",
+        "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
+        "final_url": "https://feeds.arstechnica.com/arstechnica/index",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-fv9fhid1/observation.json",
+        "observed_at": "2026-11-20T11:01:21.988548+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-fv9fhid1/raw.xml",
+        "sha256": "349b5c427b6b520657e259829c2c7a8af14eb489165ad95f8a4a6a35c1c0b363",
+        "source_id": "user-071",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://feeds.arstechnica.com/arstechnica/index",
+      "selected_candidates": 0,
+      "source_id": "user-071",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "Ars Technica",
+      "source_url": "https://feeds.arstechnica.com/arstechnica/index",
+      "status": "ok_no_eligible"
+    },
+    {
+      "bytes_received": 20489,
+      "content_type": "application/rss+xml; charset=UTF-8",
+      "counts": {
+        "eligible_candidates": 1,
+        "entries_seen": 10,
+        "outside_window": 9
+      },
+      "elapsed_seconds": 2.84,
+      "feed_observation": {
+        "bytes_received": 20489,
+        "content_type": "application/rss+xml; charset=UTF-8",
+        "feed_url": "https://the-decoder.com/feed/",
+        "final_url": "https://the-decoder.com/feed/",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-k5c1gkif/observation.json",
+        "observed_at": "2026-11-20T11:01:24.446301+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-k5c1gkif/raw.xml",
+        "sha256": "eec79b8da8010e0cd1bfdaf432ef858a8266a86600d7003a1ffde81e7bb42910",
+        "source_id": "user-072",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://the-decoder.com/feed/",
+      "selected_candidates": 1,
+      "source_id": "user-072",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "The Decoder",
+      "source_url": "https://the-decoder.com/feed/",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 863009,
+      "content_type": "text/xml; charset=utf-8",
+      "counts": {
+        "eligible_candidates": 0,
+        "entries_seen": 200,
+        "entry_cap_reached": 1,
+        "outside_window": 200
+      },
+      "elapsed_seconds": 1.04,
+      "feed_observation": {
+        "bytes_received": 863009,
+        "content_type": "text/xml; charset=utf-8",
+        "feed_url": "https://openai.com/news/rss.xml",
+        "final_url": "https://openai.com/news/rss.xml",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-xge9fckl/observation.json",
+        "observed_at": "2026-11-20T11:01:22.943751+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-xge9fckl/raw.xml",
+        "sha256": "e35f658aed60e2a28d34995bc423ce610eedf6c34630f6bbb746c945bbf1b72c",
+        "source_id": "user-073",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://openai.com/news/rss.xml",
+      "selected_candidates": 0,
+      "source_id": "user-073",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "OpenAI",
+      "source_url": "https://openai.com/news/rss.xml",
+      "status": "ok_no_eligible"
+    },
+    {
+      "bytes_received": 67710,
+      "content_type": "application/xml",
+      "counts": {
+        "eligible_candidates": 0,
+        "entries_seen": 100,
+        "outside_window": 100
+      },
+      "elapsed_seconds": 0.589,
+      "feed_observation": {
+        "bytes_received": 67710,
+        "content_type": "application/xml",
+        "feed_url": "https://deepmind.google/blog/rss.xml",
+        "final_url": "https://deepmind.google/blog/rss.xml",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-1re6nezo/observation.json",
+        "observed_at": "2026-11-20T11:01:22.593946+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-1re6nezo/raw.xml",
+        "sha256": "5c004656aae62dcc2d674a57373353874dbafcde784309e613c8030fa5002059",
+        "source_id": "user-074",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://deepmind.google/blog/rss.xml",
+      "selected_candidates": 0,
+      "source_id": "user-074",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "Google DeepMind",
+      "source_url": "https://deepmind.google/blog/rss.xml",
+      "status": "ok_no_eligible"
+    },
+    {
+      "bytes_received": 30105,
+      "content_type": "application/xml; charset=utf-8",
+      "counts": {
+        "eligible_candidates": 0,
+        "entries_seen": 20,
+        "outside_window": 20
+      },
+      "elapsed_seconds": 0.838,
+      "feed_observation": {
+        "bytes_received": 30105,
+        "content_type": "application/xml; charset=utf-8",
+        "feed_url": "https://blog.google/innovation-and-ai/technology/ai/rss/",
+        "final_url": "https://blog.google/innovation-and-ai/technology/ai/rss/",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-cizu3mr_/observation.json",
+        "observed_at": "2026-11-20T11:01:23.408148+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-cizu3mr_/raw.xml",
+        "sha256": "ec9193d8740e6aee50cf03e5cafdd1463d58de00014bc027f6d489b6d1f263b0",
+        "source_id": "user-075",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://blog.google/innovation-and-ai/technology/ai/rss/",
+      "selected_candidates": 0,
+      "source_id": "user-075",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "Google AI",
+      "source_url": "https://blog.google/innovation-and-ai/technology/ai/rss/",
+      "status": "ok_no_eligible"
+    },
+    {
+      "bytes_received": 78677,
+      "content_type": "application/rss+xml; charset=utf-8",
+      "counts": {
+        "eligible_candidates": 0,
+        "entries_seen": 100,
+        "outside_window": 100
+      },
+      "elapsed_seconds": 1.109,
+      "feed_observation": {
+        "bytes_received": 78677,
+        "content_type": "application/rss+xml; charset=utf-8",
+        "feed_url": "https://research.google/blog/rss/",
+        "final_url": "https://research.google/blog/rss/",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-j8aznfwu/observation.json",
+        "observed_at": "2026-11-20T11:01:24.139231+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-j8aznfwu/raw.xml",
+        "sha256": "154d2ae21c99806de3bc1209253fd70c220fc3c3b3a20b71ec770cdd37192ce1",
+        "source_id": "user-076",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://research.google/blog/rss/",
+      "selected_candidates": 0,
+      "source_id": "user-076",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "Google Research",
+      "source_url": "https://research.google/blog/rss/",
+      "status": "ok_no_eligible"
+    },
+    {
+      "bytes_received": 212279,
+      "content_type": "application/rss+xml; charset=UTF-8",
+      "counts": {
+        "eligible_candidates": 0,
+        "entries_seen": 9,
+        "outside_window": 9
+      },
+      "elapsed_seconds": 1.214,
+      "feed_observation": {
+        "bytes_received": 212279,
+        "content_type": "application/rss+xml; charset=UTF-8",
+        "feed_url": "https://engineering.fb.com/feed/",
+        "final_url": "https://engineering.fb.com/feed/",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-dc7dl38b/observation.json",
+        "observed_at": "2026-11-20T11:01:24.643011+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-dc7dl38b/raw.xml",
+        "sha256": "1d0f80f47d3c24ae3f1063d9395e20cec6e860bbf791c346c7fdf8b12836d1db",
+        "source_id": "user-077",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://engineering.fb.com/feed/",
+      "selected_candidates": 0,
+      "source_id": "user-077",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "Meta Engineering",
+      "source_url": "https://engineering.fb.com/feed/",
+      "status": "ok_no_eligible"
+    },
+    {
+      "bytes_received": 263856,
+      "content_type": "application/rss+xml; charset=UTF-8",
+      "counts": {
+        "eligible_candidates": 0,
+        "entries_seen": 18,
+        "outside_window": 18
+      },
+      "elapsed_seconds": 0.741,
+      "feed_observation": {
+        "bytes_received": 263856,
+        "content_type": "application/rss+xml; charset=UTF-8",
+        "feed_url": "https://blogs.nvidia.com/feed/",
+        "final_url": "https://blogs.nvidia.com/feed/",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-0rw48cmh/observation.json",
+        "observed_at": "2026-11-20T11:01:24.844592+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-0rw48cmh/raw.xml",
+        "sha256": "1742ba21ea2827cb73b4aee703786260d78c20c2274fa5f09faefbb53a913faa",
+        "source_id": "user-078",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://blogs.nvidia.com/feed/",
+      "selected_candidates": 0,
+      "source_id": "user-078",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "NVIDIA",
+      "source_url": "https://blogs.nvidia.com/feed/",
+      "status": "ok_no_eligible"
+    },
+    {
+      "bytes_received": 779873,
+      "content_type": "application/atom+xml; charset=UTF-8",
+      "counts": {
+        "eligible_candidates": 0,
+        "entries_seen": 100,
+        "outside_window": 100
+      },
+      "elapsed_seconds": 1.107,
+      "feed_observation": {
+        "bytes_received": 779873,
+        "content_type": "application/atom+xml; charset=UTF-8",
+        "feed_url": "https://developer.nvidia.com/blog/feed/",
+        "final_url": "https://developer.nvidia.com/blog/feed/",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-gu1h8vms/observation.json",
+        "observed_at": "2026-11-20T11:01:25.542529+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-gu1h8vms/raw.xml",
+        "sha256": "72aa1f459ae82ae9101de27849524bad09f0767272ec77d81112edfe3fd0156c",
+        "source_id": "user-079",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://developer.nvidia.com/blog/feed/",
+      "selected_candidates": 0,
+      "source_id": "user-079",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "NVIDIA Developer",
+      "source_url": "https://developer.nvidia.com/blog/feed/",
+      "status": "ok_no_eligible"
+    },
+    {
+      "bytes_received": 389306,
+      "content_type": "application/rss+xml; charset=UTF-8",
+      "counts": {
+        "eligible_candidates": 0,
+        "entries_seen": 10,
+        "outside_window": 10
+      },
+      "elapsed_seconds": 5.199,
+      "feed_observation": {
+        "bytes_received": 389306,
+        "content_type": "application/rss+xml; charset=UTF-8",
+        "feed_url": "https://www.microsoft.com/en-us/research/feed/",
+        "final_url": "https://www.microsoft.com/en-us/research/feed/",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-03jon02g/observation.json",
+        "observed_at": "2026-11-20T11:01:29.841048+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-03jon02g/raw.xml",
+        "sha256": "867ddc55228968c95912c3fbbcf5890fbc559cb8a5fe28417cbe49cf00a3026c",
+        "source_id": "user-080",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://www.microsoft.com/en-us/research/feed/",
+      "selected_candidates": 0,
+      "source_id": "user-080",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "Microsoft Research",
+      "source_url": "https://www.microsoft.com/en-us/research/feed/",
+      "status": "ok_no_eligible"
+    },
+    {
+      "bytes_received": 9754,
+      "content_type": "text/xml",
+      "counts": {
+        "eligible_candidates": 0,
+        "entries_seen": 10,
+        "outside_window": 10
+      },
+      "elapsed_seconds": 0.715,
+      "feed_observation": {
+        "bytes_received": 9754,
+        "content_type": "text/xml",
+        "feed_url": "https://machinelearning.apple.com/rss.xml",
+        "final_url": "https://machinelearning.apple.com/rss.xml",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-bj4_6lqr/observation.json",
+        "observed_at": "2026-11-20T11:01:25.600091+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-bj4_6lqr/raw.xml",
+        "sha256": "d1e232fac457b11d04221575181152ac1477a428aaaf036568c1cdbc58aebfcd",
+        "source_id": "user-081",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://machinelearning.apple.com/rss.xml",
+      "selected_candidates": 0,
+      "source_id": "user-081",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "Apple Machine Learning",
+      "source_url": "https://machinelearning.apple.com/rss.xml",
+      "status": "ok_no_eligible"
+    },
+    {
+      "bytes_received": 642536,
+      "content_type": "application/rss+xml;charset=UTF-8",
+      "counts": {
+        "eligible_candidates": 3,
+        "entries_seen": 20,
+        "outside_window": 17
+      },
+      "elapsed_seconds": 1.751,
+      "feed_observation": {
+        "bytes_received": 642536,
+        "content_type": "application/rss+xml;charset=UTF-8",
+        "feed_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
+        "final_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-f7sq611u/observation.json",
+        "observed_at": "2026-11-20T11:01:27.246652+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-f7sq611u/raw.xml",
+        "sha256": "b21f8722bcb2e5da0f2ec79849e15df53503b9dc50f21eb31f411491ab4ac8d3",
+        "source_id": "user-082",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "selected_candidates": 3,
+      "source_id": "user-082",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "AWS Machine Learning",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 270072,
+      "content_type": "application/rss+xml; charset=utf-8",
+      "counts": {
+        "eligible_candidates": 0,
+        "entries_seen": 200,
+        "entry_cap_reached": 1,
+        "outside_window": 200
+      },
+      "elapsed_seconds": 1.157,
+      "feed_observation": {
+        "bytes_received": 270072,
+        "content_type": "application/rss+xml; charset=utf-8",
+        "feed_url": "https://huggingface.co/blog/feed.xml",
+        "final_url": "https://huggingface.co/blog/feed.xml",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-30dmzlnt/observation.json",
+        "observed_at": "2026-11-20T11:01:26.740014+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-30dmzlnt/raw.xml",
+        "sha256": "db9aef4a56181a8dfed9af4079892d4fd918d3290e4e9ad8f207b10b493b8c3b",
+        "source_id": "user-083",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://huggingface.co/blog/feed.xml",
+      "selected_candidates": 0,
+      "source_id": "user-083",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "Hugging Face",
+      "source_url": "https://huggingface.co/blog/feed.xml",
+      "status": "ok_no_eligible"
+    },
+    {
+      "bytes_received": 27752,
+      "content_type": "text/plain; charset=UTF-8",
+      "counts": {
+        "eligible_candidates": 0,
+        "entries_seen": 94,
+        "outside_window": 94
+      },
+      "elapsed_seconds": 0.694,
+      "feed_observation": {
+        "bytes_received": 27752,
+        "content_type": "text/plain; charset=UTF-8",
+        "feed_url": "https://mistral.ai/news/rss",
+        "final_url": "https://mistral.ai/news/rss",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-8breooty/observation.json",
+        "observed_at": "2026-11-20T11:01:27.446452+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-8breooty/raw.xml",
+        "sha256": "dd2565b1e2ccb7222db9a89a1dfd3ba20532284d4b7e8ee5b97ebf45025e7978",
+        "source_id": "user-084",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://mistral.ai/news/rss",
+      "selected_candidates": 0,
+      "source_id": "user-084",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "Mistral AI",
+      "source_url": "https://mistral.ai/news/rss",
+      "status": "ok_no_eligible"
+    },
+    {
+      "bytes_received": 784831,
+      "content_type": "application/rss+xml",
+      "counts": {
+        "eligible_candidates": 200,
+        "entries_seen": 200,
+        "entry_cap_reached": 1
+      },
+      "elapsed_seconds": 2.999,
+      "feed_observation": {
+        "bytes_received": 784831,
+        "content_type": "application/rss+xml",
+        "feed_url": "https://export.arxiv.org/rss/cs.AI",
+        "final_url": "https://export.arxiv.org/rss/cs.AI",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-vb8w5a8k/observation.json",
+        "observed_at": "2026-11-20T11:01:29.996760+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-vb8w5a8k/raw.xml",
+        "sha256": "8f2c074a005d09de0e9b3c7feaa219dd0c37ba8ea7b6805fbd14fc88c928c95e",
+        "source_id": "user-085",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://export.arxiv.org/rss/cs.AI",
+      "selected_candidates": 26,
+      "source_id": "user-085",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "arXiv Artificial Intelligence",
+      "source_url": "https://export.arxiv.org/rss/cs.AI",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 426963,
+      "content_type": "application/rss+xml",
+      "counts": {
+        "eligible_candidates": 194,
+        "entries_seen": 194
+      },
+      "elapsed_seconds": 2.752,
+      "feed_observation": {
+        "bytes_received": 426963,
+        "content_type": "application/rss+xml",
+        "feed_url": "https://export.arxiv.org/rss/cs.LG",
+        "final_url": "https://export.arxiv.org/rss/cs.LG",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-1c4chkam/observation.json",
+        "observed_at": "2026-11-20T11:01:29.943336+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-1c4chkam/raw.xml",
+        "sha256": "5724579bbbe7f0fd50c95db023a0bbdea13b142eca3006dd7204464e9c8f8a36",
+        "source_id": "user-086",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://export.arxiv.org/rss/cs.LG",
+      "selected_candidates": 25,
+      "source_id": "user-086",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "arXiv Machine Learning",
+      "source_url": "https://export.arxiv.org/rss/cs.LG",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 196747,
+      "content_type": "application/rss+xml",
+      "counts": {
+        "eligible_candidates": 89,
+        "entries_seen": 89
+      },
+      "elapsed_seconds": 2.303,
+      "feed_observation": {
+        "bytes_received": 196747,
+        "content_type": "application/rss+xml",
+        "feed_url": "https://export.arxiv.org/rss/cs.CL",
+        "final_url": "https://export.arxiv.org/rss/cs.CL",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-2rd6w_wf/observation.json",
+        "observed_at": "2026-11-20T11:01:30.491975+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-2rd6w_wf/raw.xml",
+        "sha256": "6d076cfe733f382a7700c74f62c417c0789b6633025de5424cc0788471713add",
+        "source_id": "user-087",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://export.arxiv.org/rss/cs.CL",
+      "selected_candidates": 22,
+      "source_id": "user-087",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "arXiv NLP",
+      "source_url": "https://export.arxiv.org/rss/cs.CL",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 334363,
+      "content_type": "application/rss+xml",
+      "counts": {
+        "eligible_candidates": 152,
+        "entries_seen": 152
+      },
+      "elapsed_seconds": 2.597,
+      "feed_observation": {
+        "bytes_received": 334363,
+        "content_type": "application/rss+xml",
+        "feed_url": "https://export.arxiv.org/rss/cs.CV",
+        "final_url": "https://export.arxiv.org/rss/cs.CV",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-iqq620h2/observation.json",
+        "observed_at": "2026-11-20T11:01:32.295794+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-iqq620h2/raw.xml",
+        "sha256": "b38205aea68918aded8c1d639f7ec8eb309689bc780f48fdb1e36f5083312ba6",
+        "source_id": "user-088",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://export.arxiv.org/rss/cs.CV",
+      "selected_candidates": 22,
+      "source_id": "user-088",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "arXiv Computer Vision",
+      "source_url": "https://export.arxiv.org/rss/cs.CV",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 45448,
+      "content_type": "application/rss+xml; charset=utf-8",
+      "counts": {
+        "eligible_candidates": 9,
+        "entries_seen": 29,
+        "outside_window": 20
+      },
+      "elapsed_seconds": 1.238,
+      "feed_observation": {
+        "bytes_received": 45448,
+        "content_type": "application/rss+xml; charset=utf-8",
+        "feed_url": "https://flipboard.com/@associatedpress/top-stories-u7govdf1z.rss",
+        "final_url": "https://flipboard.com/@associatedpress/top-stories-u7govdf1z.rss",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-dg9t55f_/observation.json",
+        "observed_at": "2026-11-20T11:01:31.408617+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-dg9t55f_/raw.xml",
+        "sha256": "7c4aec95a16e75bab68954c46761d5f44e4435db6a87bc6bc94e215d09989caf",
+        "source_id": "user-089",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://flipboard.com/@associatedpress/top-stories-u7govdf1z.rss",
+      "selected_candidates": 9,
+      "source_id": "user-089",
+      "source_kind": "distribution_feed_candidate",
+      "source_name": "AP",
+      "source_url": "https://flipboard.com/@associatedpress/top-stories-u7govdf1z.rss",
+      "status": "ok"
+    },
+    {
+      "bytes_received": 130135,
+      "content_type": "application/xml; charset=utf-8",
+      "counts": {
+        "eligible_candidates": 0,
+        "entries_seen": 100,
+        "outside_window": 74,
+        "unresolved_aggregator": 26
+      },
+      "elapsed_seconds": 1.78,
+      "feed_observation": {
+        "bytes_received": 130135,
+        "content_type": "application/xml; charset=utf-8",
+        "feed_url": "https://news.google.com/rss/search?q=when:24h+site:reuters.com&hl=en-US&gl=US&ceid=US:en",
+        "final_url": "https://news.google.com/rss/search?q=when:24h+site:reuters.com&hl=en-US&gl=US&ceid=US:en",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-zd4skg4s/observation.json",
+        "observed_at": "2026-11-20T11:01:32.051404+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-zd4skg4s/raw.xml",
+        "sha256": "8098585671a9ab65d065770ca13df010e4a83f74d676c0a83e2e24077e9e7f55",
+        "source_id": "user-090",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://news.google.com/rss/search?q=when:24h+site:reuters.com&hl=en-US&gl=US&ceid=US:en",
+      "selected_candidates": 0,
+      "source_id": "user-090",
+      "source_kind": "third_party_discovery_feed",
+      "source_name": "Reuters",
+      "source_url": "https://news.google.com/rss/search?q=when:24h+site:reuters.com&hl=en-US&gl=US&ceid=US:en",
+      "status": "ok_no_eligible"
+    },
+    {
+      "counts": {},
+      "elapsed_seconds": 1.138,
+      "reason": "http_429",
+      "selected_candidates": 0,
+      "source_id": "user-091",
+      "source_kind": "third_party_discovery_feed",
+      "source_name": "CNN",
+      "source_url": "https://news.google.com/rss/search?q=when:24h+site:cnn.com&hl=en-US&gl=US&ceid=US:en",
+      "status": "http_error"
+    },
+    {
+      "bytes_received": 115416,
+      "content_type": "application/xml; charset=utf-8",
+      "counts": {
+        "eligible_candidates": 0,
+        "entries_seen": 100,
+        "outside_window": 86,
+        "unresolved_aggregator": 14
+      },
+      "elapsed_seconds": 1.807,
+      "feed_observation": {
+        "bytes_received": 115416,
+        "content_type": "application/xml; charset=utf-8",
+        "feed_url": "https://news.google.com/rss/search?q=when:7d+site:afp.com&hl=en-US&gl=US&ceid=US:en",
+        "final_url": "https://news.google.com/rss/search?q=when:7d+site:afp.com&hl=en-US&gl=US&ceid=US:en",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-c2_utxn_/observation.json",
+        "observed_at": "2026-11-20T11:01:33.240699+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-c2_utxn_/raw.xml",
+        "sha256": "fc9c9d0db420662f094dd32971a5391ed71113d49552d6340e04dcc663f0b799",
+        "source_id": "user-092",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://news.google.com/rss/search?q=when:7d+site:afp.com&hl=en-US&gl=US&ceid=US:en",
+      "selected_candidates": 0,
+      "source_id": "user-092",
+      "source_kind": "third_party_discovery_feed",
+      "source_name": "AFP",
+      "source_url": "https://news.google.com/rss/search?q=when:7d+site:afp.com&hl=en-US&gl=US&ceid=US:en",
+      "status": "ok_no_eligible"
+    },
+    {
+      "counts": {},
+      "reason": "rss_only_official_webpage_candidate",
+      "selected_candidates": 0,
+      "source_id": "user-093",
+      "source_kind": "official_webpage_candidate",
+      "source_name": "Anthropic",
+      "source_url": "https://www.anthropic.com/news",
+      "status": "skipped"
+    },
+    {
+      "counts": {},
+      "reason": "rss_only_official_webpage_candidate",
+      "selected_candidates": 0,
+      "source_id": "user-094",
+      "source_kind": "official_webpage_candidate",
+      "source_name": "Meta AI",
+      "source_url": "https://ai.meta.com/blog/",
+      "status": "skipped"
+    },
+    {
+      "counts": {},
+      "reason": "rss_only_official_webpage_candidate",
+      "selected_candidates": 0,
+      "source_id": "user-095",
+      "source_kind": "official_webpage_candidate",
+      "source_name": "xAI",
+      "source_url": "https://x.ai/news",
+      "status": "skipped"
+    },
+    {
+      "bytes_received": 35335,
+      "content_type": "text/xml; charset=UTF-8",
+      "counts": {
+        "eligible_candidates": 6,
+        "entries_seen": 20,
+        "outside_window": 14
+      },
+      "elapsed_seconds": 0.709,
+      "feed_observation": {
+        "bytes_received": 35335,
+        "content_type": "text/xml; charset=UTF-8",
+        "feed_url": "https://www.engadget.com/rss.xml",
+        "final_url": "https://www.engadget.com/rss.xml",
+        "metadata_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-x5i24u21/observation.json",
+        "observed_at": "2026-11-20T11:01:32.488940+00:00",
+        "parser": {
+          "max_bytes": 2000000,
+          "max_entries": 200,
+          "max_evidence_chars": 4000,
+          "name": "collector.parse_feed",
+          "publication_policy": "aware_observed_publication_half_open_v1",
+          "version": 1,
+          "xml_engine": "xml.etree.ElementTree"
+        },
+        "raw_path": "/Users/linweijie/.hermes/projects/editorial-pipeline/state/news/2026-11-20/evening/collection/feed-observations/feed-x5i24u21/raw.xml",
+        "sha256": "4e664eaae82ace54551f464796b83ed1082a02c4784b8ebed5661eb5dcdeffd6",
+        "source_id": "agent-added-engadget",
+        "version": 1,
+        "window_end": "2026-11-20T19:00:00+08:00",
+        "window_start": "2026-11-20T07:00:00+08:00"
+      },
+      "final_feed_url": "https://www.engadget.com/rss.xml",
+      "selected_candidates": 6,
+      "source_id": "agent-added-engadget",
+      "source_kind": "rss_atom_candidate",
+      "source_name": "Engadget",
+      "source_url": "https://www.engadget.com/rss.xml",
+      "status": "ok"
+    }
+  ],
+  "title": "人工智慧代理工具擴張、算力基礎建設與科技產業動態",
+  "window_end": "2026-11-20T19:00:00+08:00",
+  "window_start": "2026-11-20T07:00:00+08:00"
+}
