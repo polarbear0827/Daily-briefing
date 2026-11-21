@@ -1,0 +1,123 @@
+{
+  "date": "2026-11-21",
+  "edition": "evening",
+  "generated_at": "2026-11-21T19:04:11.393279+08:00",
+  "items": [],
+  "kind": "official-software-updates",
+  "news_minimum_applies": false,
+  "publication": {
+    "identity": "2026-11-21-evening",
+    "mode": "scheduled",
+    "published_at": "2026-11-21T20:00:59.938112+08:00",
+    "snapshot_sha256": "e573ad7bbd299cbf95370452e27be3bb4f4976402b4b97f791ac6a2c20182814"
+  },
+  "schema_version": 1,
+  "selection_applied": false,
+  "source_health": [
+    {
+      "id": "official-google-blog",
+      "observed_at": "2026-11-21T11:00:58.839539+00:00",
+      "provider_id": "google",
+      "reason_code": "collection-ok",
+      "status": "ok"
+    },
+    {
+      "id": "official-google-notebook-seed",
+      "observed_at": "2026-11-21T11:01:02.697278+00:00",
+      "provider_id": "google",
+      "reason_code": "collection-ok",
+      "status": "ok"
+    },
+    {
+      "id": "official-google-api",
+      "observed_at": "2026-11-21T11:01:06.086291+00:00",
+      "provider_id": "google",
+      "reason_code": "collection-ok",
+      "status": "ok"
+    },
+    {
+      "id": "official-deepmind",
+      "observed_at": "2026-11-21T11:00:58.782327+00:00",
+      "provider_id": "deepmind",
+      "reason_code": "collection-ok",
+      "status": "ok"
+    },
+    {
+      "id": "official-claude-api",
+      "observed_at": "2026-11-21T11:00:58.936995+00:00",
+      "provider_id": "anthropic",
+      "reason_code": "collection-unavailable",
+      "status": "unavailable"
+    },
+    {
+      "id": "official-claude-app",
+      "observed_at": "2026-11-21T11:01:02.993970+00:00",
+      "provider_id": "anthropic",
+      "reason_code": "collection-ok",
+      "status": "ok"
+    },
+    {
+      "id": "official-openai-news",
+      "observed_at": "2026-11-21T11:01:00.033728+00:00",
+      "provider_id": "openai",
+      "reason_code": "collection-ok",
+      "status": "ok"
+    },
+    {
+      "id": "official-openai-api",
+      "observed_at": "2026-11-21T11:01:03.131881+00:00",
+      "provider_id": "openai",
+      "reason_code": "collection-ok",
+      "status": "ok"
+    },
+    {
+      "id": "official-xai-api",
+      "observed_at": "2026-11-21T11:01:00.183375+00:00",
+      "provider_id": "xai",
+      "reason_code": "collection-unavailable",
+      "status": "unavailable"
+    },
+    {
+      "id": "official-meta",
+      "observed_at": "2026-11-21T11:01:00.797130+00:00",
+      "provider_id": "meta",
+      "reason_code": "collection-ok",
+      "status": "ok"
+    },
+    {
+      "id": "official-mistral",
+      "observed_at": "2026-11-21T11:01:01.331629+00:00",
+      "provider_id": "mistral",
+      "reason_code": "collection-ok",
+      "status": "ok"
+    },
+    {
+      "id": "official-github",
+      "observed_at": "2026-11-21T11:01:01.632280+00:00",
+      "provider_id": "github",
+      "reason_code": "collection-unavailable",
+      "status": "unavailable"
+    },
+    {
+      "id": "official-windows",
+      "observed_at": "2026-11-21T11:01:02.138205+00:00",
+      "provider_id": "windows",
+      "reason_code": "collection-ok",
+      "status": "ok"
+    },
+    {
+      "id": "official-chatgpt-app",
+      "observed_at": "2026-11-21T11:01:05.130791+00:00",
+      "provider_id": "openai",
+      "reason_code": "collection-unavailable",
+      "status": "unavailable"
+    },
+    {
+      "id": "official-xai-news",
+      "observed_at": "2026-11-21T11:01:04.132367+00:00",
+      "provider_id": "xai",
+      "reason_code": "collection-unavailable",
+      "status": "unavailable"
+    }
+  ]
+}
