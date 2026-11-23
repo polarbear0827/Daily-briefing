@@ -1,120 +1,120 @@
 {
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "edition": "evening",
-  "generated_at": "2026-11-22T19:03:51.591944+08:00",
+  "generated_at": "2026-11-23T19:03:47.827638+08:00",
   "items": [],
   "kind": "official-software-updates",
   "news_minimum_applies": false,
   "publication": {
-    "identity": "2026-11-22-evening",
+    "identity": "2026-11-23-evening",
     "mode": "scheduled",
-    "published_at": "2026-11-22T20:00:54.335623+08:00",
-    "snapshot_sha256": "eafbeed29b53e43acc68485a2fc07a48afb3dadb14d4503260cb721f80799575"
+    "published_at": "2026-11-23T20:00:56.832332+08:00",
+    "snapshot_sha256": "7bb276ef63df7fec7b672bd53ca0ab7194b1155e3330d6d016ef3195be16f980"
   },
   "schema_version": 1,
   "selection_applied": false,
   "source_health": [
     {
       "id": "official-google-blog",
-      "observed_at": "2026-11-22T11:00:53.526634+00:00",
+      "observed_at": "2026-11-23T11:00:56.129760+00:00",
       "provider_id": "google",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-google-notebook-seed",
-      "observed_at": "2026-11-22T11:00:57.172767+00:00",
+      "observed_at": "2026-11-23T11:00:59.867313+00:00",
       "provider_id": "google",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-google-api",
-      "observed_at": "2026-11-22T11:01:00.222400+00:00",
+      "observed_at": "2026-11-23T11:01:03.073850+00:00",
       "provider_id": "google",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-deepmind",
-      "observed_at": "2026-11-22T11:00:53.322925+00:00",
+      "observed_at": "2026-11-23T11:00:55.965233+00:00",
       "provider_id": "deepmind",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-claude-api",
-      "observed_at": "2026-11-22T11:00:53.572653+00:00",
+      "observed_at": "2026-11-23T11:00:56.163455+00:00",
       "provider_id": "anthropic",
       "reason_code": "collection-unavailable",
       "status": "unavailable"
     },
     {
       "id": "official-claude-app",
-      "observed_at": "2026-11-22T11:00:57.588740+00:00",
+      "observed_at": "2026-11-23T11:01:00.472457+00:00",
       "provider_id": "anthropic",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-openai-news",
-      "observed_at": "2026-11-22T11:00:54.375250+00:00",
+      "observed_at": "2026-11-23T11:00:57.016053+00:00",
       "provider_id": "openai",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-openai-api",
-      "observed_at": "2026-11-22T11:00:57.980258+00:00",
+      "observed_at": "2026-11-23T11:01:00.370875+00:00",
       "provider_id": "openai",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-xai-api",
-      "observed_at": "2026-11-22T11:00:54.779856+00:00",
+      "observed_at": "2026-11-23T11:00:57.715577+00:00",
       "provider_id": "xai",
       "reason_code": "collection-unavailable",
       "status": "unavailable"
     },
     {
       "id": "official-meta",
-      "observed_at": "2026-11-22T11:00:55.388769+00:00",
+      "observed_at": "2026-11-23T11:00:57.713832+00:00",
       "provider_id": "meta",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-mistral",
-      "observed_at": "2026-11-22T11:00:55.772861+00:00",
+      "observed_at": "2026-11-23T11:00:58.366358+00:00",
       "provider_id": "mistral",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-github",
-      "observed_at": "2026-11-22T11:00:56.172762+00:00",
+      "observed_at": "2026-11-23T11:00:59.064991+00:00",
       "provider_id": "github",
       "reason_code": "collection-unavailable",
       "status": "unavailable"
     },
     {
       "id": "official-windows",
-      "observed_at": "2026-11-22T11:00:56.823152+00:00",
+      "observed_at": "2026-11-23T11:00:59.115530+00:00",
       "provider_id": "windows",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-chatgpt-app",
-      "observed_at": "2026-11-22T11:00:59.974296+00:00",
+      "observed_at": "2026-11-23T11:01:02.566138+00:00",
       "provider_id": "openai",
       "reason_code": "collection-unavailable",
       "status": "unavailable"
     },
     {
       "id": "official-xai-news",
-      "observed_at": "2026-11-22T11:00:58.523967+00:00",
+      "observed_at": "2026-11-23T11:01:01.514644+00:00",
       "provider_id": "xai",
       "reason_code": "collection-unavailable",
       "status": "unavailable"

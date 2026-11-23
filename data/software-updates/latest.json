@@ -1,137 +1,120 @@
 {
   "date": "2026-11-23",
-  "edition": "morning",
-  "generated_at": "2026-11-23T07:04:28.872420+08:00",
-  "items": [
-    {
-      "availability_zh": "開放條件請見官方公告",
-      "id": "7fe9fa3763392793bf2f6263f1cb9941db7003e1ad31c012f5547ddd7d8b7181",
-      "late_discovery": true,
-      "observed_at": "2026-11-22T23:00:55.914218+00:00",
-      "proof_sha256": "86f350cd5c50e9bd4ea9e583815a562c53f7d12bd242dc7787a1b14f90c6ff2f",
-      "provider_id": "openai",
-      "provider_name": "OpenAI",
-      "published_at": "2026-11-22T00:00:00+00:00",
-      "published_date": null,
-      "source_kind": "official-feed-excerpt",
-      "source_url": "https://openai.com/index/perplexity-and-intelligence",
-      "status": "verified-summary",
-      "summary_zh": "OpenAI 官方公告指出：OpenAI 說明困惑度如何衡量 AI 模型的進展，以及為何這項指標可能協助開發者建立評估新興能力的共同方法。",
-      "title_zh": "困惑度與智慧"
-    }
-  ],
+  "edition": "evening",
+  "generated_at": "2026-11-23T19:03:47.827638+08:00",
+  "items": [],
   "kind": "official-software-updates",
   "news_minimum_applies": false,
   "publication": {
-    "identity": "2026-11-23-morning",
+    "identity": "2026-11-23-evening",
     "mode": "scheduled",
-    "published_at": "2026-11-23T08:00:56.372609+08:00",
-    "snapshot_sha256": "bedb2e67528ce70402608ce4f17d8575db5ee1a104ddb0bd3f22f741b75ea996"
+    "published_at": "2026-11-23T20:00:56.832332+08:00",
+    "snapshot_sha256": "7bb276ef63df7fec7b672bd53ca0ab7194b1155e3330d6d016ef3195be16f980"
   },
   "schema_version": 1,
   "selection_applied": false,
   "source_health": [
     {
       "id": "official-google-blog",
-      "observed_at": "2026-11-22T23:00:54.883581+00:00",
+      "observed_at": "2026-11-23T11:00:56.129760+00:00",
       "provider_id": "google",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-google-notebook-seed",
-      "observed_at": "2026-11-22T23:00:58.719364+00:00",
+      "observed_at": "2026-11-23T11:00:59.867313+00:00",
       "provider_id": "google",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-google-api",
-      "observed_at": "2026-11-22T23:01:02.165169+00:00",
+      "observed_at": "2026-11-23T11:01:03.073850+00:00",
       "provider_id": "google",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-deepmind",
-      "observed_at": "2026-11-22T23:00:54.721969+00:00",
+      "observed_at": "2026-11-23T11:00:55.965233+00:00",
       "provider_id": "deepmind",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-claude-api",
-      "observed_at": "2026-11-22T23:00:55.068184+00:00",
+      "observed_at": "2026-11-23T11:00:56.163455+00:00",
       "provider_id": "anthropic",
       "reason_code": "collection-unavailable",
       "status": "unavailable"
     },
     {
       "id": "official-claude-app",
-      "observed_at": "2026-11-22T23:00:59.815618+00:00",
+      "observed_at": "2026-11-23T11:01:00.472457+00:00",
       "provider_id": "anthropic",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-openai-news",
-      "observed_at": "2026-11-22T23:00:55.914218+00:00",
+      "observed_at": "2026-11-23T11:00:57.016053+00:00",
       "provider_id": "openai",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-openai-api",
-      "observed_at": "2026-11-22T23:00:58.719488+00:00",
+      "observed_at": "2026-11-23T11:01:00.370875+00:00",
       "provider_id": "openai",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-xai-api",
-      "observed_at": "2026-11-22T23:00:56.269101+00:00",
+      "observed_at": "2026-11-23T11:00:57.715577+00:00",
       "provider_id": "xai",
       "reason_code": "collection-unavailable",
       "status": "unavailable"
     },
     {
       "id": "official-meta",
-      "observed_at": "2026-11-22T23:00:56.430783+00:00",
+      "observed_at": "2026-11-23T11:00:57.713832+00:00",
       "provider_id": "meta",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-mistral",
-      "observed_at": "2026-11-22T23:00:57.174824+00:00",
+      "observed_at": "2026-11-23T11:00:58.366358+00:00",
       "provider_id": "mistral",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-github",
-      "observed_at": "2026-11-22T23:00:57.582470+00:00",
+      "observed_at": "2026-11-23T11:00:59.064991+00:00",
       "provider_id": "github",
       "reason_code": "collection-unavailable",
       "status": "unavailable"
     },
     {
       "id": "official-windows",
-      "observed_at": "2026-11-22T23:00:57.627143+00:00",
+      "observed_at": "2026-11-23T11:00:59.115530+00:00",
       "provider_id": "windows",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-chatgpt-app",
-      "observed_at": "2026-11-22T23:01:01.666832+00:00",
+      "observed_at": "2026-11-23T11:01:02.566138+00:00",
       "provider_id": "openai",
       "reason_code": "collection-unavailable",
       "status": "unavailable"
     },
     {
       "id": "official-xai-news",
-      "observed_at": "2026-11-22T23:01:00.169516+00:00",
+      "observed_at": "2026-11-23T11:01:01.514644+00:00",
       "provider_id": "xai",
       "reason_code": "collection-unavailable",
       "status": "unavailable"
