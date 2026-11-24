@@ -1,0 +1,140 @@
+{
+  "date": "2026-11-24",
+  "edition": "evening",
+  "generated_at": "2026-11-24T19:12:13.180024+08:00",
+  "items": [
+    {
+      "availability_zh": "開放條件請見官方公告",
+      "id": "4fd18d290d593c79a31dbb2b517dc346c90c76325547bd705b6c91221a116b76",
+      "late_discovery": false,
+      "observed_at": "2026-11-24T11:00:58.765862+00:00",
+      "proof_sha256": "588052715f2db9255583d6bcd9196f8b8a0b6c36e2e2215e57d38a32768105e3",
+      "provider_id": "google",
+      "provider_name": "Google",
+      "published_at": "2026-11-24T08:00:00+00:00",
+      "published_date": null,
+      "source_kind": "official-feed-excerpt",
+      "source_url": "https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/expanding-london-home-kings-cross/",
+      "status": "verified-summary",
+      "summary_zh": "Google 官方公告指出：Google 表示，2016 年以 Knowledge Quarter 創始進駐成員的身分來到 King’s Cross，如今宣布計畫購買 6 Pancras Square，以擴大當地據點。",
+      "title_zh": "Google 擴大位於倫敦 King’s Cross 的據點"
+    }
+  ],
+  "kind": "official-software-updates",
+  "news_minimum_applies": false,
+  "publication": {
+    "identity": "2026-11-24-evening",
+    "mode": "scheduled",
+    "published_at": "2026-11-24T20:02:33.329300+08:00",
+    "snapshot_sha256": "6846bcff9b494acaa770be1439ad677d81f4d1aa727221123eb18e7e7a5196dd"
+  },
+  "schema_version": 1,
+  "selection_applied": false,
+  "source_health": [
+    {
+      "id": "official-google-blog",
+      "observed_at": "2026-11-24T11:00:58.765862+00:00",
+      "provider_id": "google",
+      "reason_code": "collection-ok",
+      "status": "ok"
+    },
+    {
+      "id": "official-google-notebook-seed",
+      "observed_at": "2026-11-24T11:01:02.806519+00:00",
+      "provider_id": "google",
+      "reason_code": "collection-ok",
+      "status": "ok"
+    },
+    {
+      "id": "official-google-api",
+      "observed_at": "2026-11-24T11:01:05.856157+00:00",
+      "provider_id": "google",
+      "reason_code": "collection-ok",
+      "status": "ok"
+    },
+    {
+      "id": "official-deepmind",
+      "observed_at": "2026-11-24T11:00:58.515992+00:00",
+      "provider_id": "deepmind",
+      "reason_code": "collection-ok",
+      "status": "ok"
+    },
+    {
+      "id": "official-claude-api",
+      "observed_at": "2026-11-24T11:00:58.765864+00:00",
+      "provider_id": "anthropic",
+      "reason_code": "collection-unavailable",
+      "status": "unavailable"
+    },
+    {
+      "id": "official-claude-app",
+      "observed_at": "2026-11-24T11:01:03.509125+00:00",
+      "provider_id": "anthropic",
+      "reason_code": "collection-ok",
+      "status": "ok"
+    },
+    {
+      "id": "official-openai-news",
+      "observed_at": "2026-11-24T11:00:59.857972+00:00",
+      "provider_id": "openai",
+      "reason_code": "collection-ok",
+      "status": "ok"
+    },
+    {
+      "id": "official-openai-api",
+      "observed_at": "2026-11-24T11:01:02.807009+00:00",
+      "provider_id": "openai",
+      "reason_code": "collection-ok",
+      "status": "ok"
+    },
+    {
+      "id": "official-xai-api",
+      "observed_at": "2026-11-24T11:01:00.354767+00:00",
+      "provider_id": "xai",
+      "reason_code": "collection-unavailable",
+      "status": "unavailable"
+    },
+    {
+      "id": "official-meta",
+      "observed_at": "2026-11-24T11:01:00.199740+00:00",
+      "provider_id": "meta",
+      "reason_code": "collection-ok",
+      "status": "ok"
+    },
+    {
+      "id": "official-mistral",
+      "observed_at": "2026-11-24T11:01:01.405066+00:00",
+      "provider_id": "mistral",
+      "reason_code": "collection-ok",
+      "status": "ok"
+    },
+    {
+      "id": "official-github",
+      "observed_at": "2026-11-24T11:01:01.606619+00:00",
+      "provider_id": "github",
+      "reason_code": "collection-unavailable",
+      "status": "unavailable"
+    },
+    {
+      "id": "official-windows",
+      "observed_at": "2026-11-24T11:01:01.756542+00:00",
+      "provider_id": "windows",
+      "reason_code": "collection-ok",
+      "status": "ok"
+    },
+    {
+      "id": "official-chatgpt-app",
+      "observed_at": "2026-11-24T11:01:05.610930+00:00",
+      "provider_id": "openai",
+      "reason_code": "collection-unavailable",
+      "status": "unavailable"
+    },
+    {
+      "id": "official-xai-news",
+      "observed_at": "2026-11-24T11:01:04.556816+00:00",
+      "provider_id": "xai",
+      "reason_code": "collection-unavailable",
+      "status": "unavailable"
+    }
+  ]
+}
