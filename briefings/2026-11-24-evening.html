@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <base href="/Daily-briefing/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="依可核對來源整理的繁體中文科技與時事新聞。">
+  <title>人工智慧產業動態：晶片投資、企業資料控管與科技產品更新 · 科技早晚報與時事焦點</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/styles.css?v=october-original">
+</head>
+<body>
+  <div id="app"></div>
+  <noscript><main><h1>人工智慧產業動態：晶片投資、企業資料控管與科技產品更新</h1><p>2026-11-24 科技晚報</p><article><h2>AWS推出Bedrock信任存取API，Anthropic兩項企業控管方案開放預覽</h2><p>AWS宣布，Amazon Bedrock信任存取計畫API正式推出，讓企業透過統一介面查詢模型供應商方案、確認資格並申請加入。首批方案為與Anthropic合作的Enterprise Frontier Safeguards（EFS）及Enterprise Data Controls（EDC），兩者目前均為公開預覽，與API正式推出的狀態不同。
+
+申請流程將資格核准與加入方案分開處理。使用者可先查看帳戶、組織或專案的適用狀態；若仍須申請資格，則依回傳資訊提出要求，由模型供應商或獲授權的AWS核准。通過後仍須接受方案條款，管理員可透過既有IAM政策與服務控制政策，限制誰能加入。
+
+兩項方案的主要差異在資料存放方式。依AWS說明，EFS讓企業將保留的輸入與輸出存於自有AWS帳戶的S3儲存貯體，並以自有AWS KMS金鑰加密；EDC則使用Amazon管理的儲存空間與金鑰，不必自行設定儲存貯體。AWS表示，兩者的提示與回覆均不由Anthropic保留，EFS資料也不由Amazon Bedrock另行保留副本。
+
+AWS表示，兩項方案仍會執行自動化安全監控；發現潛在風險時，系統會建立安全案件，由客戶團隊檢視相關紀錄並回報是否違規。企業取得的是資料儲存與人工審查的控制權，而非免除模型使用的安全監控要求。
+
+預覽申請目前面向已加入EFS零資料保留方案的客戶，須透過AWS客戶團隊提出；加入預覽會關閉所納入帳戶的零資料保留設定。儲存設定也須逐一在使用模型的區域完成，未設定的區域會採用Amazon管理的儲存空間。</p><aside>編輯觀察：企業評估時須分清楚「資料留在自己的環境」與「不保留資料」：新方案仍涉及紀錄保留及安全審查，也需要企業承擔相應的設定與案件處理工作。</aside><p><a href="https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-bedrock-trusted-access-api-with-anthropics-enterprise-frontier-safeguards-and-enterprise-data-controls/">AWS Machine Learning</a></p><ul></ul></article><article><h2>台積電評估226億美元德州晶圓廠計畫，房產稅優惠成關鍵</h2><p>台積電正評估在美國德州布拉左斯郡投資226億美元興建晶片製造設施，但尚未承諾推動。提交德州主計長辦公室的申請文件指出，能否取得要求的房產稅優惠將左右決策，亞利桑那州仍是競爭中的設廠選項。
+
+這項計畫擬在逾3200英畝、約1295公頃土地上，興建一座或多座晶圓廠及相關支援基礎設施，採用2奈米或更先進製程，生產用於人工智慧、高效能運算與行動裝置的晶片。台積電透過德州「就業、能源、科技與創新」計畫提出申請；文件預估，廠區可在未來40年間創造至少2099個直接就業機會。
+
+美國總統川普接受CNBC電話訪問時，稱讚台積電董事長魏哲家，並表示台積電將在德州興建大型廠房。不過，申請文件呈現的仍是附有條件、與其他地點競爭中的投資評估，不能將川普的說法視為台積電已確定選址或動工。
+
+台積電在文件中表示，擴大亞利桑那州投資可能帶來某些營運及經濟優勢。公司自2024年底起已在當地營運一座半導體製造廠；德州能否爭取到這項先進製程投資，仍取決於優惠條件與公司的最終決策。</p><aside>編輯觀察：這項評估涉及AI與高效能運算晶片的先進製程產能布局，但目前應觀察的是選址與優惠談判，而非將申請金額直接計入已定案投資。</aside><p><a href="https://www.cna.com.tw/news/afe/202611240263.aspx">中央社財經</a></p><ul><li><a href="https://www.cna.com.tw/news/aopl/202611240244.aspx">中央社國際</a></li></ul></article><article><h2>黃仁勳復任輝達執行長，科技股反彈但調查與治理爭議未歇</h2><p>輝達創辦人黃仁勳11月23日復任執行長，距離他因婚外情風波於12日辭職不到兩週。董事會表示，相信他是領導公司的合適人選，並在聽取美國政府高層意見後，認為目前沒有證據認定他構成國安風險；公司內部調查仍將繼續。
+
+復職決策背後有科技與金融界人士奔走。創投業者貝克與葛斯特納曾致函董事會，要求保留黃仁勳回任的可能性，支持者也安排他與美國副總統范斯通話，說明半導體出口管制、晶片遠端存取及與客戶Megaspeed往來等問題。川普則在CNBC訪問中表示，自己直接聯繫董事會並說服成員讓黃仁勳復職。
+
+人事決定並未終止監管審查。輝達與黃仁勳仍面臨涉及國安、反壟斷、會計及晶片轉運等調查，部分進展尚不明朗。民主、共和兩黨議員均批評復職決定，強調公司仍須說明出口管制遵循情況；參議院銀行委員會表示，黃仁勳已同意12月3日出席公開聽證會。相關調查與指控尚不能視為違法定論。
+
+市場則迅速反彈。輝達23日股價上漲約31.5%，那斯達克指數漲逾6%；24日台股上漲3310.46點，收在40122.35點，收復黃仁勳請辭以來跌點的一半以上。台積電與聯發科均漲近10%，韓國股市收高6.3%，日本股市上漲3.9%，半導體相關股票也出現明顯漲勢。
+
+股價回升之外，AI投資的融資模式仍受檢視。批評人士擔心，輝達資助AI新創，再由這些公司採購輝達晶片，可能形成高風險的循環融資，使營收品質與財務風險更難評估；黃仁勳則反駁，公司資助的是真實需求。兆豐國際投顧副總經理黃國偉也提醒，復任有助減緩市場疑慮，但政策與融資成本仍為AI基礎建設增添變數。</p><aside>編輯觀察：這次反彈凸顯市場對關鍵領導人的高度依賴，但人事穩定不等於治理問題已解決，也不能用股價漲幅驗證AI需求、融資安排或投資報酬。</aside><p><a href="https://www.cna.com.tw/news/ait/202611240039.aspx">中央社科技</a></p><ul><li><a href="https://www.cna.com.tw/news/aopl/202611240165.aspx">中央社國際</a></li><li><a href="https://www.cna.com.tw/news/ait/202611240062.aspx">中央社科技</a></li><li><a href="https://www.cna.com.tw/news/aopl/202611240180.aspx">中央社國際</a></li><li><a href="https://www.cna.com.tw/news/afe/202611240256.aspx">中央社財經</a></li><li><a href="https://www.cna.com.tw/news/afe/202611240251.aspx">中央社財經</a></li></ul></article><article><h2>美將7家公司列入貿易黑名單，Megaspeed採購AI晶片須獲許可</h2><p>美國商務部11月23日公告，將新加坡企業Megaspeed International、阿里巴巴旗下新加坡子公司Apex Enterprise Solutions等7家公司列入貿易黑名單。依此次列管措施，Megaspeed未經美國政府許可，不得採購人工智慧（AI）晶片及其他先進技術。
+
+商務部在「聯邦公報」公告指出，Megaspeed及其位於馬來西亞、新加坡、泰國的4家關係企業，因從事違反美國國家安全或外交政策利益的活動，被納入「實體清單」。列管企業包括位於新加坡的控股公司Swiftdata，以及馬來西亞關係企業Speedmatrix。Megaspeed遭指可能將高階晶片與運算能力轉供中國，但這項疑慮不能視為已證實違反出口管制。
+
+阿里巴巴則反對旗下Apex Enterprise Solutions被列入名單，稱這是錯誤決定。公司發言人表示，Apex從未轉移受美國出口管制的先進運算晶片，並將循法律途徑捍衛權益與聲譽。此次列管已對Megaspeed的相關採購設下許可要求；涉及轉供的指控與阿里巴巴的否認，仍須分別看待。</p><aside>編輯觀察：此案的直接商業影響是採購許可門檻，而非已經成立的違法判決。評估AI運算供應鏈風險時，應區分已生效的列管措施、當局提出的疑慮，以及企業的抗辯。</aside><p><a href="https://www.cna.com.tw/news/aopl/202611240178.aspx">中央社國際</a></p><ul></ul></article><article><h2>OpenAI前員工涉私錄內部會議，檢方以逃亡風險反對保釋</h2><p>OpenAI前員工Abdulrahman Alfozan涉嫌在公司總部藏放錄音設備，檢方進一步指稱，其電腦內存有數百個音訊檔案，部分涉及可能的營業秘密，並要求法院駁回保釋聲請。Alfozan否認替沙烏地阿拉伯竊取公司營業秘密，聲請以100萬美元交保。
+
+依Engadget報導，檢方稱，查獲檔案中有數十個是2026年9月OpenAI內部會議與對話的錄音，部分已被上傳至Dropbox。Alfozan另涉嫌利用AI將錄音轉為逐字稿，依日期分類，再按內容重新命名。當局也據報在其手機內發現一份標示機密的「策略合作」文件照片。
+
+案件起於10月，公司員工在一間主管會議室的電視後方發現錄音設備，Alfozan隨後遭逮捕，並於同日被解僱。檢方在反對保釋的文件中主張，他與美國的連結薄弱，可能返回沙烏地阿拉伯，並指稱他經常與具有沙烏地政府關係的人士聯繫。
+
+這些政府關係與檔案用途仍屬指控，不能據此認定存在間諜活動。報導指出，承審法官Vince Chhabria已對缺乏支持更嚴重指控的證據、卻持續羈押的必要性提出疑問；法院預定11月24日在舊金山審理保釋聲請。</p><aside>編輯觀察：本案凸顯企業資訊保護不只涉及數位系統權限，也涉及實體會議空間、錄音設備與檔案外傳。是否構成營業秘密侵害，以及是否存在替外國政府行事的情節，仍須由證據與司法程序釐清。</aside><p><a href="https://www.engadget.com/2326288/openai-employee-recorded-meetings-allegedly-affiliated-saudi-government/">Engadget</a></p><ul></ul></article><article><h2>Honor Magic 9 Pro Max攜手Arri，搭載8,000mAh電池與新旗艦設計</h2><p>Honor推出Magic 9 Pro Max，將與電影攝影機廠商Arri的合作帶入新旗艦手機。新機也採用先前出現在較低階N系列的工業設計，背面配置新的相機平台，並在機框周圍搭配撞色背板，成為這次產品更新的外觀重點。
+
+依Engadget報導，新機搭載Snapdragon 8 Elite Extreme Gen 6系統單晶片，記憶體提供12GB與16GB選項，儲存容量則列有256GB、512GB與1TB。Magic 9 Pro Max也是Honor首款採用這套新工業設計的旗艦機，並首次在旗下旗艦產品使用Pro Max名稱。
+
+螢幕為6.8吋LTPO OLED，解析度2,868 × 1,320，更新率範圍為1至120Hz，報導所列峰值亮度為10,000尼特。電池容量為8,000mAh，支援最高100W有線與80W無線充電；其他規格包括Wi-Fi 7、雙SIM卡槽、eSIM及5,500萬畫素前置相機。上述數值屬報導所載產品規格，不代表實際續航、充電時間或日常顯示亮度的測試結果。</p><aside>編輯觀察：影像品牌合作與大容量電池是這款新機的產品重點，但合作名稱和規格數字仍不足以判斷拍攝品質與使用體驗，兩者應與後續實測結果分開看待。</aside><p><a href="https://www.engadget.com/2325316/honor-teams-up-with-cinema-camera-maker-arri-on-the-magic-9-pro-max/">Engadget</a></p><ul></ul></article><article><h2>古特瑞斯籲一年內制定AI風險管理多邊架構，納入獨立監督</h2><p>聯合國秘書長古特瑞斯在巴貝多舉行的橋鎮AI安全特別峰會上，呼籲會員國協調行動，在未來一年內制定具全球包容性、以原則為基礎的人工智慧風險管理多邊架構，並以獨立、可信的監督機制作為後盾。這項時程是他提出的倡議，並非已通過的國際規範。
+
+在具體推進方式上，古特瑞斯主張，各國可先針對共同安全措施、測試機制，以及獨立監督的基本要求建立共識，作為合作起點。他提出的協調方向不只涉及安全原則，也將測試與監督安排納入討論。
+
+古特瑞斯也談及全球治理機構的改革，認為既有機構必須調整，才能適應當今世界的現實，範圍涵蓋聯合國、國際金融架構與世界貿易體系。他表示，將向繼任者建議，必須妥善管控AI，讓人類持續掌握主導權。</p><p><a href="https://www.cna.com.tw/news/ait/202611240071.aspx">中央社科技</a></p><ul></ul></article><article><h2>新加坡上修全年成長預測至約6%，AI需求支撐電子與精密工程</h2><p>新加坡能源貿易及工業部將今年經濟成長預測，由原先的4.5%至5.5%上調至約6%，並預估明年成長2.5%至4.5%。在科技產業方面，該部預期全球AI相關需求將持續支撐電子、精密工程，以及機械、設備與零組件供應，但明年擴張步調可能較今年高檔趨緩。
+
+新加坡第三季經濟年增6.1%，低於第二季的6.4%；經季節性調整後，第三季季增1.5%，也較前一季的1.8%放緩。今年前三季GDP年增6.2%。新加坡政府今年8月上修預測時，已將全球AI投資熱潮持續列為下半年經濟前景改善的因素之一。
+
+熟悉東南亞產業議題的新加坡資深媒體人陳士銘分析，全球對AI的強勁需求是這波成長的關鍵推手，不僅拉升電子產品與精密工程產出，也帶動相關機械、設備和工業用品的採購與流通。這是他對成長動因的判斷，並非各產業貢獻的量化拆解。
+
+台星貿易結構也反映科技供應鏈的重要性。2025年台灣對新加坡出口中，AI、半導體及相關零組件約占85%；新加坡對台出口中，相關產品約占80%。同年雙邊貨品貿易總額達新幣1703億元、年增46%，台灣首度成為新加坡最大貿易夥伴。</p><p><a href="https://www.cna.com.tw/news/aopl/202611240150.aspx">中央社國際</a></p><ul></ul></article><article><h2>陳俊聖：明年PC市場仍將衰退、單價續增，記憶體價格須分品項觀察</h2><p>宏碁董事長陳俊聖在集團旗下子公司聯合法說會後表示，從第三方市調機構的數據來看，明年PC市場仍將衰退，但單價還會成長。
+
+對於記憶體價格是否已到高檔，陳俊聖認為，必須依不同品項判斷，DDR4、DDR5、LPDDR、LPDDR4與LPDDR5X的情況並不相同，SSD也有不同的供應狀況，宏碁正與產業密切合作。他以聯強國際為例表示，SSD目前有大量供貨；DRAM價格則仍有漲有跌，其中LPDDR與LPDDR5X價格還在上漲。
+
+至於明年下半年記憶體價格是否可能反轉，陳俊聖表示有機會，但仍須觀察，因為價格非常敏感，必須密切注意。這些說法是業者對市場的判斷，並非已確定的價格走勢。
+
+在出貨管理上，針對未來美國可能加強AI晶片監管，陳俊聖表示，已持續向宏碁核心事業與新事業強調「認識你的客戶」（KYC）。他要求掌握的不只是直接客戶，也包括客戶的客戶及最終用戶，確認後才出貨，以降低公司未來發展的風險。</p><aside>編輯觀察：編輯分析：評估PC產業展望時，應分開觀察市場整體表現、產品單價與不同記憶體品項的價格，避免以單價上升推論整體市場轉強，或用單一品項的漲跌概括記憶體行情。</aside><p><a href="https://www.cna.com.tw/news/afe/202611240253.aspx">中央社財經</a></p><ul></ul></article></main></noscript>
+  <div id="reader-overlay" class="reader-overlay"></div>
+  <script>window.EDITORIAL_REQUESTED_DATE="2026-11-24";window.EDITORIAL_REQUESTED_EDITION="evening";</script>
+  <script src="assets/app.js?v=92f7bd2f98e0"></script>
+  <script defer src="assets/software-updates.js?v=f6f40640924b"></script>
+
+  <!-- Analytics：GoatCounter（免費、隱私友善、無 cookie）
+       後台流量：https://daily-briefing.goatcounter.com
+       文章點開會另送事件（path = article/<id>）→ 看得到「哪幾則最多人讀」。 -->
+  <script data-goatcounter="https://daily-briefing.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
