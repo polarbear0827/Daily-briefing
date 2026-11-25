@@ -1,0 +1,140 @@
+{
+  "date": "2026-11-25",
+  "edition": "evening",
+  "generated_at": "2026-11-25T19:11:18.334399+08:00",
+  "items": [
+    {
+      "availability_zh": "開放條件請見官方公告",
+      "id": "6f331420fb1ce0ca477661227e767cf0db579f6f87807169d498237b7a85b35b",
+      "late_discovery": true,
+      "observed_at": "2026-11-25T11:01:02.399747+00:00",
+      "proof_sha256": "a3223b2d19169b056464d4db53b94180079da20688d718dde610d63e92a84a72",
+      "provider_id": "openai",
+      "provider_name": "OpenAI",
+      "published_at": "2026-11-24T00:00:00+00:00",
+      "published_date": null,
+      "source_kind": "official-feed-excerpt",
+      "source_url": "https://openai.com/business/customer-stories/clay-plugins-openai",
+      "status": "verified-summary",
+      "summary_zh": "OpenAI 官方公告指出：OpenAI 表示，Clay 整合 ChatGPT 與 Codex，協助使用者研究交易機會，並將資料轉化為市場拓展行動方案，其中由 GPT-6 模型負責推理。",
+      "title_zh": "Clay 透過 Codex 與 ChatGPT 協助銷售團隊贏得商機"
+    }
+  ],
+  "kind": "official-software-updates",
+  "news_minimum_applies": false,
+  "publication": {
+    "identity": "2026-11-25-evening",
+    "mode": "scheduled",
+    "published_at": "2026-11-25T20:01:02.372795+08:00",
+    "snapshot_sha256": "67ca5c2a58a7a4948764440360e4c91d4910ee407fcadda217ad741d93dc9525"
+  },
+  "schema_version": 1,
+  "selection_applied": false,
+  "source_health": [
+    {
+      "id": "official-google-blog",
+      "observed_at": "2026-11-25T11:01:01.398665+00:00",
+      "provider_id": "google",
+      "reason_code": "collection-ok",
+      "status": "ok"
+    },
+    {
+      "id": "official-google-notebook-seed",
+      "observed_at": "2026-11-25T11:01:04.950756+00:00",
+      "provider_id": "google",
+      "reason_code": "collection-ok",
+      "status": "ok"
+    },
+    {
+      "id": "official-google-api",
+      "observed_at": "2026-11-25T11:01:08.145327+00:00",
+      "provider_id": "google",
+      "reason_code": "collection-ok",
+      "status": "ok"
+    },
+    {
+      "id": "official-deepmind",
+      "observed_at": "2026-11-25T11:01:01.200486+00:00",
+      "provider_id": "deepmind",
+      "reason_code": "collection-ok",
+      "status": "ok"
+    },
+    {
+      "id": "official-claude-api",
+      "observed_at": "2026-11-25T11:01:01.498196+00:00",
+      "provider_id": "anthropic",
+      "reason_code": "collection-unavailable",
+      "status": "unavailable"
+    },
+    {
+      "id": "official-claude-app",
+      "observed_at": "2026-11-25T11:01:05.602735+00:00",
+      "provider_id": "anthropic",
+      "reason_code": "collection-ok",
+      "status": "ok"
+    },
+    {
+      "id": "official-openai-news",
+      "observed_at": "2026-11-25T11:01:02.399747+00:00",
+      "provider_id": "openai",
+      "reason_code": "collection-ok",
+      "status": "ok"
+    },
+    {
+      "id": "official-openai-api",
+      "observed_at": "2026-11-25T11:01:05.399085+00:00",
+      "provider_id": "openai",
+      "reason_code": "collection-ok",
+      "status": "ok"
+    },
+    {
+      "id": "official-xai-api",
+      "observed_at": "2026-11-25T11:01:02.748558+00:00",
+      "provider_id": "xai",
+      "reason_code": "collection-unavailable",
+      "status": "unavailable"
+    },
+    {
+      "id": "official-meta",
+      "observed_at": "2026-11-25T11:01:02.847462+00:00",
+      "provider_id": "meta",
+      "reason_code": "collection-ok",
+      "status": "ok"
+    },
+    {
+      "id": "official-mistral",
+      "observed_at": "2026-11-25T11:01:03.649088+00:00",
+      "provider_id": "mistral",
+      "reason_code": "collection-ok",
+      "status": "ok"
+    },
+    {
+      "id": "official-github",
+      "observed_at": "2026-11-25T11:01:04.199338+00:00",
+      "provider_id": "github",
+      "reason_code": "collection-unavailable",
+      "status": "unavailable"
+    },
+    {
+      "id": "official-windows",
+      "observed_at": "2026-11-25T11:01:04.206620+00:00",
+      "provider_id": "windows",
+      "reason_code": "collection-ok",
+      "status": "ok"
+    },
+    {
+      "id": "official-chatgpt-app",
+      "observed_at": "2026-11-25T11:01:07.711867+00:00",
+      "provider_id": "openai",
+      "reason_code": "collection-unavailable",
+      "status": "unavailable"
+    },
+    {
+      "id": "official-xai-news",
+      "observed_at": "2026-11-25T11:01:06.803574+00:00",
+      "provider_id": "xai",
+      "reason_code": "collection-unavailable",
+      "status": "unavailable"
+    }
+  ]
+}
