@@ -135,9 +135,17 @@
       "json": "data/software-updates/2026-11-26-morning.json",
       "published_at": "2026-11-26T08:01:49.406171+08:00",
       "snapshot_sha256": "c12d69ce742803fab0bae51b122a51548bbb0492ebd23ca6d57d97573800fef6"
+    },
+    {
+      "date": "2026-11-26",
+      "edition": "evening",
+      "identity": "2026-11-26-evening",
+      "json": "data/software-updates/2026-11-26-evening.json",
+      "published_at": "2026-11-26T20:01:35.266016+08:00",
+      "snapshot_sha256": "a58baf82c8063403b41a0e9338f9ad1df69688255451487a605fb4f54b030480"
     }
   ],
   "kind": "official-software-updates",
   "schema_version": 1,
-  "updated_at": "2026-11-26T08:01:49.406171+08:00"
+  "updated_at": "2026-11-26T20:01:35.266016+08:00"
 }

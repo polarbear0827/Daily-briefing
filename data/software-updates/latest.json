@@ -1,137 +1,120 @@
 {
   "date": "2026-11-26",
-  "edition": "morning",
-  "generated_at": "2026-11-26T07:24:15.789556+08:00",
-  "items": [
-    {
-      "availability_zh": "開放條件請見官方公告",
-      "id": "75f60bd3ccb15b6514067b04717d6b713e588969f1c8e32d12e44a28dcf92f1b",
-      "late_discovery": true,
-      "observed_at": "2026-11-25T23:00:02.191554+00:00",
-      "proof_sha256": "30c4adebdcf1672f853fd7addb8dce5d5ea80c91d495c8955ba616e2c7f2bdc1",
-      "provider_id": "deepmind",
-      "provider_name": "Google DeepMind",
-      "published_at": "2026-11-24T13:07:53+00:00",
-      "published_date": null,
-      "source_kind": "official-feed-excerpt",
-      "source_url": "https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity/",
-      "status": "verified-summary",
-      "summary_zh": "Google DeepMind 官方公告指出：Google DeepMind 表示，Mass Spec Skills 可協助使用 Google Antigravity 的科學家解讀串聯質譜，以辨識分子。",
-      "title_zh": "從質譜到結構：透過 Google Antigravity 的 Mass Spec Skills 辨識分子"
-    }
-  ],
+  "edition": "evening",
+  "generated_at": "2026-11-26T19:10:06.020636+08:00",
+  "items": [],
   "kind": "official-software-updates",
   "news_minimum_applies": false,
   "publication": {
-    "identity": "2026-11-26-morning",
+    "identity": "2026-11-26-evening",
     "mode": "scheduled",
-    "published_at": "2026-11-26T08:01:49.406171+08:00",
-    "snapshot_sha256": "c12d69ce742803fab0bae51b122a51548bbb0492ebd23ca6d57d97573800fef6"
+    "published_at": "2026-11-26T20:01:35.266016+08:00",
+    "snapshot_sha256": "a58baf82c8063403b41a0e9338f9ad1df69688255451487a605fb4f54b030480"
   },
   "schema_version": 1,
   "selection_applied": false,
   "source_health": [
     {
       "id": "official-google-blog",
-      "observed_at": "2026-11-25T23:00:02.352452+00:00",
+      "observed_at": "2026-11-26T11:00:03.547133+00:00",
       "provider_id": "google",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-google-notebook-seed",
-      "observed_at": "2026-11-25T23:00:06.194698+00:00",
+      "observed_at": "2026-11-26T11:00:07.639469+00:00",
       "provider_id": "google",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-google-api",
-      "observed_at": "2026-11-25T23:00:09.494199+00:00",
+      "observed_at": "2026-11-26T11:00:10.388769+00:00",
       "provider_id": "google",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-deepmind",
-      "observed_at": "2026-11-25T23:00:02.191554+00:00",
+      "observed_at": "2026-11-26T11:00:03.339051+00:00",
       "provider_id": "deepmind",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-claude-api",
-      "observed_at": "2026-11-25T23:00:02.396716+00:00",
+      "observed_at": "2026-11-26T11:00:03.688631+00:00",
       "provider_id": "anthropic",
       "reason_code": "collection-unavailable",
       "status": "unavailable"
     },
     {
       "id": "official-claude-app",
-      "observed_at": "2026-11-25T23:00:07.442321+00:00",
+      "observed_at": "2026-11-26T11:00:07.890022+00:00",
       "provider_id": "anthropic",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-openai-news",
-      "observed_at": "2026-11-25T23:00:03.555113+00:00",
+      "observed_at": "2026-11-26T11:00:04.489175+00:00",
       "provider_id": "openai",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-openai-api",
-      "observed_at": "2026-11-25T23:00:06.792599+00:00",
+      "observed_at": "2026-11-26T11:00:07.537809+00:00",
       "provider_id": "openai",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-xai-api",
-      "observed_at": "2026-11-25T23:00:03.806817+00:00",
+      "observed_at": "2026-11-26T11:00:04.842722+00:00",
       "provider_id": "xai",
       "reason_code": "collection-unavailable",
       "status": "unavailable"
     },
     {
       "id": "official-meta",
-      "observed_at": "2026-11-25T23:00:04.308059+00:00",
+      "observed_at": "2026-11-26T11:00:04.988753+00:00",
       "provider_id": "meta",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-mistral",
-      "observed_at": "2026-11-25T23:00:04.892479+00:00",
+      "observed_at": "2026-11-26T11:00:06.188638+00:00",
       "provider_id": "mistral",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-github",
-      "observed_at": "2026-11-25T23:00:05.151117+00:00",
+      "observed_at": "2026-11-26T11:00:06.238668+00:00",
       "provider_id": "github",
       "reason_code": "collection-unavailable",
       "status": "unavailable"
     },
     {
       "id": "official-windows",
-      "observed_at": "2026-11-25T23:00:05.696885+00:00",
+      "observed_at": "2026-11-26T11:00:06.382300+00:00",
       "provider_id": "windows",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-chatgpt-app",
-      "observed_at": "2026-11-25T23:00:09.456763+00:00",
+      "observed_at": "2026-11-26T11:00:09.739301+00:00",
       "provider_id": "openai",
       "reason_code": "collection-unavailable",
       "status": "unavailable"
     },
     {
       "id": "official-xai-news",
-      "observed_at": "2026-11-25T23:00:07.899304+00:00",
+      "observed_at": "2026-11-26T11:00:09.090751+00:00",
       "provider_id": "xai",
       "reason_code": "collection-unavailable",
       "status": "unavailable"
