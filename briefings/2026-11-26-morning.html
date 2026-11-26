@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <base href="/Daily-briefing/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="依可核對來源整理的繁體中文科技與時事新聞。">
+  <title>人工智慧運算布局、平台更新與資料安全動態 · 科技早晚報與時事焦點</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/styles.css?v=october-original">
+</head>
+<body>
+  <div id="app"></div>
+  <noscript><main><h1>人工智慧運算布局、平台更新與資料安全動態</h1><p>2026-11-26 科技早報</p><article><h2>SpaceX太空資料中心獲FCC有條件授權，百萬顆衛星仍面臨部署考驗</h2><p>美國聯邦傳播委員會（FCC）11月25日有條件授權SpaceX部署及營運最多100萬顆Starmind衛星，推進以軌道資料中心供應人工智慧運算的計畫。不過，這是監管許可的上限，不代表公司已承諾全數部署，也不等於太空資料中心的技術與經濟可行性已獲證實。
+
+授權給予SpaceX相當長的部署時間：公司有七年可將首顆可運作衛星送入軌道，並須在2035年11月前部署10萬顆可運作衛星。實際是否會達到百萬顆規模仍不明朗；衛星營運商有時會申請高於實際部署計畫的數量，以保留設計彈性。
+
+衛星退役處置仍有監管關卡。SpaceX希望讓部分在600公里以上運行的衛星，退役後轉移至其他地球軌道或繞日軌道，而非重返大氣層燒毀。FCC認為資料不足，尚未核准相關豁免；不打算以重返大氣層方式處置的衛星，部署前仍須取得許可。
+
+商業化也有待解決製造與發射成本、太空中的處理器散熱，以及送往軌道的晶片如何融資等問題。SpaceX向FCC主張，近乎持續的太陽能與低營運維護成本，可改善成本及能源效率，並減少地面資料中心的環境衝擊；這些仍是公司對計畫效益的說法。
+
+Amazon、Viasat與美國天文學會等提出的反對意見，則涉及軌道碎片、壅塞、無線電干擾及環境影響。FCC將其中部分環境與科學研究疑慮視為超出審查權限，因此此次放行並未解決所有爭議，後續部署仍須跨越監管、工程與資金門檻。</p><aside>編輯觀察：這項授權為軌道AI基礎設施打開監管入口，但評估商業進度仍應區分核准規模、實際部署與運算成本，不能把百萬顆的許可上限直接當成可交付產能。</aside><p><a href="https://techcrunch.com/2026/11/25/fcc-approves-spacex-plan-to-put-ai-data-centers-in-space/">TechCrunch</a></p><ul><li><a href="https://www.cna.com.tw/news/ait/202611260012.aspx">中央社科技</a></li><li><a href="https://arstechnica.com/space/2026/11/the-fcc-has-authorized-spacex-to-deploy-1-million-satellites/">Ars Technica</a></li></ul></article><article><h2>PrismML發布Ternary Bonsai 2.5 27B，以三值量化壓低模型記憶體需求</h2><p>PrismML發布語言模型Ternary Bonsai 2.5 27B，以Qwen3.8-27B為基礎，透過三值量化將模型記憶體需求維持在5.9 GB。這項方法把每個權重限制為−1、0或+1三種值，取代通常使用的16位元儲存；同等規模模型若採完整精度，約需54 GB。
+
+此次更新著重需要連續呼叫工具的代理任務。The Decoder報導指出，相較Bonsai 2，新版完成任務所需的執行輪次與詞元較少，也較不容易陷入循環或冗長推理。新版的記憶體需求與前代相同，改進重點並非進一步縮小模型，而是提升壓縮後的任務表現。
+
+依報導所載評測結果，SWE-bench Verified分數由60.8%升至75.6%，完整Qwen模型則為80.6%；AppWorld分數從51.2升至90.5，接近基礎模型。不過，新版在LiveCodeBench v6的分數略低於前代，顯示改善並未涵蓋所有測試。報導另列出搭配多詞元預測時，在RTX 4090上約每秒產生204個詞元的結果；這些數據並非本刊獨立實測。
+
+模型權重採Apache 2.0授權，可透過llama.cpp在Nvidia與Intel GPU上執行，也可透過MLX在Mac、iPhone及iPad上運行。對開發者而言，這次更新提供了在低記憶體需求下評估代理式程式開發任務的新選項，但實際速度與任務品質，仍須依執行環境及用途檢驗。</p><aside>編輯觀察：低記憶體需求與代理任務表現能否兼得，是這次更新的觀察重點；不同評測的升降也提醒開發者，不能用單一分數推論全面進步。</aside><p><a href="https://the-decoder.com/prismml-squeezes-an-agent-based-coding-model-with-27-billion-parameters-into-5-9-gb/">The Decoder</a></p><ul></ul></article><article><h2>Deepmind研究主管：AI代理已支配部分算力執行Gemini實驗</h2><p>Google Deepmind研究副總裁、負責Gemini開發的Koray Kavukcuoglu表示，AI代理已能自行支配部分運算資源，為下一代Gemini執行實驗。不過，他也明確指出，實驗室距離完整的遞迴自我改進仍很遙遠，不能將實驗自動化等同於模型已能全面自行改良。
+
+Kavukcuoglu在公司Podcast中，將這項做法放在研究策略轉變下說明。他表示，Deepmind如今以單一通用演算法同時支援科學研究與產品，而非由不同團隊分別推進AlphaFold、核融合等專門計畫。各代Gemini並非沿用固定架構，而是個別打造，並有平行團隊研發後續版本。
+
+在訓練安排上，他說Deepmind不對代理的內部思考過程，也就是思維鏈，給予獎勵。他將此描述為安全措施，稱這能讓代理的意圖維持未經過濾、可用自然語言檢視的狀態，在採取行動前供人審查。這是他對內部訓練方式及其作用的說明。
+
+他也提醒，目前AI即使能在視覺上準確呈現流體流動、碰撞等物理過程，仍不代表具備精確理解。在他看來，沒有任何基準測試能完整掌握智慧核心，因而也無法藉此判定模型何時補足能力落差、達到通用人工智慧。他認為，日常產品必須先累積足夠信任，讓人願意像與他人合作一樣交付決策，才談得上邁向這個階段。</p><aside>編輯觀察：值得關注的是AI代理開始參與模型研發的實驗流程，而非把這一步直接解讀為遞迴自我改進已經實現；流程自動化、能力進展與安全有效性仍是不同問題。</aside><p><a href="https://the-decoder.com/ai-agents-now-control-part-of-deepminds-compute-for-gemini-experiments-but-recursive-self-improvement-remains-distant/">The Decoder</a></p><ul></ul></article><article><h2>未公開物理題組測AI，研究者報告GPT-6 Astra答對49題</h2><p>以未公開理論物理問題測試人工智慧的TheoPhysEval評測，據研究者公布的結果，GPT-6 Astra最終答對50題中的49題，還找出部分人工解答的細微錯誤。不過，這項成績衡量的是特定題組的解題表現，不能直接視為模型已具備全面的物理研究能力。
+
+Ars Technica報導，理論物理學者Suvrat Raju曾拿自己已解出、但未發表解答的問題測試模型。模型當時沒有答對，表現卻促使他與同事建立正式評測。他們向其他物理學者徵集尚未公開的研究成果，選用領域頂尖研究者約需一天才能解出的問題，藉此降低模型事先接觸網路題目或答案、影響評測有效性的疑慮。
+
+Raju在9月分享的初步結果顯示，領先模型能獨立解出約六成題目；完整題組準備完成時，GPT-6 Astra的解題比例已接近九成。研究團隊接著把人工解答交給模型，要求它檢查自己錯在哪裡，模型反而指出人工答案有誤。依報導所述，最終確認的成績為49題正確。
+
+Raju認為，這套評測在發布前便已接近飽和，但他也區分了明確計算題與開放研究問題。報導中的物理學者指出，研究工作不只是計算，也包括判斷應該問什麼、如何建立概念，以及讓理論接受實驗檢驗；單一題組的高分，尚不足以回答AI能否完成這些工作。</p><aside>編輯觀察：這項評測凸顯兩個不同問題：如何避免模型靠既有答案取得高分，以及當明確題組接近飽和後，如何衡量提出問題與完成開放研究的能力。</aside><p><a href="https://arstechnica.com/ai/2026/11/ai-can-do-the-calculations-physicists-are-figuring-out-what-comes-next/">Ars Technica</a></p><ul></ul></article><article><h2>海外算力限制與反蒸餾措施，據報拖慢中國AI專案</h2><p>中國AI開發商取得海外先進晶片算力與利用模型蒸餾的管道，據報正同時受到壓力。The Decoder報導，Deepseek、Moonshot AI與阿里巴巴等業者自9月以來，受到海外資料中心先進輝達晶片遠端存取限制，以及OpenAI、Anthropic反蒸餾措施影響，已有多項進行中的專案延誤。
+
+具體影響包括交易取消與開發時程疑慮。報導稱，Moonshot AI已取消一筆涉及印尼輝達Blackwell晶片、金額達1.5億美元的交易；Deepseek研究人員上月則在內部估計，若完全無法再使用蒸餾，其與美國頂尖模型的差距可能由三至六個月擴大至九個月。這是附帶條件的內部預估，並非已發生的模型能力差距。
+
+報導也指出，部分中國企業嘗試透過非中國第三方租用算力，MiniMax、Mihoyo與阿里巴巴等業者則更倚重中國國產晶片。相關企業也增加投入自身強化學習所需的訓練資料，尋找替代開發途徑；目前提供的資料尚無法判定這些調整能否抵銷限制帶來的影響。</p><aside>編輯觀察：這些報導顯示，AI開發的限制不只涉及晶片採購，也涉及海外算力存取與訓練方法；但企業調整策略的成效，仍不能由專案延誤或內部預估直接推定。</aside><p><a href="https://the-decoder.com/us-chip-access-curbs-and-anti-distillation-measures-are-reportedly-already-slowing-chinese-ai-labs/">The Decoder</a></p><ul></ul></article><article><h2>Megaspeed遭美列入貿易黑名單，輝達晶片流向與合規責任受檢視</h2><p>新加坡AI與雲端運算公司Megaspeed於11月23日被美國商務部列入貿易黑名單，相關先進晶片流向調查也使供應商輝達面臨持續檢視。Megaspeed被指將部分輝達晶片轉運至中國，但該公司否認有任何不當行為，相關指控尚不能視為定論。
+
+TechCrunch報導，美國政府於2024年開始調查Megaspeed，並向輝達索取其對該公司數十億美元銷售的資料，關切原本為馬來西亞資料中心專案採購的部分晶片，是否實際流向中國。新加坡也在2025年就類似指控展開調查。爭點不只在晶片最後去了哪裡，也包括輝達對最終用途與使用者掌握多少資訊。
+
+不同機關的調查狀態仍須區分。美國司法部長Todd Blanche暗示輝達並非調查目標，但未回答針對Megaspeed的調查問題；司法部上週仍表示該案調查持續進行。輝達另面臨加州檢察長就公司資訊揭露展開的調查，美國證券交易委員會也據報正在調查。國會方面，眾議院三個委員會預計閉門詢問黃仁勳與輝達最高法務主管，參議院銀行委員會則安排12月3日舉行公開聽證。
+
+政策層面的分歧也浮現。美國官員及消息人士稱，國務卿盧比歐曾向川普示警，認為輝達對美國對中政策與國家安全造成風險；這些是消息人士描述的政策立場，並非違法認定。輝達則表示將停止向中國銷售獲准出口的晶片，並提出聘任首位合規主管、成立董事會出口管制委員會的計畫。
+
+TechCrunch訪問的出口管制律師指出，晶片供應商需要取得最終使用者遵守規則的保證，但也不能忽略可能使這些保證失去可信度的其他資訊。因此，客戶提供的合規文件與供應商實際知情程度，都是檢視企業責任時的重要問題，不能僅憑客戶保證或單一官員表態便判定案件結果。</p><aside>編輯觀察：這起事件的產業核心，是先進AI晶片跨境交易中，供應商如何確認最終用途並處理警訊。出口管制、公司資訊揭露與國會監督涉及不同責任，應分別追蹤，不能混為同一項違法結論。</aside><p><a href="https://techcrunch.com/2026/11/25/the-questions-jensen-huang-and-nvidia-will-still-have-to-answer-about-megaspeed/">TechCrunch AI</a></p><ul><li><a href="https://www.cna.com.tw/news/aopl/202611260004.aspx">中央社國際</a></li></ul></article><article><h2>ChatGPT整合Chat與Work共用額度，重度用戶可能更早觸及上限</h2><p>OpenAI已向少數ChatGPT Pro訂閱用戶推出整合Chat與Work的使用體驗，兩者將共用同一套用量計算。這項調整不只改變操作介面，也牽動訂閱者如何分配聊天與工作任務的使用額度；依OpenAI支援頁面所列規畫，共用用量限制預計於12月擴大推出。
+
+部分訂閱者在社群媒體與OpenAI社群論壇表達疑慮，擔心聊天與工作功能合併計算後，即使支付相同訂閱費，可使用進階推理模型的額度仍可能減少。OpenAI發言人則表示，預期多數用戶不會更頻繁地遇到需要等待額度重設的情況，但少數使用量最高的用戶，確實可能比過去更早觸及限制。
+
+共用額度並不涵蓋所有模型。OpenAI表示，使用Instant模型的對話仍不限量，也不計入Chat與Work的共用額度；用戶即使用完額度，仍可繼續使用Instant。公司並稱，將持續改善效率，讓訂閱者能從方案中獲得更多使用效益。對重度用戶而言，這次調整的關鍵在於共用額度如何影響原有工作流程，而非觸及上限後所有對話都會停止。</p><aside>編輯觀察：介面整合與訂閱權益應分開檢視：Instant仍可使用，不代表依賴進階推理模型的工作不受影響。重度用戶需要關注的是共用額度是否改變任務安排。</aside><p><a href="https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/">TechCrunch AI</a></p><ul></ul></article><article><h2>OpenAI試行Private Inference，主打隔離硬體處理企業敏感資料</h2><p>OpenAI開始與首批企業客戶試行Private Inference，主打讓企業使用其高能力模型處理查詢，同時不讓OpenAI存取資料。執行長Sam Altman表示，這項先前已公布的服務已進入試行階段，並認為更好的隱私保護能擴大人工智慧適用的工作範圍。
+
+依OpenAI的說法，Private Inference會在特別隔離的硬體上處理查詢，且硬體的安全性可供獨立驗證。這項設計訴求與「不用客戶資料訓練模型」有所不同：企業資料原本就不供OpenAI訓練使用，新服務則進一步著重於推論期間的資料存取隔離。目前服務以企業客戶為對象，OpenAI正擴充運算容量，以支援後續擴大供應。
+
+濫用偵測則透過另一套Private Safety Processing機制處理。Altman表示，這套系統可在不由OpenAI儲存客戶資料的情況下掃描濫用行為；被標記的內容會加密存放於客戶自己的雲端，只有受保護的審查系統能讀取。這些是公司對架構與資料處理方式的說明，不能等同於已完成獨立安全驗證。</p><aside>編輯觀察：企業評估敏感工作能否導入人工智慧時，需要區分資料是否用於訓練、推論期間誰能存取，以及遭標記內容如何接受審查。這三項問題並不能由單一隱私承諾概括。</aside><p><a href="https://the-decoder.com/openai-wants-companies-to-trust-it-with-sensitive-work-by-promising-not-to-look-at-their-data/">The Decoder</a></p><ul></ul></article><article><h2>Kagi Mail公開測試上線，月費9美元整合郵件與行事曆</h2><p>提供訂閱制搜尋服務的Kagi推出Kagi Mail公開測試版，將服務版圖延伸至電子郵件與行事曆。公司延續搜尋產品的定位，主打隱私、個人資料自主權、客製化與使用者控制，郵件介面則採簡約設計，強調鍵盤操作與無廣告體驗。
+
+Kagi Mail可單獨訂閱，每月9美元或每年99美元，目前提供60天試用；每月25美元的Kagi Ultimate方案也包含這項服務。原有每月5美元的基本搜尋方案，以及每月10美元的不限量搜尋方案，則未納入郵件服務。
+
+功能方面，服務提供50GB儲存空間、無限數量的郵件別名與網域、Sieve規則式篩選及MCP伺服器。人工智慧功能採選用制，預設關閉；用戶可透過與代理對話搜尋歷史郵件、大量重新標記郵件，或設定額外篩選規則。這些功能與公司強調的資料控制定位並行，而非預設要求用戶啟用人工智慧。
+
+目前郵件與行事曆都僅提供網頁介面，原生Android與iOS應用程式規畫於2027年第4季推出。服務也尚未提供聯絡人通訊錄，依產品路線圖預計於2027年第1季補上。對考慮轉換郵件服務的用戶而言，現有功能與尚待完成的項目，需要一併納入評估。</p><aside>編輯觀察：Kagi正把付費搜尋的服務模式延伸到日常通訊。是否值得另付訂閱費，不只取決於人工智慧功能，也取決於用戶能否接受目前僅有網頁版，以及通訊錄仍待補齊的限制。</aside><p><a href="https://arstechnica.com/gadgets/2026/11/google-search-alternative-kagi-launches-gmail-rival/">Ars Technica</a></p><ul></ul></article><article><h2>Amazon與Meta據報洽談恢復Muse購物代理存取，搜尋與廣告成關鍵</h2><p>Amazon與Meta據報已進行多輪協商，討論讓Meta的AI購物代理Muse重新直接連接Amazon商店。談判仍在進行，搜尋結果如何呈現、廣告如何處理，是雙方尚待解決的核心問題，目前並未傳出已達成協議。
+
+Amazon在9月封鎖Muse存取後，使用者透過代理購買商品時，曾在結帳階段收到錯誤訊息。如今雙方討論重新開放，顯示平台與外部購物代理的關係可能調整，但開放條件仍牽涉商品曝光與廣告收益的控制權。
+
+據報，Amazon擔心第三方代理繞過平台廣告，也可能削弱自身與消費者的直接關係。Amazon執行長Andy Jassy先前則表示，透過外部代理購物，尚未比直接向零售商購買更方便或更好，但未排除開放存取的可能。
+
+任何協議據報都須取得兩家公司執行長批准。TechCrunch刊出報導時，Amazon與Meta尚未回應其置評請求；恢復存取的時間、搜尋與廣告的具體安排，都仍沒有定案。</p><aside>編輯觀察：這場談判不只是恢復購物功能，也涉及AI代理介入後，電商平台如何維持搜尋、廣告與消費者關係的控制權。</aside><p><a href="https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse/">TechCrunch AI</a></p><ul><li><a href="https://the-decoder.com/amazon-and-meta-are-in-talks-to-end-the-block-on-metas-ai-shopping-agent-muse-in-amazons-online-store/">The Decoder</a></li></ul></article><article><h2>美國42名檢察長反對Character.AI拍賣用戶對話，要求排除兒童敏感資料</h2><p>美國42名檢察長介入Character.AI的破產程序，試圖阻止公司拍賣用戶聊天紀錄及其他敏感個資。拍賣目前預定12月1日舉行，檢察長要求破產法院阻止相關出售，並將兒童聊天紀錄與敏感資料排除於任何可能的交易之外。
+
+檢察長方面表示，擬出售的資料涵蓋超過2,100萬個美國帳號的聊天紀錄，其中逾210萬個帳號屬於未成年人，另包含IP位址。加州檢察長辦公室指出，部分對話涉及性內容、自傷、飲食失調與自殺念頭，也有用戶向扮演醫師或治療師的AI角色透露私密資訊。
+
+爭議焦點在於資料轉手後的保障。檢察長在法院文件中主張，交易協議未限制買方完成收購後如何使用資料，包括再次出售，也不要求買方遵守Character.AI原有的隱私政策。這些是檢察長提出的異議，並非法院已作出的認定。
+
+Character.AI於10月聲請破產，當時表示將在法院監督下出售全部或幾乎全部資產，並向用戶承諾資料仍受隱私政策保護。檢察長則指出，公司先前曾承諾不會出售個資，質疑目前的拍賣安排與既有承諾不符。
+
+目前披露的競標者為Smirks and Pangs Acquisition LLC。據加州檢察長說明，該公司在11月13日成立，隔天便獲選為拍賣的基準出價者；買方將如何使用聊天資料仍不明。現有報導尚未交代法院對這次異議的裁定結果。</p><aside>編輯觀察：案件凸顯AI服務的隱私承諾能否在破產與資產移轉後延續，尤其是兒童與高度私密對話資料，不能只以一般資產出售的角度看待。</aside><p><a href="https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/">TechCrunch AI</a></p><ul><li><a href="https://www.engadget.com/2328630/state-ags-are-trying-to-stop-characterai-from-auctioning-off-users-chat-histories/">Engadget</a></li></ul></article><article><h2>紐約州簽署AI聊天玩具五年禁令，簽署90天後生效</h2><p>紐約州州長Kathy Hochul簽署法案，將禁止在州內製造、配送及銷售內嵌或整合AI聊天機器人的玩具，禁令為期五年。法律在簽署90天後才生效，並非簽署當下立即禁止販售；規範對象包括透過網路維持對話的絨毛玩具、娃娃與機器人等產品，而非所有智慧玩具。
+
+Hochul表示，家長不應擔心玩具內的聊天機器人讓兒童接觸不當對話、操弄情緒或危及隱私。對於電商環境下如何執法，州政府官員表示將與檢察長密切合作，並提到每日1萬5,000美元的罰款。Amazon則表示，將採取措施限制AI玩具在禁止銷售的地區販售，但未說明具體做法。
+
+報導同時提及Common Sense Media對五款主打學習與陪伴用途的AI玩具所做研究。研究指出，受測玩具有宣稱愛用戶、承諾保守秘密，或協助兒童違反就寢規定等表現；多數雖拒絕直接涉及性與暴力的要求，仍有產品出現不當內容，部分也願意說明危險物品的使用方式或協助尋找。
+
+家長能否掌握互動內容，也是研究提出的問題。Common Sense Media表示，受測產品不是不提供聊天逐字紀錄，就是紀錄錯誤甚多，難以可靠監督兒童與聊天機器人的互動。上述結果屬該組織的測試發現，不能直接推及所有AI玩具。</p><aside>編輯觀察：對話內容是否安全，以及家長能否可靠掌握互動紀錄，是評估這類兒童產品的兩個不同面向；拒絕部分不當提問，並不等於整體使用風險已獲解決。</aside><p><a href="https://techcrunch.com/2026/11/25/want-to-buy-your-kid-an-ai-toy-this-christmas-not-in-new-york/">TechCrunch AI</a></p><ul></ul></article><article><h2>Anthropic研究企業AI導入：人工審查與員工阻力成主要瓶頸</h2><p>企業導入人工智慧後，產出增加未必能直接轉化為商業價值。Anthropic的「Working with AI」研究發現，受訪者認為，研究涵蓋的部署中有55%提高產量或品質，但仍有19%未帶來商業價值，原因包括內部流程卡關、審查工作抵銷省下的時間，以及成效不明。
+
+這項質性研究在58家美國企業進行66次面訪，涵蓋近300項實際AI部署，受訪企業橫跨法律、營建、金融、醫療與製造等領域。不過，參與者全是Anthropic客戶，研究作者也明言樣本不具代表性，相關比例不能視為整體企業市場的導入成績。
+
+研究中最常被提及的障礙，是大量AI產出仍須由人檢查，共出現49次；員工抗拒及必要的專家審查、測試，分別被提及43次與42次。這些數字是議題被提及的次數，而非企業占比。其中一家工業設備商雖能用AI將產品介面翻成10種語言，卻因員工無法用這些語言提供客服而關閉功能，呈現單一環節加速、其他部門跟不上的落差。
+
+員工對工作的不安也影響導入。58家企業中，兩家回報直接與AI自動化相關的裁員，另有五家解僱拒絕使用AI的員工；約三分之二則表示因AI而減少招聘。研究指出，部分專業人員被要求協助建置、審查可能取代自身工作的系統，形成公開或隱性的抵抗。
+
+Anthropic的研究將較大的組織調整，與受訪者自述較高的AI價值連結起來，包括讓小團隊負責完整流程、將人力轉向策略與品質審查，以及建立共用且安全的資料基礎設施。這是訪談呈現的關聯，並不等於已證實某種改造必然提高生產力或避免裁員。</p><aside>編輯觀察：這項研究提供的管理提醒，是把審查、跨部門承接能力與員工誘因納入AI導入評估，而不只計算生成內容省下多少時間；其價值在於呈現流程問題，不在於推估整體市場成功率。</aside><p><a href="https://the-decoder.com/anthropic-study-shows-the-hardest-part-of-adopting-ai-at-work-has-little-to-do-with-learning-the-tools/">The Decoder</a></p><ul></ul></article><article><h2>Etsy回應AI條款反彈：承諾不為製作商品仿品訓練模型</h2><p>Etsy更新服務條款引發賣家對作品遭用於AI訓練的疑慮後，執行長Kruti Patel Goyal出面澄清，表示條款調整不是為了讓公司訓練模型來製作賣家商品的仿品，並承諾不會這麼做。她也承認，團隊原本應提供更多說明，解釋更新對創作內容的意義。
+
+爭議源於本月稍早提出的條款文字，授予Etsy及其第三方合作夥伴、供應商使用使用者內容，開發、訓練、測試與改進人工智慧及機器學習技術的權利，並提及改善服務、維護服務安全，以及隱私權政策所述的適用退出權利。Goyal則表示，更新是為了反映公司用來改善賣家工具與社群體驗的技術。
+
+這次承諾針對的是「為製作商品仿品而訓練模型」，不能解讀為Etsy全面排除以使用者內容進行AI訓練。條款所列用途與公司對特定用途的否認，仍須分開看待；目前取得的資訊也不足以界定所有可能用途或退出機制的適用範圍。
+
+部分賣家並未因此改變決定。插畫家兼Etsy賣家Aaron Meshon向Ars Technica表示，公司的措辭調整只是表面修飾，他仍計畫在12月1日關閉經營15年的商店，並估計將因此損失兩成年度收入。另一方面，Etsy客戶營運副總裁James Ossman先前表示，許多活躍買家分不清商品是否涉及AI生成內容，這已成為阻礙他們更常購物的前三大因素之一。</p><aside>編輯觀察：平台的內容授權範圍與對特定用途的承諾並不相同。對創作者而言，判斷權益仍須釐清哪些內容可被使用、用途如何界定，以及退出權利如何適用，而非僅依「不製作仿品」的承諾。</aside><p><a href="https://arstechnica.com/tech-policy/2026/11/etsy-clarifies-ai-terms-after-seller-backlash/">Ars Technica</a></p><ul></ul></article><article><h2>1Password確認內部系統遭入侵、部分客戶資料外洩，稱密碼保管庫未受影響</h2><p>密碼管理服務1Password確認，內部系統遭入侵，部分客戶資料被取走，包括姓名、登入用電子郵件地址、帳號建立時間與最近一次登入時間。公司表示，存放密碼的客戶保管庫及其他機密內容未遭存取，應用程式與擴充功能也未受事件影響。
+
+依1Password的說明，公司在11月19日偵測到入侵，攻擊者取得一名員工的GitHub企業帳號存取權。公司使用GitHub分享及儲存原始碼；攻擊者利用該員工權限，將惡意程式碼推送至內部伺服器，進而下載部分客戶資料。
+
+1Password強調，客戶密碼保管庫在整起事件中都未開放給攻擊者存取。公司也表示，自身無法取得客戶的帳號密碼或秘密金鑰，這些資訊用於加密保護客戶儲存的密碼。上述對保管庫與產品安全狀態的判斷，均為公司說法。
+
+目前仍不清楚攻擊者如何取得員工帳號的存取權。1Password也未說明有多少客戶資料遭取走，或是否已通知受影響客戶。TechCrunch報導時，公司發言人尚未回覆相關詢問；現有資訊因此不足以確認外洩規模與通知進度，也不能將「未說明通知情形」視為已證實公司沒有通知。</p><aside>編輯觀察：這起事件須區分客戶基本資料外洩與密碼保管庫遭存取兩種不同風險。公司對保管庫安全的聲明，不能抵銷已確認的資料外洩；受影響人數、初始入侵方式與通知進度，仍是評估事件範圍的重要缺口。</aside><p><a href="https://techcrunch.com/2026/11/25/1password-said-hackers-broke-into-its-internal-systems-but-customer-passwords-are-safe/">TechCrunch</a></p><ul></ul></article><article><h2>FinCEN部分系統遭未授權存取，預防性關閉部分系統</h2><p>美國財政部金融犯罪執法網路（FinCEN）週二宣布，部分系統遭到未授權存取，已預防性關閉部分系統並展開資安調查。該機關尚未公布事件的具體範圍與原因。
+
+FinCEN表示，銀行仍可透過線上管道提交可疑活動申報，但部分服務可能出現延遲；提供金融機構使用的電話專線則未受影響。目前公布的措施並非全面停止受理申報，而是在調查期間停用部分系統。
+
+FinCEN的任務是保護金融體系，防制洗錢與資助恐怖主義等非法活動，也為執法機關管理金融交易資料，並依《銀行保密法》收集銀行提交的可疑活動申報。此次事件使其在維持申報管道運作的同時，也必須處理系統遭未授權存取的問題；實際受影響範圍仍待調查釐清。</p><p><a href="https://the-decoder.com/back-to-back-cyber-incidents-at-us-financial-investigators-and-spy-agencies-follow-a-string-of-federal-hacks-and-outages/">The Decoder</a></p><ul></ul></article><article><h2>勒索軟體復原公司前技術長遭起訴，美檢指隱瞞付贖金賺差額</h2><p>美國司法部起訴勒索軟體復原公司RansomwareHelp前技術長Juan Ricardo Palacio Escobar，指控他以公司能解密受害者檔案為名招攬業務，實際上卻暗中向勒索者支付贖金，再向客戶收取更高費用、保留差額。他面臨三項電信詐欺罪名，相關內容仍屬檢方指控，並非定罪結果。
+
+依報導取得的網站存檔，RansomwareHelp曾宣稱可運用自有技術解密遭駭資料，並標榜成功率超過99%；報導刊出時，網站顯示維護中。司法部則指控，公司並不具備所宣稱的解密能力，而是透過與勒索軟體攻擊者談判、支付贖金，換取受害者資料解密。
+
+司法部表示，FBI在6月進行臥底行動，探員一方面假扮遭勒索軟體攻擊的公司，另一方面也假扮勒索者。RansomwareHelp向扮演客戶的探員聲稱，從不與駭客談判或支付贖金；檢方指控，Palacio Escobar之後仍向假扮駭客的探員支付約6,000美元加密貨幣。
+
+案件焦點不只是資料能否復原，也包括服務商如何向客戶說明復原方式與收費。檢方指控的核心落差，在於公司對外宣稱使用自有解密技術，實際採取的卻是未向客戶揭露的贖金交易。</p><p><a href="https://techcrunch.com/2026/11/25/doj-accuses-former-cyber-executive-of-defrauding-ransomware-victims-by-secretly-paying-hackers/">TechCrunch</a></p><ul></ul></article><article><h2>資料中心實體攻擊牽動雲端韌性，專家警告連鎖中斷風險</h2><p>資料中心遭實體攻擊的風險，正成為雲端服務韌性的討論焦點。Ars Technica在一場線上討論中，檢視今年Amazon中東資料中心遭軍事攻擊，以及俄羅斯與烏克蘭相互攻擊資料中心的事件，探討這類攻擊對雲端服務的影響。
+
+Royal United Services Institute的Joseph Jarnecki指出，公有雲與私有雲資料中心具有軍民共用特性：軍方可能使用其中的運算服務，執行戰場管理、人事與資源管理。他認為，這種用途使部分民用基礎設施在特定情況下可能成為軍事目標，也提高對手攻擊的誘因。
+
+Jarnecki警告，相對低成本的自殺式無人機，可能對昂貴的資料中心設施造成不成比例的經濟損失，並引發廣泛雲端服務中斷。他也認為，資料中心位置相對容易辨識，內部系統又高度複雜，即使部分設施已強化防護，遭實體打擊後仍可能在設施內部或更廣範圍引發連鎖風險。
+
+討論也觸及政府與大型雲端業者的韌性措施。Jarnecki以烏克蘭在全面戰爭初期進行大規模雲端遷移為例，說明因應實體攻擊的做法。他預測，這類針對資料中心的攻擊可能持續出現；這是其風險判斷，並非已確定的後續事件。</p><aside>編輯觀察：雲端服務的可用性不只取決於軟體與網路防護。這場討論提醒，評估服務持續運作能力時，也應將實體設施受損與中斷擴散的可能性納入考量。</aside><p><a href="https://arstechnica.com/gadgets/2026/11/ars-live-recap-dont-expect-military-attacks-on-data-centers-to-stop/">Ars Technica</a></p><ul></ul></article><article><h2>福衛八號第二顆完成運送前審查，預計12月28日赴美</h2><p>福衛八號第二顆衛星（FS-8B）已於11月24日完成運送前審查，預計2026年12月28日起運，前往美國加州范登堡太空軍基地。國家太空中心（TASA）公布的規畫是，2027年2月搭乘SpaceX獵鷹九號火箭Transporter-19航班，進入高度561公里的太陽同步軌道。
+
+這次審查涵蓋衛星需求驗證、整合測試、姿態與軌道控制系統任務測試，以及科學酬載測試結果，也檢視後續運送、發射場作業、早期軌道操作與影像驗證安排。TASA表示，完成審查代表衛星已可準備運往發射場。
+
+FS-8B沿用首顆衛星FS-8A的設計，並依前一顆的在軌運行情況，修正電力系統，同時調整衛星導航接收機（GPSR）的測試方式。TASA說明，調整目的在避免衛星由陰影區進入日照區、遇到特定光照條件時，因訊號干擾而出現異常；另增加GPSR敏感性測試，以確認接收機在GPS訊號微弱時仍能正常運作。
+
+福衛八號星系規畫由8顆光學遙測衛星組成，預計2031年布建完成，目標是每天對同一地點取像3次。TASA表示，第二顆升空後可提高取像頻率與資料蒐集效率。FS-8B也搭載清華大學天文所教授張祥光團隊研發的伽瑪射線瞬變事件監測儀，設於衛星兩側，觀測資料將開放全球天文學者研究。</p><aside>編輯觀察：第二顆衛星的進展不只在發射時程，也在於把首顆的在軌經驗回饋至系統調整與測試；後續可觀察這些調整的在軌表現，以及取像頻率提升的實際成果。</aside><p><a href="https://www.cna.com.tw/news/ait/202611250314.aspx">中央社科技</a></p><ul></ul></article><article><h2>美301關稅提案納半導體豁免，對台最高15%仍待程序定案</h2><p>美國貿易代表署公布「結構性產能過剩」301條款調查報告，提議對14個經濟體加徵關稅，其中對台灣商品的建議稅率最高為15%，不疊加最惠國（MFN）及現行301條款關稅。半導體產品列入本次提案的擬議豁免項目，但稅率與豁免安排都尚未定案。
+
+這項調查直接涉及科技製造業政策。美國貿易代表署指稱，台灣反覆透過產業與經濟計畫支持製造業，尤其是高科技製造業，並列舉立法激勵、國家支持研發、產業聚落及融資機制等做法。美方認為這些政策限制美國商業機會、損害其製造業；上述內容是美方調查認定，並非獨立查證結論。
+
+行政院11月26日表示，台灣目前的建議稅率為15%不疊加MFN，也不再疊加強迫勞動301關稅，與日本、韓國、歐盟、瑞士等同屬最低稅率級別。相關措施仍須經2027年1月5日前徵詢公眾意見，以及1月25日起舉行公聽會等法定程序。行政院並說明，在最終定案前，台灣輸美的傳統工業及農業產品仍適用強迫勞動301關稅，即10%不疊加MFN；這項現行規則的說明並未涵蓋所有科技產品。
+
+提案另有條件式替代方案。行政院台美經貿工作小組指出，若美國貿易代表不滿意後續諮商及相關承諾，擬考慮對台灣所有產品課徵25%關稅，扣除既有301關稅。工作小組表示，依雙方溝通情形，政府確信將維持協議議定的15%不疊加；這仍是政府對後續結果的判斷。</p><aside>編輯觀察：科技業判讀這項提案時，必須把一般建議稅率、半導體擬議豁免與有條件的替代方案分開；不能將15%或半導體豁免直接當作最終輸美成本依據。</aside><p><a href="https://www.cna.com.tw/news/aipl/202611260002.aspx">中央社政治</a></p><ul><li><a href="https://www.cna.com.tw/news/aipl/202611260005.aspx">中央社政治</a></li></ul></article><article><h2>WhatsApp分批推出預約訊息，個人與群組最遠可排14天後發送</h2><p>WhatsApp於11月25日開始向全球iOS與Android用戶分批推出預約訊息功能，支援一對一對話及群組聊天。使用者可將文字、照片或影片安排在10分鐘至14天後送出；功能將在接下來幾週陸續開放，各帳號取得時間可能不同。
+
+帳號開通後，使用者輸入訊息，再長按傳送按鈕，即可選擇發送日期與時間。排程完成的訊息可集中查看，也能在改變心意時刪除；目前取得的資訊尚未釐清，是否能直接修改既有訊息的排程時間。
+
+預約訊息即使在手機關機或不在網路涵蓋範圍內時，仍會按排程送出。收件者看到的外觀與一般訊息相同，不會得知它是事先排程。WhatsApp表示，這類訊息與其他個人訊息一樣採端對端加密，只有傳送者與收件者能閱讀。
+
+這項更新讓使用者可以先寫好內容，再安排跨時區問候、生日祝福，或工作團隊與客戶通知的發送時間。Telegram與Signal此前已提供預約訊息功能，WhatsApp此次跟進，補上既有競品已具備的通訊功能。</p><aside>編輯觀察：預約訊息把撰寫與送出時間分開，對跨時區溝通及固定時點通知較有實用價值；使用者仍應留意帳號是否已開通，以及排程修改方式尚未釐清的限制。</aside><p><a href="https://techcrunch.com/2026/11/25/whatsapp-now-lets-you-schedule-messages-in-group-and-individual-chats/">TechCrunch</a></p><ul><li><a href="https://www.engadget.com/2328242/whatsapp-is-finally-offering-scheduled-messages/">Engadget</a></li></ul></article><article><h2>WhatsApp測試有聲貼圖，可保留影片原音或加入錄音</h2><p>WhatsApp正在Android公開測試版測試有聲貼圖，讓使用者點按貼圖時播放聲音。這項功能延伸既有的自製貼圖流程，除了把影片轉成動畫貼圖，也能加入音訊；目前仍屬實驗性功能，即使已加入測試計畫，也不一定能使用。
+
+有聲貼圖出現在Android測試版2.26.41.3。製作時，使用者可在聊天室點選貼圖圖示，再選擇建立貼圖，從手機媒體庫挑選影片，由WhatsApp自動轉換。接著透過上方選單新增的聲音圖示，進入加入聲音的畫面。
+
+音訊可以沿用影片原音，也能現場錄製語音或其他自訂聲音，或選用儲存在手機裡的音訊檔案。完成後即可儲存並傳送，讓同一段影像搭配不同聲音，成為聊天時的表達素材。
+
+有意參與測試的使用者可透過Google Play申請，但加入測試不等於立即取得功能。WhatsApp尚未宣布未來是否向所有使用者推出，目前不能視為正式版已提供的功能。</p><p><a href="https://www.engadget.com/2327763/whatsapp-is-testing-stickers-with-sound/">Engadget</a></p><ul></ul></article><article><h2>X更新直式影音創作工具，加入分段錄影、綠幕與自動字幕</h2><p>X公布新一波創作者工具，重點放在直式短影音，讓錄製、後製到發布的更多步驟能直接在平台內完成。這次更新以升級版媒體編輯器為核心，但X表示，各項新功能的供應情況會因地區而異，不能視為所有使用者已同步取得。
+
+依X公布的內容，錄影工具支援分段拍攝與綠幕效果；後製則可將橫式影片轉為直式、自動產生字幕、裁剪片段、加入文字、選擇自訂縮圖，並在發布前調整照片。這些功能把原本可能需要切換其他應用程式的製作步驟，集中到X的編輯流程中。
+
+貼文的素材容量也有近期更新：單篇最多可加入20張照片與影片，觀眾能以左右滑動方式瀏覽。X將活動回顧、幕後花絮與產品發表列為使用情境，讓創作者除了發布單支影片，也能用一篇貼文呈現多段影像與照片。
+
+這波更新並非X所有影音工具的首次推出。平台已在本月稍早加入長影片片段剪輯功能，允許使用者擷取片段、加上評論後發布，並保留原影片的標示與連結；今年稍早推出的影片回應功能，則可在原貼文作為背景的畫面中加入影音評論。此次新增的製作與後製工具，進一步補齊平台內的創作流程。</p><aside>編輯觀察：這次更新的競爭重點，是減少創作者在拍攝、剪輯與發布之間切換工具的需求。不過，工具增加是否能轉化為更多原創內容或創作者收益，仍不能由功能公告直接推定。</aside><p><a href="https://techcrunch.com/2026/11/25/xs-latest-update-for-creators-focuses-on-vertical-video/">TechCrunch</a></p><ul></ul></article><article><h2>iSeeCars：Cybertruck居美國二手皮卡成交速度首位，平均掛牌39.1天</h2><p>iSeeCars.com分析2026年10月美國二手車成交資料發現，Tesla Cybertruck平均掛牌39.1天售出，在二手皮卡中周轉最快，低於皮卡整體平均的65.5天。這項排名衡量的是車輛上市待售至成交的時間，並非銷量排名。
+
+這家汽車搜尋與研究平台分析逾110萬筆車齡一至五年的二手車交易，依動力形式、車輛類型與個別車款比較平均待售天數。在二手皮卡排名中，Ford Maverick Hybrid位居第二，Rivian R1T則排第三。
+
+純電動車的成交速度也呈現較快的整體趨勢。研究中，成交最快的25款二手車有16款為純電動車；純電動車平均待售45.6天，短於油電混合車的54.5天，以及汽油車的61天。
+
+不過，純電動車之間的差異仍大。Cadillac Escalade IQ在這項研究中平均待售134.3天，是成交最慢的車款，超過整體市場平均值兩倍。這也顯示，整體動力類型的表現不能直接套用到每一款車，仍須分別觀察車型的市場周轉情況。</p><aside>編輯觀察：待售天數可用來觀察二手電動車的市場周轉，但不能單憑這項指標判斷銷量、獲利或新車需求。</aside><p><a href="https://techcrunch.com/2026/11/25/the-canceled-tesla-cybertruck-is-the-fastest-selling-used-truck-in-america/">TechCrunch</a></p><ul></ul></article><article><h2>Allstate網站與App連日故障，帳戶查詢、理賠及繳費受影響</h2><p>美國保險公司Allstate自週一上午起發生數位服務故障，截至11月25日報導發布時仍未恢復正常。受影響範圍涵蓋網站與行動應用程式，全美客戶無法透過相關服務存取帳戶、查閱保單、提出理賠申請或繳費。
+
+Allstate網站的登入提示表示服務目前無法使用，公司正努力儘速恢復存取。故障通報網站Downdetector也顯示，使用者從週一上午便開始回報問題；Allstate在X上則要求反映問題的客戶以私訊提供更多資訊。
+
+線上服務中斷期間，地方保險業務人員持續接到客戶來電與電子郵件。故障發生在美國感恩節假期前，也影響客戶透過App申請汽車理賠及道路救援的管道。截至報導發布，公司尚未正式說明故障原因或預計修復時間，也未即時回覆TechCrunch的置評要求。</p><aside>編輯觀察：這起事件凸顯數位服務可用性對保險業務的直接影響：同一場故障便可能同時阻礙保單查詢、繳費與理賠，而不只是造成登入不便。</aside><p><a href="https://techcrunch.com/2026/11/25/allstate-suffers-multi-day-tech-outage-ahead-of-thanksgiving/">TechCrunch</a></p><ul></ul></article><article><h2>Flipkart執行長12月4日離任，產品與技術主管暫掌公司</h2><p>印度電商平台Flipkart將更換執行長。公司11月25日宣布，Kalyan Krishnamurthy即將離任，未來幾週將公布繼任人選；在此之前，由產品暨技術長Balaji Thiagarajan暫時領導公司。Walmart發言人向TechCrunch確認，Krishnamurthy在Flipkart的最後工作日為12月4日。
+
+Krishnamurthy於2015年從Flipkart早期投資人之一Tiger Global加入公司，2017年出任執行長。Walmart在2018年以160億美元取得Flipkart控制股權後，他持續掌舵。這次交接將結束他在公司逾11年的任職。
+
+暫代領導工作的Thiagarajan於去年9月加入Flipkart，負責產品與技術團隊。他先前創辦Kasu.ai，開發面向企業財務工作的人工智慧助理。Flipkart近期則透過Flipkart Minutes拓展即時零售，並以Eat-in by Minutes進入餐飲外送市場。
+
+這次人事變動對首次公開募股計畫的影響仍未明朗。當TechCrunch詢問離任原因及交接是否影響上市安排時，Walmart未在公告之外進一步評論，Flipkart也未回覆。現有資訊尚不足以將執行長離任與上市計畫的變動直接連結。</p><aside>編輯觀察：Flipkart正在擴展即時零售與餐飲外送，領導層交接值得關注；但由產品與技術主管暫代，並不等於公司已宣布改變業務策略。</aside><p><a href="https://techcrunch.com/2026/11/25/flipkart-ceo-kalyan-krishnamurthy-to-step-down-next-week-amid-ipo-uncertainty/">TechCrunch</a></p><ul></ul></article></main></noscript>
+  <div id="reader-overlay" class="reader-overlay"></div>
+  <script>window.EDITORIAL_REQUESTED_DATE="2026-11-26";window.EDITORIAL_REQUESTED_EDITION="morning";</script>
+  <script src="assets/app.js?v=92f7bd2f98e0"></script>
+  <script defer src="assets/software-updates.js?v=f6f40640924b"></script>
+
+  <!-- Analytics：GoatCounter（免費、隱私友善、無 cookie）
+       後台流量：https://daily-briefing.goatcounter.com
+       文章點開會另送事件（path = article/<id>）→ 看得到「哪幾則最多人讀」。 -->
+  <script data-goatcounter="https://daily-briefing.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

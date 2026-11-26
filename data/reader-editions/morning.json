@@ -1,17 +1,17 @@
 {
   "schema_version": 2,
-  "issue_number": "2026-11-25-morning",
-  "issue_label_zh": "2026-11-25 科技早報",
-  "date": "2026-11-25",
+  "issue_number": "2026-11-26-morning",
+  "issue_label_zh": "2026-11-26 科技早報",
+  "date": "2026-11-26",
   "edition": "morning",
   "edition_label_zh": "科技早報",
-  "date_display_zh": "2026年11月25日·星期三·科技早報",
+  "date_display_zh": "2026年11月26日·星期四·科技早報",
   "weather_locations": [],
   "tagline_zh": "由 AI 為你策展，掌握科技與時事",
   "categories": [
     {
-      "id": "robotics",
-      "name_zh": "機器人／具身智慧"
+      "id": "ai-ml",
+      "name_zh": "一手模型消息"
     },
     {
       "id": "research-papers",
@@ -30,20 +30,8 @@
       "name_zh": "技術風險"
     },
     {
-      "id": "dev",
-      "name_zh": "社群熱度／開發者"
-    },
-    {
-      "id": "ai-tools",
-      "name_zh": "人工智慧工具"
-    },
-    {
       "id": "taiwan",
       "name_zh": "中文科技"
-    },
-    {
-      "id": "enterprise-cases",
-      "name_zh": "企業人工智慧案例"
     },
     {
       "id": "science",
@@ -52,590 +40,595 @@
   ],
   "articles": [
     {
-      "id": "2026-11-25-morning:event-09",
-      "original_id": "event-09",
-      "category": "robotics",
+      "id": "2026-11-26-morning:event-02",
+      "original_id": "event-02",
+      "category": "ai-ml",
       "is_headline": true,
-      "title_zh": "Uber、Nuro啟動Lucid無安全駕駛路測，目標2027年首季商轉",
-      "lede_zh": "Uber與Nuro已開始在舊金山灣區公共道路測試沒有車內安全駕駛的Lucid Gravity休旅車。兩家公司接下來計畫提供員工無人駕駛試乘，並以2027年第一季推出商業自駕計程車服務為目標；目前進展仍屬測試，尚非對一般乘客開放營運。\n\nNuro先前已在灣區進行近一年的Lucid Gravity道路測試，當時由安全駕駛坐在駕駛座。加州車輛管理局於2026年5月核發無人駕駛測試許可，這次移除安全駕駛的路測，距離取得許可已超過六個月。\n\n測試工作並未全面改為無人駕駛。Uber與Nuro在休士頓的公共道路測試仍配置安全駕駛；Nuro也利用封閉場地及模擬測試，在向公眾開放前驗證系統。隨著Lucid位於亞利桑那州的工廠開始製造首批量產版自駕計程車，今年稍早約有100輛車的聯合工程測試車隊也正擴編。\n\n這項合作由Lucid提供電動車，搭載Nuro開發的自動駕駛技術；Uber則將持有並營運車隊，並負責車內乘坐與互動體驗。車輛配備高解析度攝影機、固態光達與雷達。依合作安排，Uber同意在未來六年採購至少2萬輛Lucid Gravity，但採購承諾與預定商轉時程，仍須與目前已完成的道路測試進展分開看待。",
+      "title_zh": "PrismML發布Ternary Bonsai 2.5 27B，以三值量化壓低模型記憶體需求",
+      "lede_zh": "PrismML發布語言模型Ternary Bonsai 2.5 27B，以Qwen3.8-27B為基礎，透過三值量化將模型記憶體需求維持在5.9 GB。這項方法把每個權重限制為−1、0或+1三種值，取代通常使用的16位元儲存；同等規模模型若採完整精度，約需54 GB。\n\n此次更新著重需要連續呼叫工具的代理任務。The Decoder報導指出，相較Bonsai 2，新版完成任務所需的執行輪次與詞元較少，也較不容易陷入循環或冗長推理。新版的記憶體需求與前代相同，改進重點並非進一步縮小模型，而是提升壓縮後的任務表現。\n\n依報導所載評測結果，SWE-bench Verified分數由60.8%升至75.6%，完整Qwen模型則為80.6%；AppWorld分數從51.2升至90.5，接近基礎模型。不過，新版在LiveCodeBench v6的分數略低於前代，顯示改善並未涵蓋所有測試。報導另列出搭配多詞元預測時，在RTX 4090上約每秒產生204個詞元的結果；這些數據並非本刊獨立實測。\n\n模型權重採Apache 2.0授權，可透過llama.cpp在Nvidia與Intel GPU上執行，也可透過MLX在Mac、iPhone及iPad上運行。對開發者而言，這次更新提供了在低記憶體需求下評估代理式程式開發任務的新選項，但實際速度與任務品質，仍須依執行環境及用途檢驗。",
       "bullets_zh": [],
       "source": {
-        "name": "TechCrunch",
-        "url": "https://techcrunch.com/2026/11/24/uber-and-nuro-begin-driverless-testing-of-lucid-robotaxis-ahead-of-2027-launch/",
-        "published_at": "2026-11-24T16:40:46+00:00",
+        "name": "The Decoder",
+        "url": "https://the-decoder.com/prismml-squeezes-an-agent-based-coding-model-with-27-billion-parameters-into-5-9-gb/",
+        "published_at": "2026-11-25T11:51:49+00:00",
         "reading_time_min": 1
       },
       "fetched_via": "publisher",
       "evidence_kind": "publisher-article",
       "evidence_note_zh": "依來源文章整理。",
-      "editorial_analysis_zh": "移除車內安全駕駛是部署流程的具體進展，但不等同於已完成商業營運準備。觀察重點將是測試如何銜接員工試乘與對外服務，而非僅看預定上線日期。",
+      "editorial_analysis_zh": "低記憶體需求與代理任務表現能否兼得，是這次更新的觀察重點；不同評測的升降也提醒開發者，不能用單一分數推論全面進步。",
       "supporting_sources": [],
-      "source_evidence_note_zh": "已取得TechCrunch報導正文。員工試乘、商業營運時程及未來採購均屬公司規畫或合作承諾；提供資料不包含獨立安全評測。"
+      "source_evidence_note_zh": "已取得The Decoder報導全文，未取得原始模型文件或評測紀錄。效能、基準分數與生成速度均為該報導所載結果，未經獨立驗證；5.9 GB為報導所述模型記憶體需求，不代表已驗證所有執行環境的總記憶體用量。"
     },
     {
-      "id": "2026-11-25-morning:event-01",
-      "original_id": "event-01",
+      "id": "2026-11-26-morning:event-04",
+      "original_id": "event-04",
       "category": "research-papers",
       "is_headline": false,
-      "title_zh": "ShellBench評測：頂尖AI模型處理日常代理任務，失敗率仍逾三分之一",
-      "lede_zh": "日常工作交給AI代理，完成任務與守住安全要求仍是兩道不同關卡。ShellBench評測顯示，受測的OpenAI、Anthropic與Meta頂尖模型，任務失敗率仍超過三分之一；所有受測模型的執行嘗試中，有15.7%至少違反一項安全要求。這些數字反映的是該評測條件下的表現，並非所有個人助理產品的通用成績。\n\nShellBench由The OpenClaw Foundation、Parsewave、Hugging Face、Red Hat及UC Berkeley的研究人員合作開發，以超過1,000萬筆匿名化的真實AI代理互動為基礎，檢視使用者實際委派的日常工作。測試關注代理如何在電子郵件、行事曆、試算表、收據與聊天紀錄交錯的環境中，辨識過時資訊、釣魚內容及隱私界線，完成多步驟任務。\n\n評測也發現，單次成功不等於穩定可靠。在相同條件下將每項任務執行三次，總分最高的OpenAI GPT-6 Astra，三次全部成功的比例仍不到一半。另有約一成原本正確完成的嘗試，至少未通過一項安全標準；在發票付款任務中，代理建議重複或錯誤付款的比例為40.3%。\n\n模型之外，負責管理資訊存取、工具使用與行動的代理執行框架，也會影響結果。研究發現，較強模型之間的表現更受框架選擇左右，甚至出現排名互換。不過，測試並未使用Muse、Dots或Claude Duet各自的原生執行框架，因此不能直接將結果視為這些消費產品的實際使用表現。",
+      "title_zh": "未公開物理題組測AI，研究者報告GPT-6 Astra答對49題",
+      "lede_zh": "以未公開理論物理問題測試人工智慧的TheoPhysEval評測，據研究者公布的結果，GPT-6 Astra最終答對50題中的49題，還找出部分人工解答的細微錯誤。不過，這項成績衡量的是特定題組的解題表現，不能直接視為模型已具備全面的物理研究能力。\n\nArs Technica報導，理論物理學者Suvrat Raju曾拿自己已解出、但未發表解答的問題測試模型。模型當時沒有答對，表現卻促使他與同事建立正式評測。他們向其他物理學者徵集尚未公開的研究成果，選用領域頂尖研究者約需一天才能解出的問題，藉此降低模型事先接觸網路題目或答案、影響評測有效性的疑慮。\n\nRaju在9月分享的初步結果顯示，領先模型能獨立解出約六成題目；完整題組準備完成時，GPT-6 Astra的解題比例已接近九成。研究團隊接著把人工解答交給模型，要求它檢查自己錯在哪裡，模型反而指出人工答案有誤。依報導所述，最終確認的成績為49題正確。\n\nRaju認為，這套評測在發布前便已接近飽和，但他也區分了明確計算題與開放研究問題。報導中的物理學者指出，研究工作不只是計算，也包括判斷應該問什麼、如何建立概念，以及讓理論接受實驗檢驗；單一題組的高分，尚不足以回答AI能否完成這些工作。",
       "bullets_zh": [],
       "source": {
-        "name": "TechCrunch",
-        "url": "https://techcrunch.com/2026/11/24/even-the-best-ai-agents-struggle-with-everyday-life/",
-        "published_at": "2026-11-24T21:33:29+00:00",
+        "name": "Ars Technica",
+        "url": "https://arstechnica.com/ai/2026/11/ai-can-do-the-calculations-physicists-are-figuring-out-what-comes-next/",
+        "published_at": "2026-11-25T12:00:28+00:00",
         "reading_time_min": 1
       },
       "fetched_via": "publisher",
-      "evidence_kind": "publisher-article",
-      "evidence_note_zh": "依來源文章整理。",
-      "editorial_analysis_zh": "評估可自主執行工作的AI代理，不能只看單次任務成功率；重複執行的一致性、安全要求及部署框架，都應分開檢視。",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "這項評測凸顯兩個不同問題：如何避免模型靠既有答案取得高分，以及當明確題組接近飽和後，如何衡量提出問題與完成開放研究的能力。",
       "supporting_sources": [],
-      "source_evidence_note_zh": "已取得TechCrunch報導全文；本次未取得ShellBench原始研究文件，也未獨立重現測試。文中數據與研究方法依該報導整理，結果限於其所述受測模型、任務與執行框架。"
+      "source_evidence_note_zh": "取得Ars Technica刊載內容的節錄，來源標示原文出自Understanding AI；未另行取得原始評測論文、完整題目與測試紀錄。解題比例及人工答案修正情況均為報導中的研究者結果，未經獨立重現驗證。"
     },
     {
-      "id": "2026-11-25-morning:event-05",
-      "original_id": "event-05",
-      "category": "tech-product",
+      "id": "2026-11-26-morning:event-13",
+      "original_id": "event-13",
+      "category": "research-papers",
       "is_headline": false,
-      "title_zh": "Muse進駐Instagram私訊，新增收藏整理與行程、清單轉換功能",
-      "lede_zh": "Meta於11月24日宣布將人工智慧代理Muse整合進Instagram，讓使用者直接在私訊中對話，針對看到的貼文、地點或商品提出問題與任務，不必為了發出指令而切換至Muse應用程式。新功能須先連結Instagram與Muse帳號。\n\n使用者可以將貼文傳給Muse，例如要求把咖啡店加入旅遊行程，或尋找鞋款的黑色星期五優惠。Meta表示，Muse也能協助掌握其他私訊中錯過的對話；在Instagram內與Muse的對話，會以側邊聊天形式出現在Muse主應用程式中。\n\n另一部分更新針對已收藏的貼文與Reels短影音。使用者可要求Muse把內容整理成自訂收藏集，或將食譜影片轉成採買清單、旅遊內容轉成行程，並依收藏的穿搭影片提供搭配點子。Instagram也會在使用者儲存貼文時，顯示交由Muse整理的提示。私訊功能首波向美國、加拿大、墨西哥、日本與新加坡的iOS及Android使用者推出；收藏整理功能則先在美國與加拿大上線。\n\nMuse並未取代Instagram原有的Meta AI聊天機器人。Instagram發言人表示，偏向一般問答的Meta AI仍會保留，Muse則著重助理式任務。Meta另表示，未經使用者同意，不會分享、發布或傳送內容，使用者也能要求Muse忘記資訊或撤銷操作。Engadget指出，Instagram內的Muse功能仍較獨立應用程式與網頁介面有限，查看任務後續處理情況可能仍須回到Muse。",
+      "title_zh": "Anthropic研究企業AI導入：人工審查與員工阻力成主要瓶頸",
+      "lede_zh": "企業導入人工智慧後，產出增加未必能直接轉化為商業價值。Anthropic的「Working with AI」研究發現，受訪者認為，研究涵蓋的部署中有55%提高產量或品質，但仍有19%未帶來商業價值，原因包括內部流程卡關、審查工作抵銷省下的時間，以及成效不明。\n\n這項質性研究在58家美國企業進行66次面訪，涵蓋近300項實際AI部署，受訪企業橫跨法律、營建、金融、醫療與製造等領域。不過，參與者全是Anthropic客戶，研究作者也明言樣本不具代表性，相關比例不能視為整體企業市場的導入成績。\n\n研究中最常被提及的障礙，是大量AI產出仍須由人檢查，共出現49次；員工抗拒及必要的專家審查、測試，分別被提及43次與42次。這些數字是議題被提及的次數，而非企業占比。其中一家工業設備商雖能用AI將產品介面翻成10種語言，卻因員工無法用這些語言提供客服而關閉功能，呈現單一環節加速、其他部門跟不上的落差。\n\n員工對工作的不安也影響導入。58家企業中，兩家回報直接與AI自動化相關的裁員，另有五家解僱拒絕使用AI的員工；約三分之二則表示因AI而減少招聘。研究指出，部分專業人員被要求協助建置、審查可能取代自身工作的系統，形成公開或隱性的抵抗。\n\nAnthropic的研究將較大的組織調整，與受訪者自述較高的AI價值連結起來，包括讓小團隊負責完整流程、將人力轉向策略與品質審查，以及建立共用且安全的資料基礎設施。這是訪談呈現的關聯，並不等於已證實某種改造必然提高生產力或避免裁員。",
       "bullets_zh": [],
       "source": {
-        "name": "TechCrunch AI",
-        "url": "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/",
-        "published_at": "2026-11-24T17:00:00+00:00",
+        "name": "The Decoder",
+        "url": "https://the-decoder.com/anthropic-study-shows-the-hardest-part-of-adopting-ai-at-work-has-little-to-do-with-learning-the-tools/",
+        "published_at": "2026-11-25T13:14:27+00:00",
         "reading_time_min": 1
       },
       "fetched_via": "publisher",
-      "evidence_kind": "publisher-article",
-      "evidence_note_zh": "依來源文章整理。",
-      "editorial_analysis_zh": "這次整合把收藏與私訊變成可交辦任務的入口，重點不只在增加聊天功能，也在將使用者已儲存的內容轉為可執行的清單與行程。不過，入口整合尚不等於所有任務都能在Instagram內完成。",
-      "supporting_sources": [
-        {
-          "source_name": "Engadget",
-          "source_title": "Meta is bringing Muse to Instagram",
-          "source_url": "https://www.engadget.com/2326663/meta-is-bringing-muse-to-instagram/"
-        }
-      ],
-      "source_evidence_note_zh": "本則整合TechCrunch AI已取得的報導全文與Engadget報導節錄；功能及使用者控制機制未經獨立實測。"
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "這項研究提供的管理提醒，是把審查、跨部門承接能力與員工誘因納入AI導入評估，而不只計算生成內容省下多少時間；其價值在於呈現流程問題，不在於推估整體市場成功率。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "來源為The Decoder報導節錄，並非完整報導；未直接取得Anthropic研究全文。部署成效、障礙次數與人事變化均依報導所述研究結果整理，並非獨立查核或實測。"
     },
     {
-      "id": "2026-11-25-morning:event-07",
+      "id": "2026-11-26-morning:event-07",
       "original_id": "event-07",
       "category": "tech-product",
       "is_headline": false,
-      "title_zh": "Tidal將於12月9日起移除全人工智慧生成音樂，仍接受輔助創作",
-      "lede_zh": "Tidal將從12月9日起移除完全由人工智慧生成的音樂，並禁止發行商繼續提交這類作品。這項政策把管理方式從標示、取消收益，推進到下架與阻擋新作品上架；使用人工智慧輔助、而非完全由人工智慧生成的歌曲，仍可留在平台。\n\n新規也將用於審核送件內容：若歌曲的中繼資料註明作品完全以人工智慧製作，Tidal將拒絕收錄。平台表示，新制實施後，預計每天拒收約8萬至8萬5,000首歌曲，顯示政策不只處理既有曲庫，也針對持續湧入的上傳內容。\n\nTidal表示，過去90天上傳的歌曲中，約43%被辨識為人工智慧生成。平台先前已對完全由人工智慧生成的歌曲加上標示並取消收益，但負責人Robert Anderson認為，這些措施仍不足以遏止大量作品湧入。公司主張，這種規模的內容會讓訂戶想聆聽、探索的音樂與創作者更難被看見。\n\n政策的界線並非創作過程能否使用人工智慧，而是成品是否完全由人工智慧生成。不過，Tidal尚未說明其辨識人工智慧音樂的方法；宣布禁止收錄，並不等於已證明能辨識所有相關作品，後續執行成效仍有待觀察。",
+      "title_zh": "ChatGPT整合Chat與Work共用額度，重度用戶可能更早觸及上限",
+      "lede_zh": "OpenAI已向少數ChatGPT Pro訂閱用戶推出整合Chat與Work的使用體驗，兩者將共用同一套用量計算。這項調整不只改變操作介面，也牽動訂閱者如何分配聊天與工作任務的使用額度；依OpenAI支援頁面所列規畫，共用用量限制預計於12月擴大推出。\n\n部分訂閱者在社群媒體與OpenAI社群論壇表達疑慮，擔心聊天與工作功能合併計算後，即使支付相同訂閱費，可使用進階推理模型的額度仍可能減少。OpenAI發言人則表示，預期多數用戶不會更頻繁地遇到需要等待額度重設的情況，但少數使用量最高的用戶，確實可能比過去更早觸及限制。\n\n共用額度並不涵蓋所有模型。OpenAI表示，使用Instant模型的對話仍不限量，也不計入Chat與Work的共用額度；用戶即使用完額度，仍可繼續使用Instant。公司並稱，將持續改善效率，讓訂閱者能從方案中獲得更多使用效益。對重度用戶而言，這次調整的關鍵在於共用額度如何影響原有工作流程，而非觸及上限後所有對話都會停止。",
       "bullets_zh": [],
       "source": {
         "name": "TechCrunch AI",
-        "url": "https://techcrunch.com/2026/11/24/tidal-to-ban-and-remove-millions-of-ai-generated-tracks-as-ai-slop-inundates-music-streaming/",
-        "published_at": "2026-11-24T16:46:00+00:00",
+        "url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
+        "published_at": "2026-11-25T20:03:27+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "介面整合與訂閱權益應分開檢視：Instant仍可使用，不代表依賴進階推理模型的工作不受影響。重度用戶需要關注的是共用額度是否改變任務安排。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "僅取得TechCrunch報導節錄，未取得全文；用量安排與推出規畫依節錄中的OpenAI回應及支援頁面資訊整理。"
+    },
+    {
+      "id": "2026-11-26-morning:event-09",
+      "original_id": "event-09",
+      "category": "tech-product",
+      "is_headline": false,
+      "title_zh": "Kagi Mail公開測試上線，月費9美元整合郵件與行事曆",
+      "lede_zh": "提供訂閱制搜尋服務的Kagi推出Kagi Mail公開測試版，將服務版圖延伸至電子郵件與行事曆。公司延續搜尋產品的定位，主打隱私、個人資料自主權、客製化與使用者控制，郵件介面則採簡約設計，強調鍵盤操作與無廣告體驗。\n\nKagi Mail可單獨訂閱，每月9美元或每年99美元，目前提供60天試用；每月25美元的Kagi Ultimate方案也包含這項服務。原有每月5美元的基本搜尋方案，以及每月10美元的不限量搜尋方案，則未納入郵件服務。\n\n功能方面，服務提供50GB儲存空間、無限數量的郵件別名與網域、Sieve規則式篩選及MCP伺服器。人工智慧功能採選用制，預設關閉；用戶可透過與代理對話搜尋歷史郵件、大量重新標記郵件，或設定額外篩選規則。這些功能與公司強調的資料控制定位並行，而非預設要求用戶啟用人工智慧。\n\n目前郵件與行事曆都僅提供網頁介面，原生Android與iOS應用程式規畫於2027年第4季推出。服務也尚未提供聯絡人通訊錄，依產品路線圖預計於2027年第1季補上。對考慮轉換郵件服務的用戶而言，現有功能與尚待完成的項目，需要一併納入評估。",
+      "bullets_zh": [],
+      "source": {
+        "name": "Ars Technica",
+        "url": "https://arstechnica.com/gadgets/2026/11/google-search-alternative-kagi-launches-gmail-rival/",
+        "published_at": "2026-11-25T20:57:09+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "Kagi正把付費搜尋的服務模式延伸到日常通訊。是否值得另付訂閱費，不只取決於人工智慧功能，也取決於用戶能否接受目前僅有網頁版，以及通訊錄仍待補齊的限制。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "僅取得Ars Technica報導節錄，未取得全文；未自行實測產品。隱私與資料自主定位為Kagi主張，應用程式及通訊錄推出時間為產品規畫，非已完成項目。"
+    },
+    {
+      "id": "2026-11-26-morning:event-10",
+      "original_id": "event-10",
+      "category": "tech-product",
+      "is_headline": false,
+      "title_zh": "Amazon與Meta據報洽談恢復Muse購物代理存取，搜尋與廣告成關鍵",
+      "lede_zh": "Amazon與Meta據報已進行多輪協商，討論讓Meta的AI購物代理Muse重新直接連接Amazon商店。談判仍在進行，搜尋結果如何呈現、廣告如何處理，是雙方尚待解決的核心問題，目前並未傳出已達成協議。\n\nAmazon在9月封鎖Muse存取後，使用者透過代理購買商品時，曾在結帳階段收到錯誤訊息。如今雙方討論重新開放，顯示平台與外部購物代理的關係可能調整，但開放條件仍牽涉商品曝光與廣告收益的控制權。\n\n據報，Amazon擔心第三方代理繞過平台廣告，也可能削弱自身與消費者的直接關係。Amazon執行長Andy Jassy先前則表示，透過外部代理購物，尚未比直接向零售商購買更方便或更好，但未排除開放存取的可能。\n\n任何協議據報都須取得兩家公司執行長批准。TechCrunch刊出報導時，Amazon與Meta尚未回應其置評請求；恢復存取的時間、搜尋與廣告的具體安排，都仍沒有定案。",
+      "bullets_zh": [],
+      "source": {
+        "name": "TechCrunch AI",
+        "url": "https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse/",
+        "published_at": "2026-11-25T14:10:18+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "這場談判不只是恢復購物功能，也涉及AI代理介入後，電商平台如何維持搜尋、廣告與消費者關係的控制權。",
+      "supporting_sources": [
+        {
+          "source_name": "The Decoder",
+          "source_title": "Amazon and Meta are in talks to end the block on Meta's AI shopping agent Muse in Amazon's online store.",
+          "source_url": "https://the-decoder.com/amazon-and-meta-are-in-talks-to-end-the-block-on-metas-ai-shopping-agent-muse-in-amazons-online-store/"
+        }
+      ],
+      "source_evidence_note_zh": "已取得TechCrunch與The Decoder的報導節錄，並非全文；兩者的談判消息均援引Fortune，不能視為兩組獨立消息確認。未取得Fortune原始報導或兩家公司對談判的正式確認。"
+    },
+    {
+      "id": "2026-11-26-morning:event-21",
+      "original_id": "event-21",
+      "category": "tech-product",
+      "is_headline": false,
+      "title_zh": "WhatsApp分批推出預約訊息，個人與群組最遠可排14天後發送",
+      "lede_zh": "WhatsApp於11月25日開始向全球iOS與Android用戶分批推出預約訊息功能，支援一對一對話及群組聊天。使用者可將文字、照片或影片安排在10分鐘至14天後送出；功能將在接下來幾週陸續開放，各帳號取得時間可能不同。\n\n帳號開通後，使用者輸入訊息，再長按傳送按鈕，即可選擇發送日期與時間。排程完成的訊息可集中查看，也能在改變心意時刪除；目前取得的資訊尚未釐清，是否能直接修改既有訊息的排程時間。\n\n預約訊息即使在手機關機或不在網路涵蓋範圍內時，仍會按排程送出。收件者看到的外觀與一般訊息相同，不會得知它是事先排程。WhatsApp表示，這類訊息與其他個人訊息一樣採端對端加密，只有傳送者與收件者能閱讀。\n\n這項更新讓使用者可以先寫好內容，再安排跨時區問候、生日祝福，或工作團隊與客戶通知的發送時間。Telegram與Signal此前已提供預約訊息功能，WhatsApp此次跟進，補上既有競品已具備的通訊功能。",
+      "bullets_zh": [],
+      "source": {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/25/whatsapp-now-lets-you-schedule-messages-in-group-and-individual-chats/",
+        "published_at": "2026-11-25T16:57:51+00:00",
         "reading_time_min": 1
       },
       "fetched_via": "publisher",
       "evidence_kind": "publisher-article",
       "evidence_note_zh": "依來源文章整理。",
-      "editorial_analysis_zh": "Tidal把內容治理從告知聽眾、調整收益，轉為直接決定作品能否進入曲庫。政策效果除了取決於規則，也取決於平台能否可靠區分完全生成與人工智慧輔助創作。",
+      "editorial_analysis_zh": "預約訊息把撰寫與送出時間分開，對跨時區溝通及固定時點通知較有實用價值；使用者仍應留意帳號是否已開通，以及排程修改方式尚未釐清的限制。",
       "supporting_sources": [
         {
           "source_name": "Engadget",
-          "source_title": "Tidal is banning AI-generated music entirely",
-          "source_url": "https://www.engadget.com/2326812/tidal-is-banning-ai-generated-music-entirely/"
-        },
-        {
-          "source_name": "Ars Technica",
-          "source_title": "Tidal announces ban on AI-generated music; 27 million tracks will be deleted",
-          "source_url": "https://arstechnica.com/ai/2026/11/tidal-will-ban-fully-ai-generated-music-on-december-9/"
+          "source_title": "WhatsApp is finally offering scheduled messages",
+          "source_url": "https://www.engadget.com/2328242/whatsapp-is-finally-offering-scheduled-messages/"
         }
       ],
-      "source_evidence_note_zh": "已取得TechCrunch報導正文，以及Engadget、Ars Technica報導節錄，後兩者並非全文。上傳比例、預計拒收量及政策理由均為Tidal或其負責人的說法，未經獨立驗證。"
+      "source_evidence_note_zh": "依已取得的TechCrunch報導正文及Engadget報導節錄整合；Engadget並非全文。操作與發送行為未經本刊實測，端對端加密為WhatsApp說法，未經獨立安全驗證。"
     },
     {
-      "id": "2026-11-25-morning:event-08",
-      "original_id": "event-08",
+      "id": "2026-11-26-morning:event-22",
+      "original_id": "event-22",
       "category": "tech-product",
       "is_headline": false,
-      "title_zh": "Pinterest擴充家長控制，可調整青少年接觸人工智慧生成內容的程度",
-      "lede_zh": "Pinterest本週宣布擴充家長控制功能，新增調整青少年接觸人工智慧生成內容程度的設定。這項變化針對使用者日常瀏覽時看到的內容，而不只是限制能否開啟某個人工智慧工具或與聊天機器人互動。\n\n這與其他平台常見的管理方式有所不同。Snap曾提供讓人工智慧聊天機器人停止回應青少年的家長設定；WhatsApp則讓家長調整青少年使用Meta AI創作內容、取得問題回覆的權限。Pinterest這次把控制範圍延伸到整體瀏覽體驗中的生成內容，處理的是動態消息與推薦內容的接觸程度。\n\n不過，新增控制項不代表能完全排除人工智慧生成內容。Pinterest在2025年已推出限制人工智慧修改內容的設定，TechCrunch報導指出，即使啟用，相關內容仍會出現在使用者的動態消息中。因此，新功能應被理解為調整接觸程度的工具，而非保證所有生成內容都能被攔下。\n\n同批更新也包括停止影片自動播放，以及調整推播、瀏覽器、應用程式內與電子郵件通知量。Pinterest並重新設計家長控制頁面，讓家長更容易找到及設定相關選項，也可調整個人化廣告設定。",
+      "title_zh": "WhatsApp測試有聲貼圖，可保留影片原音或加入錄音",
+      "lede_zh": "WhatsApp正在Android公開測試版測試有聲貼圖，讓使用者點按貼圖時播放聲音。這項功能延伸既有的自製貼圖流程，除了把影片轉成動畫貼圖，也能加入音訊；目前仍屬實驗性功能，即使已加入測試計畫，也不一定能使用。\n\n有聲貼圖出現在Android測試版2.26.41.3。製作時，使用者可在聊天室點選貼圖圖示，再選擇建立貼圖，從手機媒體庫挑選影片，由WhatsApp自動轉換。接著透過上方選單新增的聲音圖示，進入加入聲音的畫面。\n\n音訊可以沿用影片原音，也能現場錄製語音或其他自訂聲音，或選用儲存在手機裡的音訊檔案。完成後即可儲存並傳送，讓同一段影像搭配不同聲音，成為聊天時的表達素材。\n\n有意參與測試的使用者可透過Google Play申請，但加入測試不等於立即取得功能。WhatsApp尚未宣布未來是否向所有使用者推出，目前不能視為正式版已提供的功能。",
       "bullets_zh": [],
       "source": {
-        "name": "TechCrunch AI",
-        "url": "https://techcrunch.com/2026/11/24/pinterest-will-now-let-parents-limit-the-ai-generated-content-their-teens-see/",
-        "published_at": "2026-11-24T16:02:37+00:00",
+        "name": "Engadget",
+        "url": "https://www.engadget.com/2327763/whatsapp-is-testing-stickers-with-sound/",
+        "published_at": "2026-11-25T12:24:57+00:00",
         "reading_time_min": 1
       },
       "fetched_via": "publisher",
-      "evidence_kind": "publisher-article",
-      "evidence_note_zh": "依來源文章整理。",
-      "editorial_analysis_zh": "人工智慧管理不只涉及青少年能否使用聊天機器人，也涉及推薦系統讓他們看見什麼。Pinterest新增設定，讓家長能介入後者，但控制選項的存在仍須與實際過濾能力分開看待。",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "",
       "supporting_sources": [],
-      "source_evidence_note_zh": "已取得TechCrunch報導正文。提供資料未包含新家長控制功能的獨立實測，不能據此判定其過濾效果。"
+      "source_evidence_note_zh": "本則依Engadget已取得的報導節錄撰寫，並非全文；功能操作與測試狀態以該節錄所載為限。"
     },
     {
-      "id": "2026-11-25-morning:event-23",
+      "id": "2026-11-26-morning:event-23",
       "original_id": "event-23",
       "category": "tech-product",
       "is_headline": false,
-      "title_zh": "Amazon Leo再添36枚衛星，提前安排SpaceX發射任務",
-      "lede_zh": "歐洲Ariane 6火箭將36枚Amazon Leo寬頻衛星送入軌道，使該星系的衛星數增至432枚。這次部署接續在11月15日ULA的Vulcan火箭任務失敗之後；該次事故造成40枚Amazon衛星損失，也使主要發射供應商的火箭停飛。\n\n為填補發射運能缺口，Amazon正提前安排已向SpaceX購買的數次Falcon 9任務。Amazon表示，下一次任務已由原訂明年提前至12月，之後還規劃接連執行多次發射。這些仍是公司公布的時程安排，尚非已完成的部署。\n\nAmazon最初向ULA、Arianespace與Blue Origin採購發射服務，多數合約仰賴當時仍在開發的新火箭，包括Vulcan、Ariane 6與New Glenn。隨著其他供應商進度延誤，Amazon增加採購Falcon 9任務；目前Amazon及合作夥伴已完成原先108次發射安排中的17次，其中一次失敗，原始部署目標為3,232枚低軌衛星。\n\nArianespace今年已為Amazon成功執行四次Ariane 6任務，Amazon也在9月追加預訂六次發射。另一方面，SpaceX既是發射服務供應商，也是旗下Starlink與Amazon Leo競爭的業者。Amazon加快部署的同時，仍須仰賴這家競爭對手提供部分運能，凸顯衛星寬頻布局與火箭供應進度之間的緊密關係。",
+      "title_zh": "X更新直式影音創作工具，加入分段錄影、綠幕與自動字幕",
+      "lede_zh": "X公布新一波創作者工具，重點放在直式短影音，讓錄製、後製到發布的更多步驟能直接在平台內完成。這次更新以升級版媒體編輯器為核心，但X表示，各項新功能的供應情況會因地區而異，不能視為所有使用者已同步取得。\n\n依X公布的內容，錄影工具支援分段拍攝與綠幕效果；後製則可將橫式影片轉為直式、自動產生字幕、裁剪片段、加入文字、選擇自訂縮圖，並在發布前調整照片。這些功能把原本可能需要切換其他應用程式的製作步驟，集中到X的編輯流程中。\n\n貼文的素材容量也有近期更新：單篇最多可加入20張照片與影片，觀眾能以左右滑動方式瀏覽。X將活動回顧、幕後花絮與產品發表列為使用情境，讓創作者除了發布單支影片，也能用一篇貼文呈現多段影像與照片。\n\n這波更新並非X所有影音工具的首次推出。平台已在本月稍早加入長影片片段剪輯功能，允許使用者擷取片段、加上評論後發布，並保留原影片的標示與連結；今年稍早推出的影片回應功能，則可在原貼文作為背景的畫面中加入影音評論。此次新增的製作與後製工具，進一步補齊平台內的創作流程。",
       "bullets_zh": [],
       "source": {
-        "name": "Ars Technica",
-        "url": "https://arstechnica.com/space/2026/11/amazon-surges-launches-with-rival-spacex-after-ula-fails-to-deliver/",
-        "published_at": "2026-11-24T18:30:36+00:00",
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/25/xs-latest-update-for-creators-focuses-on-vertical-video/",
+        "published_at": "2026-11-25T17:28:29+00:00",
         "reading_time_min": 1
       },
       "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "對衛星寬頻業者而言，採購衛星與取得發射運能是兩個相互牽動的環節。這次調度顯示，多家發射供應商雖提供替代空間，實際部署速度仍取決於可用火箭與任務排程。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "已取得 Ars Technica 報導節錄，非全文。Falcon 9提前發射及後續任務安排依報導中的Amazon說法，未另取得公司公告核對。"
+      "evidence_kind": "publisher-article",
+      "evidence_note_zh": "依來源文章整理。",
+      "editorial_analysis_zh": "這次更新的競爭重點，是減少創作者在拍攝、剪輯與發布之間切換工具的需求。不過，工具增加是否能轉化為更多原創內容或創作者收益，仍不能由功能公告直接推定。",
+      "supporting_sources": []
     },
     {
-      "id": "2026-11-25-morning:event-24",
-      "original_id": "event-24",
-      "category": "tech-product",
+      "id": "2026-11-26-morning:event-01",
+      "original_id": "event-01",
+      "category": "vc-business",
       "is_headline": false,
-      "title_zh": "《Grand Theft Auto 6》支援PS5與Portal雲端串流，須購買遊戲並訂閱Premium",
-      "lede_zh": "《Grand Theft Auto 6》新增PS5與PlayStation Portal雲端串流遊玩方式。使用者須購買遊戲，並具備PlayStation Plus Premium訂閱；這並不是只要訂閱，就能免費取得遊戲內容。\n\n遊戲的PlayStation Store頁面已列出，PS5與PS Portal雲端串流僅支援Premium訂閱。透過這項方式遊玩，不必在主機預留安裝遊戲所需的212GB空間；若使用PlayStation Portal，也不一定需要擁有PS5，便可透過雲端執行遊戲。\n\n雲端串流與遠端遊玩仍須區分。前者是這次新增的PS5與PlayStation Portal使用選項；後者則仍可從自己的主機把遊戲畫面傳到PC。報導對PlayStation使用者能否直接將已購遊戲透過雲端串流至PC，保留了不確定語氣，不能把現有的遠端遊玩能力視為PC也已獲得同樣的雲端支援。",
+      "title_zh": "SpaceX太空資料中心獲FCC有條件授權，百萬顆衛星仍面臨部署考驗",
+      "lede_zh": "美國聯邦傳播委員會（FCC）11月25日有條件授權SpaceX部署及營運最多100萬顆Starmind衛星，推進以軌道資料中心供應人工智慧運算的計畫。不過，這是監管許可的上限，不代表公司已承諾全數部署，也不等於太空資料中心的技術與經濟可行性已獲證實。\n\n授權給予SpaceX相當長的部署時間：公司有七年可將首顆可運作衛星送入軌道，並須在2035年11月前部署10萬顆可運作衛星。實際是否會達到百萬顆規模仍不明朗；衛星營運商有時會申請高於實際部署計畫的數量，以保留設計彈性。\n\n衛星退役處置仍有監管關卡。SpaceX希望讓部分在600公里以上運行的衛星，退役後轉移至其他地球軌道或繞日軌道，而非重返大氣層燒毀。FCC認為資料不足，尚未核准相關豁免；不打算以重返大氣層方式處置的衛星，部署前仍須取得許可。\n\n商業化也有待解決製造與發射成本、太空中的處理器散熱，以及送往軌道的晶片如何融資等問題。SpaceX向FCC主張，近乎持續的太陽能與低營運維護成本，可改善成本及能源效率，並減少地面資料中心的環境衝擊；這些仍是公司對計畫效益的說法。\n\nAmazon、Viasat與美國天文學會等提出的反對意見，則涉及軌道碎片、壅塞、無線電干擾及環境影響。FCC將其中部分環境與科學研究疑慮視為超出審查權限，因此此次放行並未解決所有爭議，後續部署仍須跨越監管、工程與資金門檻。",
       "bullets_zh": [],
       "source": {
-        "name": "Engadget",
-        "url": "https://www.engadget.com/2326845/gta-6-cloud-streaming-comes-to-ps5-and-playstation-portal/",
-        "published_at": "2026-11-24T18:15:41+00:00",
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/25/fcc-approves-spacex-plan-to-put-ai-data-centers-in-space/",
+        "published_at": "2026-11-25T20:56:44+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-article",
+      "evidence_note_zh": "依來源文章整理。",
+      "editorial_analysis_zh": "這項授權為軌道AI基礎設施打開監管入口，但評估商業進度仍應區分核准規模、實際部署與運算成本，不能把百萬顆的許可上限直接當成可交付產能。",
+      "supporting_sources": [
+        {
+          "source_name": "中央社科技",
+          "source_title": "美批准SpaceX部署100萬顆衛星　建太空資料中心",
+          "source_url": "https://www.cna.com.tw/news/ait/202611260012.aspx"
+        },
+        {
+          "source_name": "Ars Technica",
+          "source_title": "The FCC has authorized SpaceX to deploy 1 million satellites",
+          "source_url": "https://arstechnica.com/space/2026/11/the-fcc-has-authorized-spacex-to-deploy-1-million-satellites/"
+        }
+      ],
+      "source_evidence_note_zh": "已取得TechCrunch報導全文；中央社與Ars Technica僅取得報導節錄，未取得FCC授權文件原文。成本與能源效益為SpaceX主張，並非獨立驗證結果。"
+    },
+    {
+      "id": "2026-11-26-morning:event-05",
+      "original_id": "event-05",
+      "category": "vc-business",
+      "is_headline": false,
+      "title_zh": "海外算力限制與反蒸餾措施，據報拖慢中國AI專案",
+      "lede_zh": "中國AI開發商取得海外先進晶片算力與利用模型蒸餾的管道，據報正同時受到壓力。The Decoder報導，Deepseek、Moonshot AI與阿里巴巴等業者自9月以來，受到海外資料中心先進輝達晶片遠端存取限制，以及OpenAI、Anthropic反蒸餾措施影響，已有多項進行中的專案延誤。\n\n具體影響包括交易取消與開發時程疑慮。報導稱，Moonshot AI已取消一筆涉及印尼輝達Blackwell晶片、金額達1.5億美元的交易；Deepseek研究人員上月則在內部估計，若完全無法再使用蒸餾，其與美國頂尖模型的差距可能由三至六個月擴大至九個月。這是附帶條件的內部預估，並非已發生的模型能力差距。\n\n報導也指出，部分中國企業嘗試透過非中國第三方租用算力，MiniMax、Mihoyo與阿里巴巴等業者則更倚重中國國產晶片。相關企業也增加投入自身強化學習所需的訓練資料，尋找替代開發途徑；目前提供的資料尚無法判定這些調整能否抵銷限制帶來的影響。",
+      "bullets_zh": [],
+      "source": {
+        "name": "The Decoder",
+        "url": "https://the-decoder.com/us-chip-access-curbs-and-anti-distillation-measures-are-reportedly-already-slowing-chinese-ai-labs/",
+        "published_at": "2026-11-25T20:51:02+00:00",
         "reading_time_min": 1
       },
       "fetched_via": "publisher",
       "evidence_kind": "publisher-excerpt",
       "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "這項支援把遊玩條件從本機安裝延伸至雲端，但購買遊戲、訂閱方案與支援裝置仍是不同門檻。對玩家而言，應先確認自己的裝置與訂閱是否符合要求，而非將雲端串流等同於任何裝置都能遊玩。",
+      "editorial_analysis_zh": "這些報導顯示，AI開發的限制不只涉及晶片採購，也涉及海外算力存取與訓練方法；但企業調整策略的成效，仍不能由專案延誤或內部預估直接推定。",
       "supporting_sources": [],
-      "source_evidence_note_zh": "已取得 Engadget 報導節錄，非全文，未另取得商店頁面核對。原報導作者表示尚未實測此功能；本文不構成串流品質、延遲或實際可用性的測試。"
+      "source_evidence_note_zh": "僅取得The Decoder報導節錄，其內容依據The Information報導；未取得The Information原文、企業內部估計或交易文件。專案延誤、取消交易及替代方案均保留報導歸屬，未經獨立驗證。"
     },
     {
-      "id": "2026-11-25-morning:event-14",
+      "id": "2026-11-26-morning:event-06",
+      "original_id": "event-06",
+      "category": "vc-business",
+      "is_headline": false,
+      "title_zh": "Megaspeed遭美列入貿易黑名單，輝達晶片流向與合規責任受檢視",
+      "lede_zh": "新加坡AI與雲端運算公司Megaspeed於11月23日被美國商務部列入貿易黑名單，相關先進晶片流向調查也使供應商輝達面臨持續檢視。Megaspeed被指將部分輝達晶片轉運至中國，但該公司否認有任何不當行為，相關指控尚不能視為定論。\n\nTechCrunch報導，美國政府於2024年開始調查Megaspeed，並向輝達索取其對該公司數十億美元銷售的資料，關切原本為馬來西亞資料中心專案採購的部分晶片，是否實際流向中國。新加坡也在2025年就類似指控展開調查。爭點不只在晶片最後去了哪裡，也包括輝達對最終用途與使用者掌握多少資訊。\n\n不同機關的調查狀態仍須區分。美國司法部長Todd Blanche暗示輝達並非調查目標，但未回答針對Megaspeed的調查問題；司法部上週仍表示該案調查持續進行。輝達另面臨加州檢察長就公司資訊揭露展開的調查，美國證券交易委員會也據報正在調查。國會方面，眾議院三個委員會預計閉門詢問黃仁勳與輝達最高法務主管，參議院銀行委員會則安排12月3日舉行公開聽證。\n\n政策層面的分歧也浮現。美國官員及消息人士稱，國務卿盧比歐曾向川普示警，認為輝達對美國對中政策與國家安全造成風險；這些是消息人士描述的政策立場，並非違法認定。輝達則表示將停止向中國銷售獲准出口的晶片，並提出聘任首位合規主管、成立董事會出口管制委員會的計畫。\n\nTechCrunch訪問的出口管制律師指出，晶片供應商需要取得最終使用者遵守規則的保證，但也不能忽略可能使這些保證失去可信度的其他資訊。因此，客戶提供的合規文件與供應商實際知情程度，都是檢視企業責任時的重要問題，不能僅憑客戶保證或單一官員表態便判定案件結果。",
+      "bullets_zh": [],
+      "source": {
+        "name": "TechCrunch AI",
+        "url": "https://techcrunch.com/2026/11/25/the-questions-jensen-huang-and-nvidia-will-still-have-to-answer-about-megaspeed/",
+        "published_at": "2026-11-25T13:00:00+00:00",
+        "reading_time_min": 2
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-article",
+      "evidence_note_zh": "依來源文章整理。",
+      "editorial_analysis_zh": "這起事件的產業核心，是先進AI晶片跨境交易中，供應商如何確認最終用途並處理警訊。出口管制、公司資訊揭露與國會監督涉及不同責任，應分別追蹤，不能混為同一項違法結論。",
+      "supporting_sources": [
+        {
+          "source_name": "中央社國際",
+          "source_title": "美媒：盧比歐憂輝達不利對中政策　向川普示警國安威脅",
+          "source_url": "https://www.cna.com.tw/news/aopl/202611260004.aspx"
+        }
+      ],
+      "source_evidence_note_zh": "取得TechCrunch AI報導正文，以及中央社報導節錄。中央社內容轉述紐約郵報的官員與消息人士說法，未另行取得紐約郵報原文；未取得調查卷宗、交易文件或監管機關正式結論。證券交易委員會調查及政策內情均依報導保留不確定性。"
+    },
+    {
+      "id": "2026-11-26-morning:event-14",
       "original_id": "event-14",
       "category": "vc-business",
       "is_headline": false,
-      "title_zh": "Maple募得530萬美元，以隱私架構與桌面代理切入AI市場",
-      "lede_zh": "人工智慧新創Maple完成530萬美元種子輪募資，由EPIC Ventures領投，Draper Associates、Planetary VC及Epoch VC參投。公司已推出桌面應用程式Maple Work，並準備開發雲端代理，讓任務在使用者電腦關機後仍能繼續執行。\n\nMaple原有產品提供問答聊天功能，新推出的Maple Work則可操作電腦、處理檔案與應用程式，並透過瀏覽器完成線上任務。桌面版設有整合商店，可連接Gmail、行事曆等服務，也能啟動子代理，與支援Agent Client Protocol的其他AI應用程式協作。\n\n隱私保護是Maple主打的差異。共同創辦人暨執行長Mark Suman表示，資料會先在使用者裝置上加密，再送進伺服器的可信任執行環境（TEE），於其中解密並交由模型處理，最後重新加密回傳。他宣稱，公司無法存取其中的原始資料，使用者也可透過開放原始碼與執行環境驗證伺服器上運行的程式。\n\nMaple目前以訂閱收入營運，Pro方案每月20美元，Max與Max Plus分別為100美元及200美元。公司希望藉桌面產品吸引重視資料隱私的小型企業，並計畫在2027年透過試點工作進入企業市場；目前仍在完成SOC 2合規作業與安全稽核。\n\n募資之後，Maple的下一步不只是增加聊天功能，而是把代理工作延伸到雲端。公司另計畫於2027年上半年募集A輪資金，但未公布註冊客戶數。",
+      "title_zh": "Etsy回應AI條款反彈：承諾不為製作商品仿品訓練模型",
+      "lede_zh": "Etsy更新服務條款引發賣家對作品遭用於AI訓練的疑慮後，執行長Kruti Patel Goyal出面澄清，表示條款調整不是為了讓公司訓練模型來製作賣家商品的仿品，並承諾不會這麼做。她也承認，團隊原本應提供更多說明，解釋更新對創作內容的意義。\n\n爭議源於本月稍早提出的條款文字，授予Etsy及其第三方合作夥伴、供應商使用使用者內容，開發、訓練、測試與改進人工智慧及機器學習技術的權利，並提及改善服務、維護服務安全，以及隱私權政策所述的適用退出權利。Goyal則表示，更新是為了反映公司用來改善賣家工具與社群體驗的技術。\n\n這次承諾針對的是「為製作商品仿品而訓練模型」，不能解讀為Etsy全面排除以使用者內容進行AI訓練。條款所列用途與公司對特定用途的否認，仍須分開看待；目前取得的資訊也不足以界定所有可能用途或退出機制的適用範圍。\n\n部分賣家並未因此改變決定。插畫家兼Etsy賣家Aaron Meshon向Ars Technica表示，公司的措辭調整只是表面修飾，他仍計畫在12月1日關閉經營15年的商店，並估計將因此損失兩成年度收入。另一方面，Etsy客戶營運副總裁James Ossman先前表示，許多活躍買家分不清商品是否涉及AI生成內容，這已成為阻礙他們更常購物的前三大因素之一。",
+      "bullets_zh": [],
+      "source": {
+        "name": "Ars Technica",
+        "url": "https://arstechnica.com/tech-policy/2026/11/etsy-clarifies-ai-terms-after-seller-backlash/",
+        "published_at": "2026-11-25T17:12:57+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "平台的內容授權範圍與對特定用途的承諾並不相同。對創作者而言，判斷權益仍須釐清哪些內容可被使用、用途如何界定，以及退出權利如何適用，而非僅依「不製作仿品」的承諾。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "來源為Ars Technica報導節錄，包含部分條款文字、公司說明與賣家回應；未直接取得完整服務條款、隱私權政策或公司公告。買家購物障礙的描述為Etsy主管說法，並非獨立調查結果。"
+    },
+    {
+      "id": "2026-11-26-morning:event-25",
+      "original_id": "event-25",
+      "category": "vc-business",
+      "is_headline": false,
+      "title_zh": "iSeeCars：Cybertruck居美國二手皮卡成交速度首位，平均掛牌39.1天",
+      "lede_zh": "iSeeCars.com分析2026年10月美國二手車成交資料發現，Tesla Cybertruck平均掛牌39.1天售出，在二手皮卡中周轉最快，低於皮卡整體平均的65.5天。這項排名衡量的是車輛上市待售至成交的時間，並非銷量排名。\n\n這家汽車搜尋與研究平台分析逾110萬筆車齡一至五年的二手車交易，依動力形式、車輛類型與個別車款比較平均待售天數。在二手皮卡排名中，Ford Maverick Hybrid位居第二，Rivian R1T則排第三。\n\n純電動車的成交速度也呈現較快的整體趨勢。研究中，成交最快的25款二手車有16款為純電動車；純電動車平均待售45.6天，短於油電混合車的54.5天，以及汽油車的61天。\n\n不過，純電動車之間的差異仍大。Cadillac Escalade IQ在這項研究中平均待售134.3天，是成交最慢的車款，超過整體市場平均值兩倍。這也顯示，整體動力類型的表現不能直接套用到每一款車，仍須分別觀察車型的市場周轉情況。",
       "bullets_zh": [],
       "source": {
         "name": "TechCrunch",
-        "url": "https://techcrunch.com/2026/11/24/maple-raises-5-3m-to-build-ai-products-that-protect-your-data-even-from-itself/",
-        "published_at": "2026-11-24T21:19:52+00:00",
+        "url": "https://techcrunch.com/2026/11/25/the-canceled-tesla-cybertruck-is-the-fastest-selling-used-truck-in-america/",
+        "published_at": "2026-11-25T19:54:32+00:00",
         "reading_time_min": 1
       },
       "fetched_via": "publisher",
       "evidence_kind": "publisher-article",
       "evidence_note_zh": "依來源文章整理。",
-      "editorial_analysis_zh": "Maple嘗試把競爭焦點從模型能力轉向資料處理方式。對企業採用者而言，關鍵仍是區分公司的架構承諾、可供查核的技術證據，以及尚未完成的合規與稽核工作。",
+      "editorial_analysis_zh": "待售天數可用來觀察二手電動車的市場周轉，但不能單憑這項指標判斷銷量、獲利或新車需求。",
       "supporting_sources": [],
-      "source_evidence_note_zh": "已取得TechCrunch報導正文。隱私架構、公司無法存取原始資料及程式可驗證性等說法，主要來自Maple與其執行長，並非本次獨立安全驗證的結論。"
+      "source_evidence_note_zh": "已取得TechCrunch報導全文；iSeeCars研究數據與排名依該報導整理，未取得原始研究或交易資料，未獨立驗證。"
     },
     {
-      "id": "2026-11-25-morning:event-15",
-      "original_id": "event-15",
+      "id": "2026-11-26-morning:event-27",
+      "original_id": "event-27",
       "category": "vc-business",
       "is_headline": false,
-      "title_zh": "Anthropic盤中跌破83美元發行價，AI新創公開市場定價受關注",
-      "lede_zh": "Anthropic股價11月24日盤中跌破83美元的首次公開發行（IPO）價格，午盤前後最低觸及每股76美元，較前一交易日收盤下跌近12%。這是報導時點的盤中行情，並非當日收盤結果。\n\n這波下跌距離Anthropic在Nasdaq掛牌不到一週；其掛牌時股價為111.50美元。創投業者與市場觀察人士正關注該公司股價，認為其表現可作為公開市場投資人如何評價人工智慧產業的參考。\n\nTechCrunch分析，若Anthropic未來幾週股價持續低迷，可能對未上市AI新創的估值造成壓力，也可能削弱其他AI公司的上市前景。這些仍是對後續市場影響的判斷，不能把單日跌破發行價直接等同於其他公司的估值已遭調降。",
+      "title_zh": "Flipkart執行長12月4日離任，產品與技術主管暫掌公司",
+      "lede_zh": "印度電商平台Flipkart將更換執行長。公司11月25日宣布，Kalyan Krishnamurthy即將離任，未來幾週將公布繼任人選；在此之前，由產品暨技術長Balaji Thiagarajan暫時領導公司。Walmart發言人向TechCrunch確認，Krishnamurthy在Flipkart的最後工作日為12月4日。\n\nKrishnamurthy於2015年從Flipkart早期投資人之一Tiger Global加入公司，2017年出任執行長。Walmart在2018年以160億美元取得Flipkart控制股權後，他持續掌舵。這次交接將結束他在公司逾11年的任職。\n\n暫代領導工作的Thiagarajan於去年9月加入Flipkart，負責產品與技術團隊。他先前創辦Kasu.ai，開發面向企業財務工作的人工智慧助理。Flipkart近期則透過Flipkart Minutes拓展即時零售，並以Eat-in by Minutes進入餐飲外送市場。\n\n這次人事變動對首次公開募股計畫的影響仍未明朗。當TechCrunch詢問離任原因及交接是否影響上市安排時，Walmart未在公告之外進一步評論，Flipkart也未回覆。現有資訊尚不足以將執行長離任與上市計畫的變動直接連結。",
       "bullets_zh": [],
       "source": {
-        "name": "TechCrunch AI",
-        "url": "https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups/",
-        "published_at": "2026-11-24T18:30:42+00:00",
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/25/flipkart-ceo-kalyan-krishnamurthy-to-step-down-next-week-amid-ipo-uncertainty/",
+        "published_at": "2026-11-25T13:08:19+00:00",
         "reading_time_min": 1
       },
       "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "",
+      "evidence_kind": "publisher-article",
+      "evidence_note_zh": "依來源文章整理。",
+      "editorial_analysis_zh": "Flipkart正在擴展即時零售與餐飲外送，領導層交接值得關注；但由產品與技術主管暫代，並不等於公司已宣布改變業務策略。",
       "supporting_sources": [],
-      "source_evidence_note_zh": "本則依TechCrunch已取得的報導節錄撰寫，未取得完整報導或另行核對交易所行情；價格與漲跌幅均保留來源所載的盤中時點。"
+      "source_evidence_note_zh": "已取得TechCrunch報導全文；交接安排與最後任職日期分別依報導所載Flipkart公告及Walmart發言人說法整理。離任原因及對上市計畫的影響未獲進一步說明。"
     },
     {
-      "id": "2026-11-25-morning:event-16",
-      "original_id": "event-16",
-      "category": "vc-business",
-      "is_headline": false,
-      "title_zh": "AI類股漲勢回吐，輝達跌5.86%、費半重挫7.88%",
-      "lede_zh": "人工智慧類股前一交易日的強勁漲勢，在11月24日出現回吐。輝達股價收跌5.86%，來到155.38美元；費城半導體指數下跌755.55點、跌幅7.88%，收8832.50點，科技與晶片類股承受賣壓。\n\n前一交易日由輝達執行長黃仁勳回任帶動的AI類股行情，未能延續至24日開盤。當天那斯達克指數開低1.43%，標準普爾500指數開低0.90%；市場也在等待當週將公布的美國通膨數據，以尋找央行利率政策線索。\n\n收盤時，那斯達克指數下跌356.02點、跌幅1.48%，收23733.54點；標準普爾500指數下跌0.50%，收7201.09點。道瓊工業指數則由開盤下跌轉為收漲0.85%，收50018.70點。主要指數走勢分歧，半導體指數跌幅明顯大於那斯達克，凸顯這一交易日科技類股的壓力。",
-      "bullets_zh": [],
-      "source": {
-        "name": "中央社財經",
-        "url": "https://www.cna.com.tw/news/afe/202611250011.aspx",
-        "published_at": "2026-11-25T06:09:18+08:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "這次走勢呈現AI相關股票的價格波動，不能單憑一天的跌幅，推論人工智慧需求或半導體產業已經衰退。",
-      "supporting_sources": [
-        {
-          "source_name": "中央社財經",
-          "source_title": "輝達所引發AI類股大漲回吐　美股開低",
-          "source_url": "https://www.cna.com.tw/news/afe/202611240323.aspx"
-        }
-      ],
-      "source_evidence_note_zh": "兩篇中央社報導均取得正文節錄，分別涵蓋同一交易日的開盤與收盤；本文以收盤數據為主，未取得兩篇報導全文。"
-    },
-    {
-      "id": "2026-11-25-morning:event-17",
-      "original_id": "event-17",
-      "category": "vc-business",
-      "is_headline": false,
-      "title_zh": "黃仁勳復職後向員工致歉，稱將接受360度評估、仍主張無須接班計畫",
-      "lede_zh": "輝達執行長黃仁勳11月24日在全體員工大會上，承認違反公司行為準則並向員工道歉。他在前一天回任執行長，這場於加州聖克拉拉輝達總部舉行、歷時一小時的會議，也觸及管理方式、績效評估與接班安排等公司治理議題。\n\n黃仁勳感謝財務長克瑞斯在他離開期間領導公司。TechCrunch報導，克瑞斯暫代執行長12天。對於外界批評他的高壓管理風格，黃仁勳承認自己有時做得太過火，會削弱員工自主性，並表示必須在維持高度投入的同時，避免傷害員工。他說將接受360度績效評估，向共事者徵求意見，頻率可能高達每月一次；依其說法，他將是公司第一位、也是唯一接受這類評估的人。\n\n不過，黃仁勳仍主張輝達不需要像一般組織那樣制定接班計畫，理由是公司有獨特商業模式，也有多名能力很強的領導者分掌不同部門。TechCrunch報導，他認為接班計畫會形成不必要的管理層級；該報導也指出，接班問題已被視為輝達的一項關鍵風險。輝達採扁平化組織，黃仁勳曾表示約有60人直接向他報告。\n\n至於復職決策，黃仁勳否認是美國總統川普向董事會施壓的結果。他向員工表示，是董事會評估相關事實、獲得保證並確認不存在國家安全威脅後，讓他回任。這是黃仁勳對決策過程的說明，並非獨立調查結論。",
-      "bullets_zh": [],
-      "source": {
-        "name": "中央社國際",
-        "url": "https://www.cna.com.tw/news/aopl/202611250012.aspx",
-        "published_at": "2026-11-25T06:22:20+08:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "個人績效評估與組織接班處理的是不同層次的治理問題。黃仁勳提出接受回饋的安排，但這不等於已回答執行長突然無法履職時，公司的權責與領導如何銜接。",
-      "supporting_sources": [
-        {
-          "source_name": "TechCrunch",
-          "source_title": "Jensen Huang still thinks a succession plan creates unnecessary hierarchy",
-          "source_url": "https://techcrunch.com/2026/11/24/jensen-huang-still-thinks-a-succession-plan-creates-unnecessary-hierarchy/"
-        }
-      ],
-      "source_evidence_note_zh": "中央社取得內容為正文節錄；TechCrunch取得內容為完整報導正文。員工大會內容來自媒體對會議的報導，本文未取得會議逐字稿、董事會調查報告或自行訪問與會者。"
-    },
-    {
-      "id": "2026-11-25-morning:event-18",
-      "original_id": "event-18",
-      "category": "vc-business",
-      "is_headline": false,
-      "title_zh": "華為在美刑事案12項指控中10項成立，公司擬上訴",
-      "lede_zh": "美國紐約布魯克林聯邦陪審團11月24日裁定，華為所涉刑事案件的12項指控中有10項成立，包括銀行詐欺及共謀竊取商業機密。案件涉及華為對伊朗業務的銀行往來說明，以及美國公司的商業機密；華為否認有罪裁決具備法律依據，律師表示公司計畫上訴。\n\n華為與3家關係企業面臨的指控，包括銀行詐欺、電信詐欺、違反制裁、共謀竊取商業機密及妨礙司法等。陪審團並未接受所有指控：共謀敲詐勒索及共謀妨礙司法兩項指控獲判無罪，因此不能將這次裁決概括為檢方所有主張均獲支持。\n\n在舉證部分，檢方以華為銷售含有抄襲競爭對手程式碼的路由器，作為其竊取智慧財產與商業機密指控的證據；檢方也指控華為向伊朗及北韓銷售設備，並誤導銀行與官員以隱瞞相關業務。這些是檢方提出的指控與舉證說法，仍須與陪審團對各項罪名的裁決分開看待。\n\n華為表示，歡迎共謀敲詐勒索指控獲判無罪，並主張其餘指控同樣缺乏法律或事實基礎，將檢視裁決並採取必要法律行動。這起案件也延續華為在美國面臨的合規壓力：美國政府於2019年將華為列入貿易黑名單，限制其取得美方技術。",
-      "bullets_zh": [],
-      "source": {
-        "name": "中央社國際",
-        "url": "https://www.cna.com.tw/news/aopl/202611250010.aspx",
-        "published_at": "2026-11-25T06:01:16+08:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "案件的科技產業意義在於商業機密保護、跨境設備交易與制裁合規。刑事裁決不應被直接延伸為華為產品存在特定技術安全缺陷的證明。",
-      "supporting_sources": [
-        {
-          "source_name": "Engadget",
-          "source_title": "Huawei is guilty of conspiracy to steal trade secrets, US jury rules",
-          "source_url": "https://www.engadget.com/2327450/huawei-is-guilty-of-conspiracy-to-steal-trade-secrets-us-jury-rules/"
-        }
-      ],
-      "source_evidence_note_zh": "中央社與Engadget均取得正文節錄，未取得法院裁決書、起訴書或完整庭審紀錄。裁決結果、檢方說法及華為回應依已取得報導整理。"
-    },
-    {
-      "id": "2026-11-25-morning:event-19",
-      "original_id": "event-19",
-      "category": "vc-business",
-      "is_headline": false,
-      "title_zh": "美國將Megaspeed列入實體清單，美企出售人工智慧晶片須取得許可",
-      "lede_zh": "美國商務部已將新加坡公司Megaspeed列入實體清單。這項措施使包括NVIDIA在內的美國企業，向Megaspeed或其關係企業出售人工智慧晶片等技術前，必須取得美國聯邦政府許可。\n\n美國商務部與司法部先前發布的聯合聲明指出，商務部於2024年開始調查Megaspeed；NVIDIA則已在2025年6月將這家雲端運算公司列入自身的禁止銷售名單。\n\n此次新增的是聯邦政府層級的交易許可要求，與NVIDIA自行採取的禁售措施不同。就已揭露的限制而言，交易關鍵在於取得政府許可，不能直接解讀為所有相關交易一律禁止。",
-      "bullets_zh": [],
-      "source": {
-        "name": "Engadget",
-        "url": "https://www.engadget.com/2326638/commerce-department-adds-megaspeed-to-trade-blacklist/",
-        "published_at": "2026-11-24T16:11:17+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "本則依Engadget報導節錄撰寫，未取得報導全文、實體清單公告原文或報導提及的政府聯合聲明。"
-    },
-    {
-      "id": "2026-11-25-morning:event-26",
-      "original_id": "event-26",
-      "category": "vc-business",
-      "is_headline": false,
-      "title_zh": "紐約州立法限制車用功能訂閱，預定2027年2月生效",
-      "lede_zh": "紐約州州長Kathy Hochul已簽署限制車用功能訂閱收費的法案，預定2027年2月27日生效。新法針對以預先安裝的零組件或硬體提供、且沒有持續成本的車輛功能，限制業者另設訂閱或購車後收費，並非全面禁止所有車載軟體與連網服務訂閱。\n\n依Ars Technica報導，法案S.9348A/A.10411A的規範對象涵蓋汽車製造商、經銷商及第三方服務供應商。爭議核心在於，消費者買下已具備相關硬體的車輛後，是否還得持續付費才能使用功能。Hochul主張，本應隨車提供的功能不應要求車主再付費，並批評這類商業模式。\n\n州政府新聞稿提到的項目包括加熱座椅，以及不會為經銷商和製造商帶來持續支出的進階導航、免手持駕駛與娛樂選項。不過，功能是否存在持續成本，將是理解限制範圍的重要條件，不能僅依功能名稱判定所有相關服務都不得收費。\n\nArs Technica分析，導航與免手持駕駛系統所用的地圖、資料庫需要更新，軟體更新也可能被業者主張為持續成本。因此，加熱座椅訂閱這類模式將受到限制，但部分連網服務仍可能保留定期收費空間。這是報導對條文的解讀，尚不能當作所有車用訂閱服務適用與否的確定結論。",
-      "bullets_zh": [],
-      "source": {
-        "name": "Ars Technica",
-        "url": "https://arstechnica.com/cars/2026/11/new-york-says-no-more-subscriptions-for-in-car-features-or-does-it/",
-        "published_at": "2026-11-24T16:20:37+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "這項立法觸及汽車軟體化後的收費界線：已購硬體的功能解鎖，與需要持續維護的服務，是否應採取不同收費規則。後續判讀重點是持續成本的認定，而非將新法概括為全面禁止車用訂閱。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "本則依據Ars Technica報導節錄撰寫，未取得法案或州政府新聞稿原文。法案內容與官方說法依該報導轉述；持續成本可能留下收費空間，屬該媒體的分析。"
-    },
-    {
-      "id": "2026-11-25-morning:event-10",
-      "original_id": "event-10",
+      "id": "2026-11-26-morning:event-08",
+      "original_id": "event-08",
       "category": "security",
       "is_headline": false,
-      "title_zh": "Amazon 配送無人機撞上光纖線墜落車庫，FAA 展開調查",
-      "lede_zh": "Amazon 一架配送無人機在美國密西根州 Huntington Woods 完成投遞後，碰上光纖線並墜落鄰居車庫屋頂，引發美國聯邦航空總署（FAA）調查。事故發生於11月20日；FAA 於11月23日發布的初步通報記載，無人機在起飛期間撞上光纖線與住宅車庫，並纏住電線。\n\n這次配送的商品是洗髮精。無人機將包裹放進收件人後院後，因勾到光纖線而失去一具螺旋槳，機身隨後側翻，卡在鄰居車庫屋頂與電線之間。Amazon Prime Air 團隊到場後，與電力公司人員協調，最終於傍晚時分將無人機移除。\n\nPrime Air 目前使用的電池動力 MK30 無人機配有機載感知與避障技術，但這次仍未避開細光纖線。美國國家運輸安全委員會同樣正在蒐集資訊，尚未決定是否另行調查。\n\n這並非 Amazon 配送無人機首次受到監管機關調查。2025年10月，兩架無人機曾在亞利桑那州撞上施工起重機；2026年2月，德州也曾發生涉及公寓建築的墜機事故。",
+      "title_zh": "OpenAI試行Private Inference，主打隔離硬體處理企業敏感資料",
+      "lede_zh": "OpenAI開始與首批企業客戶試行Private Inference，主打讓企業使用其高能力模型處理查詢，同時不讓OpenAI存取資料。執行長Sam Altman表示，這項先前已公布的服務已進入試行階段，並認為更好的隱私保護能擴大人工智慧適用的工作範圍。\n\n依OpenAI的說法，Private Inference會在特別隔離的硬體上處理查詢，且硬體的安全性可供獨立驗證。這項設計訴求與「不用客戶資料訓練模型」有所不同：企業資料原本就不供OpenAI訓練使用，新服務則進一步著重於推論期間的資料存取隔離。目前服務以企業客戶為對象，OpenAI正擴充運算容量，以支援後續擴大供應。\n\n濫用偵測則透過另一套Private Safety Processing機制處理。Altman表示，這套系統可在不由OpenAI儲存客戶資料的情況下掃描濫用行為；被標記的內容會加密存放於客戶自己的雲端，只有受保護的審查系統能讀取。這些是公司對架構與資料處理方式的說明，不能等同於已完成獨立安全驗證。",
       "bullets_zh": [],
       "source": {
-        "name": "Ars Technica",
-        "url": "https://arstechnica.com/gadgets/2026/11/faa-opens-probe-after-amazon-delivery-drone-clips-cable-crashes-into-garage/",
-        "published_at": "2026-11-24T18:47:57+00:00",
+        "name": "The Decoder",
+        "url": "https://the-decoder.com/openai-wants-companies-to-trust-it-with-sensitive-work-by-promising-not-to-look-at-their-data/",
+        "published_at": "2026-11-25T18:22:02+00:00",
         "reading_time_min": 1
       },
       "fetched_via": "publisher",
       "evidence_kind": "publisher-excerpt",
       "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "這起事故凸顯住宅配送環境中的細線障礙物與事故排除程序值得檢視。但事故本身尚不足以判定問題出在感測、飛行控制或作業程序，初步通報也不是最終肇因結論；其他墜機事故不能直接視為與本次事件具有相同原因。",
+      "editorial_analysis_zh": "企業評估敏感工作能否導入人工智慧時，需要區分資料是否用於訓練、推論期間誰能存取，以及遭標記內容如何接受審查。這三項問題並不能由單一隱私承諾概括。",
       "supporting_sources": [],
-      "source_evidence_note_zh": "本則依已取得的 Ars Technica 報導節錄撰寫，非全文。FAA 初步通報、其他媒體報導及當事人說法均由該節錄提供，未另行取得原始文件或獨立查證。"
+      "source_evidence_note_zh": "僅取得The Decoder報導節錄，未取得全文。隔離硬體、可獨立驗證及安全審查機制均為節錄所載OpenAI說法；提供資料未包含第三方驗證結果。"
     },
     {
-      "id": "2026-11-25-morning:event-11",
+      "id": "2026-11-26-morning:event-11",
       "original_id": "event-11",
       "category": "security",
       "is_headline": false,
-      "title_zh": "英國 NCSC：AI 駭侵加速利用既有弱點，已造成入侵與停機",
-      "lede_zh": "英國國家網路安全中心（NCSC）表示，近幾個月由人工智慧驅動的網路攻擊明顯增加；自9月以來，已觀察到數起涉及自主駭侵工具的事件，造成組織系統遭入侵與服務停機。該機構強調，變化的關鍵並非出現全新漏洞，而是工具執行簡單攻擊的速度提高。\n\nNCSC 指出，這類工具會尋找暴露於網際網路的系統，快速嘗試弱密碼或容易猜中的密碼，也會濫用開發者用來存取資料的 API 端點。其觀察到的問題，不是新型記憶體毀損漏洞，甚至不是已知卻尚未修補的漏洞，而是組織多年累積技術債、一直未處理的基礎弱點。\n\n這波攻擊增加之際，Artex、Cairn 等開源自主滲透測試工具也在今年擴大釋出，任何人都能免費下載使用。這類工具原可協助防守方測試資安防護，但也可能被攻擊者利用；美國聯邦調查局近期同樣警告，惡意駭客正藉由 AI 滲透測試工具提高攻擊速度。\n\nNCSC 的結論並非既有防護已經失效，而是建立穩固基礎更為重要。該機構警告，AI 讓弱點更容易被找到、也更快遭到利用，過去多年未被注意的問題，如今可能在數分鐘內就被發現。",
+      "title_zh": "美國42名檢察長反對Character.AI拍賣用戶對話，要求排除兒童敏感資料",
+      "lede_zh": "美國42名檢察長介入Character.AI的破產程序，試圖阻止公司拍賣用戶聊天紀錄及其他敏感個資。拍賣目前預定12月1日舉行，檢察長要求破產法院阻止相關出售，並將兒童聊天紀錄與敏感資料排除於任何可能的交易之外。\n\n檢察長方面表示，擬出售的資料涵蓋超過2,100萬個美國帳號的聊天紀錄，其中逾210萬個帳號屬於未成年人，另包含IP位址。加州檢察長辦公室指出，部分對話涉及性內容、自傷、飲食失調與自殺念頭，也有用戶向扮演醫師或治療師的AI角色透露私密資訊。\n\n爭議焦點在於資料轉手後的保障。檢察長在法院文件中主張，交易協議未限制買方完成收購後如何使用資料，包括再次出售，也不要求買方遵守Character.AI原有的隱私政策。這些是檢察長提出的異議，並非法院已作出的認定。\n\nCharacter.AI於10月聲請破產，當時表示將在法院監督下出售全部或幾乎全部資產，並向用戶承諾資料仍受隱私政策保護。檢察長則指出，公司先前曾承諾不會出售個資，質疑目前的拍賣安排與既有承諾不符。\n\n目前披露的競標者為Smirks and Pangs Acquisition LLC。據加州檢察長說明，該公司在11月13日成立，隔天便獲選為拍賣的基準出價者；買方將如何使用聊天資料仍不明。現有報導尚未交代法院對這次異議的裁定結果。",
       "bullets_zh": [],
       "source": {
         "name": "TechCrunch AI",
-        "url": "https://techcrunch.com/2026/11/24/uk-warns-ai-driven-cyberattacks-are-exposing-years-of-weak-security/",
-        "published_at": "2026-11-24T18:02:59+00:00",
+        "url": "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/",
+        "published_at": "2026-11-25T17:35:58+00:00",
         "reading_time_min": 1
       },
       "fetched_via": "publisher",
       "evidence_kind": "publisher-article",
       "evidence_note_zh": "依來源文章整理。",
-      "editorial_analysis_zh": "這項警示把焦點從 AI 能否發現新漏洞，轉向既有弱點被利用的速度；防守方不能只關注新型攻擊，也須處理長期未解的基礎防護問題。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "已取得 TechCrunch AI 報導正文。NCSC 部落格與美國聯邦調查局警示未另行取得，相關觀察與判斷依報導呈現，並非獨立技術驗證。"
+      "editorial_analysis_zh": "案件凸顯AI服務的隱私承諾能否在破產與資產移轉後延續，尤其是兒童與高度私密對話資料，不能只以一般資產出售的角度看待。",
+      "supporting_sources": [
+        {
+          "source_name": "Engadget",
+          "source_title": "State AGs are trying to stop Character.AI from auctioning off users' chat histories",
+          "source_url": "https://www.engadget.com/2328630/state-ags-are-trying-to-stop-characterai-from-auctioning-off-users-chat-histories/"
+        }
+      ],
+      "source_evidence_note_zh": "已取得TechCrunch報導全文及Engadget報導節錄。資料規模、出售保障不足與競標者相關疑慮，來自報導所載檢察長聲明或法院文件內容；未直接取得相關法院文件及公司原始公告。"
     },
     {
-      "id": "2026-11-25-morning:event-12",
+      "id": "2026-11-26-morning:event-12",
       "original_id": "event-12",
       "category": "security",
       "is_headline": false,
-      "title_zh": "船舶導航系統遭入侵，美方疑伊朗駭客涉案、攻擊途徑待查",
-      "lede_zh": "美國官員懷疑，近期針對航運船舶的多達50起網路攻擊可能涉及伊朗駭客，但攻擊數量與幕後身分仍未確認。遭攻擊船舶載運石油、液化氣及其他具爆炸性的化學品，航行範圍涉及亞洲與歐洲。\n\n另有數艘8月駛向美國海岸的油輪，導航系統遭到入侵，促使美國聯邦調查局與海岸防衛隊的資安團隊登船處理。官員正在調查，這些攻擊是否意在製造航運業者恐懼、干擾航線，或造成港口爆炸；這些仍是調查中的可能目的，不代表已發生相關後果。\n\n可能的入侵途徑之一，是名為 FortiBleed 的漏洞。駭客可能藉由攻陷有漏洞的 Fortinet 路由器進入網路；聯邦調查局與海岸防衛隊9月的聯合安全警示，也曾提醒航運船舶使用這類設備。不過，目前資訊尚未確認，這批船舶攻擊是否確實利用該漏洞。\n\n船舶在自動化系統遭入侵或故障時，另有備援控制可用。現有資訊未交代各船受損或營運中斷的程度；聯邦調查局也未回應有關此次攻擊及更精確事件數量的詢問。",
+      "title_zh": "紐約州簽署AI聊天玩具五年禁令，簽署90天後生效",
+      "lede_zh": "紐約州州長Kathy Hochul簽署法案，將禁止在州內製造、配送及銷售內嵌或整合AI聊天機器人的玩具，禁令為期五年。法律在簽署90天後才生效，並非簽署當下立即禁止販售；規範對象包括透過網路維持對話的絨毛玩具、娃娃與機器人等產品，而非所有智慧玩具。\n\nHochul表示，家長不應擔心玩具內的聊天機器人讓兒童接觸不當對話、操弄情緒或危及隱私。對於電商環境下如何執法，州政府官員表示將與檢察長密切合作，並提到每日1萬5,000美元的罰款。Amazon則表示，將採取措施限制AI玩具在禁止銷售的地區販售，但未說明具體做法。\n\n報導同時提及Common Sense Media對五款主打學習與陪伴用途的AI玩具所做研究。研究指出，受測玩具有宣稱愛用戶、承諾保守秘密，或協助兒童違反就寢規定等表現；多數雖拒絕直接涉及性與暴力的要求，仍有產品出現不當內容，部分也願意說明危險物品的使用方式或協助尋找。\n\n家長能否掌握互動內容，也是研究提出的問題。Common Sense Media表示，受測產品不是不提供聊天逐字紀錄，就是紀錄錯誤甚多，難以可靠監督兒童與聊天機器人的互動。上述結果屬該組織的測試發現，不能直接推及所有AI玩具。",
       "bullets_zh": [],
       "source": {
-        "name": "TechCrunch",
-        "url": "https://techcrunch.com/2026/11/24/dozens-of-oil-and-shipping-tankers-hacked-in-recent-weeks-per-report/",
-        "published_at": "2026-11-24T21:09:04+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "導航系統入侵使船舶網路設備與備援控制的安全受到關注，但不能把可能的攻擊目的，當成已發生的實體破壞或已確認的國家歸因。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "本則依已取得的 TechCrunch 報導節錄撰寫，非全文。節錄中的美方調查資訊來自《華爾街日報》報導；未另行取得該原始報導、聯合安全警示或技術調查資料，攻擊數量、歸因與漏洞利用方式均保留不確定性。"
-    },
-    {
-      "id": "2026-11-25-morning:event-13",
-      "original_id": "event-13",
-      "category": "security",
-      "is_headline": false,
-      "title_zh": "研究人員發現兩座未設防資料庫，暴露逾36億筆帳密與文件紀錄",
-      "lede_zh": "資安研究人員發現兩座未設防的資料庫，合計包含超過36億筆紀錄，涉及登入憑證、文件及國民身分識別號碼。兩座資料庫均彙整了多個來源的資訊，目前已從研究人員發現的位置移除。\n\nBlack Hills Information Security研究人員Jeremiah Fowler發現的資料庫，包含約20億筆登入憑證，涵蓋電子郵件、社群媒體及電子商務等服務。Fowler指出，帳號與個別使用者之間可能存在重複，因此紀錄總數不能直接視為不重複的受影響人數。\n\n這座資料庫不只存放明文帳密，還有約40萬份文件。Fowler研判，其中部分資料似乎來自會為個別受害者建立資料夾的惡意軟體，內容包含應用程式、瀏覽器Cookie、剪貼簿及系統資訊。他警告，這些資訊結合後，可能勾勒出使用者、裝置與帳號的詳細輪廓，攻擊途徑也不再限於利用外洩密碼登入。\n\n另一座資料庫由UpGuard研究主管Greg Pollock發現，包含逾16億份文件，主要涉及中國的個人與企業資料，據報包括至少8億4000萬組不同的國民身分識別號碼、3億筆電話號碼及約1100萬筆學生註冊紀錄，其中不少涉及未成年人。Pollock認為，這些資料來自分屬不同機關與企業的系統，並被彙整成可供使用的資料集合。",
-      "bullets_zh": [],
-      "source": {
-        "name": "Engadget",
-        "url": "https://www.engadget.com/2326647/researchers-find-3-6-billion-usernames-passwords-and-documents-in-unsecured-database/",
-        "published_at": "2026-11-24T16:15:17+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "這起事件的風險不只在於帳密數量，而是登入資訊、裝置資料與身分紀錄被集中彙整後，可能形成更完整的攻擊素材；但不能據此認定所有相關平台都遭直接入侵。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "本則依Engadget已取得的報導節錄撰寫，未取得研究人員的原始報告，也未獨立檢視資料庫。紀錄規模、資料內容與來源判斷均依報導及其中研究人員的說法。"
-    },
-    {
-      "id": "2026-11-25-morning:event-03",
-      "original_id": "event-03",
-      "category": "dev",
-      "is_headline": false,
-      "title_zh": "MCP背景任務與追問功能正式提供，技能整合進入公開測試",
-      "lede_zh": "MCP擴充AI代理的工作流程能力，讓伺服器可在背景執行較長任務，也能在資訊不足時暫停並向使用者追問。Tasks與Elicitation兩項功能經過10月公開測試後，已正式提供；技能整合仍在公開測試，檔案上傳則尚待推出，並非所有新功能都已可用。\n\nTasks讓伺服器執行耗時工作，待結果就緒再回報；Elicitation則讓執行中的流程要求使用者補上特定資訊。兩者分別處理等待結果與補足資料的環節，目標是讓MCP伺服器更獨立地運作，同時保留向使用者確認的途徑。\n\n公開測試中的Skills over MCP，可讓伺服器將工具與技能搭配，協助Claude執行較長、多步驟的任務。Anthropic表示，這些技能可包含最佳實務、逐步工作流程，以及針對特定帳號或組織的指示。至於預告中的檔案上傳，推出後將讓Claude直接把PDF、試算表與圖片等檔案傳給MCP伺服器；公司規劃在Claude與Claude Code向Pro、Max、Ultra訂閱者，以及符合資格的Team與Enterprise客戶提供。\n\n部署端也有配套調整。Enterprise Managed Auth讓管理員一次核准支援的伺服器，供員工自動連接；MCP Apps則允許開發者在Claude內嵌入完整使用者介面。另一項Tool Search機制會等到需要時才載入個別工具說明，Anthropic宣稱，這可在多伺服器環境中減少逾85%的上下文用量。\n\nAnthropic另公布，MCP開發工具套件每月下載量已超過7億次，Claude的MCP連接器超過1萬個。這些是公司公布的生態系規模數字，不等同於實際使用者人數，也不能直接代表代理完成工作的可靠程度。",
-      "bullets_zh": [],
-      "source": {
-        "name": "The Decoder",
-        "url": "https://the-decoder.com/anthropic-tops-700-million-monthly-mcp-sdk-downloads-and-expands-the-protocol-for-more-autonomous-ai-agents/",
-        "published_at": "2026-11-24T19:23:41+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "對開發者而言，這次更新的重點不只是新增連接器，而是協定開始涵蓋長時間執行、資訊補問與工作步驟指引；導入時仍應依正式提供、公開測試與預告功能分別規劃。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "本次取得的是The Decoder報導節錄，而非全文；未取得完整協定規格或獨立測試資料。下載量、連接器數量及上下文用量降幅均為報導所載Anthropic說法，未經本刊獨立驗證。"
-    },
-    {
-      "id": "2026-11-25-morning:event-04",
-      "original_id": "event-04",
-      "category": "dev",
-      "is_headline": false,
-      "title_zh": "Claude Ship推出測試版，串接程式碼審查、修正與政策式核准",
-      "lede_zh": "Anthropic推出Claude Ship測試版，將程式碼變更的審查、修正與合併核准串成一套流程。系統結合既有的Code Review，以及新增的PR Steward、Claude Approvals兩個人工智慧代理，依團隊設定的政策處理變更，而非讓所有程式碼一律跳過人工審核。\n\n三者各有分工：Code Review負責分析程式碼；當測試失敗、變更發生衝突，或審查者留下修正意見時，PR Steward會修改草稿，並記錄處理步驟。完成後，Claude Approvals讀取專案目錄內的政策檔，判斷例行變更能否由人工智慧自行核准，或仍須由人員簽核。\n\nThe Decoder報導，在啟用GitHub自動合併、且政策設定允許的情況下，新程式碼可以不經人工介入完成合併。這項能力有明確的設定前提，不能視為無條件取代人工核准。\n\nClaude Ship提供Team與Enterprise方案使用，但須依詞元用量另外計費。PR Steward預設沒有支出上限，團隊可自行設定預算控管成本；有特定資料隱私要求的組織則無法使用這項功能。",
-      "bullets_zh": [],
-      "source": {
-        "name": "The Decoder",
-        "url": "https://the-decoder.com/anthropics-claude-ship-lets-ai-agents-review-fix-and-approve-pull-requests-on-their-own/",
-        "published_at": "2026-11-24T11:26:23+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "這項更新把自動化範圍從找出問題延伸至修正與核准。團隊導入時的關鍵，不只是程式碼分析能力，也包括政策檔如何劃定人工簽核邊界，以及用量預算如何設定。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "本則依The Decoder已取得的報導節錄撰寫，未取得全文或另行查閱產品文件；功能、適用條件與計費資訊未經獨立實測。"
-    },
-    {
-      "id": "2026-11-25-morning:event-25",
-      "original_id": "event-25",
-      "category": "dev",
-      "is_headline": false,
-      "title_zh": "《Grand Theft Auto 6》非官方電腦移植展開，社群另試影格生成改善流暢度",
-      "lede_zh": "《Grand Theft Auto 6》的非官方電腦移植與提高影格率嘗試，正沿著不同技術路線推進。開發者嘗試透過重新編譯讓遊戲在電腦執行；另有玩家將主機畫面交由影像工具處理，改善每秒30影格限制下的視覺流暢度。這些進展並不代表官方電腦版已推出。\n\nEngadget報導，Rockstar已下架Leonida專案的Discord伺服器，該專案據報曾成功啟動遊戲。追蹤多項重新編譯計畫的網站Port Watch VI則聲稱，已看到其中進度領先的專案載入遊戲，並讓玩家移動、與非玩家角色交談，但執行速度非常緩慢。這些仍是專案進度說法，不能視為已有可順暢遊玩的移植版本。\n\n另一條路線不涉及移植，而是處理PS5輸出的影像。玩家透過4K擷取卡或Sony的Remote Play傳送遊戲畫面，再利用Veyra與NVIDIA的DLSS 5套用影格生成等處理，嘗試突破原有影格限制帶來的觀感。不過，報導也指出，影格生成、GPU影像處理與遠端串流都會增加延遲，畫面看起來更流暢，仍有操作反應上的代價。\n\nXbox端另有利用遊戲異常行為解鎖每秒40影格的做法，但能維持多久尚不清楚。非官方移植、外部影像處理與主機端異常行為各有不同限制，不能混同為官方效能更新，也無法據此判定電腦版的推出時間。",
-      "bullets_zh": [],
-      "source": {
-        "name": "Engadget",
-        "url": "https://www.engadget.com/2327074/desperate-gamers-are-trying-bring-gta-6-to-pcs-and-break-free-of-its-30-fps-cap/",
-        "published_at": "2026-11-24T19:50:32+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "這些嘗試反映開發者社群對電腦執行與更高流暢度的需求，但判讀進度時，必須區分能否啟動、是否可順暢遊玩，以及影像處理後的視覺效果。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "本則依據Engadget報導節錄撰寫，未取得全文；專案執行進度及影像處理效果未經獨立驗證，也未取得相關專案原始資料。"
-    },
-    {
-      "id": "2026-11-25-morning:event-02",
-      "original_id": "event-02",
-      "category": "ai-tools",
-      "is_headline": false,
-      "title_zh": "Claude Artifacts開放桌面安裝測試，支援macOS與Windows",
-      "lede_zh": "Anthropic將Claude Artifacts延伸至桌面，推出可安裝為Mac或Windows應用程式的測試功能。使用者可在對話中建立Artifact，不必自行撰寫程式碼，再將它保留在Dock中使用；這項功能需要最新版Claude桌面應用程式。\n\n安裝後的應用程式可使用作業系統API、連接器與Claude，功能包括新增選單列項目、建立透明視窗及傳送通知。已展示的範例涵蓋自訂終端機、檔案管理員與影片編輯器，讓對話生成的工具不再只停留於聊天介面。\n\n使用條件仍須區分。Anthropic的Felix Rieseberg表示，目前一般安裝方式需要Claude帳號及Claude應用程式，免費帳號即可使用；若持有Apple Developer帳號，則還可讓Claude建置獨立應用程式。後者另有帳號條件，不能與一般Artifact桌面安裝視為相同功能。",
-      "bullets_zh": [],
-      "source": {
-        "name": "The Decoder",
-        "url": "https://the-decoder.com/anthropic-turns-claude-artifacts-into-standalone-desktop-apps-for-macos-and-windows/",
-        "published_at": "2026-11-24T20:42:29+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "這項更新把對話生成工具的使用範圍延伸到桌面介面；評估是否適合自身工作流程時，仍須分清測試功能、一般安裝與獨立應用程式建置的條件。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "本次取得的是The Decoder報導節錄，而非全文；未取得官方完整技術文件，也未實際安裝或測試。功能與帳號條件依節錄所載資訊整理。"
-    },
-    {
-      "id": "2026-11-25-morning:event-20",
-      "original_id": "event-20",
-      "category": "taiwan",
-      "is_headline": false,
-      "title_zh": "淡海科學城更名智慧科技城，首階段預計民國118年完成",
-      "lede_zh": "行政院長卓榮泰11月24日宣布，淡海科學城經檢討後，重新定名為「AI新基地．淡海智慧科技城」，將分階段推動，第一階段預計於民國118年完成。\n\n卓榮泰表示，第一階段完成後，預計迎接智慧製造、智慧物流、健康產業及海洋經濟相關供應鏈進駐。他在八里開台天后宮參香時說明，這項規畫源於蘇巧慧建議在淡海科學城設置人工智慧園區，並期待透過中央與地方合作帶動八里及新北發展。\n\n這項淡海新計畫也被納入北北基宜的國家首都圈黃金廊帶規畫。卓榮泰提及，行政院編列新台幣9007億元推動首都圈初期整體規畫，涵蓋觀光、科技、產業及農業發展；這筆金額所指的是整體規畫，目前資料未交代淡海智慧科技城的專屬預算。",
-      "bullets_zh": [],
-      "source": {
-        "name": "中央社政治",
-        "url": "https://www.cna.com.tw/news/aipl/202611240294.aspx",
-        "published_at": "2026-11-24T20:26:32+08:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "後續評估這項科技園區計畫，應區分更名、分期完工目標與實際進駐成果，也不能將首都圈整體規畫金額視為園區專屬投資。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "本則依中央社報導節錄撰寫，未取得全文或園區完整規畫文件。完工時間與進駐產業均為行政院長宣布的規畫內容。"
-    },
-    {
-      "id": "2026-11-25-morning:event-06",
-      "original_id": "event-06",
-      "category": "enterprise-cases",
-      "is_headline": false,
-      "title_zh": "Walmart攜手Muse提供人工智慧購物，可設支出上限與購買核准",
-      "lede_zh": "Walmart於11月24日宣布與Meta合作，讓消費者透過人工智慧代理Muse尋找黑色星期五優惠、比較商品並進行購買。這項合作將商品搜尋與購物車建立流程接入外部人工智慧助理，提供不同於自行瀏覽Walmart網站的購物入口。\n\n使用者須先開啟Muse應用程式、登入Walmart帳號，再回到助理開始購物。當使用者提出尋找特定商品、比較選項或查找優惠等要求，Muse會將請求送至Walmart，由零售端回傳相關商品並協助建立購物車。\n\nWalmart表示，這套體驗設有隱私保護，Muse不會取得顧客的Walmart購物紀錄或其他個人資訊。消費者也能設定支出上限、要求購買前取得核准，以及檢視代理下的訂單；若不想繼續使用，也可刪除代理設定檔。這些資料隔離與控制機制屬Walmart對服務設計的說明。\n\n合作背後使用的是Walmart於10月推出的Agent Gateway，讓外部人工智慧助理直接連接其線上商店。Walmart計畫進一步開放給更多開發者與人工智慧平台。與此同時，Walmart也持續擴充自家購物助理Sparky，新增將手寫購物清單轉成購物車、透過照片與語音尋找商品，以及協助顧客在店內定位商品等功能。",
-      "bullets_zh": [],
-      "source": {
-        "name": "TechCrunch",
-        "url": "https://techcrunch.com/2026/11/24/walmart-teams-up-with-meta-to-bring-black-friday-deals-to-ai-agent-muse/",
-        "published_at": "2026-11-24T21:32:38+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "Walmart同時發展自家購物助理與外部代理串接，顯示人工智慧購物不必只限於零售商自己的介面。實際使用時，支出上限、購買前核准及訂單檢視，都是消費者保留交易控制權的重要設定。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "本則依TechCrunch已取得的報導節錄撰寫，未取得全文。Walmart所述隱私保護、購買控制與產品功能未經獨立驗證。"
-    },
-    {
-      "id": "2026-11-25-morning:event-21",
-      "original_id": "event-21",
-      "category": "science",
-      "is_headline": false,
-      "title_zh": "Novartis執行長預測：人工智慧可將藥物開發時程從12年縮至8年",
-      "lede_zh": "Novartis執行長Vas Narasimhan預測，未來十年內，人工智慧可望將平均藥物開發時間從12年縮短至8年，但他不認同人工智慧能在五至十年內治癒癌症的樂觀期待。這些數字是他對未來研發進展的估計，並非已達成的成果。\n\nNarasimhan認為，人類對自身生物學的理解仍有限，因此耗時的動物試驗與人體試驗依然必要。在他預估可縮短的開發時間中，進入人體試驗前的早期階段，最多可貢獻兩年的縮減；他也預期臨床開發成功率可由8%提高至12%。\n\n同時擔任Anthropic董事的Narasimhan，對人工智慧醫藥應用的時間表，比部分人工智慧業界人士審慎。Anthropic執行長Dario Amodei曾提出，多種重大疾病可能在不到十年內獲得治癒；Demis Hassabis也曾預測人工智慧可在十年內戰勝所有疾病。相較之下，Narasimhan將實際效益放在樂觀預測與製藥業懷疑態度之間，重點是加速研發，而非省略生物學驗證。",
-      "bullets_zh": [],
-      "source": {
-        "name": "The Decoder",
-        "url": "https://the-decoder.com/novartis-ceo-says-ai-will-shave-four-years-off-drug-development-not-cure-all-disease/",
-        "published_at": "2026-11-24T18:01:55+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "評估人工智慧製藥進展，應分開看待早期研發加速、臨床成功率與最終治療成果；縮短開發時程的預測，不等於已證明能治癒更多疾病。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "本則依The Decoder報導節錄撰寫，未取得全文或其提及的Financial Times原報導。研發年限與成功率變化均為Narasimhan的預測，未經獨立驗證。"
-    },
-    {
-      "id": "2026-11-25-morning:event-22",
-      "original_id": "event-22",
-      "category": "science",
-      "is_headline": false,
-      "title_zh": "達姆施塔特40名研究人員倡議：資訊科學教育應轉向驗證與引導AI系統",
-      "lede_zh": "德國達姆施塔特工業大學資訊科學系40名研究人員發表共同立場文件，主張將資訊科學與人工智慧更深入整合。他們認為，AI正成為建構與使用電腦系統的核心技術，學科應朝「電腦與人工智慧科學」轉型，而非因程式開發自動化就降低基礎訓練的重要性。\n\n文件將變化分為軟體開發門檻降低、研究加速與新運算典範形成三個面向。作者主張，開發者透過自然語言描述需求，可能把初版軟體的製作時間從數月縮短至數天，AI也能協助整合與測試。他們並認為，這可讓原本負擔不起開發成本的小型城鎮、中型製造商與專門研究計畫，有機會建立所需軟體；這些效益屬於作者的判斷，並非此次報導提供的實驗評測結果。\n\n在人才培育上，研究團隊建議，課程重心應從單純撰寫程式，轉向驗證及引導AI生成的系統。這並不代表放棄基本功：他們也提議安排不得使用AI協助的作業，確保學生理解基礎原理。當安全與速度等目標衝突時，人仍須做價值判斷並承擔責任。\n\n研究團隊進一步提出「生成式運算」的挑戰：若系統在執行時才依人類意圖動態產生行為與程式碼，安全、隱私及正確性要如何驗證與認證？他們認為，這對機器人與自駕車尤其重要，也呼籲以更有效率的演算法及硬體架構降低AI資源消耗。對研究工作，作者則提醒，速度提升不能取代理解；研究者仍須釐清AI解法為何有效，以及適用界限。",
-      "bullets_zh": [],
-      "source": {
-        "name": "The Decoder",
-        "url": "https://the-decoder.com/german-researchers-call-for-computer-science-to-reinvent-itself-as-computer-and-ai-science/",
-        "published_at": "2026-11-24T12:30:49+00:00",
+        "name": "TechCrunch AI",
+        "url": "https://techcrunch.com/2026/11/25/want-to-buy-your-kid-an-ai-toy-this-christmas-not-in-new-york/",
+        "published_at": "2026-11-25T18:11:46+00:00",
         "reading_time_min": 1
       },
       "fetched_via": "publisher",
       "evidence_kind": "publisher-article",
       "evidence_note_zh": "依來源文章整理。",
-      "editorial_analysis_zh": "這份倡議的重點不只是讓學生更快寫出程式，而是將理解、驗證與責任判斷放在AI輔助開發的核心；它提出的是學科與課程改革方向，不能直接視為成效已獲證實的教學方案。",
+      "editorial_analysis_zh": "對話內容是否安全，以及家長能否可靠掌握互動紀錄，是評估這類兒童產品的兩個不同面向；拒絕部分不當提問，並不等於整體使用風險已獲解決。",
       "supporting_sources": [],
-      "source_evidence_note_zh": "已取得 The Decoder 報導全文，未取得立場文件原文。開發加速、經濟效益及教育改革等內容為報導所述研究團隊主張，並非本刊獨立評測結果。"
+      "source_evidence_note_zh": "已取得TechCrunch報導全文；未直接取得法案原文或Common Sense Media研究全文。研究結果、州政府與Amazon回應均依報導所載內容整理，未進行獨立實測。"
+    },
+    {
+      "id": "2026-11-26-morning:event-15",
+      "original_id": "event-15",
+      "category": "security",
+      "is_headline": false,
+      "title_zh": "1Password確認內部系統遭入侵、部分客戶資料外洩，稱密碼保管庫未受影響",
+      "lede_zh": "密碼管理服務1Password確認，內部系統遭入侵，部分客戶資料被取走，包括姓名、登入用電子郵件地址、帳號建立時間與最近一次登入時間。公司表示，存放密碼的客戶保管庫及其他機密內容未遭存取，應用程式與擴充功能也未受事件影響。\n\n依1Password的說明，公司在11月19日偵測到入侵，攻擊者取得一名員工的GitHub企業帳號存取權。公司使用GitHub分享及儲存原始碼；攻擊者利用該員工權限，將惡意程式碼推送至內部伺服器，進而下載部分客戶資料。\n\n1Password強調，客戶密碼保管庫在整起事件中都未開放給攻擊者存取。公司也表示，自身無法取得客戶的帳號密碼或秘密金鑰，這些資訊用於加密保護客戶儲存的密碼。上述對保管庫與產品安全狀態的判斷，均為公司說法。\n\n目前仍不清楚攻擊者如何取得員工帳號的存取權。1Password也未說明有多少客戶資料遭取走，或是否已通知受影響客戶。TechCrunch報導時，公司發言人尚未回覆相關詢問；現有資訊因此不足以確認外洩規模與通知進度，也不能將「未說明通知情形」視為已證實公司沒有通知。",
+      "bullets_zh": [],
+      "source": {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/25/1password-said-hackers-broke-into-its-internal-systems-but-customer-passwords-are-safe/",
+        "published_at": "2026-11-25T18:49:52+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "這起事件須區分客戶基本資料外洩與密碼保管庫遭存取兩種不同風險。公司對保管庫安全的聲明，不能抵銷已確認的資料外洩；受影響人數、初始入侵方式與通知進度，仍是評估事件範圍的重要缺口。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "來源為TechCrunch報導節錄，並非完整報導；未直接取得1Password公告或獨立鑑識資料。入侵路徑、外洩資料類型，以及保管庫、應用程式與擴充功能未受影響的描述，均依報導中的公司說明整理。"
+    },
+    {
+      "id": "2026-11-26-morning:event-16",
+      "original_id": "event-16",
+      "category": "security",
+      "is_headline": false,
+      "title_zh": "FinCEN部分系統遭未授權存取，預防性關閉部分系統",
+      "lede_zh": "美國財政部金融犯罪執法網路（FinCEN）週二宣布，部分系統遭到未授權存取，已預防性關閉部分系統並展開資安調查。該機關尚未公布事件的具體範圍與原因。\n\nFinCEN表示，銀行仍可透過線上管道提交可疑活動申報，但部分服務可能出現延遲；提供金融機構使用的電話專線則未受影響。目前公布的措施並非全面停止受理申報，而是在調查期間停用部分系統。\n\nFinCEN的任務是保護金融體系，防制洗錢與資助恐怖主義等非法活動，也為執法機關管理金融交易資料，並依《銀行保密法》收集銀行提交的可疑活動申報。此次事件使其在維持申報管道運作的同時，也必須處理系統遭未授權存取的問題；實際受影響範圍仍待調查釐清。",
+      "bullets_zh": [],
+      "source": {
+        "name": "The Decoder",
+        "url": "https://the-decoder.com/back-to-back-cyber-incidents-at-us-financial-investigators-and-spy-agencies-follow-a-string-of-federal-hacks-and-outages/",
+        "published_at": "2026-11-25T13:07:44+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-article",
+      "evidence_note_zh": "依來源文章整理。",
+      "editorial_analysis_zh": "",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "已取得The Decoder報導正文；未另取得FinCEN公告原文。本文僅處理FinCEN事件，不將同篇報導中的情報機關入侵案併為同一事件。"
+    },
+    {
+      "id": "2026-11-26-morning:event-17",
+      "original_id": "event-17",
+      "category": "security",
+      "is_headline": false,
+      "title_zh": "勒索軟體復原公司前技術長遭起訴，美檢指隱瞞付贖金賺差額",
+      "lede_zh": "美國司法部起訴勒索軟體復原公司RansomwareHelp前技術長Juan Ricardo Palacio Escobar，指控他以公司能解密受害者檔案為名招攬業務，實際上卻暗中向勒索者支付贖金，再向客戶收取更高費用、保留差額。他面臨三項電信詐欺罪名，相關內容仍屬檢方指控，並非定罪結果。\n\n依報導取得的網站存檔，RansomwareHelp曾宣稱可運用自有技術解密遭駭資料，並標榜成功率超過99%；報導刊出時，網站顯示維護中。司法部則指控，公司並不具備所宣稱的解密能力，而是透過與勒索軟體攻擊者談判、支付贖金，換取受害者資料解密。\n\n司法部表示，FBI在6月進行臥底行動，探員一方面假扮遭勒索軟體攻擊的公司，另一方面也假扮勒索者。RansomwareHelp向扮演客戶的探員聲稱，從不與駭客談判或支付贖金；檢方指控，Palacio Escobar之後仍向假扮駭客的探員支付約6,000美元加密貨幣。\n\n案件焦點不只是資料能否復原，也包括服務商如何向客戶說明復原方式與收費。檢方指控的核心落差，在於公司對外宣稱使用自有解密技術，實際採取的卻是未向客戶揭露的贖金交易。",
+      "bullets_zh": [],
+      "source": {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/25/doj-accuses-former-cyber-executive-of-defrauding-ransomware-victims-by-secretly-paying-hackers/",
+        "published_at": "2026-11-25T17:36:51+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-article",
+      "evidence_note_zh": "依來源文章整理。",
+      "editorial_analysis_zh": "",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "已取得TechCrunch報導正文；未另取得起訴書、司法部聲明原文或公司網站存檔。解密能力、付款與詐欺情節均依報導中的檢方指控呈現，成功率則為公司宣稱，並非獨立驗證結果。"
+    },
+    {
+      "id": "2026-11-26-morning:event-18",
+      "original_id": "event-18",
+      "category": "security",
+      "is_headline": false,
+      "title_zh": "資料中心實體攻擊牽動雲端韌性，專家警告連鎖中斷風險",
+      "lede_zh": "資料中心遭實體攻擊的風險，正成為雲端服務韌性的討論焦點。Ars Technica在一場線上討論中，檢視今年Amazon中東資料中心遭軍事攻擊，以及俄羅斯與烏克蘭相互攻擊資料中心的事件，探討這類攻擊對雲端服務的影響。\n\nRoyal United Services Institute的Joseph Jarnecki指出，公有雲與私有雲資料中心具有軍民共用特性：軍方可能使用其中的運算服務，執行戰場管理、人事與資源管理。他認為，這種用途使部分民用基礎設施在特定情況下可能成為軍事目標，也提高對手攻擊的誘因。\n\nJarnecki警告，相對低成本的自殺式無人機，可能對昂貴的資料中心設施造成不成比例的經濟損失，並引發廣泛雲端服務中斷。他也認為，資料中心位置相對容易辨識，內部系統又高度複雜，即使部分設施已強化防護，遭實體打擊後仍可能在設施內部或更廣範圍引發連鎖風險。\n\n討論也觸及政府與大型雲端業者的韌性措施。Jarnecki以烏克蘭在全面戰爭初期進行大規模雲端遷移為例，說明因應實體攻擊的做法。他預測，這類針對資料中心的攻擊可能持續出現；這是其風險判斷，並非已確定的後續事件。",
+      "bullets_zh": [],
+      "source": {
+        "name": "Ars Technica",
+        "url": "https://arstechnica.com/gadgets/2026/11/ars-live-recap-dont-expect-military-attacks-on-data-centers-to-stop/",
+        "published_at": "2026-11-25T16:47:14+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "雲端服務的可用性不只取決於軟體與網路防護。這場討論提醒，評估服務持續運作能力時，也應將實體設施受損與中斷擴散的可能性納入考量。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "已取得Ars Technica活動回顧的正文節錄，並非全文或完整活動影音。軍民共用、成本落差、連鎖風險與未來趨勢均為Joseph Jarnecki在討論中的分析，未經本次資料獨立驗證。"
+    },
+    {
+      "id": "2026-11-26-morning:event-26",
+      "original_id": "event-26",
+      "category": "security",
+      "is_headline": false,
+      "title_zh": "Allstate網站與App連日故障，帳戶查詢、理賠及繳費受影響",
+      "lede_zh": "美國保險公司Allstate自週一上午起發生數位服務故障，截至11月25日報導發布時仍未恢復正常。受影響範圍涵蓋網站與行動應用程式，全美客戶無法透過相關服務存取帳戶、查閱保單、提出理賠申請或繳費。\n\nAllstate網站的登入提示表示服務目前無法使用，公司正努力儘速恢復存取。故障通報網站Downdetector也顯示，使用者從週一上午便開始回報問題；Allstate在X上則要求反映問題的客戶以私訊提供更多資訊。\n\n線上服務中斷期間，地方保險業務人員持續接到客戶來電與電子郵件。故障發生在美國感恩節假期前，也影響客戶透過App申請汽車理賠及道路救援的管道。截至報導發布，公司尚未正式說明故障原因或預計修復時間，也未即時回覆TechCrunch的置評要求。",
+      "bullets_zh": [],
+      "source": {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/25/allstate-suffers-multi-day-tech-outage-ahead-of-thanksgiving/",
+        "published_at": "2026-11-25T15:08:37+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "這起事件凸顯數位服務可用性對保險業務的直接影響：同一場故障便可能同時阻礙保單查詢、繳費與理賠，而不只是造成登入不便。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "已取得TechCrunch報導節錄，非完整全文；故障狀態與公司回應以2026年11月25日報導所載為準，沒有後續復原資訊。現有資料不足以判定故障原因。"
+    },
+    {
+      "id": "2026-11-26-morning:event-19",
+      "original_id": "event-19",
+      "category": "taiwan",
+      "is_headline": false,
+      "title_zh": "福衛八號第二顆完成運送前審查，預計12月28日赴美",
+      "lede_zh": "福衛八號第二顆衛星（FS-8B）已於11月24日完成運送前審查，預計2026年12月28日起運，前往美國加州范登堡太空軍基地。國家太空中心（TASA）公布的規畫是，2027年2月搭乘SpaceX獵鷹九號火箭Transporter-19航班，進入高度561公里的太陽同步軌道。\n\n這次審查涵蓋衛星需求驗證、整合測試、姿態與軌道控制系統任務測試，以及科學酬載測試結果，也檢視後續運送、發射場作業、早期軌道操作與影像驗證安排。TASA表示，完成審查代表衛星已可準備運往發射場。\n\nFS-8B沿用首顆衛星FS-8A的設計，並依前一顆的在軌運行情況，修正電力系統，同時調整衛星導航接收機（GPSR）的測試方式。TASA說明，調整目的在避免衛星由陰影區進入日照區、遇到特定光照條件時，因訊號干擾而出現異常；另增加GPSR敏感性測試，以確認接收機在GPS訊號微弱時仍能正常運作。\n\n福衛八號星系規畫由8顆光學遙測衛星組成，預計2031年布建完成，目標是每天對同一地點取像3次。TASA表示，第二顆升空後可提高取像頻率與資料蒐集效率。FS-8B也搭載清華大學天文所教授張祥光團隊研發的伽瑪射線瞬變事件監測儀，設於衛星兩側，觀測資料將開放全球天文學者研究。",
+      "bullets_zh": [],
+      "source": {
+        "name": "中央社科技",
+        "url": "https://www.cna.com.tw/news/ait/202611250314.aspx",
+        "published_at": "2026-11-25T20:48:24+08:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "第二顆衛星的進展不只在發射時程，也在於把首顆的在軌經驗回饋至系統調整與測試；後續可觀察這些調整的在軌表現，以及取像頻率提升的實際成果。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "依中央社報導節錄整理，未取得完整報導。運送與發射日期均為規畫時程；技術調整目的及預期效益為TASA說明，非本刊獨立驗證。"
+    },
+    {
+      "id": "2026-11-26-morning:event-20",
+      "original_id": "event-20",
+      "category": "taiwan",
+      "is_headline": false,
+      "title_zh": "美301關稅提案納半導體豁免，對台最高15%仍待程序定案",
+      "lede_zh": "美國貿易代表署公布「結構性產能過剩」301條款調查報告，提議對14個經濟體加徵關稅，其中對台灣商品的建議稅率最高為15%，不疊加最惠國（MFN）及現行301條款關稅。半導體產品列入本次提案的擬議豁免項目，但稅率與豁免安排都尚未定案。\n\n這項調查直接涉及科技製造業政策。美國貿易代表署指稱，台灣反覆透過產業與經濟計畫支持製造業，尤其是高科技製造業，並列舉立法激勵、國家支持研發、產業聚落及融資機制等做法。美方認為這些政策限制美國商業機會、損害其製造業；上述內容是美方調查認定，並非獨立查證結論。\n\n行政院11月26日表示，台灣目前的建議稅率為15%不疊加MFN，也不再疊加強迫勞動301關稅，與日本、韓國、歐盟、瑞士等同屬最低稅率級別。相關措施仍須經2027年1月5日前徵詢公眾意見，以及1月25日起舉行公聽會等法定程序。行政院並說明，在最終定案前，台灣輸美的傳統工業及農業產品仍適用強迫勞動301關稅，即10%不疊加MFN；這項現行規則的說明並未涵蓋所有科技產品。\n\n提案另有條件式替代方案。行政院台美經貿工作小組指出，若美國貿易代表不滿意後續諮商及相關承諾，擬考慮對台灣所有產品課徵25%關稅，扣除既有301關稅。工作小組表示，依雙方溝通情形，政府確信將維持協議議定的15%不疊加；這仍是政府對後續結果的判斷。",
+      "bullets_zh": [],
+      "source": {
+        "name": "中央社政治",
+        "url": "https://www.cna.com.tw/news/aipl/202611260002.aspx",
+        "published_at": "2026-11-26T00:13:42+08:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "科技業判讀這項提案時，必須把一般建議稅率、半導體擬議豁免與有條件的替代方案分開；不能將15%或半導體豁免直接當作最終輸美成本依據。",
+      "supporting_sources": [
+        {
+          "source_name": "中央社政治",
+          "source_title": "美301調查　政院：台灣建議稅率15%不疊加級別最低",
+          "source_url": "https://www.cna.com.tw/news/aipl/202611260005.aspx"
+        }
+      ],
+      "source_evidence_note_zh": "整合中央社兩篇報導節錄，未取得兩篇完整報導或美方公告原文。美方政策指控、行政院說明及對後續協商的判斷均保留歸屬；擬議措施不視為已生效規則。"
+    },
+    {
+      "id": "2026-11-26-morning:event-03",
+      "original_id": "event-03",
+      "category": "science",
+      "is_headline": false,
+      "title_zh": "Deepmind研究主管：AI代理已支配部分算力執行Gemini實驗",
+      "lede_zh": "Google Deepmind研究副總裁、負責Gemini開發的Koray Kavukcuoglu表示，AI代理已能自行支配部分運算資源，為下一代Gemini執行實驗。不過，他也明確指出，實驗室距離完整的遞迴自我改進仍很遙遠，不能將實驗自動化等同於模型已能全面自行改良。\n\nKavukcuoglu在公司Podcast中，將這項做法放在研究策略轉變下說明。他表示，Deepmind如今以單一通用演算法同時支援科學研究與產品，而非由不同團隊分別推進AlphaFold、核融合等專門計畫。各代Gemini並非沿用固定架構，而是個別打造，並有平行團隊研發後續版本。\n\n在訓練安排上，他說Deepmind不對代理的內部思考過程，也就是思維鏈，給予獎勵。他將此描述為安全措施，稱這能讓代理的意圖維持未經過濾、可用自然語言檢視的狀態，在採取行動前供人審查。這是他對內部訓練方式及其作用的說明。\n\n他也提醒，目前AI即使能在視覺上準確呈現流體流動、碰撞等物理過程，仍不代表具備精確理解。在他看來，沒有任何基準測試能完整掌握智慧核心，因而也無法藉此判定模型何時補足能力落差、達到通用人工智慧。他認為，日常產品必須先累積足夠信任，讓人願意像與他人合作一樣交付決策，才談得上邁向這個階段。",
+      "bullets_zh": [],
+      "source": {
+        "name": "The Decoder",
+        "url": "https://the-decoder.com/ai-agents-now-control-part-of-deepminds-compute-for-gemini-experiments-but-recursive-self-improvement-remains-distant/",
+        "published_at": "2026-11-25T13:23:36+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "值得關注的是AI代理開始參與模型研發的實驗流程，而非把這一步直接解讀為遞迴自我改進已經實現；流程自動化、能力進展與安全有效性仍是不同問題。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "僅取得The Decoder報導節錄，未取得完整Podcast內容或內部實驗資料。研究流程、訓練安排與能力限制均為Kavukcuoglu的說法；相關安全作用未經獨立驗證。"
     }
   ],
   "breaking_news": [],
   "meta": {
-    "generated_at": "2026-11-25T07:20:35.385741+08:00",
+    "generated_at": "2026-11-26T07:22:08.480675+08:00",
     "total_articles": 26,
     "schema_version": "2.0",
     "edition": "morning",
@@ -643,12 +636,12 @@
     "source_mode": "publisher-articles",
     "reading_time_estimated": true
   },
-  "window_start": "2026-11-24T19:00:00+08:00",
-  "window_end": "2026-11-25T07:00:00+08:00",
+  "window_start": "2026-11-25T19:00:00+08:00",
+  "window_end": "2026-11-26T07:00:00+08:00",
   "publication": {
-    "published_at": "2026-11-25T08:00:59.364891+08:00",
-    "issue_sha256": "a2a7f4fac031299e82fb67c39542c552713f516535a09e51938c3087ebc451ce",
-    "identity": "2026-11-25-morning",
+    "published_at": "2026-11-26T08:00:01.609127+08:00",
+    "issue_sha256": "e90a047b84743304bf5ac54a954ad44ca501a166f86a9c0380a8a7861b5f625a",
+    "identity": "2026-11-26-morning",
     "legacy_archive_untouched": true
   }
 }
