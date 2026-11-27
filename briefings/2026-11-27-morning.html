@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <base href="/Daily-briefing/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="依可核對來源整理的繁體中文科技與時事新聞。">
+  <title>AI晶片管制、模型開發動向與平台資安更新 · 科技早晚報與時事焦點</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/styles.css?v=october-original">
+</head>
+<body>
+  <div id="app"></div>
+  <noscript><main><h1>AI晶片管制、模型開發動向與平台資安更新</h1><p>2026-11-27 科技早報</p><article><h2>NVIDIA據報暫停向東南亞四國出貨伺服器，泰國部分潛在投資案停步</h2><p>NVIDIA據報已要求Dell、Supermicro等製造夥伴，暫停向馬來西亞、新加坡、泰國與印尼出貨伺服器，以評估區域合作夥伴是否符合美國出口規定。暫停措施將持續多久，目前仍不明朗；美國收緊先進AI晶片與雲端算力使用限制，也讓東南亞資料中心業者面臨新的營運不確定性。
+
+這波管制針對中國企業透過海外雲端服務，遠端取得受限制晶片算力的途徑。報導指出，原已向中國等受管制地區企業提供大量算力的資料中心，若要繼續供應相關服務，須在90天期限內取得許可。有雲端業者反映，申請執行指引仍不清楚，增加了調整業務的難度。
+
+硬體市場也出現變化。GPU交易平台GPU Mart負責人及其他業內人士表示，新規公布後，市場上待售的NVIDIA GPU異常增加，包括原本預定供應有中國租用客戶之資料中心的數千顆B300晶片，正尋找新買家。
+
+泰國市場的衝擊則有不同觀察。中電二公司泰國公司區域業務經理阮兆麒表示，過去接觸的部分潛在客戶已暫停專案；若無法取得高階晶片，資料中心就難以提供足夠算力並吸引終端客戶。不過，他仍看好泰國長期AI需求與技術建設的商業前景。
+
+Telehouse泰國董事總經理宮下健一則不認為，晶片管制會對泰國資料中心產業造成直接影響。他強調當地國際網路連線與電力條件，並指出跨境連線執照、中央與地方審批協調也是投資挑戰。現有資訊顯示，部分潛在投資案已受阻，但不足以判定泰國整體資料中心市場停擺。</p><p><a href="https://the-decoder.com/nvidia-halts-server-shipments-to-malaysia-singapore-thailand-and-indonesia-after-tighter-us-export-controls/">The Decoder</a></p><ul><li><a href="https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/">TechCrunch</a></li><li><a href="https://www.engadget.com/2329200/nvidia-reportedly-halts-chip-shipments-to-southeast-asia/">Engadget</a></li><li><a href="https://www.cna.com.tw/news/afe/202611260304.aspx">中央社財經</a></li></ul></article><article><h2>Z.AI、Moonshot旗艦模型據報恐延後，轉尋替代訓練資料與歐洲算力</h2><p>Z.AI與Moonshot AI下一代旗艦模型據報面臨延後，算力取得與訓練資料來源同時受到限制。消息人士預估，Z.AI原訂11月推出、約3兆參數的GLM-5.5，可能延至2027年第一季；Moonshot AI的Kimi K4則可能推遲至2027年年中。這些時程仍屬消息人士估計，並非確定的發布日期。
+
+Z.AI已先推出7,500億參數的GLM-5.4填補空檔。公司宣稱，新設計讓這款模型能與2兆至3兆參數的系統匹敵；這是公司的效能說法，不能視為已經獨立評測確認的結果。較小模型的推出，也不代表原訂旗艦模型的開發限制已經解除。
+
+Moonshot AI面臨的問題則涉及開發週期與資料取得。報導指出，若缺少境外算力，其開發週期可能從6個月拉長至12個月。美國限制透過海外雲端取得NVIDIA晶片算力，加上美國模型業者加強阻擋蒸餾所需的資料擷取，使其原有開發方式受到影響。
+
+在OpenAI與Anthropic阻擋相關資料擷取後，消息人士表示，Moonshot正轉向Google與Meta的最新模型取得訓練資料，並加緊尋找歐洲算力。這些是目前報導指出的替代方向，尚不足以判定能否補足缺口或維持原有發布進度。</p><p><a href="https://the-decoder.com/after-openai-and-anthropic-shut-the-door-on-their-data-a-chinese-ai-developer-is-turning-to-google-and-meta-instead/">The Decoder</a></p><ul></ul></article><article><h2>1Password披露GitHub帳號遭入侵、部分客戶資料外洩，稱保管庫未受影響</h2><p>1Password披露，攻擊者透過一名員工遭入侵的公司GitHub帳號，存取原始碼並向後端植入惡意程式，進而下載部分客戶資料。公司表示，使用者的保管庫與登入憑證未受影響，但仍提醒留意後續釣魚攻擊。
+
+公司於11月19日開始調查員工GitHub帳號遭入侵的跡象。依其說明，外洩資料包括客戶姓名、電子郵件地址、帳號建立日期及最後登入時間，攻擊者也取得使用者公開金鑰與公司原始碼。1Password表示，公開金鑰遭竊不影響使用者安全，遭竊原始碼本身也不含客戶資料。
+
+針對保管庫的安全，1Password表示，保管庫資料、其中儲存的項目及保護它們的金鑰均未受影響。公司說明，服務本身無法存取使用者的實際密碼、復原金鑰及保護保管庫的秘密金鑰，因此攻擊者未能取得這些內容。這些仍是公司對事件影響範圍的說明。
+
+發現入侵後，1Password已撤銷遭竊的權杖、停用受影響的GitHub帳號，並新增偵測類似攻擊的工具。公司也警告，外洩的電子郵件地址可能被用於寄送假的帳號復原或邀請郵件，誘騙使用者交出密碼；保管庫未受影響的說法，不代表可以忽略這類後續風險。</p><p><a href="https://www.engadget.com/2329013/1password-hacked-but-users-vaults-are-safe/">Engadget</a></p><ul></ul></article><article><h2>OpenAI修正計費折扣錯誤，GPT-6.2 Astra觸及額度上限速度加快40%</h2><p>OpenAI修正GPT-6.2推出期間的計費錯誤後，Astra與Sol使用者將更快用完額度。OpenAI Codex工程師Thibault Sottiaux表示，多數使用者先前獲得了錯誤折扣；修正後，Astra觸及額度上限的速度較前一週快40%，Sol則快25%。
+
+依Sottiaux的說明，修正後的額度可使用時間，仍應長於使用GPT-6 Astra與GPT-6.1 Sol時。其他模型未受影響，OpenAI也不會追溯收取先前的差額。作為補償，Go、Plus、Pro與Business訂閱者都可獲得額外一次可保留的額度重設機會；Business使用者另可免費使用Fast Mode至年底。
+
+除了額度調整，OpenAI也正向部分Pro使用者測試整合Chat與Work模式，尚非全面推出。Work模式相較Chat模式更偏向代理式運作；這項測試與計費錯誤修正是不同變化，不能將部分使用者的測試體驗視為所有訂閱者都已取得的新功能。</p><aside>編輯觀察：這次變化的重點是觸及額度上限的速度，而非公告中的訂閱價格調整。評估可用工作量時，應區分先前錯誤折扣、修正後的消耗速度，以及一次性的額度補償。</aside><p><a href="https://the-decoder.com/gpt-6-2-astra-users-now-hit-limits-40-faster-after-openai-patched-a-pricing-error/">The Decoder</a></p><ul></ul></article><article><h2>SpaceX獲FCC許可部署百萬顆衛星，推進AI軌道資料中心計畫</h2><p>SpaceX的AI軌道資料中心計畫取得美國聯邦通訊委員會（FCC）許可，可部署100萬顆衛星。這項名為Starmind的計畫於年初提出申請，試圖將AI運算基礎設施移往太空；目前進展是取得部署許可，並非百萬顆衛星已經完成部署。
+
+SpaceX在申請中主張，軌道資料中心可利用太陽能，以較低的營運與維護成本，因應持續增加的AI運算需求。把資料中心移出地球的構想，也著眼於減少地面設施對能源與冷卻用水等資源的消耗。不過，這些能源與成本效益仍是公司提出的理由，不能視為已經獲得實際運作驗證。
+
+散熱與衛星數量則是批評者關注的問題。批評者指出，太空環境不代表硬體更容易冷卻，衛星仍須透過輻射排出熱量；天文物理學家Adam Becker認為，這種散熱方式存在基本物理限制。此外，大量衛星可能增加在軌碰撞與太空垃圾。取得監管許可之後，如何處理散熱與軌道風險，仍是這項AI基礎設施構想面臨的爭議。</p><aside>編輯觀察：部署許可、工程可行性與商業效益是三個不同層次。這項進展讓軌道AI運算計畫跨過監管程序的一關，但尚不能據此判定其散熱方案、成本優勢或部署能力已獲證明。</aside><p><a href="https://www.engadget.com/2329071/spacex-gets-fcc-approval-to-deploy-1-million-satellites-for-its-ai-orbital-data-center/">Engadget</a></p><ul></ul></article><article><h2>Microsoft分析：ARTEX以AI代理串接既有工具，自動化網路攻擊</h2><p>AI滲透測試框架ARTEX正被用來自動化從偵察到資料竊取的攻擊流程。Microsoft的威脅情報分析指出，這套系統並非發明新的攻擊技術，而是讓專門分工的AI代理，在極少人工介入下操作既有資安工具。Microsoft並指稱，中國與北韓的國家支持駭客團體，以及以獲利為目的的網路犯罪者，已將ARTEX納入行動。
+
+依Microsoft分析，ARTEX採多代理架構，先把操作者的指令拆成可驗證的子目標，再由規劃代理依據持續更新的系統與漏洞資訊分派任務。執行代理操作Nmap、Sqlmap、Metasploit等工具，將新發現回饋給規劃流程。框架也能在出錯或達到用量限制時切換模型或API金鑰，增加單一AI供應商追蹤整段活動的難度。
+
+自動化壓縮了防守方的反應時間。Microsoft表示，在其中一個案例中，AI代理僅花五分鐘，就從GitHub搜尋意外公開的憑證，並從雲端金鑰儲存服務Azure Key Vault取得資料。分析也指出，ARTEX通常會同時執行兩至三條攻擊鏈，即使其中一條遭隔離，仍可能改走其他網路路徑。
+
+Microsoft建議，除了嚴格存取控制、速率限制與即時自動隔離，也可利用誘餌系統、延遲回應及假憑證干擾代理。公司自有測試顯示，這類欺敵手段能減少攻向真實系統的流量；但分析也承認，防禦效果依賴ARTEX目前較明顯的活動特徵。若攻擊者降低請求頻率，或模型更能辨識誘餌，這些方法的長期效果仍不確定。</p><aside>編輯觀察：這項分析呈現的風險，在於既有攻擊工具被串成能持續調整的自動化流程，而不只是單一工具能力提升。防禦重點因此不能只放在固定識別特徵，也須考量反應速度與多條攻擊路徑。</aside><p><a href="https://the-decoder.com/microsoft-details-how-state-backed-hackers-use-the-artex-ai-framework-to-automate-cyberattacks/">The Decoder</a></p><ul></ul></article><article><h2>美擬加徵301關稅，蘋果供應鏈與台廠海外布局面臨成本考驗</h2><p>美國貿易代表署11月25日公布結構性產能過剩調查結果，提議依301條款對14個經濟體加徵關稅。其中越南最高擬課35%、馬來西亞最高18%，對台灣建議稅率為15%，不疊加最惠國關稅。科技產品的最終課稅與豁免範圍仍待確定，蘋果供應鏈及台廠海外布局成為關注焦點。
+
+伺服器、智慧手機、個人電腦及晶片等產品可望獲得豁免，但耳機未列入目前的豁免名單。蘋果近年將生產重心從中國分散至越南與印度，AirPods多在越南生產，輸美可能面臨最高35%的關稅；印度稅率則仍有變數，尚不能將提案視為已確定的成本。
+
+Counterpoint Research資深分析師林科宇認為，台廠主要配合大型客戶，直接承受關稅的壓力有限，更難掌握的是當地法規不確定性、人員培訓與基礎建設不足帶來的隱形成本。他評估，台廠在印度與拉丁美洲的布局短中期可能虧損，相較之下越南情勢較佳。
+
+馬來西亞方面，拉曼大學經濟學教授黃錦榮預期，新關稅對吸引半導體投資的影響可能有限，先進晶片出口管制可能帶來更大影響。他指出，實際波及產業仍須視美方最終課稅及豁免清單而定。
+
+越南工貿部強調，目前只是提議，不會立即生效，並將持續談判與推動改革。相關程序預計於1月25日起舉行聽證會，最快2月做出最後決定；若雙邊談判取得重大進展，最終稅率可能低於擬議上限。</p><aside>編輯觀察：評估科技供應鏈衝擊，須把擬議稅率、產品豁免與海外營運成本分開看待，不能直接以各地最高稅率推算台廠獲利變化。</aside><p><a href="https://www.cna.com.tw/news/afe/202611260275.aspx">中央社財經</a></p><ul><li><a href="https://www.cna.com.tw/news/aopl/202611260290.aspx">中央社財經</a></li><li><a href="https://www.cna.com.tw/news/afe/202611260271.aspx">中央社財經</a></li></ul></article><article><h2>X新增青少年家長監護功能，可設使用上限但不能讀取私訊</h2><p>X新增針對青少年帳號的家長監護功能，讓家長與監護人管理使用時間、追蹤者及私訊設定，同時保留青少年對帳號的部分控制權。依X的說明，13至17歲使用者的帳號將預設啟用保護模式，不能觀看敏感內容，也不會收到定向廣告。
+
+家長可查看孩子每週使用X的時間，設定每日使用上限，並要求新增追蹤者須先取得同意。內容管理方面，可將動態推薦與影片限於已追蹤帳號、過濾特定字詞，以及關閉敏感媒體內容，調整孩子在平台上接觸資訊的範圍。
+
+私訊功能則區分聯絡對象與訊息內容：家長可以指定誰能傳送私訊給孩子，也能查看孩子與哪些人傳訊，但不能讀取私訊內容。此外，家長無法查看搜尋或觀看紀錄，也不能以孩子的身分發文；青少年則能查看帳號受到哪些限制。
+
+X安全主管Michael O’Herlihy表示，這套設計希望讓家庭設定合適的使用界線，同時讓青少年保有帳號自主權，並看見每一項變更。這些功能提供了時間、內容與互動管理工具，但功能上線本身不等於已證明能消除平台風險。</p><aside>編輯觀察：這套功能的關鍵界線，是讓家長管理使用方式與聯絡對象，而非全面讀取孩子的私人活動；評估時應分辨監護權限與隱私保留範圍。</aside><p><a href="https://techcrunch.com/2026/11/26/x-finally-gets-parental-controls-after-20-years/">TechCrunch</a></p><ul></ul></article><article><h2>Backloggd遭入侵，管理員籲使用者更換密碼</h2><p>遊戲紀錄網站Backloggd披露資安事件，要求使用者更換密碼。管理員MrProg在11月25日的公告表示，攻擊者利用網站漏洞取得管理工具權限，得以存取使用者名稱、電子郵件地址、密碼雜湊，以及使用者登入時的IP位址。
+
+MrProg表示，網站採用強健的雜湊方式保護登入憑證，但弱密碼或常見密碼仍可能透過雜湊值被猜出。因此，使用者應更換Backloggd密碼；若在其他服務使用相同密碼，也應一併更換。密碼以雜湊形式儲存，並不代表帳號風險已經排除。
+
+管理員稱，發現事件後已立即將網站下線，以修補漏洞並阻止攻擊者繼續存取。攻擊者也曾隱藏遊戲、限制部分帳號，網站正撤銷這些變更，所有使用者都需要重新登入。MrProg另表示，已對管理工具加強存取限制。
+
+關於受影響範圍，MrProg表示，付款資訊由Patreon處理，因此未受影響，使用者的遊戲紀錄、評論與清單也都保持完整。他已為事件致歉，並表示正尋求法律指引，之後將發布更完整的通知與細節。</p><aside>編輯觀察：使用者目前可採取的直接措施，是更換本站及其他重複使用的密碼；管理員所稱遊戲紀錄完整，與登入資料遭存取是不同層面的影響。</aside><p><a href="https://www.engadget.com/2329256/backloggd-breach-november-2026-password-reset/">Engadget</a></p><ul></ul></article><article><h2>AI數學研究不只求快：Scott Aaronson關注演算法的計算下界</h2><p>人工智慧在數學研究中的意義，不只在於解出個別難題，也在於能否找出演算法的效率極限。複雜度理論學者、前OpenAI研究員Scott Aaronson在部落格評論近期成果時，將焦點放在OpenAI對矩陣乘法與傅立葉轉換的研究，認為這些工作展現了AI探索更廣泛數學問題的潛力。
+
+依Aaronson的解讀，矩陣乘法研究關心的是：隨著矩陣變大，所需計算成本如何增加。新成果為既有的快速演算法補上相符的計算下界，指出在OpenAI研究的計算模型中，成本究竟能降到什麼程度。這項結論有其模型範圍，不能直接擴大為所有矩陣乘法方法都已抵達極限。
+
+傅立葉轉換方面，Aaronson指出，OpenAI不僅找到更快的計算方法，也證明難以再大幅加速。傅立葉轉換是音訊、影像與訊號處理的基礎數學工具；但這裡的重點不是某項產品已因此提速，而是研究同時處理了「如何算得更快」與「還能快到哪裡」兩種問題。
+
+Aaronson特別重視後者：新方法可以刷新紀錄，下界證明則能界定繼續改善時會碰到的限制。他認為，AI帶來的可能不只是零星解題成果，而是更大範圍的數學探索。這是他對研究方向的判斷，並不等同於相關成果已轉化為日常應用。</p><aside>編輯觀察：評估AI研究能力時，找出更快的方法與證明改善極限是不同層次的成果；保留計算模型的適用範圍，才能避免把理論進展誇大為普遍效能突破。</aside><p><a href="https://the-decoder.com/former-openai-researcher-says-the-riemann-proof-matters-less-than-the-fact-that-an-ai-system-can-produce-it/">The Decoder</a></p><ul></ul></article><article><h2>Screens新增iPhone Duo筆電模式，上下分置遠端桌面與輸入介面</h2><p>遠端桌面應用程式Screens在5.10.6版本新增適用於iPhone Duo的筆電模式。手機半折、呈現類似筆電的擺放姿態時，上半部螢幕顯示遠端電腦桌面，下半部則提供鍵盤與觸控板，讓檢視畫面和操作介面各有空間。
+
+這項更新利用摺疊螢幕的上下配置，改變使用者控制遠端電腦的方式。Screens是Edovia開發的遠端桌面應用程式；新模式仍是透過手機操作另一部電腦，並不是讓iPhone Duo直接執行完整的電腦系統。
+
+輸入功能方面，螢幕鍵盤支援多種語言，也能在按鍵上向下滑動，查看其他可用字元；觸控板則支援Screens的手勢操作。Engadget認為，這類螢幕輸入介面無法完全取代實體鍵盤與觸控板，但對臨時操作、習慣螢幕打字，或不需要輸入長篇文字的使用者，可能具有實用性。</p><aside>編輯觀察：這項更新的重點是把摺疊姿態轉為具體的操作配置，而非只將既有遠端桌面畫面放大；實際是否方便，仍取決於輸入需求與對螢幕鍵盤的接受程度。</aside><p><a href="https://www.engadget.com/2329115/the-screens-app-will-let-you-turn-your-iphone-duo-into-an-itty-bitty-macbook/">Engadget</a></p><ul></ul></article><article><h2>iPhone Duo近月使用心得：多工與應用適配改變操作習慣，相機仍有取捨</h2><p>iPhone Duo的摺疊設計如何影響日常使用，TechCrunch作者在使用近一個月後，給出的答案不只是螢幕變大。作者表示，自己比原先想像更常使用並排多工，也開始依任務選擇闔上或展開手機；相較之下，轉換機型時擔心的部分硬體取捨，對個人日常體驗的影響較小。
+
+多工是最明顯的變化之一。作者原先認為，即使展開後，手機螢幕仍比iPad侷促，未必會經常同時開啟兩個應用程式；實際使用後，卻更常把程式拖到畫面左右兩側。例如閱讀新聞時並排開啟X查看反應，或在處理其他事情時，將電子郵件、Slack留在一旁。這些是作者的操作經驗，並非所有使用者都會採取的使用方式。
+
+應用程式適配也影響了評價。Apple在11月中旬表示，已有超過20萬款支援Duo的應用程式。作者觀察，自己多數常用程式已移除先前出現在螢幕側邊的黑邊，但Gmail、Drive等仍是例外。適配也不只涉及填滿畫面：內容整理工具Sofa在手機闔上時以主要內容為中心，展開後則改用雙欄配置，並將清單放在左側。
+
+不同姿態也帶來不同用途。作者習慣在外出時用小螢幕快速回訊息或查看路線，觀看影片、購物及閱讀電子書時則展開手機。Netflix支援外螢幕播放、帶有大型控制介面的筆電姿態，以及帳篷模式，也成為作者肯定的適配例子。
+
+這份心得並未否認硬體取捨。作者仍偶爾想念長焦鏡頭，也仍希望有Face ID，只是整體而言，更重視不同螢幕尺寸帶來的新習慣。對這名作者來說，Duo的價值在於改變了如何選用應用程式與安排操作，而不只是規格上的增減；這仍是一份個人使用評價，不能視為普遍的購買結論。</p><aside>編輯觀察：摺疊手機的價值評估不宜只看展開後的尺寸；應用程式能否善用不同姿態，以及使用者願意接受哪些硬體取捨，同樣是重要的觀察面向。</aside><p><a href="https://techcrunch.com/2026/11/26/a-month-with-the-iphone-duo-has-changed-how-i-use-my-phone/">TechCrunch</a></p><ul></ul></article><article><h2>Rockstar英國員工否決工會正式承認安排，工會將續爭取AI與裁員保障</h2><p>Rockstar Games英國員工在為期兩週的投票中，否決正式承認IWGB旗下Rockstar Game Workers Union的安排。投票結果為1,163票反對、381票贊成，約四分之三投票者反對；涵蓋愛丁堡、里茲、林肯、鄧迪及倫敦辦公室的投票，參與率超過93%。
+
+這項結果意味著，Rockstar管理階層不必正式承認該工會，也沒有定期與工會代表開會的義務，但工會仍將在未與公司達成正式協議的情況下持續組織員工。工會表示，仍須加強同事對工會的理解、爭取更多信任，並將繼續推動薪資透明、契約保障的加班報酬，以及因應AI與裁員的保護措施。
+
+Rockstar Games發行主管Jennifer Kolbe則表示，公司對團隊及共同建立的文化感到自豪，並將投票結果解讀為員工支持延續直接溝通、合作與開放對話。這是公司對結果的立場，不代表工會提出的保障訴求已獲採行。
+
+雙方另有尚待裁決的解僱爭議。Rockstar去年10月解僱數十名員工，稱他們分享《Grand Theft Auto 6》機密資訊並發表貶抑公司的言論；IWGB則提出法律申訴，指控公司打壓工會並違法解僱。相關案件已完成最後證據陳述，仍待最終裁決。</p><p><a href="https://www.engadget.com/2329177/workers-gta-6-studio-rockstar-games-vote-against-union-recognition/">Engadget</a></p><ul></ul></article><article><h2>Amazon員工規劃跨國購物旺季抗議，工會要求協商並質疑數位追蹤</h2><p>Amazon員工與支持者計畫在黑色星期五及網路星期一期間，於超過20個國家發起罷工與抗議。工會聯盟UNI Global表示，行動要求Amazon與工會協商，並尊重員工組織工會的權利；目前公布的是行動規畫，實際參與人數與對配送的影響尚無定論。
+
+德國工會Verdi號召11處Amazon據點於11月27日黑色星期五罷工；Teamsters則規劃11月30日網路星期一在洛杉磯與芝加哥抗議。代表南加州員工的Teamsters地方工會表示，訴求包括合理薪資、更安全的工作環境、工會承認，以及工作中的尊重。
+
+爭議也涉及平台如何管理倉儲勞動。Verdi指稱，Amazon支付的薪資往往不足以維生，倉儲工作對員工造成相當大的身體負擔，並以數位追蹤工具密切監控約4萬名員工。Amazon發言人否認Verdi的指控，表示平均起薪高於德國最低工資；公司另向Engadget表示，自到職第一天起即提供良好薪資、福利與發展機會，並稱工作場所現代且安全。
+
+這波動員屬於Make Amazon Pay行動。UNI Global表示，這項與Progressive International共同召集的倡議已進入第七年，預定參與地區包括加拿大、澳洲、印度、日本、新加坡及南非等地。各地行動形式與時間不盡相同，不能將跨國動員計畫視為所有據點都已罷工。</p><p><a href="https://www.engadget.com/2329231/amazon-workers-plan-protests-on-black-friday-and-cyber-monday/">Engadget</a></p><ul></ul></article><article><h2>利用AI複製實況主N3on聲音詐取加密貨幣，男子遭判47個月</h2><p>美國佛羅里達州男子David Anthony Sanchez因涉及利用AI冒充實況主N3on的加密貨幣詐騙案，遭判處47個月徒刑，並被命令賠償受害者。他已承認洗錢與加重身分竊用罪。
+
+佛羅里達州南區聯邦檢察官辦公室表示，Sanchez利用AI複製N3on的聲音，讓一個迷因幣專案的籌辦者相信，這名實況主已同意為專案背書、宣傳並參與其中。他在與籌辦者聯繫時，同時冒充N3on本人及其代理人，藉此營造合作已獲授權的假象。
+
+檢方指出，Sanchez誘使對方將價值約26萬美元的加密貨幣轉入他控制的帳戶，隨後把部分加密貨幣兌換成美元，供個人使用。檢方將此案描述為利用人工智慧操弄受害者信任、使其蒙受金錢損失的犯罪；已取得資料未交代所用聲音複製工具、具體生成流程或賠償金額。</p><p><a href="https://www.engadget.com/2329150/man-sentenced-to-47-month-prison-sentence-after-using-ai-impersonate-streamer/">Engadget</a></p><ul></ul></article><article><h2>GeForce NOW本週新增12款遊戲，War Thunder為Ultimate會員加入DLSS 5</h2><p>NVIDIA於11月26日公布GeForce NOW本週遊戲庫更新，新增12款遊戲，並宣布War Thunder在雲端服務上支援DLSS 5，Ultimate會員可使用這項視覺更新。這次更新同時涵蓋遊戲陣容、特定會員等級的功能，以及開放所有會員等級領取的遊戲獎勵。
+
+新增名單包括Steam平台的Arctic Drive、Appulse、GONE Fishing、Quasimorph與The Spell Brigade，以及Xbox平台的Sniper Ghost Warrior Contracts 2、John Carpenter’s Toxic Commando等作品。不過，公告中的遊戲發行日期指的是各商店上架時間，不等於GeForce NOW開放遊玩的時間；NVIDIA表示，遊戲會在發行後陸續完成服務上架，實際可用時間可能不同。
+
+War Thunder的DLSS 5更新與會員獎勵有不同的適用條件：視覺更新提供給Ultimate會員，Ready for Battle Pack則開放各會員等級領取。禮包內容包括各附專屬外觀的M3A1 Stuart戰車與F2A-1飛機、七天Premium帳號時間，以及遊戲貨幣與加成。會員須先至GeForce NOW帳號入口取得獎勵碼，再前往Gaijin兌換頁面啟用；公告列出的截止時間為太平洋時間12月25日晚間11時59分，或送完為止，每位顧客限領一次。</p><p><a href="https://blogs.nvidia.com/blog/geforce-now-thursday-community-war-thunder-reward/">NVIDIA</a></p><ul></ul></article></main></noscript>
+  <div id="reader-overlay" class="reader-overlay"></div>
+  <script>window.EDITORIAL_REQUESTED_DATE="2026-11-27";window.EDITORIAL_REQUESTED_EDITION="morning";</script>
+  <script src="assets/app.js?v=92f7bd2f98e0"></script>
+  <script defer src="assets/software-updates.js?v=f6f40640924b"></script>
+
+  <!-- Analytics：GoatCounter（免費、隱私友善、無 cookie）
+       後台流量：https://daily-briefing.goatcounter.com
+       文章點開會另送事件（path = article/<id>）→ 看得到「哪幾則最多人讀」。 -->
+  <script data-goatcounter="https://daily-briefing.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

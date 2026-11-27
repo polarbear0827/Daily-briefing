@@ -4,18 +4,10 @@
   "location_zh": "新北市",
   "source_name": "中央氣象署",
   "source_url": "https://www.cwa.gov.tw/V8/C/W/County/County.html?CID=65",
-  "updated_at": "2026-11-26T18:18:52+08:00",
-  "issued_at": "2026-11-26T17:00:00+08:00",
-  "fetched_at": "2026-11-26T20:00:15.162089+08:00",
+  "updated_at": "2026-11-27T06:17:41+08:00",
+  "issued_at": "2026-11-27T05:00:00+08:00",
+  "fetched_at": "2026-11-27T08:00:21.952235+08:00",
   "periods": [
-    {
-      "start": "2026-11-26T18:00:00+08:00",
-      "end": "2026-11-27T06:00:00+08:00",
-      "min_c": 19,
-      "max_c": 20,
-      "condition_zh": "多雲",
-      "pop": 20
-    },
     {
       "start": "2026-11-27T06:00:00+08:00",
       "end": "2026-11-27T18:00:00+08:00",
@@ -31,7 +23,15 @@
       "max_c": 21,
       "condition_zh": "多雲時陰",
       "pop": 10
+    },
+    {
+      "start": "2026-11-28T06:00:00+08:00",
+      "end": "2026-11-28T18:00:00+08:00",
+      "min_c": 19,
+      "max_c": 24,
+      "condition_zh": "晴時多雲",
+      "pop": 10
     }
   ],
-  "raw_sha256": "29673dd606cbafdd3e51f75006cf456f054eee3a1a9a4984512aaf90b829faa3"
+  "raw_sha256": "3e9313300eac3a6a5f059fa0c7fd9df05f3c4ed93ac85dc387a537e69e9b9303"
 }

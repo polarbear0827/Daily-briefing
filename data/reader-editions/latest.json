@@ -1,14 +1,18 @@
 {
   "schema_version": 2,
-  "issue_number": "2026-11-26-evening",
-  "issue_label_zh": "2026-11-26 科技晚報",
-  "date": "2026-11-26",
-  "edition": "evening",
-  "edition_label_zh": "科技晚報",
-  "date_display_zh": "2026年11月26日·星期四·科技晚報",
+  "issue_number": "2026-11-27-morning",
+  "issue_label_zh": "2026-11-27 科技早報",
+  "date": "2026-11-27",
+  "edition": "morning",
+  "edition_label_zh": "科技早報",
+  "date_display_zh": "2026年11月27日·星期五·科技早報",
   "weather_locations": [],
   "tagline_zh": "由 AI 為你策展，掌握科技與時事",
   "categories": [
+    {
+      "id": "ai-ml",
+      "name_zh": "一手模型消息"
+    },
     {
       "id": "tech-product",
       "name_zh": "產品發布／平台戰爭"
@@ -22,181 +26,202 @@
       "name_zh": "技術風險"
     },
     {
+      "id": "ai-tools",
+      "name_zh": "人工智慧工具"
+    },
+    {
       "id": "taiwan",
       "name_zh": "中文科技"
+    },
+    {
+      "id": "science",
+      "name_zh": "人工智慧研究趨勢"
     }
   ],
   "articles": [
     {
-      "id": "2026-11-26-evening:event-04",
-      "original_id": "event-04",
-      "category": "tech-product",
-      "is_headline": true,
-      "title_zh": "X推出青少年家長監護功能，可設使用上限、管理追蹤與私訊",
-      "lede_zh": "X推出針對13至17歲使用者的家長監護功能，讓家長或監護人管理青少年的使用時間、追蹤者與互動設定。青少年帳號將預設採保護模式，限制敏感媒體內容，並封鎖定向廣告；家長監護工具則在這些預設措施之上，提供進一步調整。\n\n家長可查看青少年在X上花費的時間、設定每日使用上限，並要求新增追蹤者須經核准。內容管理方面，可將「For You」推薦限於青少年已追蹤的帳號，也能過濾特定字詞、關閉敏感媒體內容，以及控制哪些人可以傳送私訊。\n\n監護功能也讓家長查看青少年曾與哪些帳號進行一對一聊天，但不能讀取訊息內容。X表示，家長或監護人同樣無法查看搜尋與瀏覽紀錄、以青少年身分發文，或取得帳號存取權，將互動管理與私人內容存取分開。\n\n帳號綁定須由家長或監護人發起，再由青少年完成，雙方都必須同意。每位家長最多可管理五個青少年帳號；這套機制並非家長單方面開啟，而是以雙方同意建立監護關係。",
-      "bullets_zh": [],
-      "source": {
-        "name": "Engadget",
-        "url": "https://www.engadget.com/2329049/x-is-adding-its-first-ever-parental-controls/",
-        "published_at": "2026-11-26T09:26:24+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "這次更新的觀察重點，是家長能管理哪些互動，以及哪些私人資料仍不可見；提供監護工具，不等於已證明能降低所有使用風險。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "本則依Engadget已取得的報導節錄撰寫，未取得全文或另行查閱X說明文件。功能與權限界線依節錄所載平台說明整理，未經獨立實測。"
-    },
-    {
-      "id": "2026-11-26-evening:event-05",
-      "original_id": "event-05",
-      "category": "tech-product",
-      "is_headline": false,
-      "title_zh": "Neuralink宣布獲FDA許可，將為ALS患者展開腦機介面關鍵試驗",
-      "lede_zh": "Neuralink宣布取得FDA許可，將展開植入式腦機介面LINK的關鍵試驗，對象為部分ALS患者。這項進展讓公司得以招募參與者、依核准的臨床試驗計畫進行研究，但屬實驗性試驗許可，並非產品上市核准。\n\n試驗將評估患者透過腦部訊號控制數位裝置的能力。Neuralink表示，研究重點是能否改善日常生活自主性的功能表現，也將評估系統的長期安全性與可靠性。這些都是待研究確認的目標，不能將獲准試驗視為療效或安全性已獲證實。\n\n技術運作上，N1植入物透過手術置入顱骨，並由R1機器人將柔性電極插入腦部。軟體再解讀與動作相關的神經活動，把訊號轉換成控制電腦或其他數位裝置的指令；其設計目標是協助患者溝通，並在不使用鍵盤等實體控制介面的情況下操作裝置。\n\nNeuralink表示，ALS患者可能符合LINK試驗資格，但尚未具體說明其他參與條件或招募人數。公司另稱，這項研究建立在先前與逾30名參與者合作的基礎上；該數字並非此次關鍵試驗的預定規模。",
-      "bullets_zh": [],
-      "source": {
-        "name": "Engadget",
-        "url": "https://www.engadget.com/2329008/neuralink-receives-fda-approval-for-brain-implant-trial-in-als-patients/",
-        "published_at": "2026-11-26T07:28:21+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "這項進展的意義在於進入進一步臨床評估，而不是證明裝置已能普遍適用。後續判讀仍須區分功能表現、長期安全性與可靠性等不同研究結果。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "本則依Engadget已取得的報導節錄撰寫，未取得全文、FDA許可文件或完整試驗計畫。核准進展、研究目標與既有參與者數量依報導所載Neuralink說法整理，未獨立驗證。"
-    },
-    {
-      "id": "2026-11-26-evening:event-02",
+      "id": "2026-11-27-morning:event-02",
       "original_id": "event-02",
-      "category": "vc-business",
-      "is_headline": false,
-      "title_zh": "輝達據報暫停東南亞四國伺服器出貨，出口新規牽動算力融資",
-      "lede_zh": "輝達據報已要求製造合作夥伴，停止向馬來西亞、新加坡、泰國及印尼出貨伺服器。金融時報引述三名消息人士指出，戴爾、美超微等製造商已通知當地買家，輝達不允許相關訂單出貨；目前尚不清楚措施是否只是暫時安排，輝達及合作夥伴仍在釐清如何遵守美國最新出口管制。\n\n這項變化發生在美國收緊中國取得AI運算資源管道之際。報導指出，這四個東南亞國家已成為中國AI開發商取得輝達先進晶片運算資源的重要管道。美國商務部上週推出新規，要求雲端服務供應商在九十天內取得許可證，並證明最終用戶不包括受限制實體。\n\n執行方式不明，已成為業者面臨的難題。一名雲端服務供應商主管表示，新規雖已公布，卻缺乏具體申請指引，許可證申請方式尚不清楚，期限卻已開始倒數。報導並指出，馬來西亞與印尼等地已有數十億美元投入AI基礎設施，最新限制使相關投資面臨風險。\n\n消息人士指出，受影響者包括新加坡雲端公司Aolani，原計畫透過租賃協議向字節跳動提供先進運算能力。出貨中斷已使部分銀行停止核發原先同意提供、約五億美元的信貸，字節跳動也可能放棄交易；交易是否取消，仍未確定。",
+      "category": "ai-ml",
+      "is_headline": true,
+      "title_zh": "Z.AI、Moonshot旗艦模型據報恐延後，轉尋替代訓練資料與歐洲算力",
+      "lede_zh": "Z.AI與Moonshot AI下一代旗艦模型據報面臨延後，算力取得與訓練資料來源同時受到限制。消息人士預估，Z.AI原訂11月推出、約3兆參數的GLM-5.5，可能延至2027年第一季；Moonshot AI的Kimi K4則可能推遲至2027年年中。這些時程仍屬消息人士估計，並非確定的發布日期。\n\nZ.AI已先推出7,500億參數的GLM-5.4填補空檔。公司宣稱，新設計讓這款模型能與2兆至3兆參數的系統匹敵；這是公司的效能說法，不能視為已經獨立評測確認的結果。較小模型的推出，也不代表原訂旗艦模型的開發限制已經解除。\n\nMoonshot AI面臨的問題則涉及開發週期與資料取得。報導指出，若缺少境外算力，其開發週期可能從6個月拉長至12個月。美國限制透過海外雲端取得NVIDIA晶片算力，加上美國模型業者加強阻擋蒸餾所需的資料擷取，使其原有開發方式受到影響。\n\n在OpenAI與Anthropic阻擋相關資料擷取後，消息人士表示，Moonshot正轉向Google與Meta的最新模型取得訓練資料，並加緊尋找歐洲算力。這些是目前報導指出的替代方向，尚不足以判定能否補足缺口或維持原有發布進度。",
       "bullets_zh": [],
       "source": {
-        "name": "中央社科技",
-        "url": "https://www.cna.com.tw/news/aopl/202611260186.aspx",
-        "published_at": "2026-11-26T16:08:34+08:00",
+        "name": "The Decoder",
+        "url": "https://the-decoder.com/after-openai-and-anthropic-shut-the-door-on-their-data-a-chinese-ai-developer-is-turning-to-google-and-meta-instead/",
+        "published_at": "2026-11-26T15:45:08+00:00",
         "reading_time_min": 1
       },
       "fetched_via": "publisher",
       "evidence_kind": "publisher-excerpt",
       "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "出貨限制的影響不只在硬體交付，也可能沿著租賃合約傳導至銀行融資。判斷東南亞算力投資的後續變化，仍須追蹤許可申請指引及訂單能否恢復。",
+      "editorial_analysis_zh": "",
       "supporting_sources": [],
-      "source_evidence_note_zh": "本則取得中央社編譯報導節錄，未直接取得金融時報原文、出口管制文件或公司公告。停止出貨及個別交易影響依報導中的消息人士說法呈現，措施是否暫時仍不明。"
+      "source_evidence_note_zh": "僅取得The Decoder報導節錄，未直接取得其所引路透社報導全文、公司公告或模型評測資料。模型時程、開發週期與替代資源安排屬報導及消息人士說法；GLM-5.4效能比較屬公司宣稱，未經本次資料獨立驗證。"
     },
     {
-      "id": "2026-11-26-evening:event-03",
-      "original_id": "event-03",
-      "category": "vc-business",
+      "id": "2026-11-27-morning:event-08",
+      "original_id": "event-08",
+      "category": "tech-product",
       "is_headline": false,
-      "title_zh": "CBS調查中資美企取得輝達高階晶片，檢視合作資格與算力流向",
-      "lede_zh": "CBS News調查指出，輝達正向至少兩家總部設在美國、實際由中國企業掌控的公司出售先進晶片。調查聚焦企業持股、合作夥伴資格與後續交易，檢視以美國公司名義取得的晶片，如何進入跨境算力供應鏈；相關企業關係與交易紀錄本身，並不等同違法認定。\n\n其中，加州聖荷西資料中心業者RiCloud AI名列輝達「優先合作夥伴」，其母公司是總部位於深圳、在香港上市的裕興科技投資控股有限公司。依報導，RiCloud AI在2025年12月、成立僅十週時取得輝達合作夥伴資格，之後進一步成為優先雲端夥伴，可優先取得先進晶片、軟體及技術支援。輝達尚未回應CBS對資格審查程序的詢問，美國政府也尚未指控RiCloud或裕興違法。\n\n報導列出的交易包括，RiCloud AI今年簽下價值1.2億美元的合約，將三百台搭載輝達B300晶片的伺服器，租給過去主要銷售威士忌的台灣公司Agencia Comercial Spirits。這筆交易呈現晶片採購之外，算力也透過伺服器租賃在企業間流通。\n\n另一家加州企業Aivres則名列輝達最高等級的「精英運算夥伴」。報導指出，該公司原名Inspur，在中國母公司浪潮集團旗下多家企業於2023年3月遭美國列入黑名單後改名，Aivres本身並未被列入黑名單。報導所列貿易紀錄分析顯示，Aivres於2024年4月至2026年2月向東南亞出口至少五十六億美元的先進科技產品，其中約三十億美元產品搭載Blackwell晶片，之後流向為阿里巴巴及字節跳動提供雲端AI服務的Megaspeed與Aolani。Aivres未回應置評要求。",
+      "title_zh": "X新增青少年家長監護功能，可設使用上限但不能讀取私訊",
+      "lede_zh": "X新增針對青少年帳號的家長監護功能，讓家長與監護人管理使用時間、追蹤者及私訊設定，同時保留青少年對帳號的部分控制權。依X的說明，13至17歲使用者的帳號將預設啟用保護模式，不能觀看敏感內容，也不會收到定向廣告。\n\n家長可查看孩子每週使用X的時間，設定每日使用上限，並要求新增追蹤者須先取得同意。內容管理方面，可將動態推薦與影片限於已追蹤帳號、過濾特定字詞，以及關閉敏感媒體內容，調整孩子在平台上接觸資訊的範圍。\n\n私訊功能則區分聯絡對象與訊息內容：家長可以指定誰能傳送私訊給孩子，也能查看孩子與哪些人傳訊，但不能讀取私訊內容。此外，家長無法查看搜尋或觀看紀錄，也不能以孩子的身分發文；青少年則能查看帳號受到哪些限制。\n\nX安全主管Michael O’Herlihy表示，這套設計希望讓家庭設定合適的使用界線，同時讓青少年保有帳號自主權，並看見每一項變更。這些功能提供了時間、內容與互動管理工具，但功能上線本身不等於已證明能消除平台風險。",
       "bullets_zh": [],
       "source": {
-        "name": "中央社國際",
-        "url": "https://www.cna.com.tw/news/aopl/202611260112.aspx",
-        "published_at": "2026-11-26T12:45:51+08:00",
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/26/x-finally-gets-parental-controls-after-20-years/",
+        "published_at": "2026-11-26T19:31:50+00:00",
         "reading_time_min": 1
       },
       "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "這項調查凸顯，公司註冊地、母公司控制關係與算力最終使用者是不同層次的資訊。審視出口管制是否有效，不能只看合作資格或銷售地區，也不能僅憑中資持股就認定違法。",
+      "evidence_kind": "publisher-article",
+      "evidence_note_zh": "依來源文章整理。",
+      "editorial_analysis_zh": "這套功能的關鍵界線，是讓家長管理使用方式與聯絡對象，而非全面讀取孩子的私人活動；評估時應分辨監護權限與隱私保留範圍。",
       "supporting_sources": [],
-      "source_evidence_note_zh": "本則依中央社編譯的CBS調查報導節錄撰寫，未直接取得CBS原文、企業申報文件、合約或貿易紀錄。企業關係、合作資格及交易金額均依該節錄呈現，未獨立查核；報導亦明載美國政府尚未指控RiCloud或裕興違法。"
+      "source_evidence_note_zh": "本則依已取得的TechCrunch報導正文撰寫，功能設定與設計目標包含X的說明；未進行功能實測或獨立安全成效驗證。"
     },
     {
-      "id": "2026-11-26-evening:event-07",
-      "original_id": "event-07",
-      "category": "vc-business",
+      "id": "2026-11-27-morning:event-11",
+      "original_id": "event-11",
+      "category": "tech-product",
       "is_headline": false,
-      "title_zh": "美301關稅提案對台15%不疊加，半導體豁免與供應鏈布局受關注",
-      "lede_zh": "美國貿易代表署11月25日公布製造業「結構性產能過剩」301調查結果，提出對台灣等14個經濟體加徵關稅的方案。台灣建議稅率為15%，不疊加最惠國關稅，也不疊加強迫勞動301關稅，並設有豁免品項。方案仍須經後續程序，最終課徵範圍與稅率尚未定案。\n\n台灣半導體產業列入豁免範圍，但部分零組件來自中國及東南亞，供應鏈是否受到間接影響仍受關注。經濟部長龔明鑫26日表示，政府持續推動供應鏈在地化，包括吸引日本材料廠商等國際企業來台投資；他認為，相關供應鏈與產業生態系若能布局台灣或美國，將有助於符合美方豁免條件。\n\n龔明鑫也表示，台美先前在對等貿易協定談判中，已就15%關稅不疊加達成共識，此次雖改用301調查作為法律依據，實質上已達到貿易協定的效果。這是經濟部對談判結果的評價；依美方公布的程序，書面意見及公聽會出席申請須於2027年1月5日前提交，公聽會預定自1月25日起舉行。\n\n同日台股由電子股領軍反彈，加權指數收在39151.81點，上漲956.38點、漲幅2.5%，成交值新台幣8174.67億元。載板、印刷電路板及散熱族群走強，聯發科、鴻海與台達電分別上漲1.65%、4.84%及6.16%，台積電則下跌0.23%。市場已出現價格反應，但關稅提案仍未完成定案程序。",
+      "title_zh": "Screens新增iPhone Duo筆電模式，上下分置遠端桌面與輸入介面",
+      "lede_zh": "遠端桌面應用程式Screens在5.10.6版本新增適用於iPhone Duo的筆電模式。手機半折、呈現類似筆電的擺放姿態時，上半部螢幕顯示遠端電腦桌面，下半部則提供鍵盤與觸控板，讓檢視畫面和操作介面各有空間。\n\n這項更新利用摺疊螢幕的上下配置，改變使用者控制遠端電腦的方式。Screens是Edovia開發的遠端桌面應用程式；新模式仍是透過手機操作另一部電腦，並不是讓iPhone Duo直接執行完整的電腦系統。\n\n輸入功能方面，螢幕鍵盤支援多種語言，也能在按鍵上向下滑動，查看其他可用字元；觸控板則支援Screens的手勢操作。Engadget認為，這類螢幕輸入介面無法完全取代實體鍵盤與觸控板，但對臨時操作、習慣螢幕打字，或不需要輸入長篇文字的使用者，可能具有實用性。",
       "bullets_zh": [],
       "source": {
-        "name": "中央社財經",
-        "url": "https://www.cna.com.tw/news/afe/202611260193.aspx",
-        "published_at": "2026-11-26T16:36:49+08:00",
+        "name": "Engadget",
+        "url": "https://www.engadget.com/2329115/the-screens-app-will-let-you-turn-your-iphone-duo-into-an-itty-bitty-macbook/",
+        "published_at": "2026-11-26T13:59:06+00:00",
         "reading_time_min": 1
       },
       "fetched_via": "publisher",
       "evidence_kind": "publisher-excerpt",
       "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "這項更新的重點是把摺疊姿態轉為具體的操作配置，而非只將既有遠端桌面畫面放大；實際是否方便，仍取決於輸入需求與對螢幕鍵盤的接受程度。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "本則依Engadget提供的報導節錄撰寫，未取得全文，亦未進行功能實測；輸入便利性的評價已歸屬原報導。"
+    },
+    {
+      "id": "2026-11-27-morning:event-12",
+      "original_id": "event-12",
+      "category": "tech-product",
+      "is_headline": false,
+      "title_zh": "iPhone Duo近月使用心得：多工與應用適配改變操作習慣，相機仍有取捨",
+      "lede_zh": "iPhone Duo的摺疊設計如何影響日常使用，TechCrunch作者在使用近一個月後，給出的答案不只是螢幕變大。作者表示，自己比原先想像更常使用並排多工，也開始依任務選擇闔上或展開手機；相較之下，轉換機型時擔心的部分硬體取捨，對個人日常體驗的影響較小。\n\n多工是最明顯的變化之一。作者原先認為，即使展開後，手機螢幕仍比iPad侷促，未必會經常同時開啟兩個應用程式；實際使用後，卻更常把程式拖到畫面左右兩側。例如閱讀新聞時並排開啟X查看反應，或在處理其他事情時，將電子郵件、Slack留在一旁。這些是作者的操作經驗，並非所有使用者都會採取的使用方式。\n\n應用程式適配也影響了評價。Apple在11月中旬表示，已有超過20萬款支援Duo的應用程式。作者觀察，自己多數常用程式已移除先前出現在螢幕側邊的黑邊，但Gmail、Drive等仍是例外。適配也不只涉及填滿畫面：內容整理工具Sofa在手機闔上時以主要內容為中心，展開後則改用雙欄配置，並將清單放在左側。\n\n不同姿態也帶來不同用途。作者習慣在外出時用小螢幕快速回訊息或查看路線，觀看影片、購物及閱讀電子書時則展開手機。Netflix支援外螢幕播放、帶有大型控制介面的筆電姿態，以及帳篷模式，也成為作者肯定的適配例子。\n\n這份心得並未否認硬體取捨。作者仍偶爾想念長焦鏡頭，也仍希望有Face ID，只是整體而言，更重視不同螢幕尺寸帶來的新習慣。對這名作者來說，Duo的價值在於改變了如何選用應用程式與安排操作，而不只是規格上的增減；這仍是一份個人使用評價，不能視為普遍的購買結論。",
+      "bullets_zh": [],
+      "source": {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/26/a-month-with-the-iphone-duo-has-changed-how-i-use-my-phone/",
+        "published_at": "2026-11-26T17:00:00+00:00",
+        "reading_time_min": 2
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "摺疊手機的價值評估不宜只看展開後的尺寸；應用程式能否善用不同姿態，以及使用者願意接受哪些硬體取捨，同樣是重要的觀察面向。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "本則依TechCrunch提供的報導節錄整理，未取得全文，亦非本刊實測。使用感受均屬原作者經驗；支援應用程式數量為報導所載Apple說法，未獨立驗證。"
+    },
+    {
+      "id": "2026-11-27-morning:event-16",
+      "original_id": "event-16",
+      "category": "tech-product",
+      "is_headline": false,
+      "title_zh": "GeForce NOW本週新增12款遊戲，War Thunder為Ultimate會員加入DLSS 5",
+      "lede_zh": "NVIDIA於11月26日公布GeForce NOW本週遊戲庫更新，新增12款遊戲，並宣布War Thunder在雲端服務上支援DLSS 5，Ultimate會員可使用這項視覺更新。這次更新同時涵蓋遊戲陣容、特定會員等級的功能，以及開放所有會員等級領取的遊戲獎勵。\n\n新增名單包括Steam平台的Arctic Drive、Appulse、GONE Fishing、Quasimorph與The Spell Brigade，以及Xbox平台的Sniper Ghost Warrior Contracts 2、John Carpenter’s Toxic Commando等作品。不過，公告中的遊戲發行日期指的是各商店上架時間，不等於GeForce NOW開放遊玩的時間；NVIDIA表示，遊戲會在發行後陸續完成服務上架，實際可用時間可能不同。\n\nWar Thunder的DLSS 5更新與會員獎勵有不同的適用條件：視覺更新提供給Ultimate會員，Ready for Battle Pack則開放各會員等級領取。禮包內容包括各附專屬外觀的M3A1 Stuart戰車與F2A-1飛機、七天Premium帳號時間，以及遊戲貨幣與加成。會員須先至GeForce NOW帳號入口取得獎勵碼，再前往Gaijin兌換頁面啟用；公告列出的截止時間為太平洋時間12月25日晚間11時59分，或送完為止，每位顧客限領一次。",
+      "bullets_zh": [],
+      "source": {
+        "name": "NVIDIA",
+        "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-community-war-thunder-reward/",
+        "published_at": "2026-11-26T14:00:22+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "本則依NVIDIA官方文章節錄撰寫，未取得完整頁面或其他獨立來源。功能與適用會員條件均為公司公布資訊，未獨立驗證DLSS 5的畫質、效能或延遲表現。",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/11/GFN_Thursday-Cyberpunk_2077.jpeg",
+      "image_credit": "NVIDIA · photo by Flacz",
+      "image_caption": "原始報導配圖；原圖說見來源。",
+      "image_alt": "原始報導配圖；原圖說見來源。",
+      "image_source_url": "https://blogs.nvidia.com/blog/geforce-now-thursday-community-war-thunder-reward/",
+      "image_rights_verified": false,
+      "image_rights_status": "unconfirmed",
+      "image_publication_basis": "user-directed-source-reference"
+    },
+    {
+      "id": "2026-11-27-morning:event-01",
+      "original_id": "event-01",
+      "category": "vc-business",
+      "is_headline": false,
+      "title_zh": "NVIDIA據報暫停向東南亞四國出貨伺服器，泰國部分潛在投資案停步",
+      "lede_zh": "NVIDIA據報已要求Dell、Supermicro等製造夥伴，暫停向馬來西亞、新加坡、泰國與印尼出貨伺服器，以評估區域合作夥伴是否符合美國出口規定。暫停措施將持續多久，目前仍不明朗；美國收緊先進AI晶片與雲端算力使用限制，也讓東南亞資料中心業者面臨新的營運不確定性。\n\n這波管制針對中國企業透過海外雲端服務，遠端取得受限制晶片算力的途徑。報導指出，原已向中國等受管制地區企業提供大量算力的資料中心，若要繼續供應相關服務，須在90天期限內取得許可。有雲端業者反映，申請執行指引仍不清楚，增加了調整業務的難度。\n\n硬體市場也出現變化。GPU交易平台GPU Mart負責人及其他業內人士表示，新規公布後，市場上待售的NVIDIA GPU異常增加，包括原本預定供應有中國租用客戶之資料中心的數千顆B300晶片，正尋找新買家。\n\n泰國市場的衝擊則有不同觀察。中電二公司泰國公司區域業務經理阮兆麒表示，過去接觸的部分潛在客戶已暫停專案；若無法取得高階晶片，資料中心就難以提供足夠算力並吸引終端客戶。不過，他仍看好泰國長期AI需求與技術建設的商業前景。\n\nTelehouse泰國董事總經理宮下健一則不認為，晶片管制會對泰國資料中心產業造成直接影響。他強調當地國際網路連線與電力條件，並指出跨境連線執照、中央與地方審批協調也是投資挑戰。現有資訊顯示，部分潛在投資案已受阻，但不足以判定泰國整體資料中心市場停擺。",
+      "bullets_zh": [],
+      "source": {
+        "name": "The Decoder",
+        "url": "https://the-decoder.com/nvidia-halts-server-shipments-to-malaysia-singapore-thailand-and-indonesia-after-tighter-us-export-controls/",
+        "published_at": "2026-11-26T11:21:16+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-article",
+      "evidence_note_zh": "依來源文章整理。",
       "editorial_analysis_zh": "",
       "supporting_sources": [
         {
-          "source_name": "中央社財經",
-          "source_title": "美擬加徵301關稅  中國商務部：嚴重破壞國際經濟秩序",
-          "source_url": "https://www.cna.com.tw/news/acn/202611260197.aspx"
+          "source_name": "TechCrunch",
+          "source_title": "Nvidia hits pause on chip shipments to Southeast Asia",
+          "source_url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/"
+        },
+        {
+          "source_name": "Engadget",
+          "source_title": "NVIDIA reportedly halts AI chip shipments to Southeast Asia",
+          "source_url": "https://www.engadget.com/2329200/nvidia-reportedly-halts-chip-shipments-to-southeast-asia/"
         },
         {
           "source_name": "中央社財經",
-          "source_title": "台股收漲956點站回39000點　法人：短線年線震盪",
-          "source_url": "https://www.cna.com.tw/news/afe/202611260144.aspx"
+          "source_title": "美國收緊AI晶片管制　駐泰業者：部分投資案暫停、對前景仍樂觀",
+          "source_url": "https://www.cna.com.tw/news/afe/202611260304.aspx"
         }
       ],
-      "source_evidence_note_zh": "依中央社財經三篇報導的已取得正文節錄整合，非完整全文；未取得美國貿易代表署公告原文。稅率、豁免與程序依報導交代，未將提案視為已生效政策。"
+      "source_evidence_note_zh": "已取得The Decoder此篇報導正文；TechCrunch、Engadget及中央社財經僅取得報導節錄。出貨暫停與部分管制細節來自所取得媒體的轉述，未直接取得其所引《金融時報》、《華爾街日報》、CNBC報導、美國官方規則或NVIDIA公告全文；業者對市場衝擊與前景的判斷保留個別歸屬。"
     },
     {
-      "id": "2026-11-26-evening:event-08",
-      "original_id": "event-08",
+      "id": "2026-11-27-morning:event-05",
+      "original_id": "event-05",
       "category": "vc-business",
       "is_headline": false,
-      "title_zh": "CPTPP與歐盟推進數位貿易合作，強化系統相容與互通",
-      "lede_zh": "CPTPP與歐盟11月26日在河內舉行部長級對話，提出強化雙邊數位貿易系統的相容性與互通性，並以促成雙方數位貿易協定為目標。這項方向是此次對話的合作內容之一，目前仍屬推進目標，並非已完成簽署的數位貿易協定。\n\n越南工貿部副部長梁黃泰表示，生產方式、商業模式與供應鏈結構正在改變，數位轉型也要求各經濟體提升適應能力。雙方將深化數位貿易合作，並就監理架構與世界貿易組織改革等議題加強交流。CPTPP與歐盟合計涵蓋39個國家、逾10億人口，約占全球貿易的40%，合作方向涉及廣泛的跨境經貿活動。\n\n同次對話也宣布將啟動供應鏈中斷預警網絡。歐盟貿易事務執委塞夫柯維奇表示，網絡將讓雙方在供應鏈中斷或出現戰略瓶頸的早期階段相互通報。聯合部長聲明另列出避免增設新的限制與不必要壁壘、設立官員專門論壇討論新興貿易及投資法律議題，以及支持世界貿易組織改革等成果。數位系統互通與供應鏈預警同屬此次合作議程，但目前無法由已取得資料判定預警網絡涵蓋哪些特定科技產業。",
-      "bullets_zh": [],
-      "source": {
-        "name": "中央社國際",
-        "url": "https://www.cna.com.tw/news/aopl/202611260154.aspx",
-        "published_at": "2026-11-26T14:46:24+08:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "依中央社國際報導的已取得正文節錄撰寫，非完整全文；未取得聯合部長聲明或數位貿易協定草案原文，無法確認具體技術規格、實施時程及供應鏈預警網絡的產業清單。"
-    },
-    {
-      "id": "2026-11-26-evening:event-01",
-      "original_id": "event-01",
-      "category": "security",
-      "is_headline": false,
-      "title_zh": "紐約州禁售AI聊天玩具五年，違規每日每項最高罰1.5萬美元",
-      "lede_zh": "紐約州州長Kathy Hochul簽署法律，禁止銷售人工智慧聊天玩具，為期五年，涵蓋透過網路與兒童對話的玩偶、機器人等產品。依州長辦公室說明，每項違規每日最高可處1萬5000美元民事罰款，由州檢察長執法。\n\n州長辦公室援引美國公共利益研究團體教育基金（PIRG）的測試，指出部分面向三至十二歲兒童銷售的聊天玩具，會談論露骨性話題，或提供可能在家中造成火災危險的建議。測試也發現，受測玩具的家長控制功能很少或完全沒有，且對話時間愈長，安全限制愈薄弱；部分產品還能錄下兒童聲音或掃描臉部。這些發現針對受測產品，不能直接推論所有AI玩具都有相同問題。\n\nHochul表示，家長選購禮物時，不應擔心玩具中的聊天機器人讓孩子接觸不當對話、操弄情緒或危及隱私。州檢察長Letitia James則表示，將執行相關法律，防止AI系統造成傷害。\n\nAmazon回應，平台要求第三方賣家遵守適用法律與規範，並支持產業與政府為這項技術建立適當防護措施。這項禁令將使相關玩具的銷售合規，成為平台與賣家必須處理的問題。",
+      "title_zh": "SpaceX獲FCC許可部署百萬顆衛星，推進AI軌道資料中心計畫",
+      "lede_zh": "SpaceX的AI軌道資料中心計畫取得美國聯邦通訊委員會（FCC）許可，可部署100萬顆衛星。這項名為Starmind的計畫於年初提出申請，試圖將AI運算基礎設施移往太空；目前進展是取得部署許可，並非百萬顆衛星已經完成部署。\n\nSpaceX在申請中主張，軌道資料中心可利用太陽能，以較低的營運與維護成本，因應持續增加的AI運算需求。把資料中心移出地球的構想，也著眼於減少地面設施對能源與冷卻用水等資源的消耗。不過，這些能源與成本效益仍是公司提出的理由，不能視為已經獲得實際運作驗證。\n\n散熱與衛星數量則是批評者關注的問題。批評者指出，太空環境不代表硬體更容易冷卻，衛星仍須透過輻射排出熱量；天文物理學家Adam Becker認為，這種散熱方式存在基本物理限制。此外，大量衛星可能增加在軌碰撞與太空垃圾。取得監管許可之後，如何處理散熱與軌道風險，仍是這項AI基礎設施構想面臨的爭議。",
       "bullets_zh": [],
       "source": {
         "name": "Engadget",
-        "url": "https://www.engadget.com/2328996/new-york-state-bans-ai-chatbot-toys-for-kids/",
-        "published_at": "2026-11-26T06:02:48+00:00",
+        "url": "https://www.engadget.com/2329071/spacex-gets-fcc-approval-to-deploy-1-million-satellites-for-its-ai-orbital-data-center/",
+        "published_at": "2026-11-26T11:01:32+00:00",
         "reading_time_min": 1
       },
       "fetched_via": "publisher",
       "evidence_kind": "publisher-excerpt",
       "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "這項措施把兒童AI玩具的內容安全與隱私疑慮，轉為具體禁售及罰則；判讀風險時，仍須區分個別受測產品的缺陷與整個產品類別。",
+      "editorial_analysis_zh": "部署許可、工程可行性與商業效益是三個不同層次。這項進展讓軌道AI運算計畫跨過監管程序的一關，但尚不能據此判定其散熱方案、成本優勢或部署能力已獲證明。",
       "supporting_sources": [],
-      "source_evidence_note_zh": "本則依Engadget已取得的報導節錄撰寫，並非全文；未取得法案原文、州長辦公室公告或PIRG測試報告，測試發現及官方說法均依該報導呈現，未經獨立驗證。"
+      "source_evidence_note_zh": "依據Engadget已取得的報導節錄撰寫，未取得FCC核准文件或SpaceX申請原文。節錄中的軌道高度及部分部署時程有疑義，未採用；公司效益主張與批評者意見均未經獨立驗證。"
     },
     {
-      "id": "2026-11-26-evening:event-09",
-      "original_id": "event-09",
-      "category": "security",
+      "id": "2026-11-27-morning:event-13",
+      "original_id": "event-13",
+      "category": "vc-business",
       "is_headline": false,
-      "title_zh": "境外拜票來電藏個資與語音冒用風險，打詐中心籲拒接、查證",
-      "lede_zh": "針對近期民眾反映接獲境外號碼拜票來電，行政院打詐中心11月26日提醒，應留意個人資料遭蒐集，以及通話聲音可能被側錄、用於人工智慧深偽冒用的風險。中心建議，對境外陌生來電提高警覺，若對方索取敏感資料，應直接掛斷，並撥打165查證。\n\n打詐中心說明，境外來電可能源自話務委外轉包至海外業者，但不明來電仍可能被用來蒐集個資。詐騙集團可能假借拜票、支持度調查或公務機關查案，誘導民眾提供隱私資訊，逐步拼湊個資，甚至取得金融帳戶資料，供後續精準詐騙使用。\n\n在語音風險方面，中心警示，不法分子可能透過未加密的跨境通話側錄應答聲音等特徵，再利用人工智慧生成技術模擬本人聲音，向親友或金融機構進行語音詐騙。這是主管機關提出的可能風險，不能據此認定這批拜票來電已涉及聲音竊取或深偽詐騙。\n\n中心指出，合法拜票通常是單向語音宣講或簡短問候；若進一步要求姓名、身分證字號、詳細住址或任何驗證碼，極可能涉及詐騙情蒐。民眾可留意「+」號開頭的境外陌生號碼與電信語音警示，不依可疑來電指示按鍵，並開啟手機過濾未知來電功能，或使用可信任的來電辨識軟體設定封鎖與警示。",
+      "title_zh": "Rockstar英國員工否決工會正式承認安排，工會將續爭取AI與裁員保障",
+      "lede_zh": "Rockstar Games英國員工在為期兩週的投票中，否決正式承認IWGB旗下Rockstar Game Workers Union的安排。投票結果為1,163票反對、381票贊成，約四分之三投票者反對；涵蓋愛丁堡、里茲、林肯、鄧迪及倫敦辦公室的投票，參與率超過93%。\n\n這項結果意味著，Rockstar管理階層不必正式承認該工會，也沒有定期與工會代表開會的義務，但工會仍將在未與公司達成正式協議的情況下持續組織員工。工會表示，仍須加強同事對工會的理解、爭取更多信任，並將繼續推動薪資透明、契約保障的加班報酬，以及因應AI與裁員的保護措施。\n\nRockstar Games發行主管Jennifer Kolbe則表示，公司對團隊及共同建立的文化感到自豪，並將投票結果解讀為員工支持延續直接溝通、合作與開放對話。這是公司對結果的立場，不代表工會提出的保障訴求已獲採行。\n\n雙方另有尚待裁決的解僱爭議。Rockstar去年10月解僱數十名員工，稱他們分享《Grand Theft Auto 6》機密資訊並發表貶抑公司的言論；IWGB則提出法律申訴，指控公司打壓工會並違法解僱。相關案件已完成最後證據陳述，仍待最終裁決。",
       "bullets_zh": [],
       "source": {
-        "name": "中央社政治",
-        "url": "https://www.cna.com.tw/news/aipl/202611260176.aspx",
-        "published_at": "2026-11-26T15:46:12+08:00",
+        "name": "Engadget",
+        "url": "https://www.engadget.com/2329177/workers-gta-6-studio-rockstar-games-vote-against-union-recognition/",
+        "published_at": "2026-11-26T16:53:58+00:00",
         "reading_time_min": 1
       },
       "fetched_via": "publisher",
@@ -204,67 +229,204 @@
       "evidence_note_zh": "依來源可讀節錄整理。",
       "editorial_analysis_zh": "",
       "supporting_sources": [],
-      "source_evidence_note_zh": "依中央社政治報導的已取得正文節錄撰寫，非完整全文；未取得打詐中心新聞稿原文或相關案件鑑識資料。語音側錄與深偽冒用內容為主管機關風險提醒，非已驗證的個案結果。"
+      "source_evidence_note_zh": "依Engadget報導節錄撰寫，未取得報導全文；未另取得投票原始文件、雙方聲明全文或勞資審裁文件。"
     },
     {
-      "id": "2026-11-26-evening:event-06",
+      "id": "2026-11-27-morning:event-14",
+      "original_id": "event-14",
+      "category": "vc-business",
+      "is_headline": false,
+      "title_zh": "Amazon員工規劃跨國購物旺季抗議，工會要求協商並質疑數位追蹤",
+      "lede_zh": "Amazon員工與支持者計畫在黑色星期五及網路星期一期間，於超過20個國家發起罷工與抗議。工會聯盟UNI Global表示，行動要求Amazon與工會協商，並尊重員工組織工會的權利；目前公布的是行動規畫，實際參與人數與對配送的影響尚無定論。\n\n德國工會Verdi號召11處Amazon據點於11月27日黑色星期五罷工；Teamsters則規劃11月30日網路星期一在洛杉磯與芝加哥抗議。代表南加州員工的Teamsters地方工會表示，訴求包括合理薪資、更安全的工作環境、工會承認，以及工作中的尊重。\n\n爭議也涉及平台如何管理倉儲勞動。Verdi指稱，Amazon支付的薪資往往不足以維生，倉儲工作對員工造成相當大的身體負擔，並以數位追蹤工具密切監控約4萬名員工。Amazon發言人否認Verdi的指控，表示平均起薪高於德國最低工資；公司另向Engadget表示，自到職第一天起即提供良好薪資、福利與發展機會，並稱工作場所現代且安全。\n\n這波動員屬於Make Amazon Pay行動。UNI Global表示，這項與Progressive International共同召集的倡議已進入第七年，預定參與地區包括加拿大、澳洲、印度、日本、新加坡及南非等地。各地行動形式與時間不盡相同，不能將跨國動員計畫視為所有據點都已罷工。",
+      "bullets_zh": [],
+      "source": {
+        "name": "Engadget",
+        "url": "https://www.engadget.com/2329231/amazon-workers-plan-protests-on-black-friday-and-cyber-monday/",
+        "published_at": "2026-11-26T19:44:49+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "依Engadget報導節錄撰寫，未取得報導全文；內容包含工會指控與Amazon回應，未另取得工會公告全文、追蹤系統資料或實際罷工及配送統計。"
+    },
+    {
+      "id": "2026-11-27-morning:event-03",
+      "original_id": "event-03",
+      "category": "security",
+      "is_headline": false,
+      "title_zh": "1Password披露GitHub帳號遭入侵、部分客戶資料外洩，稱保管庫未受影響",
+      "lede_zh": "1Password披露，攻擊者透過一名員工遭入侵的公司GitHub帳號，存取原始碼並向後端植入惡意程式，進而下載部分客戶資料。公司表示，使用者的保管庫與登入憑證未受影響，但仍提醒留意後續釣魚攻擊。\n\n公司於11月19日開始調查員工GitHub帳號遭入侵的跡象。依其說明，外洩資料包括客戶姓名、電子郵件地址、帳號建立日期及最後登入時間，攻擊者也取得使用者公開金鑰與公司原始碼。1Password表示，公開金鑰遭竊不影響使用者安全，遭竊原始碼本身也不含客戶資料。\n\n針對保管庫的安全，1Password表示，保管庫資料、其中儲存的項目及保護它們的金鑰均未受影響。公司說明，服務本身無法存取使用者的實際密碼、復原金鑰及保護保管庫的秘密金鑰，因此攻擊者未能取得這些內容。這些仍是公司對事件影響範圍的說明。\n\n發現入侵後，1Password已撤銷遭竊的權杖、停用受影響的GitHub帳號，並新增偵測類似攻擊的工具。公司也警告，外洩的電子郵件地址可能被用於寄送假的帳號復原或邀請郵件，誘騙使用者交出密碼；保管庫未受影響的說法，不代表可以忽略這類後續風險。",
+      "bullets_zh": [],
+      "source": {
+        "name": "Engadget",
+        "url": "https://www.engadget.com/2329013/1password-hacked-but-users-vaults-are-safe/",
+        "published_at": "2026-11-26T20:00:00+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "僅取得Engadget報導節錄，未直接取得1Password公告全文、鑑識報告或獨立調查結果。入侵途徑、外洩範圍、處置措施及保管庫未受影響等資訊，均為所取得報導轉述的公司說明，未經獨立驗證。"
+    },
+    {
+      "id": "2026-11-27-morning:event-06",
       "original_id": "event-06",
-      "category": "taiwan",
+      "category": "security",
       "is_headline": false,
-      "title_zh": "伊雲谷旗下雲爍數位科技進軍市場，主打多雲、資料整合與AI導入",
-      "lede_zh": "伊雲谷數位科技宣布，旗下新子公司雲爍數位科技（eCloudXD）正式進軍市場，主打結合多雲架構與人工智慧導入的數位轉型顧問服務。公司將新事業定位為銜接底層雲端基礎架構與前端業務系統的整合角色。\n\n服務內容包括協助企業導入客戶關係管理平台Salesforce，並與既有資料平台整合。伊雲谷表示，企業推動AI與雲端化時，資訊科技架構和業務系統往往各自運作，形成資訊孤島；eCloudXD希望從基礎架構到業務應用提供端到端服務。\n\n依公司規劃，服務範圍也涵蓋網路、資安與跨雲資料整合，並透過藍圖諮詢、數據建設、AI落地、優化陪跑及組織賦能五個階段，協助企業擬定轉型路徑。這套服務不只聚焦前端系統建置，也將底層架構納入顧問工作。\n\n伊雲谷稱，團隊具有製造、零售與金融業實務經驗，擴大顧問服務可望替客戶節省時間與資源成本。這些效益屬公司對服務價值的說明，目前提供的資料未列出具體客戶專案成果或可量化的成本改善數據。",
+      "title_zh": "Microsoft分析：ARTEX以AI代理串接既有工具，自動化網路攻擊",
+      "lede_zh": "AI滲透測試框架ARTEX正被用來自動化從偵察到資料竊取的攻擊流程。Microsoft的威脅情報分析指出，這套系統並非發明新的攻擊技術，而是讓專門分工的AI代理，在極少人工介入下操作既有資安工具。Microsoft並指稱，中國與北韓的國家支持駭客團體，以及以獲利為目的的網路犯罪者，已將ARTEX納入行動。\n\n依Microsoft分析，ARTEX採多代理架構，先把操作者的指令拆成可驗證的子目標，再由規劃代理依據持續更新的系統與漏洞資訊分派任務。執行代理操作Nmap、Sqlmap、Metasploit等工具，將新發現回饋給規劃流程。框架也能在出錯或達到用量限制時切換模型或API金鑰，增加單一AI供應商追蹤整段活動的難度。\n\n自動化壓縮了防守方的反應時間。Microsoft表示，在其中一個案例中，AI代理僅花五分鐘，就從GitHub搜尋意外公開的憑證，並從雲端金鑰儲存服務Azure Key Vault取得資料。分析也指出，ARTEX通常會同時執行兩至三條攻擊鏈，即使其中一條遭隔離，仍可能改走其他網路路徑。\n\nMicrosoft建議，除了嚴格存取控制、速率限制與即時自動隔離，也可利用誘餌系統、延遲回應及假憑證干擾代理。公司自有測試顯示，這類欺敵手段能減少攻向真實系統的流量；但分析也承認，防禦效果依賴ARTEX目前較明顯的活動特徵。若攻擊者降低請求頻率，或模型更能辨識誘餌，這些方法的長期效果仍不確定。",
       "bullets_zh": [],
       "source": {
-        "name": "中央社財經",
-        "url": "https://www.cna.com.tw/news/afe/202611260200.aspx",
-        "published_at": "2026-11-26T16:53:04+08:00",
+        "name": "The Decoder",
+        "url": "https://the-decoder.com/microsoft-details-how-state-backed-hackers-use-the-artex-ai-framework-to-automate-cyberattacks/",
+        "published_at": "2026-11-26T11:30:06+00:00",
         "reading_time_min": 1
       },
       "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "這項布局把雲端基礎架構、資料平台與AI導入放進同一套顧問服務。其實際價值仍需由具體專案的整合成效與成本變化檢驗。",
+      "evidence_kind": "publisher-article",
+      "evidence_note_zh": "依來源文章整理。",
+      "editorial_analysis_zh": "這項分析呈現的風險，在於既有攻擊工具被串成能持續調整的自動化流程，而不只是單一工具能力提升。防禦重點因此不能只放在固定識別特徵，也須考量反應速度與多條攻擊路徑。",
       "supporting_sources": [],
-      "source_evidence_note_zh": "本則依中央社財經已取得的報導節錄撰寫，未取得全文。服務定位、產業經驗與預期效益主要來自報導所載伊雲谷新聞稿及主管說法，並非獨立驗證的客戶成果。"
+      "source_evidence_note_zh": "已取得The Decoder報導全文，但未取得其所述Microsoft分析原文，也未獨立測試ARTEX或防禦效果。文中攻擊團體歸屬、個案數據與測試結果均保留Microsoft歸屬；未採用報導中未核實的個別機構入侵關聯。"
     },
     {
-      "id": "2026-11-26-evening:event-10",
-      "original_id": "event-10",
-      "category": "taiwan",
+      "id": "2026-11-27-morning:event-09",
+      "original_id": "event-09",
+      "category": "security",
       "is_headline": false,
-      "title_zh": "盧超群籲產官學研共建台灣主權AI　強調走自己的路",
-      "lede_zh": "記憶體設計廠鈺創董事長盧超群11月26日呼籲，台灣應結合產官學研力量，創建自己的主權人工智慧。他表示，對美中競爭並不意外，台灣在人工智慧時代仍有許多機會，應走自己的路。\n\n陽明交通大學當天舉行盧超群名譽博士頒授典禮，他在會前受訪時，以個人電腦剛發明的階段比喻當前人工智慧的發展。他將人工智慧稱為人類第4次革命，認為其影響不只是技術改良，也會改變人的行為，並表達對未來發展的信心。\n\n談到台灣的產業基礎，盧超群表示，台灣半導體產業2026年將創造新台幣9.5兆元營收，並據此強調台灣的產業分量。他也表示，獲頒名譽博士後，將秉持「飲水思源、承先啟後」的精神，喚起年輕人對台灣半導體發展歷程的重視，並呼籲產官學研共同推動台灣主權人工智慧。",
+      "title_zh": "Backloggd遭入侵，管理員籲使用者更換密碼",
+      "lede_zh": "遊戲紀錄網站Backloggd披露資安事件，要求使用者更換密碼。管理員MrProg在11月25日的公告表示，攻擊者利用網站漏洞取得管理工具權限，得以存取使用者名稱、電子郵件地址、密碼雜湊，以及使用者登入時的IP位址。\n\nMrProg表示，網站採用強健的雜湊方式保護登入憑證，但弱密碼或常見密碼仍可能透過雜湊值被猜出。因此，使用者應更換Backloggd密碼；若在其他服務使用相同密碼，也應一併更換。密碼以雜湊形式儲存，並不代表帳號風險已經排除。\n\n管理員稱，發現事件後已立即將網站下線，以修補漏洞並阻止攻擊者繼續存取。攻擊者也曾隱藏遊戲、限制部分帳號，網站正撤銷這些變更，所有使用者都需要重新登入。MrProg另表示，已對管理工具加強存取限制。\n\n關於受影響範圍，MrProg表示，付款資訊由Patreon處理，因此未受影響，使用者的遊戲紀錄、評論與清單也都保持完整。他已為事件致歉，並表示正尋求法律指引，之後將發布更完整的通知與細節。",
       "bullets_zh": [],
       "source": {
-        "name": "中央社財經",
-        "url": "https://www.cna.com.tw/news/afe/202611260181.aspx",
-        "published_at": "2026-11-26T15:57:23+08:00",
+        "name": "Engadget",
+        "url": "https://www.engadget.com/2329256/backloggd-breach-november-2026-password-reset/",
+        "published_at": "2026-11-26T21:26:47+00:00",
         "reading_time_min": 1
       },
       "fetched_via": "publisher",
       "evidence_kind": "publisher-excerpt",
       "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "這項倡議將台灣半導體的產業基礎與主權人工智慧發展連結。後續值得觀察的是，產官學研如何將方向性訴求轉化為具體合作與建置方案。",
+      "editorial_analysis_zh": "使用者目前可採取的直接措施，是更換本站及其他重複使用的密碼；管理員所稱遊戲紀錄完整，與登入資料遭存取是不同層面的影響。",
       "supporting_sources": [],
-      "source_evidence_note_zh": "本篇依已取得的中央社報導節錄撰寫，未取得全文。產業營收數字與人工智慧前景判斷均為盧超群的說法，未經獨立查證；節錄未提供主權人工智慧倡議的具體建置方案。"
+      "source_evidence_note_zh": "本則依已取得的Engadget報導正文節錄撰寫，並非全文。入侵方式、資料範圍、修補進度及未受影響項目均依管理員說法，未取得獨立鑑識報告或自行驗證。"
+    },
+    {
+      "id": "2026-11-27-morning:event-15",
+      "original_id": "event-15",
+      "category": "security",
+      "is_headline": false,
+      "title_zh": "利用AI複製實況主N3on聲音詐取加密貨幣，男子遭判47個月",
+      "lede_zh": "美國佛羅里達州男子David Anthony Sanchez因涉及利用AI冒充實況主N3on的加密貨幣詐騙案，遭判處47個月徒刑，並被命令賠償受害者。他已承認洗錢與加重身分竊用罪。\n\n佛羅里達州南區聯邦檢察官辦公室表示，Sanchez利用AI複製N3on的聲音，讓一個迷因幣專案的籌辦者相信，這名實況主已同意為專案背書、宣傳並參與其中。他在與籌辦者聯繫時，同時冒充N3on本人及其代理人，藉此營造合作已獲授權的假象。\n\n檢方指出，Sanchez誘使對方將價值約26萬美元的加密貨幣轉入他控制的帳戶，隨後把部分加密貨幣兌換成美元，供個人使用。檢方將此案描述為利用人工智慧操弄受害者信任、使其蒙受金錢損失的犯罪；已取得資料未交代所用聲音複製工具、具體生成流程或賠償金額。",
+      "bullets_zh": [],
+      "source": {
+        "name": "Engadget",
+        "url": "https://www.engadget.com/2329150/man-sentenced-to-47-month-prison-sentence-after-using-ai-impersonate-streamer/",
+        "published_at": "2026-11-26T15:50:37+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "依Engadget報導節錄撰寫，未取得報導全文；檢方說法來自該節錄，未另取得檢察官辦公室公告、認罪文件或判決全文。"
+    },
+    {
+      "id": "2026-11-27-morning:event-04",
+      "original_id": "event-04",
+      "category": "ai-tools",
+      "is_headline": false,
+      "title_zh": "OpenAI修正計費折扣錯誤，GPT-6.2 Astra觸及額度上限速度加快40%",
+      "lede_zh": "OpenAI修正GPT-6.2推出期間的計費錯誤後，Astra與Sol使用者將更快用完額度。OpenAI Codex工程師Thibault Sottiaux表示，多數使用者先前獲得了錯誤折扣；修正後，Astra觸及額度上限的速度較前一週快40%，Sol則快25%。\n\n依Sottiaux的說明，修正後的額度可使用時間，仍應長於使用GPT-6 Astra與GPT-6.1 Sol時。其他模型未受影響，OpenAI也不會追溯收取先前的差額。作為補償，Go、Plus、Pro與Business訂閱者都可獲得額外一次可保留的額度重設機會；Business使用者另可免費使用Fast Mode至年底。\n\n除了額度調整，OpenAI也正向部分Pro使用者測試整合Chat與Work模式，尚非全面推出。Work模式相較Chat模式更偏向代理式運作；這項測試與計費錯誤修正是不同變化，不能將部分使用者的測試體驗視為所有訂閱者都已取得的新功能。",
+      "bullets_zh": [],
+      "source": {
+        "name": "The Decoder",
+        "url": "https://the-decoder.com/gpt-6-2-astra-users-now-hit-limits-40-faster-after-openai-patched-a-pricing-error/",
+        "published_at": "2026-11-26T17:28:56+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "這次變化的重點是觸及額度上限的速度，而非公告中的訂閱價格調整。評估可用工作量時，應區分先前錯誤折扣、修正後的消耗速度，以及一次性的額度補償。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "依據The Decoder已取得的報導節錄撰寫，並非全文；計費變化與補償內容為報導所載OpenAI工程師說法，未另取得公司公告或帳務資料核對。"
+    },
+    {
+      "id": "2026-11-27-morning:event-07",
+      "original_id": "event-07",
+      "category": "taiwan",
+      "is_headline": false,
+      "title_zh": "美擬加徵301關稅，蘋果供應鏈與台廠海外布局面臨成本考驗",
+      "lede_zh": "美國貿易代表署11月25日公布結構性產能過剩調查結果，提議依301條款對14個經濟體加徵關稅。其中越南最高擬課35%、馬來西亞最高18%，對台灣建議稅率為15%，不疊加最惠國關稅。科技產品的最終課稅與豁免範圍仍待確定，蘋果供應鏈及台廠海外布局成為關注焦點。\n\n伺服器、智慧手機、個人電腦及晶片等產品可望獲得豁免，但耳機未列入目前的豁免名單。蘋果近年將生產重心從中國分散至越南與印度，AirPods多在越南生產，輸美可能面臨最高35%的關稅；印度稅率則仍有變數，尚不能將提案視為已確定的成本。\n\nCounterpoint Research資深分析師林科宇認為，台廠主要配合大型客戶，直接承受關稅的壓力有限，更難掌握的是當地法規不確定性、人員培訓與基礎建設不足帶來的隱形成本。他評估，台廠在印度與拉丁美洲的布局短中期可能虧損，相較之下越南情勢較佳。\n\n馬來西亞方面，拉曼大學經濟學教授黃錦榮預期，新關稅對吸引半導體投資的影響可能有限，先進晶片出口管制可能帶來更大影響。他指出，實際波及產業仍須視美方最終課稅及豁免清單而定。\n\n越南工貿部強調，目前只是提議，不會立即生效，並將持續談判與推動改革。相關程序預計於1月25日起舉行聽證會，最快2月做出最後決定；若雙邊談判取得重大進展，最終稅率可能低於擬議上限。",
+      "bullets_zh": [],
+      "source": {
+        "name": "中央社財經",
+        "url": "https://www.cna.com.tw/news/afe/202611260275.aspx",
+        "published_at": "2026-11-26T19:43:48+08:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "評估科技供應鏈衝擊，須把擬議稅率、產品豁免與海外營運成本分開看待，不能直接以各地最高稅率推算台廠獲利變化。",
+      "supporting_sources": [
+        {
+          "source_name": "中央社財經",
+          "source_title": "美擬對馬來西亞課最高18%關稅　學者估半導體投資影響有限",
+          "source_url": "https://www.cna.com.tw/news/aopl/202611260290.aspx"
+        },
+        {
+          "source_name": "中央社財經",
+          "source_title": "美擬課越南最高35%稅率  前美大使盼雙方互信續協商",
+          "source_url": "https://www.cna.com.tw/news/afe/202611260271.aspx"
+        }
+      ],
+      "source_evidence_note_zh": "本則整合中央社財經三篇報導的已取得正文節錄，並非全文；未取得美國貿易代表署原始公告或完整課稅、豁免清單。投資與成本影響為受訪分析師、學者的評估，並非已實現結果。"
+    },
+    {
+      "id": "2026-11-27-morning:event-10",
+      "original_id": "event-10",
+      "category": "science",
+      "is_headline": false,
+      "title_zh": "AI數學研究不只求快：Scott Aaronson關注演算法的計算下界",
+      "lede_zh": "人工智慧在數學研究中的意義，不只在於解出個別難題，也在於能否找出演算法的效率極限。複雜度理論學者、前OpenAI研究員Scott Aaronson在部落格評論近期成果時，將焦點放在OpenAI對矩陣乘法與傅立葉轉換的研究，認為這些工作展現了AI探索更廣泛數學問題的潛力。\n\n依Aaronson的解讀，矩陣乘法研究關心的是：隨著矩陣變大，所需計算成本如何增加。新成果為既有的快速演算法補上相符的計算下界，指出在OpenAI研究的計算模型中，成本究竟能降到什麼程度。這項結論有其模型範圍，不能直接擴大為所有矩陣乘法方法都已抵達極限。\n\n傅立葉轉換方面，Aaronson指出，OpenAI不僅找到更快的計算方法，也證明難以再大幅加速。傅立葉轉換是音訊、影像與訊號處理的基礎數學工具；但這裡的重點不是某項產品已因此提速，而是研究同時處理了「如何算得更快」與「還能快到哪裡」兩種問題。\n\nAaronson特別重視後者：新方法可以刷新紀錄，下界證明則能界定繼續改善時會碰到的限制。他認為，AI帶來的可能不只是零星解題成果，而是更大範圍的數學探索。這是他對研究方向的判斷，並不等同於相關成果已轉化為日常應用。",
+      "bullets_zh": [],
+      "source": {
+        "name": "The Decoder",
+        "url": "https://the-decoder.com/former-openai-researcher-says-the-riemann-proof-matters-less-than-the-fact-that-an-ai-system-can-produce-it/",
+        "published_at": "2026-11-26T19:31:46+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "評估AI研究能力時，找出更快的方法與證明改善極限是不同層次的成果；保留計算模型的適用範圍，才能避免把理論進展誇大為普遍效能突破。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "本則依The Decoder提供的報導節錄撰寫，未取得報導全文、Aaronson部落格原文或相關研究論文；文中成果與研究意義依其評論歸屬呈現，未作獨立驗證。"
     }
   ],
   "breaking_news": [],
   "meta": {
-    "generated_at": "2026-11-26T19:09:38.303394+08:00",
-    "total_articles": 10,
+    "generated_at": "2026-11-27T07:12:29.054761+08:00",
+    "total_articles": 16,
     "schema_version": "2.0",
-    "edition": "evening",
+    "edition": "morning",
     "model": "gpt-6.1-sol",
     "source_mode": "publisher-articles",
     "reading_time_estimated": true
   },
-  "window_start": "2026-11-26T07:00:00+08:00",
-  "window_end": "2026-11-26T19:00:00+08:00",
+  "window_start": "2026-11-26T19:00:00+08:00",
+  "window_end": "2026-11-27T07:00:00+08:00",
   "publication": {
-    "published_at": "2026-11-26T20:00:02.550667+08:00",
-    "issue_sha256": "29c3186ed6d8fbca15acd352401154b6efbdf5f90404a67b6f18e0567f1d9e81",
-    "identity": "2026-11-26-evening",
+    "published_at": "2026-11-27T08:00:04.151421+08:00",
+    "issue_sha256": "2d0fc88cdb1750ebea8696693cca5a906a4945d02e9b85662bb0e2c46504aa9e",
+    "identity": "2026-11-27-morning",
     "legacy_archive_untouched": true
   }
 }
