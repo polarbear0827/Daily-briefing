@@ -1,21 +1,21 @@
 {
   "schema_version": 2,
-  "issue_number": "2026-11-26-midday",
-  "issue_label_zh": "2026-11-26 時事焦點",
-  "date": "2026-11-26",
+  "issue_number": "2026-11-27-midday",
+  "issue_label_zh": "2026-11-27 時事焦點",
+  "date": "2026-11-27",
   "edition": "midday",
   "edition_label_zh": "時事焦點",
-  "date_display_zh": "2026年11月26日·星期四·時事焦點",
+  "date_display_zh": "2026年11月27日·星期五·時事焦點",
   "weather_locations": [],
   "tagline_zh": "由 AI 為你策展，掌握科技與時事",
   "categories": [
     {
-      "id": "finance",
-      "name_zh": "財經"
-    },
-    {
       "id": "world",
       "name_zh": "國際"
+    },
+    {
+      "id": "finance",
+      "name_zh": "財經"
     },
     {
       "id": "technology",
@@ -32,104 +32,84 @@
     {
       "id": "taiwan",
       "name_zh": "台灣"
-    },
-    {
-      "id": "culture",
-      "name_zh": "文化"
     }
   ],
   "articles": [
     {
-      "id": "2026-11-26-midday:event-01",
+      "id": "2026-11-27-midday:event-01",
       "original_id": "event-01",
-      "category": "finance",
+      "category": "world",
       "is_headline": true,
-      "title_zh": "美301調查建議對台課15%不疊加關稅　仍待法定程序定案",
-      "lede_zh": "美國貿易代表署11月25日公布製造業結構性產能過剩301調查報告，提議對14個經濟體加徵關稅，對台灣的建議稅率為15%，不疊加最惠國（MFN）關稅及既有強迫勞動301關稅。這仍是建議措施，並非已生效的新稅率。\n\n行政院26日表示，台灣與日本、韓國、歐盟及瑞士同屬最低建議稅率級別。不過，台美經貿工作小組也指出，若美國貿易代表對後續諮商及相關承諾不滿意，報告另列較高稅率的替代方案，台灣為25%、扣除既有301關稅。政府表示，依雙方溝通情形，有信心維持先前議定的15%不疊加待遇，但這是對最終結果的預期。\n\n依美方程序，公眾意見徵詢期限為2027年1月5日，並將自1月25日起舉行公聽會，完成法定程序後才會定案。行政院強調，在此之前，台灣輸美的傳統工業及農業產品仍適用強迫勞動301關稅，也就是10%不疊加MFN，不能將此次15%的建議視為立即調升。\n\n擬議措施也設有產品豁免。美方預先發布的公告列入目前適用232條款關稅的鋁、鋼鐵與銅製品，以及部分車輛和零組件、木製品、專利藥品與半導體產品等。行政院副院長鄭麗君表示，此次豁免項目達2232項，蝴蝶蘭、茶葉、咖啡及鳳梨酥均在其中，比台美對等貿易協定的豁免項目更多。\n\n這次調查是美國在對等關稅法源失效後，重建關稅法律基礎的一環。台美今年初已簽署對等貿易協定及投資合作備忘錄；鄭麗君表示，政府將爭取最終待遇回歸原有談判結果，預估明年初才會確認。",
-      "bullets_zh": [],
-      "source": {
-        "name": "中央社政治",
-        "url": "https://www.cna.com.tw/news/aipl/202611260002.aspx",
-        "published_at": "2026-11-26T00:13:42+08:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "",
-      "supporting_sources": [
-        {
-          "source_name": "中央社政治",
-          "source_title": "301台灣稅率估15%　鄭麗君：等同美FTA國優於中國東南亞",
-          "source_url": "https://www.cna.com.tw/news/aipl/202611260034.aspx"
-        },
-        {
-          "source_name": "中央社政治",
-          "source_title": "美301調查　政院：台灣建議稅率15%不疊加級別最低",
-          "source_url": "https://www.cna.com.tw/news/aipl/202611260005.aspx"
-        },
-        {
-          "source_name": "中央社政治",
-          "source_title": "美301調查報告建議對台課稅15%　鄭麗君8時30分說明",
-          "source_url": "https://www.cna.com.tw/news/aipl/202611260015.aspx"
-        }
-      ],
-      "source_evidence_note_zh": "整合中央社4篇報導的已取得正文節錄，並非4個獨立媒體來源；未直接取得美國調查報告、聯邦公報或行政院新聞稿原文。稅率、豁免及程序資訊依節錄整理，政府對最終待遇的預期已另作歸屬。"
-    },
-    {
-      "id": "2026-11-26-midday:event-02",
-      "original_id": "event-02",
-      "category": "finance",
-      "is_headline": false,
-      "title_zh": "聯準會褐皮書：美經濟溫和成長　成本壓力推動消費轉向低價",
-      "lede_zh": "美國聯準會11月25日公布褐皮書，顯示近幾週多數地區經濟以輕微至溫和速度成長，就業水準上升，但企業仍承受成本壓力，消費者也更重視價格。12個聯準會行政區中，8區回報經濟成長，4區經濟活動沒有變化，反映各地景氣步調不一。\n\n企業受訪者普遍提到能源、運輸、醫療保健、保險及關稅相關支出帶來壓力，投入成本的上升速度仍高於售價漲幅。報告指出，競爭與顧客對價格的敏感度，限制企業將成本完全轉嫁，利潤率因此受到擠壓；受訪者預期，未來幾個月支出與價格仍將上揚。\n\n需求面則呈現投資與消費分歧。人工智慧熱潮帶動企業投資維持強勁，但家庭財務壓力加重，消費者轉向較便宜的商品，整體消費支出持平。克里夫蘭聯邦準備銀行並指出，資料中心需求強勁，使微晶片與電力元件供應吃緊、交貨時間拉長，部分客戶因而提前下單。\n\n同日公布的10月個人消費支出物價指數（PCE）年增3.8%，排除食品與能源的核心PCE年增率升至3.3%，高於市場預期，並創3年高點。聯準會目前政策利率區間為3.75%至4.00%，下次會議訂於12月8日至9日。市場普遍預期至少升息1碼，但股市大跌後，升息預期已有降溫；這些預期不代表聯準會已作成決定。\n\n本期褐皮書納入截至11月16日的訪談資料，以企業等受訪者提供的質化資訊，補充經濟統計。報告呈現的成長、成本與消費變化，將提供官員評估景氣及通膨的參考，而非利率決策本身。",
+      "title_zh": "沙國吉贊煉油廠遇襲1死多傷、部分停工　能源部仍在評估損害",
+      "lede_zh": "沙烏地阿拉伯能源部表示，沙烏地阿美石油公司位於吉贊的煉油廠11月26日遭空中拋射物擊中，造成一名尼泊爾籍工人死亡、數人受傷，部分作業暫時停擺。拋射物引發的火勢已獲控制。\n\n能源部聲明未指明攻擊者；沙國主導、與葉門叛軍「青年運動」交戰的軍事聯盟則指控，這座煉油廠遭與伊朗結盟的青年運動攻擊。兩項說法須加以區分，不能將軍事聯盟的指控視為能源部已確認的攻擊責任。\n\n事發前一天，青年運動才宣稱攻擊沙國最大煉油廠暨主要原油出口樞紐拉斯塔努拉，以及紅海港口吉達與吉贊。這些宣稱與此次吉贊煉油廠受損，發生在雙方敵對行動升高之際。\n\n遇襲煉油廠位於沙國西南部、靠近葉門國界的吉贊市，設計每日原油處理量最高可達40萬桶。能源部表示，緊急應變與技術團隊已前往處理，正評估損害並檢查設施安全；目前資訊尚未交代實際減產幅度及恢復作業時間。",
       "bullets_zh": [],
       "source": {
         "name": "中央社國際",
-        "url": "https://www.cna.com.tw/news/aopl/202611260027.aspx",
-        "published_at": "2026-11-26T08:57:46+08:00",
+        "url": "https://www.cna.com.tw/news/aopl/202611270010.aspx",
+        "published_at": "2026-11-27T04:36:02+08:00",
         "reading_time_min": 1
       },
       "fetched_via": "publisher",
       "evidence_kind": "publisher-excerpt",
       "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "",
+      "editorial_analysis_zh": "人員傷亡與部分停工已由能源部公布，但設施設計處理量不能直接換算成供應損失；後續判斷能源影響，仍須看損害評估與復工進度。",
       "supporting_sources": [],
-      "source_evidence_note_zh": "依中央社單篇報導的已取得正文節錄整理；未直接取得聯準會褐皮書、美國商務部統計原文或市場利率預期資料，也未完成其他來源交叉核對。"
+      "source_evidence_note_zh": "依實際取得的中央社報導節錄整理，未取得全文、能源部聲明原文或其他獨立來源供交叉核對。設計處理量不等於目前實際產量。"
     },
     {
-      "id": "2026-11-26-midday:event-03",
+      "id": "2026-11-27-midday:event-02",
+      "original_id": "event-02",
+      "category": "world",
+      "is_headline": false,
+      "title_zh": "科威特防空監控站遇襲釀2名義大利技術人員死亡　伊朗否認涉案",
+      "lede_zh": "科威特一處防空監控站11月26日遭無人機攻擊，造成兩名義大利技術人員死亡，另有一名巴基斯坦籍人士及一名科威特陸軍上尉受傷。義大利與科威特均指控伊朗發動攻擊，伊朗則否認涉案，攻擊責任仍有爭議。\n\n義大利外交部長塔加尼向參議院表示，兩名死者任職於德國國防集團萊茵金屬旗下的義大利子公司Rheinmetall Italia，攻擊發生時正在該監控站。他說，依科威特傳來的消息，現場發生猛烈爆炸，造成兩名義大利人喪生及另外兩人受傷。\n\n科威特國防部最初通報，一處「重要設施」遭攻擊，墜落殘骸造成4人受傷；之後證實，其中兩名義大利人傷重不治，另兩名傷者分別為科威特籍與巴基斯坦籍。國防部也表示，攻擊造成財物損失。\n\n伊朗武裝部隊發言人薛卡契否認攻擊科威特的重要設施，並稱伊朗部隊未在該地區發動任何攻擊或軍事行動。伊朗駐羅馬大使館也否認無人機攻擊的說法。塔加尼則表示，義大利將向伊朗大使館提出交涉，並呼籲審慎行事。",
+      "bullets_zh": [],
+      "source": {
+        "name": "中央社國際",
+        "url": "https://www.cna.com.tw/news/aopl/202611270008.aspx",
+        "published_at": "2026-11-27T03:05:56+08:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "死者涉及在科威特工作的義大利國防企業技術人員，使事件同時牽動設施安全與外交交涉。傷亡確認與攻擊責任是不同層次的資訊，不宜混為一談。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "依實際取得的中央社報導節錄整理，未取得全文、各方聲明原文或獨立調查資料。現有資料呈現義大利、科威特的指控及伊朗否認，尚不足以獨立確認攻擊者。"
+    },
+    {
+      "id": "2026-11-27-midday:event-03",
       "original_id": "event-03",
       "category": "world",
       "is_headline": false,
-      "title_zh": "北韓中央通信社稱金正恩視察核設施　主張多領域部署戰術核武",
-      "lede_zh": "北韓中央通信社11月26日報導，北韓領導人金正恩視察核材料生產及武器研究設施，並表示北韓應著重在多個領域部署戰術核武。\n\n金正恩表示，北韓正有系統地擴大核材料生產能力。他並宣稱，儘管外界呼籲北韓實現無核化，北韓作為核武國家的地位仍絕對不容侵犯。相關產能擴張及部署方向均為北韓方面的說法。",
+      "title_zh": "芬蘭擬斥28.35億歐元購160輛步兵戰鬥車　加入五國聯合採購",
+      "lede_zh": "芬蘭國防部長哈卡寧宣布，將推動總經費28億3500萬歐元、約新台幣1026億元的計畫，向瑞典採購160輛CV9035新型步兵戰鬥車。這項軍購與瑞典、挪威、立陶宛及荷蘭共同進行，五國合計訂購逾430輛同型車輛。\n\n新車將由英國航太系統公司旗下的瑞典軍工企業製造，預計2030年起陸續交付，多數車輛預計於2032至2033年投入服役。哈卡寧表示，這是芬蘭陸軍現代化最重要的計畫之一，盟國採用相容裝備，有助於降低成本並確保軍備供應。\n\n反無人機能力是芬蘭軍方強調的採購重點。陸軍司令瓦利馬基表示，新車除了運送官兵、提供火力支援，也能反制無人機、保護周遭友軍。他認為，無人系統與步兵戰鬥車並不互斥，而是相輔相成；現代作戰仍須結合偵察、指揮與各兵種火力。\n\n瓦利馬基也表示，芬蘭軍方與烏克蘭部隊密切交流，新車研發已納入烏軍操作瑞典援贈CV9040步兵戰鬥車的實戰經驗。他主張芬蘭需要多層次防空體系，防護範圍應從前線官兵延伸至國內重要設施。\n\n採購案也涉及跨國生產分工。哈卡寧指出，瑞典與芬蘭將分工製造、組裝，逾10家芬蘭企業參與，承作範圍涵蓋所有訂購國的車輛，而非僅限芬蘭訂單，相關產值最高可達6億歐元。瓦利馬基則表示，北歐各國陸軍司令已有共識，未來將朝共同研發、共同採購及共同使用軍備的方向前進。",
       "bullets_zh": [],
       "source": {
         "name": "中央社國際",
-        "url": "https://www.cna.com.tw/news/aopl/202611260014.aspx",
-        "published_at": "2026-11-26T05:49:13+08:00",
+        "url": "https://www.cna.com.tw/news/aopl/202611270022.aspx",
+        "published_at": "2026-11-27T08:38:34+08:00",
         "reading_time_min": 1
       },
       "fetched_via": "publisher",
       "evidence_kind": "publisher-excerpt",
       "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "金正恩將核材料產能擴張與戰術核武部署方向並列，顯示其強調的重點不只在擁核地位，也包含生產能力與部署安排；但這些表態不能視為相關能力或部署進度已獲證實。",
+      "editorial_analysis_zh": "這項計畫不只是芬蘭更新裝備，也將多國需求與跨國生產納入同一採購架構。共同裝備能否實現官員所稱的成本與供應效益，仍須由後續交付及運用成果檢驗。",
       "supporting_sources": [],
-      "source_evidence_note_zh": "目前僅取得中央社160字正文節錄，內容轉述北韓中央通信社及路透社；未直接取得兩者原始報導，亦無獨立核實資料。節錄未交代設施位置、視察確切日期或產能數據，因此採短訊處理。"
+      "source_evidence_note_zh": "依實際取得的中央社報導節錄整理，未取得全文、採購文件或其他獨立來源供交叉核對。裝備能力、合作效益及產值預估均保留軍方或官員歸屬，交付與服役年份為預定時程。"
     },
     {
-      "id": "2026-11-26-midday:event-04",
+      "id": "2026-11-27-midday:event-04",
       "original_id": "event-04",
       "category": "world",
       "is_headline": false,
-      "title_zh": "華為竊密與規避伊朗制裁案遭美陪審團裁定有罪　公司擬上訴",
-      "lede_zh": "美國陪審團裁定，華為竊取美國科技公司商業機密並規避對伊朗制裁的相關罪名成立。獲判有罪的罪名包括銀行詐欺、共謀詐欺美國政府、共謀洗錢，以及違反《國際緊急經濟權力法》。華為否認不法，律師表示將提出上訴。\n\n美國司法部表示，華為為維持取得美元及參與全球市場的管道，多次向銀行隱瞞伊朗業務，實際上透過Skycom名義在當地營運。司法部並稱，華為提供伊朗網路骨幹及行動網路相關服務，也協助監控、審查網路使用者，提供用於監控抗議活動的攝影機。\n\n竊密部分，司法部列出的受害企業包括T-Mobile、Cisco、半導體儲存公司CNEX及天線製造商Quintel，涉及路由器原始碼、使用手冊、天線與機器人測試技術。司法部指出，華為取得T-Mobile觸控螢幕測試機器人Tappy的照片及技術資訊後，還有員工將機器人零件放進背包，帶離受管制的實驗室。\n\n華為律師則強調，陪審團並未就敲詐勒索及共謀妨礙司法罪名定罪，主張技術竊取案例屬個別員工的不當行為，不足以支持美方對整家公司的描述。中國外交部也反對美方藉裁決打壓華為。\n\n依司法部說明，這項裁決可能帶來刑事罰金、沒收及賠償，但目前提供的資料尚無量刑結果，不能將可能處罰視為已確定的財務負擔。",
+      "title_zh": "烏情報總局稱北韓暫停部分對俄軍援　俄朝近期仍有外交往來",
+      "lede_zh": "烏克蘭國防部情報總局11月26日聲稱，北韓因與俄羅斯發生外交摩擦，暫停部分軍事合作，包括向俄方運送砲彈及KN-23彈道飛彈。不過，相關說法尚無法獨立查證，俄朝近期也仍持續外交往來，不能據此認定兩國合作已全面中斷。\n\n依烏方說法，北韓外交部長崔善姬上月要求俄方釐清對南韓政策，並宣布暫停俄國軍機飛越北韓領空及部分武器供應；平壤也暫緩俄方提出、將北韓駐俄兵力由約8500人增至5萬人的要求。烏方稱，這是北韓領導人金正恩直接做出的決定。\n\n烏方將爭議起因指向俄羅斯副外交部長魯登科有關協助緩和南北韓緊張局勢的說法。但路透社無法證實他曾公開作出這項表態，也無法證實崔善姬曾公開談及暫停軍事合作。烏方未立即說明相關言論的發表場合，俄羅斯國防部及北韓駐俄羅斯、倫敦和紐約大使館也未立即回應置評請求。\n\n軍事合作是否縮減，仍須與雙方其他互動一併觀察。烏方情報報告稱，北韓第11軍團仍駐守俄羅斯庫斯克州；另一方面，俄羅斯總統普丁上週在克里姆林宮接見北韓勞動黨中央委員會書記趙甬元，雙方據報均讚揚兩國合作。",
       "bullets_zh": [],
       "source": {
-        "name": "Ars Technica",
-        "url": "https://arstechnica.com/tech-policy/2026/11/jury-convicts-huawei-of-stealing-us-trade-secrets-evading-iran-sanctions/",
-        "published_at": "2026-11-25T16:33:45+00:00",
+        "name": "中央社國際",
+        "url": "https://www.cna.com.tw/news/aopl/202611270003.aspx",
+        "published_at": "2026-11-27T01:14:43+08:00",
         "reading_time_min": 1
       },
       "fetched_via": "publisher",
@@ -137,20 +117,41 @@
       "evidence_note_zh": "依來源可讀節錄整理。",
       "editorial_analysis_zh": "",
       "supporting_sources": [],
-      "source_evidence_note_zh": "本則依已取得的Ars Technica報導節錄整理，未取得法院裁決書、司法部聲明原文或量刑結果。司法部、華為律師及中國外交部的說法，均以該節錄所載內容為限。"
+      "source_evidence_note_zh": "本則依據取得的中央社報導節錄撰寫，未直接取得烏克蘭情報總局聲明、路透社或朝鮮日報原文；相關查證狀態與置評回應情形依節錄所載。"
     },
     {
-      "id": "2026-11-26-midday:event-05",
+      "id": "2026-11-27-midday:event-05",
       "original_id": "event-05",
       "category": "finance",
       "is_headline": false,
-      "title_zh": "黃仁勳復任後輝達治理受檢視　標普列降級觀察、穆迪維持評等",
-      "lede_zh": "黃仁勳因婚外情風波於11月12日辭去輝達執行長、23日復任後，公司治理與政府介入問題持續受到檢視。標普全球評級25日將輝達列入可能降級的觀察名單；穆迪則維持評等與穩定展望，兩家機構對領導層迅速復原的風險判斷出現分歧。\n\n標普目前給予輝達AA評等，認為這次人事反覆暴露董事會監督弱點，部分董事任期過長可能影響獨立性，治理制度也可能未跟上公司成長。標普表示，可能在90天內調降評等，預期幅度為一級，除非後續調查或揭露進一步傷害聲譽與業務前景。穆迪維持Aa1評等，認為黃仁勳回任降低短期執行及更換領導人的風險，但治理與監管不確定性仍在。\n\n政府如何促成復任，也有待釐清。匿名知情人士稱，五角大廈高層曾討論援引《國防生產法》，藉要求更多產能轉向軍事項目，對輝達董事會施壓。不過，目前不清楚官員實際傳達了什麼，或討論是否呈報川普與副總統范斯；五角大廈否認相關對話曾發生，輝達婉拒置評。法律及國防採購專家也質疑，該法能否作為干預執行長人選的依據。\n\n范斯25日表示，未見黃仁勳犯罪的證據，並稱司法部及國安機構官員告訴他，黃仁勳未受調查。這與客戶的出口管制案件須分開看待：美方自2024年調查Megaspeed晶片採購，關切原供馬來西亞資料中心使用的晶片是否流向中國，並曾向輝達索取資料；Megaspeed否認不法。輝達董事會對黃仁勳的內部調查也尚未結束。\n\n輝達表示，將聘任首位法遵主管，並成立專責出口管制的董事會委員會。國會仍要求公司說明出口管制遵循及政府介入復任的過程，參議院銀行委員會預定12月3日舉行公開聽證。復任解決了領導人選問題，卻尚未為治理與晶片流向爭議畫下句點。",
+      "title_zh": "美國第3季GDP成長率上修至4.3%　川普指控選前數據造假、要求調查",
+      "lede_zh": "美國商務部11月25日例行修正經濟數據，將第3季國內生產毛額（GDP）成長率由原估3.4%上修至4.3%，增加0.9個百分點。總統川普隔天指控選前公布的是「假數據」，要求立即調查，但未提出支持造假指控的證據。\n\n商務部經濟分析局說明，這次上修主要反映投資加速與政府支出回升，出口下滑則抵銷部分增幅。官方公布的是最新GDP預估值及其修正原因；成長率上修本身，並不構成先前數據遭蓄意操弄的證據。\n\n川普在自家平台「真實社群」發文，質疑為何不在選前公布正確數字，並將差異形容為龐大且蓄意的錯誤。這項反應使例行統計修正延伸為政治爭議，但他的調查要求，與經濟分析局對投資、政府支出及出口變動的說明，仍是不同層次的主張。目前取得的報導未交代是否已有機關依其要求啟動調查。",
       "bullets_zh": [],
       "source": {
         "name": "中央社國際",
-        "url": "https://www.cna.com.tw/news/aopl/202611260040.aspx",
-        "published_at": "2026-11-26T10:03:15+08:00",
+        "url": "https://www.cna.com.tw/news/aopl/202611270011.aspx",
+        "published_at": "2026-11-27T04:55:04+08:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "本則取得資料為中央社報導節錄，未直接取得美國商務部、經濟分析局發布文件或川普社群貼文全文。"
+    },
+    {
+      "id": "2026-11-27-midday:event-06",
+      "original_id": "event-06",
+      "category": "finance",
+      "is_headline": false,
+      "title_zh": "美擬依301條款加徵關稅　馬來西亞爭取磋商、越南製耳機面臨衝擊",
+      "lede_zh": "美國貿易代表署11月25日公布結構性產能過剩301條款調查結果，提議對包括台灣、馬來西亞、越南及印度在內的14個經濟體加徵關稅。其中，馬來西亞輸美產品擬面臨最高18%關稅，越南最高可能達35%；方案尚非最終課稅結果，產業影響仍須視課稅及豁免清單而定。\n\n馬來西亞首相安華26日表示，將在隔天內閣會議討論此事；投貿部則表示會繼續與美方磋商，爭取301條款下的總稅率不超過19%。馬來西亞製造業聯合總會要求，產能過剩認定應有實際產量、產能利用率、投資資金來源與市場需求等證據，不能單憑出口表現或政府支持判斷，並預告將提交產業資料及法律分析。\n\n科技供應鏈的風險因產品而異。目前方案中，伺服器、智慧手機、個人電腦及晶片等產品可望豁免，耳機則未列入豁免名單。蘋果近年將部分生產分散至越南與印度，AirPods耳機多在越南生產，輸美可能面臨最高35%關稅。台灣目前建議稅率為15%，不疊加最惠國關稅；印度稅率仍有變數。\n\n對投資的影響，受訪人士提出不同觀察重點。拉曼大學經濟學教授黃錦榮預期，新關稅對馬來西亞吸引半導體投資的影響有限，先進晶片出口管制可能影響更大。他並指出，美方方案涵蓋多個亞太經濟體，馬來西亞的相對出口競爭力未必因此下降。\n\nCounterpoint Research資深分析師林科宇則認為，台廠主要配合大型客戶，直接承受的關稅壓力有限，海外營運更難衡量的成本來自當地法規不確定性、人員培訓及基礎建設不足。上述均屬受訪者評估，不能視為個別企業獲利或投資決策已經確定。",
+      "bullets_zh": [],
+      "source": {
+        "name": "中央社財經",
+        "url": "https://www.cna.com.tw/news/aopl/202611260290.aspx",
+        "published_at": "2026-11-26T20:51:20+08:00",
         "reading_time_min": 2
       },
       "fetched_via": "publisher",
@@ -159,558 +160,446 @@
       "editorial_analysis_zh": "",
       "supporting_sources": [
         {
-          "source_name": "中央社國際",
-          "source_title": "范斯：未見黃仁勳犯罪證據　輝達晶片對AI領先至關重要",
-          "source_url": "https://www.cna.com.tw/news/aopl/202611260016.aspx"
-        },
-        {
           "source_name": "中央社財經",
-          "source_title": "黃仁勳回鍋引分歧　標普列降級觀察、穆迪維持評等",
-          "source_url": "https://www.cna.com.tw/news/afe/202611260022.aspx"
-        },
-        {
-          "source_name": "TechCrunch AI",
-          "source_title": "The questions Jensen Huang and Nvidia will still have to answer about Megaspeed",
-          "source_url": "https://techcrunch.com/2026/11/25/the-questions-jensen-huang-and-nvidia-will-still-have-to-answer-about-megaspeed/"
+          "source_title": "越南印度被美課高關稅恐衝擊蘋果鏈　分析師：台廠隱形成本更難扛",
+          "source_url": "https://www.cna.com.tw/news/afe/202611260275.aspx"
         }
       ],
-      "source_evidence_note_zh": "已取得TechCrunch相關報導全文，以及中央社三篇報導節錄。援引《國防生產法》的構想來自中央社轉述《華盛頓郵報》匿名消息，並有五角大廈否認；未取得該報原文、信用評等公告或調查文件。相關指控與調查狀態均以已提供資料為限。"
+      "source_evidence_note_zh": "本則整合兩篇中央社報導節錄，未直接取得美國貿易代表署調查報告、完整關稅方案或豁免清單；兩篇報導出自同一媒體，並非不同媒體的獨立交叉查證。學者及分析師意見依中央社所載採訪內容歸屬。"
     },
     {
-      "id": "2026-11-26-midday:event-06",
-      "original_id": "event-06",
-      "category": "technology",
-      "is_headline": false,
-      "title_zh": "美FCC有條件批准SpaceX百萬顆資料中心衛星計畫　退役處置仍待審",
-      "lede_zh": "美國聯邦傳播委員會（FCC）25日有條件批准SpaceX部署及營運最多100萬顆Starmind衛星，用於建置軌道資料中心、處理供地球使用的資料。這項許可跨過重要監管門檻，但不代表太空資料中心的技術與經濟可行性已獲證實，也不代表SpaceX必然部署全部核准數量。\n\n許可給予相當長的建置時間：SpaceX須在七年內將首顆可運作衛星送入軌道，2035年11月前部署10萬顆，整體星系的部署期限則為2040年11月。Starmind規劃主要透過雷射與其他衛星連線，包括Starlink；此次核准也允許在主要通訊系統失效時，以無線電頻率維持地面聯繫及控制。\n\n退役衛星如何處置，仍是未解的核准條件。SpaceX希望部分在600公里以上運作的衛星，任務結束後可移往其他地球軌道，甚至繞太陽運行，而非重返大氣層。FCC認為資料不足，尚未批准這項豁免；不打算以重返大氣層方式處置的衛星，部署前仍須取得許可。\n\nAmazon、Viasat及American Astronomical Society等對計畫提出反對或疑慮，涉及軌道壅塞、碎片、無線電干擾與天文觀測影響。FCC認為部分問題超出審查權限，對衛星重返大氣層造成污染的疑慮，則認為現有紀錄不足以支持，未對整體星系進行全面環境評估。\n\nSpaceX宣稱，利用近乎持續的太陽能可降低成本與地面資料中心的環境衝擊；但衛星製造與發射成本、處理器散熱，以及送往軌道的晶片如何取得融資，仍是待克服的障礙。監管許可提供了部署空間，實際規模與商業效益仍待驗證。",
-      "bullets_zh": [],
-      "source": {
-        "name": "TechCrunch",
-        "url": "https://techcrunch.com/2026/11/25/fcc-approves-spacex-plan-to-put-ai-data-centers-in-space/",
-        "published_at": "2026-11-25T20:56:44+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-article",
-      "evidence_note_zh": "依來源文章整理。",
-      "editorial_analysis_zh": "",
-      "supporting_sources": [
-        {
-          "source_name": "中央社科技",
-          "source_title": "美批准SpaceX部署100萬顆衛星　建太空資料中心",
-          "source_url": "https://www.cna.com.tw/news/ait/202611260012.aspx"
-        },
-        {
-          "source_name": "Ars Technica",
-          "source_title": "The FCC has authorized SpaceX to deploy 1 million satellites",
-          "source_url": "https://arstechnica.com/space/2026/11/the-fcc-has-authorized-spacex-to-deploy-1-million-satellites/"
-        }
-      ],
-      "source_evidence_note_zh": "已取得TechCrunch報導全文，以及中央社、Ars Technica報導節錄；未取得FCC授權文件或SpaceX申請書原文。部署期限、核准條件及各方意見依上述已取得內容交叉整理，公司所述成本與環境效益並非獨立驗證結果。"
-    },
-    {
-      "id": "2026-11-26-midday:event-07",
+      "id": "2026-11-27-midday:event-07",
       "original_id": "event-07",
-      "category": "world",
-      "is_headline": false,
-      "title_zh": "共和黨多名眾議員勸進盧比歐角逐2028年總統",
-      "lede_zh": "美國共和黨期中選舉失利後，多名共和黨籍聯邦眾議員公開支持國務卿盧比歐考慮投入2028年總統大選。不過，盧比歐已公開否認有關其未來政治規畫的說法，目前議員的勸進與支持表態，並不代表他已決定參選。\n\n紐約州眾議員瑪里歐塔基斯稱許盧比歐沉著、熟悉議題且善於表達，並表示她認為黨內有不少人希望他考慮參選。印第安納州眾議員史塔茲曼則在選舉之夜表態全力支持盧比歐，認為他有能力凝聚各方；史塔茲曼也將選後重點放在加強溝通，稱共和黨失去國會多數席次後，已無法推動政策。\n\n佛州眾議員西門內斯表示，有同僚主動向他表達，如果盧比歐參選便願意支持，而且不只是少數人的想法。同州眾議員哈里多波洛斯也說，自己已連續兩個月公開支持盧比歐，從與各方交談的回應來看，支持聲浪熱烈。\n\n這些議員的表態，顯示共和黨部分人士已將選後路線調整與2028年人選相連結。不過，所謂支持規模仍是議員各自對黨內聲音的描述，不能據此視為共和黨已形成提名共識。",
-      "bullets_zh": [],
-      "source": {
-        "name": "中央社國際",
-        "url": "https://www.cna.com.tw/news/aopl/202611260008.aspx",
-        "published_at": "2026-11-26T02:43:57+08:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "本則依已取得的中央社報導節錄整理，並非完整原文；未另取得報導所引福斯數位新聞的原始報導。"
-    },
-    {
-      "id": "2026-11-26-midday:event-08",
-      "original_id": "event-08",
       "category": "technology",
       "is_headline": false,
-      "title_zh": "美國FinCEN部分系統遭未授權存取　預防性下線恐延遲服務",
-      "lede_zh": "美國財政部金融犯罪防制網（FinCEN）發現部分系統遭未授權存取，已預防性將部分系統下線並展開調查。該機關表示，受存取的是有限部分的系統，但尚未公布事件的具體範圍與原因。\n\nFinCEN負責防制洗錢、恐怖主義融資等非法金融活動，也管理供執法使用的金融交易資料，並依《銀行保密法》收取銀行提交的可疑活動報告。此次事件涉及這個金融資訊與執法支援機關的系統安全，但現有資訊尚不足以判定哪些資料受到影響。\n\n服務並未全面中斷。FinCEN表示，銀行仍可透過線上管道提交可疑活動報告，供金融機構使用的電話專線也未受影響，不過部分服務可能出現延遲。現階段須區分已確認的未授權存取、預防性下線措施，以及仍持續運作的申報管道，不能將事件概括為所有金融申報服務停擺。",
-      "bullets_zh": [],
-      "source": {
-        "name": "The Decoder",
-        "url": "https://the-decoder.com/back-to-back-cyber-incidents-at-us-financial-investigators-and-spy-agencies-follow-a-string-of-federal-hacks-and-outages/",
-        "published_at": "2026-11-25T13:07:44+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-article",
-      "evidence_note_zh": "依來源文章整理。",
-      "editorial_analysis_zh": "",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "已取得The Decoder報導全文；其中FinCEN事件內容援引The Verge報導及機關說法，未另取得FinCEN公告或The Verge原文。本則僅整理FinCEN事件，不合併同篇提及的其他機關資安事件。"
-    },
-    {
-      "id": "2026-11-26-midday:event-09",
-      "original_id": "event-09",
-      "category": "society",
-      "is_headline": false,
-      "title_zh": "Character.ai擬拍賣私人對話資料　美42州檢察長介入反對",
-      "lede_zh": "美國42州檢察長組成聯盟，介入聊天機器人業者Character.ai的破產程序，試圖阻止公司出售包含私人對話的敏感使用者資料。拍賣預定12月1日舉行，目前仍是擬議出售計畫，並非已完成交易。\n\n各州檢察長發布的聲明指出，相關資料集包含超過2,100萬個美國帳號的聊天紀錄，其中逾210萬個帳號屬於未成年人；擬出售的內容還包括IP位址等個人資料。Character.ai於10月聲請《破產法》第11章保護。檢察長指出，公司先前曾向消費者承諾不會出售個人資訊；公司則曾在部落格表示，使用者資訊仍會受到其隱私權政策保護。\n\n加州檢察長Rob Bonta指出，Character.ai已選定Smirks and Pangs Acquisition LLC作為拍賣的基準出價方。這家公司於2026年11月13日在德拉瓦州成立，隔天即獲選；買方打算如何使用聊天資料，目前仍不清楚。\n\n檢察長聯盟反對出售的核心理由，是他們認為交易缺乏足夠的使用者保護。聯盟主張，買方不必遵守Character.ai原有的隱私權政策，甚至可能在不揭露的情況下轉售資料；他們也指控，公司向法院提供的潛在安全與法律問題資訊，不如提供給競標者的完整。這些都是檢察長提出的異議，不能視為法院已作出的認定。",
-      "bullets_zh": [],
-      "source": {
-        "name": "TechCrunch AI",
-        "url": "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/",
-        "published_at": "2026-11-25T17:35:58+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-article",
-      "evidence_note_zh": "依來源文章整理。",
-      "editorial_analysis_zh": "爭點不只是資料能否出售，也在於企業進入破產程序後，原有隱私承諾能否繼續約束資料接收者；涉及未成年人對話，使交易條件與後續用途更需要審查。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "已取得TechCrunch AI報導全文；未另取得破產法院文件、各州檢察長聲明或Character.ai部落格原文，相關主張均保留歸屬。"
-    },
-    {
-      "id": "2026-11-26-midday:event-10",
-      "original_id": "event-10",
-      "category": "society",
-      "is_headline": false,
-      "title_zh": "紐約州簽署AI聊天玩具五年禁令，簽署90天後生效",
-      "lede_zh": "美國紐約州長Kathy Hochul本週簽署法案，禁止在州內製造、配送及販售內建或整合AI聊天機器人的玩具，為期五年。規範對象包括依靠網路與兒童對話的絨毛玩具、娃娃及機器人；新法在簽署90天後才生效，並非立即禁止今年聖誕購物季的銷售。\n\nHochul表示，家長購買禮物時，不應還得擔心玩具中的聊天機器人讓孩子接觸不當對話、操弄情感或危及隱私。針對電商平台如何配合執法，州政府官員表示將與州檢察長合作，並稱罰款可達每日1萬5,000美元。Amazon則表示，將採取措施限制相關玩具在禁止銷售的地區販售，但未說明具體做法。\n\n這項監管行動也伴隨兒童使用風險的研究警訊。Common Sense Media測試五款主打學習與陪伴的AI玩具後指出，部分產品會向孩子表達愛意、承諾保守秘密，或暗示與玩具相處比真實人際關係、上學更有趣。研究也發現，部分玩具會提供危險物品的使用或尋找資訊。\n\n家長能否掌握對話內容，同樣是研究關注的問題。Common Sense Media指出，受測玩具有的未提供對話紀錄，有的紀錄錯誤不少，難以作為可靠的監督工具。這些是該組織對受測產品的評估結果，不宜直接視為所有AI玩具的共同表現。",
-      "bullets_zh": [],
-      "source": {
-        "name": "TechCrunch AI",
-        "url": "https://techcrunch.com/2026/11/25/want-to-buy-your-kid-an-ai-toy-this-christmas-not-in-new-york/",
-        "published_at": "2026-11-25T18:11:46+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-article",
-      "evidence_note_zh": "依來源文章整理。",
-      "editorial_analysis_zh": "",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "已取得TechCrunch AI報導全文；法案內容、政府與Amazon回應，以及Common Sense Media研究結果均依該報導整理，未另取得法案或研究原文，也無其他獨立來源交叉核對。"
-    },
-    {
-      "id": "2026-11-26-midday:event-11",
-      "original_id": "event-11",
-      "category": "technology",
-      "is_headline": false,
-      "title_zh": "1Password證實內部系統遭入侵，稱客戶密碼保管庫未被存取",
-      "lede_zh": "密碼管理服務業者1Password證實，內部系統遭入侵，部分客戶資料被取走，包括姓名、登入帳號使用的電子郵件地址，以及帳號建立時間與最後登入時間。公司表示，存放客戶密碼的保管庫未被攻擊者存取，應用程式與擴充功能也未受此次事件影響。\n\n依1Password公布的說明，公司在11月19日偵測到入侵。攻擊者取得一名員工的GitHub企業帳號存取權限；1Password使用GitHub分享及儲存原始碼。攻擊者接著利用該員工的權限，將惡意程式碼推送至公司內部伺服器，進而下載客戶資料。\n\n1Password強調，攻擊者在整起事件中都無法存取客戶密碼保管庫，並表示公司本身也無法取得客戶的帳號密碼或秘密金鑰。不過，攻擊者最初如何取得員工帳號權限，仍未釐清；公司也未公布受影響客戶人數，或說明是否已通知資料遭取走的客戶。密碼保管庫未受存取的說法，仍屬公司對事件範圍的說明。",
-      "bullets_zh": [],
-      "source": {
-        "name": "TechCrunch",
-        "url": "https://techcrunch.com/2026/11/25/1password-said-hackers-broke-into-its-internal-systems-but-customer-passwords-are-safe/",
-        "published_at": "2026-11-25T18:49:52+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "本次取得的是TechCrunch報導節錄，而非全文；未另取得1Password原始公告或獨立鑑識資料，入侵路徑與未受影響範圍依報導所載公司說明整理。"
-    },
-    {
-      "id": "2026-11-26-midday:event-12",
-      "original_id": "event-12",
-      "category": "finance",
-      "is_headline": false,
-      "title_zh": "Allstate網站與應用程式連日故障，公司承諾中斷影響繳費不罰款",
-      "lede_zh": "美國保險公司Allstate在感恩節假期前發生連日技術故障，網站與行動應用程式均受影響。自週一上午起，全美多地保戶反映無法登入帳號、查閱保單、提出理賠或繳費，透過應用程式申請道路救援的管道也受到影響。\n\n網站登入頁面顯示服務無法使用，並表示正盡速恢復存取。故障通報平台Downdetector也顯示，使用者自週一上午開始回報問題。線上服務中斷期間，地方保險代理人持續接到保戶來電與電子郵件，處理無法使用網站及應用程式的詢問。\n\nAllstate在週三晚間回應，過去48小時部分存取受到限制，但公司仍持續服務客戶、處理及支付理賠，保戶也可透過電話及地方辦公室等管道聯絡。公司承諾，若服務中斷影響客戶繳費，不會因此失去保險保障，也不會被收取逾期費用。\n\n這項回應說明了繳費受阻時的保障，但未交代故障原因，也未提供完整恢復服務的時間。現有資訊仍無法判定此次中斷的成因。",
-      "bullets_zh": [],
-      "source": {
-        "name": "TechCrunch",
-        "url": "https://techcrunch.com/2026/11/25/allstate-suffers-multi-day-tech-outage-ahead-of-thanksgiving/",
-        "published_at": "2026-11-25T15:08:37+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "本次取得的是TechCrunch報導節錄，包含刊出後補入的Allstate回應，並非全文；未取得公司獨立公告或技術調查結果。"
-    },
-    {
-      "id": "2026-11-26-midday:event-13",
-      "original_id": "event-13",
-      "category": "society",
-      "is_headline": false,
-      "title_zh": "美起訴勒索軟體復原公司前主管　控秘密付贖金、向受害者賺差價",
-      "lede_zh": "美國司法部起訴勒索軟體資料復原公司RansomwareHelp前技術長Juan Ricardo Palacio Escobar，指控他以專有技術能解密檔案為名招攬受害企業，實際卻秘密向駭客支付贖金，再向客戶收取更高費用、賺取差額。他面臨三項電子通訊詐欺罪名，目前報導所述為檢方指控，並非定罪結果。\n\nRansomwareHelp曾在網站宣稱，能透過自有技術解密遭攻擊的資料，成功率超過99%。檢方則指控，公司並無這項技術能力，而是透過與勒索軟體攻擊者談判、付費，換取受害者資料解密。檢方另指，Palacio Escobar將所得用於購買佛羅里達州多處房產。\n\n司法部表示，聯邦調查局於6月展開臥底行動，探員一方面假扮遭勒索軟體攻擊的公司，另一方面也扮演駭客。RansomwareHelp向假扮客戶的探員保證，從不與駭客談判或支付贖金；但Palacio Escobar隨後向假扮攻擊者的探員支付約6,000美元加密貨幣。\n\n案件的爭點不只是資料能否取回，而是業者對復原方式的承諾是否真實。依檢方描述，受害企業購買的是宣稱不必支付贖金的技術服務，實際支付的費用卻有一部分流向其以為不會接觸的勒索者。",
-      "bullets_zh": [],
-      "source": {
-        "name": "TechCrunch",
-        "url": "https://techcrunch.com/2026/11/25/doj-accuses-former-cyber-executive-of-defrauding-ransomware-victims-by-secretly-paying-hackers/",
-        "published_at": "2026-11-25T17:36:51+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-article",
-      "evidence_note_zh": "依來源文章整理。",
-      "editorial_analysis_zh": "資料復原成功與否，不能單獨證明服務商使用了其宣稱的技術；本案凸顯復原方式與費用流向透明度的重要性。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "已取得TechCrunch報導正文；未取得起訴書或司法部聲明原文，檢方指控與臥底調查細節依該報導整理。"
-    },
-    {
-      "id": "2026-11-26-midday:event-14",
-      "original_id": "event-14",
-      "category": "science",
-      "is_headline": false,
-      "title_zh": "Hera傳回小行星撞擊坑首批影像　追查DART如何改變軌道與外形",
-      "lede_zh": "歐洲Hera探測器經過兩年航行，抵達Didymos與Dimorphos雙小行星系統附近。歐洲太空總署公布的首批撞擊痕跡影像顯示，NASA的DART探測器在Dimorphos留下近似體育場大小的撞擊坑，尺度幾乎與這顆直徑約151公尺的小行星相當。\n\nDART於2022年9月以每秒約6.14公里的速度撞上Dimorphos，測試以撞擊改變小行星運動的可行性。先前望遠鏡觀測已測得，Dimorphos繞行較大伴星Didymos、原約12小時的軌道週期縮短了約33分鐘。這組小行星並無撞擊地球的風險，選作實驗對象，是因其特性與許多近地小行星相似。\n\nHera的新影像讓研究人員能進一步檢視撞擊造成的變化。任務首席研究員Patrick Michel表示，撞擊不只挖出坑洞，也因坑洞規模太大而改變了小行星整體外形；這種介於局部成坑與整體變形之間的結果，如何形成仍待釐清。任務科學家Michael Kueppers也指出，Dimorphos如今在軌道上呈現劇烈翻滾的狀態。\n\n接下來六個月，Hera將逐步靠近兩顆小行星，進行更細緻的觀測，並計畫釋放兩顆小型衛星，嘗試登陸Dimorphos，蒐集成分、內部結構與質量資料。這些量測將用來重建DART撞擊過程，讓未來的小行星偏轉模型有更具體的物理依據。",
-      "bullets_zh": [],
-      "source": {
-        "name": "Ars Technica",
-        "url": "https://arstechnica.com/space/2026/11/europes-hera-mission-returns-to-the-chaotic-scene-of-a-cosmic-smashup/",
-        "published_at": "2026-11-25T22:36:45+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "確認撞擊能改變軌道，是行星防禦實驗的一步；理解目標的結構與撞擊後變形，才有助於評估同類方法能否用於其他小行星。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "已取得Ars Technica報導節錄，並非全文；未取得歐洲太空總署原始發布資料，本文依所提供節錄整理。"
-    },
-    {
-      "id": "2026-11-26-midday:event-15",
-      "original_id": "event-15",
-      "category": "science",
-      "is_headline": false,
-      "title_zh": "以極端合成情境訓練氣候AI　研究團隊稱可減少大型模擬需求",
-      "lede_zh": "來自MIT、ETH Zurich與Imperial College London的研究團隊，提出以劇烈變化的合成情境訓練AI氣候模型。團隊表示，相較於過去需要六至八次大型氣候模擬的訓練方式，新方法只需一次模擬，就能訓練模型，並改善其處理陌生情境的能力。\n\n這類AI模型用來快速近似以物理為基礎的氣候模擬。大型模擬在超級電腦上運算單一情境可能耗時數月，AI模型則可在數秒內產生結果，協助電網、公共衛生與農業規劃。不過，建立AI模型本身仍需要模擬資料；共同作者Noelle Selin指出，過去訓練流程耗時太久，模型完成時往往已經過時。\n\n新方法不再只採用分布均勻、貼近現實的未來情境，而是加入例如2050年二氧化碳突然激增、或2037年甲烷驟降等合成變化。這些年份與變化是訓練設計，不是對未來排放的預測。主要作者Christopher Womack表示，這些針對性的劇烈變化有助於AI更精確掌握氣候系統；團隊也宣稱，訓練後的模型能可靠計算地方環境政策的影響。",
-      "bullets_zh": [],
-      "source": {
-        "name": "The Decoder",
-        "url": "https://the-decoder.com/mit-team-discovers-that-unrealistic-training-data-makes-ai-climate-predictions-more-reliable/",
-        "published_at": "2026-11-25T10:47:51+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "這項方法的潛在價值，是降低建立氣候AI模型所需的模擬成本；但訓練效率提高，不等於所有政策情境的預測都已獲驗證。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "已取得The Decoder報導節錄，其研究資訊來自MIT News；未取得MIT News原文、研究論文或獨立驗證資料，效率與可靠性結果均保留研究團隊歸屬。"
-    },
-    {
-      "id": "2026-11-26-midday:event-16",
-      "original_id": "event-16",
-      "category": "science",
-      "is_headline": false,
-      "title_zh": "用未公開物理題測AI，研究團隊報告50題中答對49題",
-      "lede_zh": "理論物理研究者以尚未公開的研究問題建立AI評測題組，試圖區分模型的解題能力與記住既有答案的能力。Ars Technica報導，Suvrat Raju與同事建立的TheoPhysEval題組共有50題；團隊在核對模型與人類撰寫的解答後，報告GPT-6 Astra答對其中49題。\n\n這項評測起於Raju的一次測試：他拿出自己已解決、卻未發表答案的物理問題詢問AI。模型當時沒有答對，但表現促使他將測試正式化。他與同事向其他物理學者徵集未公開的小型研究成果，題目設定為領域頂尖研究者約需一天才能解決的問題，以降低網路既有答案影響評測的可能性。\n\n依報導記載，GPT-6 Astra最初被判定可解出近九成題目。研究者接著提供人類撰寫的解答，要求模型找出自己錯在哪裡，模型卻指出部分人類答案存在細微錯誤；核對後，答對題數增至49題。研究者並報告，每個正確答案平均使用的運算成本不到3美元，且只需一次人類提示。\n\n不過，這些結果仍是特定題組上的評測表現，不能直接等同於AI已能獨立完成所有物理研究。報導中的物理學者也呈現不同工作經驗：有人大量使用AI處理計算，有人則認為，研究的大部分時間在於判斷該問什麼問題。對需要概念突破與實驗檢驗的開放問題，計算能力提升與建立可驗證的新理論，仍是不同層次的挑戰。",
-      "bullets_zh": [],
-      "source": {
-        "name": "Ars Technica",
-        "url": "https://arstechnica.com/ai/2026/11/ai-can-do-the-calculations-physicists-are-figuring-out-what-comes-next/",
-        "published_at": "2026-11-25T12:00:28+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "這項評測的重要性不只在答對比例，也在於用未公開問題減少既有答案對測試的干擾。解讀結果時，仍須區分明確計算題的表現、研究問題的形成，以及新理論的驗證。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "本則依Ars Technica標示為節錄的報導文字整理，未另取得TheoPhysEval原始題組、研究文件或獨立重現結果；解題率與運算成本均為報導所載的研究者評測結果。"
-    },
-    {
-      "id": "2026-11-26-midday:event-17",
-      "original_id": "event-17",
-      "category": "taiwan",
-      "is_headline": false,
-      "title_zh": "福衛八號第二顆完成運送前審查，預計12月28日赴美",
-      "lede_zh": "福衛八號第二顆衛星FS-8B已完成運送前審查，進入赴美發射的準備階段。國家太空中心11月25日公布，衛星預計2026年12月28日起運，前往美國加州范登堡太空軍基地，並規劃於2027年2月搭乘SpaceX獵鷹九號火箭Transporter-19航班，進入561公里高的太陽同步軌道。\n\n這次審查於11月24日完成，內容涵蓋需求驗證、整合測試、姿態與軌道控制系統任務測試，以及科學酬載測試結果，也檢視後續運送、發射場作業、早期軌道操作與影像驗證規劃。完成審查代表衛星可準備運往發射場，運送與升空日期則仍屬預定時程。\n\n太空中心表示，FS-8B與首顆FS-8A設計相同，但依首顆衛星的在軌運行情況，修正電力系統，並調整衛星導航接收機的測試方式，希望避免衛星從陰影區轉入日照區時，在特定光照條件下受到訊號干擾而異常；另增加接收機敏感性測試，以確認弱GPS訊號環境下的運作能力。\n\nFS-8B也搭載清華大學天文所教授張祥光團隊研發的伽瑪射線瞬變事件監測儀，配置於衛星兩側，觀測目標包括伽瑪射線暴，資料將開放全球天文學者研究。福衛八號星系規劃由8顆光學遙測衛星組成，預計2031年完成布建，以達成每日對同一地點取像3次的目標；太空中心表示，第二顆升空後可進一步提高影像取得頻率與資料蒐集效率。",
+      "title_zh": "輝達暫停東南亞四國伺服器出貨，泰國業者對投資影響看法分歧",
+      "lede_zh": "美國收緊先進人工智慧（AI）運算出口管制後，輝達已要求製造合作夥伴暫停向馬來西亞、新加坡、泰國及印尼出貨相關伺服器。《金融時報》引述消息人士報導，戴爾與美超微等製造商已通知當地買家，相關訂單無法出貨；暫停措施將持續多久，目前仍不清楚。\n\n這波管制針對中國企業透過境外雲端服務取得受限制運算能力的途徑。新規涉及雲端供應商的90天許可程序，以及證明最終用戶不含受限制實體的要求。有雲端業者主管反映，申請指引尚不明確，期限卻已開始計算，使業者難以安排後續營運。\n\n影響也延伸至融資。《金融時報》報導，新加坡雲端公司Aolani原規劃向字節跳動出租先進運算能力，但出貨中斷後，部分銀行已停止核發約5億美元信貸，字節跳動也可能退出交易。這是個別專案面臨的風險，尚不能據此估算東南亞資料中心投資的整體損失。\n\n泰國業者對後續發展則有不同判斷。在11月26日於曼谷舉行的「泰國雲端與資料中心大會」上，中電二公司泰國公司區域業務經理阮兆麒表示，部分潛在客戶已暫停專案；若無法取得高階晶片，資料中心就難以提供足夠算力、吸引終端客戶。他對短期市場較審慎，但仍看好泰國長期AI需求。\n\nTelehouse泰國董事總經理宮下健一則不認為，晶片管制會直接衝擊泰國資料中心產業。他看重當地國際網路連線與電力條件，並認為跨境連線執照限制、中央與地方審批協調，也是影響投資的重要問題。兩種評估顯示，業者對晶片供應與其他營運條件的重視程度並不相同。",
       "bullets_zh": [],
       "source": {
         "name": "中央社科技",
-        "url": "https://www.cna.com.tw/news/ait/202611250314.aspx",
-        "published_at": "2026-11-25T20:48:24+08:00",
-        "reading_time_min": 1
+        "url": "https://www.cna.com.tw/news/aopl/202611260186.aspx",
+        "published_at": "2026-11-26T16:08:34+08:00",
+        "reading_time_min": 2
       },
       "fetched_via": "publisher",
       "evidence_kind": "publisher-excerpt",
       "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "第二顆衛星的進度同時關係到遙測取像頻率與天文觀測資料。運送前審查是任務準備的重要節點，但仍須與實際發射、入軌操作及影像驗證成果分開看待。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "本則依中央社報導節錄整理，太空中心的審查結果、測試調整與任務規劃均來自該報導所載說明；未另取得審查文件或官方公告原文。"
-    },
-    {
-      "id": "2026-11-26-midday:event-18",
-      "original_id": "event-18",
-      "category": "taiwan",
-      "is_headline": false,
-      "title_zh": "仁愛路交管影響通行，沈伯洋取消市民之夜並宣布拆台",
-      "lede_zh": "仁愛路活動交通管制造成通行不便後，民進黨台北市長候選人沈伯洋11月25日晚間宣布，取消原定27日舉辦的選前市民之夜，並決定立即拆除現場舞台。競選辦公室先前已向受影響的通勤民眾與周邊住戶致歉，後續活動形式將由團隊重新討論。\n\n這場活動原訂27日晚間6時，在台北市仁愛路四段、靠近國父紀念館一側舉行。警方先前公布的交通措施，自25日上午9時30分起，管制仁愛路逸仙路至光復路間的公車道、快車道及北側慢車道，以及逸仙路松高路至仁愛路間全線等路段，引發外界議論。\n\n沈伯洋在晚間發布的影片中表示，凱達格蘭大道、市府路與北平東路已被借用，市府廣場則無法借用，因此最後選在仁愛路四段。他說，團隊曾與台北市政府多次開會並提出交通措施，但當晚交通仍不順暢，因此決定以市民交通為優先，取消活動並拆除舞台。這些場地選擇與協調經過，均為沈伯洋的說明。\n\n總統賴清德隨後在臉書支持取消決定，稱這是「最睿智且最勇敢的決定」，並呼籲支持者保持冷靜與信心。前總統蔡英文也表示，將於26日晚間參加沈伯洋的直播。原定市民之夜取消後，團隊尚未在報導中提出新的活動方案。",
-      "bullets_zh": [],
-      "source": {
-        "name": "中央社政治",
-        "url": "https://www.cna.com.tw/news/aipl/202611250340.aspx",
-        "published_at": "2026-11-25T23:17:28+08:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "事件核心在於選舉活動使用道路與市民通行權益之間的取捨。取消活動是處置決定，實際交通影響是否解除，仍須有道路恢復與現場作業完成的資訊才能判定。",
+      "editorial_analysis_zh": "管制的影響不只在硬體能否交付，也涉及雲端業者的用戶審查與專案融資；但個別交易受阻，不能直接等同整個區域的資料中心需求轉弱。",
       "supporting_sources": [
         {
-          "source_name": "中央社政治",
-          "source_title": "沈伯洋取消選前市民之夜　賴總統：睿智勇敢決定",
-          "source_url": "https://www.cna.com.tw/news/aipl/202611250341.aspx"
+          "source_name": "The Decoder",
+          "source_title": "Nvidia halts server shipments to Malaysia, Singapore, Thailand, and Indonesia after tighter US export controls",
+          "source_url": "https://the-decoder.com/nvidia-halts-server-shipments-to-malaysia-singapore-thailand-and-indonesia-after-tighter-us-export-controls/"
+        },
+        {
+          "source_name": "TechCrunch",
+          "source_title": "Nvidia hits pause on chip shipments to Southeast Asia",
+          "source_url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/"
+        },
+        {
+          "source_name": "中央社財經",
+          "source_title": "美國收緊AI晶片管制　駐泰業者：部分投資案暫停、對前景仍樂觀",
+          "source_url": "https://www.cna.com.tw/news/afe/202611260304.aspx"
         }
       ],
-      "source_evidence_note_zh": "本則整併中央社兩篇報導節錄，兩篇均為同一媒體來源。已取得資料記載的是取消活動及立即拆台的宣布，未提供舞台拆除完成或道路恢復通行的確認資訊。"
+      "source_evidence_note_zh": "已取得The Decoder報導正文，以及中央社兩篇報導、TechCrunch報導的節錄。中央社科技報導與The Decoder的出貨資訊均轉述《金融時報》，不視為兩份獨立證實；TechCrunch另轉述《華爾街日報》。未取得上述兩家原始報導全文，也未取得美國管制規則原文。"
     },
     {
-      "id": "2026-11-26-midday:event-19",
-      "original_id": "event-19",
-      "category": "taiwan",
+      "id": "2026-11-27-midday:event-08",
+      "original_id": "event-08",
+      "category": "world",
       "is_headline": false,
-      "title_zh": "九合一選舉、公投28日投票　游盈隆估午夜前完成計票",
-      "lede_zh": "九合一選舉與「廢除非核家園」公投將於11月28日投、開票。中選會主委游盈隆25日視察台北市選務整備時表示，有信心在投票日午夜12時前完成開票計票，並以提前完成為目標；這是選前預估，並非已完成的結果。\n\n中選會公布，游盈隆依序走訪信義、南港及北投區選務作業中心，也勘查志願服務推廣中心、九如區民活動中心、稻香區民活動中心及桃源國中等投開票所設置地點。他表示，從核對選舉人名冊、引導領票與投票，到開票計票，各環節都攸關選舉公信力。\n\n對於完成計票的時間，游盈隆以民國111年地方公職人員選舉併辦投票案為參考，指出當時於晚間11時40分完成開票，預估這次不會晚於當時。他表示，選務團隊將憑藉過往經驗與連日整備，在兼顧正確與迅速的前提下完成作業。",
+      "title_zh": "哈薩克總統赴莫斯科AI大會，歡迎俄羅斯企業進入市場",
+      "lede_zh": "哈薩克總統托卡葉夫11月26日在莫斯科出席人工智慧（AI）大會，向俄羅斯總統普丁表示，歡迎俄羅斯聯邦儲蓄銀行（Sberbank）與科技集團Yandex進入哈薩克市場，並願協助俄羅斯企業發展業務。此行也有哈薩克AI企業家與負責AI事務的官員隨行。\n\nSberbank在大會上發表新版GigaChat AI模型與影片生成模型Kandinsky，並向兩國領袖展示搭載AI技術的Grin人形機器人。俄羅斯正推動AI產業，但美國因俄羅斯入侵烏克蘭實施的制裁，已中斷俄方進口訓練模型所需的美國製晶片；其超級電腦目前使用較舊版本的輝達晶片。\n\n哈薩克同時推進自身的運算建設。Freedom Holding在今年10月宣布，計劃投入20億美元建設「主權AI中心」。該公司領導人圖爾洛夫當時表示，已開始訂購首座運算叢集，將採用輝達B300晶片，最多配置300台伺服器，該叢集投資額達數億美元。這些仍是公司宣布的建設與採購計畫，並非已完成部署。\n\n俄羅斯近期另頒法令，允許企業經安全部門批准後使用海外資料中心。不過，Sberbank與Yandex尚未公開說明，是否將部分服務移往其他國家的資料中心，具體計畫仍不清楚。托卡葉夫的歡迎表態與哈薩克已宣布的AI投資，不能據此認定已形成供俄方使用的運算安排。",
       "bullets_zh": [],
       "source": {
-        "name": "中央社政治",
-        "url": "https://www.cna.com.tw/news/aipl/202611250307.aspx",
-        "published_at": "2026-11-25T20:35:09+08:00",
+        "name": "中央社國際",
+        "url": "https://www.cna.com.tw/news/aopl/202611270013.aspx",
+        "published_at": "2026-11-27T06:56:12+08:00",
         "reading_time_min": 1
       },
       "fetched_via": "publisher",
       "evidence_kind": "publisher-excerpt",
       "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "",
+      "editorial_analysis_zh": "這次互動呈現哈薩克推動本國AI建設、同時擴展俄企合作的方向；判讀合作程度時，仍須區分政治表態、企業投資計畫與實際運算服務安排。",
       "supporting_sources": [],
-      "source_evidence_note_zh": "來源為中央社報導正文節錄，未取得全文；選務整備與計票時間預估依報導所載中選會新聞稿及游盈隆說法整理。"
+      "source_evidence_note_zh": "本則僅取得中央社報導節錄，其中部分內容轉述路透社；未取得路透社原始報導全文、企業公告或俄羅斯法令原文。無其他已送入來源可供獨立交叉核對。"
     },
     {
-      "id": "2026-11-26-midday:event-20",
-      "original_id": "event-20",
-      "category": "taiwan",
-      "is_headline": false,
-      "title_zh": "施振榮APEC期間會晤美國務次卿　討論科技與安全供應鏈",
-      "lede_zh": "台灣APEC領袖代表施振榮在中國深圳出席經濟領袖會議期間，與美國國務院政治事務次卿胡克爾會面。外交部表示，雙方探討共同利益，重申台美長期以來的科技夥伴關係，並強調新興科技、安全供應鏈與共享經濟繁榮的機會。\n\n2026年APEC經濟領袖會議於11月18、19日在深圳舉行，施振榮代表總統賴清德出席。外交部於25日在社群平台X公布這場會面，說明雙方討論的合作方向。",
-      "bullets_zh": [],
-      "source": {
-        "name": "中央社政治",
-        "url": "https://www.cna.com.tw/news/aipl/202611260031.aspx",
-        "published_at": "2026-11-26T09:12:55+08:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "來源為中央社報導正文節錄，未取得全文；會面內容依報導所載外交部社群貼文整理，未另取得貼文原文或美方說明。"
-    },
-    {
-      "id": "2026-11-26-midday:event-21",
-      "original_id": "event-21",
+      "id": "2026-11-27-midday:event-09",
+      "original_id": "event-09",
       "category": "finance",
       "is_headline": false,
-      "title_zh": "台股重挫後早盤反彈逾900點　重返39000點",
-      "lede_zh": "台股11月26日開高反彈，早盤最高來到39176點，上漲逾900點，電子、金融與傳產類股同步走揚。前一交易日指數收盤大跌1926.92點，收在38195.43點、跌破年線，隔日早盤收復39000點關卡，但尚非收盤結果。\n\n個別電子權值股表現分歧。台積電開平後震盪走低，早盤低點為2135元，跌幅約0.7%；台達電上漲逾6%，最高1130元，大立光則攻上漲停價4425元。\n\n關稅消息也是市場關注焦點。行政院26日表示，美國對台灣的建議稅率為15%，不疊加最惠國關稅，且不再疊加強迫勞動301關稅，與日本、韓國、歐盟、瑞士等同屬最低稅率級別。這項說明涉及美方301條款調查提出的建議稅率，並非已實施的新稅率。\n\n資金面則呈現法人買賣分歧。25日三大法人合計賣超829.55億元，其中外資及陸資賣超1236.54億元，已連續8個交易日賣超；自營商賣超128.33億元，同樣連8賣。投信則逆勢買超535.32億元，連續兩個交易日買超。",
+      "title_zh": "歐積電德國廠估2027年底投產，人才移居帶動德勒斯登生活需求",
+      "lede_zh": "歐洲半導體製造公司（歐積電，ESMC）位於德國的首座晶圓廠，9月完成廠房主體結構工程，預計2027年底投產，供應歐洲汽車與工業晶片需求。隨工廠進入投產準備階段，台灣專業人才與家庭移居德國，也帶動住房、教育及簽證服務需求。\n\n歐積電由台積電與英飛凌、博世、恩智浦合資成立。德國《薩克森日報》估計，2027年將有500至800名台灣專業人才赴薩克森邦工作，部分人將攜家帶眷。這是媒體對後續人才移動的估計，並非已抵達人數。\n\n德勒斯登台商會會長蘇怡婷表示，隨歐積電建廠及上下游供應鏈布局，近兩年德勒斯登已增加近80戶台灣家庭，住房、餐飲、消費與生活服務需求也隨之成長。她觀察，不少工程師與企業外派人員全家移居，關心的不只是工作，還包括子女教育、語言、休閒活動，以及能否建立長期且有歸屬感的生活。\n\n相關服務也開始擴充。德國在台協會近期招募3名具中、英、德語能力的全職短期人員，預計於2027年2月至11月支援簽證申請受理、初步審查及諮詢。德國移居服務公司德商安拓國際顧問則在台北設立首個海外據點，協助台灣科技人才處理居留、租屋與子女就學事宜，讓赴德前的安頓準備能在台灣展開。",
       "bullets_zh": [],
       "source": {
         "name": "中央社財經",
-        "url": "https://www.cna.com.tw/news/afe/202611260033.aspx",
-        "published_at": "2026-11-26T09:20:00+08:00",
+        "url": "https://www.cna.com.tw/news/afe/202611270023.aspx",
+        "published_at": "2026-11-27T08:50:36+08:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "晶圓廠投產準備不只是工程與招募問題；家庭隨行使住房、就學與行政服務，成為跨國人才安頓的重要環節。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "本則僅取得中央社報導節錄，包含其轉述《薩克森日報》的人才人數估計與受訪者觀察；未取得德媒原始全文、工廠公告或德國在台協會招募網頁。人才預估與家庭增加數分屬不同來源說法，不能合併計算。"
+    },
+    {
+      "id": "2026-11-27-midday:event-10",
+      "original_id": "event-10",
+      "category": "finance",
+      "is_headline": false,
+      "title_zh": "白宮官員：川普擬12月4日出席台積電鳳凰城擴廠動土",
+      "lede_zh": "美國總統川普計劃於12月4日前往亞利桑那州鳳凰城，出席台積電擴廠動土儀式並發表談話。白宮官員向哥倫比亞廣播公司透露這項安排，行程目前仍屬預定計畫。\n\n官員表示，新的擴建廠房預計提供超過1萬個職位，並在周邊社區間接創造1萬1000個就業機會。這些數字是官員提出的就業估計，並非已實現的聘僱成果。\n\n亞利桑那州州長霍布斯，以及該州選出的聯邦參議員凱利、加勒戈是否出席，目前尚不清楚。已取得的資訊也未交代此次擴建的投資金額、產能與完工時間，尚不足以評估其完整經濟效益。",
+      "bullets_zh": [],
+      "source": {
+        "name": "中央社國際",
+        "url": "https://www.cna.com.tw/news/aopl/202611270014.aspx",
+        "published_at": "2026-11-27T07:07:15+08:00",
         "reading_time_min": 1
       },
       "fetched_via": "publisher",
       "evidence_kind": "publisher-excerpt",
       "evidence_note_zh": "依來源可讀節錄整理。",
       "editorial_analysis_zh": "",
-      "supporting_sources": [
-        {
-          "source_name": "中央社財經",
-          "source_title": "感恩節前美科技股走弱　301新關稅成台股變數",
-          "source_url": "https://www.cna.com.tw/news/afe/202611260021.aspx"
-        }
-      ],
-      "source_evidence_note_zh": "來源為中央社兩篇報導的正文節錄，未取得全文，也無其他媒體或交易所原始資料交叉核對。行情資料截至11月26日早盤；法人買賣數據為11月25日資料。"
+      "supporting_sources": [],
+      "source_evidence_note_zh": "本則依中央社報導節錄整理；其中行程與就業估計來自哥倫比亞廣播公司引述的白宮官員說法。未取得哥倫比亞廣播公司原文、白宮行程公告或台積電擴建計畫文件。"
     },
     {
-      "id": "2026-11-26-midday:event-22",
-      "original_id": "event-22",
-      "category": "culture",
+      "id": "2026-11-27-midday:event-11",
+      "original_id": "event-11",
+      "category": "technology",
       "is_headline": false,
-      "title_zh": "Etsy釐清AI條款：不以仿製商品為目的訓練模型，仍有創作者計畫離開",
-      "lede_zh": "Etsy修改人工智慧相關服務條款引發賣家反彈後，執行長Kruti Patel Goyal出面澄清，公司不會以製作賣家商品仿製品為目的訓練AI模型。她也承認，團隊原本應更充分說明條款更新對創作內容的意義。\n\n爭議源於11月提出的新條款，內容授權Etsy及其第三方合作夥伴、供應商，使用使用者內容開發、訓練、測試與改善AI及機器學習技術，包括改善服務或維護安全，並受隱私政策所列適用退出權利約束。Goyal表示，更新是為了反映平台用來改善賣家工具與社群體驗的技術；這項說明並不等同全面排除內容用於AI訓練。\n\n澄清仍未消除部分創作者疑慮。專業插畫家、Etsy賣家Aaron Meshon向Ars Technica表示，平台雖稍微收斂AI相關措辭，對他而言仍只是表面修飾。他計畫於12月1日關閉經營15年的商店，並估計因此損失約兩成年度收入，相當於數期房貸支出。\n\nMeshon也批評公告時機，認為年底假期前是許多零售商的重要營收期，不宜在此時推動引發疑慮的變更。這是個別賣家的回應，不能據此推定所有創作者都將退出平台。",
+      "title_zh": "愛沙尼亞評估14款雲端與AI工具　籲停用DeepSeek等3款服務",
+      "lede_zh": "愛沙尼亞司法暨數位事務部近日公布14款雲端及人工智慧工具的安全評估，將DeepSeek、通義千問與愛沙尼亞本土平台Botastico列為紅燈，呼籲政府機關、企業及家庭停止使用。評估採紅、黃、綠燈分級；部長帕科斯塔表示，政府機關此前已禁止使用DeepSeek。\n\n對DeepSeek，部會提出的疑慮包括資料在中國境內處理、安全措施與資料次處理商資訊有限，以及缺乏符合規範的獨立證據，另涉及中國法律適用、審查與影響風險。通義千問則因用戶資料可能在中國境內處理、用於訓練AI模型而被列為紅燈。這些是評估單位對資料治理與安全的判斷，不等於已證實發生資料外洩。\n\nBotastico同樣未通過評估。評估人員指出，業者未能提出符合ISO/IEC 27001或愛沙尼亞資安標準的證明，也缺少保密條款，部分資料處理流程不夠透明。\n\nGoogle Gemini、微軟Copilot及Mistral Vibe獲得綠燈；Cursor、GitHub Copilot、Google翻譯與ChatGPT則列在綠燈或黃燈之中，現有資料未逐一列明其等級。參與評估的Cybernetica資訊安全研究所所長波達諾夫提醒，綠燈不代表用戶可免除自行查核責任，因為服務條款與安全功能可能隨時改變。",
+      "bullets_zh": [],
+      "source": {
+        "name": "中央社科技",
+        "url": "https://www.cna.com.tw/news/aopl/202611270015.aspx",
+        "published_at": "2026-11-27T07:13:17+08:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "這項評估凸顯，選用AI服務不只涉及模型能力與價格，也須檢視資料處理、契約保障及合規證據；安全分級可作為查核起點，不能取代持續審查。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "本則依中央社報導節錄整理，內容包含愛沙尼亞公共廣播公司報導及部會新聞稿說法；未取得完整評估文件、部會新聞稿原文或各業者回應，無法逐項核對評分方法與全部14款工具的分級。"
+    },
+    {
+      "id": "2026-11-27-midday:event-12",
+      "original_id": "event-12",
+      "category": "technology",
+      "is_headline": false,
+      "title_zh": "微軟分析：駭客以ARTEX串接既有工具　自動化網路攻擊",
+      "lede_zh": "微軟威脅情報分析指出，中國與北韓的國家支持駭客組織，以及以獲利為目的的犯罪集團，已將AI滲透測試框架ARTEX用於網路攻擊，包括供應鏈攻擊。微軟強調，這套框架並非發明新的攻擊技術，而是讓AI代理以極少的人工作業，串接並操作既有安全工具。\n\n依微軟說明，ARTEX可操作Nmap、Sqlmap、Metasploit與自動化瀏覽器等工具。其多代理架構會先把指令拆成可驗證的子目標，再由規劃代理依據持續更新的系統與漏洞資訊分派任務；執行結果回流後，又會觸發下一步行動，使偵察、入侵與資料竊取得以連續推進。\n\n微軟觀察到，自動化正壓縮防守方的反應時間。一個案例中，AI代理僅花5分鐘，就從搜尋GitHub上意外公開的憑證，進展到自Azure Key Vault取得資料。另在Storm-0940的一波攻擊中，微軟記錄超過15萬1000次密碼猜測失敗登入，最高每分鐘達2900次。\n\n防禦方面，微軟建議搭配嚴格存取控制、流量限制與遭入侵裝置的即時自動隔離，並利用誘餌系統及假憑證引導、偵測AI代理。微軟自家測試顯示，這類手段可降低真實系統承受的成功攻擊流量；不過，其長期效果仍未確定，防護成效也仰賴ARTEX目前會產生大量、較容易辨識的活動。",
+      "bullets_zh": [],
+      "source": {
+        "name": "The Decoder",
+        "url": "https://the-decoder.com/microsoft-details-how-state-backed-hackers-use-the-artex-ai-framework-to-automate-cyberattacks/",
+        "published_at": "2026-11-26T11:30:06+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-article",
+      "evidence_note_zh": "依來源文章整理。",
+      "editorial_analysis_zh": "此案的風險重點不是新漏洞本身，而是既有工具被自動化整合後，攻擊流程加速、人工介入減少。防守方需同時考量偵測速度與隔離能力，而不能只依賴固定的攻擊識別特徵。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "已取得The Decoder報導全文；文中技術觀察、攻擊案例與防禦測試主要來自微軟分析，未取得微軟原始報告或獨立驗證資料。本文未採用報導中僅屬懷疑的個別機構入侵歸因。"
+    },
+    {
+      "id": "2026-11-27-midday:event-13",
+      "original_id": "event-13",
+      "category": "society",
+      "is_headline": false,
+      "title_zh": "X新增青少年家長監護功能，保留私訊與搜尋紀錄隱私",
+      "lede_zh": "X新增青少年帳號的家長監護功能，讓家長與監護人設定使用時間、內容範圍及互動對象。公司表示，13至17歲使用者的帳號將預設採用保護模式，不顯示敏感內容，也不投放定向廣告；青少年仍保有帳號控制權，並可查看帳號受到哪些限制。\n\n家長可查看孩子每週使用X的時間、設定每日使用上限，並要求新增追蹤者須經核准。內容管理選項包括將動態推薦與影片限制為已追蹤帳號、過濾特定字詞，以及關閉敏感媒體內容。家長也能指定哪些人可以傳送私訊給孩子，並查看孩子正在與誰傳訊。\n\n不過，查看通訊對象不等於閱讀通訊內容。依X公布的功能設計，家長無法讀取青少年的私訊，也不能查看搜尋或瀏覽紀錄，或以孩子的身分發文。這套設計在擴大家長管理權限的同時，仍為青少年保留部分使用隱私；其實際保護效果則不能僅憑功能公布就下定論。",
+      "bullets_zh": [],
+      "source": {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/26/x-finally-gets-parental-controls-after-20-years/",
+        "published_at": "2026-11-26T19:31:50+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-article",
+      "evidence_note_zh": "依來源文章整理。",
+      "editorial_analysis_zh": "家長能管理使用時間與互動範圍，但不能讀取私訊。區分這兩種權限，有助家庭理解監護工具的用途與隱私界線。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "本則依已取得的TechCrunch完整報導整理。功能與權限說明來自報導所載X公司說法，未取得獨立實測或其他來源交叉查證。"
+    },
+    {
+      "id": "2026-11-27-midday:event-14",
+      "original_id": "event-14",
+      "category": "technology",
+      "is_headline": false,
+      "title_zh": "Z.AI與Moonshot AI旗艦模型傳延後，另尋訓練資料與歐洲算力",
+      "lede_zh": "中國AI業者Z.AI與Moonshot AI的新一代旗艦模型傳出可能延後推出。消息人士指出，Z.AI原訂11月推出、約有3兆參數的GLM-5.5，可能延至2027年第一季；Moonshot AI若無法取得境外算力，開發週期可能從6個月拉長至12個月，使Kimi K4延至2027年年中。\n\n在旗艦模型進度出現變數之際，Z.AI已先推出7500億參數的GLM-5.4作為銜接。公司宣稱，新設計讓這款模型能與2兆至3兆參數的系統競爭；這是業者對自家產品的說法，不能直接視為已獲獨立驗證的效能結論。\n\n訓練資料與算力取得也出現調整。報導指出，OpenAI與Anthropic阻擋用於模型蒸餾的資料擷取後，Moonshot正轉向Google與Meta的最新模型取得訓練資料，並加強尋找歐洲的運算資源。上述開發週期與發布時間仍屬消息人士預估，不能視為已確定的推出日期。",
+      "bullets_zh": [],
+      "source": {
+        "name": "The Decoder",
+        "url": "https://the-decoder.com/after-openai-and-anthropic-shut-the-door-on-their-data-a-chinese-ai-developer-is-turning-to-google-and-meta-instead/",
+        "published_at": "2026-11-26T15:45:08+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "這起進度變化涉及訓練資料與運算資源兩個環節。觀察重點不只是發布日期是否延後，也包括替代資料與算力能否支撐後續開發；目前證據尚不足以判定結果。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "本則僅取得The Decoder的報導節錄，未取得全文。節錄中的模型時程與資源動向援引路透社消息人士；本次未取得路透社原始報導，也未取得公司公告或獨立評測供交叉核對。"
+    },
+    {
+      "id": "2026-11-27-midday:event-15",
+      "original_id": "event-15",
+      "category": "technology",
+      "is_headline": false,
+      "title_zh": "OpenAI修正計費折扣錯誤，Astra與Sol用戶將更快達使用上限",
+      "lede_zh": "OpenAI修正GPT-6.2推出期間的計費折扣錯誤後，使用Astra與Sol的用戶將比前一週更快觸及使用上限。OpenAI Codex工程師Thibault Sottiaux表示，先前錯誤讓多數用戶取得不正確的折扣；修正後，Astra觸及上限的速度將加快40%，Sol則加快25%。\n\n依Sottiaux的說明，修正後的配額仍應比使用GPT-6 Astra與GPT-6.1 Sol時更耐用，其他模型則未受這次錯誤影響。OpenAI也不會追溯收取先前的差額。這次變化涉及折扣計算與配額消耗，不能直接解讀為模型效能下降，或所有訂閱方案一律漲價。\n\n補償方面，Go、Plus、Pro及Business訂閱用戶將額外獲得一次可保留的配額重設機會；Business用戶另可免費使用Fast Mode至年底。對付費用戶而言，最直接的變化是相較前一週更快用盡配額，而非被追討先前因錯誤折扣產生的費用。",
+      "bullets_zh": [],
+      "source": {
+        "name": "The Decoder",
+        "url": "https://the-decoder.com/gpt-6-2-astra-users-now-hit-limits-40-faster-after-openai-patched-a-pricing-error/",
+        "published_at": "2026-11-26T17:28:56+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "判讀這次調整時，須區分觸及配額上限的速度、訂閱價格與模型能力，避免將計費修正誤認為全面漲價或效能變動。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "本則僅取得The Decoder的報導節錄，未取得全文。計費錯誤、配額變化與補償措施均依節錄所載OpenAI工程師說明，未取得原始公告、完整方案條款或獨立驗證。"
+    },
+    {
+      "id": "2026-11-27-midday:event-16",
+      "original_id": "event-16",
+      "category": "science",
+      "is_headline": false,
+      "title_zh": "泥炭地排水改變碳排放　新研究追溯土地利用的氣候影響",
+      "lede_zh": "泥炭地被排水、轉作農業或其他用途後，原本儲存在土壤中的碳會如何影響氣候？由MIT的Jevan Yu帶領的新研究，運用泥炭地氣體排放資料建立全球模型，追溯歷史排水造成的水位變化，分析二氧化碳與甲烷排放如何隨之改變。\n\n研究人員指出，全球泥炭儲存約6,000億噸碳，比全球活體植被含有的碳還多。這類環境長期積水，水中氧氣很快耗盡，有機物主要由分解速度較慢、且無法完全分解有機物的厭氧細菌處理，因此大量碳得以留存在泥炭中，但仍有部分以甲烷形式逸散。\n\n排水會改變這個平衡。開挖溝渠使水位下降後，暴露的泥炭接觸氧氣，好氧細菌活動增加；甲烷排放雖然減少，二氧化碳排放卻大幅增加。研究團隊利用近期排放量測研究建立模型，再結合歷史水位重建資料，從1800年起模擬這些變化。兩種氣體對水位下降的反應並不相同，二氧化碳的反應也存在地區差異。\n\n研究另將模型推算至2100年，顯示即使水位維持在2020年的狀態，過去排水所啟動的碳釋放仍會持續，氣候影響可能進一步擴大。依研究的情境分析，恢復部分泥炭地水位可減緩影響增加的速度，更積極的復育則可能使影響略低於2020年水準；這些是模型條件下的推估，而非已經發生的復育成果。",
       "bullets_zh": [],
       "source": {
         "name": "Ars Technica",
-        "url": "https://arstechnica.com/tech-policy/2026/11/etsy-clarifies-ai-terms-after-seller-backlash/",
-        "published_at": "2026-11-25T17:12:57+00:00",
+        "url": "https://arstechnica.com/science/2026/11/draining-peatlands-is-responsible-for-a-few-percent-of-our-global-warming/",
+        "published_at": "2026-11-26T12:15:42+00:00",
         "reading_time_min": 1
       },
       "fetched_via": "publisher",
       "evidence_kind": "publisher-excerpt",
       "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "平台承諾不以仿製商品為目的訓練模型，與全面禁止內容用於AI訓練，是不同範圍的承諾。創作者評估授權與收入風險時，仍須區分公司說明與條款實際涵蓋的用途。",
+      "editorial_analysis_zh": "這項研究凸顯，評估土地利用的氣候影響，不能只看排水當下，也須考慮泥炭後續持續分解，以及二氧化碳與甲烷排放的不同變化。",
       "supporting_sources": [],
-      "source_evidence_note_zh": "本則依據已取得的Ars Technica報導節錄撰寫，非報導全文；條款、公司說明及賣家回應均來自該節錄，未另取得Etsy官方公告或完整條款核對。"
+      "source_evidence_note_zh": "依Ars Technica報導節錄整理，未取得其所述Nature研究原文，未獨立核對論文方法與數據。"
     },
     {
-      "id": "2026-11-26-midday:event-23",
+      "id": "2026-11-27-midday:event-17",
+      "original_id": "event-17",
+      "category": "finance",
+      "is_headline": false,
+      "title_zh": "台股27日早盤漲逾200點後回到平盤震盪　衛星題材股走強",
+      "lede_zh": "台股11月27日開高，早盤一度上漲逾200點，隨後回到平盤附近震盪。台積電上漲15元至2,160元，台達電、鴻海與聯發科則在平盤或小跌之間，權值股走勢並未同步向上。\n\n個股表現方面，國巨一度勁揚逾4%後壓回，衛星題材股則相對強勢，華通、萬泰科、萊德光電漲停，燿華、元晶、兆赫、穩懋及昇達科等也上揚。這些均為早盤行情，並非當日收盤結果。\n\n前一交易日，市場對美國301調查關稅的疑慮緩解，台股26日上漲956.38點，收在39,151.81點，成交值為新台幣8,174.67億元。不過，法人操作方向分歧：外資及陸資賣超491.81億元、連續第9個交易日賣超；自營商買超128.65億元，終止連8賣，投信則買超230.51億元、連3買。\n\n美股因感恩節休市，台指期盤後指數收平盤39,492點，台積電期貨上漲9元至2,168元。盤前投顧分析認為，台股若要由區間整理轉為緩步墊高，仍須觀察法人調節力道是否趨緩，以及權值股能否回穩；法人也提醒，假期前賣壓與選舉不確定性可能使盤勢震盪。",
+      "bullets_zh": [],
+      "source": {
+        "name": "中央社財經",
+        "url": "https://www.cna.com.tw/news/afe/202611270029.aspx",
+        "published_at": "2026-11-27T09:15:49+08:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "前一日指數大漲與外資持續賣超同時存在，27日早盤又出現權值股與題材股表現分歧，不能僅憑開盤漲幅判定整體買盤已全面轉強。",
+      "supporting_sources": [
+        {
+          "source_name": "中央社財經",
+          "source_title": "美股休市台積電期貨上揚　台股拚緩步墊高",
+          "source_url": "https://www.cna.com.tw/news/afe/202611270018.aspx"
+        }
+      ],
+      "source_evidence_note_zh": "依中央社財經兩篇報導節錄整併，分別為27日盤前背景與早盤行情，未取得當日收盤資料。"
+    },
+    {
+      "id": "2026-11-27-midday:event-18",
+      "original_id": "event-18",
+      "category": "taiwan",
+      "is_headline": false,
+      "title_zh": "台北市長選前活動分流　沈伯洋改採直播、蔣萬安規劃凱道造勢",
+      "lede_zh": "台北市長選戰進入最後階段，兩名候選人的11月27日選前活動採取不同安排。民進黨候選人沈伯洋取消原訂仁愛路的實體晚會，改為白天走訪台北各處與市民聊天、晚間線上直播；尋求連任的台北市長蔣萬安則預定在凱達格蘭大道舉辦造勢活動，晚間7時開始。\n\n沈伯洋團隊原規劃在仁愛路4段、靠近國父紀念館一側舉辦選前之夜，考量交通影響等因素，決定拆除已架設的舞台設備。沈伯洋26日晚間與前總統蔡英文直播時宣布，27日將在不同時間出現在台北各處，相關資訊另以圖卡公布；晚間活動改為直播，也規劃提供民眾登記揪團觀看地點的系統。\n\n蔣萬安競選辦公室公布，凱道活動晚間6時開放入場，預定由立法院長韓國瑜、新北市長侯友宜、前台北市長郝龍斌等人助講，蔣萬安於晚間9時20分進場，發表約15分鐘演講。競辦將活動命名為「勝選之夜」，這是選前活動名稱，並非選舉結果。警方表示，配合活動，自26日晚間10時起至28日上午實施交通疏導管制。\n\n沈伯洋也在26日公布競選影片「講下去，台北才會更好」，由楊力州執導、吳念真聲音演出，沈伯洋女兒小麻糬獻聲。競辦影片以掃街、傾聽市民與互動為敘事主軸，屬陣營呈現候選人形象的競選內容。\n\n在26日的直播對談中，蔡英文以「雞婆」形容沈伯洋，認為他願意幫助別人的性格適合擔任市長。沈伯洋則在直播最後宣稱，最高有27萬人同時收看。這項收視數字來自候選人公布，不能直接視為支持度或投票結果。",
+      "bullets_zh": [],
+      "source": {
+        "name": "中央社政治",
+        "url": "https://www.cna.com.tw/news/aipl/202611260295.aspx",
+        "published_at": "2026-11-26T20:59:30+08:00",
+        "reading_time_min": 2
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "兩方活動安排直接影響市民參與方式與周邊交通；現場造勢、線上收視及競選影片各有不同功能，不宜將活動聲量等同選情判斷。",
+      "supporting_sources": [
+        {
+          "source_name": "中央社政治",
+          "source_title": "蔡英文稱沈伯洋「雞婆」適合當市長　直播對談吸27萬人",
+          "source_url": "https://www.cna.com.tw/news/aipl/202611260319.aspx"
+        },
+        {
+          "source_name": "中央社政治",
+          "source_title": "蔣萬安「勝選之夜」27日凱道登場　韓國瑜侯友宜郝龍斌助講",
+          "source_url": "https://www.cna.com.tw/news/aipl/202611260287.aspx"
+        },
+        {
+          "source_name": "中央社政治",
+          "source_title": "沈伯洋釋出最新影片　吳念真旁白、小麻糬獻聲",
+          "source_url": "https://www.cna.com.tw/news/aipl/202611260286.aspx"
+        }
+      ],
+      "source_evidence_note_zh": "依中央社政治四篇報導節錄整併，未另取得完整直播、競選影片或警方交通管制公告；直播收視數字依報導保留沈伯洋自述歸屬。"
+    },
+    {
+      "id": "2026-11-27-midday:event-19",
+      "original_id": "event-19",
+      "category": "taiwan",
+      "is_headline": false,
+      "title_zh": "新北選戰衝刺：朱立倫、侯友宜接力助李四川　蘇巧慧車掃提建設主張",
+      "lede_zh": "新北市長選戰進入最後掃街階段，國民黨候選人李四川11月26日由前市長朱立倫、市長侯友宜接力陪同拜票；民進黨候選人蘇巧慧則從淡水出發，下午前往三重、蘆洲，以全天車隊掃街爭取支持。\n\n朱立倫下午陪同李四川行經鶯歌、三峽、土城及板橋，由各選區國民黨籍市議員候選人接力參與；侯友宜晚間則與立委林德福、新北市議會副議長陳鴻源，陪同李四川走訪永和樂華夜市。李四川以市政延續為訴求，表示捷運三鶯線、新北市美術館及新北市立土城醫院，是從朱立倫到侯友宜一棒接一棒完成的建設，承諾未來在此基礎上接棒。\n\n蘇巧慧在三重、蘆洲與立委林淑芬、李坤城及多名市議員共同車掃。她表示，位於三重的新北市第二行政中心即將啟用，未來將透過「三重2.0」計畫，加速推動三重聯醫第三醫療大樓、銀新未來城、市立圖書館第二總館及三重第二運動中心等建設；另承諾加速蘆洲南北側都市計畫，並重申反對三重果菜市場遷往蘆洲。\n\n蘇巧慧也預告，11月27日上午將由高雄市長陳其邁陪同，前往板橋接雲寺參香及車掃；當晚選前之夜則預定由總統賴清德、前總統蔡英文到場助選。",
+      "bullets_zh": [],
+      "source": {
+        "name": "中央社政治",
+        "url": "https://www.cna.com.tw/news/aipl/202611260303.aspx",
+        "published_at": "2026-11-26T21:39:52+08:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "本則依已取得的中央社報導正文節錄整理，並非全文；本次僅有此一來源，未取得其他來源交叉核對。11月27日助選活動為報導中的預定行程。"
+    },
+    {
+      "id": "2026-11-27-midday:event-20",
+      "original_id": "event-20",
+      "category": "taiwan",
+      "is_headline": false,
+      "title_zh": "賴清德赴中壢挺黃世杰　桃園建設與產業布局成造勢訴求",
+      "lede_zh": "民進黨桃園市長候選人黃世杰11月26日晚間在中壢舉辦「南桃園大團杰造勢晚會」，總統兼民進黨主席賴清德到場助選，主張由黃世杰為桃園尋找新的發展動力。黃世杰則提出產業、交通與居住政策，並批評現任市長張善政任內的投資推動情況。\n\n賴清德將地方治理能力作為助選主軸，認為張善政的專長在中央事務與決策，地方首長則須處理民眾日常面對的問題；他批評桃園過去4年建設推展不順、不符期待，並稱黃世杰獲提名後全力投入、走遍各行政區，呼籲支持者出門投票。內政部長劉世芳、民進黨前主席許信良等人也出席晚會。\n\n黃世杰在會中指控，張善政讓台積電一度放棄進駐龍科三期，延宕桃園發展；他也將美光投資疑慮及群聯放棄在桃園設置研發據點的計畫，列為批評現任市政的事例。上述企業投資變化及其與市政之間的因果關係，均屬黃世杰在競選場合提出的說法。\n\n政策方面，黃世杰表示，要以高科技業與未來趨勢帶動桃園產業布局，並改善大眾運輸、推動社會住宅及婚育宅。他列出的施政方向還包括特色公園、寵物照顧、運動發展、藝文展演、特色醫療與醫護安居。",
+      "bullets_zh": [],
+      "source": {
+        "name": "中央社政治",
+        "url": "https://www.cna.com.tw/news/aipl/202611260305.aspx",
+        "published_at": "2026-11-26T21:43:57+08:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "本則依已取得的中央社報導正文節錄整理，並非全文，未有其他獨立來源交叉核對。取得內容未含張善政或相關企業對競選指控的回應，也未提供可核實投資變化原因的資料。"
+    },
+    {
+      "id": "2026-11-27-midday:event-21",
+      "original_id": "event-21",
+      "category": "taiwan",
+      "is_headline": false,
+      "title_zh": "黃國昌、鄭麗文同台挺張啓楷　王美惠規劃嘉義市選前車隊活動",
+      "lede_zh": "嘉義市長選戰進入最後衝刺，民眾黨候選人張啓楷11月26日晚間在中央廣場舉辦造勢大會，民眾黨主席黃國昌與國民黨主席鄭麗文共同站台。民進黨候選人王美惠同日持續與同黨市議員候選人車隊掃街，並邀市民參與隔天的選前之夜活動。\n\n張啓楷的造勢晚會另有嘉義市長黃敏惠、前內政部長李鴻源、資深媒體人趙少康，以及民眾黨、國民黨立法院黨團部分立委和市議員候選人出席。黃國昌肯定黃敏惠任內的經濟與市政表現，主張由張啓楷接棒延續；鄭麗文則以藍白合作為訴求，呼籲支持者催票、拉票。兩人的助講都將市政延續列為支持張啓楷的理由。\n\n王美惠則以車隊穿梭嘉義市街道，向沿途民眾拜票。她透過新聞稿表示，連日掃街感受到鄉親的熱情與鼓勵；競選團隊也將車掃畫面剪輯成影片，發布於網路社群平台。\n\n依王美惠競選團隊規劃，11月27日選前之夜將於晚間6時30分從公明路競選總部前出發，以車隊繞行嘉義市區，最後抵達中山路中央噴水池圓環北側，邀請民眾一同參與。",
+      "bullets_zh": [],
+      "source": {
+        "name": "中央社政治",
+        "url": "https://www.cna.com.tw/news/aipl/202611260308.aspx",
+        "published_at": "2026-11-26T22:02:03+08:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "本則依已取得的中央社報導正文節錄整理，並非全文；本次僅有此一來源，未取得其他來源交叉核對。王美惠的掃街感言與選前之夜規劃，為報導所載本人及競選團隊說法；11月27日活動尚屬預定行程。"
+    },
+    {
+      "id": "2026-11-27-midday:event-22",
+      "original_id": "event-22",
+      "category": "taiwan",
+      "is_headline": false,
+      "title_zh": "花蓮縣長選戰掃街密集　游淑貞、魏嘉賢27日晚間路線重疊",
+      "lede_zh": "花蓮縣長選戰進入密集掃街階段，無黨籍候選人張峻11月26日在花蓮市區舉行遊行，行政院政務委員季連成、和碩集團董事長童子賢陪同。國民黨候選人游淑貞與無黨籍候選人魏嘉賢則預告，27日晚間都將在市區金三角一帶遊行，部分路線重疊。\n\n張峻陣營規劃連續兩晚活動，26日從石來運轉集結，步行至和平路後折返福町路、重慶路口；27日晚間預計從競選總部出發，在吉安鄉掃街。張峻表示，金三角商圈多間店面出租，希望推動花蓮經濟與觀光復甦。季連成表示，特別請假兩天支持張峻，希望翻轉花蓮政治生態。\n\n游淑貞26日由立法院國民黨團總召傅崐萁、花蓮縣長徐榛蔚陪同，前往豐濱鄉及吉安鄉車隊掃街。她的陣營預告，27日晚間6時將從東大門夜市前的六期重劃區出發，繞行中山、中正及中華路，並以「拒絕污染性光電、拒絕黑金」作為活動訴求。\n\n魏嘉賢26日在前衛生局長朱家祥陪同下，走訪光復、萬榮、壽豐、鳳林及吉安。27日晚間將與爭取花蓮市長連任的胞弟魏嘉彥共同掃街，預定6時30分從東大門夜市前福町路出發，行經路段與游淑貞陣營部分重疊。",
+      "bullets_zh": [],
+      "source": {
+        "name": "中央社政治",
+        "url": "https://www.cna.com.tw/news/aipl/202611260294.aspx",
+        "published_at": "2026-11-26T20:57:28+08:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "本則依已取得的中央社報導節錄整理，未取得全文或其他來源交叉核對；活動時間與路線為報導所載陣營預告。"
+    },
+    {
+      "id": "2026-11-27-midday:event-23",
       "original_id": "event-23",
-      "category": "finance",
+      "category": "taiwan",
       "is_headline": false,
-      "title_zh": "Flipkart執行長將於12月4日離任，產品與技術主管暫代",
-      "lede_zh": "印度電商Flipkart執行長Kalyan Krishnamurthy即將離任。Walmart發言人向TechCrunch確認，他在公司的最後工作日為12月4日；Flipkart表示，將於未來幾週公布接班人，在此之前由產品與技術長Balaji Thiagarajan暫時領導公司。\n\nKrishnamurthy於2015年從Flipkart早期投資者之一Tiger Global加入公司，2017年出任執行長。2018年Walmart以160億美元取得Flipkart控制性股權後，他繼續掌舵，至今在公司任職超過11年。Flipkart表示，在他領導期間，公司業務規模增至原先五倍以上。\n\nFlipkart目前擁有逾5億名註冊使用者，以及包含低價購物平台Shopsy在內的逾140萬名賣家，提供超過80類、逾1.5億項商品。公司近來也透過Flipkart Minutes拓展即時配送，並以Eat-in by Minutes進入餐飲外送業務。\n\n接手過渡期營運的Thiagarajan於去年9月加入Flipkart，負責產品與技術團隊。Walmart對於Krishnamurthy離職原因，以及這次領導層異動是否影響上市計畫，未在既有公告之外進一步說明；目前已公布的是暫代安排，正式接班人仍待揭曉。",
+      "title_zh": "鄭麗文、黃國昌同台助選謝龍介　主打烏山頭水庫光電議題",
+      "lede_zh": "國民黨台南市長候選人謝龍介11月26日晚間在競選總部前舉行「選前之夜」，國民黨主席鄭麗文、民眾黨主席黃國昌到場助選，以跨黨同台營造合作氣勢，並將烏山頭水庫光電案列為主要攻防議題。\n\n前立法院長王金平、前立委趙少康等人也出席並陸續發言。鄭麗文將烏山頭與翡翠水庫相提並論，表示台北市長蔣萬安阻擋中央在翡翠水庫設置光電板，行政院長卓榮泰也保證不會設置，並據此質疑兩座水庫的政策處理方式為何不同。\n\n鄭麗文進一步將討論延伸至核能與供電政策，宣稱核三廠發電量相當於1,000座烏山頭水庫的光電發電量，並質疑現行能源安排能否解決她所稱的缺電問題。這項發電量比較與供電判斷，均為她在助選場合提出的說法。\n\n黃國昌則表示，烏山頭水庫第一期光電板鋪設後，政府於2023年核准第二期籌設許可；他並主張，若非在野黨立委揭露並阻擋，第二期光電板已經鋪設。黃國昌以此呼籲選民，透過投票選擇台南未來的生活與施政方向。",
       "bullets_zh": [],
       "source": {
-        "name": "TechCrunch",
-        "url": "https://techcrunch.com/2026/11/25/flipkart-ceo-kalyan-krishnamurthy-to-step-down-next-week-amid-ipo-uncertainty/",
-        "published_at": "2026-11-25T13:08:19+00:00",
+        "name": "中央社政治",
+        "url": "https://www.cna.com.tw/news/aipl/202611260291.aspx",
+        "published_at": "2026-11-26T20:53:22+08:00",
         "reading_time_min": 1
       },
       "fetched_via": "publisher",
-      "evidence_kind": "publisher-article",
-      "evidence_note_zh": "依來源文章整理。",
-      "editorial_analysis_zh": "這次交接發生在Flipkart持續拓展即時配送與餐飲外送之際。暫代主管已確定，但正式接班人與後續經營方向仍有待公司公布，不能將人事異動直接解讀為上市時程改變。",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "",
       "supporting_sources": [],
-      "source_evidence_note_zh": "本則依據已取得的TechCrunch報導正文撰寫，僅有單一媒體來源；公司業務成長數字為Flipkart自述，未另取得官方公告或其他來源交叉核對。"
+      "source_evidence_note_zh": "本則依已取得的中央社報導節錄整理，未取得全文或其他來源交叉核對。節錄未附發電量比較依據、光電許可文件或相關機關回應，無法據此獨立確認台上說法，也不能認定已有污染、缺電或違法事實。"
     },
     {
-      "id": "2026-11-26-midday:event-24",
+      "id": "2026-11-27-midday:event-24",
       "original_id": "event-24",
-      "category": "technology",
+      "category": "taiwan",
       "is_headline": false,
-      "title_zh": "中國AI業者據報受晶片存取與反蒸餾措施影響，多項專案延誤",
-      "lede_zh": "中國AI業者據報正受到境外先進晶片存取限制，以及OpenAI、Anthropic反蒸餾措施的雙重影響。The Decoder報導指出，Deepseek、Moonshot AI與Alibaba等業者自9月以來面臨壓力，多項進行中的專案出現延誤。\n\n限制涉及中國企業遠端使用海外資料中心內的先進Nvidia晶片。報導稱，Moonshot AI已取消一筆涉及印尼Nvidia Blackwell晶片、價值1.5億美元的交易。另據報導，Deepseek研究人員10月曾在內部估計，若完全無法再進行蒸餾，其模型與美國頂尖模型的差距可能由三至六個月擴大至九個月；這是附帶條件的內部估計，不是已發生的結果。\n\n報導也指出，部分中國企業正嘗試透過非中國第三方租用算力，MiniMax、Mihoyo與Alibaba等公司則提高對中國國產晶片的依賴，並增加對自身強化學習訓練資料的投入。這些替代做法是否足以彌補限制帶來的影響，現有資料尚無法判定。",
+      "title_zh": "沈伯洋告傅崐萁名譽求償一審敗訴　稱已上訴、雙方對判決解讀分歧",
+      "lede_zh": "民進黨台北市長候選人沈伯洋因國民黨立委傅崐萁指控他收受索羅斯旗下資金，提起名譽損害訴訟、求償新台幣100萬元，台北法院一審判沈伯洋敗訴、傅崐萁免賠。沈伯洋11月26日表示，案件已上訴至第二審；雙方同日對一審判決理由提出不同解讀。\n\n沈伯洋在聯訪時表示，法官認定他確有研究及申請經費，但傅崐萁延伸指稱他拿錢是為了顛覆國家，法官認為說法過於離譜，一般人不會相信。沈伯洋不同意這項判斷，認為社會上仍有不少人相信相關說法，並稱謠言已流傳3年。\n\n傅崐萁則在國民黨花蓮縣黨部記者會反駁，主張判決認定其資金相關指控屬實且經過查證，他是在具體事實上作延伸評論，而不是因為「沒有人相信」才獲判免賠。他並要求沈伯洋說明資金流向、用途及成果。\n\n這起訴訟目前可確認的進展，是一審求償未獲支持，以及沈伯洋表示已提起上訴。至於法院如何區分資金相關陳述、延伸評論與名譽損害，雙方說法存在歧異，不能將任何一方的解讀直接視為法院判決理由的完整結論。",
       "bullets_zh": [],
       "source": {
-        "name": "The Decoder",
-        "url": "https://the-decoder.com/us-chip-access-curbs-and-anti-distillation-measures-are-reportedly-already-slowing-chinese-ai-labs/",
-        "published_at": "2026-11-25T20:51:02+00:00",
+        "name": "中央社政治",
+        "url": "https://www.cna.com.tw/news/aipl/202611260283.aspx",
+        "published_at": "2026-11-26T20:13:06+08:00",
         "reading_time_min": 1
       },
       "fetched_via": "publisher",
       "evidence_kind": "publisher-excerpt",
       "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "這起事件呈現算力取得與模型訓練方式同時受限的壓力，但個別公司的條件式估計，不能當成整體中國AI產業已落後多少的衡量。",
+      "editorial_analysis_zh": "",
       "supporting_sources": [],
-      "source_evidence_note_zh": "本則依據已取得的The Decoder報導節錄撰寫，內容轉述The Information，未取得後者原始報導。專案延誤、交易取消及內部估計均未獲其他已提供來源交叉驗證。"
-    },
-    {
-      "id": "2026-11-26-midday:event-25",
-      "original_id": "event-25",
-      "category": "technology",
-      "is_headline": false,
-      "title_zh": "Anthropic執行長反對交由AI治理社會：任務自動化不等於政治授權",
-      "lede_zh": "Anthropic執行長Dario Amodei公開否認支持人類向AI交出自由意志，並主張政治決策應留在人類手中。他在X發文表示，AI必須接受具有正當性的民主程序治理，不能為了效率或安全犧牲自主決定權；將社會治理交給AI，是他明確反對的方向。\n\n這場爭議涉及Axios的一項報導，指部分Anthropic員工相信，人類可以安全地將權力交給超級智慧系統，而且往往應該如此。這是對部分員工觀點的報導，不能直接視為公司的正式立場。Amodei則稱，把他描述成支持人類放棄自由意志，是荒謬的說法。\n\nAmodei將政治授權與具體任務的自動化區分開來。他以駕車、開發癌症藥物及撰寫完整軟體為例，認為AI承擔這些工作可能有益，但不代表人類應放棄政治上的自主權。他也承認，端到端自動化可能衝擊就業，某些領域的風險未必值得承擔；即使AI表現更好，人們仍可能希望親自參與重視的活動。\n\n另一條界線是AI在沒有人類協助下持續改進自身的能力。Amodei表示，這類過程可能需要限制，並稱在缺乏有意義的人類監督或理解下，不能預期讓Claude完全自主開發後續前沿模型是安全的。他同時批評競爭對手高喊人類控制權，卻仍持續推出自動化能力更強的產品；這是他的批評，並非已獲證實的產業共識。",
-      "bullets_zh": [],
-      "source": {
-        "name": "TechCrunch AI",
-        "url": "https://techcrunch.com/2026/11/25/anthropics-dario-amodei-calls-accusations-of-surrendering-human-control-to-ai-absurd/",
-        "published_at": "2026-11-25T19:44:24+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "爭議的核心不只是AI能完成多少工作，而是哪些決定可以委託、哪些權力必須由人類保留。執行長的公開立場，也需要與公司實際採用的監督及自動化方式分開檢視。",
-      "supporting_sources": [
-        {
-          "source_name": "The Decoder",
-          "source_title": "Anthropic CEO Dario Amodei says letting AI govern society would be \"a bad idea\"",
-          "source_url": "https://the-decoder.com/anthropic-ceo-dario-amodei-says-letting-ai-govern-society-would-be-a-bad-idea/"
-        }
-      ],
-      "source_evidence_note_zh": "依據TechCrunch AI與The Decoder已取得的報導節錄整理，兩者皆標示為publisher-excerpt，並非完整報導。未直接取得Amodei的X貼文或Axios原始報導；有關員工內部觀點與發文內容，限於這些節錄所載資訊。"
-    },
-    {
-      "id": "2026-11-26-midday:event-26",
-      "original_id": "event-26",
-      "category": "technology",
-      "is_headline": false,
-      "title_zh": "Anthropic企業研究：AI導入成效受人工審查與組織瓶頸牽制",
-      "lede_zh": "Anthropic一項企業訪談研究指出，AI導入工作的難關不只在工具能力，也在人工審查、員工阻力與既有流程。受訪者表示，研究涵蓋的部署案例中，55%提高了產出或品質，但19%仍未帶來商業價值，原因包括內部瓶頸、審查耗盡省下的時間，以及效果不明。\n\n這項質性研究對58家美國公司進行66次面對面訪談，涵蓋近300項AI部署，產業包括法律、營建、金融、醫療與製造。所有參與企業都是Anthropic客戶，研究作者明言樣本不具代表性，因此不能把結果解讀成整體企業的AI採用率或普遍成效。\n\n研究中，AI產出仍需人工檢查的負擔被提及49次，員工阻力與專家審查、測試需求也頻繁出現。部分案例顯示，單一環節加速不代表整體流程改善：一家工業設備商雖能用AI將產品介面翻成10種語言，卻因員工無法處理相應語言的客服需求，最後關閉該功能。\n\n就業疑慮也影響配合意願。受訪企業中，約三分之二表示因AI而減少招募；研究並描述，專業員工被要求協助建立及審查可能取代自身工作的系統，因而產生公開或消極抵抗。這些是研究樣本中的經驗，不足以推估整體勞動市場的變化。\n\nAnthropic研究指出，較大的組織調整與受訪者自述的較高AI價值有所關聯，例如讓小團隊負責完整流程、把人力轉向品質審查與客戶關係，以及建立共用且安全的資料基礎設施。不過，這種關聯不等於已證明因果，研究也承認，調整組織並不能保證避免職位流失。",
-      "bullets_zh": [],
-      "source": {
-        "name": "The Decoder",
-        "url": "https://the-decoder.com/anthropic-study-shows-the-hardest-part-of-adopting-ai-at-work-has-little-to-do-with-learning-the-tools/",
-        "published_at": "2026-11-25T13:14:27+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "評估AI投資時，不能只計算生成內容或完成單一步驟的速度，也要納入審查、維護及跨部門承接成本。這份研究提供的是企業客戶的具體經驗，而不是AI必然提升或降低生產力的普遍結論。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "僅取得The Decoder的報導節錄（publisher-excerpt），未取得Anthropic研究原始報告。研究方法、比例及案例均依該節錄整理；成效屬受訪者自述，且樣本全為Anthropic客戶，不具整體企業代表性。"
-    },
-    {
-      "id": "2026-11-26-midday:event-27",
-      "original_id": "event-27",
-      "category": "technology",
-      "is_headline": false,
-      "title_zh": "Amazon與Meta據報協商開放Muse購物代理，廣告與搜尋呈現仍待談",
-      "lede_zh": "Amazon與Meta據報已進行多輪協商，討論讓Meta的AI購物代理Muse直接連接Amazon商店。雙方仍未敲定協議，搜尋結果如何呈現、廣告如何處理，是尚待解決的主要議題；任何協議還需要兩家公司執行長批准。\n\nAmazon在9月封鎖Muse存取後，使用者曾遇到無法購買商品、結帳時出現錯誤訊息的情況。Fortune援引知情人士的報導指出，Amazon擔心第三方購物代理削弱平台與消費者的直接關係，並讓購物流程繞過廣告。談判因此不只是技術串接，也涉及商品搜尋入口與廣告利益的安排。\n\nAmazon執行長Andy Jassy先前表示，透過第三方代理購物，尚未比直接向零售商購買更方便或更好，但並未排除開放存取。這項立場與正在進行的協商，仍不等於封鎖已解除。TechCrunch刊出報導時，Amazon與Meta尚未回覆其置評請求。",
-      "bullets_zh": [],
-      "source": {
-        "name": "TechCrunch AI",
-        "url": "https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse/",
-        "published_at": "2026-11-25T14:10:18+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "購物代理能否進入電商平台，牽涉的不只是替消費者完成訂單，也包括由誰呈現商品、安排廣告及維繫客戶關係。尚未敲定的條件，比單純宣布技術可以串接更具商業意義。",
-      "supporting_sources": [
-        {
-          "source_name": "The Decoder",
-          "source_title": "Amazon and Meta are in talks to end the block on Meta's AI shopping agent Muse in Amazon's online store.",
-          "source_url": "https://the-decoder.com/amazon-and-meta-are-in-talks-to-end-the-block-on-metas-ai-shopping-agent-muse-in-amazons-online-store/"
-        }
-      ],
-      "source_evidence_note_zh": "依據TechCrunch AI與The Decoder的報導節錄（publisher-excerpt）整理，未取得完整報導。兩篇有關協商的主要資訊均援引Fortune，不能視為兩項獨立證實；本次未直接取得Fortune原文，也未取得兩家公司對談判的正式確認。"
-    },
-    {
-      "id": "2026-11-26-midday:event-28",
-      "original_id": "event-28",
-      "category": "finance",
-      "is_headline": false,
-      "title_zh": "中古電動車成交較快　Cybertruck在研究卡車類周轉居首",
-      "lede_zh": "中古電動車在2026年10月的美國市場呈現較快成交速度。汽車搜尋與研究平台iSeeCars分析逾110萬筆車齡一至五年的中古車交易，發現Tesla Cybertruck平均上架39.1天便售出，在研究涵蓋的中古卡車中最快，低於卡車整體平均的65.5天；第二、三名分別為Ford Maverick Hybrid與Rivian R1T。\n\n這項研究依動力類型、車種及個別車型比較平均上架天數。純電動車平均為45.6天，比油電混合車的54.5天及汽油車的61天更短；成交速度最快的25款中古車中，有16款是純電動車，顯示較快的周轉並非只出現在Cybertruck。\n\n不過，電動車之間的表現仍有明顯落差。Cadillac Escalade IQ平均上架134.3天，是研究中成交最慢的車款，上架時間超過整體汽車業平均的兩倍。因此，純電動車整體成交較快，不能直接套用到每一款車。\n\niSeeCars分析師Karl Brauer向TechCrunch表示，高油價改變了消費者購車選擇，促使更多人考慮電動車或油電混合車；他也將Cybertruck的需求歸因於中古市場供給相對稀少，以及二手價格低於原廠建議售價。這些是分析師提出的解釋。研究涵蓋的10月交易，早於馬斯克11月宣布Tesla將在2027年停止生產Cybertruck，不能將該月成交速度解讀為停產消息帶動的結果。",
-      "bullets_zh": [],
-      "source": {
-        "name": "TechCrunch",
-        "url": "https://techcrunch.com/2026/11/25/the-canceled-tesla-cybertruck-is-the-fastest-selling-used-truck-in-america/",
-        "published_at": "2026-11-25T19:54:32+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-article",
-      "evidence_note_zh": "依來源文章整理。",
-      "editorial_analysis_zh": "平均上架天數反映成交速度，不等於銷售總量、保值程度或獲利。這份單月研究可用來觀察中古車周轉差異，但不足以判定個別品牌的整體經營表現。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "已取得TechCrunch報導全文；未取得iSeeCars原始研究，研究數據與分析師說法依該報導整理。"
+      "source_evidence_note_zh": "本則依已取得的中央社報導節錄整理，未取得全文、判決原文或上訴文件。判決理由與資金性質的相關說法均保留當事人歸屬，無法獨立核對。"
     }
   ],
   "breaking_news": [],
   "meta": {
-    "generated_at": "2026-11-26T11:22:02.113551+08:00",
-    "total_articles": 28,
+    "generated_at": "2026-11-27T11:17:09.295339+08:00",
+    "total_articles": 24,
     "schema_version": "2.0",
     "edition": "midday",
     "model": "gpt-6.1-sol",
     "source_mode": "publisher-articles",
     "reading_time_estimated": true
   },
-  "window_start": "2026-11-25T11:00:00+08:00",
-  "window_end": "2026-11-26T11:00:00+08:00",
+  "window_start": "2026-11-26T11:00:00+08:00",
+  "window_end": "2026-11-27T11:00:00+08:00",
   "publication": {
-    "published_at": "2026-11-26T12:00:01.735756+08:00",
-    "identity": "2026-11-26-midday",
-    "issue_sha256": "62bfda0adaf1978a75a757a797a3c7ebb47fed519c7025d91a6390eee060a3fb",
+    "published_at": "2026-11-27T12:00:04.391829+08:00",
+    "identity": "2026-11-27-midday",
+    "issue_sha256": "117e13aa87043466acd24c9d19ee42fa71794188815cfbaa3e840e3314b2844d",
     "legacy_archive_untouched": true
   }
 }
