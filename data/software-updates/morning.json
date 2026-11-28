@@ -1,137 +1,120 @@
 {
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "edition": "morning",
-  "generated_at": "2026-11-27T07:13:59.713344+08:00",
-  "items": [
-    {
-      "availability_zh": "開放條件請見官方公告",
-      "id": "3904d62f75a8d5f76d2876518b33fcab8817776df64039ec7be69dec1ec07b26",
-      "late_discovery": false,
-      "observed_at": "2026-11-26T23:00:04.933559+00:00",
-      "proof_sha256": "9c73d97d483a7914f32fe3afeba1d1e8b9a1fcdfabdf117027ed626f3ebb08a9",
-      "provider_id": "google",
-      "provider_name": "Google",
-      "published_at": "2026-11-26T18:00:00+00:00",
-      "published_date": null,
-      "source_kind": "official-feed-excerpt",
-      "source_url": "https://blog.google/company-news/outreach-and-initiatives/google-org/15-years-investing-colombia-talent-future/",
-      "status": "verified-summary",
-      "summary_zh": "Google 官方公告指出：Google 表示，在哥倫比亞迎來 15 週年之際，透過 Google.org 提供超過 100 萬美元資助，支持 AI 教育、小型企業、鄉村青年及災害救援。",
-      "title_zh": "持續 15 年投資哥倫比亞的人才與未來"
-    }
-  ],
+  "generated_at": "2026-11-28T07:13:16.510191+08:00",
+  "items": [],
   "kind": "official-software-updates",
   "news_minimum_applies": false,
   "publication": {
-    "identity": "2026-11-27-morning",
+    "identity": "2026-11-28-morning",
     "mode": "scheduled",
-    "published_at": "2026-11-27T08:01:34.195486+08:00",
-    "snapshot_sha256": "6d694ec6f4c8bef8559fe07e00b4aaec8183b82e2a50b1e197f0f72aa490483b"
+    "published_at": "2026-11-28T08:01:33.490750+08:00",
+    "snapshot_sha256": "0c65ec24309d8be9a033cd98b0b191e21b32df279b36a22adafdbdc71557c36f"
   },
   "schema_version": 1,
   "selection_applied": false,
   "source_health": [
     {
       "id": "official-google-blog",
-      "observed_at": "2026-11-26T23:00:04.933559+00:00",
+      "observed_at": "2026-11-27T23:00:07.376647+00:00",
       "provider_id": "google",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-google-notebook-seed",
-      "observed_at": "2026-11-26T23:00:09.101080+00:00",
+      "observed_at": "2026-11-27T23:00:11.084243+00:00",
       "provider_id": "google",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-google-api",
-      "observed_at": "2026-11-26T23:00:11.984214+00:00",
+      "observed_at": "2026-11-27T23:00:14.726007+00:00",
       "provider_id": "google",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-deepmind",
-      "observed_at": "2026-11-26T23:00:04.942162+00:00",
+      "observed_at": "2026-11-27T23:00:07.186031+00:00",
       "provider_id": "deepmind",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-claude-api",
-      "observed_at": "2026-11-26T23:00:04.946589+00:00",
+      "observed_at": "2026-11-27T23:00:07.376265+00:00",
       "provider_id": "anthropic",
       "reason_code": "collection-unavailable",
       "status": "unavailable"
     },
     {
       "id": "official-claude-app",
-      "observed_at": "2026-11-26T23:00:10.178120+00:00",
+      "observed_at": "2026-11-27T23:00:11.726581+00:00",
       "provider_id": "anthropic",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-openai-news",
-      "observed_at": "2026-11-26T23:00:06.083149+00:00",
+      "observed_at": "2026-11-27T23:00:08.277415+00:00",
       "provider_id": "openai",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-openai-api",
-      "observed_at": "2026-11-26T23:00:09.133744+00:00",
+      "observed_at": "2026-11-27T23:00:11.727950+00:00",
       "provider_id": "openai",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-xai-api",
-      "observed_at": "2026-11-26T23:00:06.379428+00:00",
+      "observed_at": "2026-11-27T23:00:08.776646+00:00",
       "provider_id": "xai",
       "reason_code": "collection-unavailable",
       "status": "unavailable"
     },
     {
       "id": "official-meta",
-      "observed_at": "2026-11-26T23:00:06.834769+00:00",
+      "observed_at": "2026-11-27T23:00:08.876768+00:00",
       "provider_id": "meta",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-mistral",
-      "observed_at": "2026-11-26T23:00:07.534743+00:00",
+      "observed_at": "2026-11-27T23:00:09.684198+00:00",
       "provider_id": "mistral",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-github",
-      "observed_at": "2026-11-26T23:00:07.735039+00:00",
+      "observed_at": "2026-11-27T23:00:10.031518+00:00",
       "provider_id": "github",
       "reason_code": "collection-unavailable",
       "status": "unavailable"
     },
     {
       "id": "official-windows",
-      "observed_at": "2026-11-26T23:00:07.982923+00:00",
+      "observed_at": "2026-11-27T23:00:10.672659+00:00",
       "provider_id": "windows",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-chatgpt-app",
-      "observed_at": "2026-11-26T23:00:11.986851+00:00",
+      "observed_at": "2026-11-27T23:00:14.378204+00:00",
       "provider_id": "openai",
       "reason_code": "collection-unavailable",
       "status": "unavailable"
     },
     {
       "id": "official-xai-news",
-      "observed_at": "2026-11-26T23:00:10.687795+00:00",
+      "observed_at": "2026-11-27T23:00:12.628134+00:00",
       "provider_id": "xai",
       "reason_code": "collection-unavailable",
       "status": "unavailable"
