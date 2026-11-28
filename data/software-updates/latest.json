@@ -1,120 +1,137 @@
 {
   "date": "2026-11-28",
-  "edition": "morning",
-  "generated_at": "2026-11-28T07:13:16.510191+08:00",
-  "items": [],
+  "edition": "evening",
+  "generated_at": "2026-11-28T19:05:43.535429+08:00",
+  "items": [
+    {
+      "availability_zh": "即將於印度推出。",
+      "id": "505f200c1ea374b69903b80fe38353f8d443b10129a76b13662c4df422fe1c20",
+      "late_discovery": true,
+      "observed_at": "2026-11-28T11:00:10.118955+00:00",
+      "proof_sha256": "2df9b99e4e1784b21d7ae27d33fb840e73fbb9e6e97adab6307805a773e335af",
+      "provider_id": "meta",
+      "provider_name": "Meta",
+      "published_at": "2026-11-27T12:33:00+00:00",
+      "published_date": null,
+      "source_kind": "official-feed-excerpt",
+      "source_url": "https://about.fb.com/news/2026/11/instagram-for-tv-comes-to-india-introducing-new-ways-to-watch-reels-together/",
+      "status": "verified-summary",
+      "summary_zh": "Meta 官方公告指出：Meta 表示，Instagram for TV 將把喜愛創作者的內容帶到家中大螢幕，讓使用者能與朋友一同觀看 Reels。",
+      "title_zh": "Instagram for TV 即將登陸印度，帶來一同觀看 Reels 的新方式"
+    }
+  ],
   "kind": "official-software-updates",
   "news_minimum_applies": false,
   "publication": {
-    "identity": "2026-11-28-morning",
+    "identity": "2026-11-28-evening",
     "mode": "scheduled",
-    "published_at": "2026-11-28T08:01:33.490750+08:00",
-    "snapshot_sha256": "0c65ec24309d8be9a033cd98b0b191e21b32df279b36a22adafdbdc71557c36f"
+    "published_at": "2026-11-28T20:01:28.350371+08:00",
+    "snapshot_sha256": "a69967b391784b5859f5276f3d9725a6226a574f66a0e6d2a112489989346b5d"
   },
   "schema_version": 1,
   "selection_applied": false,
   "source_health": [
     {
       "id": "official-google-blog",
-      "observed_at": "2026-11-27T23:00:07.376647+00:00",
+      "observed_at": "2026-11-28T11:00:08.822628+00:00",
       "provider_id": "google",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-google-notebook-seed",
-      "observed_at": "2026-11-27T23:00:11.084243+00:00",
+      "observed_at": "2026-11-28T11:00:12.882338+00:00",
       "provider_id": "google",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-google-api",
-      "observed_at": "2026-11-27T23:00:14.726007+00:00",
+      "observed_at": "2026-11-28T11:00:15.883015+00:00",
       "provider_id": "google",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-deepmind",
-      "observed_at": "2026-11-27T23:00:07.186031+00:00",
+      "observed_at": "2026-11-28T11:00:08.622811+00:00",
       "provider_id": "deepmind",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-claude-api",
-      "observed_at": "2026-11-27T23:00:07.376265+00:00",
+      "observed_at": "2026-11-28T11:00:08.819574+00:00",
       "provider_id": "anthropic",
       "reason_code": "collection-unavailable",
       "status": "unavailable"
     },
     {
       "id": "official-claude-app",
-      "observed_at": "2026-11-27T23:00:11.726581+00:00",
+      "observed_at": "2026-11-28T11:00:13.989435+00:00",
       "provider_id": "anthropic",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-openai-news",
-      "observed_at": "2026-11-27T23:00:08.277415+00:00",
+      "observed_at": "2026-11-28T11:00:09.826471+00:00",
       "provider_id": "openai",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-openai-api",
-      "observed_at": "2026-11-27T23:00:11.727950+00:00",
+      "observed_at": "2026-11-28T11:00:12.874759+00:00",
       "provider_id": "openai",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-xai-api",
-      "observed_at": "2026-11-27T23:00:08.776646+00:00",
+      "observed_at": "2026-11-28T11:00:10.221961+00:00",
       "provider_id": "xai",
       "reason_code": "collection-unavailable",
       "status": "unavailable"
     },
     {
       "id": "official-meta",
-      "observed_at": "2026-11-27T23:00:08.876768+00:00",
+      "observed_at": "2026-11-28T11:00:10.118955+00:00",
       "provider_id": "meta",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-mistral",
-      "observed_at": "2026-11-27T23:00:09.684198+00:00",
+      "observed_at": "2026-11-28T11:00:11.422441+00:00",
       "provider_id": "mistral",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-github",
-      "observed_at": "2026-11-27T23:00:10.031518+00:00",
+      "observed_at": "2026-11-28T11:00:11.622758+00:00",
       "provider_id": "github",
       "reason_code": "collection-unavailable",
       "status": "unavailable"
     },
     {
       "id": "official-windows",
-      "observed_at": "2026-11-27T23:00:10.672659+00:00",
+      "observed_at": "2026-11-28T11:00:11.622622+00:00",
       "provider_id": "windows",
       "reason_code": "collection-ok",
       "status": "ok"
     },
     {
       "id": "official-chatgpt-app",
-      "observed_at": "2026-11-27T23:00:14.378204+00:00",
+      "observed_at": "2026-11-28T11:00:15.774291+00:00",
       "provider_id": "openai",
       "reason_code": "collection-unavailable",
       "status": "unavailable"
     },
     {
       "id": "official-xai-news",
-      "observed_at": "2026-11-27T23:00:12.628134+00:00",
+      "observed_at": "2026-11-28T11:00:14.271973+00:00",
       "provider_id": "xai",
       "reason_code": "collection-unavailable",
       "status": "unavailable"
