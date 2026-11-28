@@ -1,0 +1,125 @@
+{
+  "schema_version": 2,
+  "issue_number": "2026-11-28-evening",
+  "issue_label_zh": "2026-11-28 科技晚報",
+  "date": "2026-11-28",
+  "edition": "evening",
+  "edition_label_zh": "科技晚報",
+  "date_display_zh": "2026年11月28日·星期六·科技晚報",
+  "weather_locations": [],
+  "tagline_zh": "由 AI 為你策展，掌握科技與時事",
+  "categories": [
+    {
+      "id": "robotics",
+      "name_zh": "機器人／具身智慧"
+    },
+    {
+      "id": "vc-business",
+      "name_zh": "產業深度／商業應用"
+    }
+  ],
+  "articles": [
+    {
+      "id": "2026-11-28-evening:event-01",
+      "original_id": "event-01",
+      "category": "robotics",
+      "is_headline": true,
+      "title_zh": "Embo募得1.1億美元種子資金，布局機器人世界模型",
+      "lede_zh": "機器人AI新創Embo取得1.1億美元種子資金，目標是開發能用於日常機器人的人工智慧模型。公司表示，這輪募資由Andreessen Horowitz領投，Khosla Ventures、DST Global與Nvidia參與投資。\n\nEmbo提出的開發路線，結合網路影片、模擬環境與實體機器人經驗。依公司說明，其統一模型先以大量網路影片進行預訓練，作為學習物體及物理互動方式的世界模型；接著在模擬情境中練習動作技能，再利用人形機器人群累積的經驗進行微調。\n\n公司將機器人在陌生情境中容易失敗的問題，列為研發要處理的重點，並表示正透過強化學習從頭訓練模型。改善陌生環境中的應對能力，是Embo提出的開發目標，不能視為這套方法已經達成的效能成果。",
+      "bullets_zh": [],
+      "source": {
+        "name": "The Decoder",
+        "url": "https://the-decoder.com/robotics-startup-embo-raises-110-million-in-seed-funding-to-build-world-model-ai-for-robots/",
+        "published_at": "2026-11-28T10:48:18+00:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "本次取得The Decoder報導節錄，非全文。投資參與者與訓練方法依公司說法；未取得獨立效能評測資料。"
+    },
+    {
+      "id": "2026-11-28-evening:event-02",
+      "original_id": "event-02",
+      "category": "vc-business",
+      "is_headline": false,
+      "title_zh": "OpenAI反訴蘋果竊取商業機密、阻礙供應商合作，蘋果否認",
+      "lede_zh": "OpenAI於11月27日向加州聯邦法院提出反訴，指控蘋果竊取商業機密，並勸阻硬體供應商參與其未來裝置的開發。蘋果否認透過重新聘僱員工取得OpenAI機密，也否認試圖打壓AI裝置製造領域的競爭。\n\nOpenAI在法院文件中表示，正在開發具備人工智慧功能的個人電子裝置，並指控蘋果回聘一名曾在OpenAI任職6個月的前員工，以取得機密資訊。依OpenAI說法，該員工任職期間能接觸一款新裝置的具體資訊，以及未來硬體產品的開發藍圖；這些內容屬於OpenAI提出的指控，而非法院認定。\n\n供應商合作也是反訴爭點。OpenAI提交的文件指稱，蘋果要求供應商列出為OpenAI執行的專案及負責員工名單，部分供應商因擔心失去蘋果生意，調整會議時間或地點。文件另稱，一家供應商把OpenAI的生產作業移至晚班，另一家則因蘋果的威脅而放棄合作，但未揭露這些供應商的名稱。\n\n這起反訴延續雙方先前的人才與技術爭議。今年7月，蘋果控告OpenAI及兩名前蘋果員工，指控他們不當挪用商業機密，協助OpenAI進軍消費性硬體市場；OpenAI與相關員工均否認指控。針對此次反訴，蘋果表示，OpenAI意在轉移外界對蘋果原有訴訟內容的注意力。",
+      "bullets_zh": [],
+      "source": {
+        "name": "中央社財經",
+        "url": "https://www.cna.com.tw/news/afe/202611280014.aspx",
+        "published_at": "2026-11-28T09:31:08+08:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "本次取得中央社報導節錄，非全文；未取得訴狀原文或法院裁定。文中的竊密、供應商施壓及不當挪用技術等內容，均依報導保留指控方歸屬與對方否認。"
+    },
+    {
+      "id": "2026-11-28-evening:event-03",
+      "original_id": "event-03",
+      "category": "vc-business",
+      "is_headline": false,
+      "title_zh": "荷蘭反對美國晶片設備管制法案，總理擬於G20與川普磋商",
+      "lede_zh": "荷蘭總理葉騰表示，計畫在12月於邁阿密舉行的20國集團峰會期間，與美國總統川普討論美國擬議中的「硬體技術多邊協調管制法案」（MATCH Act）。這項法案涉及對中國的晶片製造設備出口管制，目前仍在美國國會審議，尚不能視為已生效規定。\n\n荷蘭是先進半導體微影設備供應商艾司摩爾總部所在，正遊說反對這項跨黨派法案。依報導所述，法案將要求荷蘭、日本等美國盟友對中國採取更嚴格的出口管制，否則將面臨華府壓力；相關措施也引發對歐洲產業可能受到衝擊的疑慮。\n\n荷蘭先前曾配合美國，限制艾司摩爾設備出口，但此次基於主權理由反對MATCH法案。葉騰表示，他將親自與川普討論，尋求符合雙方利益的解決途徑。峰會預定於12月14日至15日舉行，這次會談目前仍是荷蘭方面提出的計畫。",
+      "bullets_zh": [],
+      "source": {
+        "name": "中央社國際",
+        "url": "https://www.cna.com.tw/news/aopl/202611280055.aspx",
+        "published_at": "2026-11-28T12:24:38+08:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "本次取得中央社報導節錄，非全文；未取得MATCH法案原文。法案內容、荷蘭立場與會談規劃均依該節錄撰寫。"
+    },
+    {
+      "id": "2026-11-28-evening:event-04",
+      "original_id": "event-04",
+      "category": "vc-business",
+      "is_headline": false,
+      "title_zh": "西班牙人民黨陣營承諾執政後廢除資料中心限制法令",
+      "lede_zh": "西班牙資料中心監管政策面臨選後變動的可能。人民黨黨魁費霍陣營承諾，一旦執政，將立即廢除限制資料中心能源消耗與數據主權條件的法令，藉此推動人工智慧所需的資料中心產業擴張。\n\n這項法令由桑傑士政府先前推動通過，規範涉及資料中心的能源使用及數據主權條件。費霍陣營則主張撤除相關限制，兩者對資料中心產業的監管方向存在分歧；促進產業擴張是其提出廢法承諾的目標，並非已實現的結果。\n\n西班牙將於11月29日提前改選。廢法目前仍是以取得執政權為前提的政治承諾，是否落實仍取決於選舉結果與後續政策行動，不能視為資料中心規範已經鬆綁。",
+      "bullets_zh": [],
+      "source": {
+        "name": "中央社國際",
+        "url": "https://www.cna.com.tw/news/aopl/202611280053.aspx",
+        "published_at": "2026-11-28T12:10:34+08:00",
+        "reading_time_min": 1
+      },
+      "fetched_via": "publisher",
+      "evidence_kind": "publisher-excerpt",
+      "evidence_note_zh": "依來源可讀節錄整理。",
+      "editorial_analysis_zh": "這項政策分歧涉及人工智慧基礎設施的監管條件。觀察重點是選後是否實際推動廢法，以及具體調整哪些規範，而非僅憑競選承諾推定資料中心投資將增加。",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "來源為中央社報導節錄，並非全文。已取得內容未列出相關法令名稱、能源消耗門檻、數據主權條件細節或廢法程序，無法據此判定具體適用範圍。"
+    }
+  ],
+  "breaking_news": [],
+  "meta": {
+    "generated_at": "2026-11-28T19:04:52.678855+08:00",
+    "total_articles": 4,
+    "schema_version": "2.0",
+    "edition": "evening",
+    "model": "gpt-6.1-sol",
+    "source_mode": "publisher-articles",
+    "reading_time_estimated": true
+  },
+  "window_start": "2026-11-28T07:00:00+08:00",
+  "window_end": "2026-11-28T19:00:00+08:00",
+  "publication": {
+    "published_at": "2026-11-28T20:00:07.740849+08:00",
+    "issue_sha256": "927c50c95b19526be4e2618f23d0936d5c2e8919dab4efa1ef40620155df06be",
+    "identity": "2026-11-28-evening",
+    "legacy_archive_untouched": true
+  }
+}

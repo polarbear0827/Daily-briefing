@@ -1,336 +1,125 @@
 {
   "schema_version": 2,
-  "issue_number": "2026-11-28-morning",
-  "issue_label_zh": "2026-11-28 科技早報",
+  "issue_number": "2026-11-28-evening",
+  "issue_label_zh": "2026-11-28 科技晚報",
   "date": "2026-11-28",
-  "edition": "morning",
-  "edition_label_zh": "科技早報",
-  "date_display_zh": "2026年11月28日·星期六·科技早報",
+  "edition": "evening",
+  "edition_label_zh": "科技晚報",
+  "date_display_zh": "2026年11月28日·星期六·科技晚報",
   "weather_locations": [],
   "tagline_zh": "由 AI 為你策展，掌握科技與時事",
   "categories": [
     {
-      "id": "research-papers",
-      "name_zh": "論文／評測"
-    },
-    {
-      "id": "tech-product",
-      "name_zh": "產品發布／平台戰爭"
+      "id": "robotics",
+      "name_zh": "機器人／具身智慧"
     },
     {
       "id": "vc-business",
       "name_zh": "產業深度／商業應用"
-    },
-    {
-      "id": "security",
-      "name_zh": "技術風險"
-    },
-    {
-      "id": "dev",
-      "name_zh": "社群熱度／開發者"
-    },
-    {
-      "id": "ai-tools",
-      "name_zh": "人工智慧工具"
-    },
-    {
-      "id": "taiwan",
-      "name_zh": "中文科技"
     }
   ],
   "articles": [
     {
-      "id": "2026-11-28-morning:event-11",
-      "original_id": "event-11",
-      "category": "research-papers",
+      "id": "2026-11-28-evening:event-01",
+      "original_id": "event-01",
+      "category": "robotics",
       "is_headline": true,
-      "title_zh": "《GTA 6》主機效能測試：解除30格限制後，平均約36格且動畫加速",
-      "lede_zh": "《GTA 6》在Xbox Series X上被玩家找到解除每秒30格限制的方法，但測試結果並未顯示這是可靠的效能改善途徑。Digital Foundry測試發現，解除限制後，一小時遊玩平均約每秒36格，車輛與動畫卻出現不正常加速，部分約達原本兩倍速度。\n\n這項方法涉及切換主機的60Hz與120Hz輸出，再透過Quick Resume返回遊戲。Digital Foundry的測試中，只有駕駛飛機、畫面幾乎全是天空時達到每秒60格；車流較少的公路約40格，繁忙街道則僅略高於30格。測試團隊認為，現有硬體難以達到穩定60格，即使採用搭配可變更新率的40格模式，也未必明顯優於目前的30格上限。\n\n不同主機的壓力測試也呈現差異。Engadget整理的結果顯示，PS5在多次爆炸的榴彈發射器測試中降至23格；PS5 Pro多數時間維持30格，大量車輛同時遭破壞時約降至24格。Series S多數時間介於25至30格，Kotaku的一段爆炸場景測試則短暫降至18或19格。\n\n這些數據也須與個人遊玩觀察區分：Engadget作者表示，自己以原版PS5遊玩約60小時，除激烈破壞場景外，較少注意到明顯低於30格的情況。解除限制可能伴隨當機與錯誤，不能把較高的瞬間幀率視為整體體驗改善。",
+      "title_zh": "Embo募得1.1億美元種子資金，布局機器人世界模型",
+      "lede_zh": "機器人AI新創Embo取得1.1億美元種子資金，目標是開發能用於日常機器人的人工智慧模型。公司表示，這輪募資由Andreessen Horowitz領投，Khosla Ventures、DST Global與Nvidia參與投資。\n\nEmbo提出的開發路線，結合網路影片、模擬環境與實體機器人經驗。依公司說明，其統一模型先以大量網路影片進行預訓練，作為學習物體及物理互動方式的世界模型；接著在模擬情境中練習動作技能，再利用人形機器人群累積的經驗進行微調。\n\n公司將機器人在陌生情境中容易失敗的問題，列為研發要處理的重點，並表示正透過強化學習從頭訓練模型。改善陌生環境中的應對能力，是Embo提出的開發目標，不能視為這套方法已經達成的效能成果。",
       "bullets_zh": [],
       "source": {
-        "name": "Engadget",
-        "url": "https://www.engadget.com/2329878/gta-6-performance-ways-make-sure-console-not-holding-back/",
-        "published_at": "2026-11-27T22:46:29+00:00",
+        "name": "The Decoder",
+        "url": "https://the-decoder.com/robotics-startup-embo-raises-110-million-in-seed-funding-to-build-world-model-ai-for-robots/",
+        "published_at": "2026-11-28T10:48:18+00:00",
         "reading_time_min": 1
       },
       "fetched_via": "publisher",
       "evidence_kind": "publisher-excerpt",
       "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "評估遊戲效能不能只看最高幀率；場景負載、長時間平均表現與動畫速度是否正常，都會影響結果的意義。這次測試尤其顯示，解除限制不等於取得可用的高幀率模式。",
+      "editorial_analysis_zh": "",
       "supporting_sources": [],
-      "source_evidence_note_zh": "本次取得Engadget報導節錄，未取得Digital Foundry或Kotaku的原始測試全文與完整測試資料。文中測試數據及作者遊玩觀察均依該節錄整理，並非本次獨立實測。"
+      "source_evidence_note_zh": "本次取得The Decoder報導節錄，非全文。投資參與者與訓練方法依公司說法；未取得獨立效能評測資料。"
     },
     {
-      "id": "2026-11-28-morning:event-07",
-      "original_id": "event-07",
-      "category": "tech-product",
-      "is_headline": false,
-      "title_zh": "洛杉磯聯合學區暫停校方裝置的 Google AI Overviews",
-      "lede_zh": "洛杉磯聯合學區已在校方配發的裝置上停用 Google AI Overviews，搜尋結果不再顯示這項人工智慧摘要。這個約有50萬名學生的學區表示，措施屬於暫時性調整，目的是維持適齡且安全的學生使用體驗。\n\n學區並未正式發布公告，而是家長與學生先注意到搜尋摘要消失。地方倡議團體 Schools Beyond Screens LA 隨後向家長徵集影片佐證，並取得學區確認。變動發生在11月13日的學區人工智慧委員會會議之後，當天有多名該團體成員發言；數日後，校方裝置上的摘要便已不再出現。\n\n這項調整也凸顯搜尋與人工智慧整合後的校園管理問題。Google 本月稍早已撤回對許多中小學生預設開啟 Gemini 聊天機器人的政策，改採選擇加入；但對搜尋服務，Google 教育主管 Chris Phillips 仍主張搜尋與人工智慧深度整合，並稱學區若封鎖人工智慧，學生也將無法使用搜尋。",
-      "bullets_zh": [],
-      "source": {
-        "name": "Engadget",
-        "url": "https://www.engadget.com/2329851/la-school-district-blocks-google-ai-search-features/",
-        "published_at": "2026-11-27T22:00:08+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "學校需要管理的不只是能否使用人工智慧，也包括能否在保留搜尋功能的同時，分別控制生成式摘要。這次停用措施呈現了學區管理需求與平台整合政策之間的落差。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "僅取得 Engadget 報導節錄，未取得其引用的美聯社原始報導、學區說明或 Google 主管談話原文。節錄未交代學區停用 AI Overviews 的具體技術方式，亦不足以證明該功能不安全。"
-    },
-    {
-      "id": "2026-11-28-morning:event-08",
-      "original_id": "event-08",
-      "category": "tech-product",
-      "is_headline": false,
-      "title_zh": "One UI 測試版浮現 Vision 模式線索，Samsung 相機可能整合 AI 提問",
-      "lede_zh": "One UI 9.5 Beta 1 的程式字串出現名為 Vision 的相機模式線索，顯示 Samsung 可能把場景摘要、文字擷取與人工智慧提問入口直接放進相機應用程式。這仍是程式碼分析揭露的未公布功能，並非已確認推出的產品規格。\n\n分析所描述的操作，是將相機對準物體或場景後，由人工智慧提供畫面摘要，並顯示可點選的關鍵字、建議動作與文字擷取工具。其中，「Ask」按鈕會把場景交給 Gemini，「Translate」按鈕則連接 Samsung 的 AI Vision 應用程式。\n\nSamsung 手機目前已能透過 Gemini Live，針對鏡頭所見內容進行即時對話。新線索的重點因此不只是辨識能力，而是可能把相關操作集中到相機模式中。不過，Samsung 尚未宣布 Vision 功能，測試版中的程式也可能不會進入正式版本；支援機型與推出時間仍未確認。",
-      "bullets_zh": [],
-      "source": {
-        "name": "Engadget",
-        "url": "https://www.engadget.com/2329765/samsung-is-reportedly-giving-its-camera-app-an-ai-mode/",
-        "published_at": "2026-11-27T20:06:02+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "若功能正式推出，改變的將是使用入口：使用者可能不必先切換至獨立助理，就能從相機畫面進行提問或翻譯。程式碼線索尚不能用來判定實際辨識品質與操作體驗。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "僅取得 Engadget 報導節錄，未取得其引用的 Android Authority 程式碼分析原文，也未取得 Samsung 官方公告或實測資料。功能描述均屬測試版程式碼分析所揭露的線索。"
-    },
-    {
-      "id": "2026-11-28-morning:event-09",
-      "original_id": "event-09",
-      "category": "tech-product",
-      "is_headline": false,
-      "title_zh": "WhatsApp 將提供旅遊 eSIM 購買入口，部分國家即將推出",
-      "lede_zh": "WhatsApp 宣布將在應用程式內提供旅遊用 eSIM 購買服務，讓使用者直接購買旅行期間使用的行動數據連線。服務將於部分國家陸續推出，合作電信業者包括 Verizon 與 Jio。\n\n這項 eSIM 提供的是數據服務。WhatsApp 表示，使用者不必更換原有的 WhatsApp 號碼，抵達目的地後仍可沿用同一號碼使用通訊功能；公司並將購買流程形容為如同傳送訊息般輕鬆。\n\n這次擴張把旅遊連線方案的購買入口帶進通訊應用程式，不過服務尚未全面開放。具體適用國家、價格與收費模式仍未明，不能據此認定會採訂閱制，也無法判斷與其他旅遊連線方案相比是否更划算。",
-      "bullets_zh": [],
-      "source": {
-        "name": "Engadget",
-        "url": "https://www.engadget.com/2329553/whatsapp-adds-support-for-travel-esims/",
-        "published_at": "2026-11-27T16:24:07+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "把數據方案購買入口整合進通訊工具，可能減少旅客在不同服務間切換的步驟；實際便利性與成本優勢，仍須等適用範圍、資費及使用條件明朗後才能判斷。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "僅取得 Engadget 報導節錄，未取得 WhatsApp 公告原文或完整服務條款。沿用原號碼與購買流程的說明屬公司自述，未經實測；節錄對訂閱制的推測未作為事實採用。"
-    },
-    {
-      "id": "2026-11-28-morning:event-02",
+      "id": "2026-11-28-evening:event-02",
       "original_id": "event-02",
       "category": "vc-business",
       "is_headline": false,
-      "title_zh": "上海資料中心出現Blackwell設備，出口許可與運送途徑仍待釐清",
-      "lede_zh": "上海一處資料中心被報導裝有Nvidia Blackwell設備，相關線索來自企業提交給中國監管機關的文件。這類系統輸往中國須取得美國出口許可，但目前仍無法確認設備如何運抵當地，以及是否取得所需許可。\n\n報導披露的文件顯示，Shanghai Shuoyao以一座GB300 NVL72機櫃作為擔保，向Shanghai Innovation Bank取得人民幣9600萬元、約1400萬美元貸款；另一家公司Shanghai Kezhan的貸款文件，則列出位於同一地點的GB200伺服器。兩種設備均涉及受出口許可規範約束的Blackwell系統。\n\n單座GB300 NVL72搭載72顆Blackwell Ultra GPU與36顆Nvidia Grace處理器。Bloomberg透過機櫃序號查詢公開保固資料庫，將其中一座GB300設備追溯至台灣製造商Gigabyte。不過，這項追查尚未交代設備後續的完整交易與運送路徑。\n\nGigabyte未透露最初購買該機櫃的公司或對象，並表示所有業務均遵循適用法規，交易也須符合內部合規要求及交易當時有效的相關規定。現有資訊仍不足以判定設備進入上海的完整過程，也不能據此認定Gigabyte或其他相關業者違反出口規範。",
-      "bullets_zh": [],
-      "source": {
-        "name": "Engadget",
-        "url": "https://www.engadget.com/2329748/restricted-nvidia-chips-were-installed-at-a-chinese-data-center-linked-to-alice-huang/",
-        "published_at": "2026-11-27T19:45:23+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "設備序號可以提供製造來源線索，但不足以單獨證明後續買家、轉運路徑與出口許可狀態。判斷合規責任，仍須補足這些交易環節的證據。",
-      "supporting_sources": [
-        {
-          "source_name": "The Decoder",
-          "source_title": "Banned Nvidia Blackwell chips turn up in a Shanghai data center linked to Alice Huang, Bloomberg reports",
-          "source_url": "https://the-decoder.com/banned-nvidia-blackwell-chips-turn-up-in-a-shanghai-data-center-linked-to-alice-huang-bloomberg-reports/"
-        }
-      ],
-      "source_evidence_note_zh": "取得Engadget與The Decoder的報導正文節錄，並非全文；兩篇均援引Bloomberg的文件調查，不能視為兩項獨立調查。未直接取得監管申報、貸款文件、保固資料庫查詢結果或出口許可紀錄。"
-    },
-    {
-      "id": "2026-11-28-morning:event-05",
-      "original_id": "event-05",
-      "category": "vc-business",
-      "is_headline": false,
-      "title_zh": "SAP傳規劃裁減至少一萬職位，配合人工智慧業務重整",
-      "lede_zh": "SAP傳出正準備配合人工智慧重整，裁減至少一萬個職位，約占全球逾11萬名員工的至少9%。The Decoder報導，這項規劃的人數尚未定案，仍可能在與員工代表協商後調整，不能視為已完成的裁員結果。\n\n報導指出，各部門都被要求找出節省成本的空間，其中產品開發、工程與銷售受到的影響最大。德國約占SAP員工總數四分之一，當地就業保障則持續至2028年。這些條件意味著，裁員規劃仍須面對各地既有安排與協商程序，實際執行範圍尚待確認。\n\n這波調整與SAP的產品方向相連：執行長Christian Klein希望將AI工具導入整體產品線，公司近期也宣布與Mistral AI合作，並收購數家新創。SAP在2024年已裁減約一萬個職位；對於這次可能的裁員，公司拒絕評論，僅表示會持續檢視組織架構。目前資訊支持的是重整與人力縮減規劃，並未證明同等數量的工作已由AI取代。",
-      "bullets_zh": [],
-      "source": {
-        "name": "The Decoder",
-        "url": "https://the-decoder.com/sap-plans-to-cut-at-least-10000-jobs-as-it-pivots-to-ai/",
-        "published_at": "2026-11-27T14:57:25+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "觀察這波重整，應區分企業投入AI、組織節省成本與職務實際被自動化三件事；目前披露的裁員規劃，還不足以建立三者之間的直接因果。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "本次僅取得The Decoder報導節錄；其中裁員消息援引彭博對知情人士的報導，未取得彭博原文或SAP裁員計畫文件。裁員規模與執行方式尚未定案。"
-    },
-    {
-      "id": "2026-11-28-morning:event-13",
-      "original_id": "event-13",
-      "category": "vc-business",
-      "is_headline": false,
-      "title_zh": "AI與晶片股帶動美股反彈　費半收漲4.69%",
-      "lede_zh": "美股11月27日在人工智慧（AI）與科技股帶動下收高，美光、超微及晟碟股價勁揚。經歷本週震盪後，晶片股與其他科技類股從早盤便走揚，收盤時主要指數全數上漲。\n\n科技股與半導體類股的漲幅較為突出。那斯達克指數上漲543.70點、漲幅2.31%，收在24129.50點；費城半導體指數上漲411.845點、漲幅4.69%，收在9186.707點，漲幅高於那斯達克及其他主要指數。\n\n大盤同步收紅，標準普爾500指數上漲114.71點、漲幅1.60%，收在7297.49點；道瓊工業指數上漲591.99點、漲幅1.18%，收在50774.94點。那斯達克與標普500指數的收盤漲幅，也都高於早盤報導所列的1.58%與1.23%。",
+      "title_zh": "OpenAI反訴蘋果竊取商業機密、阻礙供應商合作，蘋果否認",
+      "lede_zh": "OpenAI於11月27日向加州聯邦法院提出反訴，指控蘋果竊取商業機密，並勸阻硬體供應商參與其未來裝置的開發。蘋果否認透過重新聘僱員工取得OpenAI機密，也否認試圖打壓AI裝置製造領域的競爭。\n\nOpenAI在法院文件中表示，正在開發具備人工智慧功能的個人電子裝置，並指控蘋果回聘一名曾在OpenAI任職6個月的前員工，以取得機密資訊。依OpenAI說法，該員工任職期間能接觸一款新裝置的具體資訊，以及未來硬體產品的開發藍圖；這些內容屬於OpenAI提出的指控，而非法院認定。\n\n供應商合作也是反訴爭點。OpenAI提交的文件指稱，蘋果要求供應商列出為OpenAI執行的專案及負責員工名單，部分供應商因擔心失去蘋果生意，調整會議時間或地點。文件另稱，一家供應商把OpenAI的生產作業移至晚班，另一家則因蘋果的威脅而放棄合作，但未揭露這些供應商的名稱。\n\n這起反訴延續雙方先前的人才與技術爭議。今年7月，蘋果控告OpenAI及兩名前蘋果員工，指控他們不當挪用商業機密，協助OpenAI進軍消費性硬體市場；OpenAI與相關員工均否認指控。針對此次反訴，蘋果表示，OpenAI意在轉移外界對蘋果原有訴訟內容的注意力。",
       "bullets_zh": [],
       "source": {
         "name": "中央社財經",
-        "url": "https://www.cna.com.tw/news/afe/202611280006.aspx",
-        "published_at": "2026-11-28T04:02:43+08:00",
+        "url": "https://www.cna.com.tw/news/afe/202611280014.aspx",
+        "published_at": "2026-11-28T09:31:08+08:00",
         "reading_time_min": 1
       },
       "fetched_via": "publisher",
       "evidence_kind": "publisher-excerpt",
       "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "這次行情呈現半導體類股相對大盤的強勢，但單日股價反彈不足以證明AI需求、企業獲利或估值已獲基本面支持。",
-      "supporting_sources": [
-        {
-          "source_name": "中央社財經",
-          "source_title": "美股早盤走高　那指漲逾1.5%",
-          "source_url": "https://www.cna.com.tw/news/afe/202611270287.aspx"
-        }
-      ],
-      "source_evidence_note_zh": "本則依中央社財經同日早盤與收盤兩篇報導的已取得正文節錄整合，以收盤數據為主；未取得全文。節錄未提供美光、超微及晟碟的個別漲幅。"
+      "editorial_analysis_zh": "",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "本次取得中央社報導節錄，非全文；未取得訴狀原文或法院裁定。文中的竊密、供應商施壓及不當挪用技術等內容，均依報導保留指控方歸屬與對方否認。"
     },
     {
-      "id": "2026-11-28-morning:event-03",
+      "id": "2026-11-28-evening:event-03",
       "original_id": "event-03",
-      "category": "security",
+      "category": "vc-business",
       "is_headline": false,
-      "title_zh": "美國空軍Cloud One傳遭入侵，應用遷移與更新受限",
-      "lede_zh": "美國空軍雲端平台Cloud One據報遭駭客入侵，事件在過去約一個月的系統升級期間被發現，並導致平台服務中斷。消息人士表示，部分應用程式遷移計畫已暫停，一些使用者的管理員權限也遭撤銷；攻擊者身分、完整受影響範圍及是否有資料遭竊，目前仍不明。\n\n一名知情人士指出，攻擊者利用軟體漏洞進入平台的控制平面。該人士形容，這類存取權限可能讓人查看軍機運作狀態或備用零件流向，但尚不清楚攻擊者是否實際進行這些操作，不能將潛在可存取的資訊視為已遭讀取或外洩。\n\n事件也影響平台維護。除了暫停將更多任務應用程式移入Cloud One，既有應用程式的更新亦被禁止，使工作人員無法套用部分修正。這些限制顯示，影響不只涉及資料保護，也已延伸至雲端應用的部署與維運。\n\nCloud One於2017年啟動，整合微軟、亞馬遜、甲骨文與Alphabet的雲端資源，支援人事、薪資、後勤及維修等應用，也承載防空雷達資料彙整與彈藥管理系統。不過，平台承載哪些系統，並不等於這些系統均已遭入侵。\n\n美國空軍回應表示，不評論特定網路與系統的安全態勢、漏洞或運作狀態，並稱會持續採取措施保護資訊、系統及任務能力。消息人士另稱，調查人員已請網戰司令部評估損害；網戰司令部未回應置評請求。",
+      "title_zh": "荷蘭反對美國晶片設備管制法案，總理擬於G20與川普磋商",
+      "lede_zh": "荷蘭總理葉騰表示，計畫在12月於邁阿密舉行的20國集團峰會期間，與美國總統川普討論美國擬議中的「硬體技術多邊協調管制法案」（MATCH Act）。這項法案涉及對中國的晶片製造設備出口管制，目前仍在美國國會審議，尚不能視為已生效規定。\n\n荷蘭是先進半導體微影設備供應商艾司摩爾總部所在，正遊說反對這項跨黨派法案。依報導所述，法案將要求荷蘭、日本等美國盟友對中國採取更嚴格的出口管制，否則將面臨華府壓力；相關措施也引發對歐洲產業可能受到衝擊的疑慮。\n\n荷蘭先前曾配合美國，限制艾司摩爾設備出口，但此次基於主權理由反對MATCH法案。葉騰表示，他將親自與川普討論，尋求符合雙方利益的解決途徑。峰會預定於12月14日至15日舉行，這次會談目前仍是荷蘭方面提出的計畫。",
       "bullets_zh": [],
       "source": {
         "name": "中央社國際",
-        "url": "https://www.cna.com.tw/news/aopl/202611270266.aspx",
-        "published_at": "2026-11-27T21:38:32+08:00",
+        "url": "https://www.cna.com.tw/news/aopl/202611280055.aspx",
+        "published_at": "2026-11-28T12:24:38+08:00",
         "reading_time_min": 1
       },
       "fetched_via": "publisher",
       "evidence_kind": "publisher-excerpt",
       "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "此案的技術焦點是控制平面的存取風險，以及事件處置對應用更新、權限管理與遷移作業的連帶影響；實際資料損失仍須等待調查釐清。",
-      "supporting_sources": [
-        {
-          "source_name": "Engadget",
-          "source_title": "Hackers reportedly infiltrated the Air Force's cloud systems",
-          "source_url": "https://www.engadget.com/2329586/hackers-reportedly-infiltrated-the-air-force-cloud-systems/"
-        },
-        {
-          "source_name": "The Decoder",
-          "source_title": "Hackers breached the US Air Force's flagship Cloud One platform, report says",
-          "source_url": "https://the-decoder.com/hackers-breached-the-us-air-forces-flagship-cloud-one-platform-report-says/"
-        }
-      ],
-      "source_evidence_note_zh": "取得中央社、Engadget與The Decoder的報導正文節錄，並非全文；三篇均以路透社報導為主要依據，不能視為三項獨立查證。未取得原始技術鑑識報告，控制平面入侵及處置細節來自消息人士，空軍未公開確認特定系統狀態。"
+      "editorial_analysis_zh": "",
+      "supporting_sources": [],
+      "source_evidence_note_zh": "本次取得中央社報導節錄，非全文；未取得MATCH法案原文。法案內容、荷蘭立場與會談規劃均依該節錄撰寫。"
     },
     {
-      "id": "2026-11-28-morning:event-04",
+      "id": "2026-11-28-evening:event-04",
       "original_id": "event-04",
-      "category": "security",
+      "category": "vc-business",
       "is_headline": false,
-      "title_zh": "芬蘭研究建議調整著作權保護，因應AI冒用聲音與影像",
-      "lede_zh": "芬蘭教育文化部公布深偽因應研究報告，建議調整既有著作權法的保護範圍，處理人工智慧冒用個人聲音與影像的問題。這是研究提出的修法方向，並非已生效的新規範；研究作者指出，現行著作權保障的是創作成果，個人的聲音與相貌並不在涵蓋範圍內。\n\n冒用問題已涉及音樂與新聞內容。芬蘭國家廣播公司（Yle）揭露，TikTok出現以AI讓歌手演唱其他曲目或未發表歌曲的帳號，Spotify也有冒名發布的AI樂曲。Yle負責推動AI應用的主管米拉里表示，社群平台屢見冒充Yle記者的偽造影片，有些在媒體反應前便已擴散甚至消失，侵蝕新聞品牌累積的信任。她主張，使用他人聲音或影像應取得自願同意、限定使用範圍，並給予相稱酬勞。\n\n報告建議，將著作權法的「名稱保護」條款擴及作者影像與聲音，避免AI複製品與本人混淆；另修改「經典保護」條款，禁止侵害文化利益的偽造內容，防止已故演員被AI安排新角色。不過，報告也認為，若賦予全民「外貌與聲音著作權」，將面臨表演者身分界定困難，以及電玩等創作無意間侵權的風險。\n\n授權與執法仍有缺口。芬蘭演員工會主張，授權契約應有明確期限，並指出合約無法約束未經授權使用的第三方。芬蘭交通與通訊署代表則提醒，即使歐盟人工智慧法已要求揭露深偽內容，標示本身仍未判定內容真偽；平台與業者多在海外運作，也增加主管機關執法的難度。",
+      "title_zh": "西班牙人民黨陣營承諾執政後廢除資料中心限制法令",
+      "lede_zh": "西班牙資料中心監管政策面臨選後變動的可能。人民黨黨魁費霍陣營承諾，一旦執政，將立即廢除限制資料中心能源消耗與數據主權條件的法令，藉此推動人工智慧所需的資料中心產業擴張。\n\n這項法令由桑傑士政府先前推動通過，規範涉及資料中心的能源使用及數據主權條件。費霍陣營則主張撤除相關限制，兩者對資料中心產業的監管方向存在分歧；促進產業擴張是其提出廢法承諾的目標，並非已實現的結果。\n\n西班牙將於11月29日提前改選。廢法目前仍是以取得執政權為前提的政治承諾，是否落實仍取決於選舉結果與後續政策行動，不能視為資料中心規範已經鬆綁。",
       "bullets_zh": [],
       "source": {
         "name": "中央社國際",
-        "url": "https://www.cna.com.tw/news/aopl/202611270286.aspx",
-        "published_at": "2026-11-27T23:09:19+08:00",
+        "url": "https://www.cna.com.tw/news/aopl/202611280053.aspx",
+        "published_at": "2026-11-28T12:10:34+08:00",
         "reading_time_min": 1
       },
       "fetched_via": "publisher",
       "evidence_kind": "publisher-excerpt",
       "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "這項研究凸顯，深偽治理不只是辨識內容真偽，也涉及個人授權、創作者收入與跨境執法；新增標示義務未必能同時解決這些問題。",
+      "editorial_analysis_zh": "這項政策分歧涉及人工智慧基礎設施的監管條件。觀察重點是選後是否實際推動廢法，以及具體調整哪些規範，而非僅憑競選承諾推定資料中心投資將增加。",
       "supporting_sources": [],
-      "source_evidence_note_zh": "本次取得中央社報導節錄，未取得研究報告、法規或座談紀錄原文；文中研究建議及各方說法均依該節錄整理。"
-    },
-    {
-      "id": "2026-11-28-morning:event-10",
-      "original_id": "event-10",
-      "category": "dev",
-      "is_headline": false,
-      "title_zh": "開發者借助AI推進《GTA 6》非官方電腦移植，尚無完整公開版本",
-      "lede_zh": "《GTA 6》主機版上市後，開發者與遊戲修改社群正以外流的Xbox版本為基礎，嘗試讓遊戲在Windows執行。The Decoder報導，相關專案運用逆向工程、相容層與重新編譯，並將部分移植工作交給包括Anthropic的Claude Code在內的AI程式工具，其中一組開發者還直播了過程。\n\n一個追蹤平台在遊戲執行檔外流後不到四天，列出40個活躍專案，並稱其中近半數已能在電腦上啟動遊戲。依該平台自行訂定的評分尺度，進度最快的專案距離可遊玩的電腦版本已完成逾九成；這是平台對開發進度的判斷，不能等同完整版本已可交付。\n\n部分專案也嘗試加入原生光線追蹤照明等功能。11月26日出現的非官方電腦多人模式影片，顯示多名玩家、車輛與語音聊天同時運作，畫面約每秒25至30格；追蹤平台營運者稱已驗證影片。官方目前推出的仍是單人遊戲，線上模式尚無發布日期。\n\n目前仍沒有可供一般玩家使用的完整電腦版本，較穩定的版本也有內容不全、限於封閉群組流通，或需要相當技術能力等限制。Rockstar尚未公布官方電腦版日期；AI工具是否會實際改變其主機與電腦版分階段推出的策略，仍不能從這些早期專案確定。",
-      "bullets_zh": [],
-      "source": {
-        "name": "The Decoder",
-        "url": "https://the-decoder.com/rockstars-ai-dilemma-can-gta-6s-staggered-release-model-survive-coding-agents/",
-        "published_at": "2026-11-27T15:37:47+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-article",
-      "evidence_note_zh": "依來源文章整理。",
-      "editorial_analysis_zh": "這起事件值得觀察的是AI程式工具如何參與逆向工程與移植工作，而非把追蹤平台的完成度當成成品品質。能否啟動、能否穩定遊玩，以及能否供一般玩家使用，是不同的技術門檻。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "已取得The Decoder報導正文。專案數量、完成比例與影片驗證為報導所述追蹤平台的資訊，本次未獨立查驗專案、執行遊戲或驗證影片。"
-    },
-    {
-      "id": "2026-11-28-morning:event-06",
-      "original_id": "event-06",
-      "category": "ai-tools",
-      "is_headline": false,
-      "title_zh": "OpenAI傳開發Athena資料平台，為企業AI代理統一指標與規則",
-      "lede_zh": "OpenAI據報正在開發代號「Athena」的資料管理平台，希望讓AI代理處理企業資料時更準確。平台方向近似「語意層」，為營收、客戶數等商業指標提供一致定義，讓代理取得必要脈絡，減少自行猜測。這仍是早期開發計畫，OpenAI尚未公布時程或價格。\n\nThe Decoder報導，至少一名客戶曾認為ChatGPT Work的資料分析代理不夠準確。Athena的構想是讓代理蒐集、記錄並更新商業規則，供其他代理使用，避免每次執行工作都從頭建立脈絡。提高準確度與減少猜測是這項計畫的目標，並非已獲驗證的產品成效。\n\n企業資料的語意層並非全新方向，Snowflake與Databricks已提供各自的方案。報導分析，更換語意層供應商比更換AI模型困難，Athena可能因此成為OpenAI建立競爭優勢的一環。不過，目前尚無已公布的推出時間與定價，仍不能將這項開發計畫視為已上市、可供企業採用的工具。",
-      "bullets_zh": [],
-      "source": {
-        "name": "The Decoder",
-        "url": "https://the-decoder.com/openai-is-building-athena-data-platform-to-cut-down-on-ai-agent-guesswork/",
-        "published_at": "2026-11-27T16:05:23+00:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "這項計畫的重點不在推出另一個模型，而在讓不同代理沿用一致的企業資料定義與規則；能否改善分析品質，仍須等待實際產品與可驗證結果。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "本次僅取得The Decoder報導節錄，內容援引The Information及知情人士，未取得原始報導全文、OpenAI產品文件或獨立評測。平台功能與競爭方向屬報導中的開發規劃及分析，成效尚未驗證。"
-    },
-    {
-      "id": "2026-11-28-morning:event-12",
-      "original_id": "event-12",
-      "category": "taiwan",
-      "is_headline": false,
-      "title_zh": "AI供應鏈帶動出口與投資，主計總處上修2027年成長預測至6.51%",
-      "lede_zh": "主計總處11月27日公布最新經濟預測，將2026年經濟成長率上修2.23個百分點至13.28%，並將2027年預測上修0.47個百分點至6.51%。主計總處指出，AI需求帶動出口與投資，是這波成長的重要動力。\n\n在科技供應鏈方面，主計總處認為，代理式AI與推論應用持續深化，推升算力需求，全球主要雲端服務業者也積極擴充AI基礎設施。台灣受惠於供應鏈競爭優勢，加上記憶體、載板等關鍵零組件短缺推升價格，帶動電子資通產品出口金額增加。\n\n結合傳統產業貨品出口回溫，主計總處將2026年商品及服務輸出成長率上修至23.96%，較前次預測增加2.68個百分點；民間投資實質成長率也上修3.32個百分點至14.9%。綜合統計處處長蔡鈺泰表示，先前對民間投資的估計較保守，目前廠商看到訂單、願意投資，是調高預測的依據。\n\n對於AI監管等外部變數，蔡鈺泰表示，主計總處已納入考量，明年出口預測也相對保守；他的判斷是，已動工資料中心的訂單將持續推進，較長期則可能有所調整。至於美國擴大先進半導體出口管制，他指出，今年前十月台灣AI伺服器銷往東南亞四國的占比約18%，仍有一定影響，後續將密切關注。",
-      "bullets_zh": [],
-      "source": {
-        "name": "中央社財經",
-        "url": "https://www.cna.com.tw/news/afe/202611270234.aspx",
-        "published_at": "2026-11-27T19:34:19+08:00",
-        "reading_time_min": 1
-      },
-      "fetched_via": "publisher",
-      "evidence_kind": "publisher-excerpt",
-      "evidence_note_zh": "依來源可讀節錄整理。",
-      "editorial_analysis_zh": "這次上修同時反映AI需求、供應鏈投資與零組件價格對出口金額的影響，不能只解讀為出貨量增加。已簽訂單帶來的短期支撐，也應與監管及出口管制的較長期影響分開觀察。",
-      "supporting_sources": [],
-      "source_evidence_note_zh": "本次取得中央社財經報導節錄，未直接取得主計總處完整預測報告或簡報。經濟數據為官方預測，AI需求延續及外部變數影響為報導所載官員判斷。"
+      "source_evidence_note_zh": "來源為中央社報導節錄，並非全文。已取得內容未列出相關法令名稱、能源消耗門檻、數據主權條件細節或廢法程序，無法據此判定具體適用範圍。"
     }
   ],
   "breaking_news": [],
   "meta": {
-    "generated_at": "2026-11-28T07:12:16.196594+08:00",
-    "total_articles": 12,
+    "generated_at": "2026-11-28T19:04:52.678855+08:00",
+    "total_articles": 4,
     "schema_version": "2.0",
-    "edition": "morning",
+    "edition": "evening",
     "model": "gpt-6.1-sol",
     "source_mode": "publisher-articles",
     "reading_time_estimated": true
   },
-  "window_start": "2026-11-27T19:00:00+08:00",
-  "window_end": "2026-11-28T07:00:00+08:00",
+  "window_start": "2026-11-28T07:00:00+08:00",
+  "window_end": "2026-11-28T19:00:00+08:00",
   "publication": {
-    "published_at": "2026-11-28T08:00:06.738882+08:00",
-    "issue_sha256": "2245f1e5ad07bb78fc424a84344fb622ed7619ad32f516f7e73bb809036d3c65",
-    "identity": "2026-11-28-morning",
+    "published_at": "2026-11-28T20:00:07.740849+08:00",
+    "issue_sha256": "927c50c95b19526be4e2618f23d0936d5c2e8919dab4efa1ef40620155df06be",
+    "identity": "2026-11-28-evening",
     "legacy_archive_untouched": true
   }
 }
